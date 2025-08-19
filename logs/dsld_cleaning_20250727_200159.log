@@ -1,0 +1,27 @@
+2025-07-27 20:01:59 - dsld_cleaner - INFO - ============================================================
+2025-07-27 20:01:59 - dsld_cleaner - INFO - DSLD Data Cleaning Pipeline Starting
+2025-07-27 20:01:59 - dsld_cleaner - INFO - ============================================================
+2025-07-27 20:01:59 - dsld_cleaner - INFO - Started at: 2025-07-27 20:01:59
+2025-07-27 20:01:59 - dsld_cleaner - INFO - Validating configuration...
+2025-07-27 20:01:59 - dsld_cleaner - INFO - Configuration validation passed
+2025-07-27 20:02:09 - dsld_cleaner - INFO - ============================================================
+2025-07-27 20:02:09 - dsld_cleaner - INFO - PROCESSING COMPLETE
+2025-07-27 20:02:09 - dsld_cleaner - INFO - ============================================================
+2025-07-27 20:02:09 - dsld_cleaner - INFO - Ended at: 2025-07-27 20:02:09
+2025-07-27 20:02:09 - dsld_cleaner - INFO - Total duration: 0:00:10.500951
+2025-07-27 20:02:09 - dsld_cleaner - INFO - Files processed: 4
+2025-07-27 20:02:09 - dsld_cleaner - INFO - Success rate: 100.0%
+2025-07-27 20:02:09 - dsld_cleaner - INFO - 
+2025-07-27 20:02:09 - dsld_cleaner - INFO - Results:
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Cleaned: 4
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Needs review: 0
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Incomplete: 0
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Errors: 0
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Unmapped ingredients: 4
+2025-07-27 20:02:09 - dsld_cleaner - INFO - 
+2025-07-27 20:02:09 - dsld_cleaner - INFO - Output files saved to:
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Cleaned products: output/cleaned
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Needs review: output/needs_review
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Incomplete: output/incomplete
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Unmapped ingredients: output/unmapped
+2025-07-27 20:02:09 - dsld_cleaner - INFO -   - Processing report: output/reports

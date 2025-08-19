@@ -1,0 +1,6 @@
+2025-08-04 20:23:14,586 - INFO - === Batch 126 Processing Log ===
+2025-08-04 20:23:14,587 - INFO - Started: 2025-08-04 20:23:14
+2025-08-04 20:23:14,587 - INFO - Files: 28633.json to 28787.json
+2025-08-04 20:23:17,525 - INFO - Ended: 2025-08-04 20:23:17
+2025-08-04 20:23:17,525 - INFO - Summary: {'batch_num': 126, 'processed': 4, 'cleaned': 4, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 2.9385159015655518, 'avg_time_per_file': 0.7346289753913879}
+2025-08-04 20:23:17,525 - INFO - Unmapped ingredients: 1

@@ -1,0 +1,1031 @@
+{
+  "harmful_additives": [
+    {
+      "id": "ADD_TITANIUM_DIOXIDE",
+      "standard_name": "Titanium Dioxide",
+      "aliases": [
+        "E171",
+        "TiO2",
+        "Titanium White",
+        "CI 77891",
+        "titanium(IV) oxide",
+        "titania",
+        "white pigment",
+        "titanium dioxide powder"
+      ],
+      "risk_level": "high",
+      "category": "colorant_opacifier",
+      "notes": "Used as a white colorant and opacifier. Banned as a food additive in the EU due to concerns that nanoparticles can accumulate in the body and potentially damage DNA. Classified as a possible human carcinogen by IARC.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_ASPARTAME",
+      "standard_name": "Aspartame",
+      "aliases": [
+        "E951",
+        "NutraSweet",
+        "Equal",
+        "Canderel",
+        "APM",
+        "aspartyl-phenylalanine methyl ester",
+        "N-(L-α-Aspartyl)-L-phenylalanine 1-methyl ester",
+        "artificial sweetener aspartame"
+      ],
+      "risk_level": "high",
+      "category": "sweetener_artificial",
+      "notes": "An intense artificial sweetener. Classified as possibly carcinogenic to humans by the WHO. Not suitable for individuals with phenylketonuria (PKU). Linked to headaches, mood changes, and metabolic issues.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_HYDROGENATED_OILS",
+      "standard_name": "Hydrogenated & Partially Hydrogenated Oils",
+      "aliases": [
+        "partially hydrogenated oil",
+        "hydrogenated oil",
+        "trans fats",
+        "hydrogenated vegetable oil",
+        "partially hydrogenated soybean oil",
+        "partially hydrogenated palm oil",
+        "partially hydrogenated cottonseed oil"
+      ],
+      "risk_level": "high",
+      "category": "processed_fat",
+      "notes": "The primary source of artificial trans fats, which are a major risk factor for heart disease, inflammation, and high LDL ('bad') cholesterol. Largely banned but may still appear in some products.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_PALM_OIL",
+      "standard_name": "Palm Oil",
+      "aliases": [
+        "palm kernel oil",
+        "palm fruit oil",
+        "palmitate",
+        "vitamin A palmitate",
+        "vitamin E palmitate",
+        "sodium lauryl sulfate (palm)",
+        "sodium palm kernelate",
+        "stearic acid (palm)",
+        "glyceryl stearate (palm)",
+        "Elaeis guineensis oil",
+        "vegetable oil (palm)",
+        "palmolein",
+        "hydrogenated palm oil",
+        "fractionated palm oil",
+        "red palm oil"
+      ],
+      "risk_level": "moderate",
+      "category": "processed_fat",
+      "notes": "Associated with deforestation and habitat destruction. High in saturated fats (may raise LDL cholesterol if consumed excessively). Some derivatives (e.g., vitamin A palmitate) are benign in small amounts. Processed forms may contain contaminants (3-MCPD, glycidol). Consider sustainability certifications (RSPO) for reduced environmental impact.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "id": "ADD_ARTIFICIAL_COLORS",
+      "standard_name": "Artificial Colors (General)",
+      "aliases": [
+        "artificial colors",
+        "artificial dyes",
+        "synthetic colors",
+        "FD&C colors",
+        "FD&C Blue #1",
+        "FD&C Blue #2",
+        "FD&C Green #3",
+        "FD&C Blue",
+        "Blue 2 Lake",
+        "FD&C",
+        "certified colors",
+        "color added"
+      ],
+      "risk_level": "high",
+      "category": "colorant_artificial",
+      "notes": "This general term flags the presence of synthetic food dyes. Specific dyes like Red 40, Yellow 5, etc., are linked to hyperactivity in children, allergic reactions, and are potential carcinogens.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_RED40",
+      "standard_name": "Red 40",
+      "aliases": [
+        "Allura Red",
+        "E129",
+        "FD&C Red No. 40",
+        "Allura Red AC",
+        "Red Dye 40",
+        "CI 16035",
+        "disodium 6-hydroxy-5-[(2-methoxy-5-methyl-4-sulfophenyl)azo]-2-naphthalenesulfonate"
+      ],
+      "risk_level": "high",
+      "category": "colorant_artificial",
+      "notes": "A petroleum-derived dye linked to hyperactivity in children, allergic reactions, and potential immune system effects. The most common food dye in the US.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_RED3",
+      "standard_name": "Red 3",
+      "aliases": [
+        "Erythrosine",
+        "E127",
+        "FD&C Red No. 3",
+        "Red Dye 3",
+        "CI 45430",
+        "disodium 2-(2,4,5,7-tetraiodo-6-oxido-3-oxoxanthen-9-yl)benzoate"
+      ],
+      "risk_level": "high",
+      "category": "colorant_artificial",
+      "notes": "A petroleum-derived dye shown to cause thyroid tumors in animals. Banned in cosmetics but still allowed in food and supplements. California has banned it from 2027.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_YELLOW5",
+      "standard_name": "Yellow 5",
+      "aliases": [
+        "Tartrazine",
+        "E102",
+        "FD&C Yellow No. 5",
+        "Yellow Dye 5",
+        "CI 19140"
+      ],
+      "risk_level": "high",
+      "category": "colorant_artificial",
+      "notes": "A petroleum-derived dye linked to hyperactivity, asthma, and hives, especially in sensitive individuals. May be contaminated with carcinogens.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_YELLOW6",
+      "standard_name": "Yellow 6",
+      "aliases": [
+        "Sunset Yellow FCF",
+        "E110",
+        "FD&C Yellow No. 6",
+        "Orange Yellow S",
+        "Yellow Dye 6",
+        "CI 15985"
+      ],
+      "risk_level": "high",
+      "category": "colorant_artificial",
+      "notes": "A petroleum-derived dye that may be contaminated with carcinogens and has been linked to adrenal tumors in animals and severe hypersensitivity reactions.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_BHA",
+      "standard_name": "Butylated Hydroxyanisole (BHA)",
+      "aliases": [
+        "BHA",
+        "E320",
+        "2-tert-butyl-4-methoxyphenol",
+        "3-tert-butyl-4-methoxyphenol"
+      ],
+      "risk_level": "high",
+      "category": "preservative_artificial",
+      "notes": "A petroleum-derived antioxidant classified as a possible human carcinogen. It is also an endocrine disruptor that can accumulate in body fat.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_PROPYLPARABEN",
+      "standard_name": "Propylparaben",
+      "aliases": [
+        "E216",
+        "Propyl 4-hydroxybenzoate",
+        "propyl p-hydroxybenzoate",
+        "propylparaben sodium",
+        "nipasol P"
+      ],
+      "risk_level": "high",
+      "category": "preservative_artificial",
+      "notes": "A strong endocrine disruptor that mimics estrogen and has been shown to affect the reproductive system. Banned for food use in the EU.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_TBHQ",
+      "standard_name": "Tertiary Butylhydroquinone (TBHQ)",
+      "aliases": [
+        "TBHQ",
+        "E319",
+        "tert-butylhydroquinone",
+        "2-(1,1-dimethylethyl)-1,4-benzenediol",
+        "Unknown preservative X"
+      ],
+      "risk_level": "high",
+      "category": "preservative_artificial",
+      "notes": "A petroleum-derived preservative linked to vision disturbances, liver enlargement, and DNA damage in studies. May harm the immune system.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_TALC",
+      "standard_name": "Talc",
+      "aliases": [
+        "Talcum",
+        "Magnesium Silicate",
+        "E553b",
+        "hydrated magnesium silicate",
+        "talcum powder",
+        "french chalk"
+      ],
+      "risk_level": "high",
+      "category": "anticaking_agent",
+      "notes": "An anti-caking agent that can be contaminated with asbestos, a known carcinogen. Linked to ovarian and lung cancer.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_SUCRALOSE",
+      "standard_name": "Sucralose",
+      "aliases": [
+        "E955",
+        "Splenda",
+        "Trichlorogalactosucrose",
+        "sucralose powder",
+        "artificial sweetener sucralose"
+      ],
+      "risk_level": "moderate",
+      "category": "sweetener_artificial",
+      "notes": "An artificial sweetener made by chlorinating sugar. Studies suggest it can disrupt the gut microbiome, release harmful compounds when heated, and may affect glucose metabolism.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_FRUCTOSE",
+      "standard_name": "Fructose & High Fructose Corn Syrup",
+      "aliases": [
+        "fructose",
+        "crystalline fructose",
+        "fructose syrup",
+        "fruit sugar",
+        "levulose",
+        "high fructose corn syrup",
+        "HFCS",
+        "corn sugar",
+        "HFCS-42",
+        "HFCS-55",
+        "HFCS-90"
+      ],
+      "risk_level": "moderate",
+      "category": "sweetener",
+      "notes": "A simple sugar that, when consumed in high amounts, is metabolized primarily by the liver and can contribute to insulin resistance, non-alcoholic fatty liver disease, and metabolic syndrome.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_COMMON_SUGARS",
+      "standard_name": "Common Sugars",
+      "aliases": [
+        "sugar",
+        "sucrose",
+        "dextrose",
+        "glucose",
+        "cane sugar",
+        "Cane Syrup",
+        "glucose syrup",
+        "organic Cane syrup",
+        "evaporated Cane syrup",
+        "organic dried Cane syrup",
+        "organic, whole Cane",
+        "honey",
+        "beet sugar",
+        "raw sugar",
+        "brown sugar",
+        "turbinado sugar",
+        "demerara sugar",
+        "coconut sugar",
+        "date sugar",
+        "table sugar",
+        "white sugar",
+        "organic sugar",
+        "evaporated cane juice"
+      ],
+      "risk_level": "moderate",
+      "category": "sweetener",
+      "notes": "All forms of added sugar contribute to blood sugar spikes, inflammation, dental issues, and potential weight gain when consumed in excess.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_SYRUPS",
+      "standard_name": "Sugar Syrups",
+      "aliases": [
+        "glucose syrup",
+        "tapioca syrup",
+        "brown rice syrup",
+        "corn syrup",
+        "agave syrup",
+        "maple syrup",
+        "polyglycitol syrup",
+        "hydrogenated glucose syrup",
+        "lycasin"
+      ],
+      "risk_level": "moderate",
+      "category": "sweetener",
+      "notes": "Concentrated liquid sugars used as sweeteners. They have the same metabolic effects as solid sugars, contributing to blood sugar spikes and related health issues.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_CARRAGEENAN",
+      "standard_name": "Carrageenan",
+      "aliases": [
+        "E407",
+        "Irish Moss Extract",
+        "kappa-carrageenan",
+        "iota-carrageenan",
+        "lambda-carrageenan",
+        "seaweed extract",
+        "chondrus crispus extract"
+      ],
+      "risk_level": "moderate",
+      "category": "thickener_emulsifier",
+      "notes": "A seaweed extract used for thickening and emulsifying. Linked to digestive inflammation, bloating, and symptoms resembling IBS in sensitive individuals.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_SODIUM_BENZOATE",
+      "standard_name": "Sodium Benzoate",
+      "aliases": [
+        "E211",
+        "Benzoate of Soda",
+        "sodium salt of benzoic acid",
+        "benzoic acid sodium salt",
+        "potassium benzoate",
+        "E212",
+        "calcium benzoate",
+        "E213"
+      ],
+      "risk_level": "moderate",
+      "category": "preservative_artificial",
+      "notes": "A preservative that can form benzene, a known carcinogen, when combined with ascorbic acid (Vitamin C). Also linked to hyperactivity in children and inflammation.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_BHT",
+      "standard_name": "Butylated Hydroxytoluene (BHT)",
+      "aliases": [
+        "BHT",
+        "E321",
+        "2,6-ditertiary-butyl-4-methylphenol",
+        "2,6-di-tert-butyl-4-methylphenol"
+      ],
+      "risk_level": "moderate",
+      "category": "preservative_artificial",
+      "notes": "A petroleum-derived preservative that is a potential allergen and has been linked to liver, kidney, and thyroid issues in animal studies.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_CARAMEL_COLOR",
+      "standard_name": "Caramel Color",
+      "aliases": [
+        "E150a",
+        "E150b",
+        "E150c",
+        "E150d",
+        "caramel coloring",
+        "burnt sugar",
+        "ammonia caramel",
+        "sulfite caramel"
+      ],
+      "risk_level": "moderate",
+      "category": "colorant_artificial",
+      "notes": "Some types (Class III and IV) are produced with ammonia and may contain 4-methylimidazole (4-MEI), a potential carcinogen.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_MALTODEXTRIN",
+      "standard_name": "Maltodextrin",
+      "aliases": [
+        "maltodextrin",
+        "Corn Syrup Solids",
+        "tapioca maltodextrin",
+        "potato maltodextrin",
+        "rice maltodextrin",
+        "wheat maltodextrin"
+      ],
+      "risk_level": "moderate",
+      "category": "filler_sweetener",
+      "notes": "A highly processed powder used as a filler or carrier. It has a very high glycemic index, spiking blood sugar rapidly, and may negatively impact gut bacteria. Often derived from GMO corn.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_POLYSORBATE80",
+      "standard_name": "Polysorbate 80",
+      "aliases": [
+        "E433",
+        "Tween 80",
+        "Polyoxyethylene Sorbitan Monooleate",
+        "sorbitan monooleate ethoxylated",
+        "polysorbate 20",
+        "E432",
+        "polysorbate 60",
+        "E435"
+      ],
+      "risk_level": "moderate",
+      "category": "emulsifier",
+      "notes": "A synthetic emulsifier that may be contaminated with 1,4-dioxane (a carcinogen). It has been shown to harm the gut microbiome and is linked to inflammatory bowel disease.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_PROPYLENE_GLYCOL",
+      "standard_name": "Propylene Glycol",
+      "aliases": [
+        "E1520",
+        "1,2-Propanediol",
+        "PG",
+        "propane-1,2-diol",
+        "methylethyl glycol"
+      ],
+      "risk_level": "moderate",
+      "category": "solvent_humectant",
+      "notes": "A synthetic liquid used as a solvent and carrier, often for 'natural flavors'. It is a penetration enhancer and can cause allergic reactions. High doses can be toxic.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_MSG",
+      "standard_name": "Monosodium Glutamate (MSG)",
+      "aliases": [
+        "MSG",
+        "E621",
+        "Glutamic Acid",
+        "sodium glutamate",
+        "monosodium L-glutamate",
+        "accent",
+        "vetsin",
+        "disodium guanylate",
+        "E627",
+        "disodium inosinate",
+        "E631"
+      ],
+      "risk_level": "moderate",
+      "category": "flavor_enhancer",
+      "notes": "A flavor enhancer that acts as an excitotoxin in the brain. Can cause headaches, flushing, sweating, and neurological symptoms in sensitive individuals.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_SUGAR_ALCOHOLS",
+      "standard_name": "Sugar Alcohols (Polyols)",
+      "aliases": [
+        "sorbitol",
+        "mannitol",
+        "xylitol",
+        "maltitol",
+        "isomalt",
+        "lactitol",
+        "hydrogenated starch hydrolysates",
+        "polyols",
+        "sugar alcohol",
+        "D-sorbitol",
+        "D-mannitol"
+      ],
+      "risk_level": "low",
+      "category": "sweetener",
+      "notes": "Sweeteners that are not fully absorbed by the body. Can cause significant digestive issues like bloating, gas, and diarrhea, especially when consumed in moderate to large amounts.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_CROSCARMELLOSE_SODIUM",
+      "standard_name": "Croscarmellose Sodium",
+      "aliases": [
+        "croscarmellose sodium",
+        "E468",
+        "cross-linked sodium carboxymethyl cellulose",
+        "sodium croscarmellose",
+        "Ac-Di-Sol",
+        "modified cellulose gum"
+      ],
+      "risk_level": "low",
+      "category": "disintegrant",
+      "notes": "A 'superdisintegrant' that swells rapidly in water to help tablets and capsules break apart in the digestive system. It is a synthetic polymer (modified cellulose) that may cause bloating or other digestive issues in sensitive individuals.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_CROSPOVIDONE",
+      "standard_name": "Crospovidone",
+      "aliases": [
+        "crospovidone",
+        "E1202",
+        "cross-linked polyvinylpyrrolidone",
+        "PVPP",
+        "polyplasdone",
+        "kollidon CL"
+      ],
+      "risk_level": "low",
+      "category": "disintegrant",
+      "notes": "A synthetic polymer and 'superdisintegrant' used to promote rapid tablet dissolution. It is largely unabsorbed, but as a synthetic microplastic, some concerns exist about potential accumulation in tissues with long-term exposure.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_PROPRIETARY_FLAVORS",
+      "standard_name": "Proprietary Flavors",
+      "aliases": [
+        "natural flavors",
+        "natural flavor",
+        "artificial flavors",
+        "natural and artificial flavors",
+        "Artificial flavor agent",
+        "flavoring",
+        "spice extracts",
+        "natural essence",
+        "botanical extracts",
+        "french vanilla flavor",
+        "masking flavor"
+      ],
+      "risk_level": "low",
+      "category": "flavoring",
+      "notes": "A proprietary mixture of chemicals. The term 'natural flavor' can hide hundreds of ingredients, including solvents like propylene glycol or allergens, without specific disclosure.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_CELLULOSE_DERIVATIVES",
+      "standard_name": "Cellulose & Derivatives",
+      "aliases": [
+        "cellulose",
+        "microcrystalline cellulose",
+        "plant cellulose",
+        "vegetable cellulose",
+        "MCC",
+        "powdered cellulose",
+        "cellulose gel",
+        "E460",
+        "Wood Pulp",
+        "avicel"
+      ],
+      "risk_level": "low",
+      "category": "filler_binder",
+      "notes": "An indigestible fiber, often from refined wood pulp, used as a cheap bulking agent. It has no nutritional value and may cause digestive discomfort or interfere with nutrient absorption.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_MAGNESIUM_STEARATE",
+      "standard_name": "Magnesium Stearate",
+      "aliases": [
+        "magnesium stearate",
+        "vegetable magnesium stearate",
+        "magnesium stearate (vegetable)",
+        "mg stearate",
+        "E470b",
+        "E572",
+        "octadecanoic acid, magnesium salt",
+        "vegetable stearate",
+        "plant-based magnesium stearate"
+      ],
+      "risk_level": "low",
+      "category": "lubricant_flow_agent",
+      "notes": "A common manufacturing lubricant. Some concerns exist that it may form a biofilm in the gut or suppress T-cell function, though evidence is debated. Often derived from palm oil.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_SILICON_DIOXIDE",
+      "standard_name": "Silicon Dioxide (Silica)",
+      "aliases": [
+        "silica",
+        "silicon dioxide",
+        "colloidal silica",
+        "E551",
+        "fumed silica",
+        "precipitated silica",
+        "silica gel",
+        "SiO2",
+        "synthetic amorphous silica"
+      ],
+      "risk_level": "low",
+      "category": "anticaking_agent",
+      "notes": "Used as an anti-caking agent. While generally safe, concerns exist regarding nanoparticle forms, which may cross biological barriers. Distinct from harmful crystalline silica.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_LECITHIN",
+      "standard_name": "Lecithin (Soy)",
+      "aliases": [
+        "soy lecithin",
+        "lecithin",
+        "E322",
+        "phosphatidylcholine",
+        "phospholipids"
+      ],
+      "risk_level": "low",
+      "category": "emulsifier",
+      "notes": "An emulsifier typically extracted from soybeans. It is a major allergen and is often derived from genetically modified (GMO) soy unless specified otherwise.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_MODIFIED_STARCH",
+      "standard_name": "Modified Food Starch",
+      "aliases": [
+        "modified food starch",
+        "modified corn starch",
+        "modified tapioca starch",
+        "modified wheat starch",
+        "acetylated starch",
+        "hydroxypropyl starch",
+        "pregelatinized starch"
+      ],
+      "risk_level": "low",
+      "category": "filler_thickener",
+      "notes": "Starches that have been chemically or physically altered to improve function. The processing can introduce unknown contaminants and may involve chemicals.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_HONEY",
+      "standard_name": "Honey",
+      "aliases": [
+        "honey",
+        "raw honey",
+        "organic honey",
+        "manuka honey",
+        "honey powder",
+        "dehydrated honey"
+      ],
+      "risk_level": "low",
+      "category": "sweetener_natural",
+      "notes": "A natural sweetener, but it is still a form of sugar with a high fructose content that impacts blood sugar. Not suitable for infants under one year old.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_SODIUM_CITRATE",
+      "standard_name": "Sodium Citrate",
+      "aliases": [
+        "sodium citrate",
+        "trisodium citrate",
+        "citric acid sodium salt",
+        "E331",
+        "E331(iii)",
+        "sodium citrate dihydrate"
+      ],
+      "risk_level": "low",
+      "category": "buffer_acidity_regulator",
+      "notes": "Common food additive used to regulate acidity (buffer), stabilize, and sometimes emulsify. Generally recognized as safe (GRAS) at typical doses. High intake can add to sodium load—consider for those with hypertension or kidney disease.",
+      "last_updated": "2025-08-06"
+    },
+    {
+      "id": "ADD_TRISODIUM_CITRATE",
+      "standard_name": "Trisodium Citrate",
+      "aliases": [
+        "trisodium citrate",
+        "sodium citrate",
+        "E331",
+        "E331(iii)",
+        "trisodium citrate dihydrate"
+      ],
+      "risk_level": "low",
+      "category": "buffer_acidity_regulator",
+      "notes": "Buffer and acidity regulator commonly used in food and supplement formulations. Functionally equivalent to sodium citrate. Generally recognized as safe (GRAS) at normal doses, but adds to total sodium load.",
+      "last_updated": "2025-08-06"
+    },
+    {
+      "id": "ADD_ERYTHRITOL",
+      "standard_name": "Erythritol",
+      "aliases": [
+        "erythritol",
+        "meso-erythritol",
+        "polyol sweetener",
+        "zero-calorie sweetener"
+      ],
+      "risk_level": "low",
+      "category": "sweetener",
+      "notes": "A sugar alcohol used as a zero-calorie sweetener. Recent large-scale studies have linked it to an increased risk of heart attack and stroke. Can also cause digestive distress.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_STEVIA",
+      "standard_name": "Stevia & Stevia Extracts",
+      "aliases": [
+        "stevia",
+        "stevia rebaudiana leaf",
+        "organic stevia",
+        "stevia leaf powder",
+        "stevia extract",
+        "steviol glycosides",
+        "rebaudioside A",
+        "Reb A",
+        "Reb M",
+        "stevioside",
+        "truvia",
+        "purevia"
+      ],
+      "risk_level": "none",
+      "category": "sweetener_natural",
+      "notes": "Natural, calorie-free sweetener from the Stevia plant. Highly processed extracts are common. Generally recognized as safe (GRAS), but some people report a bitter aftertaste.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_MONK_FRUIT",
+      "standard_name": "Monk Fruit Extract",
+      "aliases": [
+        "monk fruit",
+        "luo han guo",
+        "siraitia grosvenorii",
+        "mogrosides",
+        "monk fruit sweetener"
+      ],
+      "risk_level": "none",
+      "category": "sweetener_natural",
+      "notes": "Natural, calorie-free sweetener derived from a small melon. Its sweetness comes from antioxidants called mogrosides. Generally recognized as safe (GRAS).",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_VEGETABLE_GLYCERIN",
+      "standard_name": "Vegetable Glycerin",
+      "aliases": [
+        "glycerin",
+        "glycerol",
+        "E422",
+        "vegetable glycerine",
+        "1,2,3-propanetriol"
+      ],
+      "risk_level": "none",
+      "category": "humectant_solvent",
+      "notes": "A sugar alcohol used as a humectant (retains moisture), solvent, and sweetener. Generally recognized as safe (GRAS). Can be contaminated with diethylene glycol if not properly sourced.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_CITRIC_ACID",
+      "standard_name": "Citric Acid",
+      "aliases": [
+        "E330",
+        "citric acid anhydrous",
+        "citric acid monohydrate",
+        "sour salt"
+      ],
+      "risk_level": "none",
+      "category": "preservative_acidity_regulator",
+      "notes": "Used as a preservative and pH adjuster. While naturally found in citrus, the commercial form is typically derived from fermented mold (Aspergillus niger), which can cause inflammatory reactions in sensitive individuals.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_NATURAL_PRESERVATIVES",
+      "standard_name": "Natural Preservatives",
+      "aliases": [
+        "ascorbyl palmitate",
+        "vitamin C ester",
+        "E304",
+        "mixed tocopherols",
+        "natural vitamin E",
+        "E306",
+        "rosemary extract"
+      ],
+      "risk_level": "none",
+      "category": "preservative_natural",
+      "notes": "Antioxidants used to prevent spoilage, such as fat-soluble Vitamin C (ascorbyl palmitate) or Vitamin E (tocopherols). Generally recognized as safe (GRAS) and beneficial.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_NATURAL_GUMS",
+      "standard_name": "Natural Gums",
+      "aliases": [
+        "gum acacia",
+        "acacia gum",
+        "gum arabic",
+        "E414",
+        "xanthan gum",
+        "E415",
+        "guar gum",
+        "E412",
+        "locust bean gum",
+        "E410",
+        "gellan gum",
+        "E418"
+      ],
+      "risk_level": "none",
+      "category": "thickener_stabilizer",
+      "notes": "Natural gums used as thickeners, binders, and stabilizers. Generally safe and can be a source of dietary fiber, but may cause bloating or gas in some individuals.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_AGAR",
+      "standard_name": "Agar",
+      "aliases": [
+        "agar",
+        "agar agar",
+        "E406",
+        "Japanese gelatin",
+        "kanten",
+        "vegetable gelatin",
+        "Ceylon moss",
+        "Japanese isinglass",
+        "Gelidium jelly"
+      ],
+      "risk_level": "none",
+      "category": "thickener_stabilizer",
+      "notes": "A natural thickening and gelling agent derived from red algae. Generally recognized as safe (GRAS) and commonly used as a vegan alternative to gelatin. May provide beneficial dietary fiber but can cause bloating in sensitive individuals.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_FRUIT_VEG_POWDERS",
+      "standard_name": "Fruit & Vegetable Powders",
+      "aliases": [
+        "cherry powder",
+        "berry powder",
+        "beet juice powder",
+        "beet powder",
+        "carrot powder",
+        "spinach powder",
+        "annatto",
+        "turmeric",
+        "paprika",
+        "spirulina",
+        "black carrot extract",
+        "natural color",
+        "Beta-Carotene"
+      ],
+      "risk_level": "none",
+      "category": "colorant_flavoring_natural",
+      "notes": "Dehydrated and powdered plants used for natural color and flavor. Generally safe and may provide some antioxidant benefits. A clean-label alternative to artificial dyes.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "ADD_VANILLIN",
+      "standard_name": "Vanillin",
+      "aliases": [
+        "vanillin",
+        "synthetic vanilla",
+        "artificial vanilla flavor",
+        "methyl vanillin",
+        "E905",
+        "4-hydroxy-3-methoxybenzaldehyde"
+      ],
+      "risk_level": "none",
+      "category": "flavoring",
+      "notes": "A synthetic form of vanilla flavoring. While generally recognized as safe, it's important to distinguish it from natural vanilla extract.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_SODIUM_BICARBONATE",
+      "standard_name": "Sodium Bicarbonate",
+      "aliases": [
+        "baking soda",
+        "sodium hydrogen carbonate",
+        "bicarbonate of soda",
+        "E500(ii)",
+        "sodium acid carbonate",
+        "NaHCO3"
+      ],
+      "risk_level": "none",
+      "category": "buffer_acidity_regulator",
+      "notes": "A pH regulator and buffer commonly used in food and supplements. Generally recognized as safe (GRAS) with a long history of use.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_SODIUM_CARBONATE",
+      "standard_name": "Sodium Carbonate",
+      "aliases": [
+        "soda ash",
+        "washing soda",
+        "E500",
+        "Na2CO3",
+        "disodium carbonate",
+        "carbonic acid disodium salt"
+      ],
+      "risk_level": "none",
+      "category": "buffer_acidity_regulator",
+      "notes": "An alkalizing agent and pH regulator. Generally recognized as safe (GRAS) when used as a food additive.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_NICKEL",
+      "standard_name": "Nickel & Nickel Compounds",
+      "aliases": [
+        "nickel",
+        "Ni",
+        "nickel sulfate",
+        "NiSO4",
+        "nickel chloride",
+        "NiCl2",
+        "nickel oxide",
+        "NiO",
+        "nickel salts",
+        "nickel(II) compounds",
+        "soluble nickel"
+      ],
+      "risk_level": "high",
+      "category": "heavy_metal_contaminant",
+      "notes": "A heavy metal contaminant that can cause allergic reactions and is a known carcinogen. Common in soil and can accumulate in botanical ingredients. Nickel sulfate is particularly concerning due to its high solubility and bioavailability.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_TIN",
+      "standard_name": "Tin & Tin Compounds",
+      "aliases": [
+        "tin",
+        "Sn",
+        "stannous chloride",
+        "tin(II) chloride",
+        "SnCl2",
+        "tin oxide",
+        "SnO2",
+        "tin salts",
+        "stannous compounds",
+        "tin(II) compounds",
+        "tin(IV) compounds"
+      ],
+      "risk_level": "high",
+      "category": "heavy_metal_contaminant",
+      "notes": "A heavy metal that can contaminate supplements, particularly those sourced from regions with industrial pollution. Can cause gastrointestinal issues and potentially affect nervous system function.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_CADMIUM",
+      "standard_name": "Cadmium & Cadmium Compounds",
+      "aliases": [
+        "cadmium",
+        "Cd",
+        "cadmium chloride",
+        "CdCl2",
+        "cadmium oxide",
+        "CdO",
+        "cadmium sulfate",
+        "CdSO4",
+        "cadmium salts",
+        "cadmium(II) compounds"
+      ],
+      "risk_level": "high",
+      "category": "heavy_metal_contaminant",
+      "notes": "A highly toxic heavy metal that can accumulate in the body, particularly in kidneys and bones. Common contaminant in botanical supplements, especially those grown in polluted soils.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_ARSENIC",
+      "standard_name": "Arsenic & Arsenic Compounds",
+      "aliases": [
+        "arsenic",
+        "As",
+        "inorganic arsenic",
+        "arsenic trioxide",
+        "As2O3",
+        "arsenite",
+        "arsenate",
+        "arsenic acid",
+        "arsenic salts",
+        "arsenic(III) compounds",
+        "arsenic(V) compounds"
+      ],
+      "risk_level": "high",
+      "category": "heavy_metal_contaminant",
+      "notes": "A toxic metalloid that can be present in both organic and inorganic forms. Inorganic arsenic is particularly dangerous and is classified as a known human carcinogen. Can contaminate botanical supplements, particularly those from contaminated growing areas.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_MERCURY",
+      "standard_name": "Mercury & Mercury Compounds",
+      "aliases": [
+        "mercury",
+        "Hg",
+        "methylmercury",
+        "mercury chloride",
+        "HgCl2",
+        "mercuric oxide",
+        "HgO",
+        "mercury salts",
+        "mercury(II) compounds",
+        "organic mercury",
+        "mercury contamination"
+      ],
+      "risk_level": "high",
+      "category": "heavy_metal_contaminant",
+      "notes": "A highly toxic heavy metal that can cause severe neurological damage. Can be present in fish oil supplements and botanical products, particularly those sourced from contaminated waters or soils.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_ANTIMONY",
+      "standard_name": "Antimony & Antimony Compounds",
+      "aliases": [
+        "antimony",
+        "Sb",
+        "antimony trioxide",
+        "Sb2O3",
+        "antimony pentoxide",
+        "Sb2O5",
+        "antimony trichloride",
+        "SbCl3",
+        "antimony salts",
+        "antimony(III) compounds",
+        "antimony(V) compounds"
+      ],
+      "risk_level": "high",
+      "category": "heavy_metal_contaminant",
+      "notes": "A toxic metalloid that can contaminate supplements, particularly those containing botanical ingredients. Can cause respiratory, cardiovascular, and gastrointestinal problems.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "ADD_SODIUM_LAURYL_SULFATE",
+      "standard_name": "Sodium Lauryl Sulfate",
+      "aliases": [
+        "SLS",
+        "sodium dodecyl sulfate",
+        "sodium lauryl sulphate",
+        "dodecyl sodium sulfate",
+        "sodium n-dodecyl sulfate",
+        "lauryl sodium sulfate",
+        "sodium dodecyl sulphate"
+      ],
+      "risk_level": "moderate_high",
+      "category": "emulsifier_surfactant",
+      "notes": "A synthetic emulsifier and surfactant that can cause skin and gastrointestinal irritation. May disrupt the gut microbiome and cause digestive issues in sensitive individuals.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "id": "ADD_CUPRIC_SULFATE",
+      "standard_name": "Cupric Sulfate",
+      "aliases": [
+        "copper sulfate",
+        "copper(II) sulfate",
+        "cupric sulphate",
+        "blue vitriol",
+        "copper sulfate pentahydrate",
+        "CuSO4"
+      ],
+      "risk_level": "moderate",
+      "category": "mineral_synthetic",
+      "notes": "While copper is an essential mineral, cupric sulfate is a synthetic form that can be toxic in high doses. Often used as a copper source but can be problematic for some individuals.",
+      "last_updated": "2025-08-15"
+    }
+  ]
+}

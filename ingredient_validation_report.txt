@@ -1,0 +1,28 @@
+============================================================
+INGREDIENT DATA VALIDATION REPORT
+============================================================
+
+Harmful Additives: 62
+Passive Ingredients: 71
+Errors Found: 0
+Warnings Found: 9
+
+WARNINGS:
+--------------------
+⚠️  Found 19 overlapping ingredients: ['artificial vanilla flavor', 'avicel', 'cellulose gel', 'colloidal silica', 'e322', 'e460', 'e551', 'honey', 'lecithin (soy)', 'magnesium stearate', 'mcc', 'microcrystalline cellulose', 'organic honey', 'phosphatidylcholine', 'plant-based magnesium stearate', 'silica', 'silicon dioxide', 'soy lecithin', 'vegetable magnesium stearate']
+⚠️  Potential category duplicates found: [('sweetener_artificial', 'sweetener_artificial_intensive'), ('sweetener', 'filler_sweetener'), ('sweetener', 'sweetener_natural'), ('sweetener', 'sweetener_artificial_intensive'), ('emulsifier', 'emulsifier_synthetic')]
+⚠️  Found 53 duplicate aliases across files
+⚠️  Duplicate alias 'tartrazine' in: ['harmful:ADD_YELLOW5', 'harmful:ADD_YELLOW_5']
+⚠️  Duplicate alias 'e102' in: ['harmful:ADD_YELLOW5', 'harmful:ADD_YELLOW_5']
+⚠️  Duplicate alias 'fd&c yellow no. 5' in: ['harmful:ADD_YELLOW5', 'harmful:ADD_YELLOW_5']
+⚠️  Duplicate alias 'ci 19140' in: ['harmful:ADD_YELLOW5', 'harmful:ADD_YELLOW_5']
+⚠️  Duplicate alias 'e110' in: ['harmful:ADD_YELLOW6', 'harmful:ADD_YELLOW_6']
+⚠️  Erythritol classified as 'low' - recent studies suggest 'moderate'
+
+RECOMMENDATIONS:
+--------------------
+• Review warnings and implement fixes as needed
+• Consider implementing automated data quality checks
+• Schedule regular data audits
+
+============================================================

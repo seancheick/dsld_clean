@@ -1,0 +1,27 @@
+2025-08-04 20:18:25 - dsld_cleaner - INFO - ============================================================
+2025-08-04 20:18:25 - dsld_cleaner - INFO - DSLD Data Cleaning Pipeline Starting
+2025-08-04 20:18:25 - dsld_cleaner - INFO - ============================================================
+2025-08-04 20:18:25 - dsld_cleaner - INFO - Started at: 2025-08-04 20:18:25
+2025-08-04 20:18:25 - dsld_cleaner - INFO - Validating configuration...
+2025-08-04 20:18:25 - dsld_cleaner - INFO - Configuration validation passed
+2025-08-04 20:30:10 - dsld_cleaner - INFO - ============================================================
+2025-08-04 20:30:10 - dsld_cleaner - INFO - PROCESSING COMPLETE
+2025-08-04 20:30:10 - dsld_cleaner - INFO - ============================================================
+2025-08-04 20:30:10 - dsld_cleaner - INFO - Ended at: 2025-08-04 20:30:10
+2025-08-04 20:30:10 - dsld_cleaner - INFO - Total duration: 0:11:45.342624
+2025-08-04 20:30:10 - dsld_cleaner - INFO - Files processed: 962
+2025-08-04 20:30:10 - dsld_cleaner - INFO - Success rate: 91.2%
+2025-08-04 20:30:10 - dsld_cleaner - INFO - 
+2025-08-04 20:30:10 - dsld_cleaner - INFO - Results:
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Cleaned: 877
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Needs review: 81
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Incomplete: 0
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Errors: 4
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Unmapped ingredients: 113
+2025-08-04 20:30:10 - dsld_cleaner - INFO - 
+2025-08-04 20:30:10 - dsld_cleaner - INFO - Output files saved to:
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Cleaned products: output/cleaned
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Needs review: output/needs_review
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Incomplete: output/incomplete
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Unmapped ingredients: output/unmapped
+2025-08-04 20:30:10 - dsld_cleaner - INFO -   - Processing report: output/reports

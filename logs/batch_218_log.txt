@@ -1,0 +1,6 @@
+2025-08-04 20:29:02,800 - INFO - === Batch 218 Processing Log ===
+2025-08-04 20:29:02,800 - INFO - Started: 2025-08-04 20:29:02
+2025-08-04 20:29:02,800 - INFO - Files: 7277.json to 7292.json
+2025-08-04 20:29:04,954 - INFO - Ended: 2025-08-04 20:29:04
+2025-08-04 20:29:04,954 - INFO - Summary: {'batch_num': 218, 'processed': 4, 'cleaned': 2, 'needs_review': 2, 'incomplete': 0, 'errors': 0, 'processing_time': 2.1541500091552734, 'avg_time_per_file': 0.5385375022888184}
+2025-08-04 20:29:04,954 - INFO - Unmapped ingredients: 1

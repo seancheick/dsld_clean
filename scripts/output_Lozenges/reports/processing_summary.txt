@@ -1,0 +1,33 @@
+DSLD Data Cleaning Processing Report
+==================================================
+
+Generated: 2025-08-16 14:56:26
+Total Files Processed: 962
+Processing Time: 4.75 minutes
+
+Results Summary:
+  - Successfully cleaned: 958
+  - Needs review: 0
+  - Incomplete: 0
+  - Errors: 4
+  - Success rate: 99.6%
+
+Unmapped ingredients found: 103
+
+Top 10 Unmapped Ingredients (for enrichment planning):
+   28x Contains <2% of:
+   15x Contains <2% of
+    4x Acid Comfort
+    4x Enzymax
+    3x Orange crystals
+    3x patented nano-Silver solution
+    3x Directline Technology
+    3x Disodium EDTA
+    3x AstraGin
+    3x Eucalyptus
+
+💡 These ingredients should be prioritized for database enrichment
+
+Batch Details:
+  Batch 1: 497 cleaned, 0 review, 0 incomplete, 3 errors (148.3s)
+  Batch 2: 461 cleaned, 0 review, 0 incomplete, 1 errors (136.6s)

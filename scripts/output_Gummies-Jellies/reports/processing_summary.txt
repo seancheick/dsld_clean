@@ -1,0 +1,40 @@
+DSLD Data Cleaning Processing Report
+==================================================
+
+Generated: 2025-08-14 22:48:50
+Total Files Processed: 4294
+Processing Time: 29.21 minutes
+
+Results Summary:
+  - Successfully cleaned: 4284
+  - Needs review: 0
+  - Incomplete: 0
+  - Errors: 10
+  - Success rate: 99.8%
+
+Unmapped ingredients found: 606
+
+Top 10 Unmapped Ingredients (for enrichment planning):
+  242x Less than 2% of
+  177x Palm Oil
+  173x Apple
+  127x Contains <2% of:
+  117x Contains <2% of
+  111x Less than 2% of:
+  108x Pineapple
+   83x Papaya
+   69x Cannabidiol
+   63x Fruit juice
+
+💡 These ingredients should be prioritized for database enrichment
+
+Batch Details:
+  Batch 1: 500 cleaned, 0 review, 0 incomplete, 0 errors (187.0s)
+  Batch 2: 497 cleaned, 0 review, 0 incomplete, 3 errors (175.0s)
+  Batch 3: 499 cleaned, 0 review, 0 incomplete, 1 errors (224.0s)
+  Batch 4: 500 cleaned, 0 review, 0 incomplete, 0 errors (201.3s)
+  Batch 5: 499 cleaned, 0 review, 0 incomplete, 1 errors (207.6s)
+  Batch 6: 499 cleaned, 0 review, 0 incomplete, 1 errors (203.8s)
+  Batch 7: 498 cleaned, 0 review, 0 incomplete, 2 errors (244.6s)
+  Batch 8: 499 cleaned, 0 review, 0 incomplete, 1 errors (195.8s)
+  Batch 9: 293 cleaned, 0 review, 0 incomplete, 1 errors (113.4s)

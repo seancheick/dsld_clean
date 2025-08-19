@@ -1,0 +1,216 @@
+{
+  "Vitamin D3": {
+    "capsule": {
+      "amount": 1000,
+      "unit": "IU",
+      "notes": "Common strength for Vitamin D3 capsules"
+    },
+    "softgel": {
+      "amount": 2000,
+      "unit": "IU",
+      "notes": "Common strength for Vitamin D3 softgels"
+    },
+    "tablet": {
+      "amount": 5000,
+      "unit": "IU",
+      "notes": "Higher strength for Vitamin D3 tablets"
+    },
+    "drop": {
+      "amount": 1000,
+      "unit": "IU",
+      "notes": "Common strength per drop for liquid D3"
+    },
+    "spray": {
+      "amount": 1000,
+      "unit": "IU",
+      "notes": "Common strength per spray for liquid D3"
+    }
+  },
+  "Omega-3 Fish Oil": {
+    "softgel": {
+      "amount": 1000,
+      "unit": "mg",
+      "notes": "Common strength for standard fish oil softgels (total omega-3s)"
+    },
+    "capsule": {
+      "amount": 1200,
+      "unit": "mg",
+      "notes": "Higher strength fish oil capsules (total omega-3s)"
+    },
+    "tsp": {
+      "amount": 5000,
+      "unit": "mg",
+      "notes": "Common strength per teaspoon for liquid fish oil"
+    }
+  },
+  "Turmeric Curcumin": {
+    "capsule": {
+      "amount": 500,
+      "unit": "mg",
+      "notes": "Common strength for curcumin capsules"
+    },
+    "tablet": {
+      "amount": 750,
+      "unit": "mg",
+      "notes": "Higher strength curcumin tablets"
+    },
+    "serving": {
+      "amount": 500,
+      "unit": "mg",
+      "notes": "Generic serving for powders/extracts"
+    }
+  },
+  "Magnesium": {
+    "capsule": {
+      "amount": 100,
+      "unit": "mg",
+      "notes": "Common strength for magnesium capsules (elemental magnesium)"
+    },
+    "tablet": {
+      "amount": 200,
+      "unit": "mg",
+      "notes": "Common strength for magnesium tablets (elemental magnesium)"
+    },
+    "powder": {
+      "amount": 300,
+      "unit": "mg",
+      "notes": "Common strength per scoop/serving for magnesium powder"
+    }
+  },
+  "Probiotic": {
+    "capsule": {
+      "amount": 10000000000,
+      "unit": "CFU",
+      "notes": "Common strength (10 Billion CFU)"
+    },
+    "tablet": {
+      "amount": 5000000000,
+      "unit": "CFU",
+      "notes": "Common strength (5 Billion CFU)"
+    },
+    "billion cfu": {
+      "amount": 1000000000,
+      "unit": "CFU",
+      "notes": "1 Billion CFU (for raw input)"
+    },
+    "cfu": { "amount": 1, "unit": "CFU", "notes": "Raw CFU unit" }
+  },
+  "Multivitamin": {
+    "tablet": {
+      "amount": 1,
+      "unit": "serving",
+      "notes": "Typically 1 tablet per serving"
+    },
+    "capsule": {
+      "amount": 1,
+      "unit": "serving",
+      "notes": "Typically 1 capsule per serving"
+    },
+    "gummy": {
+      "amount": 1,
+      "unit": "serving",
+      "notes": "Typically 1 gummy per serving"
+    }
+  },
+  "Vitamin C": {
+    "capsule": {
+      "amount": 500,
+      "unit": "mg",
+      "notes": "Common strength for Vitamin C capsules"
+    },
+    "tablet": {
+      "amount": 1000,
+      "unit": "mg",
+      "notes": "Higher strength for Vitamin C tablets"
+    },
+    "powder": {
+      "amount": 1000,
+      "unit": "mg",
+      "notes": "Common strength per scoop for Vitamin C powder"
+    }
+  },
+  "CoQ10": {
+    "softgel": {
+      "amount": 100,
+      "unit": "mg",
+      "notes": "Common strength for CoQ10 softgels"
+    },
+    "capsule": {
+      "amount": 200,
+      "unit": "mg",
+      "notes": "Higher strength CoQ10 capsules"
+    }
+  },
+  "Iron": {
+    "tablet": {
+      "amount": 18,
+      "unit": "mg",
+      "notes": "Common strength for elemental iron tablets"
+    },
+    "capsule": {
+      "amount": 25,
+      "unit": "mg",
+      "notes": "Common strength for elemental iron capsules"
+    }
+  },
+  "Calcium": {
+    "tablet": {
+      "amount": 500,
+      "unit": "mg",
+      "notes": "Common strength for elemental calcium tablets"
+    },
+    "capsule": {
+      "amount": 250,
+      "unit": "mg",
+      "notes": "Common strength for elemental calcium capsules"
+    }
+  },
+  "Zinc": {
+    "capsule": {
+      "amount": 15,
+      "unit": "mg",
+      "notes": "Common strength for elemental zinc capsules"
+    },
+    "lozenge": {
+      "amount": 10,
+      "unit": "mg",
+      "notes": "Common strength for zinc lozenges"
+    }
+  },
+  "Biotin": {
+    "capsule": {
+      "amount": 5000,
+      "unit": "mcg",
+      "notes": "Common strength for biotin capsules"
+    },
+    "tablet": {
+      "amount": 10000,
+      "unit": "mcg",
+      "notes": "Higher strength for biotin tablets"
+    }
+  },
+  "Creatine": {
+    "scoop": {
+      "amount": 5,
+      "unit": "g",
+      "notes": "Common strength for creatine powder scoop"
+    },
+    "capsule": {
+      "amount": 750,
+      "unit": "mg",
+      "notes": "Common strength per creatine capsule"
+    }
+  },
+  "Protein Powder": {
+    "scoop": {
+      "amount": 25,
+      "unit": "g",
+      "notes": "Common strength per protein scoop"
+    },
+    "serving": {
+      "amount": 25,
+      "unit": "g",
+      "notes": "Generic serving for protein powder"
+    }
+  }
+}

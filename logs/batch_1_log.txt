@@ -1,0 +1,54 @@
+2025-07-27 19:37:14,805 - INFO - === Batch 1 Processing Log ===
+2025-07-27 19:37:14,805 - INFO - Started: 2025-07-27 19:37:14
+2025-07-27 19:37:14,805 - INFO - Files: D3+K2-2025-07-23T20_35_37.522Z.json to Zinc Lozenges Wild Berry Flavored-2025-07-23T20_22_21.209Z.json
+2025-07-27 19:37:25,044 - INFO - Ended: 2025-07-27 19:37:25
+2025-07-27 19:37:25,044 - INFO - Summary: {'batch_num': 1, 'processed': 4, 'cleaned': 3, 'needs_review': 1, 'incomplete': 0, 'errors': 0, 'processing_time': 10.238888025283813, 'avg_time_per_file': 2.5597220063209534}
+2025-07-27 19:37:25,044 - INFO - Unmapped ingredients: 5
+2025-07-27 19:48:47,442 - INFO - === Batch 1 Processing Log ===
+2025-07-27 19:48:47,442 - INFO - Started: 2025-07-27 19:48:47
+2025-07-27 19:48:47,442 - INFO - Files: D3+K2-2025-07-23T20_35_37.522Z.json to Zinc Lozenges Wild Berry Flavored-2025-07-23T20_22_21.209Z.json
+2025-07-27 19:48:57,725 - INFO - Ended: 2025-07-27 19:48:57
+2025-07-27 19:48:57,725 - INFO - Summary: {'batch_num': 1, 'processed': 4, 'cleaned': 3, 'needs_review': 1, 'incomplete': 0, 'errors': 0, 'processing_time': 10.282706022262573, 'avg_time_per_file': 2.5706765055656433}
+2025-07-27 19:48:57,725 - INFO - Unmapped ingredients: 4
+2025-07-27 20:00:40,386 - INFO - === Batch 1 Processing Log ===
+2025-07-27 20:00:40,386 - INFO - Started: 2025-07-27 20:00:40
+2025-07-27 20:00:40,386 - INFO - Files: D3+K2-2025-07-23T20_35_37.522Z.json to Zinc Lozenges Wild Berry Flavored-2025-07-23T20_22_21.209Z.json
+2025-07-27 20:00:50,817 - INFO - Ended: 2025-07-27 20:00:50
+2025-07-27 20:00:50,818 - INFO - Summary: {'batch_num': 1, 'processed': 4, 'cleaned': 4, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 10.431837797164917, 'avg_time_per_file': 2.6079594492912292}
+2025-07-27 20:00:50,818 - INFO - Unmapped ingredients: 4
+2025-07-27 20:01:59,028 - INFO - === Batch 1 Processing Log ===
+2025-07-27 20:01:59,028 - INFO - Started: 2025-07-27 20:01:59
+2025-07-27 20:01:59,028 - INFO - Files: D3+K2-2025-07-23T20_35_37.522Z.json to Zinc Lozenges Wild Berry Flavored-2025-07-23T20_22_21.209Z.json
+2025-07-27 20:02:09,511 - INFO - Ended: 2025-07-27 20:02:09
+2025-07-27 20:02:09,511 - INFO - Summary: {'batch_num': 1, 'processed': 4, 'cleaned': 4, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 10.482820272445679, 'avg_time_per_file': 2.6207050681114197}
+2025-07-27 20:02:09,511 - INFO - Unmapped ingredients: 4
+2025-07-27 20:05:41,497 - INFO - === Batch 1 Processing Log ===
+2025-07-27 20:05:41,498 - INFO - Started: 2025-07-27 20:05:41
+2025-07-27 20:05:41,498 - INFO - Files: D3+K2-2025-07-23T20_35_37.522Z.json to Zinc Lozenges Wild Berry Flavored-2025-07-23T20_22_21.209Z.json
+2025-07-27 20:05:51,740 - INFO - Ended: 2025-07-27 20:05:51
+2025-07-27 20:05:51,740 - INFO - Summary: {'batch_num': 1, 'processed': 4, 'cleaned': 4, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 10.242887020111084, 'avg_time_per_file': 2.560721755027771}
+2025-07-27 20:05:51,740 - INFO - Unmapped ingredients: 4
+2025-07-27 20:16:07,198 - INFO - === Batch 1 Processing Log ===
+2025-07-27 20:16:07,198 - INFO - Started: 2025-07-27 20:16:07
+2025-07-27 20:16:07,198 - INFO - Files: D3+K2-2025-07-23T20_35_37.522Z.json to Zinc Lozenges Wild Berry Flavored-2025-07-23T20_22_21.209Z.json
+2025-07-27 20:16:17,553 - INFO - Ended: 2025-07-27 20:16:17
+2025-07-27 20:16:17,553 - INFO - Summary: {'batch_num': 1, 'processed': 4, 'cleaned': 4, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 10.355865001678467, 'avg_time_per_file': 2.5889662504196167}
+2025-07-27 20:16:17,554 - INFO - Unmapped ingredients: 2
+2025-07-27 20:16:51,891 - INFO - === Batch 1 Processing Log ===
+2025-07-27 20:16:51,891 - INFO - Started: 2025-07-27 20:16:51
+2025-07-27 20:16:51,891 - INFO - Files: D3+K2-2025-07-23T20_35_37.522Z.json to Zinc Lozenges Wild Berry Flavored-2025-07-23T20_22_21.209Z.json
+2025-07-27 20:17:02,141 - INFO - Ended: 2025-07-27 20:17:02
+2025-07-27 20:17:02,141 - INFO - Summary: {'batch_num': 1, 'processed': 4, 'cleaned': 4, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 10.250030994415283, 'avg_time_per_file': 2.562507748603821}
+2025-07-27 20:17:02,141 - INFO - Unmapped ingredients: 2
+2025-08-04 16:44:00,888 - INFO - === Batch 1 Processing Log ===
+2025-08-04 16:44:00,889 - INFO - Started: 2025-08-04 16:44:00
+2025-08-04 16:44:00,889 - INFO - Files: 10040.json to 10042.json
+2025-08-04 16:44:02,214 - INFO - Ended: 2025-08-04 16:44:02
+2025-08-04 16:44:02,214 - INFO - Summary: {'batch_num': 1, 'processed': 2, 'cleaned': 2, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 1.3258869647979736, 'avg_time_per_file': 0.6629434823989868}
+2025-08-04 16:44:02,214 - INFO - Unmapped ingredients: 0
+2025-08-04 20:18:25,270 - INFO - === Batch 1 Processing Log ===
+2025-08-04 20:18:25,271 - INFO - Started: 2025-08-04 20:18:25
+2025-08-04 20:18:25,271 - INFO - Files: 10040.json to 10135.json
+2025-08-04 20:18:28,261 - INFO - Ended: 2025-08-04 20:18:28
+2025-08-04 20:18:28,261 - INFO - Summary: {'batch_num': 1, 'processed': 4, 'cleaned': 4, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 2.993086099624634, 'avg_time_per_file': 0.7482715249061584}
+2025-08-04 20:18:28,261 - INFO - Unmapped ingredients: 1

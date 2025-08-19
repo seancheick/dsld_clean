@@ -1,0 +1,624 @@
+{
+  "database_info": {
+    "version": "2.0.2",
+    "last_updated": "2025-07-24",
+    "max_penalty_points": 10,
+    "penalty_policy": "Only one penalty applied per proprietary blend instance: no disclosure (-10) or partial disclosure (-5)."
+  },
+
+  "proprietary_blend_concerns": [
+    {
+      "id": "BLEND_STIMULANT",
+      "standard_name": "Stimulant Blends",
+      "red_flag_terms": [
+        "energy blend",
+        "thermogenic matrix",
+        "focus blend",
+        "proprietary stimulant complex",
+        "energy complex",
+        "alertness blend",
+        "focus complex",
+        "focus blend",
+        "Cardio Support Blend",
+        "pre-workout blend",
+        "cardio matrix",
+        "pre-workout matrix",
+        "stimulant complex",
+        "metabolic accelerator",
+        "fat burning matrix",
+        "energy booster blend",
+        "caffeine complex",
+        "performance blend",
+        "invigorating matrix",
+        "adrenal drive complex",
+        "rush complex",
+        "explosive energy blend"
+      ],
+      "risk_factors": [
+        "Hidden caffeine doses",
+        "Undisclosed stimulants",
+        "Synergistic effects",
+        "Cardiovascular stress"
+      ],
+      "severity_level": "high",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No precise dosage disclosure of blend ingredients, creating safety and dosing concerns."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial dosage disclosure, but some blend components remain unspecified, reducing transparency."
+        }
+      ],
+      "notes": "Stimulant blends often hide dangerous stimulant combinations. Avoid products with undisclosed stimulant amounts.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_TESTOSTERONE",
+      "standard_name": "Testosterone Support Blends",
+      "red_flag_terms": [
+        "testo blend",
+        "anabolic matrix",
+        "muscle enhancement complex",
+        "natural testosterone booster",
+        "male enhancement blend",
+        "hormone support complex",
+        "anabolic activator",
+        "test booster matrix",
+        "masculine enhancement",
+        "virility blend",
+        "power matrix",
+        "strength complex",
+        "testosterone amplifier",
+        "androgenic support blend"
+      ],
+      "risk_factors": [
+        "Hidden prohormones",
+        "Unlisted SARMs",
+        "Hormone disruptors",
+        "Liver toxicity"
+      ],
+      "severity_level": "critical",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No dosage disclosure in testosterone or hormone support blends; unsafe due to possible banned substances."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial dosage disclosed; some blend ingredients still undisclosed affecting safety evaluation."
+        }
+      ],
+      "notes": "High risk for contamination with banned anabolic agents. Many muscle-building supplements contain undeclared steroids.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_WEIGHT_LOSS",
+      "standard_name": "Weight Loss Blends",
+      "red_flag_terms": [
+        "fat burner complex",
+        "lipotropic blend",
+        "thermogenic matrix",
+        "metabolic booster",
+        "appetite suppressant blend",
+        "carb blocker complex",
+        "fat metabolizer",
+        "slimming matrix",
+        "weight management blend",
+        "metabolism activator",
+        "fat oxidizer complex",
+        "lean body matrix",
+        "cutting blend",
+        "shred matrix",
+        "waist trimmer complex",
+        "weight cutter blend"
+      ],
+      "risk_factors": [
+        "Hidden stimulants",
+        "Banned weight loss drugs",
+        "Dangerous combinations",
+        "Cardiovascular risks"
+      ],
+      "severity_level": "critical",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No dosage information provided for weight loss blend ingredients, increasing risk of harmful hidden drugs."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial disclosure of blend ingredients; some remain undisclosed, limiting safety assessment."
+        }
+      ],
+      "notes": "A significant portion of weight loss supplements contain undeclared drugs. Sibutramine is a common adulterant.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_NOOTROPIC",
+      "standard_name": "Cognitive Enhancement Blends",
+      "red_flag_terms": [
+        "brain blend",
+        "cognitive matrix",
+        "nootropic complex",
+        "mental performance blend",
+        "focus enhancer",
+        "memory booster complex",
+        "brain power matrix",
+        "neuro blend",
+        "cognitive support complex",
+        "mental clarity blend",
+        "brain health matrix",
+        "intelligence booster",
+        "mind boost blend",
+        "neuro support complex",
+        "smart supplement matrix"
+      ],
+      "risk_factors": [
+        "Hidden pharmaceuticals",
+        "Prescription drugs",
+        "Unregulated compounds",
+        "Neurological effects"
+      ],
+      "severity_level": "high",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No precise dosage data for nootropic blends may hide potent pharmaceuticals, risking user safety."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial disclosure; some ingredients of nootropic blends undisclosed, limiting risk evaluation."
+        }
+      ],
+      "notes": "Increasing contamination of cognitive blends with pharmaceutical nootropics such as modafinil and racetams.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_PUMP",
+      "standard_name": "Pump & Nitric Oxide Blends",
+      "red_flag_terms": [
+        "pump matrix",
+        "vaso blend",
+        "vasodilation complex",
+        "NO booster blend",
+        "nitric oxide blend",
+        "vascular support matrix",
+        "plasma expander complex",
+        "muscle volumizer matrix"
+      ],
+      "risk_factors": [
+        "Hidden vasodilators",
+        "Excessive nitrates",
+        "Fluid/sodium balance risk"
+      ],
+      "severity_level": "moderate",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No ingredient dose data in pump blends can hide performance enhancers or sodium excess."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Only some blend ingredient doses shown, challenging full safety and efficacy assessment."
+        }
+      ],
+      "notes": "‘Pump’ blends often combine nitrates, sodium, and amino acids for effect, often without full labeling.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_ADAPTOGEN",
+      "standard_name": "Adaptogen & Stress Blends",
+      "red_flag_terms": [
+        "adaptogenic blend",
+        "stress support complex",
+        "anxiety relief blend",
+        "relaxation complex",
+        "mental clarity blend",
+        "focus enhancement blend",
+        "Stress and Energy Support Blend",
+        "calm matrix",
+        "balance blend",
+        "mood support blend",
+        "resilience complex",
+        "emotional wellbeing matrix",
+        "anti-stress formula"
+      ],
+      "risk_factors": [
+        "Variable herb potency",
+        "Undisclosed synergy",
+        "Unknown adaptogen ratios"
+      ],
+      "severity_level": "moderate",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No adaptogen blend disclosure hides potency and risk of herb-drug interactions."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial amounts shown for herbs but blend ratios remain unclear."
+        }
+      ],
+      "notes": "Stress/adaptogen blends frequently use proprietary ratios of ashwagandha, rhodiola, etc., which can lead to unpredictable effects if not disclosed.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_GENERAL",
+      "standard_name": "General Proprietary Blends",
+      "red_flag_terms": [
+        "proprietary blend",
+        "exclusive formula",
+        "patent-pending complex",
+        "advanced matrix",
+        "breakthrough formula",
+        "clinical blend",
+        "synergistic complex",
+        "optimal matrix",
+        "enhanced formula",
+        "bioavailable complex",
+        "premium blend",
+        "specialized matrix",
+        "performance blend",
+        "signature blend",
+        "holistic matrix",
+        "advanced matrix",
+        "advanced formula",
+        "innovative complex",
+        "cutting edge blend",
+        "Prostate Support Blend",
+        "Prostate Support Complex",
+        "Prostate Support Matrix",
+        "Prostate Support Formula"
+      ],
+      "risk_factors": [
+        "Complete lack of transparency",
+        "Unknown ingredient ratios",
+        "Ineffective dosing"
+      ],
+      "severity_level": "moderate",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "Manufacturer does not disclose ingredient amounts, preventing efficacy and safety assessment."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Some ingredient dosages shown, but blend lacks full transparency."
+        }
+      ],
+      "notes": "General proprietary blends hide ingredient amounts, making it impossible to fully assess safety or effectiveness.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_BEAUTY",
+      "standard_name": "Beauty & Collagen Blends",
+      "red_flag_terms": [
+        "beauty blend",
+        "collagen complex",
+        "skin renewal matrix",
+        "hair and nail complex",
+        "anti-aging formula",
+        "radiance blend",
+        "skin health complex",
+        "dermal support blend"
+      ],
+      "risk_factors": [
+        "Unknown peptide dosages",
+        "Hidden hormones or growth factors",
+        "Unproven matrix blends"
+      ],
+      "severity_level": "moderate",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No precise dosage information disclosed for beauty or collagen blend ingredients."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial ingredient dosage disclosure in beauty blends; some components remain unspecified."
+        }
+      ],
+      "notes": "Beauty blends often mix peptides, botanicals and vitamins which require full transparency for safety.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_SUPERFOOD",
+      "standard_name": "Superfood / Immune Support Blends",
+      "red_flag_terms": [
+        "superfood blend",
+        "immune support blend",
+        "detox blend",
+        "wellness matrix",
+        "plant blend",
+        "fruit and veggie complex",
+        "Fruit Blend",
+        "antioxidant matrix",
+        "Fruit Powder Blend",
+        "phytonutrient complex",
+        "Proprietary Herbal Blend",
+        "Ear, Nose & Throat Support Herbal Blend",
+        "orchard fruits & garden veggies powder blend",
+        "Proprietary Full-Spectrum Premium Herbal Blend",
+        "daily greens blend",
+        "Dental Herbal Complex",
+        "Orchard Fruits & Garden Veggies Powder Blend",
+        "fruit phenolic blend",
+        "Herbal Immune Blend",
+        "mushroom mycelial & primordia biomass defense blend",
+        "green superfood blend",
+        "organic greens blend",
+        "Soothing Herbal Blend",
+        "garden blend",
+        "whole food matrix",
+        "organic fruit & vegetable blend",
+        "living nutrients complex",
+        "raw food blend",
+        "Proprietary mushroom blend",
+        "BotaniPlex",
+        "BotaniPlex Blend",
+        "fermented food matrix",
+        "sprouted seed complex",
+        "berry antioxidant blend",
+        "organic mushroom complex",
+        "enzyme & probiotic blend",
+        "nutrient-dense superfood complex"
+      ],
+      "risk_factors": [
+        "Unknown nutrient profiles",
+        "Undisclosed ingredient ratios",
+        "Potential herbal adulterants"
+      ],
+      "severity_level": "moderate",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No detailed ingredient or nutrient amounts disclosed in superfood blends."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial ingredient disclosure in superfood blends; full composition unclear."
+        }
+      ],
+      "notes": "Superfood blends frequently have vague, undefined ingredient quantities leading to transparency concerns.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_PROBIOTIC",
+      "standard_name": "Probiotic Strain Blends",
+      "red_flag_terms": [
+        "probiotic blend",
+        "multi-strain complex",
+        "microflora matrix",
+        "gut health blend",
+        "digestive complex",
+        "intestinal support blend",
+        "bacterial support complex",
+        "microbiome support blend",
+        "gut flora complex",
+        "intestinal health blend",
+        "gut microbiome blend",
+        "intestinal flora complex",
+        "gut microbial blend",
+        "intestinal microbial blend",
+        "gut microbial complex",
+        "Digestive Support Blend"
+      ],
+      "risk_factors": [
+        "Undefined colony forming units (CFU) per strain",
+        "Unknown strain ratios",
+        "Potential ineffective dosing"
+      ],
+      "severity_level": "moderate",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No strain-specific CFU or dosage data disclosed for probiotic blends."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial disclosure of strains or CFUs in probiotic blends; incomplete info."
+        }
+      ],
+      "notes": "Probiotic blends require strain-specific CFU disclosure to properly assess efficacy.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_HYDRATION",
+      "standard_name": "Hydration & Electrolyte Blends",
+      "red_flag_terms": [
+        "hydration blend",
+        "electrolyte matrix",
+        "recovery blend",
+        "hydration complex",
+        "recovery complex",
+        "hydration matrix",
+        "recovery matrix",
+        "hydration support blend",
+        "recovery support blend",
+        "hydration support complex",
+        "recovery support complex",
+        "hydration recovery blend",
+        "hydration recovery complex",
+        "fluid balance complex",
+        "performance hydration complex"
+      ],
+      "risk_factors": [
+        "Unclear electrolyte ratios",
+        "Potential sodium or potassium overdose",
+        "Hidden stimulants"
+      ],
+      "severity_level": "moderate",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No full ingredient or electrolyte dosage information in hydration blends."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial ingredient dosage disclosure for hydration blends."
+        }
+      ],
+      "notes": "Hydration blends may hide excessive electrolytes or stimulants without proper dosage disclosure.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_TRADEMARK",
+      "standard_name": "Trademark & Registered Proprietary Formulas",
+      "red_flag_terms": [
+        "proprietary blend™",
+        "exclusive formula®",
+        "patent-pending complex™",
+        "signature blend®",
+        "registered formula™"
+      ],
+      "risk_factors": [
+        "Trademarked names hide true ingredients",
+        "Opaque ingredient ratios",
+        "Obscure ingredient identity"
+      ],
+      "severity_level": "moderate",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "Trademarked proprietary blends with no ingredient disclosure prevent safety assessment."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial or unclear ingredient info under trademarked blends."
+        }
+      ],
+      "notes": "Trademarked proprietary formulas deserve scrutiny as they often mask true composition.",
+      "last_updated": "2025-07-24"
+    },
+    {
+      "id": "BLEND_DELIVERY",
+      "standard_name": "Delivery Technology Blends",
+      "red_flag_terms": [
+        "clean tablet technology blend",
+        "delivery system matrix",
+        "bioenhancement complex",
+        "absorption optimizer blend",
+        "clean tablet blend",
+        "tablet technology matrix",
+        "advanced delivery system",
+        "clean capsule technology",
+        "bioavailability enhancer blend",
+        "clean manufacturing blend",
+        "nutrient delivery system",
+        "clean formulation matrix",
+        "optimized absorption complex"
+      ],
+      "risk_factors": [
+        "Undisclosed excipients",
+        "Hidden processing aids",
+        "Unknown binding agents",
+        "Unclear absorption enhancers"
+      ],
+      "severity_level": "low",
+      "penalties": [
+        {
+          "type": "no_disclosure",
+          "penalty": -10,
+          "penalty_reason": "No disclosure of delivery system components prevents assessment of excipient safety."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -5,
+          "penalty_reason": "Partial disclosure of delivery technology ingredients limits excipient evaluation."
+        }
+      ],
+      "notes": "Delivery technology blends often contain undisclosed excipients, binders, and processing aids that should be transparent.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "standard_name": "Immune Health Blend",
+      "aliases": ["immune support blend", "immunity blend", "immune complex"],
+      "category": "health_support",
+      "penalty_levels": [
+        {
+          "type": "no_disclosure",
+          "penalty": -15,
+          "penalty_reason": "Complete lack of ingredient disclosure in immune health blend prevents safety evaluation and dosage assessment."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -8,
+          "penalty_reason": "Partial ingredient disclosure in immune health blend still limits safety evaluation."
+        }
+      ],
+      "notes": "Health support blends should disclose all active ingredients and their amounts for proper immune system evaluation.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Hormone Support Blend",
+      "aliases": [
+        "hormonal balance blend",
+        "endocrine support blend",
+        "hormone complex"
+      ],
+      "category": "health_support",
+      "penalty_levels": [
+        {
+          "type": "no_disclosure",
+          "penalty": -20,
+          "penalty_reason": "Complete lack of ingredient disclosure in hormone support blend prevents safety evaluation and potential interaction assessment."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -10,
+          "penalty_reason": "Partial ingredient disclosure in hormone support blend still limits safety evaluation for hormonal effects."
+        }
+      ],
+      "notes": "Hormone support blends require full disclosure due to potential for significant physiological effects and drug interactions.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Concentrated Enzyme Formula",
+      "aliases": [
+        "enzyme complex",
+        "digestive enzyme blend",
+        "concentrated enzymes"
+      ],
+      "category": "enzyme",
+      "penalty_levels": [
+        {
+          "type": "no_disclosure",
+          "penalty": -12,
+          "penalty_reason": "Complete lack of enzyme disclosure prevents assessment of digestive support effectiveness and potential interactions."
+        },
+        {
+          "type": "partial_disclosure",
+          "penalty": -6,
+          "penalty_reason": "Partial enzyme disclosure limits ability to assess digestive support and enzyme activity levels."
+        }
+      ],
+      "notes": "Enzyme formulas should disclose specific enzymes and their activity levels for proper digestive support evaluation.",
+      "last_updated": "2025-08-15"
+    }
+  ]
+}

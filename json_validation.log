@@ -1,0 +1,42 @@
+2025-07-26 04:55:00,282 - INFO - Validation successful for /Users/seancheick/Downloads/dsld_clean/scripts/data/absorption_enhancers.json
+2025-07-26 04:55:00,292 - INFO - Validation successful for /Users/seancheick/Downloads/dsld_clean/scripts/data/allergens.json
+2025-07-26 04:55:00,302 - ERROR - Validation failed for /Users/seancheick/Downloads/dsld_clean/scripts/data/backed_clinical_studies.json: 'published_studies' is a required property
+
+Failed validating 'required' in schema['items']:
+    {'type': 'object',
+     'properties': {'id': {'type': 'string'},
+                    'standard_name': {'type': 'string'},
+                    'aliases': {'type': 'array',
+                                'items': {'type': 'string'}},
+                    'published_studies': {'type': 'array',
+                                          'items': {'type': 'string'}},
+                    'score_contribution': {'type': 'integer'},
+                    'notes': {'type': 'string'},
+                    'category': {'type': 'string'}},
+     'required': ['id', 'standard_name', 'published_studies']}
+
+On instance[74]:
+    {'id': 'PRECLINICAL_ASHWAGANDHA',
+     'standard_name': 'Ashwagandha',
+     'aliases': ['Withania somnifera', 'Indian ginseng'],
+     'category': 'Adaptogen / Stress',
+     'published_support': ['Mechanistic', 'Animal'],
+     'score_contribution': 2,
+     'notes': 'Extensively studied in animals for anti-stress and '
+              'neuroprotective effects; early human trials promising but '
+              'more needed.'}
+2025-07-26 04:55:00,304 - INFO - Validation successful for /Users/seancheick/Downloads/dsld_clean/scripts/data/banned_recalled_ingredients.json
+2025-07-26 04:55:00,316 - INFO - Validation successful for /Users/seancheick/Downloads/dsld_clean/scripts/data/ingredient_quality_map.json
+2025-07-26 04:55:00,319 - INFO - Validation successful for /Users/seancheick/Downloads/dsld_clean/scripts/data/proprietary_blends_penalty.json
+2025-07-26 04:55:00,339 - INFO - Validation successful for /Users/seancheick/Downloads/dsld_clean/scripts/data/rda_optimal_uls.json
+2025-07-26 04:55:00,342 - ERROR - Validation failed for /Users/seancheick/Downloads/dsld_clean/scripts/data/standardized_botanicals.json: {'aliases': ['yucca schidigera'], 'markers': ['saponins'], 'priority': 'medium'} is not of type 'array'
+
+Failed validating 'type' in schema['properties']['standardized_botanicals']['additionalProperties']:
+    {'type': 'array', 'items': {'type': 'string'}}
+
+On instance['standardized_botanicals']['yucca']:
+    {'aliases': ['yucca schidigera'],
+     'markers': ['saponins'],
+     'priority': 'medium'}
+2025-07-26 04:55:00,348 - INFO - Validation successful for /Users/seancheick/Downloads/dsld_clean/scripts/data/top_manufacturers_data.json
+2025-07-26 04:55:00,350 - INFO - Validation successful for /Users/seancheick/Downloads/dsld_clean/scripts/data/unit_mappings.json

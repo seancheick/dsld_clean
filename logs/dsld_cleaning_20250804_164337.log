@@ -1,0 +1,11 @@
+2025-08-04 16:43:37 - dsld_cleaner - INFO - === DRY RUN MODE ===
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Validating configuration...
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Configuration validation passed
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Found 962 input files
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Would process 962 files in 241 batches
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Batch size: 4
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Max workers: 4
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Reference data loaded successfully
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Testing processing with: 10040.json
+2025-08-04 16:43:37 - dsld_cleaner - INFO - Test processing successful - product ID: 10040
+2025-08-04 16:43:37 - dsld_cleaner - INFO - === DRY RUN COMPLETE - READY TO PROCESS ===

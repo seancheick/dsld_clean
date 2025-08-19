@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Weighting system for different ingredient categories in supplement scoring",
+    "last_updated": "2025-07-22"
+  },
+  "category_weights": {
+    "vitamins": {
+      "weight": 1.0,
+      "description": "Essential vitamins - primary therapeutic value"
+    },
+    "minerals": {
+      "weight": 1.0,
+      "description": "Essential minerals - primary therapeutic value"
+    },
+    "botanicals": {
+      "weight": 0.8,
+      "description": "Plant-based ingredients - secondary therapeutic value"
+    },
+    "amino_acids": {
+      "weight": 0.7,
+      "description": "Amino acids and derivatives"
+    },
+    "probiotics": {
+      "weight": 0.9,
+      "description": "Beneficial bacteria strains"
+    },
+    "enzymes": {
+      "weight": 0.6,
+      "description": "Digestive and metabolic enzymes"
+    },
+    "fatty_acids": {
+      "weight": 1.0,
+      "description": "Omega-3, omega-6, and other essential fatty acids"
+    },
+    "antioxidants": {
+      "weight": 0.7,
+      "description": "Antioxidant compounds"
+    },
+    "excipients": {
+      "weight": 0.0,
+      "description": "Inactive ingredients - no therapeutic value"
+    },
+    "nutritional_info": {
+      "weight": 0.0,
+      "description": "Nutritional facts - not supplement ingredients"
+    }
+  },
+  "dosage_weights": {
+    "therapeutic": {
+      "weight": 1.2,
+      "description": "Above therapeutic threshold"
+    },
+    "optimal": {
+      "weight": 1.0,
+      "description": "Within optimal range"
+    },
+    "maintenance": {
+      "weight": 0.8,
+      "description": "Maintenance levels"
+    },
+    "trace": {
+      "weight": 0.3,
+      "description": "Very small amounts"
+    }
+  },
+  "ingredient_priorities": {
+    "high_priority": [
+      "vitamin d3",
+      "vitamin b12",
+      "folate",
+      "omega-3",
+      "magnesium",
+      "zinc",
+      "iron",
+      "calcium",
+      "probiotics"
+    ],
+    "medium_priority": [
+      "vitamin c",
+      "vitamin e",
+      "b-complex",
+      "coq10",
+      "curcumin",
+      "ashwagandha",
+      "rhodiola",
+      "ginseng"
+    ],
+    "low_priority": ["bioflavonoids", "inositol", "choline", "generic extracts"]
+  }
+}

@@ -1,0 +1,8 @@
+2025-08-04 16:44:00 - dsld_cleaner - INFO - ============================================================
+2025-08-04 16:44:00 - dsld_cleaner - INFO - DSLD Data Cleaning Pipeline Starting
+2025-08-04 16:44:00 - dsld_cleaner - INFO - ============================================================
+2025-08-04 16:44:00 - dsld_cleaner - INFO - Started at: 2025-08-04 16:44:00
+2025-08-04 16:44:00 - dsld_cleaner - INFO - Validating configuration...
+2025-08-04 16:44:00 - dsld_cleaner - INFO - Configuration validation passed
+2025-08-04 16:46:11 - dsld_cleaner - INFO - Processing interrupted by user
+2025-08-04 16:46:11 - dsld_cleaner - INFO - You can resume processing using --resume flag

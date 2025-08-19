@@ -1,0 +1,8 @@
+2025-08-04 20:21:34,403 - INFO - === Batch 87 Processing Log ===
+2025-08-04 20:21:34,403 - INFO - Started: 2025-08-04 20:21:34
+2025-08-04 20:21:34,403 - INFO - Files: 247198.json to 247937.json
+2025-08-04 20:21:37,478 - INFO - Ended: 2025-08-04 20:21:37
+2025-08-04 20:21:37,478 - INFO - Summary: {'batch_num': 87, 'processed': 4, 'cleaned': 1, 'needs_review': 2, 'incomplete': 0, 'errors': 1, 'processing_time': 3.0750370025634766, 'avg_time_per_file': 0.7687592506408691}
+2025-08-04 20:21:37,478 - INFO - Unmapped ingredients: 3
+2025-08-04 20:21:37,478 - INFO - Errors:
+2025-08-04 20:21:37,478 - ERROR -   - /Users/seancheick/Downloads/Lozenges-962labels-7-27-25/247937.json: can only concatenate list (not "NoneType") to list

@@ -1,0 +1,83 @@
+DSLD Data Cleaning Processing Report
+==================================================
+
+Generated: 2025-08-13 22:09:21
+Total Files Processed: 32882
+Processing Time: 212.56 minutes
+
+Results Summary:
+  - Successfully cleaned: 32342
+  - Needs review: 0
+  - Incomplete: 0
+  - Errors: 540
+  - Success rate: 98.4%
+
+Unmapped ingredients found: 7237
+
+Batch Details:
+  Batch 1: 499 cleaned, 0 review, 0 incomplete, 1 errors (125.7s)
+  Batch 2: 493 cleaned, 0 review, 0 incomplete, 7 errors (138.8s)
+  Batch 3: 492 cleaned, 0 review, 0 incomplete, 8 errors (180.5s)
+  Batch 4: 497 cleaned, 0 review, 0 incomplete, 3 errors (239.2s)
+  Batch 5: 497 cleaned, 0 review, 0 incomplete, 3 errors (173.3s)
+  Batch 6: 496 cleaned, 0 review, 0 incomplete, 4 errors (150.8s)
+  Batch 7: 488 cleaned, 0 review, 0 incomplete, 12 errors (184.8s)
+  Batch 8: 490 cleaned, 0 review, 0 incomplete, 10 errors (179.8s)
+  Batch 9: 496 cleaned, 0 review, 0 incomplete, 4 errors (199.6s)
+  Batch 10: 479 cleaned, 0 review, 0 incomplete, 21 errors (170.4s)
+  Batch 11: 489 cleaned, 0 review, 0 incomplete, 11 errors (172.0s)
+  Batch 12: 496 cleaned, 0 review, 0 incomplete, 4 errors (160.1s)
+  Batch 13: 493 cleaned, 0 review, 0 incomplete, 7 errors (203.4s)
+  Batch 14: 499 cleaned, 0 review, 0 incomplete, 1 errors (193.1s)
+  Batch 15: 482 cleaned, 0 review, 0 incomplete, 18 errors (130.6s)
+  Batch 16: 481 cleaned, 0 review, 0 incomplete, 19 errors (142.2s)
+  Batch 17: 471 cleaned, 0 review, 0 incomplete, 29 errors (173.0s)
+  Batch 18: 497 cleaned, 0 review, 0 incomplete, 3 errors (215.4s)
+  Batch 19: 495 cleaned, 0 review, 0 incomplete, 5 errors (173.4s)
+  Batch 20: 498 cleaned, 0 review, 0 incomplete, 2 errors (251.9s)
+  Batch 21: 490 cleaned, 0 review, 0 incomplete, 10 errors (179.1s)
+  Batch 22: 489 cleaned, 0 review, 0 incomplete, 11 errors (236.4s)
+  Batch 23: 498 cleaned, 0 review, 0 incomplete, 2 errors (179.4s)
+  Batch 24: 498 cleaned, 0 review, 0 incomplete, 2 errors (188.7s)
+  Batch 25: 498 cleaned, 0 review, 0 incomplete, 2 errors (303.4s)
+  Batch 26: 495 cleaned, 0 review, 0 incomplete, 5 errors (195.8s)
+  Batch 27: 495 cleaned, 0 review, 0 incomplete, 5 errors (156.4s)
+  Batch 28: 498 cleaned, 0 review, 0 incomplete, 2 errors (158.4s)
+  Batch 29: 487 cleaned, 0 review, 0 incomplete, 13 errors (147.0s)
+  Batch 30: 499 cleaned, 0 review, 0 incomplete, 1 errors (201.5s)
+  Batch 31: 490 cleaned, 0 review, 0 incomplete, 10 errors (190.2s)
+  Batch 32: 492 cleaned, 0 review, 0 incomplete, 8 errors (149.0s)
+  Batch 33: 494 cleaned, 0 review, 0 incomplete, 6 errors (215.9s)
+  Batch 34: 463 cleaned, 0 review, 0 incomplete, 37 errors (182.2s)
+  Batch 35: 425 cleaned, 0 review, 0 incomplete, 75 errors (188.2s)
+  Batch 36: 458 cleaned, 0 review, 0 incomplete, 42 errors (140.4s)
+  Batch 37: 485 cleaned, 0 review, 0 incomplete, 15 errors (276.0s)
+  Batch 38: 496 cleaned, 0 review, 0 incomplete, 4 errors (182.7s)
+  Batch 39: 499 cleaned, 0 review, 0 incomplete, 1 errors (189.1s)
+  Batch 40: 498 cleaned, 0 review, 0 incomplete, 2 errors (189.6s)
+  Batch 41: 497 cleaned, 0 review, 0 incomplete, 3 errors (160.4s)
+  Batch 42: 489 cleaned, 0 review, 0 incomplete, 11 errors (194.0s)
+  Batch 43: 498 cleaned, 0 review, 0 incomplete, 2 errors (292.8s)
+  Batch 44: 497 cleaned, 0 review, 0 incomplete, 3 errors (207.9s)
+  Batch 45: 490 cleaned, 0 review, 0 incomplete, 10 errors (196.0s)
+  Batch 46: 492 cleaned, 0 review, 0 incomplete, 8 errors (156.7s)
+  Batch 47: 499 cleaned, 0 review, 0 incomplete, 1 errors (277.9s)
+  Batch 48: 499 cleaned, 0 review, 0 incomplete, 1 errors (217.9s)
+  Batch 49: 495 cleaned, 0 review, 0 incomplete, 5 errors (316.9s)
+  Batch 50: 494 cleaned, 0 review, 0 incomplete, 6 errors (171.0s)
+  Batch 51: 497 cleaned, 0 review, 0 incomplete, 3 errors (229.7s)
+  Batch 52: 498 cleaned, 0 review, 0 incomplete, 2 errors (182.1s)
+  Batch 53: 497 cleaned, 0 review, 0 incomplete, 3 errors (130.4s)
+  Batch 54: 500 cleaned, 0 review, 0 incomplete, 0 errors (205.4s)
+  Batch 55: 497 cleaned, 0 review, 0 incomplete, 3 errors (228.5s)
+  Batch 56: 496 cleaned, 0 review, 0 incomplete, 4 errors (204.0s)
+  Batch 57: 498 cleaned, 0 review, 0 incomplete, 2 errors (238.3s)
+  Batch 58: 498 cleaned, 0 review, 0 incomplete, 2 errors (238.8s)
+  Batch 59: 497 cleaned, 0 review, 0 incomplete, 3 errors (118.5s)
+  Batch 60: 494 cleaned, 0 review, 0 incomplete, 6 errors (185.2s)
+  Batch 61: 498 cleaned, 0 review, 0 incomplete, 2 errors (160.0s)
+  Batch 62: 500 cleaned, 0 review, 0 incomplete, 0 errors (218.1s)
+  Batch 63: 498 cleaned, 0 review, 0 incomplete, 2 errors (227.6s)
+  Batch 64: 472 cleaned, 0 review, 0 incomplete, 28 errors (251.2s)
+  Batch 65: 496 cleaned, 0 review, 0 incomplete, 4 errors (240.0s)
+  Batch 66: 381 cleaned, 0 review, 0 incomplete, 1 errors (95.8s)

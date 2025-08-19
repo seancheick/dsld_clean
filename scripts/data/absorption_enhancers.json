@@ -1,0 +1,302 @@
+[
+  {
+    "id": "ENHANCER_BLACK_PEPPER",
+    "name": "Black Pepper",
+    "aliases": ["piperine", "bioperine", "black pepper extract"],
+    "enhances": [
+      "Turmeric",
+      "CoQ10",
+      "Beta-carotene",
+      "Selenium",
+      "Vitamin B6",
+      "Vitamin C",
+      "Resveratrol"
+    ],
+    "mechanism": "Inhibits glucuronidation in liver, improves permeability",
+    "typical_dose": "5-10mg",
+    "boost_factor": "20-2000% depending on nutrient",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_MK7_ALL_TRANS",
+    "name": "Vitamin K2 MK-7 (all-trans)",
+    "aliases": ["k2 mk-7 all-trans", "trans-menaquinone-7"],
+    "enhances": ["Calcium"],
+    "mechanism": "Higher bioactivity vs cis-isomer, directs calcium to bones, additive effect on intestinal calcium absorption with vitamin D.",
+    "typical_dose": "90-180 µg",
+    "boost_factor": "10-15%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_FERRITIN",
+    "name": "Ferritin",
+    "aliases": ["iron-ferritin complex"],
+    "enhances": ["Iron"],
+    "mechanism": "Slow-release ferritin shell, gentle on GI.",
+    "typical_dose": "N/A – built-in",
+    "boost_factor": "20-30%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_FATS_AND_OILS",
+    "name": "Fats and Oils",
+    "aliases": [
+      "mct oil",
+      "coconut oil",
+      "organic coconut oil",
+      "organic olive oil",
+      "olive oil",
+      "phospholipids",
+      "lecithin"
+    ],
+    "enhances": [
+      "Vitamin A",
+      "Vitamin D",
+      "Vitamin E",
+      "Vitamin K",
+      "CoQ10",
+      "Curcumin",
+      "CBD"
+    ],
+    "mechanism": "Improves absorption of fat-soluble compounds.",
+    "typical_dose": "5-15g with meal",
+    "boost_factor": "30-300%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_VITAMIN_C",
+    "name": "Vitamin C",
+    "aliases": ["ascorbic acid"],
+    "enhances": ["Iron", "Vitamin E", "Folate"],
+    "mechanism": "Reduces non-heme iron to absorbable form, protects vitamins from oxidation.",
+    "typical_dose": "25-100mg",
+    "boost_factor": "30-400% for iron",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_VITAMIN_D",
+    "name": "Vitamin D",
+    "aliases": ["vitamin d3", "cholecalciferol"],
+    "enhances": ["Calcium", "Magnesium", "Phosphorus"],
+    "mechanism": "Increases intestinal absorption proteins for minerals.",
+    "typical_dose": "400-1000 IU",
+    "boost_factor": "30-80%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_GLYCINE",
+    "name": "Glycine",
+    "aliases": ["glycine"],
+    "enhances": ["Magnesium", "Iron", "Zinc", "Calcium"],
+    "mechanism": "Forms chelated minerals for better absorption.",
+    "typical_dose": "Bound with mineral",
+    "boost_factor": "20-40%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_LYSINE",
+    "name": "Lysine",
+    "aliases": ["l-lysine"],
+    "enhances": ["Calcium", "Iron"],
+    "mechanism": "Improves intestinal absorption of calcium.",
+    "typical_dose": "500-1000mg",
+    "boost_factor": "20-50%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_METHIONINE",
+    "name": "Methionine",
+    "aliases": ["l-methionine"],
+    "enhances": ["Zinc", "Selenium"],
+    "mechanism": "Forms absorbable complexes.",
+    "typical_dose": "200-500mg",
+    "boost_factor": "15-30%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_DIGESTIVE_ENZYMES",
+    "name": "Digestive Enzymes",
+    "aliases": [
+      "bromelain",
+      "papain",
+      "protease",
+      "lipase",
+      "amylase",
+      "betaine hcl"
+    ],
+    "enhances": ["Protein-based nutrients", "B Vitamins", "Minerals"],
+    "mechanism": "Breaks down anti-nutrients and improves digestion.",
+    "typical_dose": "Varies by enzyme",
+    "boost_factor": "10-50%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_LIPOSOMAL",
+    "name": "Liposomal Delivery",
+    "aliases": ["liposomal", "phospholipid complex", "phytosome"],
+    "enhances": [
+      "Vitamin C",
+      "Glutathione",
+      "Curcumin",
+      "Resveratrol",
+      "CoQ10"
+    ],
+    "mechanism": "Encapsulation protects and enhances absorption.",
+    "typical_dose": "N/A - delivery method",
+    "boost_factor": "50-600%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_CYCLODEXTRIN",
+    "name": "Cyclodextrin",
+    "aliases": ["gamma-cyclodextrin"],
+    "enhances": ["Curcumin", "Resveratrol", "CoQ10"],
+    "mechanism": "Improves solubility of compounds.",
+    "typical_dose": "N/A - delivery method",
+    "boost_factor": "30-300%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_NANOEMULSION",
+    "name": "Nanoemulsion",
+    "aliases": ["nano-particle"],
+    "enhances": ["CBD", "Curcumin", "CoQ10", "Vitamins"],
+    "mechanism": "Smaller particles for better absorption.",
+    "typical_dose": "N/A - delivery method",
+    "boost_factor": "100-1000%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_CITRIC_ACID",
+    "name": "Citric Acid",
+    "aliases": ["citrate"],
+    "enhances": ["Calcium", "Magnesium", "Iron", "Zinc"],
+    "mechanism": "Forms soluble complexes.",
+    "typical_dose": "200-500mg",
+    "boost_factor": "20-40%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_ENTERIC_COATING",
+    "name": "Enteric Coating",
+    "aliases": ["delayed release"],
+    "enhances": ["Probiotics", "Enzymes", "Fish Oil"],
+    "mechanism": "Protects from stomach acid, ensures delivery to intestines.",
+    "typical_dose": "N/A - delivery method",
+    "boost_factor": "20-100%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_SUSTAINED_RELEASE",
+    "name": "Sustained Release",
+    "aliases": ["time release", "extended release"],
+    "enhances": ["B Vitamins", "Vitamin C", "Minerals"],
+    "mechanism": "Gradual release improves absorption and reduces flushing.",
+    "typical_dose": "N/A - delivery method",
+    "boost_factor": "15-40%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_ALOE_VERA",
+    "name": "Aloe Vera",
+    "aliases": ["aloe vera gel", "aloe vera leaf extract"],
+    "enhances": ["Vitamin C", "Vitamin E", "Vitamin B12"],
+    "mechanism": "Improves intestinal absorption and permeability",
+    "typical_dose": "100-200mg",
+    "boost_factor": "20-80%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_GARLIC",
+    "name": "Garlic",
+    "aliases": ["allium sativum", "allicin", "garlic extract"],
+    "enhances": ["Zinc", "Selenium", "Iron", "Calcium"],
+    "mechanism": "Enhances mineral absorption",
+    "typical_dose": "300-600mg",
+    "boost_factor": "10-30%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_VITAMIN_A",
+    "name": "Vitamin A",
+    "aliases": ["retinol", "beta-carotene"],
+    "enhances": ["Iron"],
+    "mechanism": "Improves non-heme iron absorption",
+    "typical_dose": "1000-2000 IU",
+    "boost_factor": "50-200%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_PROBIOTICS",
+    "name": "Probiotics",
+    "aliases": ["lactobacillus", "bifidobacterium", "probiotic blend"],
+    "enhances": ["B Vitamins", "Calcium", "Iron", "Zinc", "Magnesium"],
+    "mechanism": "Improves gut health, digestion, and nutrient uptake",
+    "typical_dose": "1-10 billion CFU",
+    "boost_factor": "10-50%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_PREBIOTICS",
+    "name": "Prebiotics",
+    "aliases": ["inulin", "fos", "gos", "fructooligosaccharides"],
+    "enhances": ["Calcium", "Magnesium", "Iron", "Zinc"],
+    "mechanism": "Fermentation produces short-chain fatty acids that aid mineral absorption",
+    "typical_dose": "5-10g",
+    "boost_factor": "10-30%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_ASTRAGIN",
+    "name": "AstraGin",
+    "aliases": ["astragalus membranaceus extract", "panax notoginseng extract"],
+    "enhances": ["Amino Acids", "Vitamins", "Minerals", "Omega-3", "Creatine"],
+    "mechanism": "Increases nutrient transporters in the gut",
+    "typical_dose": "50mg",
+    "boost_factor": "20-50%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  },
+  {
+    "id": "ENHANCER_MICOSOLLE",
+    "name": "Micosolle",
+    "aliases": [
+      "micosolle delivery system",
+      "micellar delivery",
+      "micosolle technology"
+    ],
+    "enhances": [
+      "Curcumin",
+      "CoQ10",
+      "Vitamins",
+      "Minerals",
+      "Herbal extracts"
+    ],
+    "mechanism": "Micelle-based delivery system that improves solubility and bioavailability of poorly absorbed compounds",
+    "typical_dose": "N/A - delivery method",
+    "boost_factor": "200-800%",
+    "score_contribution": 5,
+    "category": "absorption enhancer"
+  }
+]

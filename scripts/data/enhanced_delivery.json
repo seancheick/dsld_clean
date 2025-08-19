@@ -1,0 +1,132 @@
+{
+  "liposomal": {
+    "points": 6,
+    "description": "Nutrient is encapsulated in a phospholipid bubble, significantly enhancing absorption.",
+    "category": "delivery"
+  },
+  "lypospheric": {
+    "points": 6,
+    "description": "A branded form of liposomal delivery, indicating high-end phospholipid encapsulation.",
+    "category": "delivery"
+  },
+  "phytosome": {
+    "points": 6,
+    "description": "Plant extract bound to phospholipids, improving absorption and bioavailability.",
+    "category": "delivery"
+  },
+  "nanoemulsion": {
+    "points": 6,
+    "description": "Ultra-fine oil droplets increase rapid absorption and bioavailability.",
+    "category": "delivery"
+  },
+  "transdermal": {
+    "points": 6,
+    "description": "Delivery through the skin for systemic absorption, such as patches.",
+    "category": "delivery"
+  },
+  "phospholipid complex": {
+    "points": 6,
+    "description": "Delivery system complexed with phospholipids enhancing effect.",
+    "category": "delivery"
+  },
+  "pegylated": {
+    "points": 6,
+    "description": "Coated with polyethylene glycol to prolong duration of action.",
+    "category": "delivery"
+  },
+  "sublingual": {
+    "points": 4,
+    "description": "Absorbed directly under the tongue, bypassing digestive system.",
+    "category": "delivery"
+  },
+  "enteric-coated": {
+    "points": 4,
+    "description": "Coating resists stomach acid, releasing ingredients in intestines.",
+    "category": "delivery"
+  },
+  "micronized": {
+    "points": 4,
+    "description": "Particles finely ground to improve absorption.",
+    "category": "delivery"
+  },
+  "time-release": {
+    "points": 4,
+    "description": "Ingredients released gradually over time for sustained delivery.",
+    "category": "delivery"
+  },
+  "sustained-release": {
+    "points": 4,
+    "description": "Gradual release to maintain stable blood levels.",
+    "category": "delivery"
+  },
+  "chelated": {
+    "points": 4,
+    "description": "Minerals bound to amino acids for improved absorption.",
+    "category": "delivery"
+  },
+  "microencapsulation": {
+    "points": 2,
+    "description": "Protective coating to shield ingredients, may improve stability.",
+    "category": "delivery"
+  },
+  "effervescent": {
+    "points": 2,
+    "description": "Dissolves in water for faster uptake.",
+    "category": "delivery"
+  },
+  "beadlet": {
+    "points": 2,
+    "description": "Pellets designed for timed or targeted release.",
+    "category": "delivery"
+  },
+  "softgel": {
+    "points": 2,
+    "description": "Gelatin shell improves solubility of fat-soluble vitamins.",
+    "category": "delivery"
+  },
+  "ionized": {
+    "points": 2,
+    "description": "Minerals manufactured to be electrically charged for absorption.",
+    "category": "delivery"
+  },
+  "buccal": {
+    "points": 2,
+    "description": "Absorbed through the cheek lining.",
+    "category": "delivery"
+  },
+  "cold-processed": {
+    "points": 2,
+    "description": "Manufactured at low temperatures to preserve ingredient integrity.",
+    "category": "delivery"
+  },
+  "double liposomal": {
+    "points": 6,
+    "description": "Dual-layered liposomal encapsulation for superior absorption and sustained retention.",
+    "category": "delivery"
+  },
+  "capsule-in-capsule": {
+    "points": 6,
+    "description": "Encapsulates multiple actives or stages for timed and targeted nutrient release.",
+    "category": "delivery"
+  },
+  "gel chew": {
+    "points": 4,
+    "description": "Emulsified gel bites, combining fat- and water-soluble nutrients for high bioavailability and compliance.",
+    "category": "delivery"
+  },
+  "microgranule": {
+    "points": 4,
+    "description": "Micro-sized granules engineered for specific timed, delayed, or extended release.",
+    "category": "delivery"
+  },
+  "capsoil": {
+    "points": 6,
+    "description": "Micronized lipophilic actives formulated into stable, high-absorption powders.",
+    "category": "delivery"
+  },
+  "vesisorb": {
+    "points": 6,
+    "description": "Colloidal droplet system that dramatically increases absorption of poorly bioavailable nutrients.",
+    "category": "delivery"
+  }
+}

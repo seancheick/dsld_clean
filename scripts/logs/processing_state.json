@@ -1,0 +1,16 @@
+{
+  "started": "2025-08-16T18:51:41.568744Z",
+  "last_updated": "2025-08-16T18:56:26.571251Z",
+  "last_completed_batch": 1,
+  "total_batches": 2,
+  "processed_files": 962,
+  "total_files": 962,
+  "errors": [
+    "/Users/seancheick/Documents/DataSetDsld/Lozenges-962labels-7-27-25/18693.json: can only concatenate list (not \"NoneType\") to list",
+    "/Users/seancheick/Documents/DataSetDsld/Lozenges-962labels-7-27-25/241012.json: can only concatenate list (not \"NoneType\") to list",
+    "/Users/seancheick/Documents/DataSetDsld/Lozenges-962labels-7-27-25/247937.json: can only concatenate list (not \"NoneType\") to list",
+    "/Users/seancheick/Documents/DataSetDsld/Lozenges-962labels-7-27-25/71028.json: can only concatenate list (not \"NoneType\") to list"
+  ],
+  "can_resume": true,
+  "config_checksum": "f86e130171dd970d7b1cd98b409da14e"
+}

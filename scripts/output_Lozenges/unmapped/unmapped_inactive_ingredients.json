@@ -1,0 +1,734 @@
+{
+  "safety_review_needed": [
+    {
+      "name": "patented nano-Silver solution",
+      "frequency": 3,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    }
+  ],
+  "general_excipients": [
+    {
+      "name": "Contains <2% of:",
+      "frequency": 28,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Contains <2% of",
+      "frequency": 15,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Acid Comfort",
+      "frequency": 4,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Enzymax",
+      "frequency": 4,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Orange crystals",
+      "frequency": 3,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Directline Technology",
+      "frequency": 3,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Disodium EDTA",
+      "frequency": 3,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "AstraGin",
+      "frequency": 3,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Eucalyptus",
+      "frequency": 3,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "May contain one or more of the following:",
+      "frequency": 3,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "EarthSweet",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "May contain one or more of the following",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Immuno-LP20",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "None",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "organic Sage freeze-dried extract",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Nano Silver",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Cyclodextrin",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Cutch Tree",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Trikatu Herbal Blend",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Magnolia officinalis",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "CordycepsPrime",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "ACTIValoe",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Coenzymated",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Stearin",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "DGL",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Sea Salt",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Red Wine extract",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Sage",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Mint",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Acid Reflux",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "DGL extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Dehydroepiandrosterone",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Fruit juice sweetener",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "organic Blackcurrant concentrate",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Contains < 2% of",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Trehalose",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "D-Mannose",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Naturally Sweet",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Contains 2% or less of the following",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Ginger G321 extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "organic European Elder powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Natural Food Base {Blend} (Combination)",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Black Currant Powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Black Currant powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Molasses",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Contains less than 2% of",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Orange juice powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Mycrobiome Mouth & Throat Blend",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "European Elder, Powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Black Currant juice concentrate",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Amla Extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Lysozyme",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Reishi Fruiting Body Mushroom Extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "POWDERED POMEGRANATE JUICE CONCENTRATE",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Tongkat Ali root powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "TestoSurge",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "organic Tribulus terrestris",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Horny Goat Weed",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Sage leaf extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Diindolylmethane",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "DGL (De-Glycyrrhizinated Licorice) extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Liver",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Colloidal Silver",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Fig concentrate",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Date concentrate",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "N-acetyl-5-methotryptamine",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Velvet Bean",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Velvet Bean extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Fruit Juice",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Salt",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "LifePQQ",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Orange Juice, Powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "mycrobiome Mouth & Throat Blend",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Organic Barley Juice Powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Organic Fruit Juice",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Parteck",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Aerosil",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "GanedenBC30",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Acid Redux",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "ATP",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "lemon juice powder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Elder (Sambucus nigra) blossom extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Rebiana",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "European Elder",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Sage leaf freeze dried extract",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Colostrum",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Di-Pac",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Butterscotch",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    }
+  ],
+  "known_safe": [
+    {
+      "name": "Peppermint aerial parts essential oil",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Lemon Peel Essential Oil",
+      "frequency": 2,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Oils Of Angelica",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "{OILS OF} STAR ANISE",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "{OILS OF} GINGER",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "{OILS OF} LEMON GRASS",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "{OILS OF} SAGE",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "organic Eucalyptus Oil",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Eucalyptus Oil",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Food Starch, Modified",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Essential Oil Blend",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Eucalyptus Leaf Essential Oil",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "dried canola oil",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Peppermint tops essential oil",
+      "frequency": 1,
+      "first_seen": "2025-08-16",
+      "mapping_attempts": 0,
+      "notes": ""
+    }
+  ],
+  "metadata": {
+    "total_count": 103,
+    "last_updated": "2025-08-16 14:56:26",
+    "notes": "Inactive/other ingredients - check for safety issues"
+  }
+}

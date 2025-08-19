@@ -1,0 +1,12 @@
+2025-08-04 16:44:28,581 - INFO - === Batch 13 Processing Log ===
+2025-08-04 16:44:28,581 - INFO - Started: 2025-08-04 16:44:28
+2025-08-04 16:44:28,581 - INFO - Files: 13678.json to 13754.json
+2025-08-04 16:44:30,649 - INFO - Ended: 2025-08-04 16:44:30
+2025-08-04 16:44:30,650 - INFO - Summary: {'batch_num': 13, 'processed': 2, 'cleaned': 2, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 2.0682408809661865, 'avg_time_per_file': 1.0341204404830933}
+2025-08-04 16:44:30,650 - INFO - Unmapped ingredients: 0
+2025-08-04 20:18:55,430 - INFO - === Batch 13 Processing Log ===
+2025-08-04 20:18:55,430 - INFO - Started: 2025-08-04 20:18:55
+2025-08-04 20:18:55,430 - INFO - Files: 14885.json to 14997.json
+2025-08-04 20:18:57,366 - INFO - Ended: 2025-08-04 20:18:57
+2025-08-04 20:18:57,367 - INFO - Summary: {'batch_num': 13, 'processed': 4, 'cleaned': 4, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 1.9370450973510742, 'avg_time_per_file': 0.48426127433776855}
+2025-08-04 20:18:57,367 - INFO - Unmapped ingredients: 1

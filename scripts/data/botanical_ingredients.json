@@ -1,0 +1,1566 @@
+{
+  "botanical_ingredients": [
+    {
+      "standard_name": "Acai Berry",
+      "aliases": [
+        "euterpe oleracea fruit",
+        "acai powder",
+        "freeze-dried acai"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, often valued for antioxidant content but not typically standardized to specific compounds.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Acerola Cherry",
+      "aliases": [
+        "malpighia emarginata",
+        "acerola fruit",
+        "barbados cherry"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, naturally rich in Vitamin C, but not standardized to a specific vitamin C percentage.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Alfalfa Leaf",
+      "aliases": [
+        "medicago sativa leaf",
+        "alfalfa leaf powder",
+        "lucerne",
+        "alfalfa juice concentrate"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, typically used for general nutrition; not standardized to specific markers.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Aloe Vera",
+      "aliases": [
+        "aloe barbadensis miller",
+        "aloe vera leaf",
+        "organic aloe",
+        "aloe vera gel"
+      ],
+      "category": "plant extract",
+      "notes": "Whole plant or gel extract, often used for digestive support; typically not standardized for active compounds like polysaccharides (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Amla Fruit",
+      "aliases": [
+        "phyllanthus emblica fruit",
+        "indian gooseberry",
+        "amalaki"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, naturally rich in Vitamin C, but not standardized to a specific vitamin C percentage (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Fruits",
+      "aliases": [
+        "apple",
+        "Pineapple",
+        "papaya"
+      ],
+      "category": "fruit",
+      "notes": "Fruits used for color or taste.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Apple Cider Vinegar",
+      "aliases": [
+        "ACV",
+        "malus domestica vinegar",
+        "apple vinegar"
+      ],
+      "category": "fruit extract",
+      "notes": "Fermented apple product, used for digestive health and metabolism support. Not standardized to a specific compound like acetic acid.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Ashwagandha Root",
+      "aliases": [
+        "withania somnifera root",
+        "indian ginseng root powder",
+        "winter cherry root"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, used for adaptogenic properties but not standardized to specific withanolide content (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Astragalus Root",
+      "aliases": [
+        "astragalus membranaceus root",
+        "huang qi"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, used for immune support and adaptogenic properties; not standardized to astragalosides.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Barley Grass Powder",
+      "aliases": [
+        "hordeum vulgare powder",
+        "barley grass",
+        "young barley grass"
+      ],
+      "category": "grass",
+      "notes": "Whole grass powder, rich in nutrients but typically not standardized to specific active compounds like chlorophyll.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Beet Root",
+      "aliases": [
+        "beta vulgaris root",
+        "beetroot powder",
+        "beet root extract"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, used for nitric oxide support and general health. Not standardized to nitrates (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Bilberry Fruit",
+      "aliases": [
+        "vaccinium myrtillus fruit",
+        "european blueberry"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, valued for antioxidant content but not standardized to anthocyanosides (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Black Cherry",
+      "aliases": [
+        "prunus serotina",
+        "wild cherry",
+        "black cherry fruit",
+        "prunus serotina fruit"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit or simple extract, used for antioxidant properties. Not standardized to anthocyanins.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Black Elderberry Fruit",
+      "aliases": [
+        "sambucus nigra fruit",
+        "elderberry fruit powder",
+        "sambucus fruit"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, not standardized to specific anthocyanin content (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Blueberry Fruit",
+      "aliases": [
+        "vaccinium corymbosum fruit",
+        "blueberry powder",
+        "highbush blueberry"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, not standardized to specific anthocyanin content (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Boswellia Serrata Resin",
+      "aliases": [
+        "indian frankincense",
+        "boswellia gum",
+        "boswellia resin"
+      ],
+      "category": "resin",
+      "notes": "Raw resin powder or simple extract, used for inflammatory support; not standardized to boswellic acids (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Burdock Root Powder",
+      "aliases": [
+        "arctium lappa root powder",
+        "burdock powder",
+        "great burdock"
+      ],
+      "category": "root",
+      "notes": "Whole root powder, not standardized to arctiin or other markers.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Cacao Powder",
+      "aliases": [
+        "theobroma cacao powder",
+        "cocoa powder (raw)",
+        "raw cacao"
+      ],
+      "category": "seed",
+      "notes": "Raw or minimally processed powder from cacao beans, rich in antioxidants and minerals, but not standardized to specific flavanols.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Cat's Claw Bark",
+      "aliases": [
+        "uncaria tomentosa bark",
+        "una de gato"
+      ],
+      "category": "bark",
+      "notes": "Whole bark powder or simple extract, used for immune and inflammatory support; not standardized to oxindole alkaloids.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Cayenne Pepper",
+      "aliases": [
+        "capsicum annuum",
+        "cayenne powder",
+        "red pepper"
+      ],
+      "category": "spice",
+      "notes": "Whole spice powder, used for metabolic support and circulation. Not standardized to capsaicinoids (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Celery Seed",
+      "aliases": [
+        "apium graveolens seed",
+        "celery seed powder"
+      ],
+      "category": "seed",
+      "notes": "Whole seed or simple extract, not standardized to specific phthalides or other markers.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Chaga Mushroom Powder",
+      "aliases": [
+        "inonotus obliquus powder",
+        "chaga"
+      ],
+      "category": "mushroom",
+      "notes": "Whole mushroom powder or simple extract, used for antioxidant and immune support; not standardized to polysaccharides or triterpenes.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Chia Seed",
+      "aliases": [
+        "salvia hispanica seed",
+        "chia seed powder",
+        "mexican chia"
+      ],
+      "category": "seed",
+      "notes": "Whole or ground seeds, valued for fiber and Omega-3s, but not standardized.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Chlorella Powder",
+      "aliases": [
+        "chlorella vulgaris powder",
+        "cracked cell chlorella"
+      ],
+      "category": "algae",
+      "notes": "Whole algae powder, rich in nutrients but typically not standardized to specific compounds like CGF or chlorophyll.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Cinnamon Bark",
+      "aliases": [
+        "cinnamomum verum bark",
+        "cinnamon powder",
+        "cinnamomum cassia bark",
+        "true cinnamon"
+      ],
+      "category": "bark",
+      "notes": "Whole bark powder, not standardized to cinnamaldehyde or polyphenols (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Cordyceps Mushroom Powder",
+      "aliases": [
+        "cordyceps sinensis powder",
+        "cordyceps militaris powder"
+      ],
+      "category": "mushroom",
+      "notes": "Whole mushroom powder or simple extract, used for energy and endurance; not standardized to polysaccharides or cordycepin.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Cranberry Fruit",
+      "aliases": [
+        "vaccinium macrocarpon fruit",
+        "cranberry powder",
+        "american cranberry"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, not standardized to PACs (proanthocyanidins) (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Dandelion Root",
+      "aliases": [
+        "taraxacum officinale root",
+        "dandelion root powder"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, not standardized to specific markers.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Echinacea Purpurea Herb",
+      "aliases": [
+        "echinacea purpurea",
+        "purple coneflower"
+      ],
+      "category": "herb",
+      "notes": "Whole herb powder or simple extract, used for immune support; not standardized to alkamides or chicoric acid.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Evening Primrose Seed Oil",
+      "aliases": [
+        "EPO",
+        "oenothera biennis oil"
+      ],
+      "category": "seed oil",
+      "notes": "Cold-pressed oil from evening primrose seeds; primarily valued for its Gamma-Linolenic Acid (GLA) content, but not standardized to a specific GLA percentage.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Fenugreek Seed",
+      "aliases": [
+        "trigonella foenum-graecum seed",
+        "fenugreek powder"
+      ],
+      "category": "seed",
+      "notes": "Whole seed powder, not standardized to saponins or 4-hydroxyisoleucine (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Garlic Bulb",
+      "aliases": [
+        "allium sativum bulb",
+        "garlic powder",
+        "aged garlic"
+      ],
+      "category": "bulb",
+      "notes": "Whole garlic bulb powder, not standardized to allicin or S-allylcysteine (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Ginger Root",
+      "aliases": [
+        "zingiber officinale root",
+        "ginger powder",
+        "ginger rhizome",
+        "organic ginger (rhizome) supercritical extract",
+        "ginger supercritical extract",
+        "organic ginger rhizome"
+      ],
+      "category": "root",
+      "notes": "Whole root powder, not standardized to gingerols or shogaols (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Ginkgo Biloba Leaf",
+      "aliases": [
+        "ginkgo leaf",
+        "maidenhair tree leaf"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, used for cognitive support; not standardized to ginkgo flavone glycosides or terpene lactones (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Ginseng Root (Panax)",
+      "aliases": [
+        "panax ginseng root",
+        "korean ginseng",
+        "asian ginseng"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, used for adaptogenic properties and energy; not standardized to ginsenosides (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Goji Berry",
+      "aliases": [
+        "lycium barbarum fruit",
+        "wolfberry",
+        "goji fruit",
+        "goji powder",
+        "goji"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit or simple extract, valued for antioxidant and nutritional content; not standardized to lycium barbarum polysaccharides (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Grape Seed",
+      "aliases": [
+        "vitis vinifera seed",
+        "grape seed powder"
+      ],
+      "category": "seed",
+      "notes": "Whole seed powder or simple extract, valued for antioxidant properties; not standardized to proanthocyanidins (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Green Tea Leaf",
+      "aliases": [
+        "camellia sinensis leaf",
+        "green tea powder"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, not standardized to EGCG or total catechins (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Holy Basil Leaf",
+      "aliases": [
+        "ocimum tenuiflorum leaf",
+        "tulsi leaf",
+        "holy basil powder",
+        "ocimum sanctum leaf"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, used as an adaptogen; not standardized to ursolic acid or eugenol (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Horsetail Aerial Parts",
+      "aliases": [
+        "equisetum arvense",
+        "field horsetail",
+        "bottle-brush"
+      ],
+      "category": "herb",
+      "notes": "Whole aerial parts powder or simple extract, valued for natural silica content; not standardized to silica (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Kelp Powder",
+      "aliases": [
+        "laminaria powder",
+        "ascophyllum nodosum powder",
+        "bladderwrack powder",
+        "brown algae"
+      ],
+      "category": "seaweed",
+      "notes": "Whole seaweed powder, primarily valued for natural iodine content but not standardized to it (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Lemon Balm Leaf",
+      "aliases": [
+        "melissa officinalis leaf",
+        "balm mint"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, used for calming properties and digestive comfort; not standardized to rosmarinic acid.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Licorice Root",
+      "aliases": [
+        "glycyrrhiza glabra root",
+        "licorice powder"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, not standardized to glycyrrhizin (unless deglycyrrhizinated licorice - DGL - or standardized extract).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Lions Mane Mushroom Powder",
+      "aliases": [
+        "hericium erinaceus powder",
+        "yamabushitake"
+      ],
+      "category": "mushroom",
+      "notes": "Whole mushroom powder or simple extract, used for cognitive support; not standardized to polysaccharides or hericenones/erinacines.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Maca Root",
+      "aliases": [
+        "lepidium meyenii root",
+        "maca powder",
+        "peruvian ginseng"
+      ],
+      "category": "root",
+      "notes": "Whole root powder, not standardized to macamides or macaenes (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Marshmallow Root",
+      "aliases": [
+        "althaea officinalis root",
+        "marshmallow powder",
+        "althaea root",
+        "white mallow root",
+        "common marshmallow",
+        "marshmallow root (Althaea officinalis)",
+        "marshmallow"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, traditionally used for digestive and respiratory support due to its mucilage content; not standardized to specific compounds.",
+      "last_updated": "2025-08-14"
+    },
+    {
+      "standard_name": "Matcha Tea Powder",
+      "aliases": [
+        "camellia sinensis powder",
+        "matcha",
+        "ceremonial matcha"
+      ],
+      "category": "leaf",
+      "notes": "Finely ground green tea leaves, providing a broad spectrum of compounds, but typically not standardized to EGCG levels (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Milk Thistle Seed",
+      "aliases": [
+        "silybum marianum seed",
+        "milk thistle powder"
+      ],
+      "category": "seed",
+      "notes": "Whole seed powder, not standardized to silymarin content (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Moringa Leaf",
+      "aliases": [
+        "moringa oleifera leaf",
+        "drumstick tree leaf"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder, highly nutritious, but not standardized to specific bioactives (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Nettle Leaf",
+      "aliases": [
+        "urtica dioica leaf",
+        "stinging nettle leaf powder"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, not standardized to flavonoids or beta-sitosterol (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Olive Leaf Powder",
+      "aliases": [
+        "olea europaea leaf powder",
+        "olive leaf"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, not standardized to oleuropein (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Passionflower Herb",
+      "aliases": [
+        "passiflora incarnata herb",
+        "passion flower"
+      ],
+      "category": "herb",
+      "notes": "Whole herb powder or simple extract, used for calming and sleep support; not standardized to flavonoids (e.g., vitexin).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Peppermint Leaf",
+      "aliases": [
+        "mentha piperita leaf",
+        "peppermint powder"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, not standardized to menthol.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Pomegranate Fruit",
+      "aliases": [
+        "punica granatum fruit",
+        "pomegranate powder"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, not standardized to ellagitannins or punicalagins (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Psyllium Husk",
+      "aliases": [
+        "plantago ovata husk",
+        "psyllium fiber",
+        "ispaghula husk"
+      ],
+      "category": "fiber",
+      "notes": "Whole husk material, primarily used for dietary fiber content. Not standardized to specific fiber types or mucilage content.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Red Clover Flower",
+      "aliases": [
+        "trifolium pratense flower",
+        "red clover powder"
+      ],
+      "category": "flower",
+      "notes": "Whole flower powder or simple extract, not standardized to isoflavones (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Reishi Mushroom Powder",
+      "aliases": [
+        "ganoderma lucidum powder",
+        "lingzhi powder"
+      ],
+      "category": "mushroom",
+      "notes": "Whole mushroom powder or simple extract, not standardized to triterpenoids or polysaccharides (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Rhodiola Rosea Root",
+      "aliases": [
+        "golden root",
+        "arctic root",
+        "rhodiola"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, used as an adaptogen; not standardized to rosavins or salidrosides (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Rose Hips",
+      "aliases": [
+        "rosa canina fruit",
+        "rose hip fruit",
+        "rosehip"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit or simple extract, naturally rich in Vitamin C and antioxidants; not standardized to specific vitamin C content (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Saw Palmetto Berry",
+      "aliases": [
+        "serenoa repens berry",
+        "saw palmetto powder"
+      ],
+      "category": "berry",
+      "notes": "Whole berry powder, not standardized to fatty acids and sterols (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Schisandra Berry",
+      "aliases": [
+        "schisandra chinensis fruit",
+        "five-flavor berry"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, used as an adaptogen; not standardized to schisandrins.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Shatavari Root",
+      "aliases": [
+        "asparagus racemosus root",
+        "wild asparagus"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, used for women's health and adaptogenic properties; not standardized to saponins.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Spirulina Powder",
+      "aliases": [
+        "arthrospira platensis powder",
+        "blue-green algae"
+      ],
+      "category": "algae",
+      "notes": "Whole algae powder, rich in protein and nutrients but not standardized to phycocyanin or specific protein levels.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "St. John's Wort Herb",
+      "aliases": [
+        "hypericum perforatum herb",
+        "kantarion"
+      ],
+      "category": "herb",
+      "notes": "Whole herb powder or simple extract, used for mood support; not standardized to hypericin or hyperforin (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Tart Cherry Fruit",
+      "aliases": [
+        "prunus cerasus fruit",
+        "tart cherry powder",
+        "sour cherry"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, not standardized to anthocyanins (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Triphala Powder",
+      "aliases": [
+        "triphala",
+        "amalaki bibhitaki haritaki blend"
+      ],
+      "category": "herbal blend",
+      "notes": "A traditional Ayurvedic blend of three fruits (Amalaki, Bibhitaki, Haritaki) in powder form, used for digestive support; not standardized to specific markers.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Turmeric Root Powder",
+      "aliases": [
+        "curcuma longa root powder",
+        "turmeric powder",
+        "indian saffron powder"
+      ],
+      "category": "root",
+      "notes": "Whole root powder, not standardized to curcuminoids (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Valerian Root",
+      "aliases": [
+        "valeriana officinalis root",
+        "valerian powder"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, not standardized to valerenic acids (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Wheatgrass Powder",
+      "aliases": [
+        "triticum aestivum powder",
+        "wheat grass"
+      ],
+      "category": "grass",
+      "notes": "Whole grass powder, rich in nutrients but typically not standardized to specific compounds like chlorophyll.",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "White Willow Bark",
+      "aliases": [
+        "salix alba bark",
+        "willow bark"
+      ],
+      "category": "bark",
+      "notes": "Whole bark powder or simple extract, used for pain relief; not standardized to salicin (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Wild Yam Root",
+      "aliases": [
+        "dioscorea villosa root",
+        "wild yam powder"
+      ],
+      "category": "root",
+      "notes": "Whole root powder or simple extract, not standardized to diosgenin (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Yerba Mate Leaf",
+      "aliases": [
+        "ilex paraguariensis leaf",
+        "yerba mate powder"
+      ],
+      "category": "leaf",
+      "notes": "Whole leaf powder or simple extract, not standardized to caffeine or other xanthines (unless specified as standardized).",
+      "last_updated": "2025-07-28"
+    },
+    {
+      "standard_name": "Parsley",
+      "aliases": [
+        "petroselinum crispum",
+        "parsley leaf",
+        "organic parsley",
+        "parsley powder"
+      ],
+      "category": "herb",
+      "notes": "An herb with nutritional value, rich in vitamins and minerals. Whole herb powder or simple extract, not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Cabbage",
+      "aliases": [
+        "brassica oleracea",
+        "cabbage powder",
+        "organic cabbage"
+      ],
+      "category": "vegetable",
+      "notes": "Cruciferous vegetable used for its nutritional content. Whole vegetable powder, not standardized to specific compounds like glucosinolates.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Kale",
+      "aliases": [
+        "brassica oleracea var. acephala",
+        "kale powder",
+        "organic kale",
+        "kale leaf"
+      ],
+      "category": "vegetable",
+      "notes": "Cruciferous vegetable used for its nutritional content. Whole vegetable powder, rich in nutrients but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Cauliflower",
+      "aliases": [
+        "brassica oleracea var. botrytis",
+        "cauliflower powder",
+        "organic cauliflower"
+      ],
+      "category": "vegetable",
+      "notes": "Cruciferous vegetable used for its nutritional content. Whole vegetable powder, not standardized to specific compounds like glucosinolates.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Grape",
+      "aliases": [
+        "vitis vinifera fruit",
+        "grape powder",
+        "grape fruit",
+        "whole grape"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder or simple extract, valued for antioxidant content but not standardized to specific compounds like resveratrol or anthocyanins.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Tomato",
+      "aliases": [
+        "solanum lycopersicum",
+        "tomato powder",
+        "organic tomato",
+        "tomato fruit"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for lycopene and other nutrients but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Pumpkin",
+      "aliases": [
+        "cucurbita pepo",
+        "pumpkin powder",
+        "pumpkin seed",
+        "organic pumpkin"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit or seed powder, valued for nutritional content but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Mango",
+      "aliases": [
+        "mangifera indica",
+        "mango powder",
+        "mango fruit"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for vitamins and antioxidants but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Plantain",
+      "aliases": [
+        "musa paradisiaca",
+        "plantain powder",
+        "cooking banana"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for nutritional content but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Plum",
+      "aliases": [
+        "prunus domestica",
+        "plum powder",
+        "plum fruit"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for antioxidants and nutrients but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Pear",
+      "aliases": [
+        "pyrus communis",
+        "pear powder",
+        "pear fruit"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for fiber and nutrients but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Apricot",
+      "aliases": [
+        "prunus armeniaca",
+        "apricot powder",
+        "apricot fruit"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for beta-carotene and nutrients but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Cucumber",
+      "aliases": [
+        "cucumis sativus",
+        "cucumber powder",
+        "cucumber fruit"
+      ],
+      "category": "vegetable",
+      "notes": "Whole vegetable powder, valued for hydration and nutrients but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Brussels Sprout",
+      "aliases": [
+        "brassica oleracea var. gemmifera",
+        "brussels sprout powder",
+        "brussels sprouts"
+      ],
+      "category": "vegetable",
+      "notes": "Cruciferous vegetable used for its nutritional content. Whole vegetable powder, not standardized to specific compounds like glucosinolates.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Cilantro",
+      "aliases": [
+        "coriandrum sativum leaf",
+        "cilantro leaf",
+        "fresh coriander",
+        "chinese parsley"
+      ],
+      "category": "herb",
+      "notes": "Herb with nutritional value, used for flavor and potential detoxification properties. Whole herb powder, not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Thyme",
+      "aliases": [
+        "thymus vulgaris",
+        "thyme leaf",
+        "thyme powder"
+      ],
+      "category": "herb",
+      "notes": "Aromatic herb with nutritional and antimicrobial properties. Whole herb powder, not standardized to specific compounds like thymol.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Carob",
+      "aliases": [
+        "ceratonia siliqua",
+        "carob powder",
+        "locust bean"
+      ],
+      "category": "seed",
+      "notes": "Seed pod powder, used as a chocolate substitute. Valued for fiber and nutrients but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Tangerine",
+      "aliases": [
+        "citrus reticulata",
+        "tangerine powder",
+        "mandarin orange"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for vitamin C and flavonoids but not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Juniper",
+      "aliases": [
+        "juniperus communis",
+        "juniper berry",
+        "juniper powder"
+      ],
+      "category": "berry",
+      "notes": "Berry powder, traditionally used for urinary support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Shiitake Mushroom",
+      "aliases": [
+        "lentinula edodes",
+        "shiitake powder",
+        "shiitake mushroom powder"
+      ],
+      "category": "mushroom",
+      "notes": "Whole mushroom powder, valued for immune support and nutrients. Not standardized to polysaccharides or lentinan.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Cardamom",
+      "aliases": [
+        "elettaria cardamomum",
+        "cardamom powder",
+        "organic cardamom",
+        "green cardamom"
+      ],
+      "category": "spice",
+      "notes": "Aromatic spice with digestive properties. Whole spice powder, not standardized to essential oils or specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Clove",
+      "aliases": [
+        "syzygium aromaticum",
+        "clove powder",
+        "clove bud"
+      ],
+      "category": "spice",
+      "notes": "Aromatic spice with antimicrobial properties. Whole spice powder, not standardized to eugenol or other compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Prune",
+      "aliases": [
+        "prunus domestica dried",
+        "prune powder",
+        "dried plum"
+      ],
+      "category": "fruit",
+      "notes": "Dried fruit powder, valued for fiber and nutrients. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Chamomile",
+      "aliases": [
+        "matricaria chamomilla",
+        "chamomile flower",
+        "organic chamomile",
+        "german chamomile"
+      ],
+      "category": "flower",
+      "notes": "Flower powder or simple extract, traditionally used for calming and digestive support. Not standardized to apigenin or other compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Fennel",
+      "aliases": [
+        "foeniculum vulgare",
+        "fennel seed",
+        "fennel powder"
+      ],
+      "category": "seed",
+      "notes": "Seed powder, traditionally used for digestive support. Not standardized to anethole or other compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Blessed Thistle",
+      "aliases": [
+        "cnicus benedictus",
+        "blessed thistle herb",
+        "holy thistle"
+      ],
+      "category": "herb",
+      "notes": "Whole herb powder or simple extract, traditionally used for digestive support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Long Pepper",
+      "aliases": [
+        "piper longum",
+        "long pepper powder",
+        "indian long pepper"
+      ],
+      "category": "spice",
+      "notes": "Spice powder, traditionally used in Ayurvedic medicine. Not standardized to piperine or other compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Dong Quai",
+      "aliases": [
+        "angelica sinensis",
+        "dong quai root",
+        "chinese angelica",
+        "female ginseng",
+        "tang kuei"
+      ],
+      "category": "root",
+      "notes": "Root powder or simple extract, traditionally used in Chinese medicine for women's health. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Indian Tinospora",
+      "aliases": [
+        "tinospora cordifolia",
+        "guduchi",
+        "giloy",
+        "heart-leaved moonseed"
+      ],
+      "category": "herb",
+      "notes": "Whole plant powder or simple extract, traditionally used in Ayurvedic medicine for immune support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Belleric Myrobalan",
+      "aliases": [
+        "terminalia bellirica",
+        "bibhitaki",
+        "baheda",
+        "beleric"
+      ],
+      "category": "fruit",
+      "notes": "Fruit powder, one of the three fruits in Triphala. Traditionally used in Ayurvedic medicine. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Paeonia lactiflora",
+      "aliases": [
+        "white peony root",
+        "bai shao",
+        "chinese peony",
+        "paeonia root"
+      ],
+      "category": "root",
+      "notes": "Root powder or simple extract, traditionally used in Chinese medicine. Not standardized to paeoniflorin or other compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Zhu Ling",
+      "aliases": [
+        "polyporus umbellatus",
+        "umbrella polypore",
+        "zhu ling mushroom"
+      ],
+      "category": "mushroom",
+      "notes": "Mushroom powder or simple extract, traditionally used in Chinese medicine for urinary support. Not standardized to polysaccharides.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Poria cocos",
+      "aliases": [
+        "poria cocos fungus",
+        "fu ling",
+        "china root",
+        "indian bread"
+      ],
+      "category": "mushroom",
+      "notes": "Fungus powder or simple extract, traditionally used in Chinese medicine for digestive and urinary support. Not standardized to triterpenes.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Codonopsis",
+      "aliases": [
+        "codonopsis pilosula",
+        "dang shen",
+        "poor man's ginseng",
+        "bellflower root"
+      ],
+      "category": "root",
+      "notes": "Root powder or simple extract, traditionally used in Chinese medicine as a ginseng substitute. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Chaste Tree",
+      "aliases": [
+        "vitex agnus-castus",
+        "organic chaste tree",
+        "chasteberry",
+        "monk's pepper"
+      ],
+      "category": "berry",
+      "notes": "Berry powder or simple extract, traditionally used for women's health. Not standardized to agnuside or other compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Ligustrum",
+      "aliases": [
+        "ligustrum lucidum",
+        "glossy privet",
+        "nu zhen zi",
+        "privet fruit"
+      ],
+      "category": "berry",
+      "notes": "Berry powder or simple extract, traditionally used in Chinese medicine for liver and kidney support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Chebulic Myrobalan",
+      "aliases": [
+        "terminalia chebula",
+        "haritaki",
+        "he zi",
+        "black myrobalan"
+      ],
+      "category": "fruit",
+      "notes": "Fruit powder, one of the three fruits in Triphala. Traditionally used in Ayurvedic medicine. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Agarikon",
+      "aliases": [
+        "laricifomes officinalis",
+        "agarikon mushroom",
+        "quinine conk"
+      ],
+      "category": "mushroom",
+      "notes": "Mushroom powder or simple extract, traditionally used for immune support. Not standardized to polysaccharides or other compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Himematsutake",
+      "aliases": [
+        "agaricus blazei",
+        "royal sun agaricus",
+        "almond mushroom",
+        "brazilian mushroom"
+      ],
+      "category": "mushroom",
+      "notes": "Mushroom powder or simple extract, valued for immune support. Not standardized to beta-glucans or other compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Kawaratake",
+      "aliases": [
+        "trametes versicolor",
+        "turkey tail",
+        "coriolus versicolor",
+        "yun zhi"
+      ],
+      "category": "mushroom",
+      "notes": "Mushroom powder or simple extract, traditionally used for immune support. Not standardized to PSK or PSP compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Mesima",
+      "aliases": [
+        "phellinus linteus",
+        "mesima mushroom",
+        "sang hwang",
+        "black hoof mushroom"
+      ],
+      "category": "mushroom",
+      "notes": "Mushroom powder or simple extract, traditionally used in Asian medicine for immune support. Not standardized to polysaccharides.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Coriander",
+      "aliases": [
+        "coriandrum sativum seed",
+        "organic coriander",
+        "coriander seed",
+        "dhania"
+      ],
+      "category": "seed",
+      "notes": "Seed powder, used for digestive support and flavor. Not standardized to essential oils or specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Pea",
+      "aliases": [
+        "pisum sativum",
+        "pea powder",
+        "green pea",
+        "pea protein"
+      ],
+      "category": "vegetable",
+      "notes": "Whole vegetable powder, valued for protein and nutrients. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Green Bell Pepper",
+      "aliases": [
+        "capsicum annuum",
+        "organic green bell pepper",
+        "green pepper powder",
+        "bell pepper"
+      ],
+      "category": "vegetable",
+      "notes": "Whole vegetable powder, valued for vitamin C and nutrients. Not standardized to specific compounds.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "standard_name": "Chinese Licorice",
+      "aliases": [
+        "glycyrrhiza uralensis",
+        "glycyrrhiza uralensis extract",
+        "chinese licorice root",
+        "gan cao"
+      ],
+      "category": "root",
+      "notes": "Root powder or simple extract, traditionally used in Chinese medicine. Not standardized to glycyrrhizin or flavonoids (unless specified as standardized).",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "standard_name": "Lime",
+      "aliases": [
+        "citrus aurantifolia",
+        "lime powder",
+        "lime fruit",
+        "key lime"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for vitamin C and flavonoids but not standardized to specific compounds.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "standard_name": "Guggul",
+      "aliases": [
+        "commiphora mukul",
+        "guggul resin",
+        "indian bdellium",
+        "guggulu"
+      ],
+      "category": "resin",
+      "notes": "Resin extract, traditionally used in Ayurvedic medicine. Not standardized to guggulsterones (unless specified as standardized).",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "standard_name": "Schizonepeta",
+      "aliases": [
+        "schizonepeta tenuifolia",
+        "japanese catnip",
+        "jing jie",
+        "fineleaf schizonepeta herb"
+      ],
+      "category": "herb",
+      "notes": "Whole herb powder or simple extract, traditionally used in Chinese medicine. Not standardized to specific compounds.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "standard_name": "Japanese Honeysuckle",
+      "aliases": [
+        "lonicera japonica",
+        "jin yin hua",
+        "honeysuckle flower",
+        "japanese honeysuckle flower"
+      ],
+      "category": "flower",
+      "notes": "Flower powder or simple extract, traditionally used in Chinese medicine. Not standardized to chlorogenic acid or other compounds.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "standard_name": "Cyperus",
+      "aliases": [
+        "cyperus rotundus",
+        "nutgrass",
+        "xiang fu",
+        "cyperus root"
+      ],
+      "category": "root",
+      "notes": "Root powder or simple extract, traditionally used in Chinese and Ayurvedic medicine. Not standardized to specific compounds.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "standard_name": "Sichuan Lovage",
+      "aliases": [
+        "ligusticum chuanxiong",
+        "chuan xiong",
+        "chinese lovage root",
+        "szechuan lovage"
+      ],
+      "category": "root",
+      "notes": "Root powder or simple extract, traditionally used in Chinese medicine for circulation support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "standard_name": "Green Onion",
+      "aliases": [
+        "organic green onion",
+        "scallion",
+        "spring onion",
+        "allium fistulosum",
+        "green onion powder"
+      ],
+      "category": "vegetable",
+      "notes": "Whole vegetable powder, valued for nutrients and flavor compounds. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Peach",
+      "aliases": [
+        "prunus persica",
+        "peach powder",
+        "peach fruit",
+        "organic peach"
+      ],
+      "category": "fruit",
+      "notes": "Whole fruit powder, valued for vitamins and antioxidants. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Sweet Potato",
+      "aliases": [
+        "ipomoea batatas",
+        "sweet potato powder",
+        "organic sweet potato",
+        "yam"
+      ],
+      "category": "vegetable",
+      "notes": "Whole vegetable powder, valued for beta-carotene and nutrients. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Oat Bran",
+      "aliases": [
+        "avena sativa bran",
+        "oat bran powder",
+        "organic oat bran"
+      ],
+      "category": "grain",
+      "notes": "Grain bran powder, valued for fiber and nutrients. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Skullcap",
+      "aliases": [
+        "scutellaria lateriflora",
+        "skullcap herb",
+        "american skullcap",
+        "mad dog skullcap"
+      ],
+      "category": "herb",
+      "notes": "Whole herb powder, traditionally used for nervous system support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Enokitake",
+      "aliases": [
+        "flammulina velutipes",
+        "enoki mushroom",
+        "golden needle mushroom",
+        "winter mushroom"
+      ],
+      "category": "mushroom",
+      "notes": "Mushroom powder or simple extract, valued for immune support and nutrients. Not standardized to polysaccharides or other compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Hiratake",
+      "aliases": [
+        "pleurotus ostreatus",
+        "oyster mushroom",
+        "hiratake mushroom"
+      ],
+      "category": "mushroom",
+      "notes": "Mushroom powder or simple extract, valued for immune support and nutrients. Not standardized to polysaccharides or other compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Atractylodes",
+      "aliases": [
+        "atractylodes macrocephala",
+        "bai zhu",
+        "white atractylodes",
+        "large-head atractylodes"
+      ],
+      "category": "root",
+      "notes": "Root powder or simple extract, traditionally used in Chinese medicine for digestive support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Jujube",
+      "aliases": [
+        "ziziphus jujuba",
+        "chinese date",
+        "red date",
+        "da zao"
+      ],
+      "category": "fruit",
+      "notes": "Fruit powder or simple extract, traditionally used in Chinese medicine for nourishment and calming. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Woad",
+      "aliases": [
+        "isatis tinctoria",
+        "ban lan gen",
+        "woad root",
+        "dyer's woad"
+      ],
+      "category": "root",
+      "notes": "Root powder or simple extract, traditionally used in Chinese medicine for immune support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Vitex",
+      "aliases": [
+        "vitex trifolia",
+        "three-leaf chastetree",
+        "man jing zi"
+      ],
+      "category": "herb",
+      "notes": "Herb powder or simple extract, traditionally used in Chinese medicine. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Sesbania",
+      "aliases": [
+        "organic sesbania grandiflora",
+        "sesbania grandiflora",
+        "vegetable hummingbird",
+        "agati"
+      ],
+      "category": "herb",
+      "notes": "Herb powder or simple extract, traditionally used for nutritional support. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Radish",
+      "aliases": [
+        "raphanus sativus",
+        "radish powder",
+        "organic radish"
+      ],
+      "category": "vegetable",
+      "notes": "Whole vegetable powder, valued for nutrients and digestive support compounds. Not standardized to specific compounds.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Mullein",
+      "aliases": [
+        "verbascum thapsus",
+        "common mullein",
+        "mullein leaf",
+        "mullein flower"
+      ],
+      "category": "leaf",
+      "notes": "Traditional respiratory herb. Leaves and flowers used for respiratory conditions like bronchitis and coughs. Contains verbascoside.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Goldenseal",
+      "aliases": [
+        "hydrastis canadensis",
+        "goldenseal root",
+        "yellow root"
+      ],
+      "category": "root",
+      "notes": "Traditional antimicrobial herb. Contains berberine and hydrastine alkaloids. Limited oral bioavailability.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Sarsaparilla",
+      "aliases": [
+        "smilax officinalis",
+        "smilax species",
+        "sarsaparilla root",
+        "honduras sarsaparilla"
+      ],
+      "category": "root",
+      "notes": "Traditional blood cleanser and detoxifier. Contains steroidal saponins. Used in traditional herbal blends.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "standard_name": "Lemon Oil",
+      "aliases": [
+        "citrus limon oil",
+        "organic lemon oil",
+        "lemon essential oil",
+        "lemon peel oil"
+      ],
+      "category": "essential_oil",
+      "notes": "Essential oil from lemon peel (Citrus limon). Used for flavoring and aromatherapy. Contains limonene.",
+      "last_updated": "2025-08-15"
+    }
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "passive_inactive_ingredients": [
+    {
+      "id": "PII_PURIFIED_WATER",
+      "standard_name": "Purified Water",
+      "aliases": [
+        "aqua",
+        "distilled water",
+        "deionized water",
+        "H2O",
+        "water for injection",
+        "sterile water",
+        "water",
+        "water, purified"
+      ],
+      "category": "solvent",
+      "notes": "A fundamental solvent and diluent used in liquid formulations, suspensions, and as a component in the manufacturing of capsules and tablets. Considered entirely inert and safe.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_VEGETABLE_CAPSULE_HPMC",
+      "standard_name": "Vegetable Capsule (HPMC)",
+      "aliases": [
+        "hypromellose capsule",
+        "hydroxypropyl methylcellulose capsule",
+        "veggie cap",
+        "plant-based capsule",
+        "HPMC capsule",
+        "cellulose capsule",
+        "vegetarian capsule",
+        "vegan capsule",
+        "V-caps",
+        "Vcaps Plus",
+        "hypromellose",
+        "HPMC"
+      ],
+      "category": "capsule_material",
+      "notes": "A plant-derived cellulose material (Hydroxypropyl Methylcellulose) used to form vegetarian and vegan capsule shells. Provides a protective casing for ingredients and is generally considered inert and safe for consumption.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_GELATIN_CAPSULE",
+      "standard_name": "Gelatin Capsule",
+      "aliases": [
+        "bovine gelatin capsule",
+        "porcine gelatin capsule",
+        "fish gelatin capsule",
+        "softgel shell",
+        "hard gelatin capsule",
+        "gelatin shell",
+        "animal gelatin",
+        "gelatin"
+      ],
+      "category": "capsule_material",
+      "notes": "Derived from animal collagen, forming the shell of traditional capsules and softgels. Provides a protective casing. While animal-derived (not vegan/vegetarian), it is generally considered safe and inert in its role as a capsule material.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_EXTRA_VIRGIN_OLIVE_OIL",
+      "standard_name": "Extra Virgin Olive Oil",
+      "aliases": [
+        "EVOO",
+        "olive oil",
+        "olea europaea oil",
+        "cold-pressed olive oil",
+        "organic olive oil"
+      ],
+      "category": "carrier_oil",
+      "notes": "A high-quality, healthy fat often used as a neutral carrier for fat-soluble vitamins (like D, E, K, A) and other lipophilic active ingredients in liquid or softgel formulations. Primarily serves as a passive base.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_FLAXSEED_OIL",
+      "standard_name": "Flaxseed Oil",
+      "aliases": [
+        "linseed oil",
+        "linum usitatissimum oil",
+        "flax oil",
+        "organic flaxseed oil"
+      ],
+      "category": "carrier_oil",
+      "notes": "Used as a carrier oil for fat-soluble ingredients in liquid or softgel supplements. While it contains beneficial Omega-3 fatty acids, in this context, it's categorized for its passive role as a neutral base.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_PURIFIED_FISH_OIL",
+      "standard_name": "Purified Fish Oil (as carrier)",
+      "aliases": [
+        "omega-3 concentrate",
+        "EPA/DHA oil base",
+        "fish oil concentrate",
+        "molecular distilled fish oil"
+      ],
+      "category": "carrier_oil",
+      "notes": "Often used as a base or carrier for other fat-soluble ingredients, especially in softgels. While fish oil itself is an active ingredient (for Omega-3s), its role here is as a neutral, benign carrier for *other* actives.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_SUNFLOWER_OIL",
+      "standard_name": "Sunflower Oil",
+      "aliases": [
+        "helianthus annuus oil",
+        "organic sunflower oil",
+        "high oleic sunflower oil"
+      ],
+      "category": "carrier_oil",
+      "notes": "A common vegetable oil used as a neutral carrier for fat-soluble vitamins and other lipophilic compounds in supplements. Generally considered safe and inert in this role.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_SAFFLOWER_OIL",
+      "standard_name": "Safflower Oil",
+      "aliases": [
+        "carthamus tinctorius oil",
+        "organic safflower oil",
+        "high oleic safflower oil"
+      ],
+      "category": "carrier_oil",
+      "notes": "Another common vegetable oil used as a neutral carrier in supplement formulations. Generally considered safe and inert.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_SILICON_DIOXIDE",
+      "standard_name": "Silicon Dioxide",
+      "aliases": [
+        "silica",
+        "amorphous silicon dioxide",
+        "E551",
+        "colloidal silica",
+        "pharmaceutical silica",
+        "hydrated silica",
+        "silicon dioxide (amorphous)"
+      ],
+      "category": "flow_agent_anticaking",
+      "notes": "A very common anti-caking and flow agent in powders, capsules, and tablets, preventing ingredients from clumping. Naturally occurring mineral, generally considered safe.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_MAGNESIUM_STEARATE",
+      "standard_name": "Magnesium Stearate",
+      "aliases": [
+        "veg magnesium stearate",
+        "stearic acid magnesium salt",
+        "octadecanoic acid magnesium salt",
+        "vegetable magnesium stearate",
+        "plant-based magnesium stearate"
+      ],
+      "category": "lubricant_flow_agent",
+      "notes": "A common excipient used as a lubricant to prevent ingredients from sticking to manufacturing equipment. While widely used and GRAS, some prefer alternatives.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_MICROCRYSTALLINE_CELLULOSE",
+      "standard_name": "Microcrystalline Cellulose",
+      "aliases": [
+        "MCC",
+        "cellulose gel",
+        "E460",
+        "avicel",
+        "pharmaceutical cellulose",
+        "cellulose powder"
+      ],
+      "category": "filler_binder",
+      "notes": "A purified, partially depolymerized cellulose, widely used as a filler, binder, and disintegrant. It's inert, non-caloric, and passes through the digestive tract largely unabsorbed.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_RICE_FLOUR",
+      "standard_name": "Rice Flour",
+      "aliases": [
+        "ground rice",
+        "oryza sativa flour",
+        "brown rice flour",
+        "white rice flour",
+        "organic rice flour"
+      ],
+      "category": "filler",
+      "notes": "A common gluten-free filler used in capsules and powders, providing bulk. Generally considered hypoallergenic and inert.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_CORN_STARCH",
+      "standard_name": "Corn Starch",
+      "aliases": [
+        "maize starch",
+        "cornflour",
+        "corn flour",
+        "zea mays starch",
+        "organic corn starch",
+        "non-GMO corn starch"
+      ],
+      "category": "filler_binder_disintegrant",
+      "notes": "A common plant-derived starch used as a binder, filler, or disintegrant. Generally safe, but non-GMO/organic sources are often preferred.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_TAPIOCA_STARCH",
+      "standard_name": "Tapioca Starch",
+      "aliases": [
+        "cassava starch",
+        "manioc starch",
+        "tapioca flour",
+        "manihot esculenta starch",
+        "yuca starch",
+        "organic tapioca starch"
+      ],
+      "category": "filler_binder",
+      "notes": "Natural starch from cassava root, used as a binder and filler. Gluten-free alternative to corn or wheat starch. Generally safe and hypoallergenic.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_POTATO_STARCH",
+      "standard_name": "Potato Starch",
+      "aliases": [
+        "potato flour",
+        "potato starch powder",
+        "solanum tuberosum starch"
+      ],
+      "category": "filler_binder",
+      "notes": "Natural starch from potatoes, used as a binder and thickener. Gluten-free and generally hypoallergenic.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_CALCIUM_CARBONATE",
+      "standard_name": "Calcium Carbonate (as filler)",
+      "aliases": [
+        "limestone",
+        "chalk",
+        "calcium salt of carbonic acid",
+        "E170",
+        "precipitated calcium carbonate",
+        "ground calcium carbonate"
+      ],
+      "category": "filler_opacifier_colorant",
+      "notes": "While an active ingredient for calcium, it is also frequently used passively as an inert filler or opacifier (to make capsules opaque) due to its low cost.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_DICALCIUM_PHOSPHATE",
+      "standard_name": "Dicalcium Phosphate (as filler)",
+      "aliases": [
+        "E341",
+        "DCP",
+        "calcium hydrogen phosphate",
+        "dibasic calcium phosphate",
+        "calcium phosphate dibasic"
+      ],
+      "category": "filler_binder",
+      "notes": "Used as a tablet binder and filler. While it provides calcium and phosphorus, its primary role in 'other ingredients' is often mechanical. Generally considered safe.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_LECITHIN_SOY",
+      "standard_name": "Soy Lecithin",
+      "aliases": ["lecithin (soy)", "soybean lecithin", "E322"],
+      "category": "emulsifier",
+      "notes": "A very common emulsifier derived from soybeans. It is considered safe, but is a major allergen and often derived from genetically modified sources unless specified otherwise.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_HYDROXYPROPYL_CELLULOSE",
+      "standard_name": "Hydroxypropyl Cellulose",
+      "aliases": [
+        "HPC",
+        "E463",
+        "cellulose 2-hydroxypropyl ether",
+        "hyprolose"
+      ],
+      "category": "binder_coating_thickener",
+      "notes": "A semi-synthetic cellulose derivative used as a binder, thickener, and coating agent in capsules and tablets. Generally considered safe.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_CALCIUM_SILICATE",
+      "standard_name": "Calcium Silicate",
+      "aliases": ["E552", "calcium metasilicate", "wollastonite"],
+      "category": "anticaking_agent",
+      "notes": "A mineral-derived anti-caking agent used to prevent powder clumping. Generally considered safe in food-grade applications.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_SODIUM_STARCH_GLYCOLATE",
+      "standard_name": "Sodium Starch Glycolate",
+      "aliases": [
+        "SSG",
+        "carboxymethyl starch",
+        "sodium carboxymethyl starch",
+        "explotab",
+        "primojel"
+      ],
+      "category": "disintegrant",
+      "notes": "A 'superdisintegrant' used to help tablets and capsules break apart rapidly in the digestive system for better absorption. Generally considered safe.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_BEE_PRODUCTS",
+      "standard_name": "Bee Products (as excipient)",
+      "aliases": [
+        "honey",
+        "royal jelly",
+        "bee pollen",
+        "propolis",
+        "beeswax",
+        "organic honey"
+      ],
+      "category": "natural_sweetener_functional",
+      "notes": "Natural products from bees used as sweeteners, binders, or coatings. Generally safe but are animal-derived and can cause allergic reactions in sensitive individuals.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_BEESWAX",
+      "standard_name": "Beeswax",
+      "aliases": ["cera alba", "E901", "yellow beeswax", "white beeswax"],
+      "category": "glazing_agent_coating",
+      "notes": "A natural wax produced by honey bees. Used as a coating or glazing agent for tablets and softgels to improve appearance and swallowing. Considered safe.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_NATURAL_FRUIT_FLAVORS",
+      "standard_name": "Natural Fruit Flavors",
+      "aliases": [
+        "natural berry flavors",
+        "natural citrus flavors",
+        "fruit extracts",
+        "natural fruit essences"
+      ],
+      "category": "natural_flavoring",
+      "notes": "Flavoring compounds extracted from real fruits, often with carrier solvents. Generally considered safe.",
+      "last_updated": "2025-08-04"
+    },
+    {
+      "id": "PII_POLYETHYLENE_GLYCOL",
+      "standard_name": "Polyethylene Glycol (PEG)",
+      "aliases": [
+        "PEG",
+        "polyethylene oxide",
+        "PEG 400",
+        "PEG 3350",
+        "PEG 6000",
+        "PEG 8000",
+        "macrogol",
+        "carbowax"
+      ],
+      "category": "solvent_plasticizer_lubricant",
+      "notes": "A common excipient used as a solvent, plasticizer, or lubricant. Often acts as a binder or coating agent. Generally considered safe in pharmaceutical applications.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_COATING_GENERAL",
+      "standard_name": "Coating (General)",
+      "aliases": [
+        "coating",
+        "vegetarian coating",
+        "vegetable coating",
+        "aqueous coating",
+        "clear coating",
+        "food glaze",
+        "vegetable glaze",
+        "tablet coating",
+        "food-grade coating",
+        "pharmaceutical coating",
+        "film coating"
+      ],
+      "category": "coating_protective",
+      "notes": "General or specific terms for coatings, which are passive ingredients that protect the tablet or capsule, mask taste, or aid in swallowing. Composition varies but generally considered safe.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_TRIACETIN",
+      "standard_name": "Triacetin",
+      "aliases": [
+        "glyceryl triacetate",
+        "glycerol triacetate",
+        "E1518",
+        "1,2,3-triacetoxypropane"
+      ],
+      "category": "plasticizer",
+      "notes": "A plasticizer used in tablet coatings to provide flexibility and prevent cracking. Generally recognized as safe (GRAS).",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_POLYVINYL_ALCOHOL",
+      "standard_name": "Polyvinyl Alcohol",
+      "aliases": ["PVA", "PVOH", "polyvinyl alcohol", "vinyl alcohol polymer"],
+      "category": "coating_film_former",
+      "notes": "A common polymer used in tablet coatings to form protective films. Water-soluble and generally considered safe for pharmaceutical use.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_VEGETABLE_ACETOGLYCERIDES",
+      "standard_name": "Vegetable Acetoglycerides",
+      "aliases": [
+        "acetylated monoglycerides",
+        "acetoglycerides",
+        "plant-based acetoglycerides"
+      ],
+      "category": "plasticizer_emulsifier",
+      "notes": "Used as a plasticizer for coatings and as an emulsifier. Plant-derived and generally considered safe.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_GLYCERYL_BEHENATE",
+      "standard_name": "Glyceryl Behenate",
+      "aliases": [
+        "behenyl glyceride",
+        "glycerol behenate",
+        "compritol 888 ATO"
+      ],
+      "category": "lubricant_binder",
+      "notes": "A lubricant and binder derived from behenic acid. Used to prevent sticking during manufacturing and as a controlled-release agent. Generally considered safe.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_TRIETHYL_CITRATE",
+      "standard_name": "Triethyl Citrate",
+      "aliases": ["TEC", "citric acid triethyl ester", "E1505"],
+      "category": "plasticizer",
+      "notes": "A plasticizer for tablet coatings that provides flexibility and prevents film cracking. Generally recognized as safe (GRAS).",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_SHELLAC",
+      "standard_name": "Shellac",
+      "aliases": [
+        "pharmaceutical glaze",
+        "confectioner's glaze",
+        "lac resin",
+        "E904",
+        "natural resin",
+        "food glaze shellac"
+      ],
+      "category": "coating_resin",
+      "notes": "A resin used as a coating, often called pharmaceutical glaze or confectioner's glaze. Derived from lac insects, so it's not vegetarian/vegan. Generally considered safe but may cause allergic reactions in sensitive individuals.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_AQUEOUS_FILM_COATING",
+      "standard_name": "Aqueous Film Coating",
+      "aliases": [
+        "water-based coating",
+        "aqueous coating system",
+        "film coating aqueous",
+        "water-based film coating"
+      ],
+      "category": "coating_film",
+      "notes": "A specific type of coating using water-based systems, often listed as a sub-ingredient. Provides protective barrier and improved swallowing. Generally considered safe.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_ENTERIC_COATING",
+      "standard_name": "Enteric Coating",
+      "aliases": [
+        "gastro-resistant coating",
+        "delayed-release coating",
+        "acid-resistant coating",
+        "intestinal coating",
+        "pH-dependent coating"
+      ],
+      "category": "coating_specialized",
+      "notes": "A specialized coating designed to prevent the tablet from dissolving in the stomach, allowing it to pass into the intestines. Key passive ingredient for targeted delivery. Generally considered safe.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_SOY_POLYSACCHARIDES",
+      "standard_name": "Soy Polysaccharides",
+      "aliases": [
+        "soybean polysaccharides",
+        "soy fiber",
+        "soy-derived polysaccharides"
+      ],
+      "category": "stabilizer_thickener",
+      "notes": "Can be used as a stabilizer or thickener. Derived from soybeans, so may be a concern for those with soy allergies. Generally considered safe.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_MINERAL_OIL",
+      "standard_name": "Mineral Oil",
+      "aliases": [
+        "liquid paraffin",
+        "white mineral oil",
+        "pharmaceutical mineral oil",
+        "USP mineral oil"
+      ],
+      "category": "lubricant_release_agent",
+      "notes": "Can be used as a lubricant or release agent in manufacturing. Food-grade mineral oil is generally considered safe, though some prefer plant-based alternatives.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_SODIUM_ALGINATE",
+      "standard_name": "Sodium Alginate",
+      "aliases": [
+        "alginic acid sodium salt",
+        "E401",
+        "alginate",
+        "brown algae extract"
+      ],
+      "category": "gelling_agent_stabilizer",
+      "notes": "A gum from brown algae used as a gelling agent and stabilizer. Natural, vegan-friendly, and generally considered safe. Can provide dietary fiber benefits.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_VEGETABLE_GUM_GENERAL",
+      "standard_name": "Vegetable Gum (General)",
+      "aliases": ["vegetable gum", "plant gum", "natural gum", "botanical gum"],
+      "category": "thickener_stabilizer_general",
+      "notes": "A generic term that could refer to various plant-based gums like Gum Arabic, Xanthan Gum, or other natural gums. Specific identification recommended for accurate assessment. Generally considered safe.",
+      "last_updated": "2025-08-12"
+    },
+    {
+      "id": "PII_VEGETABLE_LUBRICANT",
+      "standard_name": "Vegetable Lubricant",
+      "aliases": [
+        "vegetable source lubricant",
+        "plant-based lubricant",
+        "natural lubricant",
+        "vegetable-derived flow agent",
+        "botanical lubricant"
+      ],
+      "category": "lubricant_flow_agent",
+      "notes": "A generic term for plant-derived flow agents or lubricants used in manufacturing. Often refers to ingredients like vegetable magnesium stearate. Generally considered safe.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "PII_ACTIVATED_CARBON",
+      "standard_name": "Activated Carbon",
+      "aliases": [
+        "activated charcoal",
+        "activated coal",
+        "carbon black",
+        "purified carbon",
+        "filtering carbon"
+      ],
+      "category": "processing_aid_filter",
+      "notes": "A processing aid used for filtering and purification of ingredients. Not typically present in the final product as it's removed during processing. Generally considered safe.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "PII_NATURAL_GLAZE",
+      "standard_name": "Natural Glaze",
+      "aliases": [
+        "plant-based glaze",
+        "vegetable glaze",
+        "botanical coating",
+        "natural coating",
+        "plant-derived glaze"
+      ],
+      "category": "coating_protective",
+      "notes": "A coating derived from plant sources, used to protect supplements and improve appearance. Often made from plant waxes or resins. Generally considered safe.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "PII_FERMENT_MEDIA",
+      "standard_name": "Ferment Media",
+      "aliases": [
+        "culture media",
+        "fermentation base",
+        "growth medium",
+        "culture medium",
+        "fermentation medium",
+        "yeast culture medium",
+        "bacterial growth medium",
+        "nutrient medium"
+      ],
+      "category": "processing_aid_culture",
+      "notes": "Base material used to grow and ferment ingredients, often derived from yeast or soy. While essential for production, it's considered a passive component of the final product. Generally considered safe.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "PII_LACTIC_ACID",
+      "standard_name": "Lactic Acid",
+      "aliases": [
+        "lactic acid",
+        "lactate",
+        "2-hydroxypropanoic acid",
+        "milk acid"
+      ],
+      "category": "ph_adjuster",
+      "notes": "Organic acid used as pH adjuster and preservative in supplement formulations. Naturally occurring in fermented foods and muscle tissue. Generally recognized as safe.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "PII_TARTARIC_ACID",
+      "standard_name": "Tartaric Acid",
+      "aliases": [
+        "tartaric acid",
+        "dihydroxybutanedioic acid",
+        "grape acid",
+        "2,3-dihydroxybutanedioic acid"
+      ],
+      "category": "acidity_regulator",
+      "notes": "Organic acid used as acidity regulator and pH adjuster in supplement formulations. Naturally found in grapes and used in food industry. Generally recognized as safe.",
+      "last_updated": "2025-08-13"
+    },
+    {
+      "id": "PII_PEPSIN",
+      "standard_name": "Pepsin",
+      "aliases": ["pepsin enzyme", "pepsin powder", "digestive pepsin"],
+      "category": "enzyme",
+      "notes": "A digestive enzyme that breaks down proteins. Generally considered safe and beneficial for digestion when used appropriately.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "id": "PII_DIASTASE",
+      "standard_name": "Diastase",
+      "aliases": ["diastase enzyme", "amylase", "starch-digesting enzyme"],
+      "category": "enzyme",
+      "notes": "An enzyme that breaks down starch into sugars. Generally considered safe and beneficial for digestion.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "id": "PII_CATALASE",
+      "standard_name": "Catalase",
+      "aliases": ["catalase enzyme", "hydrogen peroxide catalase"],
+      "category": "enzyme",
+      "notes": "An enzyme that breaks down hydrogen peroxide. Generally considered safe and beneficial for cellular protection.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "id": "PII_XYLANASE",
+      "standard_name": "Xylanase",
+      "aliases": ["xylanase enzyme", "fiber-digesting enzyme"],
+      "category": "enzyme",
+      "notes": "An enzyme that breaks down xylan, a component of plant fiber. Generally considered safe and beneficial for digestion.",
+      "last_updated": "2025-08-15"
+    },
+    {
+      "id": "PII_MICOSOLLE",
+      "standard_name": "Micosolle",
+      "aliases": ["micosolle excipient"],
+      "category": "excipient",
+      "notes": "A branded excipient ingredient. Appears to be a proprietary name for a common pharmaceutical excipient substance.",
+      "last_updated": "2025-08-15"
+    }
+  ]
+}

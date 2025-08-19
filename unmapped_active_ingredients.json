@@ -1,0 +1,53 @@
+{
+  "high_priority": [
+    {
+      "name": "CoQ10 Ubiquinol",
+      "frequency": 15,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "PQQ disodium salt",
+      "frequency": 8,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Ashwagandha KSM-66",
+      "frequency": 12,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Proprietary mushroom blend",
+      "frequency": 6,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Methylcobalamin",
+      "frequency": 20,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Turmeric 95% curcumin",
+      "frequency": 10,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    }
+  ],
+  "medium_priority": [],
+  "low_priority": [],
+  "metadata": {
+    "total_count": 6,
+    "last_updated": "2025-08-14 18:40:22",
+    "notes": "Active ingredients that affect quality/bioavailability scoring"
+  }
+}

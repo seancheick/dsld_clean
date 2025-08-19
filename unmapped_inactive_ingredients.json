@@ -1,0 +1,55 @@
+{
+  "safety_review_needed": [
+    {
+      "name": "Unknown preservative X",
+      "frequency": 3,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Artificial flavor agent",
+      "frequency": 4,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    }
+  ],
+  "general_excipients": [
+    {
+      "name": "Rice hull powder",
+      "frequency": 8,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    }
+  ],
+  "known_safe": [
+    {
+      "name": "Vegetable coating",
+      "frequency": 25,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Microcrystalline cellulose",
+      "frequency": 30,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    },
+    {
+      "name": "Magnesium stearate (vegetable)",
+      "frequency": 18,
+      "first_seen": "2025-08-14",
+      "mapping_attempts": 0,
+      "notes": ""
+    }
+  ],
+  "metadata": {
+    "total_count": 6,
+    "last_updated": "2025-08-14 18:40:22",
+    "notes": "Inactive/other ingredients - check for safety issues"
+  }
+}

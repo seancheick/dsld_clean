@@ -1,0 +1,14 @@
+{
+  "backup_created": "2025-08-04T14:34:32.251533",
+  "total_files": 2,
+  "directories": {
+    "cleaned": [
+      "cleaned_batch_1.json"
+    ],
+    "needs_review": [
+      "needs_review_batch_1.json"
+    ],
+    "incomplete": [],
+    "errors": []
+  }
+}

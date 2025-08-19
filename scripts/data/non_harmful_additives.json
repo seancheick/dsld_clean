@@ -1,0 +1,842 @@
+{
+  "non_harmful_additives": [
+    {
+      "id": "NHA_STEVIA",
+      "standard_name": "Stevia & Stevia Extracts",
+      "aliases": [
+        "stevia",
+        "stevia rebaudiana leaf",
+        "organic stevia",
+        "stevia leaf powder",
+        "stevia extract",
+        "steviol glycosides",
+        "rebaudioside A",
+        "Reb A",
+        "Reb M",
+        "stevioside",
+        "truvia",
+        "purevia"
+      ],
+      "risk_level": "none",
+      "category": "sweetener_natural",
+      "additive_type": "natural_sweetener",
+      "clean_label_score": 8,
+      "notes": "Natural, calorie-free sweetener from the Stevia plant. Highly processed extracts are common. Generally recognized as safe (GRAS), but some people report a bitter aftertaste. Clean label alternative to artificial sweeteners.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "flavor enhancement",
+        "sugar replacement",
+        "calorie reduction"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_MONK_FRUIT",
+      "standard_name": "Monk Fruit Extract",
+      "aliases": [
+        "monk fruit",
+        "luo han guo",
+        "siraitia grosvenorii",
+        "mogrosides",
+        "monk fruit sweetener"
+      ],
+      "risk_level": "none",
+      "category": "sweetener_natural",
+      "additive_type": "natural_sweetener",
+      "clean_label_score": 9,
+      "notes": "Natural, calorie-free sweetener derived from a small melon. Its sweetness comes from antioxidants called mogrosides. Generally recognized as safe (GRAS). Excellent clean label choice.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "flavor enhancement",
+        "sugar replacement",
+        "calorie reduction"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_VEGETABLE_GLYCERIN",
+      "standard_name": "Vegetable Glycerin",
+      "aliases": [
+        "glycerin",
+        "glycerol",
+        "E422",
+        "vegetable glycerine",
+        "plant-based glycerin",
+        "1,2,3-propanetriol"
+      ],
+      "risk_level": "none",
+      "category": "humectant_solvent",
+      "additive_type": "processing_aid",
+      "clean_label_score": 7,
+      "notes": "Plant-derived humectant and solvent. Used to retain moisture and as a carrier for flavors. Generally recognized as safe (GRAS). Ensure proper sourcing to avoid contamination.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "moisture retention",
+        "solvent",
+        "texture improvement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_CITRIC_ACID",
+      "standard_name": "Citric Acid",
+      "aliases": [
+        "E330",
+        "citric acid anhydrous",
+        "citric acid monohydrate",
+        "sour salt"
+      ],
+      "risk_level": "none",
+      "category": "preservative_acidity_regulator",
+      "additive_type": "preservative_natural",
+      "clean_label_score": 8,
+      "notes": "Natural preservative and pH adjuster. While naturally found in citrus, commercial form is typically derived from fermented sources. Generally recognized as safe (GRAS). Clean label preservative option.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "preservation",
+        "pH adjustment",
+        "flavor enhancement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_NATURAL_PRESERVATIVES",
+      "standard_name": "Natural Preservatives",
+      "aliases": [
+        "ascorbyl palmitate",
+        "vitamin C ester",
+        "E304",
+        "mixed tocopherols",
+        "natural vitamin E",
+        "E306",
+        "rosemary extract",
+        "tocopherol blend",
+        "natural antioxidants"
+      ],
+      "risk_level": "none",
+      "category": "preservative_natural",
+      "additive_type": "preservative_natural",
+      "clean_label_score": 9,
+      "notes": "Antioxidants used to prevent spoilage, such as fat-soluble Vitamin C (ascorbyl palmitate) or Vitamin E (tocopherols). Generally recognized as safe (GRAS) and beneficial. Premium clean label choice.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "antioxidant protection",
+        "shelf life extension",
+        "rancidity prevention"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_NATURAL_GUMS",
+      "standard_name": "Natural Gums",
+      "aliases": [
+        "gum acacia",
+        "acacia gum",
+        "gum arabic",
+        "E414",
+        "xanthan gum",
+        "E415",
+        "guar gum",
+        "E412",
+        "locust bean gum",
+        "E410",
+        "gellan gum",
+        "E418"
+      ],
+      "risk_level": "none",
+      "category": "thickener_stabilizer",
+      "additive_type": "texture_modifier",
+      "clean_label_score": 8,
+      "notes": "Natural gums used as thickeners, binders, and stabilizers. Generally safe and can be a source of dietary fiber. May cause bloating or gas in some individuals. Good clean label choice.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "thickening",
+        "stabilizing",
+        "texture improvement",
+        "fiber addition"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_AGAR",
+      "standard_name": "Agar",
+      "aliases": [
+        "agar",
+        "agar agar",
+        "E406",
+        "Japanese gelatin",
+        "kanten",
+        "vegetable gelatin",
+        "Ceylon moss",
+        "Japanese isinglass",
+        "Gelidium jelly"
+      ],
+      "risk_level": "none",
+      "category": "thickener_stabilizer",
+      "additive_type": "gelling_agent",
+      "clean_label_score": 9,
+      "notes": "Natural thickening and gelling agent derived from red algae. Generally recognized as safe (GRAS) and commonly used as a vegan alternative to gelatin. May provide beneficial dietary fiber. Excellent clean label choice.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "gelling",
+        "thickening",
+        "vegan gelatin replacement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_FRUIT_VEG_POWDERS",
+      "standard_name": "Fruit & Vegetable Powders",
+      "aliases": [
+        "cherry powder",
+        "berry powder",
+        "beet juice powder",
+        "beet powder",
+        "carrot powder",
+        "spinach powder",
+        "annatto",
+        "turmeric",
+        "paprika",
+        "spirulina",
+        "Beta-Carotene",
+        "fruit and vegetable juice concentrate",
+        "natural colors from fruits"
+      ],
+      "risk_level": "none",
+      "category": "colorant_flavoring_natural",
+      "additive_type": "natural_colorant",
+      "clean_label_score": 10,
+      "notes": "Dehydrated and powdered plants used for natural color and flavor. Generally safe and may provide some antioxidant benefits. Premium clean-label alternative to artificial dyes.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "natural coloring",
+        "flavor enhancement",
+        "nutrient addition"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_VANILLIN_NATURAL",
+      "standard_name": "Natural Vanillin",
+      "aliases": [
+        "natural vanillin",
+        "vanilla extract",
+        "natural vanilla flavor",
+        "vanilla bean extract",
+        "vanilla oleoresin",
+        "4-hydroxy-3-methoxybenzaldehyde (natural)"
+      ],
+      "risk_level": "none",
+      "category": "flavoring_natural",
+      "additive_type": "natural_flavor",
+      "clean_label_score": 9,
+      "notes": "Natural vanilla flavoring extracted from vanilla beans. Generally recognized as safe (GRAS). Premium clean label flavoring choice compared to synthetic vanillin.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "flavor enhancement",
+        "taste masking",
+        "aroma improvement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_SODIUM_BICARBONATE",
+      "standard_name": "Sodium Bicarbonate",
+      "aliases": [
+        "baking soda",
+        "sodium hydrogen carbonate",
+        "bicarbonate of soda",
+        "E500(ii)",
+        "sodium acid carbonate",
+        "NaHCO3"
+      ],
+      "risk_level": "none",
+      "category": "buffer_acidity_regulator",
+      "additive_type": "ph_adjuster",
+      "clean_label_score": 9,
+      "notes": "Natural pH regulator and buffer commonly used in food and supplements. Generally recognized as safe (GRAS) with a long history of use. Clean label choice for pH adjustment.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "pH adjustment",
+        "buffering",
+        "effervescent formulations"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_SODIUM_CARBONATE",
+      "standard_name": "Sodium Carbonate",
+      "aliases": [
+        "soda ash",
+        "washing soda",
+        "E500",
+        "Na2CO3",
+        "disodium carbonate",
+        "carbonic acid disodium salt"
+      ],
+      "risk_level": "none",
+      "category": "buffer_acidity_regulator",
+      "additive_type": "ph_adjuster",
+      "clean_label_score": 7,
+      "notes": "Alkalizing agent and pH regulator. Generally recognized as safe (GRAS) when used as a food additive. Common processing aid.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "pH adjustment",
+        "alkalizing",
+        "processing aid"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_NATURAL_FLAVORS",
+      "standard_name": "Natural Flavors",
+      "aliases": [
+        "natural flavors",
+        "natural flavor",
+        "natural flavoring",
+        "spice extracts",
+        "natural essence",
+        "botanical extracts for flavor",
+        "fruit flavors",
+        "natural strawberry flavor",
+        "natural cherry flavor",
+        "natural orange flavor",
+        "natural lemon flavor"
+      ],
+      "risk_level": "none",
+      "category": "flavoring_natural",
+      "additive_type": "natural_flavor",
+      "clean_label_score": 8,
+      "notes": "Flavoring substances derived from plant or animal sources. While generally recognized as safe, the term can encompass hundreds of compounds. Must be derived from natural sources per FDA regulations. Good clean label choice.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "flavor enhancement",
+        "taste masking",
+        "aroma improvement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_LECITHIN_SUNFLOWER",
+      "standard_name": "Sunflower Lecithin",
+      "aliases": [
+        "lecithin (sunflower-derived)",
+        "sunflower lecithin",
+        "phosphatidylcholine",
+        "non-GMO lecithin",
+        "organic sunflower lecithin"
+      ],
+      "risk_level": "none",
+      "category": "emulsifier_natural",
+      "additive_type": "emulsifier",
+      "clean_label_score": 9,
+      "notes": "Natural emulsifier derived from sunflowers. Often preferred over soy lecithin due to non-GMO and allergen concerns. Generally recognized as safe (GRAS). Premium clean label emulsifier.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "emulsification",
+        "texture improvement",
+        "bioavailability enhancement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_RICE_BRAN_EXTRACT",
+      "standard_name": "Rice Bran Extract",
+      "aliases": [
+        "rice extract",
+        "organic rice extract",
+        "oryza sativa bran extract",
+        "rice hulls",
+        "rice bran",
+        "rice hull extract",
+        "organic rice hulls",
+        "Nu-FLOW",
+        "rice bran powder"
+      ],
+      "risk_level": "none",
+      "category": "flow_agent_filler",
+      "additive_type": "flow_agent",
+      "clean_label_score": 10,
+      "notes": "Natural, hypoallergenic ingredient used as a flow agent or lubricant. Serving as a clean-label alternative to magnesium stearate. Excellent premium clean label choice.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "flow improvement",
+        "anti-caking",
+        "natural lubricant"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_CELLULOSE_PLANT",
+      "standard_name": "Plant-Derived Cellulose",
+      "aliases": [
+        "plant cellulose",
+        "organic cellulose",
+        "wood pulp cellulose",
+        "cotton cellulose",
+        "bamboo cellulose",
+        "plant fiber"
+      ],
+      "risk_level": "none",
+      "category": "filler_fiber",
+      "additive_type": "bulking_agent",
+      "clean_label_score": 9,
+      "notes": "Natural plant fiber used as a bulking agent and source of dietary fiber. Generally recognized as safe (GRAS). Excellent clean label choice for adding fiber content.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "bulking",
+        "fiber addition",
+        "texture improvement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_VEGETABLE_STEARATES",
+      "standard_name": "Vegetable-Derived Stearates",
+      "aliases": [
+        "vegetable stearic acid",
+        "plant-based stearic acid",
+        "palm stearic acid",
+        "coconut stearic acid",
+        "vegetable fatty acids"
+      ],
+      "risk_level": "none",
+      "category": "lubricant_plant_based",
+      "additive_type": "lubricant",
+      "clean_label_score": 8,
+      "notes": "Plant-derived fatty acids used as natural lubricants in manufacturing. Better clean label perception than synthetic alternatives. Generally recognized as safe (GRAS).",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "lubrication",
+        "flow improvement",
+        "manufacturing aid"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_NATURAL_WAXES",
+      "standard_name": "Natural Waxes",
+      "aliases": [
+        "carnauba wax",
+        "candelilla wax",
+        "rice bran wax",
+        "sunflower wax",
+        "plant wax",
+        "vegetable wax",
+        "E903"
+      ],
+      "risk_level": "none",
+      "category": "coating_glazing_natural",
+      "additive_type": "coating_agent",
+      "clean_label_score": 9,
+      "notes": "Plant-based materials used for natural coatings and glazing. Provides protective barrier and improves appearance. Vegan-friendly alternative to animal-derived waxes. Excellent clean label choice.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "protective coating",
+        "gloss enhancement",
+        "moisture barrier"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_ENZYMES_NATURAL",
+      "standard_name": "Natural Enzymes",
+      "aliases": [
+        "plant enzymes",
+        "digestive enzymes",
+        "amylase",
+        "protease",
+        "lipase",
+        "cellulase",
+        "bromelain",
+        "papain"
+      ],
+      "risk_level": "none",
+      "category": "enzyme_processing_aid",
+      "additive_type": "processing_aid",
+      "clean_label_score": 9,
+      "notes": "Natural enzymes used to improve nutrient bioavailability and processing. Often provide additional health benefits. Generally recognized as safe (GRAS). Premium clean label choice.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "bioavailability enhancement",
+        "processing aid",
+        "digestive support"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_FERMENTED_NUTRIENTS",
+      "standard_name": "Fermented Nutrients",
+      "aliases": [
+        "fermented vitamins",
+        "cultured nutrients",
+        "probiotic-fermented",
+        "whole food nutrients",
+        "fermented minerals"
+      ],
+      "risk_level": "none",
+      "category": "nutrient_delivery_system",
+      "additive_type": "bioavailability_enhancer",
+      "clean_label_score": 10,
+      "notes": "Nutrients produced through natural fermentation processes. Often have improved bioavailability and tolerability. Premium clean label and natural processing method.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "nutrient delivery",
+        "bioavailability enhancement",
+        "digestive tolerance"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_COCONUT_DERIVATIVES",
+      "standard_name": "Coconut Oil Derivatives",
+      "aliases": [
+        "coconut oil powder",
+        "MCT powder",
+        "coconut flour",
+        "coconut milk powder",
+        "desiccated coconut",
+        "coconut fiber",
+        "fractionated coconut oil"
+      ],
+      "risk_level": "none",
+      "category": "carrier_filler_natural",
+      "additive_type": "carrier",
+      "clean_label_score": 9,
+      "notes": "Various forms of coconut-derived ingredients used as carriers or fillers for fat-soluble ingredients. Generally safe, well-tolerated, and offer clean label appeal.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "fat-soluble carrier",
+        "texture improvement",
+        "flavor enhancement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_INULIN",
+      "standard_name": "Inulin & Prebiotic Fibers",
+      "aliases": [
+        "inulin",
+        "chicory root fiber",
+        "jerusalem artichoke fiber",
+        "fructooligosaccharides",
+        "FOS",
+        "oligofructose",
+        "prebiotic fiber",
+        "soluble fiber",
+        "chicory inulin",
+        "agave inulin"
+      ],
+      "risk_level": "none",
+      "category": "prebiotic_fiber",
+      "additive_type": "functional_fiber",
+      "clean_label_score": 9,
+      "notes": "Natural prebiotic fiber that supports digestive health. Often used as a natural sweetener and fiber supplement. Generally well-tolerated and beneficial.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "prebiotic support",
+        "fiber addition",
+        "natural sweetening",
+        "texture improvement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_MALTODEXTRIN_ORGANIC",
+      "standard_name": "Organic Maltodextrin",
+      "aliases": [
+        "organic maltodextrin",
+        "non-GMO maltodextrin",
+        "tapioca maltodextrin",
+        "rice maltodextrin",
+        "potato maltodextrin",
+        "corn maltodextrin (organic)"
+      ],
+      "risk_level": "none",
+      "category": "carrier_natural",
+      "additive_type": "bulking_agent",
+      "clean_label_score": 7,
+      "notes": "When sourced organically, maltodextrin serves as a safe carrier and bulking agent. Tapioca and rice sources are often preferred over corn.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "powder carrier",
+        "bulking agent",
+        "texture improvement",
+        "encapsulation"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_NATURAL_VANILLA",
+      "standard_name": "Natural Vanilla & Vanilla Extract",
+      "aliases": [
+        "vanilla extract",
+        "natural vanilla",
+        "vanilla bean extract",
+        "vanilla powder",
+        "vanilla flavor natural",
+        "organic vanilla extract",
+        "pure vanilla extract"
+      ],
+      "risk_level": "none",
+      "category": "flavoring_natural",
+      "additive_type": "natural_flavor",
+      "clean_label_score": 10,
+      "notes": "Premium natural flavoring from vanilla beans. Highly desirable clean label ingredient with excellent consumer perception.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "flavor enhancement",
+        "taste masking",
+        "premium positioning"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_NATURAL_COLORS",
+      "standard_name": "Natural Colors from Plants",
+      "aliases": [
+        "natural colors",
+        "plant-based colors",
+        "fruit and vegetable colors",
+        "chlorophyll",
+        "carotenoids",
+        "anthocyanins",
+        "betalains",
+        "natural food coloring",
+        "vegetable juice colors",
+        "fruit extracts for color"
+      ],
+      "risk_level": "none",
+      "category": "colorant_natural",
+      "additive_type": "natural_colorant",
+      "clean_label_score": 10,
+      "notes": "Natural colorants derived from plants, fruits, and vegetables. Premium clean label alternative to synthetic dyes with additional antioxidant benefits.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "natural coloring",
+        "visual appeal",
+        "antioxidant addition"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_CALCIUM_LACTATE",
+      "standard_name": "Calcium Lactate",
+      "aliases": [
+        "calcium lactate",
+        "lactic acid calcium salt",
+        "E327",
+        "calcium 2-hydroxypropanoate"
+      ],
+      "risk_level": "none",
+      "category": "mineral_salt_natural",
+      "additive_type": "mineral_supplement",
+      "clean_label_score": 8,
+      "notes": "Natural calcium salt that's easily absorbed. Often preferred over calcium carbonate for bioavailability. Generally well-tolerated.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "calcium supplementation",
+        "pH buffering",
+        "texture improvement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_POTASSIUM_CITRATE",
+      "standard_name": "Potassium Citrate",
+      "aliases": [
+        "potassium citrate",
+        "tripotassium citrate",
+        "E332",
+        "potassium salt of citric acid"
+      ],
+      "risk_level": "none",
+      "category": "mineral_salt_natural",
+      "additive_type": "mineral_supplement",
+      "clean_label_score": 8,
+      "notes": "Natural potassium salt with good bioavailability. Often used in electrolyte formulations and as a natural preservative.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "potassium supplementation",
+        "pH regulation",
+        "electrolyte balance"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_MALIC_ACID",
+      "standard_name": "Malic Acid",
+      "aliases": [
+        "malic acid",
+        "apple acid",
+        "E296",
+        "2-hydroxybutanedioic acid",
+        "hydroxysuccinic acid"
+      ],
+      "risk_level": "none",
+      "category": "organic_acid_natural",
+      "additive_type": "acidulant",
+      "clean_label_score": 9,
+      "notes": "Natural fruit acid found in apples and other fruits. Used for tartness and as a natural preservative. Well-tolerated and beneficial for energy metabolism.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "natural sourness",
+        "preservation",
+        "flavor enhancement"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_PECTIN",
+      "standard_name": "Pectin",
+      "aliases": [
+        "pectin",
+        "fruit pectin",
+        "apple pectin",
+        "citrus pectin",
+        "E440",
+        "modified citrus pectin",
+        "MCP"
+      ],
+      "risk_level": "none",
+      "category": "gelling_agent_natural",
+      "additive_type": "natural_fiber",
+      "clean_label_score": 10,
+      "notes": "Natural fiber from fruits, excellent for gelling and thickening. Provides additional health benefits including cholesterol support.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "gelling",
+        "thickening",
+        "fiber addition",
+        "gut health"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_CALCIUM_ASCORBATE",
+      "standard_name": "Calcium Ascorbate",
+      "aliases": [
+        "calcium ascorbate",
+        "calcium vitamin C",
+        "buffered vitamin C",
+        "mineral ascorbate",
+        "non-acidic vitamin C"
+      ],
+      "risk_level": "none",
+      "category": "vitamin_mineral_complex",
+      "additive_type": "antioxidant_supplement",
+      "clean_label_score": 9,
+      "notes": "Buffered form of vitamin C that's gentler on the stomach. Serves dual purpose as vitamin C and calcium supplement with antioxidant properties.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "vitamin C supplementation",
+        "antioxidant protection",
+        "buffered nutrition"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_SILICA_BAMBOO",
+      "standard_name": "Bamboo Silica Extract",
+      "aliases": [
+        "bamboo silica",
+        "bamboo extract",
+        "natural silica",
+        "silica from bamboo",
+        "bambusa vulgaris extract",
+        "organic bamboo silica"
+      ],
+      "risk_level": "none",
+      "category": "plant_extract_natural",
+      "additive_type": "natural_mineral",
+      "clean_label_score": 9,
+      "notes": "Natural silica source from bamboo, preferred over synthetic silicon dioxide. Provides natural flow properties with additional bioactive compounds.",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "natural flow agent",
+        "anti-caking",
+        "silica supplementation"
+      ],
+      "last_updated": "2025-08-14"
+    },
+    {
+      "id": "NHA_SODIUM_STEARYL_FUMARATE",
+      "standard_name": "Sodium Stearyl Fumarate",
+      "aliases": [
+        "sodium stearyl fumarate",
+        "ssf",
+        "stearyl fumarate sodium",
+        "tablet lubricant"
+      ],
+      "risk_level": "none",
+      "category": "tablet_lubricant",
+      "additive_type": "processing_aid",
+      "clean_label_score": 7,
+      "notes": "Clean-label tablet lubricant and disintegrant. Used as alternative to magnesium stearate. Generally recognized as safe.",
+      "regulatory_status": "FDA_approved",
+      "common_uses": [
+        "tablet lubrication",
+        "disintegration aid",
+        "processing aid"
+      ],
+      "last_updated": "2025-08-15"
+    },
+    {
+      "id": "NHA_ARABIC_GUM",
+      "standard_name": "Arabic Gum (Acacia Gum)",
+      "aliases": [
+        "arabic gum",
+        "gum arabic",
+        "acacia gum",
+        "gum acacia",
+        "acacia senegal",
+        "e414"
+      ],
+      "risk_level": "none",
+      "category": "plant_extract_natural",
+      "additive_type": "natural_binder",
+      "clean_label_score": 9,
+      "notes": "Natural plant-derived gum from Acacia trees. Excellent clean label binder and stabilizer. Generally recognized as safe (GRAS).",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "natural binder",
+        "stabilizer",
+        "emulsifier",
+        "prebiotic fiber"
+      ],
+      "last_updated": "2025-08-15"
+    },
+    {
+      "id": "NHA_MONO_DIGLYCERIDES",
+      "standard_name": "Mono and Diglycerides",
+      "aliases": [
+        "mono and diglycerides",
+        "mono & diglycerides",
+        "monoglycerides",
+        "diglycerides",
+        "glyceryl monostearate",
+        "e471"
+      ],
+      "risk_level": "none",
+      "category": "emulsifier",
+      "additive_type": "emulsifier",
+      "clean_label_score": 7,
+      "notes": "Common emulsifiers derived from natural fats and oils. Help blend oil and water-based ingredients. Generally recognized as safe (GRAS).",
+      "regulatory_status": "GRAS",
+      "common_uses": [
+        "emulsification",
+        "texture improvement",
+        "stability enhancement"
+      ],
+      "last_updated": "2025-08-15"
+    }
+  ],
+  "metadata": {
+    "version": "1.1.0",
+    "total_count": 32,
+    "last_updated": "2025-08-14",
+    "description": "Non-harmful additives database for clean label supplement classification",
+    "scoring_notes": "clean_label_score: 10=premium, 9=excellent, 8=good, 7=acceptable clean label perception",
+    "usage_priority": "Check this database before harmful_additives to flag as additive but safe"
+  }
+}

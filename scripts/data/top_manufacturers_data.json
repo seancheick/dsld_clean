@@ -1,0 +1,762 @@
+[
+  {
+    "id": "MANUF_NATURE_MADE",
+    "standard_name": "Nature Made",
+    "aka": ["Pharmavite LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "USP-verified products",
+      "No FDA warning letters or recalls (last 10 years)",
+      "Widely recognized for quality and compliance"
+    ],
+    "notes": "Long-established, industry-leading reputation for compliance and product purity.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_SOLGAR",
+    "standard_name": "Solgar",
+    "aka": ["Solgar Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "GMP and USP certifications",
+      "No major regulatory actions or recalls (last 10 years)"
+    ],
+    "notes": "Reputation for rigorous quality standards and transparency.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_NORDIC_NATURALS",
+    "standard_name": "Nordic Naturals",
+    "aka": ["Nordic Naturals Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "IFOS 5-star rated omega-3s",
+      "Multiple third-party purity certifications",
+      "No recalls or FDA warning letters"
+    ],
+    "notes": "Gold standard in omega-3 quality and third-party testing.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_GARDEN_OF_LIFE",
+    "standard_name": "Garden of Life",
+    "aka": ["Nestle Health Science"],
+    "score_contribution": 2,
+    "evidence": [
+      "NSF, USDA Organic, and Non-GMO Project certifications",
+      "No significant recalls or FDA warnings",
+      "Industry awards for transparency"
+    ],
+    "notes": "Organic leader with unmatched ingredient sourcing transparency.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_THRONE",
+    "standard_name": "Thorne",
+    "aka": ["Thorne Research Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "NSF Certified for Sport",
+      "USP-verified select products",
+      "No FDA warning letters"
+    ],
+    "notes": "Highly respected among clinicians for ingredient purity and athletic products.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_METAGENICS",
+    "standard_name": "Metagenics",
+    "aka": ["Metagenics Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "ISO, GMP certifications",
+      "No regulatory penalties or recalls"
+    ],
+    "notes": "Provider-trusted supplement manufacturer leading in clinical evidence.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_ORTHO_MOLECULAR",
+    "standard_name": "Ortho Molecular Products",
+    "aka": ["Ortho Molecular Products"],
+    "score_contribution": 2,
+    "evidence": [
+      "GMP certs, clinical distribution",
+      "Zero warning letters and recalls"
+    ],
+    "notes": "Favorably regarded by integrative and functional medicine specialists.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_PURE_ENCAPSULATIONS",
+    "standard_name": "Pure Encapsulations",
+    "aka": ["Pure Encapsulations Inc."],
+    "score_contribution": 2,
+    "evidence": ["GMP, NSF certification", "No major regulatory actions"],
+    "notes": "Premium, allergen-free supplement line used in clinical settings.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_DOUGLAS_LABORATORIES",
+    "standard_name": "Douglas Laboratories",
+    "aka": ["Douglas Laboratories"],
+    "score_contribution": 2,
+    "evidence": [
+      "GMP, multiple third-party certifications",
+      "Zero recalls, long history of regulatory compliance"
+    ],
+    "notes": "Consistently highly rated in practitioner and consumer testing.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_NOW_FOODS",
+    "standard_name": "NOW Foods",
+    "aka": ["NOW Health Group Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "57 years in business (founded 1968)",
+      "16,000+ tests per month with extensive in-house testing",
+      "cGMP-compliant and Natural Products Association certified",
+      "No significant FDA warning letters or recalls"
+    ],
+    "notes": "Family-owned company with high consumer trust and rigorous quality testing.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_LIFE_EXTENSION",
+    "standard_name": "Life Extension",
+    "aka": ["Life Extension Foundation"],
+    "score_contribution": 2,
+    "evidence": [
+      "45 years in business (founded 1980)",
+      "ConsumerLab's 2023 top multivitamin/vitamin D award winner",
+      "NSF GMP-registered, third-party tested",
+      "99% U.S.-made products"
+    ],
+    "notes": "Science-based formulations with strong industry recognition and awards.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_GAIA_HERBS",
+    "standard_name": "Gaia Herbs",
+    "aka": ["Gaia Herbs Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "38 years in business (founded 1987)",
+      "cGMP-compliant with USDA Organic certifications",
+      "Third-party tested with batch-specific data",
+      "No significant FDA warning letters or recalls"
+    ],
+    "notes": "Known for sustainable, minimally processed herbal supplements with transparency.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_CARLSON_LABS",
+    "standard_name": "Carlson Labs",
+    "aka": ["Carlson Laboratories"],
+    "score_contribution": 2,
+    "evidence": [
+      "60 years in business (founded 1965)",
+      "IFOS-certified fish oil, cGMP-compliant",
+      "Third-party tested with strong consumer trust",
+      "No major FDA warning letters or recalls"
+    ],
+    "notes": "Family-owned, female-led company specializing in high-quality fish oil and vitamins.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_FULLWELL",
+    "standard_name": "FullWell",
+    "aka": ["FullWell Co."],
+    "score_contribution": 2,
+    "evidence": [
+      "Dietitian-founded with focus on transparency",
+      "UL Solutions-certified facility, cGMP-compliant",
+      "Third-party tested with COAs available",
+      "No FDA warning letters or recalls reported"
+    ],
+    "notes": "Specialized in prenatal/postnatal supplements with bioavailable nutrients.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_SEEKING_HEALTH",
+    "standard_name": "Seeking Health",
+    "aka": ["Seeking Health LLC", "Dr. Ben Lynch"],
+    "score_contribution": 2,
+    "evidence": [
+      "Founded by geneticist Dr. Ben Lynch",
+      "cGMP-compliant with third-party testing",
+      "Specializes in methylation and genetic variants",
+      "No FDA warning letters or recalls"
+    ],
+    "notes": "Science-based formulations for genetic variants and methylation support.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_PHYSICIAN_THERAPEUTICS",
+    "standard_name": "Physician Therapeutics",
+    "aka": ["PT", "Physician Therapeutics LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "Practitioner-only distribution",
+      "cGMP-compliant with rigorous testing",
+      "Clinical-grade formulations",
+      "Clean regulatory record"
+    ],
+    "notes": "Professional-grade supplements distributed exclusively through healthcare providers.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_INTEGRATIVE_THERAPEUTICS",
+    "standard_name": "Integrative Therapeutics",
+    "aka": ["Integrative Therapeutics LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "50+ years serving practitioners",
+      "cGMP-compliant with NSF certification",
+      "Research-backed formulations",
+      "No significant FDA warnings"
+    ],
+    "notes": "Practitioner-trusted brand with evidence-based formulations.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_XYMOGEN",
+    "standard_name": "Xymogen",
+    "aka": ["Xymogen Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "Exclusive practitioner distribution",
+      "cGMP-compliant facilities",
+      "Extensive clinical research support",
+      "Clean regulatory track record"
+    ],
+    "notes": "Premium practitioner brand with focus on clinical outcomes.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_BIOTICS_RESEARCH",
+    "standard_name": "Biotics Research",
+    "aka": ["Biotics Research Corporation"],
+    "score_contribution": 2,
+    "evidence": [
+      "45+ years in business",
+      "Practitioner-exclusive distribution",
+      "cGMP-compliant with proprietary testing",
+      "No major regulatory issues"
+    ],
+    "notes": "Long-established practitioner brand with whole-food concentrates.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_STANDARD_PROCESS",
+    "standard_name": "Standard Process",
+    "aka": ["Standard Process Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "95+ years in business (founded 1929)",
+      "Organic farming and whole food nutrition",
+      "cGMP-compliant with third-party testing",
+      "Clean regulatory history"
+    ],
+    "notes": "Pioneering whole food supplement company with organic farm-to-tablet process.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_QUICKSILVER_SCIENTIFIC",
+    "standard_name": "Quicksilver Scientific",
+    "aka": ["Quicksilver Scientific Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "Innovative liposomal delivery systems",
+      "cGMP-compliant manufacturing",
+      "Third-party tested for purity",
+      "No significant regulatory issues"
+    ],
+    "notes": "Cutting-edge liposomal and nanoemulsified supplement technology.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_RESEARCH_NUTRITIONALS",
+    "standard_name": "Researched Nutritionals",
+    "aka": ["Researched Nutritionals LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "Practitioner-exclusive distribution",
+      "cGMP-compliant with extensive testing",
+      "Focus on complex chronic conditions",
+      "Clean FDA compliance record"
+    ],
+    "notes": "Specialized in supplements for Lyme disease, mold illness, and complex conditions.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_KLAIRE_LABS",
+    "standard_name": "Klaire Labs",
+    "aka": ["Klaire Labs Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "56 years in business (founded 1969)",
+      "cGMP-compliant with hypoallergenic formulations",
+      "Third-party tested, trusted in functional medicine",
+      "No major FDA warning letters or recalls"
+    ],
+    "notes": "Professional-grade probiotics and supplements for sensitive individuals.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_JARROW_FORMULAS",
+    "standard_name": "Jarrow Formulas",
+    "aka": ["Jarrow Formulas Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "48 years in business (founded 1977)",
+      "cGMP-compliant with high ConsumerLab ratings",
+      "Third-party tested with innovative formulations",
+      "No significant FDA warning letters or serious violations"
+    ],
+    "notes": "Known for science-based, affordable supplements with innovative formulations.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_VITAL_NUTRIENTS",
+    "standard_name": "Vital Nutrients",
+    "aka": ["Vital Nutrients"],
+    "score_contribution": 2,
+    "evidence": ["GMP, third-party certified", "No FDA warning letters"],
+    "notes": "Clinician-oriented, premium standards for raw ingredient purity.",
+    "last_updated": "2025-07-16"
+  },
+  {
+    "id": "MANUF_PURE_SYNERGY",
+    "standard_name": "The Synergy Company",
+    "aka": ["Pure Synergy"],
+    "score_contribution": 2,
+    "evidence": [
+      "Certified Organic and Non-GMO",
+      "cGMP compliant facilities",
+      "Extensive third-party testing for purity and potency",
+      "Strong emphasis on sustainable sourcing"
+    ],
+    "notes": "Known for whole-food based, organic supplements and rigorous quality control. No significant FDA warning letters or recalls impacting general product quality.",
+    "last_updated": "2025-07-21"
+  },
+  {
+    "id": "MANUF_DESIGNS_FOR_HEALTH",
+    "standard_name": "Designs for Health",
+    "aka": ["Designs for Health Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "Practitioner-trusted brand",
+      "cGMP compliant facilities",
+      "Rigorous raw material testing and finished product analysis",
+      "No major FDA warning letters or recalls related to product quality"
+    ],
+    "notes": "Focus on research-driven formulations and high-quality ingredients for healthcare professionals.",
+    "last_updated": "2025-07-21"
+  },
+  {
+    "id": "MANUF_KION",
+    "standard_name": "Kion",
+    "aka": ["Kion LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "Third-party tested for purity and potency",
+      "cGMP compliant manufacturing",
+      "Focus on clean ingredients and transparency",
+      "No significant FDA warning letters or recalls reported"
+    ],
+    "notes": "Known for science-backed supplements focused on performance and longevity, with a strong commitment to quality testing.",
+    "last_updated": "2025-07-21"
+  },
+  {
+    "id": "MANUF_BULK_NUTRITION",
+    "standard_name": "Bulk Nutrition",
+    "aka": ["Bulk Supplements"],
+    "score_contribution": 2,
+    "evidence": [
+      "cGMP, ISO certified manufacturing",
+      "Extensive third-party testing with Certificates of Analysis",
+      "No FDA warning letters or major recalls reported"
+    ],
+    "notes": "Known for pure, bulk ingredients and powders with transparent testing.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_NATURES_WAY",
+    "standard_name": "Nature's Way",
+    "aka": ["Nature's Way Brands, LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "NSF, cGMP certifications",
+      "No major regulatory actions or recalls in last decade",
+      "Strong presence in herbal and botanical supplements"
+    ],
+    "notes": "Long-standing herbal supplement leader with high quality control standards.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_SOLID_BIOLOGICS",
+    "standard_name": "Solid Biologics",
+    "aka": ["Solid Bio"],
+    "score_contribution": 2,
+    "evidence": [
+      "cGMP compliant, state-of-the-art manufacturing",
+      "Third-party tested for potency and purity",
+      "Clean regulatory history"
+    ],
+    "notes": "Innovative manufacturer focusing on innovative delivery systems and ingredient quality.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_NATURES_BOUNTY",
+    "standard_name": "Nature's Bounty",
+    "aka": ["NBTY Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "GMP and NSF registered facilities",
+      "No recent FDA warning letters",
+      "Strong US and global distribution network"
+    ],
+    "notes": "Large-scale brand producing wide range of vitamins and supplements with consistent quality.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_VITACOST",
+    "standard_name": "Vitacost",
+    "aka": ["Vitacost.com"],
+    "score_contribution": 2,
+    "evidence": [
+      "cGMP and FDA registered facilities",
+      "Third-party tested products",
+      "No known regulatory issues"
+    ],
+    "notes": "Known for affordable, quality supplements and vitamins with transparent testing.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_DOUBLE_WOOD",
+    "standard_name": "Double Wood Supplements",
+    "aka": ["Double Wood LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "cGMP compliant",
+      "Third-party lab testing with batch certificates",
+      "No FDA warning letters or recalls"
+    ],
+    "notes": "Popular online supplement brand known for transparency and quality analysis reports.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_ORTHO_EUROPE",
+    "standard_name": "Ortho Europe",
+    "aka": ["Ortho Europe Ltd."],
+    "score_contribution": 2,
+    "evidence": [
+      "GMP certified",
+      "Distributed globally with recognized quality",
+      "Clean regulatory record"
+    ],
+    "notes": "Well-established international supplier specializing in vitamins and minerals sold mainly to health practitioners.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_DOLOMITE",
+    "standard_name": "Dolomite",
+    "aka": ["Dolomite Group"],
+    "score_contribution": 2,
+    "evidence": [
+      "cGMP and HACCP certified",
+      "Extensive quality control and raw material testing",
+      "No major recalls or FDA warnings"
+    ],
+    "notes": "European producer focusing on mineral supplements and specialty powders.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_GENERAL_NUTRITION_CENTERS",
+    "standard_name": "GNC",
+    "aka": ["General Nutrition Centers"],
+    "score_contribution": 2,
+    "evidence": [
+      "cGMP and NSF certifications on many products",
+      "Industry recognized for quality",
+      "No recent FDA warning letters"
+    ],
+    "notes": "One of the largest global supplement retailers with substantial in-house manufacturing and third-party partnerships.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_EBIOTICS",
+    "standard_name": "EBiotics",
+    "aka": ["EBiotics LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "cGMP compliant production",
+      "Third-party tested for purity",
+      "No FDA warning letters or major recalls"
+    ],
+    "notes": "Smaller niche company focused on probiotic and digestive health supplements.",
+    "last_updated": "2025-07-22"
+  },
+  {
+    "id": "MANUF_KIRKLAND_SIGNATURE",
+    "standard_name": "Kirkland Signature",
+    "aka": ["Costco Wholesale"],
+    "score_contribution": 2,
+    "evidence": [
+      "USP-verified for many products",
+      "Substantial quality control due to Costco’s internal standards",
+      "No significant FDA warning letters or major recalls"
+    ],
+    "notes": "Strong value and quality for mass-market buyers; USP certifications build trust.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_TRUVANI",
+    "standard_name": "Truvani",
+    "aka": ["Truvani LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "USDA Organic and Non-GMO Project certifications",
+      "Transparent sourcing and third-party testing",
+      "No known FDA warning letters or serious recalls"
+    ],
+    "notes": "Focus on clean ingredients and heavy-metal testing; popular with wellness-conscious consumers.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_SMARTYPANTS",
+    "standard_name": "SmartyPants",
+    "aka": ["SmartyPants Vitamins"],
+    "score_contribution": 2,
+    "evidence": [
+      "NSF Certified, Non-GMO Project verified",
+      "Top-rated in purity testing (e.g., Clean Label Project)",
+      "No significant regulatory penalties or FDA recalls"
+    ],
+    "notes": "Widely trusted for children's and adult gummies with rigorous purity standards.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_RITUAL",
+    "standard_name": "Ritual",
+    "aka": ["Ritual Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "Traceable ingredient sourcing via publically available certificates",
+      "Third-party validated by Eurofins, UL, and USP",
+      "Transparent supply chain and clear regulatory record"
+    ],
+    "notes": "Direct-to-consumer brand highlighted for transparency and clinical testing.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_MEGAFOOD",
+    "standard_name": "MegaFood",
+    "aka": ["MegaFood Inc.", "FoodState Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "Certified B Corporation, NSF, Non-GMO Project Verified",
+      "Extensive third-party testing and transparency reports",
+      "No significant FDA warning letters or recalls"
+    ],
+    "notes": "Pioneers in whole-food based, farm-to-supplement sourcing and quality certifications.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_NATURELO",
+    "standard_name": "NATURELO",
+    "aka": ["NATURELO Premium Supplements"],
+    "score_contribution": 2,
+    "evidence": [
+      "Non-GMO and GMP certified",
+      "Known for clean-label formulations",
+      "No FDA regulatory issues"
+    ],
+    "notes": "Emphasizes natural, plant-based nutrients with strong transparency on source country and purity.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_PEDIATRIX_NUTRITION",
+    "standard_name": "Pediatrix Nutrition",
+    "aka": ["Pediatrix Nutrition"],
+    "score_contribution": 2,
+    "evidence": [
+      "NSF Certified, cGMP compliant",
+      "Specializes in pediatric supplements with batch COAs",
+      "No reported recalls or FDA warning letters"
+    ],
+    "notes": "Highly regarded in pediatric and children’s formulations.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_EVOLVED_PROTEINS",
+    "standard_name": "Evolved Proteins",
+    "aka": ["Evolved Proteins Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "Third-party tested for purity",
+      "GMP certified production",
+      "Transparency on ingredient origin and clean regulatory record"
+    ],
+    "notes": "Known for specialty protein and amino acid products with rigorous purity standards.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_PRIMAL_KITCHEN",
+    "standard_name": "Primal Kitchen",
+    "aka": ["Primal Kitchen LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "Paleo and Keto certified; fair-trade and organic sources for many products",
+      "No major FDA regulatory actions",
+      "Extensive third-party quality checks"
+    ],
+    "notes": "Leader in clean-label, functional supplements and food-based wellness.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_HUM_NUTRITION",
+    "standard_name": "HUM Nutrition",
+    "aka": ["HUM Nutrition Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "GMP and ISO certified",
+      "Transparent third-party testing with batch COAs",
+      "Prominent for beauty-from-within formulations"
+    ],
+    "notes": "Widely available online and in retail, with focus on wellness and cosmetic science.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_GARDEN_OF_LIFE_SPORT",
+    "standard_name": "Garden of Life SPORT",
+    "aka": ["Garden of Life Sport"],
+    "score_contribution": 2,
+    "evidence": [
+      "NSF Certified for Sport and Informed-Choice/Sport certifications",
+      "Entire line is vegan-friendly, USDA Organic, and Non-GMO Project Verified",
+      "No recalls or warning letters related to sport supplements"
+    ],
+    "notes": "Top choice for athletes seeking clean, plant-based performance products.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_VEGA",
+    "standard_name": "Vega",
+    "aka": ["Sequel Naturals Ltd", "Vega One"],
+    "score_contribution": 2,
+    "evidence": [
+      "Vegan Society certified",
+      "NSF GMP compliant; transparent ingredient sourcing",
+      "Third-party tested for heavy metals and contaminants"
+    ],
+    "notes": "Leading brand for vegan sports protein and nutrition; widely available.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_ORGAIN",
+    "standard_name": "Orgain",
+    "aka": ["Orgain Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "USDA Organic and NSF certified",
+      "Specializes in vegan and plant-based protein and nutritional shakes",
+      "No history of FDA warning letters or recalls"
+    ],
+    "notes": "Popular for plant-based nutrition shakes and protein with clean ingredient lists.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_NAKED_NUTRITION",
+    "standard_name": "Naked Nutrition",
+    "aka": ["Naked Nutrition LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "cGMP and Informed-Sport certified for select products",
+      "Emphasizes clean, single-ingredient vegan and sports proteins",
+      "Third-party tested with COAs posted publicly"
+    ],
+    "notes": "Minimal-ingredient, clean products popular in the fitness and vegan communities.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_MYPROTEIN",
+    "standard_name": "MyProtein",
+    "aka": ["MyProtein Ltd"],
+    "score_contribution": 2,
+    "evidence": [
+      "Informed-Sport certification for various sports supplements",
+      "Vegan and allergen-free lines available",
+      "No significant regulatory issues reported"
+    ],
+    "notes": "Huge global reach and affordable price point for sport and vegan proteins.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_HUEL",
+    "standard_name": "Huel",
+    "aka": ["Huel Ltd."],
+    "score_contribution": 2,
+    "evidence": [
+      "Certified vegan",
+      "Nutritionally complete meal products rigorously tested",
+      "No major recalls or FDA issues"
+    ],
+    "notes": "Market leader in complete vegan meal-replacement powders and ready-to-drink blends.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_ALGAE_CAL",
+    "standard_name": "AlgaeCal",
+    "aka": ["AlgaeCal Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "Plant-based, algae-derived calcium and minerals",
+      "Third-party tested for purity, vegan certified",
+      "No FDA warning letters or recalls"
+    ],
+    "notes": "Known for eco-friendly, vegan bone support formulas.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_NUZEST",
+    "standard_name": "Nuzest",
+    "aka": ["Nuzest USA Inc.", "Nuzest Australia"],
+    "score_contribution": 2,
+    "evidence": [
+      "Pea protein products tested for heavy metals and allergens",
+      "Vegan and allergen-friendly certifications",
+      "No significant regulatory penalties"
+    ],
+    "notes": "Premium plant-based protein and nutritional powders with strict quality controls.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_SUNWARRIOR",
+    "standard_name": "Sunwarrior",
+    "aka": ["Sunwarrior Inc."],
+    "score_contribution": 2,
+    "evidence": [
+      "USDA Organic, Non-GMO, Certified Vegan",
+      "Third-party lab tested for contaminants",
+      "No FDA recalls or warning letters"
+    ],
+    "notes": "Popular for plant-based protein and superfood blends.",
+    "last_updated": "2025-07-24"
+  },
+  {
+    "id": "MANUF_TERRA_ORIGIN",
+    "standard_name": "Terra Origin",
+    "aka": ["Terra Origin LLC"],
+    "score_contribution": 2,
+    "evidence": [
+      "NSF GMP certified",
+      "Range of vegan, collagen, and health-focused powders",
+      "No regulatory violations reported"
+    ],
+    "notes": "Health-focused with clean, innovative formulas for gut, brain, and beauty support.",
+    "last_updated": "2025-07-24"
+  }
+]
