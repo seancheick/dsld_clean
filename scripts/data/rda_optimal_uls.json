@@ -39,42 +39,12 @@
         { "group": "Female", "age_range": "31-50", "rda_ai": 700, "ul": 3000 },
         { "group": "Female", "age_range": "51-70", "rda_ai": 700, "ul": 3000 },
         { "group": "Female", "age_range": "71+", "rda_ai": 700, "ul": 3000 },
-        {
-          "group": "Pregnancy",
-          "age_range": "14-18",
-          "rda_ai": 750,
-          "ul": 2800
-        },
-        {
-          "group": "Pregnancy",
-          "age_range": "19-30",
-          "rda_ai": 770,
-          "ul": 3000
-        },
-        {
-          "group": "Pregnancy",
-          "age_range": "31-50",
-          "rda_ai": 770,
-          "ul": 3000
-        },
-        {
-          "group": "Lactation",
-          "age_range": "14-18",
-          "rda_ai": 1200,
-          "ul": 2800
-        },
-        {
-          "group": "Lactation",
-          "age_range": "19-30",
-          "rda_ai": 1300,
-          "ul": 3000
-        },
-        {
-          "group": "Lactation",
-          "age_range": "31-50",
-          "rda_ai": 1300,
-          "ul": 3000
-        }
+        { "group": "Pregnancy", "age_range": "14-18", "rda_ai": 750, "ul": 2800 },
+        { "group": "Pregnancy", "age_range": "19-30", "rda_ai": 770, "ul": 3000 },
+        { "group": "Pregnancy", "age_range": "31-50", "rda_ai": 770, "ul": 3000 },
+        { "group": "Lactation", "age_range": "14-18", "rda_ai": 1200, "ul": 2800 },
+        { "group": "Lactation", "age_range": "19-30", "rda_ai": 1300, "ul": 3000 },
+        { "group": "Lactation", "age_range": "31-50", "rda_ai": 1300, "ul": 3000 }
       ]
     },
     {

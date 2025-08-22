@@ -68,8 +68,9 @@ class BatchProcessor:
         # Initialize state
         self.state_file = self.log_dir / "processing_state.json"
         
-        # Global counters for unmapped ingredients
+        # Global counters for unmapped and mapped ingredients
         self.global_unmapped = Counter()
+        self.global_mapped = Counter()
 
         # Remove shared normalizer instance for thread safety
         # Each process will create its own normalizer instance
@@ -228,6 +229,7 @@ class BatchProcessor:
         incomplete_products = []
         errors = []
         batch_unmapped = Counter()
+        batch_mapped = Counter()
         
         # Process files
         if self.max_workers == 1:
@@ -240,7 +242,8 @@ class BatchProcessor:
                     needs_review_products, 
                     incomplete_products, 
                     errors,
-                    batch_unmapped
+                    batch_unmapped,
+                    batch_mapped
                 )
         else:
             # Multi-threaded processing
@@ -262,15 +265,17 @@ class BatchProcessor:
                             needs_review_products, 
                             incomplete_products, 
                             errors,
-                            batch_unmapped
+                            batch_unmapped,
+                            batch_mapped
                         )
                     except Exception as e:
                         error_msg = f"Failed to process {file_path}: {str(e)}"
                         errors.append(error_msg)
                         batch_logger.error(error_msg)
         
-        # Update global unmapped counter
+        # Update global counters
         self.global_unmapped.update(batch_unmapped)
+        self.global_mapped.update(batch_mapped)
         
         # Write batch outputs
         self._write_batch_outputs(batch_num, cleaned_products, needs_review_products, incomplete_products)
@@ -305,7 +310,7 @@ class BatchProcessor:
     
     def _categorize_result(self, result: ProcessingResult, cleaned: List, 
                           needs_review: List, incomplete: List, errors: List,
-                          batch_unmapped: Counter):
+                          batch_unmapped: Counter, batch_mapped: Counter = None):
         """Categorize processing result into appropriate list"""
         if not result.success:
             errors.append(f"{result.file_path}: {result.error}")
@@ -314,6 +319,10 @@ class BatchProcessor:
         # Update unmapped ingredients
         if result.unmapped_ingredients:
             batch_unmapped.update(result.unmapped_ingredients)
+        
+        # Extract and count mapped ingredients from the processed data
+        if batch_mapped is not None and result.data:
+            self._extract_mapped_ingredients(result.data, batch_mapped)
         
         # Categorize by status
         if result.status == STATUS_SUCCESS:
@@ -324,6 +333,22 @@ class BatchProcessor:
             incomplete.append(result.data)
         else:
             errors.append(f"{result.file_path}: Unknown status {result.status}")
+    
+    def _extract_mapped_ingredients(self, product_data: Dict, batch_mapped: Counter):
+        """Extract mapped ingredients from processed product data"""
+        # Count active ingredients
+        active_ingredients = product_data.get('activeIngredients', [])
+        for ingredient in active_ingredients:
+            ingredient_name = ingredient.get('name', '').strip()
+            if ingredient_name and ingredient.get('mapped', False):
+                batch_mapped[ingredient_name] += 1
+        
+        # Count inactive ingredients  
+        inactive_ingredients = product_data.get('inactiveIngredients', [])
+        for ingredient in inactive_ingredients:
+            ingredient_name = ingredient.get('name', '').strip()
+            if ingredient_name and ingredient.get('mapped', False):
+                batch_mapped[ingredient_name] += 1
     
     def _write_batch_outputs(self, batch_num: int, cleaned: List, 
                            needs_review: List, incomplete: List):
@@ -449,6 +474,7 @@ class BatchProcessor:
                 "avg_per_file": total_time / total_processed if total_processed else 0
             },
             "unmapped_ingredients": len(self.global_unmapped),
+            "mapped_ingredients": len(self.global_mapped),
             "success_rate": (total_cleaned / total_processed * 100) if total_processed else 0
         }
     
@@ -472,8 +498,16 @@ class BatchProcessor:
                 f.write(f"  - Errors: {summary['results']['errors']}\n")
                 f.write(f"  - Success rate: {summary['success_rate']:.1f}%\n\n")
                 
+                f.write(f"Mapped ingredients found: {summary['mapped_ingredients']}\n")
                 f.write(f"Unmapped ingredients found: {summary['unmapped_ingredients']}\n\n")
 
+                # Add top mapped ingredients for data insights
+                if self.global_mapped:
+                    f.write("Top 15 Mapped Ingredients (data insights):\n")
+                    for ingredient, count in self.global_mapped.most_common(15):
+                        f.write(f"  {count:>3}x {ingredient}\n")
+                    f.write("\n📊 These are the most frequently appearing mapped ingredients\n\n")
+                
                 # Add top unmapped ingredients for enrichment planning
                 if self.global_unmapped:
                     f.write("Top 10 Unmapped Ingredients (for enrichment planning):\n")
