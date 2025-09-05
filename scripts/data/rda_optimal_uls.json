@@ -1,15 +1,14 @@
 {
   "database_info": {
-    "version": "2.1.0",
-    "last_updated": "2025-08-15",
-    "total_nutrients": 40,
-    "data_source": "Institute of Medicine (IOM) Dietary Reference Intakes, FDA, USDA",
+    "version": "2.3.0",
+    "last_updated": "2025-09-03",
+    "total_nutrients": 28,
+    "data_source": "Institute of Medicine (IOM) Dietary Reference Intakes, FDA, USDA, Clinical Research",
     "country": "USA",
     "age_brackets": ["14-18", "19-30", "31-50", "51-70", "71+"],
     "units_verified": true,
-    "notes": "All values are US RDA/AI and UL. Optimal ranges based on clinical research for therapeutic supplementation."
+    "notes": "All values are US RDA/AI and UL. Optimal ranges based on clinical research for therapeutic supplementation. Conditionally essential nutrients flagged for special populations."
   },
-
   "nutrient_recommendations": [
     {
       "standard_name": "Vitamin A",
@@ -39,19 +38,49 @@
         { "group": "Female", "age_range": "31-50", "rda_ai": 700, "ul": 3000 },
         { "group": "Female", "age_range": "51-70", "rda_ai": 700, "ul": 3000 },
         { "group": "Female", "age_range": "71+", "rda_ai": 700, "ul": 3000 },
-        { "group": "Pregnancy", "age_range": "14-18", "rda_ai": 750, "ul": 2800 },
-        { "group": "Pregnancy", "age_range": "19-30", "rda_ai": 770, "ul": 3000 },
-        { "group": "Pregnancy", "age_range": "31-50", "rda_ai": 770, "ul": 3000 },
-        { "group": "Lactation", "age_range": "14-18", "rda_ai": 1200, "ul": 2800 },
-        { "group": "Lactation", "age_range": "19-30", "rda_ai": 1300, "ul": 3000 },
-        { "group": "Lactation", "age_range": "31-50", "rda_ai": 1300, "ul": 3000 }
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": 750,
+          "ul": 2800
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": 770,
+          "ul": 3000
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": 770,
+          "ul": 3000
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": 1200,
+          "ul": 2800
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": 1300,
+          "ul": 3000
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": 1300,
+          "ul": 3000
+        }
       ]
     },
     {
       "standard_name": "Vitamin C",
       "unit": "mg",
       "ul_note": "UL based on GI disturbance; higher doses may be tolerated",
-      "optimal_range": "200-1000",
+      "optimal_range": "200-2000",
       "highest_ul": 2000,
       "smoker_adjustment": "+35mg daily",
       "warnings": [
@@ -129,7 +158,7 @@
         "Monitor calcium levels with high doses",
         "May increase calcium absorption"
       ],
-      "special_considerations": "Many adults may need higher doses than RDA, especially those with limited sun exposure",
+      "special_considerations": "Many adults may need higher doses than RDA, especially those with limited sun exposure. Needs cofactors like magnesium and vitamin K2.",
       "deficiency_symptoms": [
         "Bone pain",
         "Muscle weakness",
@@ -502,12 +531,12 @@
       "unit": "mcg DFE",
       "ul_note": "UL applies to folic acid from supplements and fortified foods only",
       "optimal_range": "400-1000",
-      "highest_ul": "none",
+      "highest_ul": 1000,
       "warnings": [
         "High doses may mask B12 deficiency",
         "May interfere with certain medications"
       ],
-      "special_considerations": "Women of reproductive age need 400 mcg synthetic folic acid daily for neural tube defect prevention",
+      "special_considerations": "Women of reproductive age need 400 mcg synthetic folic acid daily for neural tube defect prevention. Natural forms (folate) are not subject to the UL.",
       "deficiency_symptoms": [
         "Fatigue",
         "Anemia",
@@ -751,8 +780,15 @@
       "standard_name": "Choline",
       "unit": "mg",
       "ul_note": "UL based on hypotension and fishy body odor",
-      "optimal_range": "425-1000",
+      "optimal_range": "500-1000",
       "highest_ul": 3500,
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Individuals with PEMT gene variants",
+        "Pregnant women",
+        "Vegans/Vegetarians"
+      ],
+      "synthesis_precursors": ["Methionine", "Folate", "Vitamin B12"],
       "warnings": [
         "High doses may cause fishy body odor",
         "May lower blood pressure"
@@ -818,8 +854,14 @@
       "unit": "mg",
       "ul": "ND",
       "ul_note": "No official RDA or UL established",
-      "optimal_range": "500-18000",
+      "optimal_range": "500-2000",
       "highest_ul": "none",
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Individuals with PCOS",
+        "Those with anxiety/OCD",
+        "Metabolic syndrome"
+      ],
       "warnings": ["High doses may cause nausea or diarrhea"],
       "special_considerations": "Often used in higher doses for PCOS and mental health",
       "deficiency_symptoms": ["Hair loss", "Skin problems", "Mood changes"],
@@ -883,7 +925,7 @@
         "High doses may increase heart disease risk",
         "May interfere with iron absorption"
       ],
-      "special_considerations": "Take with vitamin D for optimal absorption",
+      "special_considerations": "Take with vitamin D and K2 for optimal absorption and bone health",
       "deficiency_symptoms": ["Weak bones", "Muscle cramps", "Numbness"],
       "toxicity_symptoms": [
         "Kidney stones",
@@ -1768,10 +1810,10 @@
     {
       "standard_name": "Boron",
       "unit": "mg",
-      "ul": "ND",
+      "ul": 20,
       "ul_note": "No official RDA established, UL based on reproductive effects",
       "optimal_range": "1-20",
-      "highest_ul": "none",
+      "highest_ul": 20,
       "warnings": [
         "High doses may cause reproductive effects",
         "May affect hormone levels"
@@ -1784,22 +1826,47 @@
       "toxicity_symptoms": ["Reproductive effects", "Kidney damage"],
       "unofficial_ul": 20,
       "data": [
-        { "group": "Male", "age_range": "14-18", "rda_ai": 1, "ul": "ND" },
-        { "group": "Male", "age_range": "19-30", "rda_ai": 1, "ul": "ND" },
-        { "group": "Male", "age_range": "31-50", "rda_ai": 1, "ul": "ND" },
-        { "group": "Male", "age_range": "51-70", "rda_ai": 1, "ul": "ND" },
-        { "group": "Male", "age_range": "71+", "rda_ai": 1, "ul": "ND" },
-        { "group": "Female", "age_range": "14-18", "rda_ai": 1, "ul": "ND" },
-        { "group": "Female", "age_range": "19-30", "rda_ai": 1, "ul": "ND" },
-        { "group": "Female", "age_range": "31-50", "rda_ai": 1, "ul": "ND" },
-        { "group": "Female", "age_range": "51-70", "rda_ai": 1, "ul": "ND" },
-        { "group": "Female", "age_range": "71+", "rda_ai": 1, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "14-18", "rda_ai": 1, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "19-30", "rda_ai": 1, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "31-50", "rda_ai": 1, "ul": "ND" },
-        { "group": "Lactation", "age_range": "14-18", "rda_ai": 1, "ul": "ND" },
-        { "group": "Lactation", "age_range": "19-30", "rda_ai": 1, "ul": "ND" },
-        { "group": "Lactation", "age_range": "31-50", "rda_ai": 1, "ul": "ND" }
+        { "group": "Male", "age_range": "14-18", "rda_ai": "ND", "ul": 20 },
+        { "group": "Male", "age_range": "19-30", "rda_ai": "ND", "ul": 20 },
+        { "group": "Male", "age_range": "31-50", "rda_ai": "ND", "ul": 20 },
+        { "group": "Male", "age_range": "51-70", "rda_ai": "ND", "ul": 20 },
+        { "group": "Male", "age_range": "71+", "rda_ai": "ND", "ul": 20 },
+        { "group": "Female", "age_range": "14-18", "rda_ai": "ND", "ul": 20 },
+        { "group": "Female", "age_range": "19-30", "rda_ai": "ND", "ul": 20 },
+        { "group": "Female", "age_range": "31-50", "rda_ai": "ND", "ul": 20 },
+        { "group": "Female", "age_range": "51-70", "rda_ai": "ND", "ul": 20 },
+        { "group": "Female", "age_range": "71+", "rda_ai": "ND", "ul": 20 },
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": "ND",
+          "ul": 17
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": "ND",
+          "ul": 20
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": "ND",
+          "ul": 20
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": "ND",
+          "ul": 17
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": "ND",
+          "ul": 20
+        },
+        { "group": "Lactation", "age_range": "31-50", "rda_ai": "ND", "ul": 20 }
       ]
     },
     {
@@ -1819,47 +1886,52 @@
       ],
       "unofficial_ul": 1800,
       "data": [
-        { "group": "Male", "age_range": "14-18", "rda_ai": 10, "ul": "ND" },
-        { "group": "Male", "age_range": "19-30", "rda_ai": 10, "ul": "ND" },
-        { "group": "Male", "age_range": "31-50", "rda_ai": 10, "ul": "ND" },
-        { "group": "Male", "age_range": "51-70", "rda_ai": 10, "ul": "ND" },
-        { "group": "Male", "age_range": "71+", "rda_ai": 10, "ul": "ND" },
-        { "group": "Female", "age_range": "14-18", "rda_ai": 10, "ul": "ND" },
-        { "group": "Female", "age_range": "19-30", "rda_ai": 10, "ul": "ND" },
-        { "group": "Female", "age_range": "31-50", "rda_ai": 10, "ul": "ND" },
-        { "group": "Female", "age_range": "51-70", "rda_ai": 10, "ul": "ND" },
-        { "group": "Female", "age_range": "71+", "rda_ai": 10, "ul": "ND" },
+        { "group": "Male", "age_range": "14-18", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Male", "age_range": "19-30", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Male", "age_range": "31-50", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Male", "age_range": "51-70", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Male", "age_range": "71+", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Female", "age_range": "14-18", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Female", "age_range": "19-30", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Female", "age_range": "31-50", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Female", "age_range": "51-70", "rda_ai": "ND", "ul": 1800 },
+        { "group": "Female", "age_range": "71+", "rda_ai": "ND", "ul": 1800 },
         {
           "group": "Pregnancy",
           "age_range": "14-18",
-          "rda_ai": 10,
-          "ul": "ND"
+          "rda_ai": "ND",
+          "ul": 1800
         },
         {
           "group": "Pregnancy",
           "age_range": "19-30",
-          "rda_ai": 10,
-          "ul": "ND"
+          "rda_ai": "ND",
+          "ul": 1800
         },
         {
           "group": "Pregnancy",
           "age_range": "31-50",
-          "rda_ai": 10,
-          "ul": "ND"
+          "rda_ai": "ND",
+          "ul": 1800
         },
         {
           "group": "Lactation",
           "age_range": "14-18",
-          "rda_ai": 10,
-          "ul": "ND"
+          "rda_ai": "ND",
+          "ul": 1800
         },
         {
           "group": "Lactation",
           "age_range": "19-30",
-          "rda_ai": 10,
-          "ul": "ND"
+          "rda_ai": "ND",
+          "ul": 1800
         },
-        { "group": "Lactation", "age_range": "31-50", "rda_ai": 10, "ul": "ND" }
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": "ND",
+          "ul": 1800
+        }
       ]
     },
     {
@@ -1943,8 +2015,15 @@
       "unit": "mg",
       "ul": "ND",
       "ul_note": "No official RDA established, generally considered safe",
-      "optimal_range": "30-400",
+      "optimal_range": "100-300",
       "highest_ul": "none",
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Individuals over 40",
+        "Those on statin medications",
+        "People with heart conditions"
+      ],
+      "synthesis_precursors": ["Acetyl-CoA", "Mevalonate", "Tyrosine"],
       "warnings": [
         "May interact with blood thinners",
         "May affect blood pressure"
@@ -2007,6 +2086,13 @@
       "ul_note": "No official RDA established, generally considered safe",
       "optimal_range": "100-600",
       "highest_ul": "none",
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Elderly",
+        "Those with cognitive decline",
+        "Neuropathy patients"
+      ],
+      "synthesis_precursors": ["L-Carnitine", "Acetyl-CoA"],
       "warnings": [
         "May lower blood sugar",
         "May interact with thyroid medications"
@@ -2072,8 +2158,16 @@
       "unit": "g",
       "ul": "ND",
       "ul_note": "No official RDA established, generally considered safe",
-      "optimal_range": "0.5-6",
+      "optimal_range": "1-3",
       "highest_ul": "none",
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Vegans",
+        "Vegetarians",
+        "Premature infants",
+        "Those with heart or metabolic conditions"
+      ],
+      "synthesis_precursors": ["Cysteine", "Vitamin B6"],
       "warnings": ["Generally well tolerated", "May interact with lithium"],
       "special_considerations": "Semi-essential amino acid, may become essential during stress",
       "deficiency_symptoms": ["Rarely occurs in healthy adults"],
@@ -2134,10 +2228,19 @@
       "ul_note": "No official RDA or UL established, GRAS status up to 20mg/day",
       "optimal_range": "6-20",
       "highest_ul": "none",
-      "warnings": ["Generally well tolerated", "May cause yellowing of skin at very high doses"],
+      "warnings": [
+        "Generally well tolerated",
+        "May cause yellowing of skin at very high doses"
+      ],
       "special_considerations": "Important for eye health, often combined with zeaxanthin",
-      "deficiency_symptoms": ["No official deficiency syndrome", "May contribute to macular degeneration"],
-      "toxicity_symptoms": ["Carotenodermia (yellowing of skin)", "Generally well tolerated"],
+      "deficiency_symptoms": [
+        "No official deficiency syndrome",
+        "May contribute to macular degeneration"
+      ],
+      "toxicity_symptoms": [
+        "Carotenodermia (yellowing of skin)",
+        "Generally well tolerated"
+      ],
       "interaction_warnings": ["May enhance effects of other carotenoids"],
       "data": [
         { "group": "Male", "age_range": "14-18", "rda_ai": 6, "ul": "ND" },
@@ -2167,9 +2270,15 @@
       "highest_ul": "none",
       "warnings": ["Generally well tolerated", "Usually taken with lutein"],
       "special_considerations": "Critical for macular health, concentrated in eye tissues",
-      "deficiency_symptoms": ["No official deficiency syndrome", "May contribute to macular degeneration"],
+      "deficiency_symptoms": [
+        "No official deficiency syndrome",
+        "May contribute to macular degeneration"
+      ],
       "toxicity_symptoms": ["Generally well tolerated", "Very safe profile"],
-      "interaction_warnings": ["Synergistic with lutein", "Enhanced by dietary fat"],
+      "interaction_warnings": [
+        "Synergistic with lutein",
+        "Enhanced by dietary fat"
+      ],
       "data": [
         { "group": "Male", "age_range": "14-18", "rda_ai": 2, "ul": "ND" },
         { "group": "Male", "age_range": "19-30", "rda_ai": 2, "ul": "ND" },
@@ -2196,11 +2305,23 @@
       "ul_note": "No official RDA or UL established, GRAS status",
       "optimal_range": "5-30",
       "highest_ul": "none",
-      "warnings": ["Generally well tolerated", "May cause orange skin discoloration at very high doses"],
+      "warnings": [
+        "Generally well tolerated",
+        "May cause orange skin discoloration at very high doses"
+      ],
       "special_considerations": "Powerful antioxidant, better absorbed with fat",
-      "deficiency_symptoms": ["No official deficiency syndrome", "Reduced antioxidant protection"],
-      "toxicity_symptoms": ["Lycopenodermia (orange skin)", "Generally well tolerated"],
-      "interaction_warnings": ["May enhance other carotenoids", "Fat enhances absorption"],
+      "deficiency_symptoms": [
+        "No official deficiency syndrome",
+        "Reduced antioxidant protection"
+      ],
+      "toxicity_symptoms": [
+        "Lycopenodermia (orange skin)",
+        "Generally well tolerated"
+      ],
+      "interaction_warnings": [
+        "May enhance other carotenoids",
+        "Fat enhances absorption"
+      ],
       "data": [
         { "group": "Male", "age_range": "14-18", "rda_ai": 5, "ul": "ND" },
         { "group": "Male", "age_range": "19-30", "rda_ai": 10, "ul": "ND" },
@@ -2227,11 +2348,33 @@
       "ul_note": "Conditionally essential nutrient, no official UL established",
       "optimal_range": "3-5",
       "highest_ul": "none",
-      "warnings": ["May cause initial water retention", "Kidney function should be monitored at high doses"],
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Vegans",
+        "Vegetarians",
+        "Elderly",
+        "Athletes"
+      ],
+      "synthesis_precursors": ["Glycine", "Arginine", "Methionine"],
+      "warnings": [
+        "May cause initial water retention",
+        "Kidney function should be monitored at high doses"
+      ],
       "special_considerations": "Essential for vegans/vegetarians, synthesized endogenously",
-      "deficiency_symptoms": ["Muscle weakness", "Fatigue", "Reduced exercise capacity"],
-      "toxicity_symptoms": ["Generally well tolerated", "Possible GI upset", "Water retention"],
-      "interaction_warnings": ["May enhance caffeine effects", "Adequate hydration important"],
+      "deficiency_symptoms": [
+        "Muscle weakness",
+        "Fatigue",
+        "Reduced exercise capacity"
+      ],
+      "toxicity_symptoms": [
+        "Generally well tolerated",
+        "Possible GI upset",
+        "Water retention"
+      ],
+      "interaction_warnings": [
+        "May enhance caffeine effects",
+        "Adequate hydration important"
+      ],
       "data": [
         { "group": "Male", "age_range": "14-18", "rda_ai": 1.5, "ul": "ND" },
         { "group": "Male", "age_range": "19-30", "rda_ai": 2, "ul": "ND" },
@@ -2243,12 +2386,42 @@
         { "group": "Female", "age_range": "31-50", "rda_ai": 1.5, "ul": "ND" },
         { "group": "Female", "age_range": "51-70", "rda_ai": 1.5, "ul": "ND" },
         { "group": "Female", "age_range": "71+", "rda_ai": 1.5, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "14-18", "rda_ai": 1.5, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "19-30", "rda_ai": 1.5, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "31-50", "rda_ai": 1.5, "ul": "ND" },
-        { "group": "Lactation", "age_range": "14-18", "rda_ai": 1.5, "ul": "ND" },
-        { "group": "Lactation", "age_range": "19-30", "rda_ai": 1.5, "ul": "ND" },
-        { "group": "Lactation", "age_range": "31-50", "rda_ai": 1.5, "ul": "ND" }
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": 1.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": 1.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": 1.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": 1.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": 1.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": 1.5,
+          "ul": "ND"
+        }
       ]
     },
     {
@@ -2256,13 +2429,33 @@
       "unit": "g",
       "ul": "ND",
       "ul_note": "Conditionally essential nutrient, no official UL established",
-      "optimal_range": "0.5-3",
+      "optimal_range": "0.5-2",
       "highest_ul": "none",
-      "warnings": ["May cause fishy body odor at high doses", "GI upset possible"],
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Vegans",
+        "Vegetarians",
+        "Premature infants",
+        "Those with certain metabolic disorders"
+      ],
+      "synthesis_precursors": [
+        "Lysine",
+        "Methionine",
+        "Iron",
+        "Vitamin C",
+        "B6"
+      ],
+      "warnings": [
+        "May cause fishy body odor at high doses",
+        "GI upset possible"
+      ],
       "special_considerations": "Essential for vegans/vegetarians, synthesized from lysine and methionine",
       "deficiency_symptoms": ["Muscle weakness", "Fatigue", "Hypoglycemia"],
       "toxicity_symptoms": ["Fishy body odor", "Nausea", "Diarrhea"],
-      "interaction_warnings": ["May interact with warfarin", "Thyroid hormone synthesis"],
+      "interaction_warnings": [
+        "May interact with warfarin",
+        "Thyroid hormone synthesis"
+      ],
       "data": [
         { "group": "Male", "age_range": "14-18", "rda_ai": 0.5, "ul": "ND" },
         { "group": "Male", "age_range": "19-30", "rda_ai": 0.5, "ul": "ND" },
@@ -2274,12 +2467,453 @@
         { "group": "Female", "age_range": "31-50", "rda_ai": 0.5, "ul": "ND" },
         { "group": "Female", "age_range": "51-70", "rda_ai": 0.8, "ul": "ND" },
         { "group": "Female", "age_range": "71+", "rda_ai": 0.8, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "14-18", "rda_ai": 0.8, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "19-30", "rda_ai": 0.8, "ul": "ND" },
-        { "group": "Pregnancy", "age_range": "31-50", "rda_ai": 0.8, "ul": "ND" },
-        { "group": "Lactation", "age_range": "14-18", "rda_ai": 0.8, "ul": "ND" },
-        { "group": "Lactation", "age_range": "19-30", "rda_ai": 0.8, "ul": "ND" },
-        { "group": "Lactation", "age_range": "31-50", "rda_ai": 0.8, "ul": "ND" }
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": 0.8,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": 0.8,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": 0.8,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": 0.8,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": 0.8,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": 0.8,
+          "ul": "ND"
+        }
+      ]
+    },
+    {
+      "standard_name": "Acetyl-L-Carnitine",
+      "unit": "g",
+      "ul": "ND",
+      "ul_note": "No official UL established",
+      "optimal_range": "0.5-1.5",
+      "highest_ul": "none",
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Elderly",
+        "Those with cognitive decline",
+        "Neuropathy patients"
+      ],
+      "synthesis_precursors": ["L-Carnitine", "Acetyl-CoA"],
+      "warnings": ["May cause nausea or agitation in some individuals"],
+      "special_considerations": "More bioavailable form of carnitine that crosses blood-brain barrier",
+      "deficiency_symptoms": ["Brain fog", "Fatigue", "Memory issues"],
+      "toxicity_symptoms": ["Nausea", "Agitation", "Headache"],
+      "data": [
+        { "group": "Male", "age_range": "14-18", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Male", "age_range": "19-30", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Male", "age_range": "31-50", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Male", "age_range": "51-70", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Male", "age_range": "71+", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Female", "age_range": "14-18", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Female", "age_range": "19-30", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Female", "age_range": "31-50", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Female", "age_range": "51-70", "rda_ai": 0.5, "ul": "ND" },
+        { "group": "Female", "age_range": "71+", "rda_ai": 0.5, "ul": "ND" },
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": 0.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": 0.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": 0.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": 0.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": 0.5,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": 0.5,
+          "ul": "ND"
+        }
+      ]
+    },
+    {
+      "standard_name": "Alpha-GPC",
+      "unit": "mg",
+      "ul": "ND",
+      "ul_note": "No official UL established",
+      "optimal_range": "300-600",
+      "highest_ul": "none",
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Elderly",
+        "Those with cognitive decline",
+        "Athletes"
+      ],
+      "synthesis_precursors": ["Choline"],
+      "warnings": ["May cause headaches in sensitive individuals"],
+      "special_considerations": "Highly bioavailable source of choline that crosses blood-brain barrier",
+      "deficiency_symptoms": [
+        "Brain fog",
+        "Memory issues",
+        "Reduced physical performance"
+      ],
+      "toxicity_symptoms": ["Headaches", "Nausea", "Dizziness"],
+      "data": [
+        { "group": "Male", "age_range": "14-18", "rda_ai": 300, "ul": "ND" },
+        { "group": "Male", "age_range": "19-30", "rda_ai": 300, "ul": "ND" },
+        { "group": "Male", "age_range": "31-50", "rda_ai": 300, "ul": "ND" },
+        { "group": "Male", "age_range": "51-70", "rda_ai": 300, "ul": "ND" },
+        { "group": "Male", "age_range": "71+", "rda_ai": 300, "ul": "ND" },
+        { "group": "Female", "age_range": "14-18", "rda_ai": 300, "ul": "ND" },
+        { "group": "Female", "age_range": "19-30", "rda_ai": 300, "ul": "ND" },
+        { "group": "Female", "age_range": "31-50", "rda_ai": 300, "ul": "ND" },
+        { "group": "Female", "age_range": "51-70", "rda_ai": 300, "ul": "ND" },
+        { "group": "Female", "age_range": "71+", "rda_ai": 300, "ul": "ND" },
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": 300,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": 300,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": 300,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": 300,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": 300,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": 300,
+          "ul": "ND"
+        }
+      ]
+    },
+    {
+      "standard_name": "Glutathione",
+      "unit": "mg",
+      "ul": "ND",
+      "ul_note": "No official UL established",
+      "optimal_range": "250-500",
+      "highest_ul": "none",
+      "is_conditionally_essential": true,
+      "conditionally_essential_for": [
+        "Those with high oxidative stress",
+        "Liver conditions",
+        "Elderly",
+        "Chronic illness"
+      ],
+      "synthesis_precursors": ["Cysteine", "Glutamate", "Glycine"],
+      "warnings": [
+        "Oral absorption is poor; liposomal or sublingual forms preferred"
+      ],
+      "special_considerations": "Master antioxidant; precursor supplementation (NAC, glycine) often more effective than direct glutathione",
+      "deficiency_symptoms": [
+        "Increased oxidative stress",
+        "Fatigue",
+        "Weakened immunity"
+      ],
+      "toxicity_symptoms": ["Generally well tolerated"],
+      "data": [
+        { "group": "Male", "age_range": "14-18", "rda_ai": 250, "ul": "ND" },
+        { "group": "Male", "age_range": "19-30", "rda_ai": 250, "ul": "ND" },
+        { "group": "Male", "age_range": "31-50", "rda_ai": 250, "ul": "ND" },
+        { "group": "Male", "age_range": "51-70", "rda_ai": 250, "ul": "ND" },
+        { "group": "Male", "age_range": "71+", "rda_ai": 250, "ul": "ND" },
+        { "group": "Female", "age_range": "14-18", "rda_ai": 250, "ul": "ND" },
+        { "group": "Female", "age_range": "19-30", "rda_ai": 250, "ul": "ND" },
+        { "group": "Female", "age_range": "31-50", "rda_ai": 250, "ul": "ND" },
+        { "group": "Female", "age_range": "51-70", "rda_ai": 250, "ul": "ND" },
+        { "group": "Female", "age_range": "71+", "rda_ai": 250, "ul": "ND" },
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": 250,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": 250,
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": 250,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": 250,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": 250,
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": 250,
+          "ul": "ND"
+        }
+      ]
+    },
+    {
+      "standard_name": "Nickel",
+      "unit": "mg",
+      "ul": "ND",
+      "ul_note": "No UL established due to lack of observed adverse effects from food or water sources.",
+      "optimal_range": "0.1-1",
+      "highest_ul": "none",
+      "warnings": [
+        "Inhalation is highly toxic; UL is not applicable to inhalation exposure.",
+        "Dermatitis can be caused by exposure."
+      ],
+      "special_considerations": "Trace mineral important for metabolic function, usually consumed in sufficient amounts from diet.",
+      "deficiency_symptoms": [
+        "Rarely documented in humans; may impact liver and kidney function"
+      ],
+      "toxicity_symptoms": [
+        "Inhalation toxicity (not from food)",
+        "Dermatitis in sensitive individuals"
+      ],
+      "data": [
+        { "group": "Male", "age_range": "14-18", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "19-30", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "31-50", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "51-70", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "71+", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "14-18", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "19-30", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "31-50", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "51-70", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "71+", "rda_ai": "ND", "ul": "ND" },
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": "ND",
+          "ul": "ND"
+        }
+      ]
+    },
+    {
+      "standard_name": "Silicon",
+      "unit": "mg",
+      "ul": "ND",
+      "ul_note": "No UL established due to lack of observed adverse effects.",
+      "optimal_range": "5-50",
+      "highest_ul": "none",
+      "warnings": [
+        "Inhalation of crystalline silica can cause silicosis.",
+        "Supplements should be amorphous silica forms."
+      ],
+      "special_considerations": "A trace element believed to be important for bone and connective tissue health. No official RDA or AI.",
+      "deficiency_symptoms": [
+        "Rarely documented in humans.",
+        "May impact bone and collagen formation."
+      ],
+      "toxicity_symptoms": [
+        "Generally considered safe from food and supplements.",
+        "Inhalation is highly toxic."
+      ],
+      "data": [
+        { "group": "Male", "age_range": "14-18", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "19-30", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "31-50", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "51-70", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "71+", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "14-18", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "19-30", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "31-50", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "51-70", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "71+", "rda_ai": "ND", "ul": "ND" },
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": "ND",
+          "ul": "ND"
+        }
+      ]
+    },
+    {
+      "standard_name": "Sulfate",
+      "unit": "mg",
+      "ul": "ND",
+      "ul_note": "No UL established due to lack of adverse effects from food or water sources.",
+      "optimal_range": "200-500",
+      "highest_ul": "none",
+      "warnings": ["In concentrated form, can cause diarrhea in high doses."],
+      "special_considerations": "Essential for many biological processes, including cartilage formation. Usually found in food and water and not a common deficiency concern.",
+      "deficiency_symptoms": ["Rarely documented in humans."],
+      "toxicity_symptoms": [
+        "Diarrhea and gastrointestinal distress from high concentrations in drinking water."
+      ],
+      "data": [
+        { "group": "Male", "age_range": "14-18", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "19-30", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "31-50", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "51-70", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Male", "age_range": "71+", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "14-18", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "19-30", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "31-50", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "51-70", "rda_ai": "ND", "ul": "ND" },
+        { "group": "Female", "age_range": "71+", "rda_ai": "ND", "ul": "ND" },
+        {
+          "group": "Pregnancy",
+          "age_range": "14-18",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "19-30",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Pregnancy",
+          "age_range": "31-50",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "14-18",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "19-30",
+          "rda_ai": "ND",
+          "ul": "ND"
+        },
+        {
+          "group": "Lactation",
+          "age_range": "31-50",
+          "rda_ai": "ND",
+          "ul": "ND"
+        }
       ]
     }
   ]

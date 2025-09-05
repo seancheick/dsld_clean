@@ -1,9 +1,9 @@
 DSLD Data Cleaning Processing Report
 ==================================================
 
-Generated: 2025-08-16 14:56:26
+Generated: 2025-08-22 17:16:24
 Total Files Processed: 962
-Processing Time: 4.75 minutes
+Processing Time: 5.00 minutes
 
 Results Summary:
   - Successfully cleaned: 958
@@ -12,7 +12,27 @@ Results Summary:
   - Errors: 4
   - Success rate: 99.6%
 
+Mapped ingredients found: 780
 Unmapped ingredients found: 103
+
+Top 15 Mapped Ingredients (data insights):
+  545x Stearic Acid
+  505x Magnesium Stearate
+  453x Sorbitol
+  348x Vitamin B12
+  331x Silica
+  305x Mannitol
+  300x Citric Acid
+  261x Fructose
+  251x Zinc
+  228x Xylitol
+  223x Cellulose
+  193x Vitamin C
+  144x Silicon Dioxide
+  142x Microcrystalline Cellulose
+  124x natural Cherry flavor
+
+📊 These are the most frequently appearing mapped ingredients
 
 Top 10 Unmapped Ingredients (for enrichment planning):
    28x Contains <2% of:
@@ -29,5 +49,5 @@ Top 10 Unmapped Ingredients (for enrichment planning):
 💡 These ingredients should be prioritized for database enrichment
 
 Batch Details:
-  Batch 1: 497 cleaned, 0 review, 0 incomplete, 3 errors (148.3s)
-  Batch 2: 461 cleaned, 0 review, 0 incomplete, 1 errors (136.6s)
+  Batch 1: 497 cleaned, 0 review, 0 incomplete, 3 errors (151.1s)
+  Batch 2: 461 cleaned, 0 review, 0 incomplete, 1 errors (148.5s)

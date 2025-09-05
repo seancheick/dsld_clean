@@ -2,7 +2,12 @@
   {
     "id": "ENHANCER_BLACK_PEPPER",
     "name": "Black Pepper",
-    "aliases": ["piperine", "bioperine", "black pepper extract"],
+    "aliases": [
+      "piperine",
+      "bioperine",
+      "black pepper extract",
+      "Bioperine Black Pepper extract"
+    ],
     "enhances": [
       "Turmeric",
       "CoQ10",

@@ -1,0 +1,27 @@
+2025-08-22 17:29:33 - dsld_cleaner - INFO - ============================================================
+2025-08-22 17:29:33 - dsld_cleaner - INFO - DSLD Data Cleaning Pipeline Starting
+2025-08-22 17:29:33 - dsld_cleaner - INFO - ============================================================
+2025-08-22 17:29:33 - dsld_cleaner - INFO - Started at: 2025-08-22 17:29:33
+2025-08-22 17:29:33 - dsld_cleaner - INFO - Validating configuration...
+2025-08-22 17:29:33 - dsld_cleaner - INFO - Configuration validation passed
+2025-08-22 18:18:02 - dsld_cleaner - INFO - ============================================================
+2025-08-22 18:18:02 - dsld_cleaner - INFO - PROCESSING COMPLETE
+2025-08-22 18:18:02 - dsld_cleaner - INFO - ============================================================
+2025-08-22 18:18:02 - dsld_cleaner - INFO - Ended at: 2025-08-22 18:18:02
+2025-08-22 18:18:02 - dsld_cleaner - INFO - Total duration: 0:48:29.383157
+2025-08-22 18:18:02 - dsld_cleaner - INFO - Files processed: 4294
+2025-08-22 18:18:02 - dsld_cleaner - INFO - Success rate: 99.8%
+2025-08-22 18:18:02 - dsld_cleaner - INFO - 
+2025-08-22 18:18:02 - dsld_cleaner - INFO - Results:
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Cleaned: 4284
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Needs review: 0
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Incomplete: 0
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Errors: 10
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Unmapped ingredients: 481
+2025-08-22 18:18:02 - dsld_cleaner - INFO - 
+2025-08-22 18:18:02 - dsld_cleaner - INFO - Output files saved to:
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Cleaned products: output_Gummies-Jellies/cleaned
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Needs review: output_Gummies-Jellies/needs_review
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Incomplete: output_Gummies-Jellies/incomplete
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Unmapped ingredients: output_Gummies-Jellies/unmapped
+2025-08-22 18:18:02 - dsld_cleaner - INFO -   - Processing report: output_Gummies-Jellies/reports

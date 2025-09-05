@@ -15,7 +15,13 @@
         "longvida",
         "curcumin phytosome",
         "ginger"
-      ]
+      ],
+      "min_effective_doses": {
+        "curcumin": 500,
+        "piperine": 5,
+        "ginger": 100
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Magnesium Nervous System",
@@ -28,7 +34,13 @@
         "pyridoxine",
         "p5p",
         "glycine"
-      ]
+      ],
+      "min_effective_doses": {
+        "magnesium": 200,
+        "vitamin b6": 10,
+        "taurine": 500
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Sleep Stack",
@@ -53,7 +65,15 @@
         "l-tryptophan",
         "tryptophan",
         "apigenin"
-      ]
+      ],
+      "min_effective_doses": {
+        "melatonin": 0.5,
+        "magnesium": 100,
+        "l-theanine": 100,
+        "gaba": 100,
+        "apigenin": 50
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Joint & Inflammation",
@@ -81,7 +101,14 @@
         "sam-e",
         "devil's claw",
         "cat's claw"
-      ]
+      ],
+      "min_effective_doses": {
+        "glucosamine": 1500,
+        "chondroitin": 1200,
+        "msm": 1000,
+        "omega-3": 1000
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Eye Health",
@@ -103,7 +130,14 @@
         "lycopene",
         "anthocyanins",
         "omega-3"
-      ]
+      ],
+      "min_effective_doses": {
+        "lutein": 10,
+        "zeaxanthin": 2,
+        "astaxanthin": 4,
+        "zinc": 15
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Methylation Support",
@@ -127,7 +161,14 @@
         "sam-e",
         "s-adenosylmethionine",
         "methionine"
-      ]
+      ],
+      "min_effective_doses": {
+        "methylcobalamin": 500,
+        "methylfolate": 400,
+        "choline": 250,
+        "vitamin b6": 10
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Detox Pathway",
@@ -152,7 +193,14 @@
         "chlorella",
         "spirulina",
         "activated charcoal"
-      ]
+      ],
+      "min_effective_doses": {
+        "nac": 600,
+        "glutathione": 250,
+        "milk thistle": 200,
+        "selenium": 100
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Gut Barrier",
@@ -176,7 +224,13 @@
         "l-serine",
         "butyrate",
         "tributyrin"
-      ]
+      ],
+      "min_effective_doses": {
+        "l-glutamine": 5000,
+        "zinc carnosine": 75,
+        "deglycyrrhizinated licorice": 380
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Immune Defense",
@@ -203,7 +257,14 @@
         "astragalus",
         "colostrum",
         "epicor"
-      ]
+      ],
+      "min_effective_doses": {
+        "vitamin c": 500,
+        "zinc": 15,
+        "vitamin d": 1000,
+        "quercetin": 500
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Energy + Mitochondria",
@@ -233,7 +294,14 @@
         "nmn",
         "niacin",
         "nad+"
-      ]
+      ],
+      "min_effective_doses": {
+        "coq10": 100,
+        "acetyl-l-carnitine": 500,
+        "creatine": 3000,
+        "rhodiola": 200
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Stress Resilience",
@@ -258,7 +326,14 @@
         "cordyceps",
         "schisandra",
         "relora"
-      ]
+      ],
+      "min_effective_doses": {
+        "ashwagandha": 300,
+        "l-theanine": 100,
+        "rhodiola": 200,
+        "magnesium": 200
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Mood Balance",
@@ -284,7 +359,14 @@
         "dha",
         "st john's wort",
         "saffron"
-      ]
+      ],
+      "min_effective_doses": {
+        "5-htp": 50,
+        "sam-e": 200,
+        "saffron": 30,
+        "epa": 1000
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Cognitive Performance",
@@ -310,7 +392,14 @@
         "huperzine a",
         "vinpocetine",
         "caffeine"
-      ]
+      ],
+      "min_effective_doses": {
+        "bacopa": 300,
+        "alpha-gpc": 300,
+        "lion's mane": 500,
+        "ginkgo biloba": 120
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Cardiovascular Support",
@@ -340,7 +429,14 @@
         "policosanol",
         "beet root",
         "nitrates"
-      ]
+      ],
+      "min_effective_doses": {
+        "coq10": 100,
+        "omega-3": 1000,
+        "magnesium": 200,
+        "garlic extract": 600
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Blood Sugar Regulation",
@@ -362,7 +458,14 @@
         "banaba leaf",
         "fenugreek",
         "inulin"
-      ]
+      ],
+      "min_effective_doses": {
+        "berberine": 500,
+        "chromium": 200,
+        "alpha-lipoic acid": 300,
+        "cinnamon": 500
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Hormone Balance (Men)",
@@ -385,7 +488,14 @@
         "dim",
         "diindolylmethane",
         "maca"
-      ]
+      ],
+      "min_effective_doses": {
+        "zinc": 15,
+        "ashwagandha": 300,
+        "vitamin d": 2000,
+        "tongkat ali": 100
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Hormone Balance (Women)",
@@ -406,7 +516,14 @@
         "dong quai",
         "wild yam",
         "shatavari"
-      ]
+      ],
+      "min_effective_doses": {
+        "chasteberry": 160,
+        "dim": 100,
+        "black cohosh": 40,
+        "maca": 1500
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Hair & Skin Nutrition",
@@ -430,7 +547,14 @@
         "vitamin e",
         "copper",
         "vitamin a"
-      ]
+      ],
+      "min_effective_doses": {
+        "biotin": 2500,
+        "zinc": 15,
+        "collagen": 2500,
+        "vitamin c": 250
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Liver Support",
@@ -452,7 +576,14 @@
         "schisandra",
         "burdock root",
         "tudca"
-      ]
+      ],
+      "min_effective_doses": {
+        "milk thistle": 200,
+        "nac": 600,
+        "alpha-lipoic acid": 300,
+        "tudca": 500
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Bone Health",
@@ -475,7 +606,14 @@
         "vitamin c",
         "ipriflavone",
         "phosphorus"
-      ]
+      ],
+      "min_effective_doses": {
+        "calcium": 500,
+        "vitamin d": 1000,
+        "vitamin k2": 90,
+        "magnesium": 200
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Iron Absorption",
@@ -492,7 +630,13 @@
         "copper",
         "lactoferrin",
         "lysine"
-      ]
+      ],
+      "min_effective_doses": {
+        "iron": 15,
+        "vitamin c": 250,
+        "vitamin b12": 50
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Antioxidant Defense",
@@ -515,7 +659,14 @@
         "pycnogenol",
         "astaxanthin",
         "bilberry"
-      ]
+      ],
+      "min_effective_doses": {
+        "vitamin c": 500,
+        "vitamin e": 100,
+        "astaxanthin": 4,
+        "coq10": 100
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Pre/Post Workout",
@@ -536,7 +687,14 @@
         "bcaa",
         "branched chain amino acids",
         "betaine"
-      ]
+      ],
+      "min_effective_doses": {
+        "creatine": 3000,
+        "beta-alanine": 3200,
+        "citrulline malate": 6000,
+        "caffeine": 100
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Digestive Enzymes",
@@ -554,7 +712,13 @@
         "pancreatin",
         "invertase",
         "hemicellulase"
-      ]
+      ],
+      "min_effective_doses": {
+        "bromelain": 500,
+        "papain": 100,
+        "betaine hcl": 650
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Thyroid Support",
@@ -572,7 +736,14 @@
         "bladderwrack",
         "copper",
         "iron"
-      ]
+      ],
+      "min_effective_doses": {
+        "iodine": 150,
+        "selenium": 100,
+        "zinc": 15,
+        "tyrosine": 500
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Memory & Learning",
@@ -590,7 +761,14 @@
         "vinpocetine",
         "acetyl-l-carnitine",
         "gotu kola"
-      ]
+      ],
+      "min_effective_doses": {
+        "bacopa": 300,
+        "ginkgo biloba": 120,
+        "phosphatidylserine": 100,
+        "lion's mane": 500
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Fat Metabolism",
@@ -608,7 +786,14 @@
         "forskolin",
         "garcinia cambogia",
         "capsaicin"
-      ]
+      ],
+      "min_effective_doses": {
+        "l-carnitine": 500,
+        "green tea extract": 400,
+        "cla": 3000,
+        "caffeine": 100
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Muscle Building/Recovery",
@@ -630,7 +815,14 @@
         "vitamin d",
         "betaine",
         "taurine"
-      ]
+      ],
+      "min_effective_doses": {
+        "creatine": 3000,
+        "leucine": 3000,
+        "glutamine": 5000,
+        "hmb": 3000
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Inflammation Control",
@@ -652,7 +844,14 @@
         "white willow bark",
         "devil's claw",
         "cat's claw"
-      ]
+      ],
+      "min_effective_doses": {
+        "omega-3": 1000,
+        "curcumin": 500,
+        "boswellia": 300,
+        "quercetin": 500
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Adrenal Support",
@@ -668,7 +867,14 @@
         "holy basil",
         "ginseng",
         "panax ginseng"
-      ]
+      ],
+      "min_effective_doses": {
+        "vitamin c": 1000,
+        "pantothenic acid": 100,
+        "ashwagandha": 300,
+        "rhodiola": 200
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Longevity and Anti-Aging",
@@ -682,7 +888,14 @@
         "fisetin",
         "quercetin",
         "spermidine"
-      ]
+      ],
+      "min_effective_doses": {
+        "resveratrol": 250,
+        "nmn": 250,
+        "fisetin": 100,
+        "quercetin": 500
+      },
+      "evidence_tier": 2
     },
     {
       "name": "Probiotic and Gut Health",
@@ -700,7 +913,13 @@
         "postbiotics",
         "butyrate",
         "digestive enzymes"
-      ]
+      ],
+      "min_effective_doses": {
+        "probiotics": 1000000000,
+        "saccharomyces boulardii": 5000000000,
+        "inulin": 5000
+      },
+      "evidence_tier": 1
     },
     {
       "name": "Electrolyte Balance",
@@ -711,7 +930,183 @@
         "calcium",
         "chloride",
         "phosphate"
-      ]
+      ],
+      "min_effective_doses": {
+        "potassium": 1000,
+        "magnesium": 200,
+        "sodium": 500
+      },
+      "evidence_tier": 1
+    },
+    {
+      "name": "Pre-Workout Energy",
+      "ingredients": [
+        "citrulline malate",
+        "beta-alanine",
+        "betaine",
+        "tyrosine",
+        "l-tyrosine",
+        "caffeine",
+        "taurine",
+        "creatine"
+      ],
+      "min_effective_doses": {
+        "citrulline malate": 6000,
+        "beta-alanine": 3200,
+        "betaine": 2500,
+        "caffeine": 100
+      },
+      "evidence_tier": 1
+    },
+    {
+      "name": "Recovery Support",
+      "ingredients": [
+        "bcaa",
+        "branched chain amino acids",
+        "leucine",
+        "glutamine",
+        "l-glutamine",
+        "hmb",
+        "beta-hydroxy beta-methylbutyrate",
+        "taurine",
+        "magnesium"
+      ],
+      "min_effective_doses": {
+        "leucine": 3000,
+        "glutamine": 5000,
+        "hmb": 3000,
+        "magnesium": 200
+      },
+      "evidence_tier": 1
+    },
+    {
+      "name": "Cognitive Amino Acids",
+      "ingredients": [
+        "acetyl-l-carnitine",
+        "alcar",
+        "n-acetyl l-tyrosine",
+        "nalt",
+        "alpha-gpc",
+        "choline alfoscerate",
+        "l-theanine"
+      ],
+      "min_effective_doses": {
+        "acetyl-l-carnitine": 500,
+        "n-acetyl l-tyrosine": 350,
+        "alpha-gpc": 300,
+        "l-theanine": 100
+      },
+      "evidence_tier": 1
+    },
+    {
+      "name": "Immune Probiotic Blend",
+      "ingredients": [
+        "lactobacillus rhamnosus gg",
+        "lactobacillus acidophilus",
+        "bifidobacterium bifidum",
+        "bifidobacterium lactis"
+      ],
+      "min_effective_doses": {
+        "lactobacillus rhamnosus gg": 10000000000,
+        "lactobacillus acidophilus": 10000000000,
+        "bifidobacterium bifidum": 10000000000
+      },
+      "evidence_tier": 1
+    },
+    {
+      "name": "Gut Barrier Probiotic Blend",
+      "ingredients": [
+        "saccharomyces boulardii",
+        "lactobacillus plantarum",
+        "lactobacillus reuteri",
+        "bifidobacterium infantis"
+      ],
+      "min_effective_doses": {
+        "saccharomyces boulardii": 5000000000,
+        "lactobacillus plantarum": 10000000000
+      },
+      "evidence_tier": 1
+    },
+    {
+      "name": "Mood-Gut Axis Probiotic Blend",
+      "ingredients": [
+        "lactobacillus helveticus",
+        "bifidobacterium longum",
+        "lactobacillus casei",
+        "bifidobacterium breve"
+      ],
+      "min_effective_doses": {
+        "lactobacillus helveticus": 10000000000,
+        "bifidobacterium longum": 10000000000
+      },
+      "evidence_tier": 2
+    },
+    {
+      "name": "Skin Health Complex",
+      "ingredients": [
+        "hyaluronic acid",
+        "ceramides",
+        "marine collagen",
+        "type i collagen",
+        "vitamin c",
+        "ascorbic acid",
+        "zinc",
+        "biotin",
+        "msm"
+      ],
+      "min_effective_doses": {
+        "hyaluronic acid": 100,
+        "marine collagen": 2500,
+        "vitamin c": 250,
+        "zinc": 15
+      },
+      "evidence_tier": 2
+    },
+    {
+      "name": "Nitric Oxide & Blood Flow",
+      "ingredients": [
+        "l-citrulline",
+        "citrulline malate",
+        "beetroot extract",
+        "nitrates",
+        "pine bark extract",
+        "pomegranate extract",
+        "l-arginine",
+        "arginine",
+        "hawthorn berry"
+      ],
+      "min_effective_doses": {
+        "l-citrulline": 3000,
+        "beetroot extract": 500,
+        "pine bark extract": 100,
+        "pomegranate extract": 500
+      },
+      "evidence_tier": 1
+    },
+    {
+      "name": "Comprehensive Blood Sugar Support",
+      "ingredients": [
+        "berberine",
+        "berberine hcl",
+        "cinnamon",
+        "cinnamon extract",
+        "alpha-lipoic acid",
+        "ala",
+        "gymnema sylvestre",
+        "chromium",
+        "chromium picolinate",
+        "magnesium",
+        "magnesium glycinate",
+        "bitter melon",
+        "fenugreek"
+      ],
+      "min_effective_doses": {
+        "berberine": 500,
+        "cinnamon": 500,
+        "alpha-lipoic acid": 300,
+        "chromium": 200
+      },
+      "evidence_tier": 1
     }
   ]
 }

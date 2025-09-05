@@ -1,0 +1,27 @@
+2025-08-22 18:30:13 - dsld_cleaner - INFO - ============================================================
+2025-08-22 18:30:13 - dsld_cleaner - INFO - DSLD Data Cleaning Pipeline Starting
+2025-08-22 18:30:13 - dsld_cleaner - INFO - ============================================================
+2025-08-22 18:30:13 - dsld_cleaner - INFO - Started at: 2025-08-22 18:30:13
+2025-08-22 18:30:13 - dsld_cleaner - INFO - Validating configuration...
+2025-08-22 18:30:13 - dsld_cleaner - INFO - Configuration validation passed
+2025-08-22 21:26:00 - dsld_cleaner - INFO - ============================================================
+2025-08-22 21:26:00 - dsld_cleaner - INFO - PROCESSING COMPLETE
+2025-08-22 21:26:00 - dsld_cleaner - INFO - ============================================================
+2025-08-22 21:26:00 - dsld_cleaner - INFO - Ended at: 2025-08-22 21:26:00
+2025-08-22 21:26:00 - dsld_cleaner - INFO - Total duration: 2:55:46.626206
+2025-08-22 21:26:00 - dsld_cleaner - INFO - Files processed: 19416
+2025-08-22 21:26:00 - dsld_cleaner - INFO - Success rate: 99.4%
+2025-08-22 21:26:00 - dsld_cleaner - INFO - 
+2025-08-22 21:26:00 - dsld_cleaner - INFO - Results:
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Cleaned: 19304
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Needs review: 0
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Incomplete: 0
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Errors: 112
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Unmapped ingredients: 2236
+2025-08-22 21:26:00 - dsld_cleaner - INFO - 
+2025-08-22 21:26:00 - dsld_cleaner - INFO - Output files saved to:
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Cleaned products: output_Softgels/cleaned
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Needs review: output_Softgels/needs_review
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Incomplete: output_Softgels/incomplete
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Unmapped ingredients: output_Softgels/unmapped
+2025-08-22 21:26:00 - dsld_cleaner - INFO -   - Processing report: output_Softgels/reports

@@ -1,0 +1,90 @@
+DSLD Data Cleaning Processing Report
+==================================================
+
+Generated: 2025-08-22 21:26:00
+Total Files Processed: 19416
+Processing Time: 175.77 minutes
+
+Results Summary:
+  - Successfully cleaned: 19304
+  - Needs review: 0
+  - Incomplete: 0
+  - Errors: 112
+  - Success rate: 99.4%
+
+Mapped ingredients found: 5463
+Unmapped ingredients found: 2236
+
+Top 15 Mapped Ingredients (data insights):
+  12593x Gelatin
+  10705x Glycerin
+  5329x Docosahexaenoic Acid
+  5070x Eicosapentaenoic Acid
+  4920x purified Water
+  4588x Vitamin E
+  3771x Soybean Oil
+  3138x Soy Lecithin
+  2988x Beeswax
+  2936x Vegetable Glycerin
+  2630x Water
+  2075x Total Omega-3 Fatty Acids
+  2068x Mixed Tocopherols
+  2044x yellow Beeswax
+  1851x Water, Purified
+
+📊 These are the most frequently appearing mapped ingredients
+
+Top 10 Unmapped Ingredients (for enrichment planning):
+  1477x Softgel Capsule
+  438x Contains <2% of
+  288x Borage Oil
+  214x Bioperine Black Pepper extract
+  207x DHA
+  190x Borage seed Oil
+  184x EPA
+  178x Total Calories
+  168x Contains <2% of:
+  151x Caprylic Acid
+
+💡 These ingredients should be prioritized for database enrichment
+
+Batch Details:
+  Batch 1: 493 cleaned, 0 review, 0 incomplete, 7 errors (174.4s)
+  Batch 2: 496 cleaned, 0 review, 0 incomplete, 4 errors (242.9s)
+  Batch 3: 500 cleaned, 0 review, 0 incomplete, 0 errors (219.6s)
+  Batch 4: 498 cleaned, 0 review, 0 incomplete, 2 errors (249.6s)
+  Batch 5: 484 cleaned, 0 review, 0 incomplete, 16 errors (195.0s)
+  Batch 6: 491 cleaned, 0 review, 0 incomplete, 9 errors (252.4s)
+  Batch 7: 494 cleaned, 0 review, 0 incomplete, 6 errors (233.1s)
+  Batch 8: 498 cleaned, 0 review, 0 incomplete, 2 errors (269.9s)
+  Batch 9: 499 cleaned, 0 review, 0 incomplete, 1 errors (278.1s)
+  Batch 10: 494 cleaned, 0 review, 0 incomplete, 6 errors (863.3s)
+  Batch 11: 499 cleaned, 0 review, 0 incomplete, 1 errors (902.5s)
+  Batch 12: 496 cleaned, 0 review, 0 incomplete, 4 errors (230.8s)
+  Batch 13: 499 cleaned, 0 review, 0 incomplete, 1 errors (253.9s)
+  Batch 14: 493 cleaned, 0 review, 0 incomplete, 7 errors (203.9s)
+  Batch 15: 498 cleaned, 0 review, 0 incomplete, 2 errors (291.2s)
+  Batch 16: 498 cleaned, 0 review, 0 incomplete, 2 errors (223.7s)
+  Batch 17: 498 cleaned, 0 review, 0 incomplete, 2 errors (196.7s)
+  Batch 18: 497 cleaned, 0 review, 0 incomplete, 3 errors (220.7s)
+  Batch 19: 494 cleaned, 0 review, 0 incomplete, 6 errors (201.0s)
+  Batch 20: 495 cleaned, 0 review, 0 incomplete, 5 errors (241.4s)
+  Batch 21: 493 cleaned, 0 review, 0 incomplete, 7 errors (210.7s)
+  Batch 22: 500 cleaned, 0 review, 0 incomplete, 0 errors (299.1s)
+  Batch 23: 498 cleaned, 0 review, 0 incomplete, 2 errors (273.5s)
+  Batch 24: 498 cleaned, 0 review, 0 incomplete, 2 errors (243.1s)
+  Batch 25: 498 cleaned, 0 review, 0 incomplete, 2 errors (195.1s)
+  Batch 26: 499 cleaned, 0 review, 0 incomplete, 1 errors (278.6s)
+  Batch 27: 498 cleaned, 0 review, 0 incomplete, 2 errors (190.8s)
+  Batch 28: 498 cleaned, 0 review, 0 incomplete, 2 errors (315.0s)
+  Batch 29: 500 cleaned, 0 review, 0 incomplete, 0 errors (311.8s)
+  Batch 30: 499 cleaned, 0 review, 0 incomplete, 1 errors (230.2s)
+  Batch 31: 500 cleaned, 0 review, 0 incomplete, 0 errors (281.8s)
+  Batch 32: 500 cleaned, 0 review, 0 incomplete, 0 errors (199.5s)
+  Batch 33: 500 cleaned, 0 review, 0 incomplete, 0 errors (288.2s)
+  Batch 34: 500 cleaned, 0 review, 0 incomplete, 0 errors (258.4s)
+  Batch 35: 500 cleaned, 0 review, 0 incomplete, 0 errors (214.8s)
+  Batch 36: 498 cleaned, 0 review, 0 incomplete, 2 errors (201.8s)
+  Batch 37: 498 cleaned, 0 review, 0 incomplete, 2 errors (246.2s)
+  Batch 38: 498 cleaned, 0 review, 0 incomplete, 2 errors (200.9s)
+  Batch 39: 415 cleaned, 0 review, 0 incomplete, 1 errors (162.0s)

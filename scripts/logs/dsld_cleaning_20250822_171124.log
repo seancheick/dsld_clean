@@ -1,0 +1,27 @@
+2025-08-22 17:11:24 - dsld_cleaner - INFO - ============================================================
+2025-08-22 17:11:24 - dsld_cleaner - INFO - DSLD Data Cleaning Pipeline Starting
+2025-08-22 17:11:24 - dsld_cleaner - INFO - ============================================================
+2025-08-22 17:11:24 - dsld_cleaner - INFO - Started at: 2025-08-22 17:11:24
+2025-08-22 17:11:24 - dsld_cleaner - INFO - Validating configuration...
+2025-08-22 17:11:24 - dsld_cleaner - INFO - Configuration validation passed
+2025-08-22 17:16:24 - dsld_cleaner - INFO - ============================================================
+2025-08-22 17:16:24 - dsld_cleaner - INFO - PROCESSING COMPLETE
+2025-08-22 17:16:24 - dsld_cleaner - INFO - ============================================================
+2025-08-22 17:16:24 - dsld_cleaner - INFO - Ended at: 2025-08-22 17:16:24
+2025-08-22 17:16:24 - dsld_cleaner - INFO - Total duration: 0:04:59.856009
+2025-08-22 17:16:24 - dsld_cleaner - INFO - Files processed: 962
+2025-08-22 17:16:24 - dsld_cleaner - INFO - Success rate: 99.6%
+2025-08-22 17:16:24 - dsld_cleaner - INFO - 
+2025-08-22 17:16:24 - dsld_cleaner - INFO - Results:
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Cleaned: 958
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Needs review: 0
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Incomplete: 0
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Errors: 4
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Unmapped ingredients: 103
+2025-08-22 17:16:24 - dsld_cleaner - INFO - 
+2025-08-22 17:16:24 - dsld_cleaner - INFO - Output files saved to:
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Cleaned products: output_Lozenges/cleaned
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Needs review: output_Lozenges/needs_review
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Incomplete: output_Lozenges/incomplete
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Unmapped ingredients: output_Lozenges/unmapped
+2025-08-22 17:16:24 - dsld_cleaner - INFO -   - Processing report: output_Lozenges/reports

@@ -1,0 +1,6 @@
+2025-08-22 20:59:47,987 - INFO - === Batch 33 Processing Log ===
+2025-08-22 20:59:47,987 - INFO - Started: 2025-08-22 20:59:47
+2025-08-22 20:59:47,987 - INFO - Files: 57535.json to 60722.json
+2025-08-22 21:04:36,145 - INFO - Ended: 2025-08-22 21:04:36
+2025-08-22 21:04:36,150 - INFO - Summary: {'batch_num': 33, 'processed': 500, 'cleaned': 500, 'needs_review': 0, 'incomplete': 0, 'errors': 0, 'processing_time': 288.1580219268799, 'avg_time_per_file': 0.5763160438537598}
+2025-08-22 21:04:36,150 - INFO - Unmapped ingredients: 146

@@ -1,0 +1,8 @@
+2025-08-22 19:19:52,656 - INFO - === Batch 11 Processing Log ===
+2025-08-22 19:19:52,656 - INFO - Started: 2025-08-22 19:19:52
+2025-08-22 19:19:52,656 - INFO - Files: 228260.json to 233588.json
+2025-08-22 19:34:55,193 - INFO - Ended: 2025-08-22 19:34:55
+2025-08-22 19:34:55,196 - INFO - Summary: {'batch_num': 11, 'processed': 500, 'cleaned': 499, 'needs_review': 0, 'incomplete': 0, 'errors': 1, 'processing_time': 902.5353050231934, 'avg_time_per_file': 1.8050706100463867}
+2025-08-22 19:34:55,196 - INFO - Unmapped ingredients: 133
+2025-08-22 19:34:55,196 - INFO - Errors:
+2025-08-22 19:34:55,196 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/232545.json: can only concatenate list (not "NoneType") to list

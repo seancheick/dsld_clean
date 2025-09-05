@@ -1,9 +1,9 @@
 DSLD Data Cleaning Processing Report
 ==================================================
 
-Generated: 2025-08-14 22:48:50
+Generated: 2025-08-22 18:18:02
 Total Files Processed: 4294
-Processing Time: 29.21 minutes
+Processing Time: 48.49 minutes
 
 Results Summary:
   - Successfully cleaned: 4284
@@ -12,29 +12,49 @@ Results Summary:
   - Errors: 10
   - Success rate: 99.8%
 
-Unmapped ingredients found: 606
+Mapped ingredients found: 2181
+Unmapped ingredients found: 481
+
+Top 15 Mapped Ingredients (data insights):
+  3169x Citric Acid
+  2612x Pectin
+  2276x Vitamin C
+  1995x Sugar
+  1949x Sodium Citrate
+  1923x Water
+  1847x Gelatin
+  1809x Glucose Syrup
+  1801x Zinc
+  1773x Vitamin B12
+  1679x Vitamin E
+  1660x Natural Flavors
+  1619x Biotin
+  1589x Vitamin A
+  1559x Vitamin D
+
+📊 These are the most frequently appearing mapped ingredients
 
 Top 10 Unmapped Ingredients (for enrichment planning):
   242x Less than 2% of
-  177x Palm Oil
-  173x Apple
   127x Contains <2% of:
   117x Contains <2% of
   111x Less than 2% of:
-  108x Pineapple
-   83x Papaya
-   69x Cannabidiol
    63x Fruit juice
+   46x Adipic Acid
+   45x organic Lemon juice concentrate
+   44x Contains less than 2% of
+   41x Orange juice concentrate
+   41x Pomegranate Juice, Powder
 
 💡 These ingredients should be prioritized for database enrichment
 
 Batch Details:
-  Batch 1: 500 cleaned, 0 review, 0 incomplete, 0 errors (187.0s)
-  Batch 2: 497 cleaned, 0 review, 0 incomplete, 3 errors (175.0s)
-  Batch 3: 499 cleaned, 0 review, 0 incomplete, 1 errors (224.0s)
-  Batch 4: 500 cleaned, 0 review, 0 incomplete, 0 errors (201.3s)
-  Batch 5: 499 cleaned, 0 review, 0 incomplete, 1 errors (207.6s)
-  Batch 6: 499 cleaned, 0 review, 0 incomplete, 1 errors (203.8s)
-  Batch 7: 498 cleaned, 0 review, 0 incomplete, 2 errors (244.6s)
-  Batch 8: 499 cleaned, 0 review, 0 incomplete, 1 errors (195.8s)
-  Batch 9: 293 cleaned, 0 review, 0 incomplete, 1 errors (113.4s)
+  Batch 1: 500 cleaned, 0 review, 0 incomplete, 0 errors (313.0s)
+  Batch 2: 497 cleaned, 0 review, 0 incomplete, 3 errors (295.0s)
+  Batch 3: 499 cleaned, 0 review, 0 incomplete, 1 errors (324.2s)
+  Batch 4: 500 cleaned, 0 review, 0 incomplete, 0 errors (313.2s)
+  Batch 5: 499 cleaned, 0 review, 0 incomplete, 1 errors (339.6s)
+  Batch 6: 499 cleaned, 0 review, 0 incomplete, 1 errors (342.2s)
+  Batch 7: 498 cleaned, 0 review, 0 incomplete, 2 errors (431.0s)
+  Batch 8: 499 cleaned, 0 review, 0 incomplete, 1 errors (355.3s)
+  Batch 9: 293 cleaned, 0 review, 0 incomplete, 1 errors (195.7s)

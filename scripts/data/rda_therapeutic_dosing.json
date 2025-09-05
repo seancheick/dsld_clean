@@ -1,0 +1,354 @@
+{
+  "database_info": {
+    "version": "1.1.0",
+    "last_updated": "2025-09-05",
+    "data_source": "Clinical research, meta-analyses, standard therapeutic guidelines",
+    "purpose": "Provide therapeutic dosing ranges for dietary supplement ingredients not covered by traditional RDA/UL standards.",
+    "total_entries": 30
+  },
+  "therapeutic_dosing": [
+    {
+      "standard_name": "5-HTP (5-Hydroxytryptophan)",
+      "aliases": ["5-htp", "5-hydroxytryptophan", "oxitriptan"],
+      "unit": "mg",
+      "common_use": "Mood support, sleep aid, serotonin precursor",
+      "typical_dosing_range": "50-300",
+      "common_serving_size": "100",
+      "upper_limit": "500",
+      "upper_limit_notes": "Do not combine with prescription antidepressants (SSRIs, MAOIs). May cause nausea at higher doses.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "Alpha-Lipoic Acid",
+      "aliases": ["ala", "alpha-lipoic acid", "thioctic acid"],
+      "unit": "mg",
+      "common_use": "Antioxidant, blood sugar support, neuropathic pain",
+      "typical_dosing_range": "300-600",
+      "common_serving_size": "600",
+      "upper_limit": "1200",
+      "upper_limit_notes": "May lower blood sugar; monitor if diabetic. Rare reports of skin rash.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Ashwagandha Root Extract",
+      "aliases": ["ashwagandha", "withania somnifera", "ksm-66", "sensoril"],
+      "unit": "mg",
+      "common_use": "Adaptogen for stress, thyroid support, sleep",
+      "typical_dosing_range": "250-600",
+      "common_serving_size": "300",
+      "upper_limit": "1000",
+      "upper_limit_notes": "Long-term safety of very high doses not established. Use caution with thyroid medications.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Bacopa Monnieri Extract",
+      "aliases": ["bacopa", "bacopa monnieri", "brahmi"],
+      "unit": "mg",
+      "common_use": "Cognitive function, memory, anxiety reduction",
+      "typical_dosing_range": "300-450",
+      "common_serving_size": "300",
+      "upper_limit": "600",
+      "upper_limit_notes": "Standardized to 20-55% bacosides. May cause GI upset in some.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Berberine",
+      "aliases": ["berberine hcl", "berberine hydrochloride"],
+      "unit": "mg",
+      "common_use": "Blood sugar regulation, antimicrobial, lipid support",
+      "typical_dosing_range": "500-1500",
+      "common_serving_size": "500",
+      "upper_limit": "2000",
+      "upper_limit_notes": "Can interact with many medications via CYP450 enzyme inhibition. Consult doctor.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Beta-Alanine",
+      "aliases": ["beta-alanine", "carnosyn", "muscle fuel"],
+      "unit": "g",
+      "common_use": "Exercise performance, muscle endurance",
+      "typical_dosing_range": "2-6",
+      "common_serving_size": "3.2",
+      "upper_limit": "10",
+      "upper_limit_notes": "Causes harmless paresthesia (tingling). Doses >800mg may be best taken divided.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Citrulline Malate",
+      "aliases": ["citrulline malate", "l-citrulline malate", "citrulline"],
+      "unit": "mg",
+      "common_use": "Nitric oxide production, exercise performance, blood flow",
+      "typical_dosing_range": "6000-8000",
+      "common_serving_size": "6000",
+      "upper_limit": "10000",
+      "upper_limit_notes": "Generally well-tolerated. Very high doses may cause GI distress.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Coenzyme Q10 (Ubiquinone)",
+      "aliases": ["coq10", "coenzyme q10", "ubiquinone"],
+      "unit": "mg",
+      "common_use": "Cellular energy production, heart health, antioxidant",
+      "typical_dosing_range": "100-300",
+      "common_serving_size": "100",
+      "upper_limit": "1200",
+      "upper_limit_notes": "Fat-soluble; take with food. May interact with blood thinners like warfarin.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Curcumin (from Turmeric)",
+      "aliases": [
+        "curcumin",
+        "turmeric extract",
+        "curcuma longa",
+        "meriva",
+        "bcm-95",
+        "longvida",
+        "theracurmin"
+      ],
+      "unit": "mg",
+      "common_use": "Anti-inflammatory, antioxidant, joint health",
+      "typical_dosing_range": "500-1000",
+      "common_serving_size": "500",
+      "upper_limit": "8000",
+      "upper_limit_notes": "High doses may cause GI upset. Enhanced formulations (with piperine, phospholipids) greatly increase bioavailability.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "DIM (Diindolylmethane)",
+      "aliases": ["dim", "diindolylmethane"],
+      "unit": "mg",
+      "common_use": "Hormone balance, estrogen metabolism",
+      "typical_dosing_range": "100-200",
+      "common_serving_size": "100",
+      "upper_limit": "300",
+      "upper_limit_notes": "May cause headaches or dark urine. Start with a lower dose.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "GABA (Gamma-Aminobutyric Acid)",
+      "aliases": ["gaba", "gamma-aminobutyric acid"],
+      "unit": "mg",
+      "common_use": "Relaxation, stress reduction, sleep support",
+      "typical_dosing_range": "250-750",
+      "common_serving_size": "500",
+      "upper_limit": "3000",
+      "upper_limit_notes": "Generally recognized as safe (GRAS). High doses may cause brief tingling or shortness of breath.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "Glucosamine Sulfate",
+      "aliases": ["glucosamine", "glucosamine sulfate", "glucosamine hcl"],
+      "unit": "mg",
+      "common_use": "Joint health, osteoarthritis support",
+      "typical_dosing_range": "1500",
+      "common_serving_size": "1500",
+      "upper_limit": "2000",
+      "upper_limit_notes": "May affect blood sugar; monitor if diabetic. Shellfish allergen warning.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Hyaluronic Acid",
+      "aliases": ["hyaluronic acid", "sodium hyaluronate"],
+      "unit": "mg",
+      "common_use": "Joint lubrication, skin hydration",
+      "typical_dosing_range": "100-200",
+      "common_serving_size": "100",
+      "upper_limit": "400",
+      "upper_limit_notes": "Generally well-tolerated. Low molecular weight may be better absorbed.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "L-Theanine",
+      "aliases": ["l-theanine", "theanine", "suntheanine"],
+      "unit": "mg",
+      "common_use": "Relaxation, focus, caffeine synergy",
+      "typical_dosing_range": "100-400",
+      "common_serving_size": "200",
+      "upper_limit": "1200",
+      "upper_limit_notes": "Exceptionally safe. No known toxicity.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Lutein",
+      "aliases": ["lutein", "floraglo lutein"],
+      "unit": "mg",
+      "common_use": "Eye health, macular pigment support",
+      "typical_dosing_range": "10-20",
+      "common_serving_size": "20",
+      "upper_limit": "40",
+      "upper_limit_notes": "Fat-soluble; take with food. Often paired with zeaxanthin.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Melatonin",
+      "aliases": ["melatonin"],
+      "unit": "mg",
+      "common_use": "Sleep regulation, jet lag",
+      "typical_dosing_range": "0.5-5",
+      "common_serving_size": "3",
+      "upper_limit": "10",
+      "upper_limit_notes": "Lower doses (0.5-1mg) are often more effective for sleep regulation. Higher doses may cause morning grogginess.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "MSM (Methylsulfonylmethane)",
+      "aliases": ["msm", "methylsulfonylmethane"],
+      "unit": "mg",
+      "common_use": "Joint health, anti-inflammatory, skin/hair/nails",
+      "typical_dosing_range": "1000-3000",
+      "common_serving_size": "1000",
+      "upper_limit": "6000",
+      "upper_limit_notes": "Start with a lower dose to minimize potential detox symptoms. Generally very safe.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "NAC (N-Acetyl Cysteine)",
+      "aliases": ["nac", "n-acetyl cysteine", "n-acetylcysteine"],
+      "unit": "mg",
+      "common_use": "Glutathione precursor, respiratory health, detox support",
+      "typical_dosing_range": "600-1800",
+      "common_serving_size": "600",
+      "upper_limit": "3000",
+      "upper_limit_notes": "May interact with nitroglycerin and ACE inhibitors. Rare reports of histamine release.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Probiotics (General)",
+      "aliases": [
+        "probiotics",
+        "lactobacillus",
+        "bifidobacterium",
+        "acidophilus"
+      ],
+      "unit": "CFU",
+      "common_use": "Gut microbiome support, immune function",
+      "typical_dosing_range": "1-10 Billion",
+      "common_serving_size": "10 Billion",
+      "upper_limit": "100 Billion",
+      "upper_limit_notes": "Strain-specific effects are critical. High doses may cause initial bloating. Immunocompromised individuals should consult a doctor.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Quercetin",
+      "aliases": ["quercetin", "quercetin dihydrate"],
+      "unit": "mg",
+      "common_use": "Antioxidant, anti-inflammatory, mast cell stabilization",
+      "typical_dosing_range": "500-1000",
+      "common_serving_size": "500",
+      "upper_limit": "2000",
+      "upper_limit_notes": "Often paired with bromelain to enhance absorption. May interact with some antibiotics.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "Resveratrol",
+      "aliases": ["resveratrol", "polygonum cuspidatum"],
+      "unit": "mg",
+      "common_use": "Antioxidant, longevity, cardiovascular support",
+      "typical_dosing_range": "250-500",
+      "common_serving_size": "500",
+      "upper_limit": "2000",
+      "upper_limit_notes": "Fat-soluble; take with food. High purity trans-resveratrol is preferred.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "Rhodiola Rosea Extract",
+      "aliases": ["rhodiola", "rhodiola rosea", "arctic root", "golden root"],
+      "unit": "mg",
+      "common_use": "Adaptogen for stress and fatigue, cognitive enhancement",
+      "typical_dosing_range": "200-400",
+      "common_serving_size": "300",
+      "upper_limit": "600",
+      "upper_limit_notes": "Standardized to 3% rosavins and 1% salidroside. May be stimulating for some; avoid late in the day.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Saw Palmetto Extract",
+      "aliases": ["saw palmetto", "serenoa repens", "serenoa"],
+      "unit": "mg",
+      "common_use": "Prostate health (BPH), hair loss support",
+      "typical_dosing_range": "320",
+      "common_serving_size": "320",
+      "upper_limit": "640",
+      "upper_limit_notes": "Standardized to 85-95% fatty acids. Doses above 320mg show no additional benefit in studies.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "St. John's Wort",
+      "aliases": ["st john's wort", "hypericum perforatum"],
+      "unit": "mg",
+      "common_use": "Mood support (mild to moderate depression)",
+      "typical_dosing_range": "300-900",
+      "common_serving_size": "300",
+      "upper_limit": "900",
+      "upper_limit_notes": "**Major Interaction Risk:** Induces CYP450 enzymes. Interacts with antidepressants, birth control, blood thinners, and many others. Contraindicated with many medications.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Ubiquinol (Active CoQ10)",
+      "aliases": ["ubiquinol", "active coq10", "kaneka ubiquinol"],
+      "unit": "mg",
+      "common_use": "Enhanced bioavailability CoQ10 for energy and heart health",
+      "typical_dosing_range": "100-200",
+      "common_serving_size": "100",
+      "upper_limit": "600",
+      "upper_limit_notes": "Considered 2-4x more bioavailable than ubiquinone. Preferred form for those over 40 or with absorption issues.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Valerian Root",
+      "aliases": ["valerian", "valerian root", "valeriana officinalis"],
+      "unit": "mg",
+      "common_use": "Sleep aid, relaxation",
+      "typical_dosing_range": "400-900",
+      "common_serving_size": "500",
+      "upper_limit": "3000",
+      "upper_limit_notes": "Standardized to 0.8-1% valerenic acid. May cause drowsiness. Not for long-term continuous use.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Creatine Monohydrate",
+      "aliases": ["creatine", "creatine monohydrate"],
+      "unit": "g",
+      "common_use": "Strength, power, muscle growth, cognitive function",
+      "typical_dosing_range": "3-5",
+      "common_serving_size": "5",
+      "upper_limit": "20",
+      "upper_limit_notes": "Loading phase of 20g/day for 5-7 days is common. Ensure adequate hydration. Generally safe for healthy individuals.",
+      "evidence_tier": 1
+    },
+    {
+      "standard_name": "Collagen Peptides",
+      "aliases": ["collagen", "hydrolyzed collagen", "collagen peptides"],
+      "unit": "g",
+      "common_use": "Skin, hair, nail, joint, and bone health",
+      "typical_dosing_range": "10-20",
+      "common_serving_size": "10",
+      "upper_limit": "40",
+      "upper_limit_notes": "Generally very safe. Can be taken with or without food. Bioavailability varies with form.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "Magnesium L-Threonate",
+      "aliases": ["magtein", "magnesium threonate"],
+      "unit": "mg",
+      "common_use": "Cognitive enhancement, memory, sleep quality",
+      "typical_dosing_range": "144-200",
+      "common_serving_size": "144",
+      "upper_limit": "2000",
+      "upper_limit_notes": "May cause drowsiness. Specific form designed to cross blood-brain barrier. Doses are for elemental magnesium.",
+      "evidence_tier": 2
+    },
+    {
+      "standard_name": "NMN (Nicotinamide Mononucleotide)",
+      "aliases": ["nmn", "nicotinamide mononucleotide"],
+      "unit": "mg",
+      "common_use": "NAD+ precursor, anti-aging, cellular energy support",
+      "typical_dosing_range": "250-500",
+      "common_serving_size": "250",
+      "upper_limit": "1000",
+      "upper_limit_notes": "Relatively new supplement. Short-term human trials suggest good tolerability. Long-term effects are still under investigation.",
+      "evidence_tier": 2
+    }
+  ]
+}

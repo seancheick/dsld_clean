@@ -1,0 +1,207 @@
+{
+  "user_goal_mappings": [
+    {
+      "user_facing_goal": "Sleep Quality",
+      "primary_clusters": ["Sleep Stack", "Magnesium Nervous System"],
+      "secondary_clusters": [
+        "Stress Resilience",
+        "Mood Balance",
+        "Adrenal Support"
+      ]
+    },
+    {
+      "user_facing_goal": "Reduce Stress/Anxiety",
+      "primary_clusters": [
+        "Stress Resilience",
+        "Adrenal Support",
+        "Mood Balance"
+      ],
+      "secondary_clusters": [
+        "Sleep Stack",
+        "Magnesium Nervous System",
+        "Probiotic and Gut Health",
+        "Mood-Gut Axis Probiotic Blend"
+      ]
+    },
+    {
+      "user_facing_goal": "Increase Energy",
+      "primary_clusters": [
+        "Energy + Mitochondria",
+        "Pre-Workout Energy",
+        "Thyroid Support"
+      ],
+      "secondary_clusters": [
+        "Adrenal Support",
+        "Cognitive Amino Acids",
+        "Comprehensive Blood Sugar Support",
+        "Nitric Oxide & Blood Flow"
+      ]
+    },
+    {
+      "user_facing_goal": "Digestive Health",
+      "primary_clusters": [
+        "Gut Barrier",
+        "Probiotic and Gut Health",
+        "Digestive Enzymes"
+      ],
+      "secondary_clusters": [
+        "Gut Barrier Probiotic Blend",
+        "Immune Probiotic Blend",
+        "Mood-Gut Axis Probiotic Blend",
+        "Detox Pathway",
+        "Liver Support"
+      ]
+    },
+    {
+      "user_facing_goal": "Weight Management",
+      "primary_clusters": [
+        "Fat Metabolism",
+        "Comprehensive Blood Sugar Support",
+        "Blood Sugar Regulation"
+      ],
+      "secondary_clusters": [
+        "Pre-Workout Energy",
+        "Recovery Support",
+        "Thyroid Support",
+        "Energy + Mitochondria"
+      ]
+    },
+    {
+      "user_facing_goal": "Cardiovascular/Heart Health",
+      "primary_clusters": [
+        "Cardiovascular Support",
+        "Nitric Oxide & Blood Flow",
+        "Blood Sugar Regulation"
+      ],
+      "secondary_clusters": [
+        "Omega-3 (from Inflammation Control)",
+        "Magnesium (from Multiple Clusters)",
+        "CoQ10 (from Energy + Mitochondria)",
+        "Antioxidant Defense"
+      ]
+    },
+    {
+      "user_facing_goal": "Healthy Aging/Longevity",
+      "primary_clusters": [
+        "Longevity and Anti-Aging",
+        "Antioxidant Defense",
+        "Cognitive Performance"
+      ],
+      "secondary_clusters": [
+        "Energy + Mitochondria",
+        "Bone Health",
+        "Joint & Inflammation",
+        "Cardiovascular Support"
+      ]
+    },
+    {
+      "user_facing_goal": "Blood Sugar Support",
+      "primary_clusters": [
+        "Comprehensive Blood Sugar Support",
+        "Blood Sugar Regulation",
+        "Energy + Mitochondria"
+      ],
+      "secondary_clusters": [
+        "Fat Metabolism",
+        "Weight Management (Goal)",
+        "Detox Pathway",
+        "Liver Support"
+      ]
+    },
+    {
+      "user_facing_goal": "Immune Support",
+      "primary_clusters": [
+        "Immune Defense",
+        "Immune Probiotic Blend",
+        "Detox Pathway"
+      ],
+      "secondary_clusters": [
+        "Gut Barrier",
+        "Zinc (from Multiple Clusters)",
+        "Vitamin D (from Multiple Clusters)",
+        "Liver Support"
+      ]
+    },
+    {
+      "user_facing_goal": "Focus & Mental Clarity",
+      "primary_clusters": [
+        "Cognitive Performance",
+        "Cognitive Amino Acids",
+        "Memory & Learning"
+      ],
+      "secondary_clusters": [
+        "Energy + Mitochondria",
+        "Nitric Oxide & Blood Flow",
+        "Mood Balance",
+        "Stress Resilience"
+      ]
+    },
+    {
+      "user_facing_goal": "Muscle Growth & Recovery",
+      "primary_clusters": [
+        "Muscle Building/Recovery",
+        "Recovery Support",
+        "Pre-Workout Energy"
+      ],
+      "secondary_clusters": [
+        "Testosterone (from Hormone Balance (Men))",
+        "Electrolyte Balance",
+        "Protein (from Muscle Building/Recovery)"
+      ]
+    },
+    {
+      "user_facing_goal": "Joint & Bone Health",
+      "primary_clusters": ["Joint & Inflammation", "Bone Health"],
+      "secondary_clusters": [
+        "Calcium (from Bone Health)",
+        "Vitamin D (from Multiple Clusters)",
+        "Omega-3 (from Inflammation Control)",
+        "Detox Pathway"
+      ]
+    },
+    {
+      "user_facing_goal": "Hormone Balance",
+      "primary_clusters": [
+        "Hormone Balance (Men)",
+        "Hormone Balance (Women)",
+        "Thyroid Support"
+      ],
+      "secondary_clusters": [
+        "Adrenal Support",
+        "Mood Balance",
+        "Sleep Stack",
+        "Detox Pathway",
+        "Liver Support"
+      ]
+    },
+    {
+      "user_facing_goal": "Skin, Hair & Nails",
+      "primary_clusters": ["Hair & Skin Nutrition", "Skin Health Complex"],
+      "secondary_clusters": [
+        "Collagen (from Multiple Clusters)",
+        "Biotin (from Hair & Skin Nutrition)",
+        "Antioxidant Defense",
+        "Detox Pathway"
+      ]
+    },
+    {
+      "user_facing_goal": "Liver & Detox",
+      "primary_clusters": ["Liver Support", "Detox Pathway"],
+      "secondary_clusters": [
+        "Gut Barrier",
+        "Probiotic and Gut Health",
+        "Antioxidant Defense",
+        "Glutathione (from Detox Pathway)"
+      ]
+    },
+    {
+      "user_facing_goal": "Eye & Vision",
+      "primary_clusters": ["Eye Health"],
+      "secondary_clusters": [
+        "Antioxidant Defense",
+        "Nitric Oxide & Blood Flow",
+        "Omega-3 (from Inflammation Control)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+2025-08-22 17:55:58,370 - INFO - === Batch 6 Processing Log ===
+2025-08-22 17:55:58,370 - INFO - Started: 2025-08-22 17:55:58
+2025-08-22 17:55:58,370 - INFO - Files: 287489.json to 306584.json
+2025-08-22 18:01:40,577 - INFO - Ended: 2025-08-22 18:01:40
+2025-08-22 18:01:40,579 - INFO - Summary: {'batch_num': 6, 'processed': 500, 'cleaned': 499, 'needs_review': 0, 'incomplete': 0, 'errors': 1, 'processing_time': 342.205189704895, 'avg_time_per_file': 0.68441037940979}
+2025-08-22 18:01:40,579 - INFO - Unmapped ingredients: 114
+2025-08-22 18:01:40,579 - INFO - Errors:
+2025-08-22 18:01:40,579 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Gummies-Jellies-4294labels-8-4-25/299242.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:48:15,659 - INFO - === Batch 6 Processing Log ===
+2025-08-22 18:48:15,659 - INFO - Started: 2025-08-22 18:48:15
+2025-08-22 18:48:15,659 - INFO - Files: 200744.json to 205436.json
+2025-08-22 18:52:28,095 - INFO - Ended: 2025-08-22 18:52:28
+2025-08-22 18:52:28,096 - INFO - Summary: {'batch_num': 6, 'processed': 500, 'cleaned': 491, 'needs_review': 0, 'incomplete': 0, 'errors': 9, 'processing_time': 252.42838716506958, 'avg_time_per_file': 0.5048567743301392}
+2025-08-22 18:52:28,096 - INFO - Unmapped ingredients: 128
+2025-08-22 18:52:28,096 - INFO - Errors:
+2025-08-22 18:52:28,096 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/202519.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:52:28,096 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/203348.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:52:28,096 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/203592.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:52:28,096 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/203632.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:52:28,097 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/203652.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:52:28,097 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/203769.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:52:28,097 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/203893.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:52:28,097 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/203950.json: can only concatenate list (not "NoneType") to list
+2025-08-22 18:52:28,097 - ERROR -   - /Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25/203988.json: can only concatenate list (not "NoneType") to list

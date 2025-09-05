@@ -11,8 +11,8 @@
     "workflow": "1. CLEANING (this phase) → 2. ENRICHMENT → 3. SCORING → 4. DEPLOYMENT"
   },
   "paths": {
-    "input_directory": "/Users/seancheick/Documents/DataSetDsld/Lozenges-962labels-7-27-25",
-    "output_directory": "output_Lozenges",
+    "input_directory": "/Users/seancheick/Documents/DataSetDsld/Softgels-19416labels-8-6-25",
+    "output_directory": "output_Softgels",
     "reference_data": "data",
     "log_directory": "logs"
   },
