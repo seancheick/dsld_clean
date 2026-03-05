@@ -302,14 +302,11 @@ class TestIdRedirects:
             assert data['lookup'][dep] == entry['canonical_id']
 
     def test_sibutramine_redirect(self, enricher):
-        """Both BANNED_SIBUTRAMINE and SPIKE_SIBUTRAMINE match sibutramine.
+        """Only BANNED_SIBUTRAMINE should match sibutramine.
 
-        Note: SPIKE_SIBUTRAMINE was intended to be merged into BANNED_SIBUTRAMINE
-        via supersedes_ids. Until that merge is complete, both will match.
+        SPIKE_SIBUTRAMINE was merged into BANNED_SIBUTRAMINE via supersedes_ids
+        and no longer exists as a separate entry.
         """
         ids = _banned_ids(enricher, "sibutramine")
-        # Canonical ID must be present
         assert "BANNED_SIBUTRAMINE" in ids
-        # TODO: After merge, SPIKE_SIBUTRAMINE should NOT be present
-        # For now, document that both exist
-        # assert "SPIKE_SIBUTRAMINE" not in ids
+        assert "SPIKE_SIBUTRAMINE" not in ids
