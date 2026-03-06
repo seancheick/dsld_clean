@@ -9,13 +9,15 @@
 
 ## Executive Summary
 
-The PharmaGuide pipeline is well-engineered with strong safety architecture. The banned substance database is current through February 2026 FDA actions, and the matching system has robust multi-layer false-positive protection. However, I found **3 confirmed bugs** (1 dosing, 1 scoring, 1 cross-DB), **several risks** worth monitoring, and **multiple quick wins**.
+The PharmaGuide pipeline is well-engineered with strong safety architecture. The banned substance database is current through February 2026 FDA actions, and the matching system has robust multi-layer false-positive protection. However, I found **18 action items**: 1 HIGH, 4 MEDIUM, 6 LOW, 7 INFO — spanning dosing, scoring, clinical evidence, and data quality.
 
 **Priority findings by patient safety impact:**
 1. **BUG (HIGH):** Folate UL stored in wrong unit causes false over-UL warnings for prenatal vitamins
 2. **BUG (MEDIUM):** B0 penalty overwrite — multiple high_risk/watchlist substances use last-write-wins
-3. **BUG (LOW):** 7-Keto DHEA interaction rule references wrong canonical_id
-4. **RISK (MEDIUM):** Magnesium adequacy always "excessive" due to RDA > supplemental UL
+3. **BUG (MEDIUM):** Clinical evidence entries for Apigenin, Luteolin have inflated evidence_levels contradicting their own notes
+4. **BUG (MEDIUM):** Longvida curcumin clinical entry still claims "65x bioavailability" already debunked in IQM
+5. **BUG (LOW):** 7-Keto DHEA interaction rule references wrong canonical_id
+6. **RISK (MEDIUM):** Magnesium adequacy always "excessive" due to RDA > supplemental UL
 
 ---
 
@@ -158,19 +160,32 @@ Sources for FDA verification:
 
 ### BUGS
 
-None found in spot-checked entries.
+- **Curcumin enhanced forms marked `natural: true`** — Meriva (phosphatidylcholine phytosome), Theracurmin (colloidal submicron), BCM-95, CurcuWin, HydroCurc, and Longvida are all engineered delivery technologies, not "natural" in any conventional sense. The base curcumin is plant-derived, but the delivery form is engineered.
 
 ### RISKS
 
+- **`natural` flag lacks consistent definition** — Sometimes means "naturally occurring chemical form" (methylcobalamin B12), sometimes "naturally sourced" (cod liver oil), sometimes "plant-derived base ingredient" (curcumin forms). For a medical-grade pipeline, this ambiguity is a consumer safety concern. Methylcobalamin, adenosylcobalamin, and hydroxocobalamin are marked `natural: true` but supplemental forms are synthetically manufactured.
+
+- **Curcumin + BioPerine scored aggressively low** (bio_score=7, only 1 above plain curcumin) based on a single Verhoeven 2025 study debunking piperine enhancement. If this study has limitations or is not replicated, this downgrade may be premature.
+
+- **Missing internationally common forms:** Iron hydroxide polymaltose (Maltofer, widely used outside US), magnesium glycerophosphate (European supplements), magnesium pidolate (common in Italy/France), zinc acetate dihydrate (Cochrane-reviewed cold lozenge form).
+
 - **Synergy cluster ingredient resolution:** The `synergy_cluster.json` ingredient names use simplified names (e.g., "curcumin", "piperine") that must resolve against the IQM's hierarchical structure. The resolution path isn't explicitly validated at enrichment time; a typo in a synergy cluster ingredient name would silently fail to match.
 
-### VERIFIED OK (from IQM structure analysis)
+### VERIFIED OK (10/10 bio_score rankings correct)
 
-The IQM uses a hierarchical structure (nutrient → form → properties) with `bio_score` rankings. The standard bioavailability hierarchy is correct for the common forms examined:
-- Magnesium glycinate/bisglycinate ranks higher than oxide (correct)
-- Methylfolate ranks higher than folic acid (correct)
-- Methylcobalamin ranks higher than cyanocobalamin (correct)
-- D3 (cholecalciferol) ranks higher than D2 (ergocalciferol) (correct)
+| Ingredient | Higher Form (score) | Lower Form (score) | Correct? |
+|-----------|-------------------|-------------------|----------|
+| Magnesium | Glycinate (14) | Oxide (4) | Yes |
+| Folate | 5-MTHF (14) | Folic acid (6) | Yes |
+| Vitamin B12 | Methylcobalamin (14) | Cyanocobalamin (10) | Yes |
+| Iron | Bisglycinate (14) | Ferrous sulfate (8) | Yes |
+| Zinc | Picolinate (14) | Oxide (5) | Yes |
+| Calcium | Citrate (14) | Carbonate (8) | Yes |
+| CoQ10 | Ubiquinol (13) | Ubiquinone (10) | Yes |
+| Curcumin | Meriva/phytosome (12) | Plain C3 (6) | Yes |
+| Omega-3 | rTG form (14) | Ethyl ester (9) | Yes |
+| Vitamin D | D3 (12) | D2 (7) | Yes |
 
 ---
 
@@ -178,16 +193,30 @@ The IQM uses a hierarchical structure (nutrient → form → properties) with `b
 
 ### BUGS
 
-None found.
+- **LONGVIDA curcumin: cross-file contradiction** (`backed_clinical_studies.json` ~line 971) — Claims "65x higher free curcumin bioavailability" in `notable_studies`, but `ingredient_quality_map.json` already incorporates Verhoeven 2025 debunking this claim (scores Longvida at bio_score=7, states "NO improvement over unformulated curcumin"). The clinical evidence file was not updated to reflect the debunking.
+
+- **APIGENIN: evidence_level contradicts own notes** (`backed_clinical_studies.json` ~line 2904) — Listed as `evidence_level: "ingredient-human"`, `study_type: "rct_multiple"`, but `published_studies` lists only `["mechanistic", "in-vitro"]` and notes say "no dedicated apigenin-alone RCTs exist." Should be `evidence_level: "preclinical"`.
+
+- **LUTEOLIN: same contradiction** (~line 2931) — `evidence_level: "ingredient-human"`, `study_type: "rct_single"`, but `published_studies: ["mechanistic", "animal"]` and notes say "No standalone RCTs." Only human evidence is a combination product (PEA+luteolin).
+
+- **ZYLOFRESH: published_studies contradicts notes** (~line 418) — `evidence_level: "preclinical"` but `published_studies` includes `"RCT"`. Notes explicitly say "No published clinical trials found."
+
+- **SPERMIDINE: published_studies not updated** (~line 2850) — `evidence_level: "ingredient-human"` but `published_studies: ["mechanistic", "animal"]`. Notable_studies cites small human DB-RCTs (n=30, n=37) that aren't reflected in the published_studies array.
+
+- **BIOPERINE: not updated with Verhoeven 2025** (~line 859) — Still cites Shoba 1998 "2000% increase" claim with only Fanca-Berthon 2021 replication concern noted. The IQM already incorporates the stronger Verhoeven 2025 debunking but this file has not been updated.
+
+- **IODINE: study_type inconsistency** (~line 4340) — `study_type: "observational"` but `published_studies` includes `"RCT"`. If actual RCTs exist, study_type should be upgraded.
 
 ### RISKS
 
-- The `backed_clinical_studies.json` (177 entries) uses `evidence_level` and `score_contribution` tiers. The hierarchy (meta-analysis > RCT > cohort > case study) should be periodically cross-referenced against PubMed for accuracy of claims, especially for ingredients where new large-scale studies may have changed the evidence landscape.
+- **Meriva CRP claim** — Notable_studies states "CRP 168->11 mg/L" which is an extreme drop. Normal CRP is <10 mg/L; 168 mg/L is exceptionally elevated. This may be a unit error (hs-CRP in mg/dL?) or subset data reporting. Should be verified against the Belcaro 2010 publication.
 
 ### VERIFIED OK
 
-- Evidence level classifications are structurally consistent with standard evidence hierarchy
-- Score contribution tiers align with evidence strength (higher evidence = higher score contribution)
+- Score contribution tier math is correct for sampled entries (tier_1/tier_2/tier_3 brackets match formula)
+- Notable study citations verified for KSM-66 Ashwagandha (Chandrasekhar 2012), Setria Glutathione (Richie 2015), MitoQ (Rossman 2018)
+- Preclinical entries (Fisetin, AKG) correctly classified as tier_3
+- Evidence hierarchy (meta-analysis > RCT > cohort > case study) structurally correct
 
 ---
 
@@ -280,11 +309,19 @@ None found.
 |---|----------|----------|-------------|------|
 | 1 | **HIGH** | Dosing | Folate UL in wrong unit (1000 mcg folic acid stored as if mcg DFE) | `rda_optimal_uls.json` |
 | 2 | **MEDIUM** | Scoring | B0 penalty last-write-wins for multiple substances | `score_supplements.py:424-429` |
-| 3 | **LOW** | Cross-DB | 7-Keto DHEA canonical_id typo | `ingredient_interaction_rules.json` |
-| 4 | **LOW** | Metadata | clinical_risk_taxonomy total_entries wrong | `clinical_risk_taxonomy.json:7` |
-| 5 | **INFO** | Robustness | Denylist regex not wrapped in try/except | `enrich_supplements_v3.py:1602` |
-| 6 | **INFO** | Design | interaction_rules subject_ref missing source_db | `ingredient_interaction_rules.json` |
-| 7 | **INFO** | Design | Magnesium adequacy always "excessive" | `rda_ul_calculator.py:488` |
-| 8 | **INFO** | Data | Vitamin E UL note says "synthetic only" but applies to all forms | `rda_optimal_uls.json:532` |
-| 9 | **INFO** | Data | Omega-3 AI is for ALA, not EPA+DHA (undocumented) | `rda_optimal_uls.json:5373` |
-| 10 | **INFO** | Data | Vitamin E unit string mismatch between RDA and converter DBs | `rda_optimal_uls.json` / `unit_conversions.json` |
+| 3 | **MEDIUM** | Clinical | APIGENIN evidence_level "ingredient-human" contradicts own notes ("no RCTs") | `backed_clinical_studies.json` |
+| 4 | **MEDIUM** | Clinical | LUTEOLIN evidence_level "ingredient-human" contradicts published_studies ["mechanistic","animal"] | `backed_clinical_studies.json` |
+| 5 | **MEDIUM** | Clinical | LONGVIDA still claims 65x bioavailability; IQM already has Verhoeven 2025 debunking | `backed_clinical_studies.json` |
+| 6 | **LOW** | Cross-DB | 7-Keto DHEA canonical_id typo | `ingredient_interaction_rules.json` |
+| 7 | **LOW** | Metadata | clinical_risk_taxonomy total_entries wrong | `clinical_risk_taxonomy.json:7` |
+| 8 | **LOW** | Clinical | ZYLOFRESH published_studies includes "RCT" but notes say "no clinical trials" | `backed_clinical_studies.json` |
+| 9 | **LOW** | Clinical | SPERMIDINE/BIOPERINE published_studies arrays not updated | `backed_clinical_studies.json` |
+| 10 | **LOW** | Clinical | IODINE study_type "observational" but published_studies includes "RCT" | `backed_clinical_studies.json` |
+| 11 | **LOW** | IQM | Curcumin enhanced forms (Meriva, Theracurmin etc.) marked `natural: true` | `ingredient_quality_map.json` |
+| 12 | **INFO** | Robustness | Denylist regex not wrapped in try/except | `enrich_supplements_v3.py:1602` |
+| 13 | **INFO** | Design | interaction_rules subject_ref missing source_db | `ingredient_interaction_rules.json` |
+| 14 | **INFO** | Design | Magnesium adequacy always "excessive" | `rda_ul_calculator.py:488` |
+| 15 | **INFO** | Data | Vitamin E UL note says "synthetic only" but applies to all forms | `rda_optimal_uls.json:532` |
+| 16 | **INFO** | Data | Omega-3 AI is for ALA, not EPA+DHA (undocumented) | `rda_optimal_uls.json:5373` |
+| 17 | **INFO** | Data | Vitamin E unit string mismatch between RDA and converter DBs | `rda_optimal_uls.json` / `unit_conversions.json` |
+| 18 | **INFO** | IQM | `natural` flag lacks consistent definition across entries | `ingredient_quality_map.json` |
