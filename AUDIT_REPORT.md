@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-The PharmaGuide pipeline is well-engineered with strong safety architecture. The banned substance database is current through February 2026 FDA actions, and the matching system has robust multi-layer false-positive protection. However, I found **18 action items**: 1 HIGH, 4 MEDIUM, 6 LOW, 7 INFO — spanning dosing, scoring, clinical evidence, and data quality.
+The PharmaGuide pipeline is well-engineered with strong safety architecture. The banned substance database is current through February 2026 FDA actions, and the matching system has robust multi-layer false-positive protection. However, I found **20 action items**: 1 HIGH, 4 MEDIUM, 7 LOW, 8 INFO — spanning dosing, scoring, clinical evidence, cross-DB integrity, and data quality.
 
 **Priority findings by patient safety impact:**
 1. **BUG (HIGH):** Folate UL stored in wrong unit causes false over-UL warnings for prenatal vitamins
@@ -36,21 +36,30 @@ The PharmaGuide pipeline is well-engineered with strong safety architecture. The
   - File: `scripts/data/clinical_risk_taxonomy.json:7`
   - Impact: Low (metadata only, not consumed by matching logic)
 
+- **`cross_db_overlap_allowlist.json` has 4 orphaned entries:**
+  - 3 borax/borate terms (`"borax"`, `"sodium borate"`, `"sodium tetraborate"`) reference `harmful:iqm` overlap, but no borax entries exist in `harmful_additives.json`. These guard overlaps that don't actually exist — either the harmful_additives entries were removed/renamed or never added.
+  - `"dl alpha tocopherol"` has normalization mismatches against both IQM (which stores `"dl-alpha-tocopherol"` with hyphens) and harmful_additives (which has `"dl-alpha tocopherol"` with hyphen between dl and alpha). The allowlist term `"dl alpha tocopherol"` (spaces only) won't match either.
+
 ### RISKS
 
 - **25 of 28 interaction rules reference non-banned-DB IDs** — The `subject_ref.canonical_id` field references IDs across multiple databases (IQM, harmful_additives, botanicals) without a `source_db` discriminator field. If any consuming code assumes these IDs are in the banned DB, lookups will fail silently.
   - Examples: `aloe_vera`, `caffeine`, `vitamin_k`, `ADD_PROPYLENE_GLYCOL`
   - Suggestion: Add `source_db` field to `subject_ref` for explicit routing
 
+- **Synergy cluster → IQM resolution gap** — Of 408 unique ingredient names across 54 synergy clusters, ~300 do not directly match any top-level IQM key. Synergy clusters use human-readable/form-specific names (e.g., "magnesium glycinate", "ubiquinol", "ksm-66") while IQM uses normalized programmatic keys (e.g., `magnesium`, `coq10`, `ashwagandha`). No visible mapping layer bridges the two naming conventions. If any code path looks up synergy ingredient names directly in IQM, it will fail silently for most entries.
+
 - **12 of 49 cluster refs in `user_goals_to_clusters.json`** use annotative format (`"Biotin (from Hair & Skin Nutrition)"`) that don't match any `standard_name` in `synergy_cluster.json`. The actual cluster names within parentheses DO resolve. Impact depends on how downstream code parses these.
+
+- **Multi-array files have ambiguous `total_entries`** — Files like `banned_match_allowlist.json` (total_entries=5 counts allowlist only, excludes 4 denylist entries), `color_indicators.json` (counts one of four arrays), and `functional_ingredient_groupings.json` count only their primary array, which could mislead consumers expecting a total across all arrays.
 
 ### VERIFIED OK
 
 - All 12 `id_redirects.json` canonical_ids exist in banned DB
 - All 5 allowlist and 4 denylist entries in `banned_match_allowlist.json` have valid canonical_ids
+- All 28 interaction rule subject_refs resolve in their respective target DBs (IQM: 18, banned: 3, botanical: 3, harmful_additives: 1, other_ingredients: 1)
 - `_metadata.schema_version` is consistently `"5.0.0"` across all 33 data files
 - `_metadata.total_entries: 130` matches actual ingredient count in `banned_recalled_ingredients.json`
-- `cross_db_overlap_allowlist.json` has 23 well-documented entries with clear rationale for each overlap
+- `total_entries` correct for all 23 single-primary-array files
 
 ---
 
@@ -313,15 +322,17 @@ None found.
 | 4 | **MEDIUM** | Clinical | LUTEOLIN evidence_level "ingredient-human" contradicts published_studies ["mechanistic","animal"] | `backed_clinical_studies.json` |
 | 5 | **MEDIUM** | Clinical | LONGVIDA still claims 65x bioavailability; IQM already has Verhoeven 2025 debunking | `backed_clinical_studies.json` |
 | 6 | **LOW** | Cross-DB | 7-Keto DHEA canonical_id typo | `ingredient_interaction_rules.json` |
-| 7 | **LOW** | Metadata | clinical_risk_taxonomy total_entries wrong | `clinical_risk_taxonomy.json:7` |
-| 8 | **LOW** | Clinical | ZYLOFRESH published_studies includes "RCT" but notes say "no clinical trials" | `backed_clinical_studies.json` |
-| 9 | **LOW** | Clinical | SPERMIDINE/BIOPERINE published_studies arrays not updated | `backed_clinical_studies.json` |
-| 10 | **LOW** | Clinical | IODINE study_type "observational" but published_studies includes "RCT" | `backed_clinical_studies.json` |
-| 11 | **LOW** | IQM | Curcumin enhanced forms (Meriva, Theracurmin etc.) marked `natural: true` | `ingredient_quality_map.json` |
-| 12 | **INFO** | Robustness | Denylist regex not wrapped in try/except | `enrich_supplements_v3.py:1602` |
-| 13 | **INFO** | Design | interaction_rules subject_ref missing source_db | `ingredient_interaction_rules.json` |
-| 14 | **INFO** | Design | Magnesium adequacy always "excessive" | `rda_ul_calculator.py:488` |
-| 15 | **INFO** | Data | Vitamin E UL note says "synthetic only" but applies to all forms | `rda_optimal_uls.json:532` |
-| 16 | **INFO** | Data | Omega-3 AI is for ALA, not EPA+DHA (undocumented) | `rda_optimal_uls.json:5373` |
-| 17 | **INFO** | Data | Vitamin E unit string mismatch between RDA and converter DBs | `rda_optimal_uls.json` / `unit_conversions.json` |
-| 18 | **INFO** | IQM | `natural` flag lacks consistent definition across entries | `ingredient_quality_map.json` |
+| 7 | **LOW** | Cross-DB | 4 orphaned entries in cross_db_overlap_allowlist (borax x3, dl-alpha-tocopherol) | `cross_db_overlap_allowlist.json` |
+| 8 | **LOW** | Metadata | clinical_risk_taxonomy total_entries wrong | `clinical_risk_taxonomy.json:7` |
+| 9 | **LOW** | Clinical | ZYLOFRESH published_studies includes "RCT" but notes say "no clinical trials" | `backed_clinical_studies.json` |
+| 10 | **LOW** | Clinical | SPERMIDINE/BIOPERINE published_studies arrays not updated | `backed_clinical_studies.json` |
+| 11 | **LOW** | Clinical | IODINE study_type "observational" but published_studies includes "RCT" | `backed_clinical_studies.json` |
+| 12 | **LOW** | IQM | Curcumin enhanced forms (Meriva, Theracurmin etc.) marked `natural: true` | `ingredient_quality_map.json` |
+| 13 | **INFO** | Robustness | Denylist regex not wrapped in try/except | `enrich_supplements_v3.py:1602` |
+| 14 | **INFO** | Cross-DB | Synergy cluster → IQM resolution gap (~300/408 names unresolvable) | `synergy_cluster.json` |
+| 15 | **INFO** | Design | interaction_rules subject_ref missing source_db | `ingredient_interaction_rules.json` |
+| 16 | **INFO** | Design | Magnesium adequacy always "excessive" | `rda_ul_calculator.py:488` |
+| 17 | **INFO** | Data | Vitamin E UL note says "synthetic only" but applies to all forms | `rda_optimal_uls.json:532` |
+| 18 | **INFO** | Data | Omega-3 AI is for ALA, not EPA+DHA (undocumented) | `rda_optimal_uls.json:5373` |
+| 19 | **INFO** | Data | Vitamin E unit string mismatch between RDA and converter DBs | `rda_optimal_uls.json` / `unit_conversions.json` |
+| 20 | **INFO** | IQM | `natural` flag lacks consistent definition across entries | `ingredient_quality_map.json` |
