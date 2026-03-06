@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-The PharmaGuide pipeline is well-engineered with strong safety architecture. The banned substance database is current through February 2026 FDA actions, and the matching system has robust multi-layer false-positive protection. However, I found **20 action items**: 1 HIGH, 4 MEDIUM, 7 LOW, 8 INFO — spanning dosing, scoring, clinical evidence, cross-DB integrity, and data quality.
+The PharmaGuide pipeline is well-engineered with strong safety architecture. The banned substance database is current through February 2026 FDA actions, and the matching system has robust multi-layer false-positive protection. However, I found **26 action items**: 1 HIGH, 4 MEDIUM, 8 LOW, 13 INFO — spanning dosing, scoring, clinical evidence, cross-DB integrity, and data quality.
 
 **Priority findings by patient safety impact:**
 1. **BUG (HIGH):** Folate UL stored in wrong unit causes false over-UL warnings for prenatal vitamins
@@ -240,6 +240,12 @@ Sources for FDA verification:
   - Example: Product has [watchlist(-5), high_risk(-10)] → penalty = 10 (order-dependent)
   - **Fix:** Use `moderate_penalty = max(moderate_penalty, new_penalty)` for max-of-all behavior, or `moderate_penalty += new_penalty` for cumulative behavior
 
+- **B2 allergen scoring lacks deduplication (LOW)**
+  - File: `scripts/score_supplements.py:1026-1029`
+  - When a product lists multiple ingredients that trigger the same allergen (e.g., "whey protein" and "milk powder" both flag Milk), the allergen penalty is applied once per triggering ingredient instead of once per unique allergen
+  - Impact: Products with multiple dairy/soy/gluten ingredients receive inflated allergen penalties
+  - **Fix:** Deduplicate allergen hits by allergen type before applying penalties
+
 - **Adequacy band "excessive" override for Magnesium (DESIGN ISSUE)**
   - File: `scripts/rda_ul_calculator.py:488-489`
   - `if over_ul: return "excessive"` — gives 0 points regardless of pct_rda
@@ -249,6 +255,14 @@ Sources for FDA verification:
 ### RISKS
 
 - **Manufacturer violation penalty can stack to -25** (`score_supplements.py:2023`). Combined with section B penalties (harmful additives, proprietary blends), a product could theoretically lose 60+ points before section A even contributes. The `clamp(0.0, 80.0, ...)` at line 2338 prevents negative scores.
+
+- **`manufacturer_violations.json` user-facing notes overstate penalties** — The human-readable `note` fields in violation entries show pre-multiplier penalty totals. When the scorer applies its own multiplier/cap logic, the actual penalty differs from what's documented. This could mislead anyone debugging scores against the data file.
+
+- **Dual normalization paths** — The enricher's `_normalize_text` and the scorer's internal normalization don't share a single implementation. If they diverge (e.g., one strips parentheticals and the other doesn't), enricher-produced keys may not match scorer expectations.
+
+- **Thread-safety of `_last_b5_blend_evidence`** — This scorer instance variable (`score_supplements.py`) is written during scoring and read for output formatting. In a concurrent/multi-threaded scoring context, this could produce race conditions. Currently single-threaded, but worth noting for future parallelization.
+
+- **Parenthetical content stripping** — The enricher strips parenthetical content from ingredient names during normalization (e.g., "Vitamin D3 (as cholecalciferol)" → "Vitamin D3"). If a database entry's canonical name includes parenthetical content, the stripped form won't match.
 
 ### VERIFIED OK
 
@@ -302,9 +316,16 @@ None found.
 
 7. **Consider Magnesium UL exception in adequacy banding** — The current system penalizes every therapeutic magnesium supplement. A nutrient-specific exception for cases where IOM UL < RDA would improve scoring accuracy.
 
+8. **Deduplicate B2 allergen hits** — Change allergen penalty loop to collect unique allergen types first, then apply penalty once per type. Prevents double-penalizing products with multiple dairy/soy sources.
+
+9. **Move hardcoded scoring lists to config** — Several lists in `score_supplements.py` (e.g., probiotic strain lists, vitamin form preference lists) are hardcoded. Moving them to a JSON config file would make updates easier and avoid code changes for data corrections.
+
+10. **Replace `json.dumps` in probiotic strain checking** — The scorer uses `json.dumps()` to serialize ingredient data for string searching during probiotic identification. A direct key lookup or set intersection would be both faster and more reliable.
+
 ### Dead Code / Unused Fields
 
 - `rda_ai_status` and `ul_status` fields in `rda_optimal_uls.json` data entries are universally `null` — could be removed or populated
+- **`ingredient_weights.json` is dead data** — Defined/loaded in `constants.py:30` but never referenced by any scoring or enrichment logic. The file exists in `scripts/data/` but no code path consumes its weights. Can be safely removed or documented as deprecated.
 
 ### Performance Notes
 
@@ -336,3 +357,9 @@ None found.
 | 18 | **INFO** | Data | Omega-3 AI is for ALA, not EPA+DHA (undocumented) | `rda_optimal_uls.json:5373` |
 | 19 | **INFO** | Data | Vitamin E unit string mismatch between RDA and converter DBs | `rda_optimal_uls.json` / `unit_conversions.json` |
 | 20 | **INFO** | IQM | `natural` flag lacks consistent definition across entries | `ingredient_quality_map.json` |
+| 21 | **LOW** | Scoring | B2 allergen penalty not deduplicated by allergen type | `score_supplements.py:1026-1029` |
+| 22 | **INFO** | Data | `manufacturer_violations.json` notes show pre-multiplier penalties | `manufacturer_violations.json` |
+| 23 | **INFO** | Dead Code | `ingredient_weights.json` loaded but never consumed | `constants.py:30` / `ingredient_weights.json` |
+| 24 | **INFO** | Robustness | Dual normalization paths between enricher and scorer | `enrich_supplements_v3.py` / `score_supplements.py` |
+| 25 | **INFO** | Robustness | `_last_b5_blend_evidence` not thread-safe | `score_supplements.py` |
+| 26 | **INFO** | Robustness | Parenthetical stripping may prevent DB key matching | `enrich_supplements_v3.py` |
