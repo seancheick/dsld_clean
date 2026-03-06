@@ -9,15 +9,17 @@
 
 ## Executive Summary
 
-The PharmaGuide pipeline is well-engineered with strong safety architecture. The banned substance database is current through February 2026 FDA actions, and the matching system has robust multi-layer false-positive protection. However, I found **26 action items**: 1 HIGH, 4 MEDIUM, 8 LOW, 13 INFO — spanning dosing, scoring, clinical evidence, cross-DB integrity, and data quality.
+The PharmaGuide pipeline is well-engineered with strong safety architecture. The banned substance database is current through February 2026 FDA actions, and the matching system has robust multi-layer false-positive protection. However, I found **34 action items**: 2 HIGH, 4 MEDIUM, 10 LOW, 18 INFO — spanning dosing, scoring, banned substance matching, clinical evidence, cross-DB integrity, and data quality.
 
 **Priority findings by patient safety impact:**
 1. **BUG (HIGH):** Folate UL stored in wrong unit causes false over-UL warnings for prenatal vitamins
-2. **BUG (MEDIUM):** B0 penalty overwrite — multiple high_risk/watchlist substances use last-write-wins
-3. **BUG (MEDIUM):** Clinical evidence entries for Apigenin, Luteolin have inflated evidence_levels contradicting their own notes
-4. **BUG (MEDIUM):** Longvida curcumin clinical entry still claims "65x bioavailability" already debunked in IQM
-5. **BUG (LOW):** 7-Keto DHEA interaction rule references wrong canonical_id
-6. **RISK (MEDIUM):** Magnesium adequacy always "excessive" due to RDA > supplemental UL
+2. **BUG (HIGH):** "Mormon Tea" is both alias AND negative_match_term for BANNED_EPHEDRA — Ephedra products labeled as "Mormon Tea" escape detection entirely
+3. **BUG (MEDIUM):** B0 penalty overwrite — multiple high_risk/watchlist substances use last-write-wins
+4. **BUG (MEDIUM):** Clinical evidence entries for Apigenin, Luteolin have inflated evidence_levels contradicting their own notes
+5. **BUG (MEDIUM):** Longvida curcumin clinical entry still claims "65x bioavailability" already debunked in IQM
+6. **BUG (LOW):** "Butylene glycol" alias for 1,4-Butanediol false-positives on safe 1,3-Butylene Glycol
+7. **RISK (MEDIUM):** Magnesium adequacy always "excessive" due to RDA > supplemental UL
+8. **RISK (MEDIUM):** Missing banned substances: Aconitum, DNP, Clenbuterol, Usnic Acid
 
 ---
 
@@ -67,11 +69,42 @@ The PharmaGuide pipeline is well-engineered with strong safety architecture. The
 
 ### BUGS
 
-None found. The matching system is well-designed.
+- **"Mormon Tea" is both alias AND negative_match_term for BANNED_EPHEDRA (HIGH — false negative)**
+  - File: `scripts/data/banned_recalled_ingredients.json`, entry `BANNED_EPHEDRA`
+  - Code: `enrich_supplements_v3.py:5163-5167` (negative_match_terms checked before matching at line 5176)
+  - `aliases` includes `"mormon tea"` and `negative_match_terms` also includes `"mormon tea"`. Because negative_match_terms uses substring matching (`term.lower() in text_lower`) and runs BEFORE alias matching, any ingredient containing "Mormon Tea" is suppressed and **never flagged as Ephedra**
+  - Mormon Tea is a common name for Ephedra species. While Ephedra nevadensis is considered lower-risk, the overlap means this alias is completely dead
+  - **Patient safety impact:** A product containing Ephedra labeled as "Mormon Tea" escapes detection entirely
+  - **Fix:** Remove "mormon tea" from either `aliases` or `negative_match_terms`. If the intent is to allow Ephedra nevadensis specifically, use a more targeted negative match term like "ephedra nevadensis"
+
+- **DMSA duplicate entries cause double-flagging (LOW)**
+  - File: `scripts/data/banned_recalled_ingredients.json`, entries `ADD_DMSA_100MG` and `ADD_DMSA_250MG`
+  - Code: `enrich_supplements_v3.py:5246-5265` (`found.append()` with no deduplication)
+  - Both entries share aliases `"dmsa"`, `"succimer"`, `"dimercaptosuccinic acid"`. The matching loop iterates all banned items, so a single DMSA ingredient produces two results with different `banned_id` values
+  - Impact: Inflated severity; cosmetic but could affect downstream scoring
+
+- **"Butylene glycol" alias false-positives on 1,3-Butylene Glycol (LOW — false positive)**
+  - File: `scripts/data/banned_recalled_ingredients.json`, entry `BANNED_14_BUTANEDIOL`
+  - The alias `"butylene glycol"` passes `_is_low_precision_token_alias` (8 chars). Token-bounded matching for `"butylene glycol"` matches `"1,3-Butylene Glycol"` at a word boundary after normalization. **1,3-Butylene glycol is a safe, common cosmetic/food ingredient.** No negative_match_terms exist for it
+  - **Fix:** Add `"1,3-butylene glycol"` and `"1,3-butanediol"` to negative_match_terms for `BANNED_14_BUTANEDIOL`
 
 ### RISKS
 
-- **Token-bounded matching could produce false positives for very short aliases.** The `_is_low_precision_token_alias` filter (enricher line 1449) catches many cases, but any 4+ character alias that isn't in the explicit deny list could still match. Example: if a banned substance had alias "iron" it could match "iron bisglycinate" via token-bounded. Mitigated by: (a) the B0 scorer only trusts exact/alias matches (line 409), not token_bounded; (b) negative_match_terms provide per-entry exclusions.
+- **"Garcinia" bare alias causes false positives for other Garcinia species** — `BANNED_GARCINIA_CAMBOGIA` has alias `"garcinia"`. Negative_match_terms cover `garcinia indica`, `garcinia mangostana`, `kokum`, `mangosteen` but miss: `garcinia atroviridis`, `garcinia dulcis`, `garcinia humilis`, `garcinia xanthochymus`, `garcinia kola`. Token-bounded match for `"garcinia"` will flag these safe species. Recommendation: add missing species to negative_match_terms or remove bare `"garcinia"` alias.
+
+- **Missing banned substances** — 4 FDA-warned dangerous substances are absent from the database:
+  - **Aconitum/Aconite:** Multiple poisoning deaths, FDA-warned
+  - **2,4-Dinitrophenol (DNP):** Industrial chemical sold for weight loss, multiple deaths
+  - **Clenbuterol:** Banned beta-agonist commonly found as supplement adulterant
+  - **Usnic Acid:** Linked to liver failure, FDA warned
+
+- **Confusing allowlist/denylist semantics** — In `banned_match_allowlist.json`, "allowlist" means "allow these patterns to trigger a banned match" and "denylist" means "deny/suppress these patterns from matching." This is the inverse of standard security terminology (allowlist = safe, denylist = block). Internally consistent but a maintenance risk.
+
+- **`_is_negated_match_phrase` can suppress legitimate matches** — At line 5217, if ingredient text contains both the substance name and a negation (e.g., "Ephedra Extract (ephedra-free guaranteed)"), the negation pattern fires and the match is suppressed. Self-contradictory labels are rare but possible.
+
+- **"Snakeroot" alias for Aristolochic Acid is broadly generic** — `BANNED_ARISTOLOCHIC_ACID` has no negative_match_terms. "Snakeroot" can refer to several unrelated plants (white snakeroot, Indian snakeroot). Safety-conservative (flags ambiguous cases) but produces false positives.
+
+- **Token-bounded matching could produce false positives for very short aliases.** The `_is_low_precision_token_alias` filter (enricher line 1449) catches many cases, but any 4+ character alias that isn't in the explicit deny list could still match. Mitigated by: (a) the B0 scorer only trusts exact/alias matches (line 409), not token_bounded; (b) negative_match_terms provide per-entry exclusions.
 
 - **Denylist regex patterns come from JSON data** (enricher line 1602: `re.search(pattern, ing_norm)` where `pattern` from `banned_match_allowlist.json`). If a malformed regex is introduced into the data file, it would crash the enricher. Consider wrapping in try/except.
 
@@ -98,6 +131,18 @@ None found. The matching system is well-designed.
   6. B0 scorer gates on exact/alias matches only (token_bounded → review only)
 
 - **Word boundary matching** in `_token_bounded_match` uses `(?<![a-z0-9])` / `(?![a-z0-9])` lookbehind/lookahead, preventing substring collisions
+
+- **Short aliases (≤3 chars) filtered from token-bounded matching** — All 22 short aliases (e.g., `"as"` for Arsenic, `"cd"` for Cadmium, `"pb"` for Lead, `"hg"` for Mercury, `"cbd"`, `"THC"`) are correctly filtered by `_is_low_precision_token_alias`. They participate only in exact-match.
+
+- **SARMs coverage is complete** — All 15 major SARMs verified present (ostarine, ligandrol, andarine, testolone, cardarine, ibutamoren, stenabolic, YK-11, RAD-140, LGD-4033, MK-677, MK-2866, GW-501516, SR-9009, S-23)
+
+- **Entity type filtering verified** — Class entries (`entity_type: "class"`, `match_mode: "disabled"`) correctly excluded from matching
+
+- **All 4 denylist regex patterns compile correctly** — `DENY_IGF_BINDING_PROTEIN`, `DENY_IGFBP`, `DENY_IGF1_LR3`, `DENY_PHO_FREE` all function as intended
+
+- **Triple-redundancy on "X-free" patterns** — For entries like PHO, the "-free" case is covered by denylist regex, negative_match_terms, AND `_is_negated_match_phrase`. Redundant but safely conservative.
+
+- **`_validate_banned_match_allowlist`** (line 682) confirms all allowlist/denylist canonical_ids reference valid banned entries at startup
 
 Sources for FDA verification:
 - [FDA Dietary Supplement Updates](https://www.fda.gov/food/dietary-supplements/whats-new-dietary-supplements)
@@ -322,6 +367,12 @@ None found.
 
 10. **Replace `json.dumps` in probiotic strain checking** — The scorer uses `json.dumps()` to serialize ingredient data for string searching during probiotic identification. A direct key lookup or set intersection would be both faster and more reliable.
 
+11. **Remove "mormon tea" from BANNED_EPHEDRA negative_match_terms** — This is a patient-safety-critical fix. The term exists in both `aliases` and `negative_match_terms`, causing the alias to be completely dead. If Ephedra nevadensis needs special handling, use `"ephedra nevadensis"` as a more targeted negative match term instead.
+
+12. **Add negative_match_terms for 1,3-Butylene Glycol** — Add `"1,3-butylene glycol"` and `"1,3-butanediol"` to `BANNED_14_BUTANEDIOL`'s negative_match_terms to prevent false-flagging this safe cosmetic ingredient.
+
+13. **Add missing Garcinia species to negative_match_terms** — `garcinia atroviridis`, `garcinia dulcis`, `garcinia humilis`, `garcinia xanthochymus`, `garcinia kola` are all safe species that would be false-positived by the bare `"garcinia"` alias.
+
 ### Dead Code / Unused Fields
 
 - `rda_ai_status` and `ul_status` fields in `rda_optimal_uls.json` data entries are universally `null` — could be removed or populated
@@ -338,28 +389,36 @@ None found.
 | # | Severity | Category | Description | File |
 |---|----------|----------|-------------|------|
 | 1 | **HIGH** | Dosing | Folate UL in wrong unit (1000 mcg folic acid stored as if mcg DFE) | `rda_optimal_uls.json` |
-| 2 | **MEDIUM** | Scoring | B0 penalty last-write-wins for multiple substances | `score_supplements.py:424-429` |
-| 3 | **MEDIUM** | Clinical | APIGENIN evidence_level "ingredient-human" contradicts own notes ("no RCTs") | `backed_clinical_studies.json` |
-| 4 | **MEDIUM** | Clinical | LUTEOLIN evidence_level "ingredient-human" contradicts published_studies ["mechanistic","animal"] | `backed_clinical_studies.json` |
-| 5 | **MEDIUM** | Clinical | LONGVIDA still claims 65x bioavailability; IQM already has Verhoeven 2025 debunking | `backed_clinical_studies.json` |
-| 6 | **LOW** | Cross-DB | 7-Keto DHEA canonical_id typo | `ingredient_interaction_rules.json` |
-| 7 | **LOW** | Cross-DB | 4 orphaned entries in cross_db_overlap_allowlist (borax x3, dl-alpha-tocopherol) | `cross_db_overlap_allowlist.json` |
-| 8 | **LOW** | Metadata | clinical_risk_taxonomy total_entries wrong | `clinical_risk_taxonomy.json:7` |
-| 9 | **LOW** | Clinical | ZYLOFRESH published_studies includes "RCT" but notes say "no clinical trials" | `backed_clinical_studies.json` |
-| 10 | **LOW** | Clinical | SPERMIDINE/BIOPERINE published_studies arrays not updated | `backed_clinical_studies.json` |
-| 11 | **LOW** | Clinical | IODINE study_type "observational" but published_studies includes "RCT" | `backed_clinical_studies.json` |
-| 12 | **LOW** | IQM | Curcumin enhanced forms (Meriva, Theracurmin etc.) marked `natural: true` | `ingredient_quality_map.json` |
-| 13 | **INFO** | Robustness | Denylist regex not wrapped in try/except | `enrich_supplements_v3.py:1602` |
-| 14 | **INFO** | Cross-DB | Synergy cluster → IQM resolution gap (~300/408 names unresolvable) | `synergy_cluster.json` |
-| 15 | **INFO** | Design | interaction_rules subject_ref missing source_db | `ingredient_interaction_rules.json` |
-| 16 | **INFO** | Design | Magnesium adequacy always "excessive" | `rda_ul_calculator.py:488` |
-| 17 | **INFO** | Data | Vitamin E UL note says "synthetic only" but applies to all forms | `rda_optimal_uls.json:532` |
-| 18 | **INFO** | Data | Omega-3 AI is for ALA, not EPA+DHA (undocumented) | `rda_optimal_uls.json:5373` |
-| 19 | **INFO** | Data | Vitamin E unit string mismatch between RDA and converter DBs | `rda_optimal_uls.json` / `unit_conversions.json` |
-| 20 | **INFO** | IQM | `natural` flag lacks consistent definition across entries | `ingredient_quality_map.json` |
-| 21 | **LOW** | Scoring | B2 allergen penalty not deduplicated by allergen type | `score_supplements.py:1026-1029` |
-| 22 | **INFO** | Data | `manufacturer_violations.json` notes show pre-multiplier penalties | `manufacturer_violations.json` |
-| 23 | **INFO** | Dead Code | `ingredient_weights.json` loaded but never consumed | `constants.py:30` / `ingredient_weights.json` |
-| 24 | **INFO** | Robustness | Dual normalization paths between enricher and scorer | `enrich_supplements_v3.py` / `score_supplements.py` |
-| 25 | **INFO** | Robustness | `_last_b5_blend_evidence` not thread-safe | `score_supplements.py` |
-| 26 | **INFO** | Robustness | Parenthetical stripping may prevent DB key matching | `enrich_supplements_v3.py` |
+| 2 | **HIGH** | Matching | "Mormon Tea" in both aliases AND negative_match_terms — Ephedra escapes detection | `banned_recalled_ingredients.json` |
+| 3 | **MEDIUM** | Scoring | B0 penalty last-write-wins for multiple substances | `score_supplements.py:424-429` |
+| 4 | **MEDIUM** | Clinical | APIGENIN evidence_level "ingredient-human" contradicts own notes ("no RCTs") | `backed_clinical_studies.json` |
+| 5 | **MEDIUM** | Clinical | LUTEOLIN evidence_level "ingredient-human" contradicts published_studies ["mechanistic","animal"] | `backed_clinical_studies.json` |
+| 6 | **MEDIUM** | Clinical | LONGVIDA still claims 65x bioavailability; IQM already has Verhoeven 2025 debunking | `backed_clinical_studies.json` |
+| 7 | **LOW** | Matching | "Butylene glycol" alias false-positives on safe 1,3-Butylene Glycol | `banned_recalled_ingredients.json` |
+| 8 | **LOW** | Matching | DMSA duplicate entries (ADD_DMSA_100MG/250MG) cause double-flagging | `banned_recalled_ingredients.json` |
+| 9 | **LOW** | Cross-DB | 7-Keto DHEA canonical_id typo | `ingredient_interaction_rules.json` |
+| 10 | **LOW** | Cross-DB | 4 orphaned entries in cross_db_overlap_allowlist (borax x3, dl-alpha-tocopherol) | `cross_db_overlap_allowlist.json` |
+| 11 | **LOW** | Metadata | clinical_risk_taxonomy total_entries wrong | `clinical_risk_taxonomy.json:7` |
+| 12 | **LOW** | Clinical | ZYLOFRESH published_studies includes "RCT" but notes say "no clinical trials" | `backed_clinical_studies.json` |
+| 13 | **LOW** | Clinical | SPERMIDINE/BIOPERINE published_studies arrays not updated | `backed_clinical_studies.json` |
+| 14 | **LOW** | Clinical | IODINE study_type "observational" but published_studies includes "RCT" | `backed_clinical_studies.json` |
+| 15 | **LOW** | IQM | Curcumin enhanced forms (Meriva, Theracurmin etc.) marked `natural: true` | `ingredient_quality_map.json` |
+| 16 | **LOW** | Scoring | B2 allergen penalty not deduplicated by allergen type | `score_supplements.py:1026-1029` |
+| 17 | **INFO** | Matching | "Garcinia" bare alias false-positives on safe Garcinia species | `banned_recalled_ingredients.json` |
+| 18 | **INFO** | Matching | Missing banned substances: Aconitum, DNP, Clenbuterol, Usnic Acid | `banned_recalled_ingredients.json` |
+| 19 | **INFO** | Matching | "Snakeroot" alias for Aristolochic Acid is broadly generic | `banned_recalled_ingredients.json` |
+| 20 | **INFO** | Matching | `_is_negated_match_phrase` can suppress self-contradictory labels | `enrich_supplements_v3.py:5217` |
+| 21 | **INFO** | Matching | Confusing allowlist/denylist semantics (inverted from standard) | `banned_match_allowlist.json` |
+| 22 | **INFO** | Robustness | Denylist regex not wrapped in try/except | `enrich_supplements_v3.py:1602` |
+| 23 | **INFO** | Cross-DB | Synergy cluster → IQM resolution gap (~300/408 names unresolvable) | `synergy_cluster.json` |
+| 24 | **INFO** | Design | interaction_rules subject_ref missing source_db | `ingredient_interaction_rules.json` |
+| 25 | **INFO** | Design | Magnesium adequacy always "excessive" | `rda_ul_calculator.py:488` |
+| 26 | **INFO** | Data | Vitamin E UL note says "synthetic only" but applies to all forms | `rda_optimal_uls.json:532` |
+| 27 | **INFO** | Data | Omega-3 AI is for ALA, not EPA+DHA (undocumented) | `rda_optimal_uls.json:5373` |
+| 28 | **INFO** | Data | Vitamin E unit string mismatch between RDA and converter DBs | `rda_optimal_uls.json` / `unit_conversions.json` |
+| 29 | **INFO** | IQM | `natural` flag lacks consistent definition across entries | `ingredient_quality_map.json` |
+| 30 | **INFO** | Data | `manufacturer_violations.json` notes show pre-multiplier penalties | `manufacturer_violations.json` |
+| 31 | **INFO** | Dead Code | `ingredient_weights.json` loaded but never consumed | `constants.py:30` / `ingredient_weights.json` |
+| 32 | **INFO** | Robustness | Dual normalization paths between enricher and scorer | `enrich_supplements_v3.py` / `score_supplements.py` |
+| 33 | **INFO** | Robustness | `_last_b5_blend_evidence` not thread-safe | `score_supplements.py` |
+| 34 | **INFO** | Robustness | Parenthetical stripping may prevent DB key matching | `enrich_supplements_v3.py` |
