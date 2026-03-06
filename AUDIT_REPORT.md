@@ -120,6 +120,12 @@ Sources for FDA verification:
 
 - **Methylfolate DFE conversion factor (1.7)** — `unit_conversions.json:188` uses the same DFE factor as folic acid. This is debated in the literature; 5-MTHF is already the active form, and some experts argue 1:1 DFE conversion is more appropriate. The current 1.7 factor is the conservative/official position.
 
+- **Vitamin E UL note is misleading** — `rda_optimal_uls.json:532` says "UL applies to synthetic alpha-tocopherol only" but per the IOM report, the UL of 1000 mg applies to any form of supplemental alpha-tocopherol (both natural and synthetic). This should be corrected.
+
+- **Omega-3 AI is for ALA, not EPA+DHA** — The AI of 1.1-1.6g in `rda_optimal_uls.json` is for total omega-3 as ALA (alpha-linolenic acid). Most omega-3 supplements contain EPA+DHA (fish oil), not ALA. There is no established AI specifically for EPA+DHA. The file doesn't clarify this distinction, which could lead to incorrect adequacy comparisons for fish oil supplements.
+
+- **Vitamin E unit string mismatch** — `rda_optimal_uls.json` uses `"unit": "mg alpha-tocopherol"` for Vitamin E, while `unit_conversions.json` converts IU to `"mg"`. The unit strings don't match exactly, which could cause comparison failures if the RDA calculator tries to match units between the two files.
+
 ### VERIFIED OK (10/10 nutrient spot-check)
 
 | Nutrient | RDA | UL | Status |
@@ -279,3 +285,6 @@ None found.
 | 5 | **INFO** | Robustness | Denylist regex not wrapped in try/except | `enrich_supplements_v3.py:1602` |
 | 6 | **INFO** | Design | interaction_rules subject_ref missing source_db | `ingredient_interaction_rules.json` |
 | 7 | **INFO** | Design | Magnesium adequacy always "excessive" | `rda_ul_calculator.py:488` |
+| 8 | **INFO** | Data | Vitamin E UL note says "synthetic only" but applies to all forms | `rda_optimal_uls.json:532` |
+| 9 | **INFO** | Data | Omega-3 AI is for ALA, not EPA+DHA (undocumented) | `rda_optimal_uls.json:5373` |
+| 10 | **INFO** | Data | Vitamin E unit string mismatch between RDA and converter DBs | `rda_optimal_uls.json` / `unit_conversions.json` |
