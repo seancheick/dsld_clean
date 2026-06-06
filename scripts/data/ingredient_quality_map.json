@@ -43,11 +43,11 @@
                         }
                   },
                   "beta-carotene from mixed carotenoids": {
-                        "bio_score": 12,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 15,
+                        "score": 13,
                         "absorption": "8.7-65%",
-                        "notes": "Variable based on fat intake; requires conversion to active Vitamin A.",
+                        "notes": "Variable based on fat intake; requires conversion to active Vitamin A. Absorption-only: carotenoid with moderate, fat-dependent systemic absorption (not premium tier); beta-carotene absorption is variable/fat-dependent and requires inefficient conversion to retinol.",
                         "aliases": [
                               "mixed carotenoids",
                               "natural beta-carotene",
@@ -6225,11 +6225,11 @@
             "rxcui": "18451",
             "forms": {
                   "natural astaxanthin (haematococcus pluvialis)": {
-                        "bio_score": 12,
+                        "bio_score": 11,
                         "natural": true,
-                        "score": 15,
+                        "score": 14,
                         "absorption": "High (fat-soluble; best absorbed with fats or oils)",
-                        "notes": "Microalgae-derived antioxidant carotenoid used for skin, eye, cognition, and recovery. Clinically preferred form.",
+                        "notes": "Microalgae-derived antioxidant carotenoid used for skin, eye, cognition, and recovery. Clinically preferred form. Absorption-only: carotenoid with moderate, fat-dependent systemic absorption (not premium tier); esterified astaxanthin, moderate-good absorption with dietary lipid.",
                         "aliases": [
                               "natural astaxanthin",
                               "haematococcus pluvialis astaxanthin",
@@ -6269,11 +6269,11 @@
                         }
                   },
                   "synthetic astaxanthin": {
-                        "bio_score": 12,
+                        "bio_score": 10,
                         "natural": false,
-                        "score": 12,
+                        "score": 10,
                         "absorption": "Moderate",
-                        "notes": "Petroleum-derived synthetic astaxanthin used in feedstocks and some low-cost supplements. Poorer clinical support.",
+                        "notes": "Petroleum-derived synthetic astaxanthin used in feedstocks and some low-cost supplements. Poorer clinical support. Absorption-only: carotenoid with moderate, fat-dependent systemic absorption (not premium tier); free astaxanthin, moderate fat-dependent absorption.",
                         "aliases": [
                               "synthetic astaxanthin",
                               "chemical astaxanthin",
@@ -21851,11 +21851,11 @@
             "rxcui": "29008",
             "forms": {
                   "lycopene extract": {
-                        "bio_score": 13,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 16,
+                        "score": 13,
                         "absorption": "good (~60-70% with fat)",
-                        "notes": "A powerful carotenoid antioxidant, best absorbed with dietary fat. Primarily found in tomatoes and other red fruits.",
+                        "notes": "A powerful carotenoid antioxidant, best absorbed with dietary fat. Primarily found in tomatoes and other red fruits. Absorption-only: carotenoid with moderate, fat-dependent systemic absorption (not premium tier); lycopene is a moderate, fat-dependent absorber.",
                         "aliases": [
                               "lycopene",
                               "tomato lycopene",
@@ -22886,11 +22886,11 @@
             "rxcui": null,
             "forms": {
                   "beta-cryptoxanthin": {
-                        "bio_score": 12,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 15,
+                        "score": 13,
                         "absorption": "good (~60-70% with fat)",
-                        "notes": "A carotenoid with pro-vitamin A activity. Found in orange and red fruits. Best absorbed with dietary fat.",
+                        "notes": "A carotenoid with pro-vitamin A activity. Found in orange and red fruits. Best absorbed with dietary fat. Absorption-only: carotenoid with moderate, fat-dependent systemic absorption (not premium tier); carotenoid with moderate fat-dependent absorption.",
                         "aliases": [
                               "cryptoxanthin",
                               "beta-cryptoxanthin",
