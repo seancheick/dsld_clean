@@ -1,12 +1,17 @@
 """
-Absorption-only policy invariants for ingredient_quality_map.json.
+bio_score semantics invariants for ingredient_quality_map.json.
 
-Under the absorption-only bio_score policy, local/luminal-effect ingredients
-(targeted-effect forms) must NOT be scored as systemic-absorption winners.
-bio_score reflects systemic absorption; functional efficacy of non-absorbed
-actives is scored on a separate axis.
+Per the agreed model, bio_score is scored differently by active type:
+- SYSTEMIC actives (vitamins/minerals/amino acids; and systemic-TARGET
+  ingredients that happen to be poorly absorbed): bio_score = systemic
+  absorption. Poorly-absorbed systemic-target ingredients must score low.
+- NON-systemic / local actives (probiotics, mushrooms, fibers, demulcents,
+  phytosterols, digestive enzymes): bio_score = form quality + delivery to the
+  site of action (the probiotic model) - NOT systemic absorption. These are
+  intentionally NOT flattened, so they have no absorption cap here.
 
-Extended per category as the sweep proceeds.
+This test pins the systemic-but-poorly-absorbed values (which stay low) so they
+can't be re-inflated.
 
 Run with: pytest scripts/tests/test_iqm_absorption_only.py -q
 """
@@ -17,7 +22,6 @@ from pathlib import Path
 import pytest
 
 IQM_PATH = Path(__file__).parent.parent / 'data' / 'ingredient_quality_map.json'
-LOCAL_EFFECT_BIO_CAP = 6  # fibers etc. are not systemically absorbed
 
 
 @pytest.fixture(scope='module')
@@ -27,42 +31,28 @@ def entries():
     return {k: v for k, v in data.items() if k != '_metadata'}
 
 
-class TestFiberAbsorptionCap:
-    def test_fibers_not_systemic_winners(self, entries):
+class TestSystemicPoorlyAbsorbedStayLow:
+    """Systemic-TARGET ingredients that are genuinely poorly absorbed orally
+    must not be scored as well-absorbed (these are not 'form-quality' carve-outs;
+    the benefit requires systemic absorption that does not occur)."""
+
+    PINS = {
+        # hyaluronic acid: large polymer, MW-limited oral absorption
+        ('hyaluronic_acid', 'high molecular weight HA'): 6,
+        ('hyaluronic_acid', 'acetylated HA'): 8,
+        # large systemic enzymes degraded/poorly absorbed orally
+        ('superoxide_dismutase', 'sod supplement'): 5,
+        ('glutathione_peroxidase', 'glutathione peroxidase enzyme'): 5,
+        # nattokinase: intact-protein oral absorption limited/debated
+        ('nattokinase', 'nattokinase standard'): 8,
+        ('nattokinase_nsk_sd', 'nsk-sd'): 8,
+    }
+
+    def test_pins(self, entries):
         bad = []
-        for k, e in entries.items():
-            if e.get('category') != 'fibers':
-                continue
-            for fn, f in e.get('forms', {}).items():
-                if isinstance(f, dict) and (f.get('bio_score') or 0) > LOCAL_EFFECT_BIO_CAP:
-                    bad.append((k, fn, f.get('bio_score')))
-        assert not bad, (
-            f"Fiber forms with bio_score > {LOCAL_EFFECT_BIO_CAP} (fibers are "
-            "luminal-acting, not systemically absorbed):\n"
-            + "\n".join(f"  {k}/{fn}: bio={b}" for k, fn, b in bad)
-        )
-
-
-# Luminal/local-effect parents capped under absorption-only (functional efficacy
-# scored on a separate axis). Mechanism: demulcent, gut-lumen sterol competition,
-# colonic fermentation, local sugar-blocking, viscous fiber.
-LOCAL_EFFECT_PARENTS = {
-    'slippery_elm', 'phytosterols', 'prebiotics', 'gymnema_sylvestre',
-    'pgx_fiber', 'psyllium', 'larch_arabinogalactan', 'beta_glucan',
-}
-
-
-class TestLuminalEffectCap:
-    def test_local_effect_parents_capped(self, entries):
-        bad = []
-        for k in LOCAL_EFFECT_PARENTS:
-            e = entries.get(k)
-            if not e:
-                continue
-            for fn, f in e.get('forms', {}).items():
-                if isinstance(f, dict) and (f.get('bio_score') or 0) > LOCAL_EFFECT_BIO_CAP:
-                    bad.append((k, fn, f.get('bio_score')))
-        assert not bad, (
-            f"Luminal/local-effect forms with bio_score > {LOCAL_EFFECT_BIO_CAP}:\n"
-            + "\n".join(f"  {k}/{fn}: bio={b}" for k, fn, b in bad)
-        )
+        for (p, fn), want in self.PINS.items():
+            got = entries[p]['forms'][fn].get('bio_score')
+            if got != want:
+                bad.append((p, fn, got, want))
+        assert not bad, "Systemic poorly-absorbed bio_score drifted:\n" + \
+            "\n".join(f"  {p}/{fn}: {g} != {w}" for p, fn, g, w in bad)

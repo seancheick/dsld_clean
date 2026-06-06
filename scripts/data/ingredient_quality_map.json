@@ -5711,11 +5711,11 @@
             "rxcui": null,
             "forms": {
                   "inner bark powder": {
-                        "bio_score": 6,
+                        "bio_score": 12,
                         "natural": true,
-                        "score": 9,
+                        "score": 15,
                         "efficacy": "excellent",
-                        "notes": "The gold standard form. Derived from the inner bark, which is rich in mucilage, the primary active compound responsible for its soothing, demulcent effects on tissues. Absorption-only: demulcent mucilage that coats GI mucosa locally; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "The gold standard form. Derived from the inner bark, which is rich in mucilage, the primary active compound responsible for its soothing, demulcent effects on tissues. Form-quality model (demulcent): scored by mucilage content/delivery to GI mucosa, not systemic absorption.",
                         "aliases": [
                               "slippery elm inner bark",
                               "slippery elm bark powder",
@@ -5737,11 +5737,11 @@
                         }
                   },
                   "standardized extract (mucilage)": {
-                        "bio_score": 6,
+                        "bio_score": 13,
                         "natural": false,
-                        "score": 6,
+                        "score": 13,
                         "efficacy": "superior",
-                        "notes": "A concentrated extract standardized for a high percentage of mucilage. Offers a more potent and consistent dose than simple powder, but is considered a processed form. Absorption-only: demulcent mucilage that coats GI mucosa locally; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "A concentrated extract standardized for a high percentage of mucilage. Offers a more potent and consistent dose than simple powder, but is considered a processed form. Form-quality model (demulcent): scored by mucilage content/delivery to GI mucosa, not systemic absorption.",
                         "aliases": [
                               "slippery elm extract",
                               "slippery elm bark extract",
@@ -5765,11 +5765,11 @@
                         }
                   },
                   "bark powder (unspecified)": {
-                        "bio_score": 5,
+                        "bio_score": 8,
                         "natural": false,
-                        "score": 5,
+                        "score": 8,
                         "efficacy": "moderate",
-                        "notes": "When the label just says 'slippery elm bark,' quality can be inconsistent as it may contain a mix of the potent inner bark and the less effective outer bark. Absorption-only: demulcent mucilage that coats GI mucosa locally; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "When the label just says 'slippery elm bark,' quality can be inconsistent as it may contain a mix of the potent inner bark and the less effective outer bark. Form-quality model (demulcent): scored by mucilage content/delivery to GI mucosa, not systemic absorption.",
                         "aliases": [
                               "slippery elm bark",
                               "ulmus rubra bark",
@@ -12377,11 +12377,11 @@
             "rxcui": null,
             "forms": {
                   "inulin": {
-                        "bio_score": 5,
+                        "bio_score": 12,
                         "natural": true,
-                        "score": 8,
+                        "score": 15,
                         "absorption": "excellent fermentation",
-                        "notes": "A fructo-oligosaccharide polymer (DP 3-60) that selectively feeds beneficial bacteria, particularly Bifidobacterium. Degree of polymerization affects fermentation location and rate. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "A fructo-oligosaccharide polymer (DP 3-60) that selectively feeds beneficial bacteria, particularly Bifidobacterium. Degree of polymerization affects fermentation location and rate. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "chicory root fiber",
                               "jerusalem artichoke fiber",
@@ -12411,11 +12411,11 @@
                         }
                   },
                   "fructooligosaccharides (FOS)": {
-                        "bio_score": 5,
+                        "bio_score": 12,
                         "natural": true,
-                        "score": 8,
+                        "score": 15,
                         "absorption": "excellent fermentation",
-                        "notes": "Short-chain fructo-oligosaccharides (DP 2-20) that rapidly ferment in the proximal colon, preferentially feeding Bifidobacterium and Lactobacillus. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Short-chain fructo-oligosaccharides (DP 2-20) that rapidly ferment in the proximal colon, preferentially feeding Bifidobacterium and Lactobacillus. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "FOS",
                               "fructooligosaccharides",
@@ -12445,11 +12445,11 @@
                         }
                   },
                   "galactooligosaccharides (GOS)": {
-                        "bio_score": 5,
+                        "bio_score": 12,
                         "natural": true,
-                        "score": 8,
+                        "score": 15,
                         "absorption": "excellent fermentation",
-                        "notes": "Oligosaccharides derived from lactose that selectively promote beneficial bacteria growth, particularly Bifidobacterium. Well-tolerated and effective. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Oligosaccharides derived from lactose that selectively promote beneficial bacteria growth, particularly Bifidobacterium. Well-tolerated and effective. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "GOS",
                               "galactooligosaccharides",
@@ -12470,11 +12470,11 @@
                         }
                   },
                   "xylooligosaccharides (XOS)": {
-                        "bio_score": 5,
+                        "bio_score": 11,
                         "natural": true,
-                        "score": 8,
+                        "score": 14,
                         "absorption": "good fermentation",
-                        "notes": "Oligosaccharides derived from xylan that selectively feed beneficial bacteria. Effective at lower doses compared to other prebiotics. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Oligosaccharides derived from xylan that selectively feed beneficial bacteria. Effective at lower doses compared to other prebiotics. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "XOS",
                               "xylooligosaccharides",
@@ -12493,11 +12493,11 @@
                         }
                   },
                   "human milk oligosaccharides (HMO)": {
-                        "bio_score": 6,
+                        "bio_score": 13,
                         "natural": true,
-                        "score": 9,
+                        "score": 16,
                         "absorption": "excellent fermentation",
-                        "notes": "Complex oligosaccharides naturally found in breast milk. Highly specific for beneficial bacteria and immune modulation. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Complex oligosaccharides naturally found in breast milk. Highly specific for beneficial bacteria and immune modulation. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "HMO",
                               "human milk oligosaccharides",
@@ -12522,11 +12522,11 @@
                         }
                   },
                   "beta-glucan": {
-                        "bio_score": 5,
+                        "bio_score": 11,
                         "natural": true,
-                        "score": 8,
+                        "score": 14,
                         "absorption": "moderate fermentation",
-                        "notes": "Soluble fiber from oats, barley, and mushrooms that supports beneficial bacteria and provides immune benefits. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Soluble fiber from oats, barley, and mushrooms that supports beneficial bacteria and provides immune benefits. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "barley beta-glucan",
                               "mushroom beta-glucan",
@@ -12546,11 +12546,11 @@
                         }
                   },
                   "resistant starch": {
-                        "bio_score": 5,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 8,
+                        "score": 13,
                         "absorption": "good fermentation",
-                        "notes": "Starch that resists digestion and ferments in the colon, producing beneficial short-chain fatty acids, particularly butyrate. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Starch that resists digestion and ferments in the colon, producing beneficial short-chain fatty acids, particularly butyrate. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "resistant starch",
                               "RS",
@@ -12573,11 +12573,11 @@
                         }
                   },
                   "acacia fiber": {
-                        "bio_score": 5,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 8,
+                        "score": 13,
                         "absorption": "moderate fermentation",
-                        "notes": "Soluble fiber from acacia trees that gently supports beneficial bacteria with minimal digestive side effects. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Soluble fiber from acacia trees that gently supports beneficial bacteria with minimal digestive side effects. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "acacia fiber",
                               "acacia gum",
@@ -12598,11 +12598,11 @@
                         }
                   },
                   "pectin": {
-                        "bio_score": 5,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 8,
+                        "score": 13,
                         "absorption": "moderate fermentation",
-                        "notes": "Soluble fiber from fruits that supports beneficial bacteria and may help with cholesterol management. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Soluble fiber from fruits that supports beneficial bacteria and may help with cholesterol management. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "pectin",
                               "apple pectin",
@@ -12623,11 +12623,11 @@
                         }
                   },
                   "psyllium husk": {
-                        "bio_score": 5,
+                        "bio_score": 9,
                         "natural": true,
-                        "score": 8,
+                        "score": 12,
                         "absorption": "limited fermentation",
-                        "notes": "Mostly insoluble fiber that provides bulk and some prebiotic benefits, though less selective than other prebiotics. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Mostly insoluble fiber that provides bulk and some prebiotic benefits, though less selective than other prebiotics. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "psyllium husk",
                               "ispaghula husk",
@@ -12647,11 +12647,11 @@
                         }
                   },
                   "mixed prebiotic blend": {
-                        "bio_score": 6,
+                        "bio_score": 13,
                         "natural": true,
-                        "score": 9,
+                        "score": 16,
                         "absorption": "excellent synergistic fermentation",
-                        "notes": "Combination of multiple prebiotics (typically FOS, GOS, and inulin) that provides comprehensive support for diverse beneficial bacteria populations. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Combination of multiple prebiotics (typically FOS, GOS, and inulin) that provides comprehensive support for diverse beneficial bacteria populations. Form-quality model: prebiotic selectivity/efficacy, not systemic absorption.",
                         "aliases": [
                               "mixed prebiotic blend",
                               "prebiotic complex",
@@ -21300,11 +21300,11 @@
             "rxcui": null,
             "forms": {
                   "plant-based enzyme complex": {
-                        "bio_score": 6,
+                        "bio_score": 12,
                         "natural": true,
-                        "score": 9,
+                        "score": 15,
                         "absorption": "very good (~70–80%)",
-                        "notes": "A broad-spectrum blend of enzymes sourced from fungal or botanical sources. Effectively breaks down a variety of foods. Absorption-only: digestive enzymes act locally in the gut lumen; not systemically absorbed.",
+                        "notes": "A broad-spectrum blend of enzymes sourced from fungal or botanical sources. Effectively breaks down a variety of foods. Form-quality/delivery model: enzyme activity + survival/delivery to the gut (site of action), not systemic absorption.",
                         "aliases": [
                               "plant enzymes",
                               "vegetarian enzymes",
@@ -21337,11 +21337,11 @@
                         }
                   },
                   "pancreatic enzymes (animal-derived)": {
-                        "bio_score": 6,
+                        "bio_score": 11,
                         "natural": true,
-                        "score": 9,
+                        "score": 14,
                         "absorption": "good (~60–70%)",
-                        "notes": "Enzymes sourced from animal pancreases. Requires enteric coating to survive stomach acid and function in the small intestine. Typically includes a mix of amylase, lipase, and protease. Absorption-only: digestive enzymes act locally in the gut lumen; not systemically absorbed.",
+                        "notes": "Enzymes sourced from animal pancreases. Requires enteric coating to survive stomach acid and function in the small intestine. Typically includes a mix of amylase, lipase, and protease. Form-quality/delivery model: enzyme activity + survival/delivery to the gut (site of action), not systemic absorption.",
                         "aliases": [
                               "pancreatic enzymes",
                               "pancreatin",
@@ -21371,11 +21371,11 @@
                         }
                   },
                   "specific enzymes": {
-                        "bio_score": 7,
+                        "bio_score": 13,
                         "natural": true,
-                        "score": 10,
+                        "score": 16,
                         "absorption": "excellent (~80–90%)",
-                        "notes": "Targeted, individual enzymes designed to break down specific types of food or to perform a specific function. Absorption-only: digestive enzymes act in the gut lumen; bio_score reflects survival/delivery to the site of action, not systemic absorption (enzyme activity units scored separately).",
+                        "notes": "Targeted, individual enzymes designed to break down specific types of food or to perform a specific function. Form-quality/delivery model: enzyme activity + survival/delivery to the gut (site of action), not systemic absorption.",
                         "aliases": [
                               "protease",
                               "lipase",
@@ -21430,11 +21430,11 @@
                         }
                   },
                   "enteric-coated enzymes": {
-                        "bio_score": 7,
+                        "bio_score": 12,
                         "natural": false,
-                        "score": 7,
+                        "score": 12,
                         "absorption": "good (~60–70%)",
-                        "notes": "Encapsulation technology that protects enzymes from stomach acid, ensuring they are released in the small intestine where they are most effective. Essential for pancreatic enzymes. Absorption-only: enteric coating aids survival to the intestine (site of action); digestive enzymes are not systemically absorbed.",
+                        "notes": "Encapsulation technology that protects enzymes from stomach acid, ensuring they are released in the small intestine where they are most effective. Essential for pancreatic enzymes. Form-quality/delivery model: enzyme activity + survival/delivery to the gut (site of action), not systemic absorption.",
                         "aliases": [
                               "enteric-coated enzymes",
                               "delayed-release enzymes",
@@ -29889,11 +29889,11 @@
             "dosage_importance": 0.1,
             "forms": {
                   "phytosterol esters": {
-                        "bio_score": 6,
+                        "bio_score": 11,
                         "natural": true,
-                        "score": 9,
+                        "score": 14,
                         "absorption": "good (~40-60%)",
-                        "notes": "Esterified plant sterols with enhanced absorption. Clinically proven to reduce LDL cholesterol. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Esterified plant sterols with enhanced absorption. Clinically proven to reduce LDL cholesterol. Form-quality model: ester/dispersion quality for luminal cholesterol competition.",
                         "aliases": [
                               "phytosterol esters",
                               "plant sterol esters",
@@ -29913,11 +29913,11 @@
                         }
                   },
                   "beta-sitosterol": {
-                        "bio_score": 5,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 8,
+                        "score": 13,
                         "absorption": "moderate (~5-10%)",
-                        "notes": "Most abundant plant sterol. Supports prostate health and cholesterol management. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Most abundant plant sterol. Supports prostate health and cholesterol management. Form-quality model: ester/dispersion quality for luminal cholesterol competition.",
                         "aliases": [
                               "beta sitosterol",
                               "b-sitosterol",
@@ -29934,11 +29934,11 @@
                         }
                   },
                   "mixed phytosterols": {
-                        "bio_score": 5,
+                        "bio_score": 9,
                         "natural": true,
-                        "score": 8,
+                        "score": 12,
                         "absorption": "moderate (~5-10%)",
-                        "notes": "Blend of plant sterols including beta-sitosterol, campesterol, and stigmasterol. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Blend of plant sterols including beta-sitosterol, campesterol, and stigmasterol. Form-quality model: ester/dispersion quality for luminal cholesterol competition.",
                         "aliases": [
                               "plant sterols",
                               "mixed phytosterols",
@@ -29959,11 +29959,11 @@
                         }
                   },
                   "stigmasterol": {
-                        "bio_score": 5,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 8,
+                        "score": 11,
                         "absorption": "low-moderate (~3-5%)",
-                        "notes": "Plant sterol found in soy and other plants. Supports cholesterol metabolism. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Plant sterol found in soy and other plants. Supports cholesterol metabolism. Form-quality model: ester/dispersion quality for luminal cholesterol competition.",
                         "aliases": [
                               "stigmasterol",
                               "stigmasterols"
@@ -29978,11 +29978,11 @@
                         }
                   },
                   "campesterol": {
-                        "bio_score": 5,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 8,
+                        "score": 11,
                         "absorption": "low-moderate (~3-5%)",
-                        "notes": "Plant sterol commonly found in wheat germ and vegetable oils. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Plant sterol commonly found in wheat germ and vegetable oils. Form-quality model: ester/dispersion quality for luminal cholesterol competition.",
                         "aliases": [
                               "campesterol",
                               "campesterols"
@@ -33218,11 +33218,11 @@
             "rxcui": null,
             "forms": {
                   "larch arabinogalactan powder": {
-                        "bio_score": 5,
+                        "bio_score": 11,
                         "natural": true,
-                        "score": 8,
+                        "score": 14,
                         "absorption": "prebiotic fermentation",
-                        "notes": "Immune-supporting prebiotic fiber. Increases beneficial gut bacteria. 10g daily shows prebiotic efficacy. Absorption-only policy: dietary fiber acts in the gut lumen (gel/bile-acid binding, colonic fermentation, gut-immune signalling) and is not systemically absorbed, so bio_score is low; functional efficacy is scored on a separate axis.",
+                        "notes": "Immune-supporting prebiotic fiber. Increases beneficial gut bacteria. 10g daily shows prebiotic efficacy. Form-quality model: prebiotic fibre quality.",
                         "aliases": [
                               "larch arabinogalactan",
                               "eastern larch arabinogalactan",
@@ -33417,11 +33417,11 @@
             "rxcui": null,
             "forms": {
                   "gymnema leaf extract": {
-                        "bio_score": 6,
+                        "bio_score": 12,
                         "natural": false,
-                        "score": 6,
+                        "score": 12,
                         "absorption": "good 75-85%",
-                        "notes": "Standardized extract for gymnemic acids. Supports healthy glucose metabolism. Absorption-only: gymnemic acids act locally in the gut/oral cavity; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Standardized extract for gymnemic acids. Supports healthy glucose metabolism. Form-quality model: gymnemic-acid standardization.",
                         "aliases": [
                               "gymnema leaf extract",
                               "gymnema sylvestre extract",
@@ -33444,11 +33444,11 @@
                         }
                   },
                   "gymnema leaf powder": {
-                        "bio_score": 5,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 8,
+                        "score": 11,
                         "absorption": "moderate 60-70%",
-                        "notes": "Whole leaf powder. Variable potency compared to standardized extract. Absorption-only: gymnemic acids act locally in the gut/oral cavity; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Whole leaf powder. Variable potency compared to standardized extract. Form-quality model: gymnemic-acid standardization.",
                         "aliases": [
                               "gymnema leaf powder",
                               "gymnema sylvestre powder",
@@ -33676,11 +33676,11 @@
             "rxcui": null,
             "forms": {
                   "alpha-amylase enzyme": {
-                        "bio_score": 6,
+                        "bio_score": 12,
                         "natural": true,
-                        "score": 9,
+                        "score": 15,
                         "absorption": "excellent",
-                        "notes": "Digestive enzyme that breaks down starch and carbohydrates into sugars. Essential for carbohydrate digestion. Bioactive functional ingredient that supports digestive health. Absorption-only: digestive enzyme acting in the gut lumen; not systemically absorbed.",
+                        "notes": "Digestive enzyme that breaks down starch and carbohydrates into sugars. Essential for carbohydrate digestion. Bioactive functional ingredient that supports digestive health. Form-quality/delivery model: enzyme activity/delivery to gut.",
                         "aliases": [
                               "alpha-amylase",
                               "starch-digesting enzyme",
@@ -34497,10 +34497,10 @@
             "rxcui": null,
             "forms": {
                   "lions mane fruiting body": {
-                        "bio_score": 8,
+                        "bio_score": 11,
                         "natural": true,
                         "absorption": "good (~75%)",
-                        "notes": "Whole fruiting body; supports cognitive function and nerve growth factor. Absorption-only: whole fruiting body; beta-glucan polysaccharides are not systemically absorbed.",
+                        "notes": "Whole fruiting body; supports cognitive function and nerve growth factor. Form-quality model (mushroom): fruiting-body + beta-glucan standardization; non-systemic ceiling. Small-molecule hericenones/erinacines are the absorbed fraction.",
                         "aliases": [
                               "lion's mane mushroom",
                               "hericium erinaceus",
@@ -34510,7 +34510,7 @@
                               "lions mane fruiting body extract",
                               "hericium erinaceus fruiting body extract"
                         ],
-                        "score": 11,
+                        "score": 14,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.75,
@@ -34521,16 +34521,16 @@
                         }
                   },
                   "lions mane standardized extract": {
-                        "bio_score": 10,
+                        "bio_score": 13,
                         "natural": true,
                         "absorption": "excellent (~90%)",
-                        "notes": "Standardized to 30% polysaccharides and beta-glucans; clinically researched. Absorption-only: standardized to polysaccharides (beta-glucans), which are large and act via gut immunity, not systemically absorbed; the absorbed fraction is the small-molecule hericenones/erinacines.",
+                        "notes": "Standardized to 30% polysaccharides and beta-glucans; clinically researched. Form-quality model (mushroom): fruiting-body + beta-glucan standardization; non-systemic ceiling. Small-molecule hericenones/erinacines are the absorbed fraction.",
                         "aliases": [
                               "standardized lion's mane",
                               "lion's mane 30% polysaccharides",
                               "lion's mane extract"
                         ],
-                        "score": 13,
+                        "score": 16,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.9,
@@ -34663,17 +34663,17 @@
             "rxcui": null,
             "forms": {
                   "reishi fruiting body": {
-                        "bio_score": 8,
+                        "bio_score": 9,
                         "natural": true,
                         "absorption": "moderate (~65%)",
-                        "notes": "Whole fruiting body powder; supports immune function and stress adaptation. Absorption-only: whole fruiting body; polysaccharides not systemically absorbed.",
+                        "notes": "Whole fruiting body powder; supports immune function and stress adaptation. Form-quality model (mushroom): fruiting-body + standardization (polysaccharides/triterpenes); non-systemic ceiling.",
                         "aliases": [
                               "reishi mushroom",
                               "ganoderma lucidum",
                               "reishi powder",
                               "lingzhi"
                         ],
-                        "score": 11,
+                        "score": 12,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.65,
@@ -34684,16 +34684,16 @@
                         }
                   },
                   "reishi standardized extract": {
-                        "bio_score": 10,
+                        "bio_score": 13,
                         "natural": true,
                         "absorption": "excellent (~85%)",
-                        "notes": "Standardized to 30% polysaccharides and triterpenes. Absorption-only: standardized to polysaccharides (not systemically absorbed) plus triterpenes (partially absorbed).",
+                        "notes": "Standardized to 30% polysaccharides and triterpenes. Form-quality model (mushroom): fruiting-body + standardization (polysaccharides/triterpenes); non-systemic ceiling.",
                         "aliases": [
                               "standardized reishi",
                               "reishi extract",
                               "reishi 30% polysaccharides"
                         ],
-                        "score": 13,
+                        "score": 16,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.85,
@@ -34743,16 +34743,16 @@
             "rxcui": null,
             "forms": {
                   "cordyceps militaris": {
-                        "bio_score": 10,
+                        "bio_score": 13,
                         "natural": true,
                         "absorption": "good (~80%)",
-                        "notes": "Cultivated Cordyceps militaris; high in cordycepin; supports energy and athletic performance. Absorption-only: cordycepin is absorbed but rapidly deaminated (limited bioavailability); polysaccharides not systemically absorbed.",
+                        "notes": "Cultivated Cordyceps militaris; high in cordycepin; supports energy and athletic performance. Form-quality model (mushroom): cultivated species/cordycepin content; non-systemic ceiling.",
                         "aliases": [
                               "cordyceps militaris",
                               "cordyceps mushroom",
                               "cordyceps extract"
                         ],
-                        "score": 13,
+                        "score": 16,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.8,
@@ -34763,16 +34763,16 @@
                         }
                   },
                   "cordyceps sinensis mycelium": {
-                        "bio_score": 8,
+                        "bio_score": 9,
                         "natural": true,
                         "absorption": "moderate (~70%)",
-                        "notes": "Mycelium-based; traditional form but lower bioactives than fruiting body. Absorption-only: mycelium polysaccharides not systemically absorbed.",
+                        "notes": "Mycelium-based; traditional form but lower bioactives than fruiting body. Form-quality model (mushroom): cultivated species/cordycepin content; non-systemic ceiling.",
                         "aliases": [
                               "cordyceps sinensis",
                               "cordyceps mycelium",
                               "cs-4"
                         ],
-                        "score": 11,
+                        "score": 12,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.7,
@@ -35082,15 +35082,15 @@
             "rxcui": "8928",
             "forms": {
                   "psyllium husk powder": {
-                        "bio_score": 5,
+                        "bio_score": 11,
                         "natural": true,
                         "absorption": "not applicable (fiber)",
-                        "notes": "Soluble fiber; supports digestive health and cholesterol management Absorption-only policy: dietary fiber acts in the gut lumen (gel/bile-acid binding, colonic fermentation, gut-immune signalling) and is not systemically absorbed, so bio_score is low; functional efficacy is scored on a separate axis.",
+                        "notes": "Soluble fiber; supports digestive health and cholesterol management. Form-quality/delivery model (non-systemic active): scored by soluble-fibre quality/refinement, not systemic absorption.",
                         "aliases": [
                               "psyllium fiber",
                               "ispaghula"
                         ],
-                        "score": 8,
+                        "score": 14,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": null,
@@ -35101,16 +35101,16 @@
                         }
                   },
                   "psyllium seed": {
-                        "bio_score": 5,
+                        "bio_score": 9,
                         "natural": true,
                         "absorption": "not applicable (fiber)",
-                        "notes": "Whole seeds; less refined than husk powder Absorption-only policy: dietary fiber acts in the gut lumen (gel/bile-acid binding, colonic fermentation, gut-immune signalling) and is not systemically absorbed, so bio_score is low; functional efficacy is scored on a separate axis.",
+                        "notes": "Whole seeds; less refined than husk powder. Form-quality/delivery model (non-systemic active): scored by soluble-fibre quality/refinement, not systemic absorption.",
                         "aliases": [
                               "psyllium seed",
                               "psyllium whole seed",
                               "plantago seed"
                         ],
-                        "score": 8,
+                        "score": 12,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": null,
@@ -35160,11 +35160,11 @@
             "rxcui": null,
             "forms": {
                   "beta-glucan": {
-                        "bio_score": 5,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 8,
+                        "score": 11,
                         "absorption": "moderate (~40-50%)",
-                        "notes": "Immunomodulating polysaccharide; immune support Absorption-only policy: dietary fiber acts in the gut lumen (gel/bile-acid binding, colonic fermentation, gut-immune signalling) and is not systemically absorbed, so bio_score is low; functional efficacy is scored on a separate axis.",
+                        "notes": "Immunomodulating polysaccharide; immune support. Form-quality model: soluble/immune fibre quality.",
                         "aliases": [
                               "beta-glucan",
                               "β-glucan",
@@ -41830,11 +41830,11 @@
             "rxcui": null,
             "forms": {
                   "PGX fiber": {
-                        "bio_score": 5,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 8,
+                        "score": 11,
                         "absorption": "N/A (soluble fiber)",
-                        "notes": "Proprietary highly viscous polysaccharide complex (konjac glucomannan, sodium alginate, xanthan gum). Clinically studied for glycemic control and satiety. Absorption-only: highly viscous luminal-acting fiber; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
+                        "notes": "Proprietary highly viscous polysaccharide complex (konjac glucomannan, sodium alginate, xanthan gum). Clinically studied for glycemic control and satiety. Form-quality model: viscous-fibre quality.",
                         "aliases": [
                               "pgx",
                               "polyglycoplex",
