@@ -13152,8 +13152,8 @@
             "forms": {
                   "taurine (generic)": {
                         "bio_score": 14,
-                        "natural": true,
-                        "score": 17,
+                        "natural": false,
+                        "score": 14,
                         "absorption": "excellent (~95–100%)",
                         "notes": "A fundamental amino acid, highly absorbed via active transport. Supports cardiovascular, neurological, and metabolic health. Synthetic form is chemically identical to natural form.",
                         "aliases": [
@@ -35716,7 +35716,7 @@
             "statistics": {
                   "total_ingredients": 485,
                   "total_forms": 1233,
-                  "total_aliases": 9159,
+                  "total_aliases": 9155,
                   "ingredients_with_relationships": 24
             },
             "categories": {
@@ -35965,8 +35965,8 @@
             "forms": {
                   "standard": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "good",
                         "notes": "Generic form; adjust when specific form is known.",
                         "aliases": [
@@ -35995,16 +35995,12 @@
                               "bcaa 2:1:1",
                               "leucine:isoleucine:valine 2:1:1",
                               "bcaa powder",
-                              "amino acids",
-                              "essential amino acids",
                               "bcaa supplement",
                               "bcaas supplement",
                               "branched-chain amino acids supplement",
                               "bcaa 2:1:1 supplement",
                               "leucine:isoleucine:valine 2:1:1 supplement",
-                              "bcaa powder supplement",
-                              "amino acids supplement",
-                              "essential amino acids supplement"
+                              "bcaa powder supplement"
                         ],
                         "dosage_importance": 1.0,
                         "absorption_structured": {
