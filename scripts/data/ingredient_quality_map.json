@@ -22735,11 +22735,11 @@
             "rxcui": null,
             "forms": {
                   "eriocitrin extract": {
-                        "bio_score": 11,
+                        "bio_score": 7,
                         "natural": true,
-                        "score": 14,
+                        "score": 10,
                         "absorption": "moderate (~50-60%)",
-                        "notes": "A flavonoid found in citrus fruits, particularly lemon. May support cardiovascular health and antioxidant activity.",
+                        "notes": "A flavonoid found in citrus fruits, particularly lemon. May support cardiovascular health and antioxidant activity. poor native oral bioavailability (flavonoid glycoside/aglycone; basis for delivery-enhancement research, e.g. PMID 39756599). bio_score reflects absorption, not content/benefit.",
                         "aliases": [
                               "eriocitrin",
                               "eriodictyol 7-rutinoside",
@@ -22933,11 +22933,11 @@
             "rxcui": null,
             "forms": {
                   "mixed flavones": {
-                        "bio_score": 11,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 14,
+                        "score": 9,
                         "absorption": "moderate (~50-60%)",
-                        "notes": "Generic term for a class of plant flavonoids. Includes compounds like apigenin, luteolin, and chrysin.",
+                        "notes": "Generic term for a class of plant flavonoids. Includes compounds like apigenin, luteolin, and chrysin. poor native oral bioavailability (flavonoid glycoside/aglycone; basis for delivery-enhancement research, e.g. PMID 39756599). bio_score reflects absorption, not content/benefit.",
                         "aliases": [
                               "flavones",
                               "plant flavones",
@@ -22986,11 +22986,11 @@
             "rxcui": null,
             "forms": {
                   "mixed flavonols": {
-                        "bio_score": 11,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 14,
+                        "score": 9,
                         "absorption": "moderate (~50-60%)",
-                        "notes": "Generic term for a class of plant flavonoids. Includes compounds like quercetin, kaempferol, and myricetin.",
+                        "notes": "Generic term for a class of plant flavonoids. Includes compounds like quercetin, kaempferol, and myricetin. poor native oral bioavailability (flavonoid glycoside/aglycone; basis for delivery-enhancement research, e.g. PMID 39756599). bio_score reflects absorption, not content/benefit.",
                         "aliases": [
                               "flavonols",
                               "plant flavonols",
@@ -38361,11 +38361,11 @@
             ],
             "forms": {
                   "citrus complex": {
-                        "bio_score": 11,
+                        "bio_score": 7,
                         "natural": true,
-                        "score": 14,
+                        "score": 10,
                         "absorption": "unknown",
-                        "notes": "",
+                        "notes": "poor native oral bioavailability (flavonoid glycoside/aglycone; basis for delivery-enhancement research, e.g. PMID 39756599). bio_score reflects absorption, not content/benefit.",
                         "aliases": [
                               "citrus complex"
                         ],
@@ -38377,11 +38377,11 @@
                         }
                   },
                   "hesperidin-rich": {
-                        "bio_score": 12,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 15,
+                        "score": 11,
                         "absorption": "unknown",
-                        "notes": "",
+                        "notes": "poor native oral bioavailability (flavonoid glycoside/aglycone; basis for delivery-enhancement research, e.g. PMID 39756599). bio_score reflects absorption, not content/benefit.",
                         "aliases": [
                               "hesperidin-rich"
                         ],
@@ -38393,11 +38393,11 @@
                         }
                   },
                   "rutin complex": {
-                        "bio_score": 11,
+                        "bio_score": 7,
                         "natural": true,
-                        "score": 14,
+                        "score": 10,
                         "absorption": "unknown",
-                        "notes": "",
+                        "notes": "poor native oral bioavailability (flavonoid glycoside/aglycone; basis for delivery-enhancement research, e.g. PMID 39756599). bio_score reflects absorption, not content/benefit.",
                         "aliases": [
                               "rutin complex"
                         ],
@@ -38409,9 +38409,9 @@
                         }
                   },
                   "unspecified": {
-                        "bio_score": 9,
+                        "bio_score": 6,
                         "natural": false,
-                        "score": 9,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
