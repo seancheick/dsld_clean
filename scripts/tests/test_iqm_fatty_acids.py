@@ -30,12 +30,18 @@ def entries():
 
 
 class TestFattyAcidUnspecified:
-    def test_unspecified_pinned_to_8(self, entries):
-        bad = [(k, entries[k]['forms']['unspecified']['bio_score'])
-               for k in FIXED
-               if entries[k]['forms']['unspecified']['bio_score'] != 8]
-        assert not bad, "fatty-acid unspecified bio_score drifted from 8:\n" + \
-            "\n".join(f"  {k}: {b}" for k, b in bad)
+    def test_unspecified_pinned(self, entries):
+        """Unspecified oils: bio_score 8, natural=false, score 8. Undisclosed
+        form does not receive the natural-source bonus (consistent with the
+        probiotic/iodine/mineral unspecified convention)."""
+        bad = []
+        for k in FIXED:
+            f = entries[k]['forms']['unspecified']
+            got = (f.get('bio_score'), f.get('natural'), f.get('score'))
+            if got != (8, False, 8):
+                bad.append((k, got))
+        assert not bad, "fatty-acid unspecified drifted from (8, False, 8):\n" + \
+            "\n".join(f"  {k}: {g}" for k, g in bad)
 
     def test_unspecified_not_above_ee_form(self, entries):
         """For these parents the unspecified row must not exceed the

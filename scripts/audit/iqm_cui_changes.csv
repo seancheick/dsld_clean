@@ -1,4 +1,4 @@
-parent,standard_name,old_cui,old_resolved,new_cui,new_resolved (UMLS)
+parent,standard_name,old_cui,old_resolved,new_cui (current),new_resolved (UMLS)
 allicin,Allicin,C0051140,ALE 36,C0051200,allicin
 alpha_carotene,Alpha-Carotene,C0052486,asialo-carcinoembryonic antigen,C0051336,alpha-carotene
 alpha_lipoic_acid,Alpha Lipoic Acid,C0064585,lactitol,C0023791,thioctic acid

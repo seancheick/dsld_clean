@@ -1487,7 +1487,7 @@
             "standard_name": "Vitamin B6 (Pyridoxine)",
             "category": "vitamins",
             "cui": "C0034274",
-            "rxcui": "203164",
+            "rxcui": null,
             "forms": {
                   "pyridoxal-5-phosphate (P5P)": {
                         "bio_score": 14,
@@ -1713,7 +1713,7 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'pyridoxine hydrochloride' (rxnav.nlm.nih.gov, 2026-06-06); prior 8807 mapped to a different concept"
+            "rxcui_note": "RxNorm resolves 'Vitamin B6 (Pyridoxine)' only to a salt-specific PIN (203164 (pyridoxine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06)"
       },
       "vitamin_b7_biotin": {
             "standard_name": "Vitamin B7 (Biotin)",
@@ -12707,7 +12707,7 @@
             "standard_name": "Choline",
             "category": "other",
             "cui": "C0008405",
-            "rxcui": "1425426",
+            "rxcui": null,
             "rda_ul_ref": "Choline",
             "forms": {
                   "alpha-GPC": {
@@ -12952,7 +12952,7 @@
                   "last_reviewed_at": "2026-01-08"
             },
             "cui_note": "Corrected & verified via UMLS to 'choline' (uts.nlm.nih.gov, 2026-06-06); prior C0008489 mapped to an unrelated concept",
-            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'choline chloride' (rxnav.nlm.nih.gov, 2026-06-06); prior 2079 mapped to a different concept"
+            "rxcui_note": "RxNorm resolves 'Choline' only to a salt-specific PIN (1425426 (choline chloride)); left null to avoid over-specific ID on a broad parent (2026-06-06)"
       },
       "phosphatidylserine": {
             "standard_name": "Phosphatidylserine",
@@ -13491,7 +13491,7 @@
             "standard_name": "L-Carnitine",
             "category": "amino_acids",
             "cui": "C0087163",
-            "rxcui": "1426681",
+            "rxcui": null,
             "forms": {
                   "liposomal l-carnitine": {
                         "score": 14,
@@ -13750,7 +13750,7 @@
                   "last_reviewed_at": "2026-01-08"
             },
             "cui_note": "Corrected & verified via UMLS to 'levocarnitine' (uts.nlm.nih.gov, 2026-06-06); prior C0023118 mapped to an unrelated concept",
-            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'levocarnitine hydrochloride' (rxnav.nlm.nih.gov, 2026-06-06); prior 20279 mapped to a different concept"
+            "rxcui_note": "RxNorm resolves 'L-Carnitine' only to a salt-specific PIN (1426681 (levocarnitine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06)"
       },
       "tmg_betaine": {
             "standard_name": "TMG (Trimethylglycine)",
@@ -14273,7 +14273,7 @@
             "standard_name": "L-Lysine",
             "category": "amino_acids",
             "cui": "C0024337",
-            "rxcui": "1314248",
+            "rxcui": null,
             "forms": {
                   "l-lysine hcl": {
                         "bio_score": 14,
@@ -14372,7 +14372,7 @@
                   "last_reviewed_at": "2026-01-08"
             },
             "cui_note": "Corrected & verified via UMLS to 'lysine' (uts.nlm.nih.gov, 2026-06-06); prior C0024228 mapped to an unrelated concept",
-            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'lysine monohydrate' (rxnav.nlm.nih.gov, 2026-06-06); prior 6386 mapped to a different concept"
+            "rxcui_note": "RxNorm resolves 'L-Lysine' only to a salt-specific PIN (1314248 (lysine monohydrate)); left null to avoid over-specific ID on a broad parent (2026-06-06)"
       },
       "l_tyrosine": {
             "standard_name": "L-Tyrosine",
@@ -18508,7 +18508,7 @@
             "standard_name": "Glucosamine",
             "category": "other",
             "cui": "C0017718",
-            "rxcui": "236608",
+            "rxcui": null,
             "forms": {
                   "glucosamine hydrochloride": {
                         "bio_score": 13,
@@ -18750,7 +18750,7 @@
                   "poly-nag"
             ],
             "cui_note": "Corrected & verified via UMLS to 'glucosamine' (uts.nlm.nih.gov, 2026-06-06); prior C0017611 mapped to an unrelated concept",
-            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'glucosamine hydrochloride' (rxnav.nlm.nih.gov, 2026-06-06); prior 3520 mapped to a different concept"
+            "rxcui_note": "RxNorm resolves 'Glucosamine' only to a salt-specific PIN (236608 (glucosamine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06)"
       },
       "chondroitin": {
             "standard_name": "Chondroitin",
@@ -38082,8 +38082,8 @@
                   },
                   "unspecified": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -38197,8 +38197,8 @@
                   },
                   "unspecified": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -38296,8 +38296,8 @@
                   },
                   "unspecified": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -38672,8 +38672,8 @@
                   },
                   "unspecified": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -39351,8 +39351,8 @@
                   },
                   "unspecified": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
