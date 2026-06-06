@@ -28375,7 +28375,7 @@
                   "myristic acid (unspecified)": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~80-90%)",
                         "notes": "C14:0 saturated fatty acid. Component of many fats and oils. Plays role in cell signaling via protein myristoylation.",
                         "aliases": [
@@ -34355,7 +34355,7 @@
                               "bacopa herb extract",
                               "bacopa"
                         ],
-                        "score": 8,
+                        "score": 9,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.55,
@@ -34887,7 +34887,7 @@
                   "beta-glucan": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "moderate (~40-50%)",
                         "notes": "Immunomodulating polysaccharide; immune support",
                         "aliases": [
@@ -35716,9 +35716,9 @@
                   }
             },
             "statistics": {
-                  "total_ingredients": 478,
-                  "total_forms": 1194,
-                  "total_aliases": 8493,
+                  "total_ingredients": 485,
+                  "total_forms": 1233,
+                  "total_aliases": 9161,
                   "ingredients_with_relationships": 24
             },
             "categories": {
@@ -35757,7 +35757,7 @@
                   "vitamins": 15
             },
             "schema_version": "4.0.0",
-            "last_updated": "2026-02-18",
+            "last_updated": "2026-06-06",
             "pipeline_integration": "Used by enrichment script to assign quality scores to matched ingredient forms. Match ingredient name against forms aliases (case-insensitive). Use highest-scoring matched form.",
             "matching_notes": [
                   "Match ingredient name + forms text against aliases array (case-insensitive)",
@@ -39254,7 +39254,7 @@
                   "propolis extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "moderate (~40-50%)",
                         "notes": "Bee-derived antimicrobial resin; immune support",
                         "aliases": [
@@ -39302,7 +39302,7 @@
                   "royal jelly": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "moderate (~40-50%)",
                         "notes": "Bee-secreted nutrient complex; vitality support",
                         "aliases": [
@@ -39352,7 +39352,7 @@
                   "chia seed": {
                         "bio_score": 10,
                         "natural": true,
-                        "score": 12,
+                        "score": 13,
                         "absorption": "good (~50-60%)",
                         "notes": "Rich in omega-3 ALA; fiber source",
                         "aliases": [
@@ -39402,7 +39402,7 @@
                   "papaya fruit": {
                         "bio_score": 6,
                         "natural": true,
-                        "score": 8,
+                        "score": 9,
                         "absorption": "good (~50-60%)",
                         "notes": "Contains papain enzyme; digestive support",
                         "aliases": [
@@ -39451,7 +39451,7 @@
                   "flaxseed oil": {
                         "bio_score": 10,
                         "natural": true,
-                        "score": 12,
+                        "score": 13,
                         "absorption": "good (~50-60%)",
                         "notes": "Rich in omega-3 ALA; anti-inflammatory",
                         "aliases": [
@@ -39522,7 +39522,7 @@
                   "chamomile extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~50-60%)",
                         "notes": "Calming herb; sleep and digestive support",
                         "aliases": [
@@ -39578,7 +39578,7 @@
                   "lemon balm extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~50-60%)",
                         "notes": "Calming herb; stress and sleep support",
                         "aliases": [
@@ -39664,7 +39664,7 @@
                   "olive leaf extract": {
                         "bio_score": 10,
                         "natural": true,
-                        "score": 12,
+                        "score": 13,
                         "absorption": "good (~50-60%)",
                         "notes": "Antioxidant; immune and cardiovascular support",
                         "aliases": [
@@ -39815,7 +39815,7 @@
                   "rose hips extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~50-60%)",
                         "notes": "Rich in vitamin C; immune support",
                         "aliases": [
@@ -39891,7 +39891,7 @@
                   "white willow bark extract": {
                         "bio_score": 10,
                         "natural": true,
-                        "score": 12,
+                        "score": 13,
                         "absorption": "good (~50-60%)",
                         "notes": "Natural salicin source; pain and inflammation support",
                         "aliases": [
@@ -39939,7 +39939,7 @@
                   "astragalus extract": {
                         "bio_score": 10,
                         "natural": true,
-                        "score": 12,
+                        "score": 13,
                         "absorption": "moderate (~40-50%)",
                         "notes": "Adaptogenic herb; immune support",
                         "aliases": [
@@ -39985,7 +39985,7 @@
                   "magnolia bark extract": {
                         "bio_score": 10,
                         "natural": true,
-                        "score": 12,
+                        "score": 13,
                         "absorption": "moderate (~40-50%)",
                         "notes": "Adaptogenic; stress and sleep support",
                         "aliases": [
@@ -40041,7 +40041,7 @@
                   "dandelion extract": {
                         "bio_score": 6,
                         "natural": true,
-                        "score": 8,
+                        "score": 9,
                         "absorption": "good (~50-60%)",
                         "notes": "Liver and digestive support",
                         "aliases": [
@@ -40086,7 +40086,7 @@
                   "passionflower extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~50-60%)",
                         "notes": "Calming herb; anxiety and sleep support",
                         "aliases": [
@@ -40132,7 +40132,7 @@
                   "peppermint extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~50-60%)",
                         "notes": "Digestive and respiratory support",
                         "aliases": [
@@ -40177,7 +40177,7 @@
                   "cinnamon extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~50-60%)",
                         "notes": "Blood sugar and metabolic support",
                         "aliases": [
@@ -40223,7 +40223,7 @@
                   "blueberry extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~50-60%)",
                         "notes": "Antioxidant-rich; cognitive support",
                         "aliases": [
@@ -40273,7 +40273,7 @@
                   "black currant extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "good (~50-60%)",
                         "notes": "Rich in GLA and anthocyanins",
                         "aliases": [
@@ -40323,7 +40323,7 @@
                   "licorice root extract": {
                         "bio_score": 8,
                         "natural": true,
-                        "score": 10,
+                        "score": 11,
                         "absorption": "moderate (~40-50%)",
                         "notes": "Adaptogenic; digestive and respiratory support",
                         "aliases": [
@@ -40382,9 +40382,9 @@
             "rxcui": "none",
             "forms": {
                   "strontium (unspecified)": {
-                        "bio_score": 7.0,
+                        "bio_score": 7,
                         "natural": false,
-                        "score": 7.0,
+                        "score": 7,
                         "absorption": "moderate",
                         "absorption_structured": {
                               "quality": "moderate",
@@ -40484,7 +40484,7 @@
                   "tongkat ali root extract": {
                         "bio_score": 10,
                         "natural": true,
-                        "score": 12,
+                        "score": 13,
                         "absorption": "good (~60%)",
                         "notes": "Root extract form of Eurycoma longifolia (Tongkat Ali).",
                         "aliases": [
@@ -40507,7 +40507,7 @@
                   "tongkat ali (unspecified)": {
                         "bio_score": 6,
                         "natural": true,
-                        "score": 8,
+                        "score": 9,
                         "absorption": "moderate (~50%)",
                         "notes": "Tongkat Ali ingredient without form/standardization details; conservative scoring.",
                         "aliases": [
@@ -40551,7 +40551,7 @@
                   "gotu kola aerial extract": {
                         "bio_score": 9,
                         "natural": true,
-                        "score": 11,
+                        "score": 12,
                         "absorption": "good (~55%)",
                         "notes": "Centella asiatica aerial extract form.",
                         "aliases": [
@@ -40574,7 +40574,7 @@
                   "gotu kola (unspecified)": {
                         "bio_score": 6,
                         "natural": true,
-                        "score": 8,
+                        "score": 9,
                         "absorption": "moderate (~50%)",
                         "notes": "Gotu Kola ingredient without form/standardization details; conservative scoring.",
                         "aliases": [
