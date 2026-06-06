@@ -1,86 +1,86 @@
-parent,standard_name,old_rxcui,old_resolved,new_rxcui (current),new_resolved / reason,action
-5_htp,5-HTP,258326,St. John's wort extract,94,5-hydroxytryptophan,replace
-acetyl_l_carnitine,Acetyl-L-Carnitine,40799,,193,acetylcarnitine,replace
-alpha_lipoic_acid,Alpha Lipoic Acid,19721,,6417,thioctic acid,replace
-ashwagandha,Ashwagandha,11176,,(null),prior 11176 unverifiable via RxNorm (no concept name); cleared pending verification,null
-astaxanthin,Astaxanthin,1165380,,18451,astaxanthin,replace
-beta-alanine,Beta-Alanine,1981,canrenoate potassium,61,beta-alanine,replace
-bilberry,Bilberry,11155,,125929,bilberry extract,replace
-boron,Boron,19718,,1705,boron,replace
-caffeine,Caffeine,2103,,1886,caffeine,replace
-calcium,Calcium,1898,,1895,calcium,replace
-choline,Choline,2079,,(null),RxNorm resolves 'Choline' only to a salt-specific PIN (1425426 (choline chloride)); left null to avoid over-specific ID on a broad parent (2026-06-06),null
-chondroitin,Chondroitin,23874,,2473,chondroitin sulfates,replace
-chromium,Chromium,2403,chlorpromazine,2496,chromium,replace
-copper,Copper,3002,cyclophosphamide,2837,copper,replace
-coq10,Coenzyme Q10,309268,,21406,ubidecarenone,replace
-cranberry,Cranberry,11179,,125933,cranberry preparation,replace
-creatine_monohydrate,Creatine Monohydrate,2231,cephalexin,1310467,creatine monohydrate,replace
-cryptoxanthin,Cryptoxanthin,1116063,,(null),prior 1116063 unverifiable via RxNorm (no concept name); cleared pending verification,null
-dhea,DHEA (Dehydroepiandrosterone),3310,,3143,prasterone,replace
-echinacea,Echinacea,11163,,228041,Echinacea preparation,replace
-gaba,GABA (Gamma-Aminobutyric Acid),3264,dexamethasone,4617,gamma-aminobutyric acid,replace
-garlic,Garlic,12536,,265647,garlic preparation,replace
-ginger,Ginger,258322,,285241,ginger extract,replace
-ginkgo,Ginkgo,12522,,236809,Ginkgo biloba extract,replace
-ginseng,Ginseng,12523,,325526,ginseng preparation,replace
-glucosamine,Glucosamine,3520,,(null),RxNorm resolves 'Glucosamine' only to a salt-specific PIN (236608 (glucosamine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06),null
-glutathione,Glutathione,3586,,4890,glutathione,replace
-hyaluronic_acid,Hyaluronic Acid,3498,diphenhydramine,5463,hyaluronic acid,replace
-inositol,Inositol,5813,,5833,inositol,replace
-l_alanine,L-Alanine,206,,426,alanine,replace
-l_arginine,L-Arginine,16478,,1091,arginine,replace
-l_carnitine,L-Carnitine,20279,,(null),RxNorm resolves 'L-Carnitine' only to a salt-specific PIN (1426681 (levocarnitine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06),null
-l_citrulline,L-Citrulline,2231,cephalexin,2567,citrulline,replace
-l_cysteine,L-Cysteine,4105,,3024,cysteine,replace
-l_glutamic_acid,L-Glutamic Acid,4851,,25916,glutamic acid,replace
-l_glutamine,L-Glutamine,4850,glucose,4885,glutamine,replace
-l_histidine,L-Histidine,5324,,5340,histidine,replace
-l_isoleucine,L-Isoleucine,6003,,6033,isoleucine,replace
-l_leucine,L-Leucine,6179,,6308,leucine,replace
-l_lysine,L-Lysine,6386,,(null),RxNorm resolves 'L-Lysine' only to a salt-specific PIN (1314248 (lysine monohydrate)); left null to avoid over-specific ID on a broad parent (2026-06-06),null
-l_ornithine,L-Ornithine,7834,,314709,"ornithine, (L)-isomer",replace
-l_proline,L-Proline,6918,metoprolol,8737,proline,replace
-l_serine,L-Serine,10142,,9671,serine,replace
-l_threonine,L-Threonine,6991,,10524,threonine,replace
-l_tryptophan,L-Tryptophan,7057,,10898,tryptophan,replace
-l_tyrosine,L-Tyrosine,7231,,10962,tyrosine,replace
-l_valine,L-Valine,7279,,11115,valine,replace
-lycopene,Lycopene,1116065,,29008,lycopene,replace
-magnesium,Magnesium,1312,,6574,magnesium,replace
-manganese,Manganese,23003,,6623,manganese,replace
-milk_thistle,Milk Thistle,11188,,259274,milk thistle seed extract,replace
-molybdenum,Molybdenum,6676,meclizine,7024,molybdenum,replace
-msm,MSM (Methylsulfonylmethane),60163,,23247,methylsulfonylmethane,replace
-nac,N-Acetyl Cysteine,3821,,197,acetylcysteine,replace
-octacosanol,Octacosanol,6810,,12166,1-octacosanol,replace
-omega_3,Omega-3 Fatty Acids,1004383,,4301,omega-3 fatty acids,replace
-paba,PABA (Para-Aminobenzoic Acid),7073,,74,4-aminobenzoic acid,replace
-phosphatidylserine,Phosphatidylserine,8651,,89959,phosphatidylserine,replace
-policosanol,Policosanol,7508,norepinephrine bitartrate,69440,policosanol,replace
-potassium,Potassium,8229,,8588,potassium,replace
-pqq,PQQ (Pyrroloquinoline Quinone),1116067,,(null),prior 1116067 unverifiable via RxNorm (no concept name); cleared pending verification,null
-pregnenolone,Pregnenolone,8588,potassium,114052,pregnenolone,replace
-psyllium,Psyllium,8640,prednisone,8928,psyllium,replace
-same,SAMe (S-Adenosyl-L-Methionine),7841,,9504,S-adenosylmethionine,replace
-saw_palmetto,Saw Palmetto,11187,,236344,saw palmetto extract,replace
-selenium,Selenium,9010,pyrimethamine,(null),prior 9010 mapped to pyrimethamine (incorrect); no clean elemental-selenium RxNorm ingredient,null
-sulforaphane,Sulforaphane,1116060,,(null),prior 1116060 unverifiable via RxNorm (no concept name); cleared pending verification,null
-superoxide_dismutase,Superoxide Dismutase (SOD),9822,,10245,superoxide dismutase,replace
-taurine,Taurine,10335,,10337,taurine,replace
-tmg_betaine,TMG (Trimethylglycine),35301,,1512,betaine,replace
-turmeric,Turmeric,11178,,1114883,turmeric extract,replace
-vanadyl_sulfate,Vanadyl Sulfate,11253,vitamin D,39364,vanadyl sulfate,replace
-vitamin_a,Vitamin A,11149,vasopressin (USP),11246,vitamin A,replace
-vitamin_b12_cobalamin,Vitamin B12,2626,clozapine,11248,vitamin B12,replace
-vitamin_b1_thiamine,Vitamin B1 (Thiamine),10405,,10454,thiamine,replace
-vitamin_b2_riboflavin,Vitamin B2 (Riboflavin),9220,,9346,riboflavin,replace
-vitamin_b3_niacin,Vitamin B3 (Niacin),7393,niacin,7393,7393,replace
-vitamin_b5_pantothenic,Vitamin B5 (Pantothenic Acid),7953,,7891,pantothenic acid,replace
-vitamin_b6_pyridoxine,Vitamin B6 (Pyridoxine),8807,,(null),RxNorm resolves 'Vitamin B6 (Pyridoxine)' only to a salt-specific PIN (203164 (pyridoxine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06),null
-vitamin_b7_biotin,Vitamin B7 (Biotin),1596,bisacodyl,1588,biotin,replace
-vitamin_d,Vitamin D,11148,,11253,vitamin D,replace
-vitamin_e,Vitamin E,11150,,11256,vitamin E,replace
-vitamin_k,Vitamin K,11151,,11258,vitamin K,replace
-vitamin_k1,Vitamin K1,11256,vitamin E,8308,vitamin K1,replace
-zinc,Zinc,2078,,11416,zinc,replace
+parent,standard_name,old_rxcui,old_resolved,new_rxcui (current),new_resolved / reason,action,concept_type
+5_htp,5-HTP,258326,St. John's wort extract,94,5-hydroxytryptophan,replace,exact/base (accept)
+acetyl_l_carnitine,Acetyl-L-Carnitine,40799,,193,acetylcarnitine,replace,exact/base (accept)
+alpha_lipoic_acid,Alpha Lipoic Acid,19721,,6417,thioctic acid,replace,exact/base (accept)
+ashwagandha,Ashwagandha,11176,,(null),prior 11176 unverifiable via RxNorm (no concept name); cleared pending verification,null,null (salt-only or unverifiable)
+astaxanthin,Astaxanthin,1165380,,18451,astaxanthin,replace,exact/base (accept)
+beta-alanine,Beta-Alanine,1981,canrenoate potassium,61,beta-alanine,replace,exact/base (accept)
+bilberry,Bilberry,11155,,125929,bilberry extract,replace,extract/preparation (review bucket)
+boron,Boron,19718,,1705,boron,replace,exact/base (accept)
+caffeine,Caffeine,2103,,1886,caffeine,replace,exact/base (accept)
+calcium,Calcium,1898,,1895,calcium,replace,exact/base (accept)
+choline,Choline,2079,,(null),RxNorm resolves 'Choline' only to a salt-specific PIN (1425426 (choline chloride)); left null to avoid over-specific ID on a broad parent (2026-06-06),null,null (salt-only or unverifiable)
+chondroitin,Chondroitin,23874,,2473,chondroitin sulfates,replace,exact/base (accept)
+chromium,Chromium,2403,chlorpromazine,2496,chromium,replace,exact/base (accept)
+copper,Copper,3002,cyclophosphamide,2837,copper,replace,exact/base (accept)
+coq10,Coenzyme Q10,309268,,21406,ubidecarenone,replace,exact/base (accept)
+cranberry,Cranberry,11179,,125933,cranberry preparation,replace,extract/preparation (review bucket)
+creatine_monohydrate,Creatine Monohydrate,2231,cephalexin,1310467,creatine monohydrate,replace,exact/base (accept)
+cryptoxanthin,Cryptoxanthin,1116063,,(null),prior 1116063 unverifiable via RxNorm (no concept name); cleared pending verification,null,null (salt-only or unverifiable)
+dhea,DHEA (Dehydroepiandrosterone),3310,,3143,prasterone,replace,exact/base (accept)
+echinacea,Echinacea,11163,,228041,Echinacea preparation,replace,extract/preparation (review bucket)
+gaba,GABA (Gamma-Aminobutyric Acid),3264,dexamethasone,4617,gamma-aminobutyric acid,replace,exact/base (accept)
+garlic,Garlic,12536,,265647,garlic preparation,replace,extract/preparation (review bucket)
+ginger,Ginger,258322,,285241,ginger extract,replace,extract/preparation (review bucket)
+ginkgo,Ginkgo,12522,,236809,Ginkgo biloba extract,replace,extract/preparation (review bucket)
+ginseng,Ginseng,12523,,325526,ginseng preparation,replace,extract/preparation (review bucket)
+glucosamine,Glucosamine,3520,,(null),RxNorm resolves 'Glucosamine' only to a salt-specific PIN (236608 (glucosamine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06),null,null (salt-only or unverifiable)
+glutathione,Glutathione,3586,,4890,glutathione,replace,exact/base (accept)
+hyaluronic_acid,Hyaluronic Acid,3498,diphenhydramine,5463,hyaluronic acid,replace,exact/base (accept)
+inositol,Inositol,5813,,5833,inositol,replace,exact/base (accept)
+l_alanine,L-Alanine,206,,426,alanine,replace,exact/base (accept)
+l_arginine,L-Arginine,16478,,1091,arginine,replace,exact/base (accept)
+l_carnitine,L-Carnitine,20279,,(null),RxNorm resolves 'L-Carnitine' only to a salt-specific PIN (1426681 (levocarnitine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06),null,null (salt-only or unverifiable)
+l_citrulline,L-Citrulline,2231,cephalexin,2567,citrulline,replace,exact/base (accept)
+l_cysteine,L-Cysteine,4105,,3024,cysteine,replace,exact/base (accept)
+l_glutamic_acid,L-Glutamic Acid,4851,,25916,glutamic acid,replace,exact/base (accept)
+l_glutamine,L-Glutamine,4850,glucose,4885,glutamine,replace,exact/base (accept)
+l_histidine,L-Histidine,5324,,5340,histidine,replace,exact/base (accept)
+l_isoleucine,L-Isoleucine,6003,,6033,isoleucine,replace,exact/base (accept)
+l_leucine,L-Leucine,6179,,6308,leucine,replace,exact/base (accept)
+l_lysine,L-Lysine,6386,,(null),RxNorm resolves 'L-Lysine' only to a salt-specific PIN (1314248 (lysine monohydrate)); left null to avoid over-specific ID on a broad parent (2026-06-06),null,null (salt-only or unverifiable)
+l_ornithine,L-Ornithine,7834,,314709,"ornithine, (L)-isomer",replace,exact/base (accept)
+l_proline,L-Proline,6918,metoprolol,8737,proline,replace,exact/base (accept)
+l_serine,L-Serine,10142,,9671,serine,replace,exact/base (accept)
+l_threonine,L-Threonine,6991,,10524,threonine,replace,exact/base (accept)
+l_tryptophan,L-Tryptophan,7057,,10898,tryptophan,replace,exact/base (accept)
+l_tyrosine,L-Tyrosine,7231,,10962,tyrosine,replace,exact/base (accept)
+l_valine,L-Valine,7279,,11115,valine,replace,exact/base (accept)
+lycopene,Lycopene,1116065,,29008,lycopene,replace,exact/base (accept)
+magnesium,Magnesium,1312,,6574,magnesium,replace,exact/base (accept)
+manganese,Manganese,23003,,6623,manganese,replace,exact/base (accept)
+milk_thistle,Milk Thistle,11188,,259274,milk thistle seed extract,replace,extract/preparation (review bucket)
+molybdenum,Molybdenum,6676,meclizine,7024,molybdenum,replace,exact/base (accept)
+msm,MSM (Methylsulfonylmethane),60163,,23247,methylsulfonylmethane,replace,exact/base (accept)
+nac,N-Acetyl Cysteine,3821,,197,acetylcysteine,replace,exact/base (accept)
+octacosanol,Octacosanol,6810,,12166,1-octacosanol,replace,exact/base (accept)
+omega_3,Omega-3 Fatty Acids,1004383,,4301,omega-3 fatty acids,replace,exact/base (accept)
+paba,PABA (Para-Aminobenzoic Acid),7073,,74,4-aminobenzoic acid,replace,exact/base (accept)
+phosphatidylserine,Phosphatidylserine,8651,,89959,phosphatidylserine,replace,exact/base (accept)
+policosanol,Policosanol,7508,norepinephrine bitartrate,69440,policosanol,replace,exact/base (accept)
+potassium,Potassium,8229,,8588,potassium,replace,exact/base (accept)
+pqq,PQQ (Pyrroloquinoline Quinone),1116067,,(null),prior 1116067 unverifiable via RxNorm (no concept name); cleared pending verification,null,null (salt-only or unverifiable)
+pregnenolone,Pregnenolone,8588,potassium,114052,pregnenolone,replace,exact/base (accept)
+psyllium,Psyllium,8640,prednisone,8928,psyllium,replace,exact/base (accept)
+same,SAMe (S-Adenosyl-L-Methionine),7841,,9504,S-adenosylmethionine,replace,exact/base (accept)
+saw_palmetto,Saw Palmetto,11187,,236344,saw palmetto extract,replace,extract/preparation (review bucket)
+selenium,Selenium,9010,pyrimethamine,(null),prior 9010 mapped to pyrimethamine (incorrect); no clean elemental-selenium RxNorm ingredient,null,null (salt-only or unverifiable)
+sulforaphane,Sulforaphane,1116060,,(null),prior 1116060 unverifiable via RxNorm (no concept name); cleared pending verification,null,null (salt-only or unverifiable)
+superoxide_dismutase,Superoxide Dismutase (SOD),9822,,10245,superoxide dismutase,replace,exact/base (accept)
+taurine,Taurine,10335,,10337,taurine,replace,exact/base (accept)
+tmg_betaine,TMG (Trimethylglycine),35301,,1512,betaine,replace,exact/base (accept)
+turmeric,Turmeric,11178,,1114883,turmeric extract,replace,extract/preparation (review bucket)
+vanadyl_sulfate,Vanadyl Sulfate,11253,vitamin D,39364,vanadyl sulfate,replace,exact/base (accept)
+vitamin_a,Vitamin A,11149,vasopressin (USP),11246,vitamin A,replace,exact/base (accept)
+vitamin_b12_cobalamin,Vitamin B12,2626,clozapine,11248,vitamin B12,replace,exact/base (accept)
+vitamin_b1_thiamine,Vitamin B1 (Thiamine),10405,,10454,thiamine,replace,exact/base (accept)
+vitamin_b2_riboflavin,Vitamin B2 (Riboflavin),9220,,9346,riboflavin,replace,exact/base (accept)
+vitamin_b3_niacin,Vitamin B3 (Niacin),7393,niacin,7393,7393,replace,exact/base (accept)
+vitamin_b5_pantothenic,Vitamin B5 (Pantothenic Acid),7953,,7891,pantothenic acid,replace,exact/base (accept)
+vitamin_b6_pyridoxine,Vitamin B6 (Pyridoxine),8807,,(null),RxNorm resolves 'Vitamin B6 (Pyridoxine)' only to a salt-specific PIN (203164 (pyridoxine hydrochloride)); left null to avoid over-specific ID on a broad parent (2026-06-06),null,null (salt-only or unverifiable)
+vitamin_b7_biotin,Vitamin B7 (Biotin),1596,bisacodyl,1588,biotin,replace,exact/base (accept)
+vitamin_d,Vitamin D,11148,,11253,vitamin D,replace,exact/base (accept)
+vitamin_e,Vitamin E,11150,,11256,vitamin E,replace,exact/base (accept)
+vitamin_k,Vitamin K,11151,,11258,vitamin K,replace,exact/base (accept)
+vitamin_k1,Vitamin K1,11256,vitamin E,8308,vitamin K1,replace,exact/base (accept)
+zinc,Zinc,2078,,11416,zinc,replace,exact/base (accept)
