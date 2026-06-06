@@ -6914,11 +6914,11 @@
             "rxcui": null,
             "forms": {
                   "lysozyme enzyme": {
-                        "bio_score": 10,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 13,
+                        "score": 8,
                         "absorption": "limited (oral)",
-                        "notes": "A naturally occurring antimicrobial enzyme found in many secretions including tears, saliva, and egg whites. Supports immune function and has broad-spectrum antimicrobial activity.",
+                        "notes": "A naturally occurring antimicrobial enzyme found in many secretions including tears, saliva, and egg whites. Supports immune function and has broad-spectrum antimicrobial activity. Absorption-only: enzyme acting locally/antimicrobially; poor systemic oral absorption.",
                         "aliases": [
                               "lysozyme",
                               "lysozyme enzyme",
@@ -10908,11 +10908,11 @@
             "rxcui": null,
             "forms": {
                   "glutathione peroxidase enzyme": {
-                        "bio_score": 12,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 15,
+                        "score": 8,
                         "absorption": "moderate (~60-70%)",
-                        "notes": "A rare enzyme supplement that works synergistically with glutathione to neutralize peroxides and protect cells from oxidative damage. More bioactive than standard antioxidants as it's a complete enzymatic system.",
+                        "notes": "A rare enzyme supplement that works synergistically with glutathione to neutralize peroxides and protect cells from oxidative damage. More bioactive than standard antioxidants as it's a complete enzymatic system. Absorption-only: large enzyme largely degraded/poorly absorbed orally.",
                         "aliases": [
                               "glutathione peroxidase",
                               "gpx enzyme",
@@ -21260,11 +21260,11 @@
             "rxcui": null,
             "forms": {
                   "plant-based enzyme complex": {
-                        "bio_score": 12,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 15,
+                        "score": 9,
                         "absorption": "very good (~70–80%)",
-                        "notes": "A broad-spectrum blend of enzymes sourced from fungal or botanical sources. Effectively breaks down a variety of foods.",
+                        "notes": "A broad-spectrum blend of enzymes sourced from fungal or botanical sources. Effectively breaks down a variety of foods. Absorption-only: digestive enzymes act locally in the gut lumen; not systemically absorbed.",
                         "aliases": [
                               "plant enzymes",
                               "vegetarian enzymes",
@@ -21297,11 +21297,11 @@
                         }
                   },
                   "pancreatic enzymes (animal-derived)": {
-                        "bio_score": 11,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 14,
+                        "score": 9,
                         "absorption": "good (~60–70%)",
-                        "notes": "Enzymes sourced from animal pancreases. Requires enteric coating to survive stomach acid and function in the small intestine. Typically includes a mix of amylase, lipase, and protease.",
+                        "notes": "Enzymes sourced from animal pancreases. Requires enteric coating to survive stomach acid and function in the small intestine. Typically includes a mix of amylase, lipase, and protease. Absorption-only: digestive enzymes act locally in the gut lumen; not systemically absorbed.",
                         "aliases": [
                               "pancreatic enzymes",
                               "pancreatin",
@@ -21331,11 +21331,11 @@
                         }
                   },
                   "specific enzymes": {
-                        "bio_score": 13,
+                        "bio_score": 7,
                         "natural": true,
-                        "score": 16,
+                        "score": 10,
                         "absorption": "excellent (~80–90%)",
-                        "notes": "Targeted, individual enzymes designed to break down specific types of food or to perform a specific function.",
+                        "notes": "Targeted, individual enzymes designed to break down specific types of food or to perform a specific function. Absorption-only: digestive enzymes act in the gut lumen; bio_score reflects survival/delivery to the site of action, not systemic absorption (enzyme activity units scored separately).",
                         "aliases": [
                               "protease",
                               "lipase",
@@ -21390,11 +21390,11 @@
                         }
                   },
                   "enteric-coated enzymes": {
-                        "bio_score": 12,
+                        "bio_score": 7,
                         "natural": false,
-                        "score": 12,
+                        "score": 7,
                         "absorption": "good (~60–70%)",
-                        "notes": "Encapsulation technology that protects enzymes from stomach acid, ensuring they are released in the small intestine where they are most effective. Essential for pancreatic enzymes.",
+                        "notes": "Encapsulation technology that protects enzymes from stomach acid, ensuring they are released in the small intestine where they are most effective. Essential for pancreatic enzymes. Absorption-only: enteric coating aids survival to the intestine (site of action); digestive enzymes are not systemically absorbed.",
                         "aliases": [
                               "enteric-coated enzymes",
                               "delayed-release enzymes",
@@ -21491,11 +21491,11 @@
             "rxcui": null,
             "forms": {
                   "nattokinase standard": {
-                        "bio_score": 12,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 15,
+                        "score": 11,
                         "absorption": "good (~70%)",
-                        "notes": "Fibrinolytic enzyme derived from natto (fermented soybeans). Supports cardiovascular health and healthy blood flow.",
+                        "notes": "Fibrinolytic enzyme derived from natto (fermented soybeans). Supports cardiovascular health and healthy blood flow. Absorption-only: fibrinolytic enzyme with some human evidence of systemic activity, but oral absorption of the intact 27kDa protein is limited/debated; conservative moderate scoring.",
                         "aliases": [
                               "nattokinase",
                               "natto enzyme",
@@ -22417,11 +22417,11 @@
             "rxcui": "10245",
             "forms": {
                   "sod supplement": {
-                        "bio_score": 10,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 13,
+                        "score": 8,
                         "absorption": "poor (oral degradation)",
-                        "notes": "An important antioxidant enzyme. Oral supplementation has limited effectiveness due to digestive breakdown.",
+                        "notes": "An important antioxidant enzyme. Oral supplementation has limited effectiveness due to digestive breakdown. Absorption-only: large enzyme largely degraded/poorly absorbed orally unless specifically protected (e.g. gliadin-bound).",
                         "aliases": [
                               "sod",
                               "superoxide dismutase",
@@ -33614,11 +33614,11 @@
             "rxcui": null,
             "forms": {
                   "alpha-amylase enzyme": {
-                        "bio_score": 12,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 15,
+                        "score": 9,
                         "absorption": "excellent",
-                        "notes": "Digestive enzyme that breaks down starch and carbohydrates into sugars. Essential for carbohydrate digestion. Bioactive functional ingredient that supports digestive health.",
+                        "notes": "Digestive enzyme that breaks down starch and carbohydrates into sugars. Essential for carbohydrate digestion. Bioactive functional ingredient that supports digestive health. Absorption-only: digestive enzyme acting in the gut lumen; not systemically absorbed.",
                         "aliases": [
                               "alpha-amylase",
                               "starch-digesting enzyme",
@@ -33896,11 +33896,11 @@
             "category": "cardiovascular_support",
             "forms": {
                   "nsk-sd": {
-                        "bio_score": 13,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 16,
+                        "score": 11,
                         "absorption": "standardized",
-                        "notes": "Standardized nattokinase with guaranteed fibrinolytic activity. NSK-SD is a clinically studied, purified nattokinase extract.",
+                        "notes": "Standardized nattokinase with guaranteed fibrinolytic activity. NSK-SD is a clinically studied, purified nattokinase extract. Absorption-only: standardized nattokinase (NSK-SD) with clinical fibrinolytic data; intact-protein oral absorption limited/debated; conservative moderate scoring.",
                         "aliases": [
                               "nattokinase nsk-sd",
                               "nsk-sd",
