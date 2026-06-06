@@ -811,8 +811,7 @@
                               "b2 supplement",
                               "lactoflavin supplement",
                               "free riboflavin supplement",
-                              "riboflavine supplement",
-                              "colored with vitamin b2"
+                              "riboflavine supplement"
                         ],
                         "dosage_importance": 1.5,
                         "absorption_structured": {
@@ -2185,8 +2184,7 @@
                         "notes": "Unspecified form; conservative scoring to avoid over-crediting.",
                         "aliases": [
                               "Vitamin B9 (Folate)",
-                              "Vitamin B9",
-                              "Lemon Extract"
+                              "Vitamin B9"
                         ],
                         "dosage_importance": 1.0,
                         "absorption_structured": {
@@ -35718,7 +35716,7 @@
             "statistics": {
                   "total_ingredients": 485,
                   "total_forms": 1233,
-                  "total_aliases": 9161,
+                  "total_aliases": 9159,
                   "ingredients_with_relationships": 24
             },
             "categories": {
