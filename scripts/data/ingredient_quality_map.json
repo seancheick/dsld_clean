@@ -10524,8 +10524,8 @@
                   },
                   "liposomal curcumin": {
                         "bio_score": 12,
-                        "natural": true,
-                        "score": 15,
+                        "natural": false,
+                        "score": 12,
                         "absorption": "high",
                         "notes": "Phospholipid encapsulation for enhanced delivery.",
                         "aliases": [
@@ -14706,14 +14706,14 @@
                         }
                   },
                   "magnesium glycinate": {
-                        "bio_score": 15,
-                        "natural": true,
+                        "bio_score": 14,
+                        "natural": false,
                         "absorption": "excellent (~95%)",
                         "notes": "Chelated with magnesium; dual benefits for sleep and relaxation",
                         "aliases": [
                               "glycine magnesium chelate"
                         ],
-                        "score": 18,
+                        "score": 14,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.95,
