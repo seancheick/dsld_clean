@@ -10654,15 +10654,35 @@
                         "notes": "Form not specified; conservative scoring applied. Consider using a specific form for better bioavailability.",
                         "aliases": [
                               "quercetin",
-                              "quercetin dihydrate",
-                              "Quercetin Phytosome",
-                              "Quercefit"
+                              "quercetin dihydrate"
                         ],
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": null,
                               "quality": "unknown",
                               "notes": "Data not available"
+                        }
+                  },
+                  "quercetin phytosome (quercefit)": {
+                        "bio_score": 14,
+                        "natural": false,
+                        "score": 14,
+                        "absorption": "excellent (~20x oral absorption vs unformulated quercetin)",
+                        "notes": "Patented lecithin-based phytosome delivery (Quercefit). Human PK shows ~20x improved oral absorption vs unformulated quercetin (PMID 30328058, Riva et al., Eur J Drug Metab Pharmacokinet 2019). bio_score reflects clinically demonstrated superior absorption.",
+                        "aliases": [
+                              "quercetin phytosome",
+                              "quercefit",
+                              "quercetin phospholipid complex",
+                              "quercetin lecithin phytosome"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": 20,
+                              "is_relative": true,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "excellent",
+                              "notes": "~20x relative oral absorption vs unformulated quercetin (PMID 30328058)"
                         }
                   }
             },
@@ -35910,8 +35930,8 @@
             },
             "statistics": {
                   "total_ingredients": 485,
-                  "total_forms": 1233,
-                  "total_aliases": 9155,
+                  "total_forms": 1234,
+                  "total_aliases": 9157,
                   "ingredients_with_relationships": 24
             },
             "categories": {
