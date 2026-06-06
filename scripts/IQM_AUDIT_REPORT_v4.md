@@ -136,3 +136,29 @@ the task scope explicitly excludes ("no broad vibes-based edits; only fix clear
 issues with evidence") — or (b) the deferred structural merges, which are safer
 executed against the live pipeline `main` than this stale branch. No further
 mechanical/data-truth bugs were detectable.
+
+## Evidence-based calibration pass (batches 14–16)
+PubMed-verified (NCBI E-utilities) corrections where bio_score reflected clinical
+benefit rather than absorption, or created within-parent inversions:
+- apigenin extract 13→6, berberine hcl 11→6 (batch 14) — textbook-poor oral
+  bioavailability (PMID 41265600, 42120042).
+- quercetin: added evidence-backed premium form `quercetin phytosome (quercefit)`
+  bio=14 (~20x absorption, PMID 30328058); plain quercetin stays bio=5 (batch 15).
+- green tea catechins 13→10 (batch 16) — EGCG poorly bioavailable; was out-scoring
+  the parent's own standardized 50% EGCG extract (PMID 41106481).
+
+Premium-tier verification (bio≥13) across antioxidants, herbs/adaptogens, and a
+file-wide "non-enhanced out-scores delivery-enhanced sibling" scan: **no further
+clear over-scores.** Branded multiplier forms (Longvida 65x, NovaSOL 185x,
+CurcuWIN 46x, ubiquinol crystal-free 8x), exact probiotic strains, and
+already-well-absorbed actives (taurine, NAC, alpha-GPC, R-ALA, KSM-66) all hold up.
+
+## The one remaining large decision (your call — NOT swept)
+The file's original `bio_score` blends *absorption* with *standardization/quality/
+potency* (per its own metadata scoring_factors), whereas the audit brief defines
+`bio_score` as **absorption/bioavailability only**. Strictly enforcing
+absorption-only would demote many standardized/potency-graded extracts (e.g.
+patented herb extracts scored high for standardization, cordyceps militaris,
+gelatinized maca) — hundreds of scores, a scoring-philosophy change. This is a
+deliberate product decision, not a mechanical bug, so it is left for you/Codex to
+direct rather than swept unilaterally.
