@@ -26,6 +26,7 @@ IQM_PATH = Path(__file__).parent.parent / 'data' / 'ingredient_quality_map.json'
 #  42120042 berberine mucoadhesive delivery (J Drug Target 2026)
 VERIFIED_PMIDS = {
     '30328058', '39756599', '39756973', '41106481', '41265600', '42120042',
+    '34115818', '37057922',
 }
 
 

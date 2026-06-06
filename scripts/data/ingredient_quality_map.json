@@ -15350,13 +15350,6 @@
                         "notes": "Form not specified; conservative scoring applied. Consider using a specific form for better bioavailability.",
                         "aliases": [
                               "lutein",
-                              "FloraGLO",
-                              "Flora GLO",
-                              "flora-glo",
-                              "Lutemax 2020",
-                              "marigold flower extract",
-                              "marigold extract",
-                              "tagetes erecta extract",
                               "lutein esters"
                         ],
                         "dosage_importance": 1.0,
@@ -15364,6 +15357,33 @@
                               "value": null,
                               "quality": "unknown",
                               "notes": "Data not available"
+                        }
+                  },
+                  "free lutein (floraglo / lutemax, marigold)": {
+                        "bio_score": 10,
+                        "natural": true,
+                        "score": 13,
+                        "absorption": "moderate (fat-dependent carotenoid)",
+                        "notes": "Purified free lutein from marigold (e.g. FloraGLO, Lutemax 2020). Absorption-only: clinical-grade purity/standardization does NOT raise systemic absorption - lutein is a moderate, fat-dependent absorber; scored at the moderate tier, not premium, despite branding.",
+                        "aliases": [
+                              "floraglo",
+                              "flora glo",
+                              "flora-glo",
+                              "lutemax 2020",
+                              "lutemax",
+                              "marigold flower extract",
+                              "marigold extract",
+                              "tagetes erecta extract",
+                              "free lutein",
+                              "purified lutein"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": 0.5,
+                              "quality": "moderate",
+                              "notes": "Moderate fat-dependent carotenoid absorption",
+                              "range_low": null,
+                              "range_high": null
                         }
                   }
             },
@@ -17979,16 +17999,36 @@
                         "absorption": "unknown",
                         "notes": "Form not specified; conservative scoring applied. Consider using a specific form for better bioavailability.",
                         "aliases": [
-                              "l-theanine",
-                              "suntheanine l-theanine",
-                              "suntheanine",
-                              "alphawave"
+                              "l-theanine"
                         ],
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": null,
                               "quality": "unknown",
                               "notes": "Data not available"
+                        }
+                  },
+                  "l-theanine (suntheanine / pure l-isomer)": {
+                        "bio_score": 12,
+                        "natural": false,
+                        "score": 12,
+                        "absorption": "good (rapidly/actively absorbed small amino acid)",
+                        "notes": "Pure L-isomer theanine (e.g. Suntheanine). Absorption-only: L-theanine is a small amino acid that is rapidly and actively absorbed in the small intestine (PMID 34115818); the D-isomer in racemic/unspecified product is less active. bio_score reflects good systemic absorption.",
+                        "aliases": [
+                              "suntheanine",
+                              "suntheanine l-theanine",
+                              "alphawave",
+                              "l-theanine pure",
+                              "pure l-theanine",
+                              "l-theanine (suntheanine)"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": 0.85,
+                              "quality": "good",
+                              "notes": "Rapidly absorbed small amino acid (PMID 34115818)",
+                              "range_low": null,
+                              "range_high": null
                         }
                   }
             },
@@ -33585,6 +33625,28 @@
                               "quality": "excellent",
                               "notes": "excellent (10-20x improvement)"
                         }
+                  },
+                  "dihydroberberine": {
+                        "bio_score": 11,
+                        "natural": false,
+                        "score": 11,
+                        "absorption": "moderate (~5x berberine HCl, still limited absolute)",
+                        "notes": "Reduced berberine form with markedly improved oral bioavailability vs berberine HCl (~5x; PMID 37057922). Absorption-only: scored above berberine HCl (6) and near the enhanced-delivery tier, though absolute absorption of berberine remains limited.",
+                        "aliases": [
+                              "dihydroberberine",
+                              "DHB",
+                              "reduced berberine",
+                              "berberine reduced"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": 5,
+                              "quality": "good",
+                              "notes": "~5x oral bioavailability vs berberine HCl (PMID 37057922)",
+                              "is_relative": true,
+                              "range_low": null,
+                              "range_high": null
+                        }
                   }
             },
             "severity_level": "none",
@@ -35930,8 +35992,8 @@
             },
             "statistics": {
                   "total_ingredients": 485,
-                  "total_forms": 1234,
-                  "total_aliases": 9157,
+                  "total_forms": 1237,
+                  "total_aliases": 9167,
                   "ingredients_with_relationships": 24
             },
             "categories": {
