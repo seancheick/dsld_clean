@@ -33178,11 +33178,11 @@
             "rxcui": null,
             "forms": {
                   "larch arabinogalactan powder": {
-                        "bio_score": 11,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 14,
+                        "score": 8,
                         "absorption": "prebiotic fermentation",
-                        "notes": "Immune-supporting prebiotic fiber. Increases beneficial gut bacteria. 10g daily shows prebiotic efficacy.",
+                        "notes": "Immune-supporting prebiotic fiber. Increases beneficial gut bacteria. 10g daily shows prebiotic efficacy. Absorption-only policy: dietary fiber acts in the gut lumen (gel/bile-acid binding, colonic fermentation, gut-immune signalling) and is not systemically absorbed, so bio_score is low; functional efficacy is scored on a separate axis.",
                         "aliases": [
                               "larch arabinogalactan",
                               "eastern larch arabinogalactan",
@@ -35020,15 +35020,15 @@
             "rxcui": "8928",
             "forms": {
                   "psyllium husk powder": {
-                        "bio_score": 11,
+                        "bio_score": 5,
                         "natural": true,
                         "absorption": "not applicable (fiber)",
-                        "notes": "Soluble fiber; supports digestive health and cholesterol management",
+                        "notes": "Soluble fiber; supports digestive health and cholesterol management Absorption-only policy: dietary fiber acts in the gut lumen (gel/bile-acid binding, colonic fermentation, gut-immune signalling) and is not systemically absorbed, so bio_score is low; functional efficacy is scored on a separate axis.",
                         "aliases": [
                               "psyllium fiber",
                               "ispaghula"
                         ],
-                        "score": 14,
+                        "score": 8,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": null,
@@ -35039,16 +35039,16 @@
                         }
                   },
                   "psyllium seed": {
-                        "bio_score": 9,
+                        "bio_score": 5,
                         "natural": true,
                         "absorption": "not applicable (fiber)",
-                        "notes": "Whole seeds; less refined than husk powder",
+                        "notes": "Whole seeds; less refined than husk powder Absorption-only policy: dietary fiber acts in the gut lumen (gel/bile-acid binding, colonic fermentation, gut-immune signalling) and is not systemically absorbed, so bio_score is low; functional efficacy is scored on a separate axis.",
                         "aliases": [
                               "psyllium seed",
                               "psyllium whole seed",
                               "plantago seed"
                         ],
-                        "score": 12,
+                        "score": 8,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": null,
@@ -35098,11 +35098,11 @@
             "rxcui": null,
             "forms": {
                   "beta-glucan": {
-                        "bio_score": 8,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 11,
+                        "score": 8,
                         "absorption": "moderate (~40-50%)",
-                        "notes": "Immunomodulating polysaccharide; immune support",
+                        "notes": "Immunomodulating polysaccharide; immune support Absorption-only policy: dietary fiber acts in the gut lumen (gel/bile-acid binding, colonic fermentation, gut-immune signalling) and is not systemically absorbed, so bio_score is low; functional efficacy is scored on a separate axis.",
                         "aliases": [
                               "beta-glucan",
                               "β-glucan",
