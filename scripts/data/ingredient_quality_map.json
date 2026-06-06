@@ -40377,7 +40377,7 @@
             "standard_name": "Strontium",
             "category": "minerals",
             "cui": "C0038532",
-            "rxcui": null,
+            "rxcui": "10122",
             "forms": {
                   "strontium (unspecified)": {
                         "bio_score": 7,
@@ -40405,7 +40405,7 @@
                   "exclusions": []
             },
             "category_enum": "minerals",
-            "rxcui_note": "No verified RxNorm concept assigned",
+            "rxcui_note": "Verified via RxNorm exact-name match to 'strontium' (rxnav.nlm.nih.gov, 2026-06-06)",
             "data_quality": {
                   "review_status": "pending",
                   "completeness": 0.7
@@ -40881,7 +40881,7 @@
             "standard_name": "Gamma Oryzanol",
             "category": "lipids",
             "cui": "C0060948",
-            "rxcui": null,
+            "rxcui": "25608",
             "forms": {
                   "gamma oryzanol (unspecified)": {
                         "bio_score": 10,
@@ -40919,7 +40919,7 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'gamma-oryzanol' (rxnav.nlm.nih.gov, 2026-06-06)"
       },
       "fucoxanthin": {
             "standard_name": "Fucoxanthin",
@@ -40962,7 +40962,9 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "unii": "06O0TC0VSM",
+            "unii_note": "Verified via FDA GSRS exact-name match to 'FUCOXANTHIN' (gsrs.ncats.nih.gov, 2026-06-06)"
       },
       "beta_caryophyllene": {
             "standard_name": "Beta-Caryophyllene",
@@ -41012,7 +41014,7 @@
             "standard_name": "Chrysin",
             "category": "flavonoids",
             "cui": "C0055691",
-            "rxcui": null,
+            "rxcui": "1362888",
             "forms": {
                   "chrysin (unspecified)": {
                         "bio_score": 5,
@@ -41047,13 +41049,15 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'chrysin' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "unii": "3CN01F5ZJ5",
+            "unii_note": "Verified via FDA GSRS exact-name match to 'CHRYSIN' (gsrs.ncats.nih.gov, 2026-06-06)"
       },
       "celadrin": {
             "standard_name": "Celadrin",
             "category": "fatty_acids",
             "cui": null,
-            "rxcui": null,
+            "rxcui": "2380349",
             "forms": {
                   "celadrin (unspecified)": {
                         "bio_score": 8,
@@ -41091,7 +41095,7 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "No verified UMLS CUI assigned",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'Celadrin' (rxnav.nlm.nih.gov, 2026-06-06)"
       },
       "green_lipped_mussel": {
             "standard_name": "Green-Lipped Mussel",
@@ -41142,7 +41146,7 @@
             "standard_name": "Lactoferrin",
             "category": "proteins",
             "cui": "C0022942",
-            "rxcui": null,
+            "rxcui": "1425933",
             "forms": {
                   "lactoferrin (unspecified)": {
                         "bio_score": 10,
@@ -41178,13 +41182,13 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'lactoferrin' (rxnav.nlm.nih.gov, 2026-06-06)"
       },
       "white_tea": {
             "standard_name": "White Tea Extract",
             "category": "botanicals",
             "cui": "C3888592",
-            "rxcui": null,
+            "rxcui": "1651698",
             "forms": {
                   "white tea extract (unspecified)": {
                         "bio_score": 9,
@@ -41224,7 +41228,7 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'white tea extract' (rxnav.nlm.nih.gov, 2026-06-06)"
       },
       "hops": {
             "standard_name": "Hops (Humulus lupulus)",
@@ -41744,7 +41748,7 @@
             "standard_name": "Myricetin",
             "category": "antioxidants",
             "cui": null,
-            "rxcui": null,
+            "rxcui": "1368374",
             "forms": {
                   "myricetin (unspecified)": {
                         "bio_score": 9,
@@ -41777,7 +41781,9 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "No verified UMLS CUI assigned",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'myricetin' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "unii": "76XC01FTOJ",
+            "unii_note": "Verified via FDA GSRS exact-name match to 'MYRICETIN' (gsrs.ncats.nih.gov, 2026-06-06)"
       },
       "polygodial": {
             "standard_name": "Polygodial",
@@ -41816,7 +41822,9 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "No verified UMLS CUI assigned",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "unii": "5FAF7T66M7",
+            "unii_note": "Verified via FDA GSRS exact-name match to 'POLYGODIAL' (gsrs.ncats.nih.gov, 2026-06-06)"
       },
       "common_bean_extract": {
             "standard_name": "Common Bean Extract",
@@ -41864,7 +41872,7 @@
             "standard_name": "Corn Silk",
             "category": "herbs",
             "cui": null,
-            "rxcui": null,
+            "rxcui": "283677",
             "forms": {
                   "corn silk extract": {
                         "bio_score": 8,
@@ -41900,7 +41908,9 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "No verified UMLS CUI assigned",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'corn silk preparation' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "unii": "7D3VB244UX",
+            "unii_note": "Verified via FDA GSRS exact-name match to 'CORN SILK' (gsrs.ncats.nih.gov, 2026-06-06)"
       },
       "horsetail": {
             "standard_name": "Horsetail",
@@ -41947,7 +41957,7 @@
             "standard_name": "Thyme Extract",
             "category": "herbs",
             "cui": null,
-            "rxcui": null,
+            "rxcui": "1376349",
             "forms": {
                   "thyme leaf/stem extract": {
                         "bio_score": 9,
@@ -41982,13 +41992,13 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "No verified UMLS CUI assigned",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'Thymus vulgaris whole extract' (rxnav.nlm.nih.gov, 2026-06-06)"
       },
       "evening_primrose_oil": {
             "standard_name": "Evening Primrose Oil",
             "category": "oil",
             "cui": null,
-            "rxcui": null,
+            "rxcui": "203219",
             "forms": {
                   "cold-pressed evening primrose oil": {
                         "bio_score": 12,
@@ -42039,7 +42049,9 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "No verified UMLS CUI assigned",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'evening primrose oil' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "unii": "3Q9L08K71N",
+            "unii_note": "Verified via FDA GSRS exact-name match to 'EVENING PRIMROSE OIL' (gsrs.ncats.nih.gov, 2026-06-06)"
       },
       "brown_kelp": {
             "standard_name": "Brown Kelp",
