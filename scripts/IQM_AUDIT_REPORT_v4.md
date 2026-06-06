@@ -203,3 +203,23 @@ the verified allowlist.
 **18 batches. 60 tests passing.** Under the chosen hybrid bio_score policy and with
 structural merges assigned to Codex on live `main`, the autonomous, evidence-bounded
 audit is complete.
+
+## bio_score semantics clarified — non-systemic carve-out (batch 25)
+Key decision after review: IQM scores label *active rows* to reward the better
+FORM, and bio_score is scored differently by active type:
+- SYSTEMIC actives -> bio_score = systemic absorption (oxide vs chelate).
+- NON-systemic / local actives (probiotics, mushrooms, fibers, demulcents,
+  phytosterols, digestive enzymes) -> bio_score = form quality + delivery to the
+  site of action (the model already used for probiotics). NOT systemic absorption.
+
+The earlier absorption-only sweep (batches 19-24) over-flattened non-systemic
+actives, erasing the form differentiation that matters on labels (premium
+fruiting-body extract ~= cheap mycelium). Batch 25 recalibrated them to the
+form-quality model (premium non-systemic form capped ~13), while KEEPING
+absorption-only for ingredients that ARE systemic-targeted but poorly absorbed
+(hyaluronic acid by MW, systemic enzymes SOD/GPx/nattokinase, carotenoids,
+organ extracts).
+
+Category: mushrooms stay in their current buckets; a dedicated
+`mushrooms`/`fungal_actives` category is deferred to a coordinated vocab/export/
+UI migration (not a piecemeal edit), per decision.
