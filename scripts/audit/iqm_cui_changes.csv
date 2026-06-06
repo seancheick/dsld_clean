@@ -1,0 +1,122 @@
+parent,standard_name,old_cui,old_resolved,new_cui,new_resolved (UMLS)
+allicin,Allicin,C0051140,ALE 36,C0051200,allicin
+alpha_carotene,Alpha-Carotene,C0052486,asialo-carcinoembryonic antigen,C0051336,alpha-carotene
+alpha_lipoic_acid,Alpha Lipoic Acid,C0064585,lactitol,C0023791,thioctic acid
+apigenin,Apigenin,C0048689,4-propionyloxy-4-phenyl-N-methylpiperidine,C0912024,apigenin
+ashwagandha,Ashwagandha,C1170179,Coldmist,C0613707,Ashwagandha preparation
+astaxanthin,Astaxanthin,C0162316,Iron deficiency anemia,C0052565,astaxanthin
+beta-alanine,Beta-Alanine,C0074950,,C0000392,beta-alanine
+bilberry,Bilberry,C0281934,,C0453269,bilberry extract
+boron,Boron,C0006057,Botulism,C0006030,boron
+brown_kelp,Brown Kelp,(null),(none),C0022980,Laminaria
+celadrin,Celadrin,(null),(none),C5390919,Celadrin
+chlorella,Chlorella,C0246281,COSS-86 protocol,C0008190,Chlorella
+choline,Choline,C0008489,Chorea,C0008405,choline
+chondroitin,Chondroitin,C0008494,,C0008454,Chondroitin
+chromium,Chromium,C0008670,"Chromosomes, Human, Pair 7",C0008574,chromium
+citrus_bioflavonoids,Citrus Bioflavonoids,C0595900,Blood chloride increased,C0982043,citrus bioflavonoids
+collagen,Collagen,C0009368,Colon structure (body structure),C0009325,collagen
+common_bean_extract,Common Bean Extract,(null),(none),C4321296,Phaseolus vulgaris whole extract
+copper,Copper,C0010175,,C0009968,copper
+coq10,Coenzyme Q10,C0009384,,C0041536,ubidecarenone
+corn_silk,Corn Silk,(null),(none),C0937769,corn silk preparation
+cranberry,Cranberry,C0678177,Suprax,C0453273,cranberry preparation
+creatine_monohydrate,Creatine Monohydrate,C0079823,,C0873188,creatine monohydrate
+cryptoxanthin,Cryptoxanthin,C0079171,,C0896117,Beta-Cryptoxanthin
+curcumin,Curcumin,C0010598,Cyclothymic Disorder,C0010467,curcumin
+cyanidin_3_glucoside,Cyanidin-3-Glucoside,C0378245,,C3489523,cyanidin-3-glucoside
+d_aspartic_acid,D-Aspartic Acid,C0085845,aspartate,C0949755,D-Aspartic Acid
+d_limonene,D-Limonene,C0064997,linalool,C0064992,limonene
+d_ribose,D-Ribose,C0035687,RNA Splicing,C0035549,ribose
+dandelion,Dandelion,C0950252,"limonene, (+)- [d-limonene]",C0877851,Taraxacum officinale
+dhea,DHEA (Dehydroepiandrosterone),C0011083,,C0011185,prasterone
+digestive_enzymes,Digestive Enzymes,C0017168,Gastroesophageal reflux disease,C0544420,Digestive Enzymes
+diindolylmethane,Diindolylmethane,C0057317,Hepatitis delta Antigens,C0163151,"3,3'-diindolylmethane"
+dmae,DMAE (Dimethylaminoethanol),C0001833,,C0011064,deanol
+echinacea,Echinacea,C0013599,,C0752270,Echinacea preparation
+egcg,Egcg,C0059514,ergonovine maleate,C0059438,epigallocatechin gallate
+elderberry,Elderberry,C1456405,Delivery length of stay booking (procedure),C1095913,elderberry preparation
+ellagic_acid,Ellagic Acid,C0013894,,C0013900,ellagic acid
+ergothioneine,Ergothioneine,C0014700,,C0014713,ergothioneine
+eriocitrin,Eriocitrin,C1170498,PMS-Fluox,C0757990,eriocitrin
+evening_primrose_oil,Evening Primrose Oil,(null),(none),C0700602,evening primrose oil
+flavones,Flavones,C0016129,Fingers,C0016219,Flavones
+flavonoids,Flavonoids,C0016131,,C0596577,Flavonoids
+flavonols,Flavonols,C0596577,Flavonoids,C0060444,Flavonols
+gaba,GABA (Gamma-Aminobutyric Acid),C0016903,,C0016904,gamma-aminobutyric acid
+garlic,Garlic,C0017076,,C0993630,Garlic
+ginkgo,Ginkgo,C0017574,Gingivitis,C0772125,Ginkgo biloba extract
+ginseng,Ginseng,C0017579,,C1119918,ginseng preparation
+ginsenosides,Ginsenosides,C0017686,,C0061278,Ginsenosides
+glucosamine,Glucosamine,C0017611,,C0017718,glucosamine
+glutathione,Glutathione,C0018150,Gram Negative Bacteria,C0017817,glutathione
+glycyrrhizin,Glycyrrhizin,C0061996,guar gum,C0061751,glycyrrhizic acid
+grape_seed_extract,Grape Seed Extract,C0246271,,C0772454,grape seed extract
+green_tea_extract,Green Tea Extract,C0246278,,C1704263,green tea extract
+horsetail,Horsetail,(null),(none),C0331746,Equisetum arvense
+hyaluronic_acid,Hyaluronic Acid,C0010395,Subphylum Crustacea,C0020196,hyaluronic acid
+hyperforin,Hyperforin,C0250248,,C0063217,hyperforin
+hypericin,Hypericin,C0000521,,C0063220,hypericin
+inositol,Inositol,C0021641,Insulin,C0021547,inositol
+iron,Iron,C0021776,Intermittent Explosive Disorder,C0302583,iron
+isoflavones,Isoflavones,C0049620,6-hydroxymethylpterin,C0022179,Isoflavones
+l_alanine,L-Alanine,C0001896,Alabaster,C0001898,alanine
+l_arginine,L-Arginine,C0030897,pentosyltransferase,C0003765,arginine
+l_carnitine,L-Carnitine,C0023118,,C0087163,levocarnitine
+l_cysteine,L-Cysteine,C0010692,Cystitis,C0010654,cysteine
+l_glutamic_acid,L-Glutamic Acid,C0017792,,C0061472,glutamic acid
+l_glutamine,L-Glutamine,C0017765,Glucosides,C0017797,glutamine
+l_glycine,L-Glycine,C0017890,glycine,C0017890,glycine
+l_isoleucine,L-Isoleucine,C0022100,Irrigation,C0022192,isoleucine
+l_leucine,L-Leucine,C0023492,"Leukemia, T-Cell",C0023401,leucine
+l_lysine,L-Lysine,C0024228,Lymphatic Diseases,C0024337,lysine
+l_ornithine,L-Ornithine,C0029235,Organism,C0029277,ornithine
+l_proline,L-Proline,C0033306,Progestins,C0033382,proline
+l_theanine,L-Theanine,C0076979,tri-(deoxyguanylic acid-deoxycytidylic acid),C0076380,theanine
+l_threonine,L-Threonine,C0035512,,C0040005,threonine
+l_tryptophan,L-Tryptophan,C0041081,Triosil,C0041249,tryptophan
+l_tyrosine,L-Tyrosine,C0041408,Turner Syndrome,C0041485,tyrosine
+l_valine,L-Valine,C0042346,,C0042285,valine
+lycopene,Lycopene,C0079196,,C0065331,lycopene
+lysozyme,Lysozyme,C0024245,,C3541379,lysozyme
+magnesium,Magnesium,C0024389,,C0024467,magnesium
+manganese,Manganese,C0024744,Mannose-6-Phosphate Isomerase,C0024706,manganese
+melatonin,Melatonin,C0025195,Melanesia,C0025219,melatonin
+milk_thistle,Milk Thistle,C0037536,oxacillin sodium,C0331428,Milk Thistle
+molybdenum,Molybdenum,C0026375,,C0026402,molybdenum
+myricetin,Myricetin,(null),(none),C0067067,myricetin
+myristic_acid,Myristic Acid,C0369248,Blood group antigen G (substance),C0027138,myristic acid
+nattokinase,Nattokinase,C1138205,RI-26 peptide,C0131956,nattokinase
+octacosanol,Octacosanol,C0072695,,C0044548,1-octacosanol
+oleuropein,Oleuropein,C0066503,mica,C0069413,oleuropein
+omega_3,Omega-3 Fatty Acids,C0032908,,C0015689,omega-3 fatty acids
+perilla_oil,Perilla Oil,C0950252,"limonene, (+)- [d-limonene]",C0070421,perilla seed oil
+phosphatidylinositol,Phosphatidylinositol,C0031517,,C0031621,phosphatidylinositols
+phosphatidylserine,Phosphatidylserine,C0079825,,C0301704,phosphatidylserine
+phosphorus,Phosphorus,C0031521,Exophiala dermatitidis,C0031705,phosphorus
+pine_bark_extract,Pine Bark Extract,C1171396,,C0872909,pine bark extract
+policosanol,Policosanol,C0072689,,C0215278,policosanol
+polygodial,Polygodial,(null),(none),C0071585,polygodial
+prebiotics,Prebiotics,C1704449,Filter (function),C2717875,Prebiotics
+probiotics,Probiotics,C1704436,Peripheral Arterial Diseases,C0525033,Probiotics
+pygeum,Pygeum,C0330996,Acer,C1620942,African Pygeum extract
+quercetin,Quercetin,C0078580,,C0034392,quercetin
+resveratrol,Resveratrol,C0074937,Sankin Precision Acrylic Denture,C0073096,resveratrol
+rhodiola,Rhodiola,C1456394,RXRG gene,C0950013,Rhodiola <Crassulaceae>
+saw_palmetto,Saw Palmetto,C0036143,Salvelinus,C0771607,saw palmetto extract
+selenium,Selenium,C0036641,,C0036581,selenium
+slippery_elm,Slippery Elm,C0597235,,C0330532,Slippery elm
+spirulina,Spirulina,C0246293,,C1095785,Spirulina
+squalene,Squalene,C0038237,,C0038071,squalene
+stearidonic_acid,Stearidonic Acid,C0075622,,C0075197,stearidonic acid
+stinging_nettle,Stinging Nettle,C0242756,Titan,C1618310,stinging nettle extract
+sulforaphane,Sulforaphane,C0162315,,C5545155,(+-)-sulforaphane
+superoxide_dismutase,Superoxide Dismutase (SOD),C0039082,Syndrome,C0038838,superoxide dismutase
+taurine,Taurine,C0039324,,C0039350,taurine
+thyme_extract,Thyme Extract,(null),(none),C3541308,Thymus vulgaris whole extract
+tmg_betaine,TMG (Trimethylglycine),C0052827,Azure B,C0005304,betaine
+turmeric,Turmeric,C0209960,,C0077524,turmeric extract
+uridine_monophosphate,Uridine-5'-Monophosphate,(null),(none),C0042002,Uridine Monophosphate
+vanadium,Vanadium,C0042285,valine,C0042306,vanadium
+vanadyl_sulfate,Vanadyl Sulfate,C0042282,Valgus deformity,C0078023,vanadyl sulfate
+zinc,Zinc,C0043539,Zygomatic bone,C0043481,zinc
