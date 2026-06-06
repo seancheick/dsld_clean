@@ -35,6 +35,28 @@ Test files added: `test_iqm_score_invariants.py`, `test_iqm_unspecified_form_flo
 | 8 | Identifiers | **121 CUIs corrected/populated via UMLS** (systemic corruption) | correctness |
 | 9 | Identifiers | **82 RxCUIs corrected + 5 nulled via RxNorm** (systemic corruption) | correctness |
 | 10 | Fatty acids | dha/epa/fish_oil/ceramides/hemp_seed_oil unspecified 10→8 (above-specific inversion) | down |
+| 11 | Review feedback | null 5 salt-only RxCUIs on broad parents; unspecified oils → 8/false/8; fix selenium CSV dup | mixed |
+| 12 | Unspecified (file-wide) | drop natural bonus on all 46 remaining `(unspecified)` forms (undisclosed form ≠ natural) | down |
+| 13 | Consistency | magnesium glycinate (under l_glycine) + liposomal curcumin natural→false (match canonical parent) | down |
+
+### Clean scans (no action — confirmed not bugs)
+- `absorption_structured`: apparent quality↔value/bio "mismatches" are the intended
+  design — `bio_score` is *relative within the nutrient*, `quality`/`value` are
+  *absolute* (e.g. chromium picolinate bio 14 = best chromium form, quality poor /
+  0.028 = chromium is poorly absorbed in absolute terms).
+- bio_score=15 ceiling (42 forms): all branded/clinically-defined premium forms
+  (Bacognize, Longvida, Niagen, LGG, BB536, CNCM I-745, krill phospholipid, P5P,
+  zinc carnosine…) — justified per "exact branded forms can score high".
+- `coenzymated_complex` (bio 14/17): notes carry a real absorption rationale
+  (pre-converted active forms); coenzyme forms are the food-occurring forms, so
+  natural=true is defensible. Left unchanged (flagged, not a clear bug).
+
+### Status: mechanical / structural-consistency / identifier audit COMPLETE
+All clear, evidence-grounded bug classes are fixed across ALL categories
+(score-formula, identifier junk/format/dup/**systemic corruption**, unspecified
+calibration + natural-bonus, alias hijacks/foreign aliases, fatty-acid inversions,
+cross-parent natural consistency, absorption-structured consistency, premium ceiling).
+**56 tests passing.**
 
 ### Headline finding — systemic identifier corruption (batches 8 & 9)
 A full UMLS/RxNorm audit of every stored identifier found the `cui` and `rxcui`
