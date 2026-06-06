@@ -3,7 +3,7 @@
             "standard_name": "Vitamin A",
             "category": "vitamins",
             "cui": "C0042839",
-            "rxcui": "11149",
+            "rxcui": "11246",
             "forms": {
                   "provitamin A carotenoids (unspecified)": {
                         "bio_score": 4,
@@ -380,13 +380,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'vitamin A' (rxnav.nlm.nih.gov, 2026-06-06); prior 11149 mapped to a different concept"
       },
       "vitamin_b1_thiamine": {
             "standard_name": "Vitamin B1 (Thiamine)",
             "category": "vitamins",
             "cui": "C0039840",
-            "rxcui": "10405",
+            "rxcui": "10454",
             "forms": {
                   "thiamine disulfide": {
                         "bio_score": 8,
@@ -750,13 +751,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'thiamine' (rxnav.nlm.nih.gov, 2026-06-06); prior 10405 mapped to a different concept"
       },
       "vitamin_b2_riboflavin": {
             "standard_name": "Vitamin B2 (Riboflavin)",
             "category": "vitamins",
             "cui": "C0035527",
-            "rxcui": "9220",
+            "rxcui": "9346",
             "forms": {
                   "riboflavin-5-phosphate": {
                         "bio_score": 14,
@@ -955,7 +957,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'riboflavin' (rxnav.nlm.nih.gov, 2026-06-06); prior 9220 mapped to a different concept"
       },
       "vitamin_b3_niacin": {
             "standard_name": "Vitamin B3 (Niacin)",
@@ -1239,7 +1242,7 @@
             "standard_name": "Vitamin B5 (Pantothenic Acid)",
             "category": "vitamins",
             "cui": "C0030342",
-            "rxcui": "7953",
+            "rxcui": "7891",
             "forms": {
                   "calcium pantothenate": {
                         "bio_score": 12,
@@ -1477,13 +1480,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'pantothenic acid' (rxnav.nlm.nih.gov, 2026-06-06); prior 7953 mapped to a different concept"
       },
       "vitamin_b6_pyridoxine": {
             "standard_name": "Vitamin B6 (Pyridoxine)",
             "category": "vitamins",
             "cui": "C0034274",
-            "rxcui": "8807",
+            "rxcui": "203164",
             "forms": {
                   "pyridoxal-5-phosphate (P5P)": {
                         "bio_score": 14,
@@ -1708,13 +1712,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'pyridoxine hydrochloride' (rxnav.nlm.nih.gov, 2026-06-06); prior 8807 mapped to a different concept"
       },
       "vitamin_b7_biotin": {
             "standard_name": "Vitamin B7 (Biotin)",
             "category": "vitamins",
             "cui": "C0005575",
-            "rxcui": "1596",
+            "rxcui": "1588",
             "forms": {
                   "d-biotin": {
                         "bio_score": 12,
@@ -1906,7 +1911,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'biotin' (rxnav.nlm.nih.gov, 2026-06-06); prior 1596 mapped to a different concept"
       },
       "vitamin_b9_folate": {
             "standard_name": "Vitamin B9 (Folate)",
@@ -2293,7 +2299,7 @@
             "standard_name": "Vitamin B12",
             "category": "vitamins",
             "cui": "C0042845",
-            "rxcui": "2626",
+            "rxcui": "11248",
             "forms": {
                   "methylcobalamin sublingual": {
                         "bio_score": 15,
@@ -2483,7 +2489,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'vitamin B12' (rxnav.nlm.nih.gov, 2026-06-06); prior 2626 mapped to a different concept"
       },
       "vitamin_c": {
             "standard_name": "Vitamin C",
@@ -3006,7 +3013,7 @@
             "standard_name": "Vitamin D",
             "category": "vitamins",
             "cui": "C0042866",
-            "rxcui": "11148",
+            "rxcui": "11253",
             "forms": {
                   "cholecalciferol (D3)": {
                         "bio_score": 12,
@@ -3401,13 +3408,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'vitamin D' (rxnav.nlm.nih.gov, 2026-06-06); prior 11148 mapped to a different concept"
       },
       "vitamin_e": {
             "standard_name": "Vitamin E",
             "category": "vitamins",
             "cui": "C0042874",
-            "rxcui": "11150",
+            "rxcui": "11256",
             "forms": {
                   "mixed tocopherols": {
                         "bio_score": 12,
@@ -3801,13 +3809,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'vitamin E' (rxnav.nlm.nih.gov, 2026-06-06); prior 11150 mapped to a different concept"
       },
       "vitamin_k": {
             "standard_name": "Vitamin K",
             "category": "vitamins",
             "cui": "C0042878",
-            "rxcui": "11151",
+            "rxcui": "11258",
             "forms": {
                   "menaquinone-7 (MK-7)": {
                         "bio_score": 12,
@@ -4214,13 +4223,14 @@
             "aliases": [
                   "K2 Vital Delta",
                   "K2VITAL Delta"
-            ]
+            ],
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'vitamin K' (rxnav.nlm.nih.gov, 2026-06-06); prior 11151 mapped to a different concept"
       },
       "calcium": {
             "standard_name": "Calcium",
             "category": "minerals",
             "cui": "C0006675",
-            "rxcui": "1898",
+            "rxcui": "1895",
             "rda_ul_ref": "Calcium",
             "forms": {
                   "calcium citrate": {
@@ -4673,7 +4683,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'calcium' (rxnav.nlm.nih.gov, 2026-06-06); prior 1898 mapped to a different concept"
       },
       "phosphorus": {
             "standard_name": "Phosphorus",
@@ -4748,7 +4759,7 @@
             "standard_name": "Magnesium",
             "category": "minerals",
             "cui": "C0024467",
-            "rxcui": "1312",
+            "rxcui": "6574",
             "rda_ul_ref": "Magnesium",
             "forms": {
                   "magnesium glycinate": {
@@ -5109,7 +5120,8 @@
             "aliases": [
                   "Magnesium Chelate"
             ],
-            "cui_note": "Corrected & verified via UMLS to 'magnesium' (uts.nlm.nih.gov, 2026-06-06); prior C0024389 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'magnesium' (uts.nlm.nih.gov, 2026-06-06); prior C0024389 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'magnesium' (rxnav.nlm.nih.gov, 2026-06-06); prior 1312 mapped to a different concept"
       },
       "iron": {
             "standard_name": "Iron",
@@ -5440,7 +5452,7 @@
             "standard_name": "Zinc",
             "category": "minerals",
             "cui": "C0043481",
-            "rxcui": "2078",
+            "rxcui": "11416",
             "rda_ul_ref": "Zinc",
             "forms": {
                   "zinc carnosine": {
@@ -5689,7 +5701,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'zinc' (uts.nlm.nih.gov, 2026-06-06); prior C0043539 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'zinc' (uts.nlm.nih.gov, 2026-06-06); prior C0043539 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'zinc' (rxnav.nlm.nih.gov, 2026-06-06); prior 2078 mapped to a different concept"
       },
       "slippery_elm": {
             "standard_name": "Slippery Elm",
@@ -5819,7 +5832,7 @@
             "standard_name": "Selenium",
             "category": "minerals",
             "cui": "C0036581",
-            "rxcui": "9010",
+            "rxcui": null,
             "rda_ul_ref": "Selenium",
             "forms": {
                   "selenomethionine": {
@@ -6202,13 +6215,14 @@
             "aliases": [
                   "SelenoExcell"
             ],
-            "cui_note": "Corrected & verified via UMLS to 'selenium' (uts.nlm.nih.gov, 2026-06-06); prior C0036641 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'selenium' (uts.nlm.nih.gov, 2026-06-06); prior C0036641 mapped to an unrelated concept",
+            "rxcui_note": "prior 9010 mapped to pyrimethamine (incorrect); no clean elemental-selenium RxNorm ingredient"
       },
       "astaxanthin": {
             "standard_name": "Astaxanthin",
             "category": "antioxidants",
             "cui": "C0052565",
-            "rxcui": "1165380",
+            "rxcui": "18451",
             "forms": {
                   "natural astaxanthin (haematococcus pluvialis)": {
                         "bio_score": 12,
@@ -6319,7 +6333,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'astaxanthin' (uts.nlm.nih.gov, 2026-06-06); prior C0162316 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'astaxanthin' (uts.nlm.nih.gov, 2026-06-06); prior C0162316 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'astaxanthin' (rxnav.nlm.nih.gov, 2026-06-06); prior 1165380 mapped to a different concept"
       },
       "citrus_bioflavonoids": {
             "standard_name": "Citrus Bioflavonoids",
@@ -6494,7 +6509,7 @@
             "standard_name": "Creatine Monohydrate",
             "category": "other",
             "cui": "C0873188",
-            "rxcui": "2231",
+            "rxcui": "1310467",
             "forms": {
                   "creatine monohydrate": {
                         "bio_score": 14,
@@ -6635,7 +6650,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'creatine monohydrate' (uts.nlm.nih.gov, 2026-06-06); prior C0079823 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'creatine monohydrate' (uts.nlm.nih.gov, 2026-06-06); prior C0079823 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'creatine monohydrate' (rxnav.nlm.nih.gov, 2026-06-06); prior 2231 mapped to a different concept"
       },
       "hmb": {
             "standard_name": "β-Hydroxy β-Methylbutyrate",
@@ -7061,7 +7077,7 @@
             "standard_name": "Saw Palmetto",
             "category": "herbs",
             "cui": "C0771607",
-            "rxcui": "11187",
+            "rxcui": "236344",
             "scientific_name": "Serenoa repens",
             "forms": {
                   "liposomal saw palmetto": {
@@ -7377,7 +7393,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'saw palmetto extract' (uts.nlm.nih.gov, 2026-06-06); prior C0036143 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'saw palmetto extract' (uts.nlm.nih.gov, 2026-06-06); prior C0036143 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'saw palmetto extract' (rxnav.nlm.nih.gov, 2026-06-06); prior 11187 mapped to a different concept"
       },
       "stinging_nettle": {
             "standard_name": "Stinging Nettle",
@@ -7553,7 +7570,7 @@
             "standard_name": "Vanadyl Sulfate",
             "category": "minerals",
             "cui": "C0078023",
-            "rxcui": "11253",
+            "rxcui": "39364",
             "forms": {
                   "vanadyl sulfate (VOSO4)": {
                         "bio_score": 12,
@@ -7652,13 +7669,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'vanadyl sulfate' (uts.nlm.nih.gov, 2026-06-06); prior C0042282 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'vanadyl sulfate' (uts.nlm.nih.gov, 2026-06-06); prior C0042282 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'vanadyl sulfate' (rxnav.nlm.nih.gov, 2026-06-06); prior 11253 mapped to a different concept"
       },
       "inositol": {
             "standard_name": "Inositol",
             "category": "other",
             "cui": "C0021547",
-            "rxcui": "5813",
+            "rxcui": "5833",
             "forms": {
                   "myo-inositol": {
                         "bio_score": 10,
@@ -7780,13 +7798,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'inositol' (uts.nlm.nih.gov, 2026-06-06); prior C0021641 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'inositol' (uts.nlm.nih.gov, 2026-06-06); prior C0021641 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'inositol' (rxnav.nlm.nih.gov, 2026-06-06); prior 5813 mapped to a different concept"
       },
       "copper": {
             "standard_name": "Copper",
             "category": "minerals",
             "cui": "C0009968",
-            "rxcui": "3002",
+            "rxcui": "2837",
             "rda_ul_ref": "Copper",
             "forms": {
                   "copper bisglycinate": {
@@ -8015,13 +8034,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'copper' (uts.nlm.nih.gov, 2026-06-06); prior C0010175 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'copper' (uts.nlm.nih.gov, 2026-06-06); prior C0010175 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'copper' (rxnav.nlm.nih.gov, 2026-06-06); prior 3002 mapped to a different concept"
       },
       "chromium": {
             "standard_name": "Chromium",
             "category": "minerals",
             "cui": "C0008574",
-            "rxcui": "2403",
+            "rxcui": "2496",
             "rda_ul_ref": "Chromium",
             "forms": {
                   "chromium picolinate": {
@@ -8252,7 +8272,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'chromium' (uts.nlm.nih.gov, 2026-06-06); prior C0008670 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'chromium' (uts.nlm.nih.gov, 2026-06-06); prior C0008670 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'chromium' (rxnav.nlm.nih.gov, 2026-06-06); prior 2403 mapped to a different concept"
       },
       "iodine": {
             "standard_name": "Iodine",
@@ -8362,7 +8383,7 @@
             "standard_name": "Manganese",
             "category": "minerals",
             "cui": "C0024706",
-            "rxcui": "23003",
+            "rxcui": "6623",
             "rda_ul_ref": "Manganese",
             "forms": {
                   "manganese bisglycinate": {
@@ -8794,13 +8815,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'manganese' (uts.nlm.nih.gov, 2026-06-06); prior C0024744 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'manganese' (uts.nlm.nih.gov, 2026-06-06); prior C0024744 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'manganese' (rxnav.nlm.nih.gov, 2026-06-06); prior 23003 mapped to a different concept"
       },
       "molybdenum": {
             "standard_name": "Molybdenum",
             "category": "minerals",
             "cui": "C0026402",
-            "rxcui": "6676",
+            "rxcui": "7024",
             "rda_ul_ref": "Molybdenum",
             "forms": {
                   "molybdenum glycinate": {
@@ -8980,13 +9002,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'molybdenum' (uts.nlm.nih.gov, 2026-06-06); prior C0026375 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'molybdenum' (uts.nlm.nih.gov, 2026-06-06); prior C0026375 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'molybdenum' (rxnav.nlm.nih.gov, 2026-06-06); prior 6676 mapped to a different concept"
       },
       "boron": {
             "standard_name": "Boron",
             "category": "minerals",
             "cui": "C0006030",
-            "rxcui": "19718",
+            "rxcui": "1705",
             "rda_ul_ref": "Boron",
             "forms": {
                   "boron glycinate": {
@@ -9192,7 +9215,8 @@
                   "bororganic glycine"
             ],
             "last_updated": "2026-02-18",
-            "cui_note": "Corrected & verified via UMLS to 'boron' (uts.nlm.nih.gov, 2026-06-06); prior C0006057 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'boron' (uts.nlm.nih.gov, 2026-06-06); prior C0006057 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'boron' (rxnav.nlm.nih.gov, 2026-06-06); prior 19718 mapped to a different concept"
       },
       "vanadium": {
             "standard_name": "Vanadium",
@@ -9380,7 +9404,7 @@
             "standard_name": "Potassium",
             "category": "minerals",
             "cui": "C0032821",
-            "rxcui": "8229",
+            "rxcui": "8588",
             "rda_ul_ref": "Potassium",
             "forms": {
                   "potassium citrate": {
@@ -9610,13 +9634,14 @@
             },
             "aliases": [
                   "potassium sulfate"
-            ]
+            ],
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'potassium' (rxnav.nlm.nih.gov, 2026-06-06); prior 8229 mapped to a different concept"
       },
       "omega_3": {
             "standard_name": "Omega-3 Fatty Acids",
             "category": "fatty_acids",
             "cui": "C0015689",
-            "rxcui": "1004383",
+            "rxcui": "4301",
             "forms": {
                   "omega-3 phospholipid (krill oil)": {
                         "bio_score": 15,
@@ -9865,13 +9890,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'omega-3 fatty acids' (uts.nlm.nih.gov, 2026-06-06); prior C0032908 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'omega-3 fatty acids' (uts.nlm.nih.gov, 2026-06-06); prior C0032908 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'omega-3 fatty acids' (rxnav.nlm.nih.gov, 2026-06-06); prior 1004383 mapped to a different concept"
       },
       "coq10": {
             "standard_name": "Coenzyme Q10",
             "category": "antioxidants",
             "cui": "C0041536",
-            "rxcui": "309268",
+            "rxcui": "21406",
             "forms": {
                   "ubiquinol crystal-free": {
                         "bio_score": 15,
@@ -10121,13 +10147,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'ubidecarenone' (uts.nlm.nih.gov, 2026-06-06); prior C0009384 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'ubidecarenone' (uts.nlm.nih.gov, 2026-06-06); prior C0009384 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'ubidecarenone' (rxnav.nlm.nih.gov, 2026-06-06); prior 309268 mapped to a different concept"
       },
       "pqq": {
             "standard_name": "PQQ (Pyrroloquinoline Quinone)",
             "category": "antioxidants",
             "cui": "C0077177",
-            "rxcui": "1116067",
+            "rxcui": null,
             "forms": {
                   "disodium PQQ": {
                         "bio_score": 12,
@@ -10320,7 +10347,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "prior 1116067 unverifiable via RxNorm (no concept name); cleared pending verification"
       },
       "curcumin": {
             "standard_name": "Curcumin",
@@ -10659,7 +10687,7 @@
             "standard_name": "Glutathione",
             "category": "antioxidants",
             "cui": "C0017817",
-            "rxcui": "3586",
+            "rxcui": "4890",
             "forms": {
                   "liposomal glutathione": {
                         "bio_score": 14,
@@ -10850,7 +10878,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'glutathione' (uts.nlm.nih.gov, 2026-06-06); prior C0018150 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'glutathione' (uts.nlm.nih.gov, 2026-06-06); prior C0018150 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'glutathione' (rxnav.nlm.nih.gov, 2026-06-06); prior 3586 mapped to a different concept"
       },
       "glutathione_peroxidase": {
             "standard_name": "Glutathione Peroxidase",
@@ -12678,7 +12707,7 @@
             "standard_name": "Choline",
             "category": "other",
             "cui": "C0008405",
-            "rxcui": "2079",
+            "rxcui": "1425426",
             "rda_ul_ref": "Choline",
             "forms": {
                   "alpha-GPC": {
@@ -12922,13 +12951,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'choline' (uts.nlm.nih.gov, 2026-06-06); prior C0008489 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'choline' (uts.nlm.nih.gov, 2026-06-06); prior C0008489 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'choline chloride' (rxnav.nlm.nih.gov, 2026-06-06); prior 2079 mapped to a different concept"
       },
       "phosphatidylserine": {
             "standard_name": "Phosphatidylserine",
             "category": "fatty_acids",
             "cui": "C0301704",
-            "rxcui": "8651",
+            "rxcui": "89959",
             "forms": {
                   "sunflower phosphatidylserine": {
                         "bio_score": 13,
@@ -13131,7 +13161,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'phosphatidylserine' (uts.nlm.nih.gov, 2026-06-06); prior C0079825 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'phosphatidylserine' (uts.nlm.nih.gov, 2026-06-06); prior C0079825 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'phosphatidylserine' (rxnav.nlm.nih.gov, 2026-06-06); prior 8651 mapped to a different concept"
       },
       "phosphatidylinositol": {
             "standard_name": "Phosphatidylinositol",
@@ -13182,7 +13213,7 @@
             "standard_name": "Taurine",
             "category": "amino_acids",
             "cui": "C0039350",
-            "rxcui": "10335",
+            "rxcui": "10337",
             "forms": {
                   "taurine (generic)": {
                         "bio_score": 14,
@@ -13386,7 +13417,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'taurine' (uts.nlm.nih.gov, 2026-06-06); prior C0039324 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'taurine' (uts.nlm.nih.gov, 2026-06-06); prior C0039324 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'taurine' (rxnav.nlm.nih.gov, 2026-06-06); prior 10335 mapped to a different concept"
       },
       "ergothioneine": {
             "standard_name": "Ergothioneine",
@@ -13459,7 +13491,7 @@
             "standard_name": "L-Carnitine",
             "category": "amino_acids",
             "cui": "C0087163",
-            "rxcui": "20279",
+            "rxcui": "1426681",
             "forms": {
                   "liposomal l-carnitine": {
                         "score": 14,
@@ -13717,13 +13749,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'levocarnitine' (uts.nlm.nih.gov, 2026-06-06); prior C0023118 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'levocarnitine' (uts.nlm.nih.gov, 2026-06-06); prior C0023118 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'levocarnitine hydrochloride' (rxnav.nlm.nih.gov, 2026-06-06); prior 20279 mapped to a different concept"
       },
       "tmg_betaine": {
             "standard_name": "TMG (Trimethylglycine)",
             "category": "amino_acids",
             "cui": "C0005304",
-            "rxcui": "35301",
+            "rxcui": "1512",
             "forms": {
                   "betaine anhydrous": {
                         "score": 13,
@@ -13965,13 +13998,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'betaine' (uts.nlm.nih.gov, 2026-06-06); prior C0052827 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'betaine' (uts.nlm.nih.gov, 2026-06-06); prior C0052827 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'betaine' (rxnav.nlm.nih.gov, 2026-06-06); prior 35301 mapped to a different concept"
       },
       "l_glutamine": {
             "standard_name": "L-Glutamine",
             "category": "amino_acids",
             "cui": "C0017797",
-            "rxcui": "4850",
+            "rxcui": "4885",
             "forms": {
                   "l-glutamine powder": {
                         "bio_score": 14,
@@ -14100,13 +14134,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'glutamine' (uts.nlm.nih.gov, 2026-06-06); prior C0017765 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'glutamine' (uts.nlm.nih.gov, 2026-06-06); prior C0017765 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'glutamine' (rxnav.nlm.nih.gov, 2026-06-06); prior 4850 mapped to a different concept"
       },
       "l_arginine": {
             "standard_name": "L-Arginine",
             "category": "amino_acids",
             "cui": "C0003765",
-            "rxcui": "16478",
+            "rxcui": "1091",
             "forms": {
                   "l-arginine akG": {
                         "bio_score": 14,
@@ -14231,13 +14266,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'arginine' (uts.nlm.nih.gov, 2026-06-06); prior C0030897 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'arginine' (uts.nlm.nih.gov, 2026-06-06); prior C0030897 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'arginine' (rxnav.nlm.nih.gov, 2026-06-06); prior 16478 mapped to a different concept"
       },
       "l_lysine": {
             "standard_name": "L-Lysine",
             "category": "amino_acids",
             "cui": "C0024337",
-            "rxcui": "6386",
+            "rxcui": "1314248",
             "forms": {
                   "l-lysine hcl": {
                         "bio_score": 14,
@@ -14335,13 +14371,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'lysine' (uts.nlm.nih.gov, 2026-06-06); prior C0024228 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'lysine' (uts.nlm.nih.gov, 2026-06-06); prior C0024228 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'lysine monohydrate' (rxnav.nlm.nih.gov, 2026-06-06); prior 6386 mapped to a different concept"
       },
       "l_tyrosine": {
             "standard_name": "L-Tyrosine",
             "category": "amino_acids",
             "cui": "C0041485",
-            "rxcui": "7231",
+            "rxcui": "10962",
             "forms": {
                   "n-acetyl l-tyrosine": {
                         "bio_score": 15,
@@ -14437,13 +14474,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'tyrosine' (uts.nlm.nih.gov, 2026-06-06); prior C0041408 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'tyrosine' (uts.nlm.nih.gov, 2026-06-06); prior C0041408 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'tyrosine' (rxnav.nlm.nih.gov, 2026-06-06); prior 7231 mapped to a different concept"
       },
       "l_cysteine": {
             "standard_name": "L-Cysteine",
             "category": "amino_acids",
             "cui": "C0010654",
-            "rxcui": "4105",
+            "rxcui": "3024",
             "forms": {
                   "l-cysteine base": {
                         "bio_score": 12,
@@ -14488,13 +14526,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'cysteine' (uts.nlm.nih.gov, 2026-06-06); prior C0010692 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'cysteine' (uts.nlm.nih.gov, 2026-06-06); prior C0010692 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'cysteine' (rxnav.nlm.nih.gov, 2026-06-06); prior 4105 mapped to a different concept"
       },
       "l_proline": {
             "standard_name": "L-Proline",
             "category": "amino_acids",
             "cui": "C0033382",
-            "rxcui": "6918",
+            "rxcui": "8737",
             "forms": {
                   "l-proline powder": {
                         "bio_score": 14,
@@ -14586,13 +14625,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'proline' (uts.nlm.nih.gov, 2026-06-06); prior C0033306 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'proline' (uts.nlm.nih.gov, 2026-06-06); prior C0033306 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'proline' (rxnav.nlm.nih.gov, 2026-06-06); prior 6918 mapped to a different concept"
       },
       "l_glycine": {
             "standard_name": "L-Glycine",
             "category": "amino_acids",
             "cui": "C0017890",
-            "rxcui": "5691",
+            "rxcui": "4919",
             "forms": {
                   "l-glycine powder": {
                         "bio_score": 14,
@@ -14698,13 +14738,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'glycine' (uts.nlm.nih.gov, 2026-06-06); prior C0017890 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'glycine' (uts.nlm.nih.gov, 2026-06-06); prior C0017890 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'glycine' (rxnav.nlm.nih.gov, 2026-06-06); prior 5691 mapped to a different concept"
       },
       "l_alanine": {
             "standard_name": "L-Alanine",
             "category": "amino_acids",
             "cui": "C0001898",
-            "rxcui": "206",
+            "rxcui": "426",
             "forms": {
                   "l-alanine standard": {
                         "bio_score": 12,
@@ -14742,13 +14783,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-02-12"
             },
-            "cui_note": "Corrected & verified via UMLS to 'alanine' (uts.nlm.nih.gov, 2026-06-06); prior C0001896 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'alanine' (uts.nlm.nih.gov, 2026-06-06); prior C0001896 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'alanine' (rxnav.nlm.nih.gov, 2026-06-06); prior 206 mapped to a different concept"
       },
       "l_histidine": {
             "standard_name": "L-Histidine",
             "category": "amino_acids",
             "cui": "C0019602",
-            "rxcui": "5324",
+            "rxcui": "5340",
             "forms": {
                   "l-histidine standard": {
                         "bio_score": 12,
@@ -14785,13 +14827,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-02-12"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'histidine' (rxnav.nlm.nih.gov, 2026-06-06); prior 5324 mapped to a different concept"
       },
       "l_serine": {
             "standard_name": "L-Serine",
             "category": "amino_acids",
             "cui": "C0036720",
-            "rxcui": "10142",
+            "rxcui": "9671",
             "forms": {
                   "l-serine standard": {
                         "bio_score": 12,
@@ -14827,13 +14870,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-02-12"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'serine' (rxnav.nlm.nih.gov, 2026-06-06); prior 10142 mapped to a different concept"
       },
       "l_glutamic_acid": {
             "standard_name": "L-Glutamic Acid",
             "category": "amino_acids",
             "cui": "C0061472",
-            "rxcui": "4851",
+            "rxcui": "25916",
             "forms": {
                   "l-glutamic acid standard": {
                         "bio_score": 11,
@@ -14871,13 +14915,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-02-12"
             },
-            "cui_note": "Corrected & verified via UMLS to 'glutamic acid' (uts.nlm.nih.gov, 2026-06-06); prior C0017792 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'glutamic acid' (uts.nlm.nih.gov, 2026-06-06); prior C0017792 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'glutamic acid' (rxnav.nlm.nih.gov, 2026-06-06); prior 4851 mapped to a different concept"
       },
       "l_ornithine": {
             "standard_name": "L-Ornithine",
             "category": "amino_acids",
             "cui": "C0029277",
-            "rxcui": "7834",
+            "rxcui": "314709",
             "forms": {
                   "l-ornithine standard": {
                         "bio_score": 12,
@@ -14915,7 +14960,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-02-12"
             },
-            "cui_note": "Corrected & verified via UMLS to 'ornithine' (uts.nlm.nih.gov, 2026-06-06); prior C0029235 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'ornithine' (uts.nlm.nih.gov, 2026-06-06); prior C0029235 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'ornithine, (L)-isomer' (rxnav.nlm.nih.gov, 2026-06-06); prior 7834 mapped to a different concept"
       },
       "d_aspartic_acid": {
             "standard_name": "D-Aspartic Acid",
@@ -14970,7 +15016,7 @@
             "standard_name": "L-Tryptophan",
             "category": "amino_acids",
             "cui": "C0041249",
-            "rxcui": "7057",
+            "rxcui": "10898",
             "forms": {
                   "l-tryptophan powder": {
                         "bio_score": 14,
@@ -15060,13 +15106,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'tryptophan' (uts.nlm.nih.gov, 2026-06-06); prior C0041081 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'tryptophan' (uts.nlm.nih.gov, 2026-06-06); prior C0041081 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'tryptophan' (rxnav.nlm.nih.gov, 2026-06-06); prior 7057 mapped to a different concept"
       },
       "gaba": {
             "standard_name": "GABA (Gamma-Aminobutyric Acid)",
             "category": "amino_acids",
             "cui": "C0016904",
-            "rxcui": "3264",
+            "rxcui": "4617",
             "forms": {
                   "gaba powder": {
                         "bio_score": 13,
@@ -15180,13 +15227,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'gamma-aminobutyric acid' (uts.nlm.nih.gov, 2026-06-06); prior C0016903 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'gamma-aminobutyric acid' (uts.nlm.nih.gov, 2026-06-06); prior C0016903 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'gamma-aminobutyric acid' (rxnav.nlm.nih.gov, 2026-06-06); prior 3264 mapped to a different concept"
       },
       "beta-alanine": {
             "standard_name": "Beta-Alanine",
             "category": "amino_acids",
             "cui": "C0000392",
-            "rxcui": "1981",
+            "rxcui": "61",
             "forms": {
                   "carnosyn beta-alanine": {
                         "bio_score": 15,
@@ -15260,7 +15308,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'beta-alanine' (uts.nlm.nih.gov, 2026-06-06); prior C0074950 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'beta-alanine' (uts.nlm.nih.gov, 2026-06-06); prior C0074950 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'beta-alanine' (rxnav.nlm.nih.gov, 2026-06-06); prior 1981 mapped to a different concept"
       },
       "lutein": {
             "standard_name": "Lutein",
@@ -15365,7 +15414,7 @@
             "standard_name": "Sulforaphane",
             "category": "antioxidants",
             "cui": "C5545155",
-            "rxcui": "1116060",
+            "rxcui": null,
             "forms": {
                   "stabilized sulforaphane": {
                         "bio_score": 14,
@@ -15559,7 +15608,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to '(+-)-sulforaphane' (uts.nlm.nih.gov, 2026-06-06); prior C0162315 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to '(+-)-sulforaphane' (uts.nlm.nih.gov, 2026-06-06); prior C0162315 mapped to an unrelated concept",
+            "rxcui_note": "prior 1116060 unverifiable via RxNorm (no concept name); cleared pending verification"
       },
       "spirulina": {
             "standard_name": "Spirulina",
@@ -16037,7 +16087,7 @@
             "standard_name": "Hyaluronic Acid",
             "category": "other",
             "cui": "C0020196",
-            "rxcui": "3498",
+            "rxcui": "5463",
             "forms": {
                   "oligosaccharide HA": {
                         "bio_score": 13,
@@ -16285,7 +16335,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'hyaluronic acid' (uts.nlm.nih.gov, 2026-06-06); prior C0010395 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'hyaluronic acid' (uts.nlm.nih.gov, 2026-06-06); prior C0010395 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'hyaluronic acid' (rxnav.nlm.nih.gov, 2026-06-06); prior 3498 mapped to a different concept"
       },
       "alpha_carotene": {
             "standard_name": "Alpha-Carotene",
@@ -16341,7 +16392,7 @@
             "standard_name": "Alpha Lipoic Acid",
             "category": "antioxidants",
             "cui": "C0023791",
-            "rxcui": "19721",
+            "rxcui": "6417",
             "forms": {
                   "R-alpha-lipoic acid": {
                         "bio_score": 13,
@@ -16626,13 +16677,14 @@
                   "R-Alpha Lipoic Acid",
                   "R Alpha Lipoic Acid"
             ],
-            "cui_note": "Corrected & verified via UMLS to 'thioctic acid' (uts.nlm.nih.gov, 2026-06-06); prior C0064585 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'thioctic acid' (uts.nlm.nih.gov, 2026-06-06); prior C0064585 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'thioctic acid' (rxnav.nlm.nih.gov, 2026-06-06); prior 19721 mapped to a different concept"
       },
       "msm": {
             "standard_name": "MSM (Methylsulfonylmethane)",
             "category": "other",
             "cui": "C0078604",
-            "rxcui": "60163",
+            "rxcui": "23247",
             "forms": {
                   "liposomal MSM": {
                         "bio_score": 13,
@@ -16831,13 +16883,14 @@
             },
             "aliases": [
                   "truflex msm"
-            ]
+            ],
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'methylsulfonylmethane' (rxnav.nlm.nih.gov, 2026-06-06); prior 60163 mapped to a different concept"
       },
       "ashwagandha": {
             "standard_name": "Ashwagandha",
             "category": "herbs",
             "cui": "C0613707",
-            "rxcui": "11176",
+            "rxcui": null,
             "forms": {
                   "KSM-66 ashwagandha": {
                         "bio_score": 13,
@@ -17134,7 +17187,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'Ashwagandha preparation' (uts.nlm.nih.gov, 2026-06-06); prior C1170179 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'Ashwagandha preparation' (uts.nlm.nih.gov, 2026-06-06); prior C1170179 mapped to an unrelated concept",
+            "rxcui_note": "prior 11176 unverifiable via RxNorm (no concept name); cleared pending verification"
       },
       "rice_protein": {
             "standard_name": "Rice Protein",
@@ -17424,7 +17478,7 @@
             "standard_name": "Ginkgo",
             "category": "herbs",
             "cui": "C0772125",
-            "rxcui": "12522",
+            "rxcui": "236809",
             "forms": {
                   "liposomal ginkgo": {
                         "bio_score": 12,
@@ -17642,13 +17696,14 @@
             "aliases": [
                   "European Ginkgo biloba Extract"
             ],
-            "cui_note": "Corrected & verified via UMLS to 'Ginkgo biloba extract' (uts.nlm.nih.gov, 2026-06-06); prior C0017574 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'Ginkgo biloba extract' (uts.nlm.nih.gov, 2026-06-06); prior C0017574 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'Ginkgo biloba extract' (rxnav.nlm.nih.gov, 2026-06-06); prior 12522 mapped to a different concept"
       },
       "milk_thistle": {
             "standard_name": "Milk Thistle",
             "category": "herbs",
             "cui": "C0331428",
-            "rxcui": "11188",
+            "rxcui": "259274",
             "forms": {
                   "silymarin phytosome": {
                         "bio_score": 13,
@@ -17884,7 +17939,8 @@
             "aliases": [
                   "European Milk Thistle extract"
             ],
-            "cui_note": "Corrected & verified via UMLS to 'Milk Thistle' (uts.nlm.nih.gov, 2026-06-06); prior C0037536 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'Milk Thistle' (uts.nlm.nih.gov, 2026-06-06); prior C0037536 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'milk thistle seed extract' (rxnav.nlm.nih.gov, 2026-06-06); prior 11188 mapped to a different concept"
       },
       "l_theanine": {
             "standard_name": "L-Theanine",
@@ -18452,7 +18508,7 @@
             "standard_name": "Glucosamine",
             "category": "other",
             "cui": "C0017718",
-            "rxcui": "3520",
+            "rxcui": "236608",
             "forms": {
                   "glucosamine hydrochloride": {
                         "bio_score": 13,
@@ -18693,13 +18749,14 @@
                   "truflex glucosamine sulfate",
                   "poly-nag"
             ],
-            "cui_note": "Corrected & verified via UMLS to 'glucosamine' (uts.nlm.nih.gov, 2026-06-06); prior C0017611 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'glucosamine' (uts.nlm.nih.gov, 2026-06-06); prior C0017611 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'glucosamine hydrochloride' (rxnav.nlm.nih.gov, 2026-06-06); prior 3520 mapped to a different concept"
       },
       "chondroitin": {
             "standard_name": "Chondroitin",
             "category": "other",
             "cui": "C0008454",
-            "rxcui": "23874",
+            "rxcui": "2473",
             "forms": {
                   "chondroitin sulfate phytosome": {
                         "bio_score": 12,
@@ -18875,7 +18932,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'Chondroitin' (uts.nlm.nih.gov, 2026-06-06); prior C0008494 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'Chondroitin' (uts.nlm.nih.gov, 2026-06-06); prior C0008494 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'chondroitin sulfates' (rxnav.nlm.nih.gov, 2026-06-06); prior 23874 mapped to a different concept"
       },
       "green_tea_extract": {
             "standard_name": "Green Tea Extract",
@@ -19582,7 +19640,7 @@
             "standard_name": "Ginseng",
             "category": "herbs",
             "cui": "C1119918",
-            "rxcui": "12523",
+            "rxcui": "325526",
             "forms": {
                   "fermented red ginseng": {
                         "bio_score": 13,
@@ -19867,13 +19925,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'ginseng preparation' (uts.nlm.nih.gov, 2026-06-06); prior C0017579 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'ginseng preparation' (uts.nlm.nih.gov, 2026-06-06); prior C0017579 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'ginseng preparation' (rxnav.nlm.nih.gov, 2026-06-06); prior 12523 mapped to a different concept"
       },
       "echinacea": {
             "standard_name": "Echinacea",
             "category": "herbs",
             "cui": "C0752270",
-            "rxcui": "11163",
+            "rxcui": "228041",
             "forms": {
                   "echinacea purpurea extract (4% phenolics)": {
                         "bio_score": 11,
@@ -20120,13 +20179,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'Echinacea preparation' (uts.nlm.nih.gov, 2026-06-06); prior C0013599 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'Echinacea preparation' (uts.nlm.nih.gov, 2026-06-06); prior C0013599 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'Echinacea preparation' (rxnav.nlm.nih.gov, 2026-06-06); prior 11163 mapped to a different concept"
       },
       "turmeric": {
             "standard_name": "Turmeric",
             "category": "herbs",
             "cui": "C0077524",
-            "rxcui": "11178",
+            "rxcui": "1114883",
             "forms": {
                   "turmeric extract (95% curcuminoids)": {
                         "bio_score": 10,
@@ -20377,13 +20437,14 @@
             "contains_aliases": [
                   "turmeric"
             ],
-            "cui_note": "Corrected & verified via UMLS to 'turmeric extract' (uts.nlm.nih.gov, 2026-06-06); prior C0209960 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'turmeric extract' (uts.nlm.nih.gov, 2026-06-06); prior C0209960 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'turmeric extract' (rxnav.nlm.nih.gov, 2026-06-06); prior 11178 mapped to a different concept"
       },
       "garlic": {
             "standard_name": "Garlic",
             "category": "herbs",
             "cui": "C0993630",
-            "rxcui": "12536",
+            "rxcui": "265647",
             "forms": {
                   "aged garlic extract": {
                         "bio_score": 12,
@@ -20622,13 +20683,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'Garlic' (uts.nlm.nih.gov, 2026-06-06); prior C0017076 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'Garlic' (uts.nlm.nih.gov, 2026-06-06); prior C0017076 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'garlic preparation' (rxnav.nlm.nih.gov, 2026-06-06); prior 12536 mapped to a different concept"
       },
       "cranberry": {
             "standard_name": "Cranberry",
             "category": "herbs",
             "cui": "C0453273",
-            "rxcui": "11179",
+            "rxcui": "125933",
             "forms": {
                   "cranberry extract (25% proanthocyanidins)": {
                         "bio_score": 12,
@@ -20800,13 +20862,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'cranberry preparation' (uts.nlm.nih.gov, 2026-06-06); prior C0678177 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'cranberry preparation' (uts.nlm.nih.gov, 2026-06-06); prior C0678177 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'cranberry preparation' (rxnav.nlm.nih.gov, 2026-06-06); prior 11179 mapped to a different concept"
       },
       "bilberry": {
             "standard_name": "Bilberry",
             "category": "herbs",
             "cui": "C0453269",
-            "rxcui": "11155",
+            "rxcui": "125929",
             "forms": {
                   "bilberry extract (25% anthocyanins)": {
                         "bio_score": 12,
@@ -20984,7 +21047,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'bilberry extract' (uts.nlm.nih.gov, 2026-06-06); prior C0281934 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'bilberry extract' (uts.nlm.nih.gov, 2026-06-06); prior C0281934 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'bilberry extract' (rxnav.nlm.nih.gov, 2026-06-06); prior 11155 mapped to a different concept"
       },
       "elderberry": {
             "standard_name": "Elderberry",
@@ -21764,7 +21828,7 @@
             "standard_name": "Lycopene",
             "category": "antioxidants",
             "cui": "C0065331",
-            "rxcui": "1116065",
+            "rxcui": "29008",
             "forms": {
                   "lycopene extract": {
                         "bio_score": 13,
@@ -21833,13 +21897,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'lycopene' (uts.nlm.nih.gov, 2026-06-06); prior C0079196 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'lycopene' (uts.nlm.nih.gov, 2026-06-06); prior C0079196 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'lycopene' (rxnav.nlm.nih.gov, 2026-06-06); prior 1116065 mapped to a different concept"
       },
       "paba": {
             "standard_name": "PABA (Para-Aminobenzoic Acid)",
             "category": "other",
             "cui": "C0030356",
-            "rxcui": "7073",
+            "rxcui": "74",
             "forms": {
                   "paba powder": {
                         "bio_score": 12,
@@ -21895,13 +21960,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to '4-aminobenzoic acid' (rxnav.nlm.nih.gov, 2026-06-06); prior 7073 mapped to a different concept"
       },
       "l_leucine": {
             "standard_name": "L-Leucine",
             "category": "amino_acids",
             "cui": "C0023401",
-            "rxcui": "6179",
+            "rxcui": "6308",
             "forms": {
                   "l-leucine powder": {
                         "bio_score": 14,
@@ -21945,13 +22011,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'leucine' (uts.nlm.nih.gov, 2026-06-06); prior C0023492 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'leucine' (uts.nlm.nih.gov, 2026-06-06); prior C0023492 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'leucine' (rxnav.nlm.nih.gov, 2026-06-06); prior 6179 mapped to a different concept"
       },
       "l_valine": {
             "standard_name": "L-Valine",
             "category": "amino_acids",
             "cui": "C0042285",
-            "rxcui": "7279",
+            "rxcui": "11115",
             "forms": {
                   "l-valine powder": {
                         "bio_score": 13,
@@ -21995,13 +22062,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'valine' (uts.nlm.nih.gov, 2026-06-06); prior C0042346 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'valine' (uts.nlm.nih.gov, 2026-06-06); prior C0042346 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'valine' (rxnav.nlm.nih.gov, 2026-06-06); prior 7279 mapped to a different concept"
       },
       "l_isoleucine": {
             "standard_name": "L-Isoleucine",
             "category": "amino_acids",
             "cui": "C0022192",
-            "rxcui": "6003",
+            "rxcui": "6033",
             "forms": {
                   "l-isoleucine powder": {
                         "bio_score": 13,
@@ -22045,13 +22113,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'isoleucine' (uts.nlm.nih.gov, 2026-06-06); prior C0022100 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'isoleucine' (uts.nlm.nih.gov, 2026-06-06); prior C0022100 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'isoleucine' (rxnav.nlm.nih.gov, 2026-06-06); prior 6003 mapped to a different concept"
       },
       "l_threonine": {
             "standard_name": "L-Threonine",
             "category": "amino_acids",
             "cui": "C0040005",
-            "rxcui": "6991",
+            "rxcui": "10524",
             "forms": {
                   "l-threonine powder": {
                         "bio_score": 13,
@@ -22093,13 +22162,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'threonine' (uts.nlm.nih.gov, 2026-06-06); prior C0035512 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'threonine' (uts.nlm.nih.gov, 2026-06-06); prior C0035512 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'threonine' (rxnav.nlm.nih.gov, 2026-06-06); prior 6991 mapped to a different concept"
       },
       "l_citrulline": {
             "standard_name": "L-Citrulline",
             "category": "amino_acids",
             "cui": "C0008864",
-            "rxcui": "2231",
+            "rxcui": "2567",
             "forms": {
                   "l-citrulline malate": {
                         "bio_score": 15,
@@ -22165,13 +22235,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'citrulline' (rxnav.nlm.nih.gov, 2026-06-06); prior 2231 mapped to a different concept"
       },
       "dmae": {
             "standard_name": "DMAE (Dimethylaminoethanol)",
             "category": "other",
             "cui": "C0011064",
-            "rxcui": "3351",
+            "rxcui": "3116",
             "forms": {
                   "dmae bitartrate": {
                         "bio_score": 12,
@@ -22229,13 +22300,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'deanol' (uts.nlm.nih.gov, 2026-06-06); prior C0001833 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'deanol' (uts.nlm.nih.gov, 2026-06-06); prior C0001833 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'deanol' (rxnav.nlm.nih.gov, 2026-06-06); prior 3351 mapped to a different concept"
       },
       "dhea": {
             "standard_name": "DHEA (Dehydroepiandrosterone)",
             "category": "other",
             "cui": "C0011185",
-            "rxcui": "3310",
+            "rxcui": "3143",
             "forms": {
                   "dhea supplement": {
                         "bio_score": 11,
@@ -22315,13 +22387,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'prasterone' (uts.nlm.nih.gov, 2026-06-06); prior C0011083 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'prasterone' (uts.nlm.nih.gov, 2026-06-06); prior C0011083 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'prasterone' (rxnav.nlm.nih.gov, 2026-06-06); prior 3310 mapped to a different concept"
       },
       "superoxide_dismutase": {
             "standard_name": "Superoxide Dismutase (SOD)",
             "category": "enzymes",
             "cui": "C0038838",
-            "rxcui": "9822",
+            "rxcui": "10245",
             "forms": {
                   "sod supplement": {
                         "bio_score": 10,
@@ -22379,13 +22452,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'superoxide dismutase' (uts.nlm.nih.gov, 2026-06-06); prior C0039082 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'superoxide dismutase' (uts.nlm.nih.gov, 2026-06-06); prior C0039082 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'superoxide dismutase' (rxnav.nlm.nih.gov, 2026-06-06); prior 9822 mapped to a different concept"
       },
       "same": {
             "standard_name": "SAMe (S-Adenosyl-L-Methionine)",
             "category": "other",
             "cui": "C0035911",
-            "rxcui": "7841",
+            "rxcui": "9504",
             "forms": {
                   "same supplement": {
                         "bio_score": 13,
@@ -22443,7 +22517,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'S-adenosylmethionine' (rxnav.nlm.nih.gov, 2026-06-06); prior 7841 mapped to a different concept"
       },
       "rna_dna": {
             "standard_name": "RNA/DNA (Nucleic Acids)",
@@ -22515,7 +22590,7 @@
             "standard_name": "Octacosanol",
             "category": "fatty_acids",
             "cui": "C0044548",
-            "rxcui": "6810",
+            "rxcui": "12166",
             "forms": {
                   "octacosanol supplement": {
                         "bio_score": 11,
@@ -22555,13 +22630,14 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to '1-octacosanol' (uts.nlm.nih.gov, 2026-06-06); prior C0072695 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to '1-octacosanol' (uts.nlm.nih.gov, 2026-06-06); prior C0072695 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to '1-octacosanol' (rxnav.nlm.nih.gov, 2026-06-06); prior 6810 mapped to a different concept"
       },
       "policosanol": {
             "standard_name": "Policosanol",
             "category": "fatty_acids",
             "cui": "C0215278",
-            "rxcui": "7508",
+            "rxcui": "69440",
             "forms": {
                   "sugar cane policosanol": {
                         "bio_score": 12,
@@ -22629,7 +22705,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'policosanol' (uts.nlm.nih.gov, 2026-06-06); prior C0072689 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'policosanol' (uts.nlm.nih.gov, 2026-06-06); prior C0072689 mapped to an unrelated concept",
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'policosanol' (rxnav.nlm.nih.gov, 2026-06-06); prior 7508 mapped to a different concept"
       },
       "eriocitrin": {
             "standard_name": "Eriocitrin",
@@ -22786,7 +22863,7 @@
             "standard_name": "Cryptoxanthin",
             "category": "antioxidants",
             "cui": "C0896117",
-            "rxcui": "1116063",
+            "rxcui": null,
             "forms": {
                   "beta-cryptoxanthin": {
                         "bio_score": 12,
@@ -22826,7 +22903,8 @@
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
             },
-            "cui_note": "Corrected & verified via UMLS to 'Beta-Cryptoxanthin' (uts.nlm.nih.gov, 2026-06-06); prior C0079171 mapped to an unrelated concept"
+            "cui_note": "Corrected & verified via UMLS to 'Beta-Cryptoxanthin' (uts.nlm.nih.gov, 2026-06-06); prior C0079171 mapped to an unrelated concept",
+            "rxcui_note": "prior 1116063 unverifiable via RxNorm (no concept name); cleared pending verification"
       },
       "flavones": {
             "standard_name": "Flavones",
@@ -25206,7 +25284,7 @@
             "severity_level": "none",
             "category": "antioxidants",
             "cui": "C0006644",
-            "rxcui": "2103",
+            "rxcui": "1886",
             "source": "botanical_extract",
             "priority": "high",
             "description": "Standardization marker for botanical extracts",
@@ -25253,7 +25331,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'caffeine' (rxnav.nlm.nih.gov, 2026-06-06); prior 2103 mapped to a different concept"
       },
       "caffeoyl_derivatives": {
             "standard_name": "Caffeoyl Derivatives",
@@ -33366,7 +33445,7 @@
             "standard_name": "Pregnenolone",
             "category": "nutraceuticals",
             "cui": "C0033235",
-            "rxcui": "8588",
+            "rxcui": "114052",
             "forms": {
                   "pregnenolone": {
                         "bio_score": 10,
@@ -33426,7 +33505,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'pregnenolone' (rxnav.nlm.nih.gov, 2026-06-06); prior 8588 mapped to a different concept"
       },
       "berberine_supplement": {
             "standard_name": "Berberine",
@@ -33962,7 +34042,7 @@
             "standard_name": "Vitamin K1",
             "category": "vitamins",
             "cui": "C0031880",
-            "rxcui": "11256",
+            "rxcui": "8308",
             "forms": {
                   "phylloquinone": {
                         "bio_score": 9,
@@ -34022,13 +34102,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'vitamin K1' (rxnav.nlm.nih.gov, 2026-06-06); prior 11256 mapped to a different concept"
       },
       "5_htp": {
             "standard_name": "5-HTP",
             "category": "amino_acid_metabolites",
             "cui": "C0063134",
-            "rxcui": "258326",
+            "rxcui": "94",
             "forms": {
                   "5-htp extract": {
                         "bio_score": 11,
@@ -34084,13 +34165,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to '5-hydroxytryptophan' (rxnav.nlm.nih.gov, 2026-06-06); prior 258326 mapped to a different concept"
       },
       "acetyl_l_carnitine": {
             "standard_name": "Acetyl-L-Carnitine",
             "category": "amino_acid_metabolites",
             "cui": "C0001040",
-            "rxcui": "40799",
+            "rxcui": "193",
             "forms": {
                   "alcar": {
                         "bio_score": 15,
@@ -34156,13 +34238,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'acetylcarnitine' (rxnav.nlm.nih.gov, 2026-06-06); prior 40799 mapped to a different concept"
       },
       "nac": {
             "standard_name": "N-Acetyl Cysteine",
             "category": "amino_acid_antioxidants",
             "cui": "C0001047",
-            "rxcui": "3821",
+            "rxcui": "197",
             "forms": {
                   "nac powder": {
                         "bio_score": 15,
@@ -34220,13 +34303,14 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'acetylcysteine' (rxnav.nlm.nih.gov, 2026-06-06); prior 3821 mapped to a different concept"
       },
       "ginger": {
             "standard_name": "Ginger",
             "category": "herbs",
             "cui": "C0162751",
-            "rxcui": "258322",
+            "rxcui": "285241",
             "forms": {
                   "ginger root powder": {
                         "bio_score": 9,
@@ -34321,7 +34405,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'ginger extract' (rxnav.nlm.nih.gov, 2026-06-06); prior 258322 mapped to a different concept"
       },
       "lions_mane": {
             "standard_name": "Lion's Mane",
@@ -34912,7 +34997,7 @@
             "standard_name": "Psyllium",
             "category": "fibers",
             "cui": "C0453077",
-            "rxcui": "8640",
+            "rxcui": "8928",
             "forms": {
                   "psyllium husk powder": {
                         "bio_score": 11,
@@ -34983,7 +35068,8 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "rxcui_note": "Corrected & verified via RxNorm exact-name match to 'psyllium' (rxnav.nlm.nih.gov, 2026-06-06); prior 8640 mapped to a different concept"
       },
       "beta_glucan": {
             "standard_name": "Beta-Glucan",

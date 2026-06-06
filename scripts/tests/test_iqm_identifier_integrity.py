@@ -138,6 +138,34 @@ class TestVerifiedCuiPinned:
             "\n".join(f"  {k}: {got} != {exp}" for k, got, exp in bad)
 
 
+class TestNoDuplicateRxcui:
+    def test_no_cross_parent_duplicate_rxcui(self, entries):
+        from collections import defaultdict
+        m = defaultdict(list)
+        for k, e in entries.items():
+            if e.get('rxcui'):
+                m[e['rxcui']].append(k)
+        dups = {c: ks for c, ks in m.items() if len(ks) > 1}
+        assert not dups, "Duplicate RxCUI across parents:\n" + \
+            "\n".join(f"  {c}: {ks}" for c, ks in dups.items())
+
+
+# RxNorm-verified RxCUI corrections (sample pins of the systemic re-derivation).
+VERIFIED_RXCUI_CORE = {
+    'vitamin_a': '11246', 'vitamin_b12_cobalamin': '11248', 'zinc': '11416',
+    'copper': '2837', 'chromium': '2496', 'gaba': '4617', 'l_glycine': '4919',
+    'vitamin_k1': '8308', 'caffeine': '1886', 'taurine': '10337',
+}
+
+
+class TestVerifiedRxcuiCorePinned:
+    def test_verified_rxcui_core(self, entries):
+        bad = [(k, entries[k].get('rxcui'), v) for k, v in VERIFIED_RXCUI_CORE.items()
+               if entries[k].get('rxcui') != v]
+        assert not bad, "Verified RxCUI drifted:\n" + \
+            "\n".join(f"  {k}: {got} != {exp}" for k, got, exp in bad)
+
+
 class TestNullIdentifierHasNote:
     def test_null_cui_has_note(self, entries):
         bad = [k for k, e in entries.items()
