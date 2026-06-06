@@ -36475,11 +36475,11 @@
             "rxcui": null,
             "forms": {
                   "standard": {
-                        "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
-                        "absorption": "good",
-                        "notes": "Generic form; adjust when specific form is known.",
+                        "bio_score": 5,
+                        "natural": false,
+                        "score": 5,
+                        "absorption": "unknown",
+                        "notes": "Fully unspecified probiotic (no genus/species/strain); conservative scoring applied to match the (unspecified) convention used across all probiotic parents. Strain identity, CFU, and survivability are scored elsewhere.",
                         "aliases": [
                               "Probiotic",
                               "Probiotic Bacteria"
@@ -36489,8 +36489,8 @@
                               "value": null,
                               "range_low": null,
                               "range_high": null,
-                              "quality": "good",
-                              "notes": "good"
+                              "quality": "unknown",
+                              "notes": "Data not available"
                         }
                   }
             },
