@@ -162,3 +162,16 @@ patented herb extracts scored high for standardization, cordyceps militaris,
 gelatinized maca) — hundreds of scores, a scoring-philosophy change. This is a
 deliberate product decision, not a mechanical bug, so it is left for you/Codex to
 direct rather than swept unilaterally.
+
+## Hybrid calibration converged (batch 17 + final scan)
+- Batch 17: demoted poorly-absorbed flavonoid forms (flavones/flavonols 11→6,
+  eriocitrin 11→7, bioflavonoids hesperidin/citrus/rutin 12/11→8/7, unspecified
+  9→6). PubMed-supported; enhanced forms (Theracurmin, trans-pterostilbene) kept.
+- Final poorly-absorbed-compound scan (curcumin, turmeric, resveratrol, silymarin/
+  milk thistle, boswellia, oleuropein, ellagic acid, olive leaf): no further
+  over-scores — plain forms already low, enhanced/branded forms appropriately high.
+
+Per the agreed decisions: bio_score = HYBRID (applied — clear poorly-absorbed
+non-enhanced forms demoted with evidence; quality-blended scores otherwise kept);
+structural merges = assigned to Codex on live `main`. The audit is complete to the
+extent achievable as clear, evidence-grounded, non-vibes fixes: **17 batches.**
