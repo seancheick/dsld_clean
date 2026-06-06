@@ -175,3 +175,31 @@ Per the agreed decisions: bio_score = HYBRID (applied — clear poorly-absorbed
 non-enhanced forms demoted with evidence; quality-blended scores otherwise kept);
 structural merges = assigned to Codex on live `main`. The audit is complete to the
 extent achievable as clear, evidence-grounded, non-vibes fixes: **17 batches.**
+
+## Hybrid calibration — full convergence (batches 14–18)
+Poorly-absorbed compounds demoted with PubMed evidence + internal-consistency:
+- aglycone/glycoside flavonoids: apigenin, flavones, flavonols, hesperidin, rutin,
+  eriocitrin (batches 14, 17)
+- catechins/EGCG (batch 16); berberine (batch 14)
+- anthocyanins: bilberry, elderberry, cyanidin-3-glucoside (batch 18)
+- quercetin: added evidence-backed phytosome premium form (batch 15)
+
+Final poorly-absorbed scan (boswellia, silymarin, oleuropein, ellagic, isoflavones,
+CoQ10 plain): no further over-scores — plain forms already low / correctly below
+their enhanced forms; CoQ10 oil-softgel (11) sits properly under ubiquinol (13-15).
+
+Citation integrity: all 6 PMIDs cited in the data verified via NCBI E-utilities
+(one fabricated draft PMID was caught and corrected); test_iqm_citations.py pins
+the verified allowlist.
+
+### Out of scope under the agreed HYBRID policy (deliberately NOT changed)
+- Local/luminal-effect ingredients (fibers, demulcents like slippery elm,
+  phytosterols, gymnema) score on quality/functionality, not systemic absorption.
+  Under "keep quality-blended except documented-poor-absorption," these stay.
+  (A pure absorption-only sweep — declined — would revisit them.)
+- Moderate absorbers (carotenoids: lutein/lycopene/astaxanthin; CoQ10 oil) — not
+  "poor," so outside the hybrid demotion criterion.
+
+**18 batches. 60 tests passing.** Under the chosen hybrid bio_score policy and with
+structural merges assigned to Codex on live `main`, the autonomous, evidence-bounded
+audit is complete.
