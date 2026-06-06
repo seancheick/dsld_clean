@@ -4429,8 +4429,8 @@
                   },
                   "calcium carbonate": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "31%",
                         "notes": "Most common and inexpensive form, but requires stomach acid for absorption, so best taken with food.",
                         "aliases": [
@@ -4506,8 +4506,8 @@
                   },
                   "coral calcium": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "variable",
                         "notes": "Often marketed with hype, but quality and absorption are inconsistent. May contain contaminants.",
                         "aliases": [
@@ -4686,8 +4686,8 @@
             "forms": {
                   "phosphate salts": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "good (depends on salt, ~40–60%)",
                         "notes": "Found as monocalcium phosphate, disodium phosphate, potassium phosphate, etc. Essential for bones, energy, and DNA.",
                         "aliases": [
@@ -4901,8 +4901,8 @@
                   },
                   "magnesium chloride": {
                         "bio_score": 9,
-                        "natural": true,
-                        "score": 12,
+                        "natural": false,
+                        "score": 9,
                         "absorption": "moderate",
                         "notes": "Natural from seawater (Ancient Minerals). Transdermal use popular.",
                         "aliases": [
@@ -4986,8 +4986,8 @@
                   },
                   "magnesium carbonate": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "15-25%",
                         "notes": "Natural mineral form, requires stomach acid for absorption.",
                         "aliases": [
@@ -5051,8 +5051,8 @@
                   },
                   "magnesium sulfate": {
                         "bio_score": 5,
-                        "natural": true,
-                        "score": 8,
+                        "natural": false,
+                        "score": 5,
                         "absorption": "poor oral",
                         "notes": "Epsom salt - mainly for baths/topical. Poor oral bioavailability.",
                         "aliases": [
@@ -8305,8 +8305,8 @@
                   },
                   "iodine (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "good",
                         "notes": "Unspecified form; conservative scoring to avoid over-crediting.",
                         "aliases": [
@@ -35837,11 +35837,11 @@
             "rxcui": null,
             "forms": {
                   "standard": {
-                        "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
-                        "absorption": "good",
-                        "notes": "Generic form; adjust when specific form is known.",
+                        "bio_score": 6,
+                        "natural": false,
+                        "score": 6,
+                        "absorption": "unknown",
+                        "notes": "Unspecified silicon form (bare element); conservative scoring to match the mineral (unspecified) convention. Adjust when a specific form (e.g. orthosilicic acid, silica) is known.",
                         "aliases": [
                               "silicon"
                         ],
@@ -35850,8 +35850,8 @@
                               "value": null,
                               "range_low": null,
                               "range_high": null,
-                              "quality": "good",
-                              "notes": "good"
+                              "quality": "unknown",
+                              "notes": "Data not available"
                         }
                   }
             },
@@ -35878,11 +35878,11 @@
             "rxcui": "9873",
             "forms": {
                   "standard": {
-                        "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
-                        "absorption": "good",
-                        "notes": "Generic form; adjust when specific form is known.",
+                        "bio_score": 6,
+                        "natural": false,
+                        "score": 6,
+                        "absorption": "unknown",
+                        "notes": "Unspecified fluoride form (bare element); conservative scoring to match the mineral (unspecified) convention. Adjust when a specific form (e.g. sodium fluoride, sodium monofluorophosphate) is known.",
                         "aliases": [
                               "fluoride"
                         ],
@@ -35891,8 +35891,8 @@
                               "value": null,
                               "range_low": null,
                               "range_high": null,
-                              "quality": "good",
-                              "notes": "good"
+                              "quality": "unknown",
+                              "notes": "Data not available"
                         }
                   }
             },
