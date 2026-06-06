@@ -5711,11 +5711,11 @@
             "rxcui": null,
             "forms": {
                   "inner bark powder": {
-                        "bio_score": 12,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 15,
+                        "score": 9,
                         "efficacy": "excellent",
-                        "notes": "The gold standard form. Derived from the inner bark, which is rich in mucilage, the primary active compound responsible for its soothing, demulcent effects on tissues.",
+                        "notes": "The gold standard form. Derived from the inner bark, which is rich in mucilage, the primary active compound responsible for its soothing, demulcent effects on tissues. Absorption-only: demulcent mucilage that coats GI mucosa locally; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "slippery elm inner bark",
                               "slippery elm bark powder",
@@ -5737,11 +5737,11 @@
                         }
                   },
                   "standardized extract (mucilage)": {
-                        "bio_score": 14,
+                        "bio_score": 6,
                         "natural": false,
-                        "score": 14,
+                        "score": 6,
                         "efficacy": "superior",
-                        "notes": "A concentrated extract standardized for a high percentage of mucilage. Offers a more potent and consistent dose than simple powder, but is considered a processed form.",
+                        "notes": "A concentrated extract standardized for a high percentage of mucilage. Offers a more potent and consistent dose than simple powder, but is considered a processed form. Absorption-only: demulcent mucilage that coats GI mucosa locally; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "slippery elm extract",
                               "slippery elm bark extract",
@@ -5765,11 +5765,11 @@
                         }
                   },
                   "bark powder (unspecified)": {
-                        "bio_score": 8,
+                        "bio_score": 5,
                         "natural": false,
-                        "score": 8,
+                        "score": 5,
                         "efficacy": "moderate",
-                        "notes": "When the label just says 'slippery elm bark,' quality can be inconsistent as it may contain a mix of the potent inner bark and the less effective outer bark.",
+                        "notes": "When the label just says 'slippery elm bark,' quality can be inconsistent as it may contain a mix of the potent inner bark and the less effective outer bark. Absorption-only: demulcent mucilage that coats GI mucosa locally; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "slippery elm bark",
                               "ulmus rubra bark",
@@ -12377,11 +12377,11 @@
             "rxcui": null,
             "forms": {
                   "inulin": {
-                        "bio_score": 12,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 15,
+                        "score": 8,
                         "absorption": "excellent fermentation",
-                        "notes": "A fructo-oligosaccharide polymer (DP 3-60) that selectively feeds beneficial bacteria, particularly Bifidobacterium. Degree of polymerization affects fermentation location and rate.",
+                        "notes": "A fructo-oligosaccharide polymer (DP 3-60) that selectively feeds beneficial bacteria, particularly Bifidobacterium. Degree of polymerization affects fermentation location and rate. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "chicory root fiber",
                               "jerusalem artichoke fiber",
@@ -12411,11 +12411,11 @@
                         }
                   },
                   "fructooligosaccharides (FOS)": {
-                        "bio_score": 12,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 15,
+                        "score": 8,
                         "absorption": "excellent fermentation",
-                        "notes": "Short-chain fructo-oligosaccharides (DP 2-20) that rapidly ferment in the proximal colon, preferentially feeding Bifidobacterium and Lactobacillus.",
+                        "notes": "Short-chain fructo-oligosaccharides (DP 2-20) that rapidly ferment in the proximal colon, preferentially feeding Bifidobacterium and Lactobacillus. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "FOS",
                               "fructooligosaccharides",
@@ -12445,11 +12445,11 @@
                         }
                   },
                   "galactooligosaccharides (GOS)": {
-                        "bio_score": 12,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 15,
+                        "score": 8,
                         "absorption": "excellent fermentation",
-                        "notes": "Oligosaccharides derived from lactose that selectively promote beneficial bacteria growth, particularly Bifidobacterium. Well-tolerated and effective.",
+                        "notes": "Oligosaccharides derived from lactose that selectively promote beneficial bacteria growth, particularly Bifidobacterium. Well-tolerated and effective. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "GOS",
                               "galactooligosaccharides",
@@ -12470,11 +12470,11 @@
                         }
                   },
                   "xylooligosaccharides (XOS)": {
-                        "bio_score": 11,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 14,
+                        "score": 8,
                         "absorption": "good fermentation",
-                        "notes": "Oligosaccharides derived from xylan that selectively feed beneficial bacteria. Effective at lower doses compared to other prebiotics.",
+                        "notes": "Oligosaccharides derived from xylan that selectively feed beneficial bacteria. Effective at lower doses compared to other prebiotics. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "XOS",
                               "xylooligosaccharides",
@@ -12493,11 +12493,11 @@
                         }
                   },
                   "human milk oligosaccharides (HMO)": {
-                        "bio_score": 14,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 17,
+                        "score": 9,
                         "absorption": "excellent fermentation",
-                        "notes": "Complex oligosaccharides naturally found in breast milk. Highly specific for beneficial bacteria and immune modulation.",
+                        "notes": "Complex oligosaccharides naturally found in breast milk. Highly specific for beneficial bacteria and immune modulation. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "HMO",
                               "human milk oligosaccharides",
@@ -12522,11 +12522,11 @@
                         }
                   },
                   "beta-glucan": {
-                        "bio_score": 11,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 14,
+                        "score": 8,
                         "absorption": "moderate fermentation",
-                        "notes": "Soluble fiber from oats, barley, and mushrooms that supports beneficial bacteria and provides immune benefits.",
+                        "notes": "Soluble fiber from oats, barley, and mushrooms that supports beneficial bacteria and provides immune benefits. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "barley beta-glucan",
                               "mushroom beta-glucan",
@@ -12546,11 +12546,11 @@
                         }
                   },
                   "resistant starch": {
-                        "bio_score": 10,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 13,
+                        "score": 8,
                         "absorption": "good fermentation",
-                        "notes": "Starch that resists digestion and ferments in the colon, producing beneficial short-chain fatty acids, particularly butyrate.",
+                        "notes": "Starch that resists digestion and ferments in the colon, producing beneficial short-chain fatty acids, particularly butyrate. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "resistant starch",
                               "RS",
@@ -12573,11 +12573,11 @@
                         }
                   },
                   "acacia fiber": {
-                        "bio_score": 10,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 13,
+                        "score": 8,
                         "absorption": "moderate fermentation",
-                        "notes": "Soluble fiber from acacia trees that gently supports beneficial bacteria with minimal digestive side effects.",
+                        "notes": "Soluble fiber from acacia trees that gently supports beneficial bacteria with minimal digestive side effects. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "acacia fiber",
                               "acacia gum",
@@ -12598,11 +12598,11 @@
                         }
                   },
                   "pectin": {
-                        "bio_score": 10,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 13,
+                        "score": 8,
                         "absorption": "moderate fermentation",
-                        "notes": "Soluble fiber from fruits that supports beneficial bacteria and may help with cholesterol management.",
+                        "notes": "Soluble fiber from fruits that supports beneficial bacteria and may help with cholesterol management. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "pectin",
                               "apple pectin",
@@ -12623,11 +12623,11 @@
                         }
                   },
                   "psyllium husk": {
-                        "bio_score": 9,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 12,
+                        "score": 8,
                         "absorption": "limited fermentation",
-                        "notes": "Mostly insoluble fiber that provides bulk and some prebiotic benefits, though less selective than other prebiotics.",
+                        "notes": "Mostly insoluble fiber that provides bulk and some prebiotic benefits, though less selective than other prebiotics. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "psyllium husk",
                               "ispaghula husk",
@@ -12647,11 +12647,11 @@
                         }
                   },
                   "mixed prebiotic blend": {
-                        "bio_score": 13,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 16,
+                        "score": 9,
                         "absorption": "excellent synergistic fermentation",
-                        "notes": "Combination of multiple prebiotics (typically FOS, GOS, and inulin) that provides comprehensive support for diverse beneficial bacteria populations.",
+                        "notes": "Combination of multiple prebiotics (typically FOS, GOS, and inulin) that provides comprehensive support for diverse beneficial bacteria populations. Absorption-only: fermented by colonic microbiota; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "mixed prebiotic blend",
                               "prebiotic complex",
@@ -29849,11 +29849,11 @@
             "dosage_importance": 0.1,
             "forms": {
                   "phytosterol esters": {
-                        "bio_score": 11,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 14,
+                        "score": 9,
                         "absorption": "good (~40-60%)",
-                        "notes": "Esterified plant sterols with enhanced absorption. Clinically proven to reduce LDL cholesterol.",
+                        "notes": "Esterified plant sterols with enhanced absorption. Clinically proven to reduce LDL cholesterol. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "phytosterol esters",
                               "plant sterol esters",
@@ -29873,11 +29873,11 @@
                         }
                   },
                   "beta-sitosterol": {
-                        "bio_score": 10,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 13,
+                        "score": 8,
                         "absorption": "moderate (~5-10%)",
-                        "notes": "Most abundant plant sterol. Supports prostate health and cholesterol management.",
+                        "notes": "Most abundant plant sterol. Supports prostate health and cholesterol management. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "beta sitosterol",
                               "b-sitosterol",
@@ -29894,11 +29894,11 @@
                         }
                   },
                   "mixed phytosterols": {
-                        "bio_score": 9,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 12,
+                        "score": 8,
                         "absorption": "moderate (~5-10%)",
-                        "notes": "Blend of plant sterols including beta-sitosterol, campesterol, and stigmasterol.",
+                        "notes": "Blend of plant sterols including beta-sitosterol, campesterol, and stigmasterol. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "plant sterols",
                               "mixed phytosterols",
@@ -29919,11 +29919,11 @@
                         }
                   },
                   "stigmasterol": {
-                        "bio_score": 8,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 11,
+                        "score": 8,
                         "absorption": "low-moderate (~3-5%)",
-                        "notes": "Plant sterol found in soy and other plants. Supports cholesterol metabolism.",
+                        "notes": "Plant sterol found in soy and other plants. Supports cholesterol metabolism. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "stigmasterol",
                               "stigmasterols"
@@ -29938,11 +29938,11 @@
                         }
                   },
                   "campesterol": {
-                        "bio_score": 8,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 11,
+                        "score": 8,
                         "absorption": "low-moderate (~3-5%)",
-                        "notes": "Plant sterol commonly found in wheat germ and vegetable oils.",
+                        "notes": "Plant sterol commonly found in wheat germ and vegetable oils. Absorption-only: compete with cholesterol for micelle uptake in the gut lumen (~2-5% systemically absorbed by design); bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "campesterol",
                               "campesterols"
@@ -33377,11 +33377,11 @@
             "rxcui": null,
             "forms": {
                   "gymnema leaf extract": {
-                        "bio_score": 12,
+                        "bio_score": 6,
                         "natural": false,
-                        "score": 12,
+                        "score": 6,
                         "absorption": "good 75-85%",
-                        "notes": "Standardized extract for gymnemic acids. Supports healthy glucose metabolism.",
+                        "notes": "Standardized extract for gymnemic acids. Supports healthy glucose metabolism. Absorption-only: gymnemic acids act locally in the gut/oral cavity; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "gymnema leaf extract",
                               "gymnema sylvestre extract",
@@ -33404,11 +33404,11 @@
                         }
                   },
                   "gymnema leaf powder": {
-                        "bio_score": 8,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 11,
+                        "score": 8,
                         "absorption": "moderate 60-70%",
-                        "notes": "Whole leaf powder. Variable potency compared to standardized extract.",
+                        "notes": "Whole leaf powder. Variable potency compared to standardized extract. Absorption-only: gymnemic acids act locally in the gut/oral cavity; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "gymnema leaf powder",
                               "gymnema sylvestre powder",
@@ -41768,11 +41768,11 @@
             "rxcui": null,
             "forms": {
                   "PGX fiber": {
-                        "bio_score": 8,
+                        "bio_score": 5,
                         "natural": true,
-                        "score": 11,
+                        "score": 8,
                         "absorption": "N/A (soluble fiber)",
-                        "notes": "Proprietary highly viscous polysaccharide complex (konjac glucomannan, sodium alginate, xanthan gum). Clinically studied for glycemic control and satiety.",
+                        "notes": "Proprietary highly viscous polysaccharide complex (konjac glucomannan, sodium alginate, xanthan gum). Clinically studied for glycemic control and satiety. Absorption-only: highly viscous luminal-acting fiber; not systemically absorbed; bio_score reflects systemic absorption, functional efficacy scored separately.",
                         "aliases": [
                               "pgx",
                               "polyglycoplex",

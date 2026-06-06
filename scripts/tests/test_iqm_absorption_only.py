@@ -41,3 +41,28 @@ class TestFiberAbsorptionCap:
             "luminal-acting, not systemically absorbed):\n"
             + "\n".join(f"  {k}/{fn}: bio={b}" for k, fn, b in bad)
         )
+
+
+# Luminal/local-effect parents capped under absorption-only (functional efficacy
+# scored on a separate axis). Mechanism: demulcent, gut-lumen sterol competition,
+# colonic fermentation, local sugar-blocking, viscous fiber.
+LOCAL_EFFECT_PARENTS = {
+    'slippery_elm', 'phytosterols', 'prebiotics', 'gymnema_sylvestre',
+    'pgx_fiber', 'psyllium', 'larch_arabinogalactan', 'beta_glucan',
+}
+
+
+class TestLuminalEffectCap:
+    def test_local_effect_parents_capped(self, entries):
+        bad = []
+        for k in LOCAL_EFFECT_PARENTS:
+            e = entries.get(k)
+            if not e:
+                continue
+            for fn, f in e.get('forms', {}).items():
+                if isinstance(f, dict) and (f.get('bio_score') or 0) > LOCAL_EFFECT_BIO_CAP:
+                    bad.append((k, fn, f.get('bio_score')))
+        assert not bad, (
+            f"Luminal/local-effect forms with bio_score > {LOCAL_EFFECT_BIO_CAP}:\n"
+            + "\n".join(f"  {k}/{fn}: bio={b}" for k, fn, b in bad)
+        )
