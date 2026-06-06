@@ -121,3 +121,18 @@ file-wide structural scans (score formula, unspecified inversions, junk/dup
 identifiers, over-broad aliases) have already been run across ALL categories,
 so the clear mechanical bugs in those categories are captured above; what
 remains is per-ingredient bio_score calibration review.
+
+---
+
+## Convergence (batch 14 + final scans)
+- Batch 14: apigenin extract 13→6, berberine hcl 11→6 (bio_score contradicted
+  own poor-bioavailability notes/quality; PubMed-checked).
+- Final contradiction scans all clean: synthetic-named-but-natural=true (0),
+  high-measured-absorption-but-low-bio (0), high-bio-with-poor-absorption-notes (0).
+
+**The clear, evidence-grounded fix audit is complete (14 batches, 58 tests).**
+Every remaining item is either (a) subjective per-ingredient calibration — which
+the task scope explicitly excludes ("no broad vibes-based edits; only fix clear
+issues with evidence") — or (b) the deferred structural merges, which are safer
+executed against the live pipeline `main` than this stale branch. No further
+mechanical/data-truth bugs were detectable.
