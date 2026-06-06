@@ -40379,7 +40379,7 @@
             "standard_name": "Strontium",
             "category": "minerals",
             "cui": "C0038532",
-            "rxcui": "none",
+            "rxcui": null,
             "forms": {
                   "strontium (unspecified)": {
                         "bio_score": 7,
@@ -40407,7 +40407,7 @@
                   "exclusions": []
             },
             "category_enum": "minerals",
-            "rxcui_note": null,
+            "rxcui_note": "No verified RxNorm concept assigned",
             "data_quality": {
                   "review_status": "pending",
                   "completeness": 0.7
@@ -40804,7 +40804,7 @@
             "standard_name": "Butterbur (Petasites hybridus)",
             "category": "botanicals",
             "cui": "C0330837",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "PA-free butterbur extract (Petadolex)": {
                         "bio_score": 12,
@@ -40876,13 +40876,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "gamma_oryzanol": {
             "standard_name": "Gamma Oryzanol",
             "category": "lipids",
             "cui": "C0060948",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "gamma oryzanol (unspecified)": {
                         "bio_score": 10,
@@ -40919,13 +40920,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "fucoxanthin": {
             "standard_name": "Fucoxanthin",
             "category": "carotenoids",
             "cui": "C0060826",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "fucoxanthin (unspecified)": {
                         "bio_score": 9,
@@ -40961,13 +40963,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "beta_caryophyllene": {
             "standard_name": "Beta-Caryophyllene",
             "category": "terpenes",
             "cui": "C0054989",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "beta-caryophyllene (unspecified)": {
                         "bio_score": 9,
@@ -41004,13 +41007,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "chrysin": {
             "standard_name": "Chrysin",
             "category": "flavonoids",
             "cui": "C0055691",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "chrysin (unspecified)": {
                         "bio_score": 5,
@@ -41044,13 +41048,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "celadrin": {
             "standard_name": "Celadrin",
             "category": "fatty_acids",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "celadrin (unspecified)": {
                         "bio_score": 8,
@@ -41086,13 +41091,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "green_lipped_mussel": {
             "standard_name": "Green-Lipped Mussel",
             "category": "marine",
             "cui": "C1881174",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "green-lipped mussel oil": {
                         "bio_score": 10,
@@ -41130,13 +41137,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "lactoferrin": {
             "standard_name": "Lactoferrin",
             "category": "proteins",
             "cui": "C0022942",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "lactoferrin (unspecified)": {
                         "bio_score": 10,
@@ -41171,13 +41179,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "white_tea": {
             "standard_name": "White Tea Extract",
             "category": "botanicals",
             "cui": "C3888592",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "white tea extract (unspecified)": {
                         "bio_score": 9,
@@ -41216,13 +41225,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "hops": {
             "standard_name": "Hops (Humulus lupulus)",
             "category": "botanicals",
             "cui": "C0936163",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "hops extract (unspecified)": {
                         "bio_score": 9,
@@ -41265,13 +41275,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "phosphatidic_acid": {
             "standard_name": "Phosphatidic Acid",
             "category": "lipids",
             "cui": "C0031441",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "phosphatidic acid (unspecified)": {
                         "bio_score": 9,
@@ -41307,13 +41318,14 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "ahcc": {
             "standard_name": "AHCC (Active Hexose Correlated Compound)",
             "category": "mushroom_extracts",
             "cui": "C1720839",
-            "rxcui": "",
+            "rxcui": null,
             "forms": {
                   "AHCC (unspecified)": {
                         "bio_score": 10,
@@ -41348,7 +41360,8 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "arachidonic_acid": {
             "standard_name": "Arachidonic Acid",
@@ -41631,8 +41644,8 @@
       "ahiflower_seed_oil": {
             "standard_name": "Ahiflower Seed Oil",
             "category": "oil",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "cold-pressed ahiflower seed oil": {
                         "bio_score": 12,
@@ -41683,13 +41696,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "uridine_monophosphate": {
             "standard_name": "Uridine-5'-Monophosphate",
             "category": "nootropics",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "uridine-5'-monophosphate (UMP)": {
                         "bio_score": 11,
@@ -41723,13 +41738,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "myricetin": {
             "standard_name": "Myricetin",
             "category": "antioxidants",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "myricetin (unspecified)": {
                         "bio_score": 9,
@@ -41760,13 +41777,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "polygodial": {
             "standard_name": "Polygodial",
             "category": "herbs",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "polygodial (unspecified)": {
                         "bio_score": 7,
@@ -41797,13 +41816,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "common_bean_extract": {
             "standard_name": "Common Bean Extract",
             "category": "herbs",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "white kidney bean extract": {
                         "bio_score": 10,
@@ -41837,13 +41858,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "corn_silk": {
             "standard_name": "Corn Silk",
             "category": "herbs",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "corn silk extract": {
                         "bio_score": 8,
@@ -41877,13 +41900,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "horsetail": {
             "standard_name": "Horsetail",
             "category": "herbs",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "horsetail extract (unspecified)": {
                         "bio_score": 8,
@@ -41916,13 +41941,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "thyme_extract": {
             "standard_name": "Thyme Extract",
             "category": "herbs",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "thyme leaf/stem extract": {
                         "bio_score": 9,
@@ -41955,13 +41982,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "evening_primrose_oil": {
             "standard_name": "Evening Primrose Oil",
             "category": "oil",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "cold-pressed evening primrose oil": {
                         "bio_score": 12,
@@ -42010,13 +42039,15 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "brown_kelp": {
             "standard_name": "Brown Kelp",
             "category": "herbs",
-            "cui": "",
-            "rxcui": "",
+            "cui": null,
+            "rxcui": null,
             "forms": {
                   "brown kelp powder": {
                         "bio_score": 8,
@@ -42050,7 +42081,9 @@
                   "missing_fields": [],
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
-            }
+            },
+            "cui_note": "No verified UMLS CUI assigned",
+            "rxcui_note": "No verified RxNorm concept assigned"
       },
       "raspberry_ketones": {
             "standard_name": "Raspberry Ketones",
