@@ -20892,11 +20892,11 @@
             "rxcui": "125929",
             "forms": {
                   "bilberry extract (25% anthocyanins)": {
-                        "bio_score": 12,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 15,
+                        "score": 13,
                         "absorption": "very good (~60–70%)",
-                        "notes": "Supports retinal health; rich in anthocyanosides",
+                        "notes": "Supports retinal health; rich in anthocyanosides. Anthocyanins have very low native oral bioavailability (~<1-2%; well documented, PMID 39756973). bio_score reflects absorption, not anthocyanin content/standardization.",
                         "aliases": [
                               "bilberry extract",
                               "25% anthocyanins",
@@ -21077,11 +21077,11 @@
             "rxcui": null,
             "forms": {
                   "elderberry extract (sambucol)": {
-                        "bio_score": 12,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 15,
+                        "score": 13,
                         "absorption": "very good (~60–70%)",
-                        "notes": "Standardized anthocyanins; immune support",
+                        "notes": "Standardized anthocyanins; immune support. Anthocyanins have very low native oral bioavailability (~<1-2%; well documented, PMID 39756973). bio_score reflects absorption, not anthocyanin content/standardization.",
                         "aliases": [
                               "elderberry extract",
                               "premium cultivar elderberries",
@@ -24349,9 +24349,9 @@
             "dosage_importance": 0.8,
             "forms": {
                   "cyanidin-3-glucoside (unspecified)": {
-                        "bio_score": 10,
+                        "bio_score": 6,
                         "natural": false,
-                        "score": 10,
+                        "score": 6,
                         "absorption": "low-moderate (~1-5%)",
                         "notes": "Most abundant anthocyanin in berries. Studied for anti-inflammatory, antioxidant, and metabolic benefits. Low bioavailability but metabolites are bioactive.",
                         "aliases": [
