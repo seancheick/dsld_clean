@@ -24467,11 +24467,11 @@
             "rxcui": null,
             "forms": {
                   "apigenin extract": {
-                        "bio_score": 13,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 16,
+                        "score": 9,
                         "absorption": "Low without enhancers",
-                        "notes": "Flavone with neuroprotective properties but poor bioavailability.",
+                        "notes": "Flavone with neuroprotective properties but poor oral bioavailability (well documented; basis for delivery-enhancement research, e.g. PMID 41265600). bio_score reflects poor absorption, not clinical effect.",
                         "aliases": [
                               "chamomile flavone",
                               "4',5,7-trihydroxyflavone",
@@ -33515,11 +33515,11 @@
             "rxcui": null,
             "forms": {
                   "berberine hcl": {
-                        "bio_score": 11,
+                        "bio_score": 6,
                         "natural": true,
-                        "score": 14,
+                        "score": 9,
                         "absorption": "poor (0.5-5%)",
-                        "notes": "Natural alkaloid with powerful metabolic benefits. Low bioavailability but highly effective.",
+                        "notes": "Natural alkaloid with metabolic benefits but low oral bioavailability (~1-3%; well documented, basis for enhanced-delivery forms, e.g. PMID 42120042). bio_score reflects poor absorption; clinical efficacy is scored elsewhere. Enhanced forms (liposomal) score higher.",
                         "aliases": [
                               "berberine hcl",
                               "berberine hydrochloride",
