@@ -33820,12 +33820,12 @@
       },
       "cordycepsprime": {
             "standard_name": "CordycepsPrime",
-            "category": "adaptogens",
+            "category": "herbs",
             "forms": {
                   "cordycepsprime": {
-                        "bio_score": 12,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 15,
+                        "score": 13,
                         "absorption": "enhanced",
                         "notes": "Enhanced cordyceps bioavailability formula with improved absorption technology. Branded cordyceps extract with superior cellular uptake.",
                         "aliases": [
@@ -33853,7 +33853,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "adaptogens",
+            "category_enum": "herbs",
             "cui_note": "No UMLS entry for botanical/novel compound",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
@@ -33861,7 +33861,10 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true
       },
       "testosurge": {
             "standard_name": "TestoSurge",
@@ -34497,7 +34500,7 @@
             "rxcui": null,
             "forms": {
                   "lions mane fruiting body": {
-                        "bio_score": 11,
+                        "bio_score": 9,
                         "natural": true,
                         "absorption": "good (~75%)",
                         "notes": "Whole fruiting body; supports cognitive function and nerve growth factor. Form-quality model (mushroom): fruiting-body + beta-glucan standardization; non-systemic ceiling. Small-molecule hericenones/erinacines are the absorbed fraction.",
@@ -34510,7 +34513,7 @@
                               "lions mane fruiting body extract",
                               "hericium erinaceus fruiting body extract"
                         ],
-                        "score": 14,
+                        "score": 12,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.75,
@@ -34521,16 +34524,19 @@
                         }
                   },
                   "lions mane standardized extract": {
-                        "bio_score": 13,
+                        "bio_score": 11,
                         "natural": true,
                         "absorption": "excellent (~90%)",
                         "notes": "Standardized to 30% polysaccharides and beta-glucans; clinically researched. Form-quality model (mushroom): fruiting-body + beta-glucan standardization; non-systemic ceiling. Small-molecule hericenones/erinacines are the absorbed fraction.",
                         "aliases": [
                               "standardized lion's mane",
                               "lion's mane 30% polysaccharides",
-                              "lion's mane extract"
+                              "lion's mane extract",
+                              "lion's mane mushroom extract",
+                              "lions mane mushroom extract",
+                              "lions mane extract"
                         ],
-                        "score": 16,
+                        "score": 14,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.9,
@@ -34571,7 +34577,10 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true
       },
       "bacopa": {
             "standard_name": "Bacopa Monnieri",
@@ -34684,16 +34693,17 @@
                         }
                   },
                   "reishi standardized extract": {
-                        "bio_score": 13,
+                        "bio_score": 11,
                         "natural": true,
                         "absorption": "excellent (~85%)",
                         "notes": "Standardized to 30% polysaccharides and triterpenes. Form-quality model (mushroom): fruiting-body + standardization (polysaccharides/triterpenes); non-systemic ceiling.",
                         "aliases": [
                               "standardized reishi",
                               "reishi extract",
-                              "reishi 30% polysaccharides"
+                              "reishi 30% polysaccharides",
+                              "reishi mushroom extract"
                         ],
-                        "score": 16,
+                        "score": 14,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.85,
@@ -34734,25 +34744,29 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true
       },
       "cordyceps": {
             "standard_name": "Cordyceps",
-            "category": "adaptogens",
+            "category": "herbs",
             "cui": "C0453133",
             "rxcui": null,
             "forms": {
                   "cordyceps militaris": {
-                        "bio_score": 13,
+                        "bio_score": 11,
                         "natural": true,
                         "absorption": "good (~80%)",
                         "notes": "Cultivated Cordyceps militaris; high in cordycepin; supports energy and athletic performance. Form-quality model (mushroom): cultivated species/cordycepin content; non-systemic ceiling.",
                         "aliases": [
                               "cordyceps militaris",
                               "cordyceps mushroom",
-                              "cordyceps extract"
+                              "cordyceps extract",
+                              "cordyceps mushroom extract"
                         ],
-                        "score": 16,
+                        "score": 14,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.8,
@@ -34763,7 +34777,7 @@
                         }
                   },
                   "cordyceps sinensis mycelium": {
-                        "bio_score": 9,
+                        "bio_score": 8,
                         "natural": true,
                         "absorption": "moderate (~70%)",
                         "notes": "Mycelium-based; traditional form but lower bioactives than fruiting body. Form-quality model (mushroom): cultivated species/cordycepin content; non-systemic ceiling.",
@@ -34772,7 +34786,7 @@
                               "cordyceps mycelium",
                               "cs-4"
                         ],
-                        "score": 12,
+                        "score": 11,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.7,
@@ -34806,14 +34820,17 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "adaptogens",
+            "category_enum": "herbs",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
                   "completeness": 1.0,
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-01-08"
-            }
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true
       },
       "maca": {
             "standard_name": "Maca",
@@ -35993,42 +36010,50 @@
             "statistics": {
                   "total_ingredients": 485,
                   "total_forms": 1237,
-                  "total_aliases": 9167,
+                  "total_aliases": 9172,
                   "ingredients_with_relationships": 24
             },
             "categories": {
-                  "adaptogens": 10,
+                  "adaptogens": 8,
                   "amino_acid_antioxidants": 2,
                   "amino_acid_derivatives": 1,
                   "amino_acid_metabolites": 3,
                   "amino_acids": 31,
-                  "antioxidants": 199,
+                  "antioxidants": 196,
                   "bee_products": 2,
                   "bile_acids": 1,
                   "botanical_ingredients": 1,
+                  "botanicals": 3,
                   "cannabinoids": 1,
                   "cardiovascular_support": 1,
+                  "carotenoids": 1,
                   "energy_substrates": 1,
                   "enzymes": 6,
-                  "fatty_acids": 25,
+                  "fatty_acids": 32,
+                  "fiber": 1,
                   "fibers": 5,
+                  "flavonoids": 1,
                   "functional_foods": 6,
                   "glandular": 1,
-                  "herbs": 61,
+                  "herbs": 74,
                   "ketones": 1,
                   "lipid": 2,
+                  "lipids": 2,
+                  "marine": 1,
                   "metabolic_support": 1,
                   "minerals": 20,
                   "mitochondrial_support": 1,
+                  "nootropics": 1,
                   "nucleotides": 1,
                   "nutraceuticals": 3,
-                  "oil": 1,
-                  "other": 22,
+                  "oil": 3,
+                  "other": 24,
                   "phytonutrients": 8,
                   "polyphenol": 1,
                   "polyphenol_antioxidants": 1,
                   "probiotics": 14,
-                  "proteins": 2,
+                  "proteins": 7,
+                  "terpenes": 1,
                   "vitamins": 15
             },
             "schema_version": "4.0.0",
@@ -41599,7 +41624,7 @@
       },
       "ahcc": {
             "standard_name": "AHCC (Active Hexose Correlated Compound)",
-            "category": "mushroom_extracts",
+            "category": "herbs",
             "cui": "C1720839",
             "rxcui": null,
             "forms": {
@@ -41637,7 +41662,11 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "herbs",
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true
       },
       "arachidonic_acid": {
             "standard_name": "Arachidonic Acid",
