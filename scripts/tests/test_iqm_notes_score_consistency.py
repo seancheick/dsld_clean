@@ -56,3 +56,11 @@ class TestNotesVsScore:
     def test_pins(self, entries):
         assert entries['apigenin']['forms']['apigenin extract']['bio_score'] == 6
         assert entries['berberine_supplement']['forms']['berberine hcl']['bio_score'] == 6
+
+    def test_green_tea_catechins_not_above_standardized(self, entries):
+        """Generic 'green tea catechins' must not out-score the parent's own
+        standardized 50% EGCG extract (EGCG/catechins are poorly bioavailable;
+        the bonus belongs to delivery-enhanced/standardized forms)."""
+        forms = entries['green_tea_extract']['forms']
+        assert forms['green tea catechins']['bio_score'] <= \
+            forms['green tea extract (50% EGCG)']['bio_score']

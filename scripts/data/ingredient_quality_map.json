@@ -19148,11 +19148,11 @@
                         }
                   },
                   "green tea catechins": {
-                        "bio_score": 13,
+                        "bio_score": 10,
                         "natural": true,
-                        "score": 16,
+                        "score": 13,
                         "absorption": "good",
-                        "notes": "Contains catechins including EGCG; supports antioxidant and metabolic health",
+                        "notes": "Catechins including EGCG. EGCG/catechins have only moderate-to-low native oral bioavailability (basis for extensive delivery-enhancement research, e.g. PMID 41106481); scored at/below the standardized 50% EGCG extract and below the liposomal/phytosome delivery forms. bio_score reflects absorption, not clinical benefit.",
                         "aliases": [
                               "green tea catechins",
                               "tea polyphenols",
