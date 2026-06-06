@@ -3251,8 +3251,8 @@
                   },
                   "vitamin D2 (unspecified source)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "poor",
                         "notes": "Variable potency, often from irradiated yeast or mushrooms. Less reliable than specified sources. Takes longer to raise blood levels compared to D3.",
                         "context_include": [
@@ -5766,8 +5766,8 @@
                   },
                   "bark powder (unspecified)": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "efficacy": "moderate",
                         "notes": "When the label just says 'slippery elm bark,' quality can be inconsistent as it may contain a mix of the potent inner bark and the less effective outer bark.",
                         "aliases": [
@@ -9847,8 +9847,8 @@
                   },
                   "omega-3 (unspecified)": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "unknown",
                         "notes": "Unspecified form - assume standard fish oil.",
                         "aliases": [
@@ -10587,8 +10587,8 @@
                   },
                   "curcumin (unspecified)": {
                         "bio_score": 5,
-                        "natural": true,
-                        "score": 8,
+                        "natural": false,
+                        "score": 5,
                         "absorption": "unknown",
                         "notes": "Unspecified form - assume basic curcumin with poor absorption.",
                         "aliases": [
@@ -16349,8 +16349,8 @@
             "forms": {
                   "alpha-carotene (unspecified)": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "moderate (10-30% with fat)",
                         "notes": "Provitamin A carotenoid, lower conversion efficiency than beta-carotene but provides unique antioxidant benefits.",
                         "aliases": [
@@ -22819,8 +22819,8 @@
             "forms": {
                   "stearidonic acid (unspecified)": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "good (~70-85%)",
                         "notes": "Plant-based omega-3 (18:4 n-3) that converts more efficiently to EPA than ALA. Found in hemp seed oil, echium oil, and blackcurrant seed oil.",
                         "aliases": [
@@ -24330,8 +24330,8 @@
             "forms": {
                   "cyanidin-3-glucoside (unspecified)": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "low-moderate (~1-5%)",
                         "notes": "Most abundant anthocyanin in berries. Studied for anti-inflammatory, antioxidant, and metabolic benefits. Low bioavailability but metabolites are bioactive.",
                         "aliases": [
@@ -28558,8 +28558,8 @@
             "forms": {
                   "myristic acid (unspecified)": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "good (~80-90%)",
                         "notes": "C14:0 saturated fatty acid. Component of many fats and oils. Plays role in cell signaling via protein myristoylation.",
                         "aliases": [
@@ -34540,14 +34540,14 @@
                   },
                   "bacopa (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
+                        "natural": false,
                         "absorption": "moderate (~55%)",
                         "notes": "Generic Bacopa herb extract without stated bacoside standardization; conservative scoring.",
                         "aliases": [
                               "bacopa herb extract",
                               "bacopa"
                         ],
-                        "score": 9,
+                        "score": 6,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.55,
@@ -36865,8 +36865,8 @@
                   },
                   "boswellia (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form, conservative scoring.",
                         "aliases": [
@@ -37013,8 +37013,8 @@
                   },
                   "black seed (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37152,8 +37152,8 @@
                   },
                   "sea buckthorn (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37296,8 +37296,8 @@
                   },
                   "shilajit (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37401,8 +37401,8 @@
                   },
                   "fenugreek (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37512,8 +37512,8 @@
                   },
                   "black cohosh (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37599,8 +37599,8 @@
                   },
                   "st john's wort (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37685,8 +37685,8 @@
                   },
                   "valerian (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37770,8 +37770,8 @@
                   },
                   "chasteberry (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37858,8 +37858,8 @@
                   },
                   "bergamot (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -37945,8 +37945,8 @@
                   },
                   "guava (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "unknown",
                         "notes": "Unspecified form.",
                         "aliases": [
@@ -38390,8 +38390,8 @@
                   },
                   "unspecified": {
                         "bio_score": 9,
-                        "natural": true,
-                        "score": 12,
+                        "natural": false,
+                        "score": 9,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -38469,8 +38469,8 @@
                   },
                   "unspecified": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -38572,8 +38572,8 @@
                   },
                   "unspecified": {
                         "bio_score": 9,
-                        "natural": true,
-                        "score": 12,
+                        "natural": false,
+                        "score": 9,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -38754,8 +38754,8 @@
                   },
                   "unspecified": {
                         "bio_score": 11,
-                        "natural": true,
-                        "score": 14,
+                        "natural": false,
+                        "score": 11,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -38832,8 +38832,8 @@
                   },
                   "unspecified": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -38926,8 +38926,8 @@
                   },
                   "unspecified": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -39181,8 +39181,8 @@
                   },
                   "unspecified": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
@@ -40696,8 +40696,8 @@
                   },
                   "tongkat ali (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "moderate (~50%)",
                         "notes": "Tongkat Ali ingredient without form/standardization details; conservative scoring.",
                         "aliases": [
@@ -40763,8 +40763,8 @@
                   },
                   "gotu kola (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "moderate (~50%)",
                         "notes": "Gotu Kola ingredient without form/standardization details; conservative scoring.",
                         "aliases": [
@@ -41031,8 +41031,8 @@
                   },
                   "butterbur (unspecified)": {
                         "bio_score": 6,
-                        "natural": true,
-                        "score": 9,
+                        "natural": false,
+                        "score": 6,
                         "absorption": "variable",
                         "notes": "Unspecified butterbur extract. May or may not be PA-free. Lower score due to safety uncertainty.",
                         "aliases": [
@@ -41077,8 +41077,8 @@
             "forms": {
                   "gamma oryzanol (unspecified)": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "moderate (~30-40%)",
                         "notes": "Mixture of ferulic acid esters from rice bran oil. GRAS. Used for cholesterol management. Approved as Rx in Japan for hyperlipidemia.",
                         "aliases": [
@@ -41121,8 +41121,8 @@
             "forms": {
                   "fucoxanthin (unspecified)": {
                         "bio_score": 9,
-                        "natural": true,
-                        "score": 12,
+                        "natural": false,
+                        "score": 9,
                         "absorption": "low-moderate (~30%)",
                         "notes": "Marine carotenoid from brown seaweed. Studied for metabolic health and thermogenesis. Bioavailability improved with dietary fat.",
                         "aliases": [
@@ -41166,8 +41166,8 @@
             "forms": {
                   "beta-caryophyllene (unspecified)": {
                         "bio_score": 9,
-                        "natural": true,
-                        "score": 12,
+                        "natural": false,
+                        "score": 9,
                         "absorption": "moderate",
                         "notes": "Dietary terpene and CB2 receptor agonist. Found in cloves, black pepper, and cannabis. FDA GRAS as food additive. Anti-inflammatory.",
                         "aliases": [
@@ -41210,8 +41210,8 @@
             "forms": {
                   "chrysin (unspecified)": {
                         "bio_score": 5,
-                        "natural": true,
-                        "score": 8,
+                        "natural": false,
+                        "score": 5,
                         "absorption": "very poor (~1%)",
                         "notes": "5,7-dihydroxyflavone. Marketed as aromatase inhibitor but near-zero oral bioavailability. Safe but likely ineffective at supplement doses.",
                         "aliases": [
@@ -41342,8 +41342,8 @@
             "forms": {
                   "lactoferrin (unspecified)": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "moderate",
                         "notes": "Iron-binding glycoprotein from milk. Immune support, antimicrobial, and iron absorption enhancement. Well-studied safety profile.",
                         "aliases": [
@@ -41384,8 +41384,8 @@
             "forms": {
                   "white tea extract (unspecified)": {
                         "bio_score": 9,
-                        "natural": true,
-                        "score": 12,
+                        "natural": false,
+                        "score": 9,
                         "absorption": "moderate",
                         "notes": "Camellia sinensis, minimally processed. Higher catechin content than green tea. Rich in EGCG and polyphenols.",
                         "aliases": [
@@ -41430,8 +41430,8 @@
             "forms": {
                   "hops extract (unspecified)": {
                         "bio_score": 9,
-                        "natural": true,
-                        "score": 12,
+                        "natural": false,
+                        "score": 9,
                         "absorption": "moderate",
                         "notes": "Hops flower/strobile extract. Contains alpha acids (humulones) and beta acids (lupulones). Used for sleep, relaxation, and menopausal symptoms.",
                         "aliases": [
@@ -41523,8 +41523,8 @@
             "forms": {
                   "AHCC (unspecified)": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "good",
                         "notes": "Proprietary mushroom extract from shiitake mycelium. Alpha-glucan rich. Studied for immune support, particularly NK cell activity.",
                         "aliases": [
@@ -41565,8 +41565,8 @@
             "forms": {
                   "arachidonic acid (unspecified)": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "moderate",
                         "notes": "Omega-6 PUFA (C20:4). Found in animal fats and breast milk. Important for brain development and immune function.",
                         "aliases": [
@@ -41797,8 +41797,8 @@
             "forms": {
                   "IP6 (unspecified)": {
                         "bio_score": 7,
-                        "natural": true,
-                        "score": 10,
+                        "natural": false,
+                        "score": 7,
                         "absorption": "moderate",
                         "notes": "Phytic acid / IP6. Studied for antioxidant and immune support. Found naturally in grains, legumes, seeds. Chelates minerals.",
                         "aliases": [
@@ -41863,8 +41863,8 @@
                   },
                   "ahiflower seed oil (unspecified)": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "moderate",
                         "notes": "Unspecified processing/form for ahiflower oil.",
                         "aliases": [
@@ -41944,8 +41944,8 @@
             "forms": {
                   "myricetin (unspecified)": {
                         "bio_score": 9,
-                        "natural": true,
-                        "score": 12,
+                        "natural": false,
+                        "score": 9,
                         "absorption": "low-moderate",
                         "notes": "Flavonol polyphenol used in antioxidant formulations.",
                         "aliases": [
@@ -41985,8 +41985,8 @@
             "forms": {
                   "polygodial (unspecified)": {
                         "bio_score": 7,
-                        "natural": true,
-                        "score": 10,
+                        "natural": false,
+                        "score": 7,
                         "absorption": "unknown",
                         "notes": "Sesquiterpene dialdehyde constituent in botanical extracts; limited human-standardization data.",
                         "aliases": [
@@ -42112,8 +42112,8 @@
             "forms": {
                   "horsetail extract (unspecified)": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "unknown",
                         "notes": "Equisetum arvense botanical extract; identity mapped with conservative scoring pending form standardization.",
                         "aliases": [
@@ -42212,8 +42212,8 @@
                   },
                   "evening primrose oil (unspecified)": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "moderate",
                         "notes": "Unspecified processing/form for evening primrose oil.",
                         "aliases": [
@@ -42429,8 +42429,8 @@
                   },
                   "pomegranate (unspecified)": {
                         "bio_score": 5,
-                        "natural": true,
-                        "score": 8,
+                        "natural": false,
+                        "score": 5,
                         "absorption": "unknown",
                         "notes": "Form not specified; conservative scoring applied.",
                         "aliases": [

@@ -38,6 +38,26 @@ def _is_probiotic(entry):
     return entry.get('category') == 'probiotics' or entry.get('category_enum') == 'probiotics'
 
 
+class TestNoNaturalBonusOnUnspecified:
+    def test_unspecified_forms_not_natural(self, entries):
+        """File-wide invariant: any form whose name marks it as an undisclosed
+        '(unspecified)' form must NOT carry natural=true. Naturalness is a
+        source/processing property; if the form/source is undisclosed the +3
+        natural bonus cannot be credited. (Agreed convention across
+        probiotics, minerals, oils, botanicals.)"""
+        bad = []
+        for key, entry in entries.items():
+            for form_name, form in entry.get('forms', {}).items():
+                if not isinstance(form, dict):
+                    continue
+                if 'unspecified' in form_name.lower() and form.get('natural') is True:
+                    bad.append((key, form_name))
+        assert not bad, (
+            "Unspecified forms must be natural=false (no undisclosed-form natural bonus):\n"
+            + "\n".join(f"  {k}/{fn}" for k, fn in bad)
+        )
+
+
 class TestProbioticUnspecifiedFloor:
     def test_probiotic_unspecified_forms_are_conservative(self, entries):
         """Probiotic forms with no strain/species identity must be conservatively
