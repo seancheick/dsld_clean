@@ -105,6 +105,39 @@ class TestVerifiedIdentifiersPinned:
             "\n".join(f"  {k}: {got} != {exp}" for k, got, exp in bad)
 
 
+class TestNoDuplicateCui:
+    def test_no_cross_parent_duplicate_cui(self, entries):
+        """A CUI must not be shared by two different parents (signals a
+        copy-paste / mis-join error like the dandelion+perilla d-limonene bug)."""
+        from collections import defaultdict
+        m = defaultdict(list)
+        for k, e in entries.items():
+            if e.get('cui'):
+                m[e['cui']].append(k)
+        dups = {c: ks for c, ks in m.items() if len(ks) > 1}
+        assert not dups, "Duplicate CUI across parents:\n" + \
+            "\n".join(f"  {c}: {ks}" for c, ks in dups.items())
+
+
+# UMLS-verified CUI corrections (sample pins of the systemic re-derivation).
+VERIFIED_CUI = {
+    'iron': 'C0302583', 'zinc': 'C0043481', 'boron': 'C0006030',
+    'vanadium': 'C0042306', 'magnesium': 'C0024467', 'manganese': 'C0024706',
+    'curcumin': 'C0010467', 'melatonin': 'C0025219', 'collagen': 'C0009325',
+    'glutathione': 'C0017817', 'taurine': 'C0039350', 'l_valine': 'C0042285',
+    'gaba': 'C0016904', 'coq10': 'C0041536', 'dandelion': 'C0877851',
+    'perilla_oil': 'C0070421',
+}
+
+
+class TestVerifiedCuiPinned:
+    def test_verified_cui(self, entries):
+        bad = [(k, entries[k].get('cui'), v) for k, v in VERIFIED_CUI.items()
+               if entries[k].get('cui') != v]
+        assert not bad, "Verified CUI drifted:\n" + \
+            "\n".join(f"  {k}: {got} != {exp}" for k, got, exp in bad)
+
+
 class TestNullIdentifierHasNote:
     def test_null_cui_has_note(self, entries):
         bad = [k for k, e in entries.items()
