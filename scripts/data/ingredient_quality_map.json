@@ -16130,11 +16130,11 @@
             "rxcui": "5463",
             "forms": {
                   "oligosaccharide HA": {
-                        "bio_score": 13,
+                        "bio_score": 10,
                         "natural": false,
-                        "score": 13,
+                        "score": 10,
                         "absorption": "excellent (~75–80%)",
-                        "notes": "Ultra-low molecular weight; penetrates intestinal epithelium and skin layers",
+                        "notes": "Ultra-low molecular weight; penetrates intestinal epithelium and skin layers. Absorption-only: ultra-low-MW HA is the best-absorbed oral form, but oral HA absorption is limited overall.",
                         "aliases": [
                               "oligosaccharide hyaluronic acid",
                               "nano hyaluronic acid",
@@ -16166,11 +16166,11 @@
                         }
                   },
                   "liposomal HA": {
-                        "bio_score": 13,
+                        "bio_score": 10,
                         "natural": false,
-                        "score": 13,
+                        "score": 10,
                         "absorption": "superior (~2–3x)",
-                        "notes": "Encapsulated for enhanced delivery and skin penetration",
+                        "notes": "Encapsulated for enhanced delivery and skin penetration. Absorption-only: delivery-enhanced HA; oral HA absorption limited.",
                         "aliases": [
                               "liposomal hyaluronic acid",
                               "encapsulated HA",
@@ -16200,11 +16200,11 @@
                         }
                   },
                   "acetylated HA": {
-                        "bio_score": 12,
+                        "bio_score": 8,
                         "natural": false,
-                        "score": 12,
+                        "score": 8,
                         "absorption": "enhanced (~2x)",
-                        "notes": "Modified for improved stability and antioxidant activity",
+                        "notes": "Modified for improved stability and antioxidant activity. Absorption-only: acetylation aids stability/antioxidant, not absorption; HA is a large poorly-absorbed polymer.",
                         "aliases": [
                               "acetylated hyaluronic acid",
                               "HA-acet",
@@ -16236,11 +16236,11 @@
                         }
                   },
                   "low molecular weight HA": {
-                        "bio_score": 12,
+                        "bio_score": 9,
                         "natural": false,
-                        "score": 12,
+                        "score": 9,
                         "absorption": "good (~50–70%)",
-                        "notes": "Absorbed in cecum; supports systemic hydration and skin elasticity",
+                        "notes": "Absorbed in cecum; supports systemic hydration and skin elasticity. Absorption-only: partial cecal absorption; oral HA absorption limited.",
                         "aliases": [
                               "low molecular weight hyaluronic acid",
                               "LMW-HA",
@@ -16273,11 +16273,11 @@
                         }
                   },
                   "high molecular weight HA": {
-                        "bio_score": 9,
+                        "bio_score": 6,
                         "natural": false,
-                        "score": 9,
+                        "score": 6,
                         "absorption": "moderate (~30–50%)",
-                        "notes": "Large molecules; systemic distribution but limited absorption",
+                        "notes": "Large molecules; systemic distribution but limited absorption. Absorption-only: large polymer, poor oral systemic absorption.",
                         "aliases": [
                               "high molecular weight hyaluronic acid",
                               "HMW-HA",
@@ -34497,10 +34497,10 @@
             "rxcui": null,
             "forms": {
                   "lions mane fruiting body": {
-                        "bio_score": 11,
+                        "bio_score": 8,
                         "natural": true,
                         "absorption": "good (~75%)",
-                        "notes": "Whole fruiting body; supports cognitive function and nerve growth factor",
+                        "notes": "Whole fruiting body; supports cognitive function and nerve growth factor. Absorption-only: whole fruiting body; beta-glucan polysaccharides are not systemically absorbed.",
                         "aliases": [
                               "lion's mane mushroom",
                               "hericium erinaceus",
@@ -34510,7 +34510,7 @@
                               "lions mane fruiting body extract",
                               "hericium erinaceus fruiting body extract"
                         ],
-                        "score": 14,
+                        "score": 11,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.75,
@@ -34521,16 +34521,16 @@
                         }
                   },
                   "lions mane standardized extract": {
-                        "bio_score": 15,
+                        "bio_score": 10,
                         "natural": true,
                         "absorption": "excellent (~90%)",
-                        "notes": "Standardized to 30% polysaccharides and beta-glucans; clinically researched",
+                        "notes": "Standardized to 30% polysaccharides and beta-glucans; clinically researched. Absorption-only: standardized to polysaccharides (beta-glucans), which are large and act via gut immunity, not systemically absorbed; the absorbed fraction is the small-molecule hericenones/erinacines.",
                         "aliases": [
                               "standardized lion's mane",
                               "lion's mane 30% polysaccharides",
                               "lion's mane extract"
                         ],
-                        "score": 18,
+                        "score": 13,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.9,
@@ -34663,17 +34663,17 @@
             "rxcui": null,
             "forms": {
                   "reishi fruiting body": {
-                        "bio_score": 9,
+                        "bio_score": 8,
                         "natural": true,
                         "absorption": "moderate (~65%)",
-                        "notes": "Whole fruiting body powder; supports immune function and stress adaptation",
+                        "notes": "Whole fruiting body powder; supports immune function and stress adaptation. Absorption-only: whole fruiting body; polysaccharides not systemically absorbed.",
                         "aliases": [
                               "reishi mushroom",
                               "ganoderma lucidum",
                               "reishi powder",
                               "lingzhi"
                         ],
-                        "score": 12,
+                        "score": 11,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.65,
@@ -34684,16 +34684,16 @@
                         }
                   },
                   "reishi standardized extract": {
-                        "bio_score": 13,
+                        "bio_score": 10,
                         "natural": true,
                         "absorption": "excellent (~85%)",
-                        "notes": "Standardized to 30% polysaccharides and triterpenes",
+                        "notes": "Standardized to 30% polysaccharides and triterpenes. Absorption-only: standardized to polysaccharides (not systemically absorbed) plus triterpenes (partially absorbed).",
                         "aliases": [
                               "standardized reishi",
                               "reishi extract",
                               "reishi 30% polysaccharides"
                         ],
-                        "score": 16,
+                        "score": 13,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.85,
@@ -34743,16 +34743,16 @@
             "rxcui": null,
             "forms": {
                   "cordyceps militaris": {
-                        "bio_score": 13,
+                        "bio_score": 10,
                         "natural": true,
                         "absorption": "good (~80%)",
-                        "notes": "Cultivated Cordyceps militaris; high in cordycepin; supports energy and athletic performance",
+                        "notes": "Cultivated Cordyceps militaris; high in cordycepin; supports energy and athletic performance. Absorption-only: cordycepin is absorbed but rapidly deaminated (limited bioavailability); polysaccharides not systemically absorbed.",
                         "aliases": [
                               "cordyceps militaris",
                               "cordyceps mushroom",
                               "cordyceps extract"
                         ],
-                        "score": 16,
+                        "score": 13,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.8,
@@ -34763,16 +34763,16 @@
                         }
                   },
                   "cordyceps sinensis mycelium": {
-                        "bio_score": 9,
+                        "bio_score": 8,
                         "natural": true,
                         "absorption": "moderate (~70%)",
-                        "notes": "Mycelium-based; traditional form but lower bioactives than fruiting body",
+                        "notes": "Mycelium-based; traditional form but lower bioactives than fruiting body. Absorption-only: mycelium polysaccharides not systemically absorbed.",
                         "aliases": [
                               "cordyceps sinensis",
                               "cordyceps mycelium",
                               "cs-4"
                         ],
-                        "score": 12,
+                        "score": 11,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.7,
@@ -38605,11 +38605,11 @@
             ],
             "forms": {
                   "grass-fed desiccated": {
-                        "bio_score": 13,
+                        "bio_score": 9,
                         "natural": true,
-                        "score": 16,
+                        "score": 12,
                         "absorption": "unknown",
-                        "notes": "",
+                        "notes": ". Absorption-only: grass-fed sourcing is a quality claim, not an absorption advantage; whole-tissue matrix, moderate absorption.",
                         "aliases": [
                               "grass-fed desiccated"
                         ],
@@ -38621,11 +38621,11 @@
                         }
                   },
                   "freeze-dried": {
-                        "bio_score": 12,
+                        "bio_score": 9,
                         "natural": true,
-                        "score": 15,
+                        "score": 12,
                         "absorption": "unknown",
-                        "notes": "",
+                        "notes": ". Absorption-only: freeze-drying preserves nutrients (quality), not an absorption advantage.",
                         "aliases": [
                               "freeze-dried"
                         ],
@@ -38637,11 +38637,11 @@
                         }
                   },
                   "standard desiccated": {
-                        "bio_score": 10,
+                        "bio_score": 8,
                         "natural": true,
-                        "score": 13,
+                        "score": 11,
                         "absorption": "unknown",
-                        "notes": "",
+                        "notes": ". Absorption-only: whole-tissue matrix, moderate absorption.",
                         "aliases": [
                               "standard desiccated"
                         ],
@@ -38653,11 +38653,11 @@
                         }
                   },
                   "unspecified": {
-                        "bio_score": 9,
+                        "bio_score": 7,
                         "natural": false,
-                        "score": 9,
+                        "score": 7,
                         "absorption": "unknown",
-                        "notes": "",
+                        "notes": ". Absorption-only: whole-tissue matrix, moderate absorption.",
                         "aliases": [
                               "organ extracts (glandulars)",
                               "organ extracts"
