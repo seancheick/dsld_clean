@@ -1,0 +1,2889 @@
+{
+  "_meta": {
+    "purpose": "Vetted IQM deltas to REPLAY onto current main (627 parents / schema 5.4.4). Do NOT whole-file merge the branch (it is stale: 485 parents). Apply batch-by-batch. Branch _metadata must NOT be copied. Identifier batch: ~115/121 CUI and ~77/85 RxCUI are already on main per Codex; dev should diff each row against current main and apply only residuals.",
+    "source_branch": "claude/eloquent-ride-Bq8cO",
+    "base_seen": "origin/main(485,this-remote)",
+    "known_preexisting_issue_not_in_deltas": {
+      "l_glycine.forms['magnesium glycinate']": "Wrong-parent/duplicate (dedicated magnesium/magnesium glycinate exists). PRE-EXISTING on main, not introduced here. Fix at source on real main if desired."
+    },
+    "open_decision": {
+      "mushroom_category_enum": "herbs (prior instruction) VS mushroom_extracts (Codex latest). Batch 3 leaves this as <DECISION>."
+    }
+  },
+  "batch1_alias_hijack_removals": [
+    {
+      "parent": "branched_chain_amino_acids",
+      "form": "bcaa 2:1:1",
+      "remove_aliases": [
+        "amino acids",
+        "essential amino acids",
+        "amino acids supplement",
+        "essential amino acids supplement"
+      ]
+    },
+    {
+      "parent": "l_theanine",
+      "form": "l-theanine (unspecified)",
+      "remove_aliases": [
+        "suntheanine l-theanine",
+        "suntheanine",
+        "alphawave"
+      ]
+    },
+    {
+      "parent": "lutein",
+      "form": "lutein (unspecified)",
+      "remove_aliases": [
+        "FloraGLO",
+        "Flora GLO",
+        "flora-glo",
+        "Lutemax 2020",
+        "marigold flower extract",
+        "marigold extract",
+        "tagetes erecta extract"
+      ]
+    },
+    {
+      "parent": "quercetin",
+      "form": "quercetin (unspecified)",
+      "remove_aliases": [
+        "Quercetin Phytosome",
+        "Quercefit"
+      ]
+    },
+    {
+      "parent": "vitamin_b2_riboflavin",
+      "form": "riboflavin",
+      "remove_aliases": [
+        "colored with vitamin b2"
+      ]
+    },
+    {
+      "parent": "vitamin_b9_folate",
+      "form": "vitamin b9 (unspecified)",
+      "remove_aliases": [
+        "Lemon Extract"
+      ]
+    }
+  ],
+  "batch2_premium_forms_added": [
+    {
+      "parent": "berberine_supplement",
+      "form": "dihydroberberine",
+      "object": {
+        "bio_score": 11,
+        "natural": false,
+        "score": 11,
+        "absorption": "moderate (~5x berberine HCl, still limited absolute)",
+        "notes": "Reduced berberine form with markedly improved oral bioavailability vs berberine HCl (~5x; PMID 37057922). Absorption-only: scored above berberine HCl (6) and near the enhanced-delivery tier, though absolute absorption of berberine remains limited.",
+        "aliases": [
+          "dihydroberberine",
+          "DHB",
+          "reduced berberine",
+          "berberine reduced"
+        ],
+        "dosage_importance": 1.0,
+        "absorption_structured": {
+          "value": 5,
+          "quality": "good",
+          "notes": "~5x oral bioavailability vs berberine HCl (PMID 37057922)",
+          "is_relative": true,
+          "range_low": null,
+          "range_high": null
+        }
+      }
+    },
+    {
+      "parent": "l_theanine",
+      "form": "l-theanine (suntheanine / pure l-isomer)",
+      "object": {
+        "bio_score": 12,
+        "natural": false,
+        "score": 12,
+        "absorption": "good (rapidly/actively absorbed small amino acid)",
+        "notes": "Pure L-isomer theanine (e.g. Suntheanine). Absorption-only: L-theanine is a small amino acid that is rapidly and actively absorbed in the small intestine (PMID 34115818); the D-isomer in racemic/unspecified product is less active. bio_score reflects good systemic absorption.",
+        "aliases": [
+          "suntheanine",
+          "suntheanine l-theanine",
+          "alphawave",
+          "l-theanine pure",
+          "pure l-theanine",
+          "l-theanine (suntheanine)"
+        ],
+        "dosage_importance": 1.0,
+        "absorption_structured": {
+          "value": 0.85,
+          "quality": "good",
+          "notes": "Rapidly absorbed small amino acid (PMID 34115818)",
+          "range_low": null,
+          "range_high": null
+        }
+      }
+    },
+    {
+      "parent": "lutein",
+      "form": "free lutein (floraglo / lutemax, marigold)",
+      "object": {
+        "bio_score": 10,
+        "natural": true,
+        "score": 13,
+        "absorption": "moderate (fat-dependent carotenoid)",
+        "notes": "Purified free lutein from marigold (e.g. FloraGLO, Lutemax 2020). Absorption-only: clinical-grade purity/standardization does NOT raise systemic absorption - lutein is a moderate, fat-dependent absorber; scored at the moderate tier, not premium, despite branding.",
+        "aliases": [
+          "floraglo",
+          "flora glo",
+          "flora-glo",
+          "lutemax 2020",
+          "lutemax",
+          "marigold flower extract",
+          "marigold extract",
+          "tagetes erecta extract",
+          "free lutein",
+          "purified lutein"
+        ],
+        "dosage_importance": 1.0,
+        "absorption_structured": {
+          "value": 0.5,
+          "quality": "moderate",
+          "notes": "Moderate fat-dependent carotenoid absorption",
+          "range_low": null,
+          "range_high": null
+        }
+      }
+    },
+    {
+      "parent": "quercetin",
+      "form": "quercetin phytosome (quercefit)",
+      "object": {
+        "bio_score": 14,
+        "natural": false,
+        "score": 14,
+        "absorption": "excellent (~20x oral absorption vs unformulated quercetin)",
+        "notes": "Patented lecithin-based phytosome delivery (Quercefit). Human PK shows ~20x improved oral absorption vs unformulated quercetin (PMID 30328058, Riva et al., Eur J Drug Metab Pharmacokinet 2019). bio_score reflects clinically demonstrated superior absorption.",
+        "aliases": [
+          "quercetin phytosome",
+          "quercefit",
+          "quercetin phospholipid complex",
+          "quercetin lecithin phytosome"
+        ],
+        "dosage_importance": 1.0,
+        "absorption_structured": {
+          "value": 20,
+          "is_relative": true,
+          "range_low": null,
+          "range_high": null,
+          "quality": "excellent",
+          "notes": "~20x relative oral absorption vs unformulated quercetin (PMID 30328058)"
+        }
+      }
+    }
+  ],
+  "batch3_mushroom_parents_and_fields": {
+    "new_parents": [
+      {
+        "parent": "auricularia",
+        "object": {
+          "standard_name": "Auricularia (Wood Ear)",
+          "category": "<DECISION>",
+          "cui": null,
+          "rxcui": null,
+          "match_rules": {
+            "priority": 0,
+            "match_mode": "alias_and_fuzzy",
+            "exclusions": [],
+            "parent_id": null,
+            "confidence": "high"
+          },
+          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+          "rxcui_note": "No RxNorm concept for supplement ingredient",
+          "data_quality": {
+            "completeness": 1.0,
+            "missing_fields": [],
+            "review_status": "validated",
+            "last_reviewed_at": "2026-06-06"
+          },
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "forms": {
+            "auricularia extract": {
+              "bio_score": 9,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Disclosed Auricularia polysaccharide extract; meaningful local-active form.",
+              "aliases": [
+                "wood ear extract",
+                "black fungus extract",
+                "auricularia extract",
+                "auricularia auricula-judae extract",
+                "wood ear mushroom extract"
+              ],
+              "score": 12,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "auricularia (unspecified)": {
+              "bio_score": 5,
+              "natural": false,
+              "score": 5,
+              "absorption": "unknown",
+              "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+              "aliases": [
+                "auricularia",
+                "wood ear",
+                "black fungus",
+                "auricularia auricula",
+                "jelly ear"
+              ],
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "quality": "unknown",
+                "notes": "Data not available"
+              }
+            }
+          }
+        }
+      },
+      {
+        "parent": "button_mushroom",
+        "object": {
+          "standard_name": "Button Mushroom",
+          "category": "<DECISION>",
+          "cui": null,
+          "rxcui": null,
+          "match_rules": {
+            "priority": 0,
+            "match_mode": "alias_and_fuzzy",
+            "exclusions": [],
+            "parent_id": null,
+            "confidence": "high"
+          },
+          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+          "rxcui_note": "No RxNorm concept for supplement ingredient",
+          "data_quality": {
+            "completeness": 1.0,
+            "missing_fields": [],
+            "review_status": "validated",
+            "last_reviewed_at": "2026-06-06"
+          },
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "forms": {
+            "button mushroom extract": {
+              "bio_score": 8,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Disclosed Agaricus bisporus extract; modest immune-polysaccharide profile vs medicinal species.",
+              "aliases": [
+                "white button mushroom extract",
+                "button mushroom extract",
+                "agaricus bisporus extract"
+              ],
+              "score": 11,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "low",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "button mushroom (unspecified)": {
+              "bio_score": 5,
+              "natural": false,
+              "score": 5,
+              "absorption": "unknown",
+              "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+              "aliases": [
+                "button mushroom",
+                "white mushroom",
+                "agaricus bisporus",
+                "crimini",
+                "portobello"
+              ],
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "quality": "unknown",
+                "notes": "Data not available"
+              }
+            }
+          }
+        }
+      },
+      {
+        "parent": "chaga",
+        "object": {
+          "standard_name": "Chaga",
+          "category": "<DECISION>",
+          "cui": null,
+          "rxcui": null,
+          "match_rules": {
+            "priority": 0,
+            "match_mode": "alias_and_fuzzy",
+            "exclusions": [],
+            "parent_id": null,
+            "confidence": "high"
+          },
+          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+          "rxcui_note": "No RxNorm concept for supplement ingredient",
+          "data_quality": {
+            "completeness": 1.0,
+            "missing_fields": [],
+            "review_status": "validated",
+            "last_reviewed_at": "2026-06-06"
+          },
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "forms": {
+            "chaga standardized extract": {
+              "bio_score": 11,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Hot-water/dual standardized polysaccharide extract; superior disclosed form.",
+              "aliases": [
+                "standardized chaga",
+                "chaga extract",
+                "chaga mushroom extract",
+                "chaga dual extract",
+                "inonotus obliquus extract",
+                "chaga polysaccharide extract"
+              ],
+              "score": 14,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "chaga sclerotium": {
+              "bio_score": 9,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Disclosed wild sclerotium (conk); meaningful beta-glucan/melanin source.",
+              "aliases": [
+                "chaga sclerotium",
+                "chaga conk",
+                "wild chaga",
+                "inonotus obliquus",
+                "chaga chunks",
+                "chaga powder"
+              ],
+              "score": 12,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "chaga (unspecified)": {
+              "bio_score": 5,
+              "natural": false,
+              "score": 5,
+              "absorption": "unknown",
+              "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+              "aliases": [
+                "chaga",
+                "chaga mushroom"
+              ],
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "quality": "unknown",
+                "notes": "Data not available"
+              }
+            }
+          }
+        }
+      },
+      {
+        "parent": "maitake",
+        "object": {
+          "standard_name": "Maitake",
+          "category": "<DECISION>",
+          "cui": null,
+          "rxcui": null,
+          "match_rules": {
+            "priority": 0,
+            "match_mode": "alias_and_fuzzy",
+            "exclusions": [],
+            "parent_id": null,
+            "confidence": "high"
+          },
+          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+          "rxcui_note": "No RxNorm concept for supplement ingredient",
+          "data_quality": {
+            "completeness": 1.0,
+            "missing_fields": [],
+            "review_status": "validated",
+            "last_reviewed_at": "2026-06-06"
+          },
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "forms": {
+            "maitake standardized extract": {
+              "bio_score": 11,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Standardized D/MD-fraction beta-glucan extract; superior disclosed form.",
+              "aliases": [
+                "standardized maitake",
+                "maitake extract",
+                "maitake mushroom extract",
+                "maitake d-fraction",
+                "maitake md-fraction",
+                "grifola frondosa extract"
+              ],
+              "score": 14,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "maitake fruiting body": {
+              "bio_score": 9,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Disclosed fruiting body; meaningful beta-glucan content.",
+              "aliases": [
+                "maitake mushroom",
+                "grifola frondosa",
+                "maitake powder",
+                "hen of the woods",
+                "maitake fruiting body"
+              ],
+              "score": 12,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "maitake (unspecified)": {
+              "bio_score": 5,
+              "natural": false,
+              "score": 5,
+              "absorption": "unknown",
+              "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+              "aliases": [
+                "maitake"
+              ],
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "quality": "unknown",
+                "notes": "Data not available"
+              }
+            }
+          }
+        }
+      },
+      {
+        "parent": "shiitake",
+        "object": {
+          "standard_name": "Shiitake",
+          "category": "<DECISION>",
+          "cui": null,
+          "rxcui": null,
+          "match_rules": {
+            "priority": 0,
+            "match_mode": "alias_and_fuzzy",
+            "exclusions": [],
+            "parent_id": null,
+            "confidence": "high"
+          },
+          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+          "rxcui_note": "No RxNorm concept for supplement ingredient",
+          "data_quality": {
+            "completeness": 1.0,
+            "missing_fields": [],
+            "review_status": "validated",
+            "last_reviewed_at": "2026-06-06"
+          },
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "forms": {
+            "shiitake standardized extract": {
+              "bio_score": 11,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Standardized lentinan beta-glucan extract; superior disclosed form.",
+              "aliases": [
+                "standardized shiitake",
+                "shiitake extract",
+                "shiitake mushroom extract",
+                "lentinan",
+                "lentinula edodes extract"
+              ],
+              "score": 14,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "shiitake fruiting body": {
+              "bio_score": 9,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Disclosed fruiting body; meaningful beta-glucan content.",
+              "aliases": [
+                "shiitake mushroom",
+                "lentinula edodes",
+                "lentinus edodes",
+                "shiitake powder",
+                "shiitake fruiting body"
+              ],
+              "score": 12,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "shiitake (unspecified)": {
+              "bio_score": 5,
+              "natural": false,
+              "score": 5,
+              "absorption": "unknown",
+              "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+              "aliases": [
+                "shiitake"
+              ],
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "quality": "unknown",
+                "notes": "Data not available"
+              }
+            }
+          }
+        }
+      },
+      {
+        "parent": "turkey_tail",
+        "object": {
+          "standard_name": "Turkey Tail",
+          "category": "<DECISION>",
+          "cui": null,
+          "rxcui": null,
+          "match_rules": {
+            "priority": 0,
+            "match_mode": "alias_and_fuzzy",
+            "exclusions": [],
+            "parent_id": null,
+            "confidence": "high"
+          },
+          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+          "rxcui_note": "No RxNorm concept for supplement ingredient",
+          "data_quality": {
+            "completeness": 1.0,
+            "missing_fields": [],
+            "review_status": "validated",
+            "last_reviewed_at": "2026-06-06"
+          },
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "forms": {
+            "turkey tail standardized extract": {
+              "bio_score": 11,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Hot-water/standardized PSK/PSP beta-glucan extract; superior disclosed local-immune form.",
+              "aliases": [
+                "standardized turkey tail",
+                "turkey tail extract",
+                "turkey tail mushroom extract",
+                "psk",
+                "psp",
+                "polysaccharide-k",
+                "polysaccharopeptide",
+                "coriolus versicolor extract",
+                "trametes versicolor extract"
+              ],
+              "score": 14,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "turkey tail fruiting body": {
+              "bio_score": 9,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Disclosed fruiting body; meaningful beta-glucan content.",
+              "aliases": [
+                "turkey tail mushroom",
+                "trametes versicolor",
+                "coriolus versicolor",
+                "turkey tail powder",
+                "turkey tail fruiting body"
+              ],
+              "score": 12,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "variable",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "turkey tail mycelium": {
+              "bio_score": 7,
+              "natural": true,
+              "absorption": "local/non-systemic (variable)",
+              "notes": "Mycelium-on-grain; diluted beta-glucan vs fruiting body/extract.",
+              "aliases": [
+                "turkey tail mycelium",
+                "myceliated turkey tail",
+                "turkey tail mycelium biomass"
+              ],
+              "score": 10,
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "range_low": null,
+                "range_high": null,
+                "quality": "low",
+                "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+              }
+            },
+            "turkey tail (unspecified)": {
+              "bio_score": 5,
+              "natural": false,
+              "score": 5,
+              "absorption": "unknown",
+              "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+              "aliases": [
+                "turkey tail"
+              ],
+              "dosage_importance": 1.0,
+              "absorption_structured": {
+                "value": null,
+                "quality": "unknown",
+                "notes": "Data not available"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "fungal_fields_for_existing": [
+      {
+        "parent": "lions_mane",
+        "set": {
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+        }
+      },
+      {
+        "parent": "reishi",
+        "set": {
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+        }
+      },
+      {
+        "parent": "cordyceps",
+        "set": {
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+        }
+      },
+      {
+        "parent": "cordycepsprime",
+        "set": {
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+        }
+      },
+      {
+        "parent": "ahcc",
+        "set": {
+          "source_origin": "fungal",
+          "ingredient_domain": "fungal_mushroom",
+          "local_matrix_active": true,
+          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+        }
+      }
+    ],
+    "score_gradients": [
+      {
+        "parent": "lions_mane",
+        "form": "lions mane fruiting body",
+        "bio_score": 9
+      },
+      {
+        "parent": "lions_mane",
+        "form": "lions mane standardized extract",
+        "bio_score": 11
+      },
+      {
+        "parent": "reishi",
+        "form": "reishi standardized extract",
+        "bio_score": 11
+      },
+      {
+        "parent": "cordyceps",
+        "form": "cordyceps militaris",
+        "bio_score": 11
+      },
+      {
+        "parent": "cordyceps",
+        "form": "cordyceps sinensis mycelium",
+        "bio_score": 8
+      },
+      {
+        "parent": "cordycepsprime",
+        "form": "cordycepsprime",
+        "bio_score": 10
+      }
+    ]
+  },
+  "batch4_natural_catchall_cleanup": {
+    "unspecified_generic_drop_bonus": [
+      {
+        "parent": "ahcc",
+        "form": "AHCC (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "ahiflower_seed_oil",
+        "form": "ahiflower seed oil (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "alpha_carotene",
+        "form": "alpha-carotene (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "arachidonic_acid",
+        "form": "arachidonic acid (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "bacopa",
+        "form": "bacopa (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "beta_caryophyllene",
+        "form": "beta-caryophyllene (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "bioflavonoids",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "black_cohosh",
+        "form": "black cohosh (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "black_seed_oil",
+        "form": "black seed (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "boswellia",
+        "form": "boswellia (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "branched_chain_amino_acids",
+        "form": "standard",
+        "natural": false
+      },
+      {
+        "parent": "butterbur",
+        "form": "butterbur (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "calamari_oil",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "ceramides",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "chasteberry",
+        "form": "chasteberry (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "chrysin",
+        "form": "chrysin (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "citrus_bergamot",
+        "form": "bergamot (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "cod_liver_oil",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "curcumin",
+        "form": "curcumin (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "cyanidin_3_glucoside",
+        "form": "cyanidin-3-glucoside (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "dha",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "epa",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "evening_primrose_oil",
+        "form": "evening primrose oil (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "fenugreek",
+        "form": "fenugreek (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "fish_oil",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "fluoride",
+        "form": "standard",
+        "natural": false
+      },
+      {
+        "parent": "fucoxanthin",
+        "form": "fucoxanthin (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "gamma_oryzanol",
+        "form": "gamma oryzanol (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "gotu_kola",
+        "form": "gotu kola (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "guava_leaf",
+        "form": "guava (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "hemp_seed_oil",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "hops",
+        "form": "hops extract (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "horsetail",
+        "form": "horsetail extract (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "inositol_hexaphosphate",
+        "form": "IP6 (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "iodine",
+        "form": "iodine (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "lactobacillus_salivarius",
+        "form": "generic lactobacillus salivarius",
+        "natural": false
+      },
+      {
+        "parent": "lactoferrin",
+        "form": "lactoferrin (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "manuka_honey",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "myricetin",
+        "form": "myricetin (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "myristic_acid",
+        "form": "myristic acid (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "omega_3",
+        "form": "omega-3 (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "organ_extracts",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "pine_bark_extract",
+        "form": "generic pine bark extract",
+        "natural": false
+      },
+      {
+        "parent": "polygodial",
+        "form": "polygodial (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "pomegranate",
+        "form": "pomegranate (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "probiotic_unspecified",
+        "form": "standard",
+        "natural": false
+      },
+      {
+        "parent": "sea_buckthorn",
+        "form": "sea buckthorn (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "shilajit",
+        "form": "shilajit (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "silicon",
+        "form": "standard",
+        "natural": false
+      },
+      {
+        "parent": "silk_amino_acids",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "slippery_elm",
+        "form": "bark powder (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "st_johns_wort",
+        "form": "st john's wort (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "stearidonic_acid",
+        "form": "stearidonic acid (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "taurine",
+        "form": "taurine (generic)",
+        "natural": false
+      },
+      {
+        "parent": "tongkat_ali",
+        "form": "tongkat ali (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "tuna_oil",
+        "form": "unspecified",
+        "natural": false
+      },
+      {
+        "parent": "valerian",
+        "form": "valerian (unspecified)",
+        "natural": false
+      },
+      {
+        "parent": "vitamin_d",
+        "form": "vitamin D2 (unspecified source)",
+        "natural": false
+      },
+      {
+        "parent": "white_tea",
+        "form": "white tea extract (unspecified)",
+        "natural": false
+      }
+    ],
+    "delivery_form_fix": [
+      {
+        "parent": "calcium",
+        "form": "calcium carbonate",
+        "natural": false
+      },
+      {
+        "parent": "calcium",
+        "form": "coral calcium",
+        "natural": false
+      },
+      {
+        "parent": "curcumin",
+        "form": "liposomal curcumin",
+        "natural": false
+      },
+      {
+        "parent": "glutathione",
+        "form": "liposomal glutathione",
+        "natural": false
+      },
+      {
+        "parent": "l_glycine",
+        "form": "magnesium glycinate",
+        "natural": false
+      },
+      {
+        "parent": "magnesium",
+        "form": "magnesium chloride",
+        "natural": false
+      },
+      {
+        "parent": "magnesium",
+        "form": "magnesium carbonate",
+        "natural": false
+      },
+      {
+        "parent": "magnesium",
+        "form": "magnesium sulfate",
+        "natural": false
+      },
+      {
+        "parent": "milk_thistle",
+        "form": "silymarin phytosome",
+        "natural": false
+      },
+      {
+        "parent": "phosphorus",
+        "form": "phosphate salts",
+        "natural": false
+      },
+      {
+        "parent": "saw_palmetto",
+        "form": "liposomal saw palmetto",
+        "natural": false
+      },
+      {
+        "parent": "vitamin_k1",
+        "form": "micellized k1",
+        "natural": false
+      }
+    ]
+  },
+  "batch5_bioscore_recalibrations_CANARY": [
+    {
+      "parent": "apigenin",
+      "form": "apigenin extract",
+      "old": 13,
+      "new": 6,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "astaxanthin",
+      "form": "natural astaxanthin (haematococcus pluvialis)",
+      "old": 12,
+      "new": 11,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "astaxanthin",
+      "form": "synthetic astaxanthin",
+      "old": 12,
+      "new": 10,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "berberine_supplement",
+      "form": "berberine hcl",
+      "old": 11,
+      "new": 6,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "bilberry",
+      "form": "bilberry extract (25% anthocyanins)",
+      "old": 12,
+      "new": 10,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "bioflavonoids",
+      "form": "hesperidin-rich",
+      "old": 12,
+      "new": 8,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "bioflavonoids",
+      "form": "rutin complex",
+      "old": 11,
+      "new": 7,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "bioflavonoids",
+      "form": "citrus complex",
+      "old": 11,
+      "new": 7,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "bioflavonoids",
+      "form": "unspecified",
+      "old": 9,
+      "new": 6,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "ceramides",
+      "form": "unspecified",
+      "old": 10,
+      "new": 8,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "cordyceps",
+      "form": "cordyceps sinensis mycelium",
+      "old": 9,
+      "new": 8,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "cordyceps",
+      "form": "cordyceps militaris",
+      "old": 13,
+      "new": 11,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "cordycepsprime",
+      "form": "cordycepsprime",
+      "old": 12,
+      "new": 10,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "cryptoxanthin",
+      "form": "beta-cryptoxanthin",
+      "old": 12,
+      "new": 10,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "cyanidin_3_glucoside",
+      "form": "cyanidin-3-glucoside (unspecified)",
+      "old": 10,
+      "new": 6,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "dha",
+      "form": "unspecified",
+      "old": 10,
+      "new": 8,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "elderberry",
+      "form": "elderberry extract (sambucol)",
+      "old": 12,
+      "new": 10,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "epa",
+      "form": "unspecified",
+      "old": 10,
+      "new": 8,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "eriocitrin",
+      "form": "eriocitrin extract",
+      "old": 11,
+      "new": 7,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "fish_oil",
+      "form": "unspecified",
+      "old": 10,
+      "new": 8,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "flavones",
+      "form": "mixed flavones",
+      "old": 11,
+      "new": 6,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "flavonols",
+      "form": "mixed flavonols",
+      "old": 11,
+      "new": 6,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "fluoride",
+      "form": "standard",
+      "old": 10,
+      "new": 6,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "glutathione_peroxidase",
+      "form": "glutathione peroxidase enzyme",
+      "old": 12,
+      "new": 5,
+      "theme": "bare-enzyme demotion"
+    },
+    {
+      "parent": "green_tea_extract",
+      "form": "green tea catechins",
+      "old": 13,
+      "new": 10,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "hemp_seed_oil",
+      "form": "unspecified",
+      "old": 10,
+      "new": 8,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "hyaluronic_acid",
+      "form": "acetylated HA",
+      "old": 12,
+      "new": 8,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "hyaluronic_acid",
+      "form": "oligosaccharide HA",
+      "old": 13,
+      "new": 10,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "hyaluronic_acid",
+      "form": "high molecular weight HA",
+      "old": 9,
+      "new": 6,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "hyaluronic_acid",
+      "form": "low molecular weight HA",
+      "old": 12,
+      "new": 9,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "hyaluronic_acid",
+      "form": "liposomal HA",
+      "old": 13,
+      "new": 10,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "l_glycine",
+      "form": "magnesium glycinate",
+      "old": 15,
+      "new": 14,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "lions_mane",
+      "form": "lions mane fruiting body",
+      "old": 11,
+      "new": 9,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "lions_mane",
+      "form": "lions mane standardized extract",
+      "old": 15,
+      "new": 11,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "lycopene",
+      "form": "lycopene extract",
+      "old": 13,
+      "new": 10,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "lysozyme",
+      "form": "lysozyme enzyme",
+      "old": 10,
+      "new": 5,
+      "theme": "bare-enzyme demotion"
+    },
+    {
+      "parent": "manuka_honey",
+      "form": "unspecified",
+      "old": 10,
+      "new": 8,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "nattokinase",
+      "form": "nattokinase standard",
+      "old": 12,
+      "new": 8,
+      "theme": "bare-enzyme demotion"
+    },
+    {
+      "parent": "nattokinase_nsk_sd",
+      "form": "nsk-sd",
+      "old": 13,
+      "new": 8,
+      "theme": "bare-enzyme demotion"
+    },
+    {
+      "parent": "organ_extracts",
+      "form": "grass-fed desiccated",
+      "old": 13,
+      "new": 9,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "organ_extracts",
+      "form": "freeze-dried",
+      "old": 12,
+      "new": 9,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "organ_extracts",
+      "form": "standard desiccated",
+      "old": 10,
+      "new": 8,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "organ_extracts",
+      "form": "unspecified",
+      "old": 9,
+      "new": 7,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "prebiotics",
+      "form": "human milk oligosaccharides (HMO)",
+      "old": 14,
+      "new": 13,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "probiotic_unspecified",
+      "form": "standard",
+      "old": 10,
+      "new": 5,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "reishi",
+      "form": "reishi standardized extract",
+      "old": 13,
+      "new": 11,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "silicon",
+      "form": "standard",
+      "old": 10,
+      "new": 6,
+      "theme": "absorption-axis demotion"
+    },
+    {
+      "parent": "slippery_elm",
+      "form": "standardized extract (mucilage)",
+      "old": 14,
+      "new": 13,
+      "theme": "local/non-systemic form-quality"
+    },
+    {
+      "parent": "superoxide_dismutase",
+      "form": "sod supplement",
+      "old": 10,
+      "new": 5,
+      "theme": "bare-enzyme demotion"
+    },
+    {
+      "parent": "vitamin_a",
+      "form": "beta-carotene from mixed carotenoids",
+      "old": 12,
+      "new": 10,
+      "theme": "absorption-axis demotion"
+    }
+  ],
+  "batch6_identifier_exceptions": [
+    {
+      "parent": "5_htp",
+      "field": "rxcui",
+      "old": "258326",
+      "new": "94"
+    },
+    {
+      "parent": "acetyl_l_carnitine",
+      "field": "rxcui",
+      "old": "40799",
+      "new": "193"
+    },
+    {
+      "parent": "ahcc",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "ahiflower_seed_oil",
+      "field": "cui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "ahiflower_seed_oil",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "allicin",
+      "field": "cui",
+      "old": "C0051140",
+      "new": "C0051200"
+    },
+    {
+      "parent": "alpha_carotene",
+      "field": "cui",
+      "old": "C0052486",
+      "new": "C0051336"
+    },
+    {
+      "parent": "alpha_lipoic_acid",
+      "field": "cui",
+      "old": "C0064585",
+      "new": "C0023791"
+    },
+    {
+      "parent": "alpha_lipoic_acid",
+      "field": "rxcui",
+      "old": "19721",
+      "new": "6417"
+    },
+    {
+      "parent": "apigenin",
+      "field": "cui",
+      "old": "C0048689",
+      "new": "C0912024"
+    },
+    {
+      "parent": "ashwagandha",
+      "field": "cui",
+      "old": "C1170179",
+      "new": "C0613707"
+    },
+    {
+      "parent": "ashwagandha",
+      "field": "rxcui",
+      "old": "11176",
+      "new": null
+    },
+    {
+      "parent": "astaxanthin",
+      "field": "cui",
+      "old": "C0162316",
+      "new": "C0052565"
+    },
+    {
+      "parent": "astaxanthin",
+      "field": "rxcui",
+      "old": "1165380",
+      "new": "18451"
+    },
+    {
+      "parent": "beta-alanine",
+      "field": "cui",
+      "old": "C0074950",
+      "new": "C0000392"
+    },
+    {
+      "parent": "beta-alanine",
+      "field": "rxcui",
+      "old": "1981",
+      "new": "61"
+    },
+    {
+      "parent": "beta_caryophyllene",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "bilberry",
+      "field": "cui",
+      "old": "C0281934",
+      "new": "C0453269"
+    },
+    {
+      "parent": "bilberry",
+      "field": "rxcui",
+      "old": "11155",
+      "new": "125929"
+    },
+    {
+      "parent": "boron",
+      "field": "cui",
+      "old": "C0006057",
+      "new": "C0006030"
+    },
+    {
+      "parent": "boron",
+      "field": "rxcui",
+      "old": "19718",
+      "new": "1705"
+    },
+    {
+      "parent": "brown_kelp",
+      "field": "cui",
+      "old": "",
+      "new": "C0022980"
+    },
+    {
+      "parent": "brown_kelp",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "butterbur",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "caffeine",
+      "field": "rxcui",
+      "old": "2103",
+      "new": "1886"
+    },
+    {
+      "parent": "calcium",
+      "field": "rxcui",
+      "old": "1898",
+      "new": "1895"
+    },
+    {
+      "parent": "celadrin",
+      "field": "cui",
+      "old": "",
+      "new": "C5390919"
+    },
+    {
+      "parent": "celadrin",
+      "field": "rxcui",
+      "old": "",
+      "new": "2380349"
+    },
+    {
+      "parent": "chlorella",
+      "field": "cui",
+      "old": "C0246281",
+      "new": "C0008190"
+    },
+    {
+      "parent": "choline",
+      "field": "cui",
+      "old": "C0008489",
+      "new": "C0008405"
+    },
+    {
+      "parent": "choline",
+      "field": "rxcui",
+      "old": "2079",
+      "new": null
+    },
+    {
+      "parent": "chondroitin",
+      "field": "cui",
+      "old": "C0008494",
+      "new": "C0008454"
+    },
+    {
+      "parent": "chondroitin",
+      "field": "rxcui",
+      "old": "23874",
+      "new": "2473"
+    },
+    {
+      "parent": "chromium",
+      "field": "cui",
+      "old": "C0008670",
+      "new": "C0008574"
+    },
+    {
+      "parent": "chromium",
+      "field": "rxcui",
+      "old": "2403",
+      "new": "2496"
+    },
+    {
+      "parent": "chrysin",
+      "field": "rxcui",
+      "old": "",
+      "new": "1362888"
+    },
+    {
+      "parent": "citrus_bioflavonoids",
+      "field": "cui",
+      "old": "C0595900",
+      "new": "C0982043"
+    },
+    {
+      "parent": "collagen",
+      "field": "cui",
+      "old": "C0009368",
+      "new": "C0009325"
+    },
+    {
+      "parent": "common_bean_extract",
+      "field": "cui",
+      "old": "",
+      "new": "C4321296"
+    },
+    {
+      "parent": "common_bean_extract",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "copper",
+      "field": "cui",
+      "old": "C0010175",
+      "new": "C0009968"
+    },
+    {
+      "parent": "copper",
+      "field": "rxcui",
+      "old": "3002",
+      "new": "2837"
+    },
+    {
+      "parent": "coq10",
+      "field": "cui",
+      "old": "C0009384",
+      "new": "C0041536"
+    },
+    {
+      "parent": "coq10",
+      "field": "rxcui",
+      "old": "309268",
+      "new": "21406"
+    },
+    {
+      "parent": "corn_silk",
+      "field": "cui",
+      "old": "",
+      "new": "C0937769"
+    },
+    {
+      "parent": "corn_silk",
+      "field": "rxcui",
+      "old": "",
+      "new": "283677"
+    },
+    {
+      "parent": "cranberry",
+      "field": "cui",
+      "old": "C0678177",
+      "new": "C0453273"
+    },
+    {
+      "parent": "cranberry",
+      "field": "rxcui",
+      "old": "11179",
+      "new": "125933"
+    },
+    {
+      "parent": "creatine_monohydrate",
+      "field": "cui",
+      "old": "C0079823",
+      "new": "C0873188"
+    },
+    {
+      "parent": "creatine_monohydrate",
+      "field": "rxcui",
+      "old": "2231",
+      "new": "1310467"
+    },
+    {
+      "parent": "cryptoxanthin",
+      "field": "cui",
+      "old": "C0079171",
+      "new": "C0896117"
+    },
+    {
+      "parent": "cryptoxanthin",
+      "field": "rxcui",
+      "old": "1116063",
+      "new": null
+    },
+    {
+      "parent": "curcumin",
+      "field": "cui",
+      "old": "C0010598",
+      "new": "C0010467"
+    },
+    {
+      "parent": "cyanidin_3_glucoside",
+      "field": "cui",
+      "old": "C0378245",
+      "new": "C3489523"
+    },
+    {
+      "parent": "d_aspartic_acid",
+      "field": "cui",
+      "old": "C0085845",
+      "new": "C0949755"
+    },
+    {
+      "parent": "d_limonene",
+      "field": "cui",
+      "old": "C0064997",
+      "new": "C0064992"
+    },
+    {
+      "parent": "d_ribose",
+      "field": "cui",
+      "old": "C0035687",
+      "new": "C0035549"
+    },
+    {
+      "parent": "dandelion",
+      "field": "cui",
+      "old": "C0950252",
+      "new": "C0877851"
+    },
+    {
+      "parent": "dhea",
+      "field": "cui",
+      "old": "C0011083",
+      "new": "C0011185"
+    },
+    {
+      "parent": "dhea",
+      "field": "rxcui",
+      "old": "3310",
+      "new": "3143"
+    },
+    {
+      "parent": "digestive_enzymes",
+      "field": "cui",
+      "old": "C0017168",
+      "new": "C0544420"
+    },
+    {
+      "parent": "diindolylmethane",
+      "field": "cui",
+      "old": "C0057317",
+      "new": "C0163151"
+    },
+    {
+      "parent": "dmae",
+      "field": "cui",
+      "old": "C0001833",
+      "new": "C0011064"
+    },
+    {
+      "parent": "dmae",
+      "field": "rxcui",
+      "old": "3351",
+      "new": "3116"
+    },
+    {
+      "parent": "echinacea",
+      "field": "cui",
+      "old": "C0013599",
+      "new": "C0752270"
+    },
+    {
+      "parent": "echinacea",
+      "field": "rxcui",
+      "old": "11163",
+      "new": "228041"
+    },
+    {
+      "parent": "egcg",
+      "field": "cui",
+      "old": "C0059514",
+      "new": "C0059438"
+    },
+    {
+      "parent": "elderberry",
+      "field": "cui",
+      "old": "C1456405",
+      "new": "C1095913"
+    },
+    {
+      "parent": "ellagic_acid",
+      "field": "cui",
+      "old": "C0013894",
+      "new": "C0013900"
+    },
+    {
+      "parent": "ergothioneine",
+      "field": "cui",
+      "old": "C0014700",
+      "new": "C0014713"
+    },
+    {
+      "parent": "eriocitrin",
+      "field": "cui",
+      "old": "C1170498",
+      "new": "C0757990"
+    },
+    {
+      "parent": "evening_primrose_oil",
+      "field": "cui",
+      "old": "",
+      "new": "C0700602"
+    },
+    {
+      "parent": "evening_primrose_oil",
+      "field": "rxcui",
+      "old": "",
+      "new": "203219"
+    },
+    {
+      "parent": "flavones",
+      "field": "cui",
+      "old": "C0016129",
+      "new": "C0016219"
+    },
+    {
+      "parent": "flavonoids",
+      "field": "cui",
+      "old": "C0016131",
+      "new": "C0596577"
+    },
+    {
+      "parent": "flavonols",
+      "field": "cui",
+      "old": "C0596577",
+      "new": "C0060444"
+    },
+    {
+      "parent": "fucoxanthin",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "gaba",
+      "field": "cui",
+      "old": "C0016903",
+      "new": "C0016904"
+    },
+    {
+      "parent": "gaba",
+      "field": "rxcui",
+      "old": "3264",
+      "new": "4617"
+    },
+    {
+      "parent": "gamma_oryzanol",
+      "field": "rxcui",
+      "old": "",
+      "new": "25608"
+    },
+    {
+      "parent": "garlic",
+      "field": "cui",
+      "old": "C0017076",
+      "new": "C0993630"
+    },
+    {
+      "parent": "garlic",
+      "field": "rxcui",
+      "old": "12536",
+      "new": "265647"
+    },
+    {
+      "parent": "ginger",
+      "field": "rxcui",
+      "old": "258322",
+      "new": "285241"
+    },
+    {
+      "parent": "ginkgo",
+      "field": "cui",
+      "old": "C0017574",
+      "new": "C0772125"
+    },
+    {
+      "parent": "ginkgo",
+      "field": "rxcui",
+      "old": "12522",
+      "new": "236809"
+    },
+    {
+      "parent": "ginseng",
+      "field": "cui",
+      "old": "C0017579",
+      "new": "C1119918"
+    },
+    {
+      "parent": "ginseng",
+      "field": "rxcui",
+      "old": "12523",
+      "new": "325526"
+    },
+    {
+      "parent": "ginsenosides",
+      "field": "cui",
+      "old": "C0017686",
+      "new": "C0061278"
+    },
+    {
+      "parent": "glucosamine",
+      "field": "cui",
+      "old": "C0017611",
+      "new": "C0017718"
+    },
+    {
+      "parent": "glucosamine",
+      "field": "rxcui",
+      "old": "3520",
+      "new": null
+    },
+    {
+      "parent": "glutathione",
+      "field": "cui",
+      "old": "C0018150",
+      "new": "C0017817"
+    },
+    {
+      "parent": "glutathione",
+      "field": "rxcui",
+      "old": "3586",
+      "new": "4890"
+    },
+    {
+      "parent": "glycyrrhizin",
+      "field": "cui",
+      "old": "C0061996",
+      "new": "C0061751"
+    },
+    {
+      "parent": "grape_seed_extract",
+      "field": "cui",
+      "old": "C0246271",
+      "new": "C0772454"
+    },
+    {
+      "parent": "green_lipped_mussel",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "green_tea_extract",
+      "field": "cui",
+      "old": "C0246278",
+      "new": "C1704263"
+    },
+    {
+      "parent": "hops",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "horsetail",
+      "field": "cui",
+      "old": "",
+      "new": "C0331746"
+    },
+    {
+      "parent": "horsetail",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "hyaluronic_acid",
+      "field": "cui",
+      "old": "C0010395",
+      "new": "C0020196"
+    },
+    {
+      "parent": "hyaluronic_acid",
+      "field": "rxcui",
+      "old": "3498",
+      "new": "5463"
+    },
+    {
+      "parent": "hyperforin",
+      "field": "cui",
+      "old": "C0250248",
+      "new": "C0063217"
+    },
+    {
+      "parent": "hypericin",
+      "field": "cui",
+      "old": "C0000521",
+      "new": "C0063220"
+    },
+    {
+      "parent": "inositol",
+      "field": "cui",
+      "old": "C0021641",
+      "new": "C0021547"
+    },
+    {
+      "parent": "inositol",
+      "field": "rxcui",
+      "old": "5813",
+      "new": "5833"
+    },
+    {
+      "parent": "iron",
+      "field": "cui",
+      "old": "C0021776",
+      "new": "C0302583"
+    },
+    {
+      "parent": "isoflavones",
+      "field": "cui",
+      "old": "C0049620",
+      "new": "C0022179"
+    },
+    {
+      "parent": "l_alanine",
+      "field": "cui",
+      "old": "C0001896",
+      "new": "C0001898"
+    },
+    {
+      "parent": "l_alanine",
+      "field": "rxcui",
+      "old": "206",
+      "new": "426"
+    },
+    {
+      "parent": "l_arginine",
+      "field": "cui",
+      "old": "C0030897",
+      "new": "C0003765"
+    },
+    {
+      "parent": "l_arginine",
+      "field": "rxcui",
+      "old": "16478",
+      "new": "1091"
+    },
+    {
+      "parent": "l_carnitine",
+      "field": "cui",
+      "old": "C0023118",
+      "new": "C0087163"
+    },
+    {
+      "parent": "l_carnitine",
+      "field": "rxcui",
+      "old": "20279",
+      "new": null
+    },
+    {
+      "parent": "l_citrulline",
+      "field": "rxcui",
+      "old": "2231",
+      "new": "2567"
+    },
+    {
+      "parent": "l_cysteine",
+      "field": "cui",
+      "old": "C0010692",
+      "new": "C0010654"
+    },
+    {
+      "parent": "l_cysteine",
+      "field": "rxcui",
+      "old": "4105",
+      "new": "3024"
+    },
+    {
+      "parent": "l_glutamic_acid",
+      "field": "cui",
+      "old": "C0017792",
+      "new": "C0061472"
+    },
+    {
+      "parent": "l_glutamic_acid",
+      "field": "rxcui",
+      "old": "4851",
+      "new": "25916"
+    },
+    {
+      "parent": "l_glutamine",
+      "field": "cui",
+      "old": "C0017765",
+      "new": "C0017797"
+    },
+    {
+      "parent": "l_glutamine",
+      "field": "rxcui",
+      "old": "4850",
+      "new": "4885"
+    },
+    {
+      "parent": "l_glycine",
+      "field": "rxcui",
+      "old": "5691",
+      "new": "4919"
+    },
+    {
+      "parent": "l_histidine",
+      "field": "rxcui",
+      "old": "5324",
+      "new": "5340"
+    },
+    {
+      "parent": "l_isoleucine",
+      "field": "cui",
+      "old": "C0022100",
+      "new": "C0022192"
+    },
+    {
+      "parent": "l_isoleucine",
+      "field": "rxcui",
+      "old": "6003",
+      "new": "6033"
+    },
+    {
+      "parent": "l_leucine",
+      "field": "cui",
+      "old": "C0023492",
+      "new": "C0023401"
+    },
+    {
+      "parent": "l_leucine",
+      "field": "rxcui",
+      "old": "6179",
+      "new": "6308"
+    },
+    {
+      "parent": "l_lysine",
+      "field": "cui",
+      "old": "C0024228",
+      "new": "C0024337"
+    },
+    {
+      "parent": "l_lysine",
+      "field": "rxcui",
+      "old": "6386",
+      "new": null
+    },
+    {
+      "parent": "l_ornithine",
+      "field": "cui",
+      "old": "C0029235",
+      "new": "C0029277"
+    },
+    {
+      "parent": "l_ornithine",
+      "field": "rxcui",
+      "old": "7834",
+      "new": "314709"
+    },
+    {
+      "parent": "l_proline",
+      "field": "cui",
+      "old": "C0033306",
+      "new": "C0033382"
+    },
+    {
+      "parent": "l_proline",
+      "field": "rxcui",
+      "old": "6918",
+      "new": "8737"
+    },
+    {
+      "parent": "l_serine",
+      "field": "rxcui",
+      "old": "10142",
+      "new": "9671"
+    },
+    {
+      "parent": "l_theanine",
+      "field": "cui",
+      "old": "C0076979",
+      "new": "C0076380"
+    },
+    {
+      "parent": "l_threonine",
+      "field": "cui",
+      "old": "C0035512",
+      "new": "C0040005"
+    },
+    {
+      "parent": "l_threonine",
+      "field": "rxcui",
+      "old": "6991",
+      "new": "10524"
+    },
+    {
+      "parent": "l_tryptophan",
+      "field": "cui",
+      "old": "C0041081",
+      "new": "C0041249"
+    },
+    {
+      "parent": "l_tryptophan",
+      "field": "rxcui",
+      "old": "7057",
+      "new": "10898"
+    },
+    {
+      "parent": "l_tyrosine",
+      "field": "cui",
+      "old": "C0041408",
+      "new": "C0041485"
+    },
+    {
+      "parent": "l_tyrosine",
+      "field": "rxcui",
+      "old": "7231",
+      "new": "10962"
+    },
+    {
+      "parent": "l_valine",
+      "field": "cui",
+      "old": "C0042346",
+      "new": "C0042285"
+    },
+    {
+      "parent": "l_valine",
+      "field": "rxcui",
+      "old": "7279",
+      "new": "11115"
+    },
+    {
+      "parent": "lactoferrin",
+      "field": "rxcui",
+      "old": "",
+      "new": "1425933"
+    },
+    {
+      "parent": "lycopene",
+      "field": "cui",
+      "old": "C0079196",
+      "new": "C0065331"
+    },
+    {
+      "parent": "lycopene",
+      "field": "rxcui",
+      "old": "1116065",
+      "new": "29008"
+    },
+    {
+      "parent": "lysozyme",
+      "field": "cui",
+      "old": "C0024245",
+      "new": "C3541379"
+    },
+    {
+      "parent": "magnesium",
+      "field": "cui",
+      "old": "C0024389",
+      "new": "C0024467"
+    },
+    {
+      "parent": "magnesium",
+      "field": "rxcui",
+      "old": "1312",
+      "new": "6574"
+    },
+    {
+      "parent": "manganese",
+      "field": "cui",
+      "old": "C0024744",
+      "new": "C0024706"
+    },
+    {
+      "parent": "manganese",
+      "field": "rxcui",
+      "old": "23003",
+      "new": "6623"
+    },
+    {
+      "parent": "melatonin",
+      "field": "cui",
+      "old": "C0025195",
+      "new": "C0025219"
+    },
+    {
+      "parent": "milk_thistle",
+      "field": "cui",
+      "old": "C0037536",
+      "new": "C0331428"
+    },
+    {
+      "parent": "milk_thistle",
+      "field": "rxcui",
+      "old": "11188",
+      "new": "259274"
+    },
+    {
+      "parent": "molybdenum",
+      "field": "cui",
+      "old": "C0026375",
+      "new": "C0026402"
+    },
+    {
+      "parent": "molybdenum",
+      "field": "rxcui",
+      "old": "6676",
+      "new": "7024"
+    },
+    {
+      "parent": "msm",
+      "field": "rxcui",
+      "old": "60163",
+      "new": "23247"
+    },
+    {
+      "parent": "myricetin",
+      "field": "cui",
+      "old": "",
+      "new": "C0067067"
+    },
+    {
+      "parent": "myricetin",
+      "field": "rxcui",
+      "old": "",
+      "new": "1368374"
+    },
+    {
+      "parent": "myristic_acid",
+      "field": "cui",
+      "old": "C0369248",
+      "new": "C0027138"
+    },
+    {
+      "parent": "nac",
+      "field": "rxcui",
+      "old": "3821",
+      "new": "197"
+    },
+    {
+      "parent": "nattokinase",
+      "field": "cui",
+      "old": "C1138205",
+      "new": "C0131956"
+    },
+    {
+      "parent": "octacosanol",
+      "field": "cui",
+      "old": "C0072695",
+      "new": "C0044548"
+    },
+    {
+      "parent": "octacosanol",
+      "field": "rxcui",
+      "old": "6810",
+      "new": "12166"
+    },
+    {
+      "parent": "oleuropein",
+      "field": "cui",
+      "old": "C0066503",
+      "new": "C0069413"
+    },
+    {
+      "parent": "omega_3",
+      "field": "cui",
+      "old": "C0032908",
+      "new": "C0015689"
+    },
+    {
+      "parent": "omega_3",
+      "field": "rxcui",
+      "old": "1004383",
+      "new": "4301"
+    },
+    {
+      "parent": "paba",
+      "field": "rxcui",
+      "old": "7073",
+      "new": "74"
+    },
+    {
+      "parent": "perilla_oil",
+      "field": "cui",
+      "old": "C0950252",
+      "new": "C0070421"
+    },
+    {
+      "parent": "phosphatidic_acid",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "phosphatidylinositol",
+      "field": "cui",
+      "old": "C0031517",
+      "new": "C0031621"
+    },
+    {
+      "parent": "phosphatidylserine",
+      "field": "cui",
+      "old": "C0079825",
+      "new": "C0301704"
+    },
+    {
+      "parent": "phosphatidylserine",
+      "field": "rxcui",
+      "old": "8651",
+      "new": "89959"
+    },
+    {
+      "parent": "phosphorus",
+      "field": "cui",
+      "old": "C0031521",
+      "new": "C0031705"
+    },
+    {
+      "parent": "pine_bark_extract",
+      "field": "cui",
+      "old": "C1171396",
+      "new": "C0872909"
+    },
+    {
+      "parent": "policosanol",
+      "field": "cui",
+      "old": "C0072689",
+      "new": "C0215278"
+    },
+    {
+      "parent": "policosanol",
+      "field": "rxcui",
+      "old": "7508",
+      "new": "69440"
+    },
+    {
+      "parent": "polygodial",
+      "field": "cui",
+      "old": "",
+      "new": "C0071585"
+    },
+    {
+      "parent": "polygodial",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "potassium",
+      "field": "rxcui",
+      "old": "8229",
+      "new": "8588"
+    },
+    {
+      "parent": "pqq",
+      "field": "rxcui",
+      "old": "1116067",
+      "new": null
+    },
+    {
+      "parent": "prebiotics",
+      "field": "cui",
+      "old": "C1704449",
+      "new": "C2717875"
+    },
+    {
+      "parent": "pregnenolone",
+      "field": "rxcui",
+      "old": "8588",
+      "new": "114052"
+    },
+    {
+      "parent": "probiotics",
+      "field": "cui",
+      "old": "C1704436",
+      "new": "C0525033"
+    },
+    {
+      "parent": "psyllium",
+      "field": "rxcui",
+      "old": "8640",
+      "new": "8928"
+    },
+    {
+      "parent": "pygeum",
+      "field": "cui",
+      "old": "C0330996",
+      "new": "C1620942"
+    },
+    {
+      "parent": "quercetin",
+      "field": "cui",
+      "old": "C0078580",
+      "new": "C0034392"
+    },
+    {
+      "parent": "resveratrol",
+      "field": "cui",
+      "old": "C0074937",
+      "new": "C0073096"
+    },
+    {
+      "parent": "rhodiola",
+      "field": "cui",
+      "old": "C1456394",
+      "new": "C0950013"
+    },
+    {
+      "parent": "same",
+      "field": "rxcui",
+      "old": "7841",
+      "new": "9504"
+    },
+    {
+      "parent": "saw_palmetto",
+      "field": "cui",
+      "old": "C0036143",
+      "new": "C0771607"
+    },
+    {
+      "parent": "saw_palmetto",
+      "field": "rxcui",
+      "old": "11187",
+      "new": "236344"
+    },
+    {
+      "parent": "selenium",
+      "field": "cui",
+      "old": "C0036641",
+      "new": "C0036581"
+    },
+    {
+      "parent": "selenium",
+      "field": "rxcui",
+      "old": "9010",
+      "new": null
+    },
+    {
+      "parent": "slippery_elm",
+      "field": "cui",
+      "old": "C0597235",
+      "new": "C0330532"
+    },
+    {
+      "parent": "spirulina",
+      "field": "cui",
+      "old": "C0246293",
+      "new": "C1095785"
+    },
+    {
+      "parent": "squalene",
+      "field": "cui",
+      "old": "C0038237",
+      "new": "C0038071"
+    },
+    {
+      "parent": "stearidonic_acid",
+      "field": "cui",
+      "old": "C0075622",
+      "new": "C0075197"
+    },
+    {
+      "parent": "stinging_nettle",
+      "field": "cui",
+      "old": "C0242756",
+      "new": "C1618310"
+    },
+    {
+      "parent": "strontium",
+      "field": "rxcui",
+      "old": "none",
+      "new": "10122"
+    },
+    {
+      "parent": "sulforaphane",
+      "field": "cui",
+      "old": "C0162315",
+      "new": "C5545155"
+    },
+    {
+      "parent": "sulforaphane",
+      "field": "rxcui",
+      "old": "1116060",
+      "new": null
+    },
+    {
+      "parent": "superoxide_dismutase",
+      "field": "cui",
+      "old": "C0039082",
+      "new": "C0038838"
+    },
+    {
+      "parent": "superoxide_dismutase",
+      "field": "rxcui",
+      "old": "9822",
+      "new": "10245"
+    },
+    {
+      "parent": "taurine",
+      "field": "cui",
+      "old": "C0039324",
+      "new": "C0039350"
+    },
+    {
+      "parent": "taurine",
+      "field": "rxcui",
+      "old": "10335",
+      "new": "10337"
+    },
+    {
+      "parent": "thyme_extract",
+      "field": "cui",
+      "old": "",
+      "new": "C3541308"
+    },
+    {
+      "parent": "thyme_extract",
+      "field": "rxcui",
+      "old": "",
+      "new": "1376349"
+    },
+    {
+      "parent": "tmg_betaine",
+      "field": "cui",
+      "old": "C0052827",
+      "new": "C0005304"
+    },
+    {
+      "parent": "tmg_betaine",
+      "field": "rxcui",
+      "old": "35301",
+      "new": "1512"
+    },
+    {
+      "parent": "turmeric",
+      "field": "cui",
+      "old": "C0209960",
+      "new": "C0077524"
+    },
+    {
+      "parent": "turmeric",
+      "field": "rxcui",
+      "old": "11178",
+      "new": "1114883"
+    },
+    {
+      "parent": "uridine_monophosphate",
+      "field": "cui",
+      "old": "",
+      "new": "C0042002"
+    },
+    {
+      "parent": "uridine_monophosphate",
+      "field": "rxcui",
+      "old": "",
+      "new": null
+    },
+    {
+      "parent": "vanadium",
+      "field": "cui",
+      "old": "C0042285",
+      "new": "C0042306"
+    },
+    {
+      "parent": "vanadyl_sulfate",
+      "field": "cui",
+      "old": "C0042282",
+      "new": "C0078023"
+    },
+    {
+      "parent": "vanadyl_sulfate",
+      "field": "rxcui",
+      "old": "11253",
+      "new": "39364"
+    },
+    {
+      "parent": "vitamin_a",
+      "field": "rxcui",
+      "old": "11149",
+      "new": "11246"
+    },
+    {
+      "parent": "vitamin_b12_cobalamin",
+      "field": "rxcui",
+      "old": "2626",
+      "new": "11248"
+    },
+    {
+      "parent": "vitamin_b1_thiamine",
+      "field": "rxcui",
+      "old": "10405",
+      "new": "10454"
+    },
+    {
+      "parent": "vitamin_b2_riboflavin",
+      "field": "rxcui",
+      "old": "9220",
+      "new": "9346"
+    },
+    {
+      "parent": "vitamin_b5_pantothenic",
+      "field": "rxcui",
+      "old": "7953",
+      "new": "7891"
+    },
+    {
+      "parent": "vitamin_b6_pyridoxine",
+      "field": "rxcui",
+      "old": "8807",
+      "new": null
+    },
+    {
+      "parent": "vitamin_b7_biotin",
+      "field": "rxcui",
+      "old": "1596",
+      "new": "1588"
+    },
+    {
+      "parent": "vitamin_d",
+      "field": "rxcui",
+      "old": "11148",
+      "new": "11253"
+    },
+    {
+      "parent": "vitamin_e",
+      "field": "rxcui",
+      "old": "11150",
+      "new": "11256"
+    },
+    {
+      "parent": "vitamin_k",
+      "field": "rxcui",
+      "old": "11151",
+      "new": "11258"
+    },
+    {
+      "parent": "vitamin_k1",
+      "field": "rxcui",
+      "old": "11256",
+      "new": "8308"
+    },
+    {
+      "parent": "white_tea",
+      "field": "rxcui",
+      "old": "",
+      "new": "1651698"
+    },
+    {
+      "parent": "zinc",
+      "field": "cui",
+      "old": "C0043539",
+      "new": "C0043481"
+    },
+    {
+      "parent": "zinc",
+      "field": "rxcui",
+      "old": "2078",
+      "new": "11416"
+    }
+  ]
+}
