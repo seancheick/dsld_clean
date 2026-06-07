@@ -36019,41 +36019,33 @@
                   "amino_acid_derivatives": 1,
                   "amino_acid_metabolites": 3,
                   "amino_acids": 31,
-                  "antioxidants": 196,
+                  "antioxidants": 198,
                   "bee_products": 2,
                   "bile_acids": 1,
                   "botanical_ingredients": 1,
-                  "botanicals": 3,
                   "cannabinoids": 1,
                   "cardiovascular_support": 1,
-                  "carotenoids": 1,
                   "energy_substrates": 1,
                   "enzymes": 6,
                   "fatty_acids": 32,
-                  "fiber": 1,
-                  "fibers": 5,
-                  "flavonoids": 1,
-                  "functional_foods": 6,
+                  "fibers": 6,
+                  "functional_foods": 7,
                   "glandular": 1,
-                  "herbs": 80,
+                  "herbs": 83,
                   "ketones": 1,
-                  "lipid": 2,
-                  "lipids": 2,
-                  "marine": 1,
+                  "lipid": 4,
                   "metabolic_support": 1,
                   "minerals": 20,
                   "mitochondrial_support": 1,
-                  "nootropics": 1,
-                  "nucleotides": 1,
+                  "nucleotides": 2,
                   "nutraceuticals": 3,
                   "oil": 3,
                   "other": 24,
-                  "phytonutrients": 8,
+                  "phytonutrients": 9,
                   "polyphenol": 1,
                   "polyphenol_antioxidants": 1,
                   "probiotics": 14,
                   "proteins": 7,
-                  "terpenes": 1,
                   "vitamins": 15
             },
             "schema_version": "4.0.0",
@@ -41174,7 +41166,8 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "herbs"
       },
       "gamma_oryzanol": {
             "standard_name": "Gamma Oryzanol",
@@ -41218,7 +41211,8 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "Verified via RxNorm exact-name match to 'gamma-oryzanol' (rxnav.nlm.nih.gov, 2026-06-06)"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'gamma-oryzanol' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "category_enum": "lipid"
       },
       "fucoxanthin": {
             "standard_name": "Fucoxanthin",
@@ -41263,7 +41257,8 @@
             },
             "rxcui_note": "No verified RxNorm concept assigned",
             "unii": "06O0TC0VSM",
-            "unii_note": "Verified via FDA GSRS exact-name match to 'FUCOXANTHIN' (gsrs.ncats.nih.gov, 2026-06-06)"
+            "unii_note": "Verified via FDA GSRS exact-name match to 'FUCOXANTHIN' (gsrs.ncats.nih.gov, 2026-06-06)",
+            "category_enum": "antioxidants"
       },
       "beta_caryophyllene": {
             "standard_name": "Beta-Caryophyllene",
@@ -41307,7 +41302,8 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "phytonutrients"
       },
       "chrysin": {
             "standard_name": "Chrysin",
@@ -41350,7 +41346,8 @@
             },
             "rxcui_note": "Verified via RxNorm exact-name match to 'chrysin' (rxnav.nlm.nih.gov, 2026-06-06)",
             "unii": "3CN01F5ZJ5",
-            "unii_note": "Verified via FDA GSRS exact-name match to 'CHRYSIN' (gsrs.ncats.nih.gov, 2026-06-06)"
+            "unii_note": "Verified via FDA GSRS exact-name match to 'CHRYSIN' (gsrs.ncats.nih.gov, 2026-06-06)",
+            "category_enum": "antioxidants"
       },
       "celadrin": {
             "standard_name": "Celadrin",
@@ -41394,7 +41391,8 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "Verified via UMLS to 'Celadrin' (uts.nlm.nih.gov, 2026-06-06)",
-            "rxcui_note": "Verified via RxNorm exact-name match to 'Celadrin' (rxnav.nlm.nih.gov, 2026-06-06)"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'Celadrin' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "category_enum": "fatty_acids"
       },
       "green_lipped_mussel": {
             "standard_name": "Green-Lipped Mussel",
@@ -41439,7 +41437,8 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "functional_foods"
       },
       "lactoferrin": {
             "standard_name": "Lactoferrin",
@@ -41481,7 +41480,8 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "Verified via RxNorm exact-name match to 'lactoferrin' (rxnav.nlm.nih.gov, 2026-06-06)"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'lactoferrin' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "category_enum": "proteins"
       },
       "white_tea": {
             "standard_name": "White Tea Extract",
@@ -41527,7 +41527,8 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "Verified via RxNorm exact-name match to 'white tea extract' (rxnav.nlm.nih.gov, 2026-06-06)"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'white tea extract' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "category_enum": "herbs"
       },
       "hops": {
             "standard_name": "Hops (Humulus lupulus)",
@@ -41577,7 +41578,8 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "herbs"
       },
       "phosphatidic_acid": {
             "standard_name": "Phosphatidic Acid",
@@ -41620,7 +41622,8 @@
                   "review_status": "needs_review",
                   "last_reviewed_at": "2026-02-18"
             },
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "lipid"
       },
       "ahcc": {
             "standard_name": "AHCC (Active Hexose Correlated Compound)",
@@ -41890,7 +41893,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "fiber",
+            "category_enum": "fibers",
             "cui_note": "No UMLS entry for botanical/novel compound",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
@@ -42003,7 +42006,8 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "No verified UMLS CUI assigned",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "oil"
       },
       "uridine_monophosphate": {
             "standard_name": "Uridine-5'-Monophosphate",
@@ -42045,7 +42049,8 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "Verified via UMLS to 'Uridine Monophosphate' (uts.nlm.nih.gov, 2026-06-06)",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "nucleotides"
       },
       "myricetin": {
             "standard_name": "Myricetin",
@@ -42086,7 +42091,8 @@
             "cui_note": "Verified via UMLS to 'myricetin' (uts.nlm.nih.gov, 2026-06-06)",
             "rxcui_note": "Verified via RxNorm exact-name match to 'myricetin' (rxnav.nlm.nih.gov, 2026-06-06)",
             "unii": "76XC01FTOJ",
-            "unii_note": "Verified via FDA GSRS exact-name match to 'MYRICETIN' (gsrs.ncats.nih.gov, 2026-06-06)"
+            "unii_note": "Verified via FDA GSRS exact-name match to 'MYRICETIN' (gsrs.ncats.nih.gov, 2026-06-06)",
+            "category_enum": "antioxidants"
       },
       "polygodial": {
             "standard_name": "Polygodial",
@@ -42127,7 +42133,8 @@
             "cui_note": "Verified via UMLS to 'polygodial' (uts.nlm.nih.gov, 2026-06-06)",
             "rxcui_note": "No verified RxNorm concept assigned",
             "unii": "5FAF7T66M7",
-            "unii_note": "Verified via FDA GSRS exact-name match to 'POLYGODIAL' (gsrs.ncats.nih.gov, 2026-06-06)"
+            "unii_note": "Verified via FDA GSRS exact-name match to 'POLYGODIAL' (gsrs.ncats.nih.gov, 2026-06-06)",
+            "category_enum": "herbs"
       },
       "common_bean_extract": {
             "standard_name": "Common Bean Extract",
@@ -42169,7 +42176,8 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "Verified via UMLS to 'Phaseolus vulgaris whole extract' (uts.nlm.nih.gov, 2026-06-06)",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "herbs"
       },
       "corn_silk": {
             "standard_name": "Corn Silk",
@@ -42213,7 +42221,8 @@
             "cui_note": "Verified via UMLS to 'corn silk preparation' (uts.nlm.nih.gov, 2026-06-06)",
             "rxcui_note": "Verified via RxNorm exact-name match to 'corn silk preparation' (rxnav.nlm.nih.gov, 2026-06-06)",
             "unii": "7D3VB244UX",
-            "unii_note": "Verified via FDA GSRS exact-name match to 'CORN SILK' (gsrs.ncats.nih.gov, 2026-06-06)"
+            "unii_note": "Verified via FDA GSRS exact-name match to 'CORN SILK' (gsrs.ncats.nih.gov, 2026-06-06)",
+            "category_enum": "herbs"
       },
       "horsetail": {
             "standard_name": "Horsetail",
@@ -42254,7 +42263,8 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "Verified via UMLS to 'Equisetum arvense' (uts.nlm.nih.gov, 2026-06-06)",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "herbs"
       },
       "thyme_extract": {
             "standard_name": "Thyme Extract",
@@ -42295,7 +42305,8 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "Verified via UMLS to 'Thymus vulgaris whole extract' (uts.nlm.nih.gov, 2026-06-06)",
-            "rxcui_note": "Verified via RxNorm exact-name match to 'Thymus vulgaris whole extract' (rxnav.nlm.nih.gov, 2026-06-06)"
+            "rxcui_note": "Verified via RxNorm exact-name match to 'Thymus vulgaris whole extract' (rxnav.nlm.nih.gov, 2026-06-06)",
+            "category_enum": "herbs"
       },
       "evening_primrose_oil": {
             "standard_name": "Evening Primrose Oil",
@@ -42354,7 +42365,8 @@
             "cui_note": "Verified via UMLS to 'evening primrose oil' (uts.nlm.nih.gov, 2026-06-06)",
             "rxcui_note": "Verified via RxNorm exact-name match to 'evening primrose oil' (rxnav.nlm.nih.gov, 2026-06-06)",
             "unii": "3Q9L08K71N",
-            "unii_note": "Verified via FDA GSRS exact-name match to 'EVENING PRIMROSE OIL' (gsrs.ncats.nih.gov, 2026-06-06)"
+            "unii_note": "Verified via FDA GSRS exact-name match to 'EVENING PRIMROSE OIL' (gsrs.ncats.nih.gov, 2026-06-06)",
+            "category_enum": "oil"
       },
       "brown_kelp": {
             "standard_name": "Brown Kelp",
@@ -42396,7 +42408,8 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "cui_note": "Verified via UMLS to 'Laminaria' (uts.nlm.nih.gov, 2026-06-06)",
-            "rxcui_note": "No verified RxNorm concept assigned"
+            "rxcui_note": "No verified RxNorm concept assigned",
+            "category_enum": "herbs"
       },
       "raspberry_ketones": {
             "standard_name": "Raspberry Ketones",

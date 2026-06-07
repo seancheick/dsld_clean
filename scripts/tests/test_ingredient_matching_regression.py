@@ -461,10 +461,12 @@ class TestMultiFormMatching:
         assert len(matched_forms) == 2, f"Should match both forms, got {len(matched_forms)}"
 
         # retinyl palmitate: bio_score 14, share 0.50
-        # B-carotene: bio_score 12, share 0.50
-        # Weighted average: (14 * 0.5 + 12 * 0.5) / 1.0 = 13.0
+        # B-carotene (from mixed carotenoids): bio_score 10, share 0.50
+        #   (recalibrated as a moderate-absorber provitamin-A source: poor/variable
+        #    carotenoid->retinol conversion, aligned with dunaliella salina at 10)
+        # Weighted average: (14 * 0.5 + 10 * 0.5) / 1.0 = 12.0
         bio_score = vit_a_entry.get('bio_score')
-        assert bio_score == 13.0, f"Expected weighted bio_score 13.0, got {bio_score}"
+        assert bio_score == 12.0, f"Expected weighted bio_score 12.0, got {bio_score}"
 
         # Verify shares were parsed correctly
         for mf in matched_forms:
