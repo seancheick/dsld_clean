@@ -3162,8 +3162,8 @@
                         "bio_score": 12,
                         "natural": false,
                         "score": 12,
-                        "absorption": "25% better",
-                        "notes": "Protected form, improves stability and absorption by shielding the vitamin from harsh digestive conditions.",
+                        "absorption": "good",
+                        "notes": "Protected form, improves stability and absorption by shielding the vitamin from harsh digestive conditions. Corrected: microencapsulation does not impair absorption (was erroneously poor/0.25).",
                         "aliases": [
                               "microencapsulated d3",
                               "encapsulated vitamin d3",
@@ -3177,11 +3177,11 @@
                         ],
                         "dosage_importance": 1.5,
                         "absorption_structured": {
-                              "value": 0.25,
+                              "value": null,
                               "range_low": null,
                               "range_high": null,
-                              "quality": "poor",
-                              "notes": "25% better"
+                              "quality": "good",
+                              "notes": "Microencapsulation aids dispersibility/stability; absorption comparable to oil-based D3"
                         }
                   },
                   "vitamin D3 from lichen": {
@@ -7082,11 +7082,11 @@
             "forms": {
                   "liposomal saw palmetto": {
                         "bio_score": 12,
-                        "natural": true,
-                        "score": 15,
+                        "natural": false,
+                        "score": 12,
                         "absorption": "superior (~2–3x conventional extracts)",
                         "technology": "Phospholipid encapsulation technology",
-                        "notes": "Liposomal delivery enhances cellular uptake and protects active compounds from degradation. Clinically shown to have 2-3x greater bioavailability than standard extracts. Ideal for maximum therapeutic effects.",
+                        "notes": "Liposomal delivery enhances cellular uptake and protects active compounds from degradation. Clinically shown to have 2-3x greater bioavailability than standard extracts. Ideal for maximum therapeutic effects. Manufactured delivery form (not a natural source): no natural-source bonus.",
                         "aliases": [
                               "liposomal saw palmetto",
                               "nano-emulsified saw palmetto",
@@ -10711,10 +10711,10 @@
             "forms": {
                   "liposomal glutathione": {
                         "bio_score": 14,
-                        "natural": true,
-                        "score": 17,
+                        "natural": false,
+                        "score": 14,
                         "absorption": "excellent (~90–100%)",
-                        "notes": "Encapsulated in liposomes; effectively bypasses digestive breakdown and significantly enhances cellular delivery and absorption, making it highly bioavailable and effective as a systemic antioxidant.",
+                        "notes": "Encapsulated in liposomes; effectively bypasses digestive breakdown and significantly enhances cellular delivery and absorption, making it highly bioavailable and effective as a systemic antioxidant. Manufactured delivery form (not a natural source): no natural-source bonus.",
                         "aliases": [
                               "liposomal glutathione",
                               "nano glutathione",
@@ -17747,10 +17747,10 @@
             "forms": {
                   "silymarin phytosome": {
                         "bio_score": 13,
-                        "natural": true,
-                        "score": 16,
+                        "natural": false,
+                        "score": 13,
                         "absorption": "10x better (~400–500% increase)",
-                        "notes": "Silybin-phosphatidylcholine complex; dramatically improves liver delivery and antioxidant potency",
+                        "notes": "Silybin-phosphatidylcholine complex; dramatically improves liver delivery and antioxidant potency. Manufactured delivery form (not a natural source): no natural-source bonus.",
                         "aliases": [
                               "silymarin phytosome",
                               "silybin phytosome",
@@ -34150,14 +34150,14 @@
                   },
                   "micellized k1": {
                         "bio_score": 13,
-                        "natural": true,
+                        "natural": false,
                         "absorption": "excellent (~90%)",
-                        "notes": "Micellized for enhanced absorption",
+                        "notes": "Micellized for enhanced absorption. Manufactured delivery form (not a natural source): no natural-source bonus.",
                         "aliases": [
                               "micellized vitamin k1",
                               "micellized phylloquinone"
                         ],
-                        "score": 16,
+                        "score": 13,
                         "dosage_importance": 1.0,
                         "absorption_structured": {
                               "value": 0.9,
