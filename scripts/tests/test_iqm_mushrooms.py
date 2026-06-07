@@ -18,7 +18,20 @@ from pathlib import Path
 import pytest
 
 IQM_PATH = Path(__file__).parent.parent / 'data' / 'ingredient_quality_map.json'
-MUSHROOMS = ['lions_mane', 'reishi', 'cordyceps', 'cordycepsprime', 'ahcc']
+MUSHROOMS = [
+    'lions_mane', 'reishi', 'cordyceps', 'cordycepsprime', 'ahcc',
+    'turkey_tail', 'chaga', 'maitake', 'shiitake', 'button_mushroom', 'auricularia',
+]
+# label -> parent whose '<X> mushroom extract' alias must route to a disclosed extract form
+EXTRACT_LABEL_ROUTES = {
+    "lion's mane mushroom extract": 'lions_mane',
+    'reishi mushroom extract': 'reishi',
+    'cordyceps mushroom extract': 'cordyceps',
+    'turkey tail mushroom extract': 'turkey_tail',
+    'chaga mushroom extract': 'chaga',
+    'maitake mushroom extract': 'maitake',
+    'shiitake mushroom extract': 'shiitake',
+}
 
 
 @pytest.fixture(scope='module')
@@ -41,6 +54,15 @@ class TestFungalClassification:
         migration (do NOT use botanical/mushroom_extracts as a quick edit)."""
         for k in MUSHROOMS:
             assert entries[k].get('category_enum') == 'herbs', k
+
+    def test_no_mushroom_routes_to_migration_category(self, entries):
+        """No mushroom parent may carry a piecemeal/unsafe migration category
+        (botanical / mushroom_extracts / fungal) on either category field."""
+        BANNED = {'botanical', 'mushroom_extracts', 'fungal', 'mushrooms', 'adaptogens'}
+        for k in MUSHROOMS:
+            e = entries[k]
+            assert e.get('category') not in BANNED, f"{k} category={e.get('category')}"
+            assert e.get('category_enum') not in BANNED, f"{k} enum={e.get('category_enum')}"
 
 
 class TestFungalFormScoring:
@@ -65,11 +87,16 @@ class TestFungalFormScoring:
                 if isinstance(f, dict):
                     assert (f.get('bio_score') or 0) <= 13, f"{k}/{fn}"
 
-    def test_mushroom_extract_label_scorable(self, entries):
-        """'<Mushroom> Mushroom Extract' labels must map to a disclosed form."""
-        def aliases(k):
-            return {a.lower() for f in entries[k]['forms'].values()
-                    if isinstance(f, dict) for a in f.get('aliases', [])}
-        assert "lion's mane mushroom extract" in aliases('lions_mane')
-        assert 'reishi mushroom extract' in aliases('reishi')
-        assert 'cordyceps mushroom extract' in aliases('cordyceps')
+    def test_mushroom_extract_label_routes_to_disclosed_extract(self, entries):
+        """'<Mushroom> Mushroom Extract' labels must route to a *disclosed extract*
+        form (not unspecified) so the label stays scorable at the extract tier."""
+        for label, parent in EXTRACT_LABEL_ROUTES.items():
+            hit = None
+            for fn, f in entries[parent]['forms'].items():
+                if isinstance(f, dict) and label in {a.lower() for a in f.get('aliases', [])}:
+                    hit = fn
+                    break
+            assert hit is not None, f"{label} not found on {parent}"
+            assert 'unspecified' not in hit.lower(), f"{label} -> unspecified ({parent}/{hit})"
+            assert 'extract' in hit.lower() or 'militaris' in hit.lower(), \
+                f"{label} -> non-extract form {parent}/{hit}"

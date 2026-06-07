@@ -36008,9 +36008,9 @@
                   }
             },
             "statistics": {
-                  "total_ingredients": 485,
-                  "total_forms": 1237,
-                  "total_aliases": 9172,
+                  "total_ingredients": 491,
+                  "total_forms": 1254,
+                  "total_aliases": 9245,
                   "ingredients_with_relationships": 24
             },
             "categories": {
@@ -36035,7 +36035,7 @@
                   "flavonoids": 1,
                   "functional_foods": 6,
                   "glandular": 1,
-                  "herbs": 74,
+                  "herbs": 80,
                   "ketones": 1,
                   "lipid": 2,
                   "lipids": 2,
@@ -42800,6 +42800,518 @@
                   "missing_fields": [],
                   "review_status": "validated",
                   "last_reviewed_at": "2026-02-18"
+            }
+      },
+      "turkey_tail": {
+            "standard_name": "Turkey Tail",
+            "category": "herbs",
+            "cui": null,
+            "rxcui": null,
+            "match_rules": {
+                  "priority": 0,
+                  "match_mode": "alias_and_fuzzy",
+                  "exclusions": [],
+                  "parent_id": null,
+                  "confidence": "high"
+            },
+            "category_enum": "herbs",
+            "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+            "rxcui_note": "No RxNorm concept for supplement ingredient",
+            "data_quality": {
+                  "completeness": 1.0,
+                  "missing_fields": [],
+                  "review_status": "validated",
+                  "last_reviewed_at": "2026-06-06"
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true,
+            "forms": {
+                  "turkey tail standardized extract": {
+                        "bio_score": 11,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Hot-water/standardized PSK/PSP beta-glucan extract; superior disclosed local-immune form.",
+                        "aliases": [
+                              "standardized turkey tail",
+                              "turkey tail extract",
+                              "turkey tail mushroom extract",
+                              "psk",
+                              "psp",
+                              "polysaccharide-k",
+                              "polysaccharopeptide",
+                              "coriolus versicolor extract",
+                              "trametes versicolor extract"
+                        ],
+                        "score": 14,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "turkey tail fruiting body": {
+                        "bio_score": 9,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Disclosed fruiting body; meaningful beta-glucan content.",
+                        "aliases": [
+                              "turkey tail mushroom",
+                              "trametes versicolor",
+                              "coriolus versicolor",
+                              "turkey tail powder",
+                              "turkey tail fruiting body"
+                        ],
+                        "score": 12,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "turkey tail mycelium": {
+                        "bio_score": 7,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Mycelium-on-grain; diluted beta-glucan vs fruiting body/extract.",
+                        "aliases": [
+                              "turkey tail mycelium",
+                              "myceliated turkey tail",
+                              "turkey tail mycelium biomass"
+                        ],
+                        "score": 10,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "low",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "turkey tail (unspecified)": {
+                        "bio_score": 5,
+                        "natural": false,
+                        "score": 5,
+                        "absorption": "unknown",
+                        "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+                        "aliases": [
+                              "turkey tail"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "quality": "unknown",
+                              "notes": "Data not available"
+                        }
+                  }
+            }
+      },
+      "chaga": {
+            "standard_name": "Chaga",
+            "category": "herbs",
+            "cui": null,
+            "rxcui": null,
+            "match_rules": {
+                  "priority": 0,
+                  "match_mode": "alias_and_fuzzy",
+                  "exclusions": [],
+                  "parent_id": null,
+                  "confidence": "high"
+            },
+            "category_enum": "herbs",
+            "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+            "rxcui_note": "No RxNorm concept for supplement ingredient",
+            "data_quality": {
+                  "completeness": 1.0,
+                  "missing_fields": [],
+                  "review_status": "validated",
+                  "last_reviewed_at": "2026-06-06"
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true,
+            "forms": {
+                  "chaga standardized extract": {
+                        "bio_score": 11,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Hot-water/dual standardized polysaccharide extract; superior disclosed form.",
+                        "aliases": [
+                              "standardized chaga",
+                              "chaga extract",
+                              "chaga mushroom extract",
+                              "chaga dual extract",
+                              "inonotus obliquus extract",
+                              "chaga polysaccharide extract"
+                        ],
+                        "score": 14,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "chaga sclerotium": {
+                        "bio_score": 9,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Disclosed wild sclerotium (conk); meaningful beta-glucan/melanin source.",
+                        "aliases": [
+                              "chaga sclerotium",
+                              "chaga conk",
+                              "wild chaga",
+                              "inonotus obliquus",
+                              "chaga chunks",
+                              "chaga powder"
+                        ],
+                        "score": 12,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "chaga (unspecified)": {
+                        "bio_score": 5,
+                        "natural": false,
+                        "score": 5,
+                        "absorption": "unknown",
+                        "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+                        "aliases": [
+                              "chaga",
+                              "chaga mushroom"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "quality": "unknown",
+                              "notes": "Data not available"
+                        }
+                  }
+            }
+      },
+      "maitake": {
+            "standard_name": "Maitake",
+            "category": "herbs",
+            "cui": null,
+            "rxcui": null,
+            "match_rules": {
+                  "priority": 0,
+                  "match_mode": "alias_and_fuzzy",
+                  "exclusions": [],
+                  "parent_id": null,
+                  "confidence": "high"
+            },
+            "category_enum": "herbs",
+            "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+            "rxcui_note": "No RxNorm concept for supplement ingredient",
+            "data_quality": {
+                  "completeness": 1.0,
+                  "missing_fields": [],
+                  "review_status": "validated",
+                  "last_reviewed_at": "2026-06-06"
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true,
+            "forms": {
+                  "maitake standardized extract": {
+                        "bio_score": 11,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Standardized D/MD-fraction beta-glucan extract; superior disclosed form.",
+                        "aliases": [
+                              "standardized maitake",
+                              "maitake extract",
+                              "maitake mushroom extract",
+                              "maitake d-fraction",
+                              "maitake md-fraction",
+                              "grifola frondosa extract"
+                        ],
+                        "score": 14,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "maitake fruiting body": {
+                        "bio_score": 9,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Disclosed fruiting body; meaningful beta-glucan content.",
+                        "aliases": [
+                              "maitake mushroom",
+                              "grifola frondosa",
+                              "maitake powder",
+                              "hen of the woods",
+                              "maitake fruiting body"
+                        ],
+                        "score": 12,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "maitake (unspecified)": {
+                        "bio_score": 5,
+                        "natural": false,
+                        "score": 5,
+                        "absorption": "unknown",
+                        "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+                        "aliases": [
+                              "maitake"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "quality": "unknown",
+                              "notes": "Data not available"
+                        }
+                  }
+            }
+      },
+      "shiitake": {
+            "standard_name": "Shiitake",
+            "category": "herbs",
+            "cui": null,
+            "rxcui": null,
+            "match_rules": {
+                  "priority": 0,
+                  "match_mode": "alias_and_fuzzy",
+                  "exclusions": [],
+                  "parent_id": null,
+                  "confidence": "high"
+            },
+            "category_enum": "herbs",
+            "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+            "rxcui_note": "No RxNorm concept for supplement ingredient",
+            "data_quality": {
+                  "completeness": 1.0,
+                  "missing_fields": [],
+                  "review_status": "validated",
+                  "last_reviewed_at": "2026-06-06"
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true,
+            "forms": {
+                  "shiitake standardized extract": {
+                        "bio_score": 11,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Standardized lentinan beta-glucan extract; superior disclosed form.",
+                        "aliases": [
+                              "standardized shiitake",
+                              "shiitake extract",
+                              "shiitake mushroom extract",
+                              "lentinan",
+                              "lentinula edodes extract"
+                        ],
+                        "score": 14,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "shiitake fruiting body": {
+                        "bio_score": 9,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Disclosed fruiting body; meaningful beta-glucan content.",
+                        "aliases": [
+                              "shiitake mushroom",
+                              "lentinula edodes",
+                              "lentinus edodes",
+                              "shiitake powder",
+                              "shiitake fruiting body"
+                        ],
+                        "score": 12,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "shiitake (unspecified)": {
+                        "bio_score": 5,
+                        "natural": false,
+                        "score": 5,
+                        "absorption": "unknown",
+                        "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+                        "aliases": [
+                              "shiitake"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "quality": "unknown",
+                              "notes": "Data not available"
+                        }
+                  }
+            }
+      },
+      "button_mushroom": {
+            "standard_name": "Button Mushroom",
+            "category": "herbs",
+            "cui": null,
+            "rxcui": null,
+            "match_rules": {
+                  "priority": 0,
+                  "match_mode": "alias_and_fuzzy",
+                  "exclusions": [],
+                  "parent_id": null,
+                  "confidence": "high"
+            },
+            "category_enum": "herbs",
+            "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+            "rxcui_note": "No RxNorm concept for supplement ingredient",
+            "data_quality": {
+                  "completeness": 1.0,
+                  "missing_fields": [],
+                  "review_status": "validated",
+                  "last_reviewed_at": "2026-06-06"
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true,
+            "forms": {
+                  "button mushroom extract": {
+                        "bio_score": 8,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Disclosed Agaricus bisporus extract; modest immune-polysaccharide profile vs medicinal species.",
+                        "aliases": [
+                              "white button mushroom extract",
+                              "button mushroom extract",
+                              "agaricus bisporus extract"
+                        ],
+                        "score": 11,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "low",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "button mushroom (unspecified)": {
+                        "bio_score": 5,
+                        "natural": false,
+                        "score": 5,
+                        "absorption": "unknown",
+                        "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+                        "aliases": [
+                              "button mushroom",
+                              "white mushroom",
+                              "agaricus bisporus",
+                              "crimini",
+                              "portobello"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "quality": "unknown",
+                              "notes": "Data not available"
+                        }
+                  }
+            }
+      },
+      "auricularia": {
+            "standard_name": "Auricularia (Wood Ear)",
+            "category": "herbs",
+            "cui": null,
+            "rxcui": null,
+            "match_rules": {
+                  "priority": 0,
+                  "match_mode": "alias_and_fuzzy",
+                  "exclusions": [],
+                  "parent_id": null,
+                  "confidence": "high"
+            },
+            "category_enum": "herbs",
+            "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
+            "rxcui_note": "No RxNorm concept for supplement ingredient",
+            "data_quality": {
+                  "completeness": 1.0,
+                  "missing_fields": [],
+                  "review_status": "validated",
+                  "last_reviewed_at": "2026-06-06"
+            },
+            "source_origin": "fungal",
+            "ingredient_domain": "fungal_mushroom",
+            "local_matrix_active": true,
+            "forms": {
+                  "auricularia extract": {
+                        "bio_score": 9,
+                        "natural": true,
+                        "absorption": "local/non-systemic (variable)",
+                        "notes": "Disclosed Auricularia polysaccharide extract; meaningful local-active form.",
+                        "aliases": [
+                              "wood ear extract",
+                              "black fungus extract",
+                              "auricularia extract",
+                              "auricularia auricula-judae extract",
+                              "wood ear mushroom extract"
+                        ],
+                        "score": 12,
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "range_low": null,
+                              "range_high": null,
+                              "quality": "variable",
+                              "notes": "Local-matrix fungal active; bio_score = form quality + delivery-to-site, not systemic absorption"
+                        }
+                  },
+                  "auricularia (unspecified)": {
+                        "bio_score": 5,
+                        "natural": false,
+                        "score": 5,
+                        "absorption": "unknown",
+                        "notes": "Form not specified; conservative scoring applied. Mushroom form-quality model: ranks below any disclosed fruiting-body/standardized extract; no natural bonus.",
+                        "aliases": [
+                              "auricularia",
+                              "wood ear",
+                              "black fungus",
+                              "auricularia auricula",
+                              "jelly ear"
+                        ],
+                        "dosage_importance": 1.0,
+                        "absorption_structured": {
+                              "value": null,
+                              "quality": "unknown",
+                              "notes": "Data not available"
+                        }
+                  }
             }
       }
 }
