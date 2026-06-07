@@ -2,39 +2,37 @@
 
 _File: `scripts/data/ingredient_quality_map.json`. Generated 2026-06-07._
 
-This is the cumulative semantic diff of all IQM work on the branch (35 commits, "batches 1–30"). `score` is a derived field (`score = min(bio_score + 3·natural, cap)`), so the 130 `score` changes are downstream of the `bio_score` and `natural` edits below and are not re-listed.
+Cumulative semantic diff of all IQM work on the branch (36 commits). `score` is derived (`min(bio_score + 3·natural, cap)`); the 130 `score` changes are downstream of `bio_score`/`natural` and not re-listed.
+
+> **Integration note:** this remote's `origin/main` is the stale 485-parent tree. Codex's current main is 627 parents / schema 5.4.4 (not reachable here). Do NOT whole-file merge — apply the vetted deltas via `IQM_REPLAY_DELTAS.json`. Mushroom `category_enum` decision: **mushroom_extracts**.
 
 ## Summary
 
 - Ingredients: **485 → 491** (+6 added, 0 removed)
-- Parent-level field changes: **43**
-- Identifier (CUI/RxCUI) changes: **230**
-- Form `bio_score` changes: **50** · `natural`-flag changes: **71** · absorption-quality changes: **4**
-- Forms added: **4** · aliases added: **5** · aliases removed: **18**
+- Parent-field changes: **46** · Identifier (CUI/RxCUI): **230**
+- Form `bio_score`: **50** · `natural`: **71** · forms added: **4**
 
-## A. Parents added (6) — all fungal/mushroom
+## A. Parents added (6) — fungal/mushroom, category_enum=`mushroom_extracts`
 
-**Why:** `origin/main` on this remote has no parent for these common medicinal mushrooms, so labels like "Turkey Tail Mushroom Extract" were unscorable. Added with the two-axis local-matrix model (form quality + delivery-to-site, not systemic absorption), `category_enum="herbs"`, and orthogonal fungal fields. Gradients built inversion-free.
-
-- **`auricularia`** (Auricularia (Wood Ear)) — category_enum=`herbs`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
+- **`auricularia`** (Auricularia (Wood Ear)) — category_enum=`mushroom_extracts`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
     - `auricularia extract` → bio_score **9**
     - `auricularia (unspecified)` → bio_score **5**
-- **`button_mushroom`** (Button Mushroom) — category_enum=`herbs`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
+- **`button_mushroom`** (Button Mushroom) — category_enum=`mushroom_extracts`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
     - `button mushroom extract` → bio_score **8**
     - `button mushroom (unspecified)` → bio_score **5**
-- **`chaga`** (Chaga) — category_enum=`herbs`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
+- **`chaga`** (Chaga) — category_enum=`mushroom_extracts`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
     - `chaga standardized extract` → bio_score **11**
     - `chaga sclerotium` → bio_score **9**
     - `chaga (unspecified)` → bio_score **5**
-- **`maitake`** (Maitake) — category_enum=`herbs`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
+- **`maitake`** (Maitake) — category_enum=`mushroom_extracts`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
     - `maitake standardized extract` → bio_score **11**
     - `maitake fruiting body` → bio_score **9**
     - `maitake (unspecified)` → bio_score **5**
-- **`shiitake`** (Shiitake) — category_enum=`herbs`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
+- **`shiitake`** (Shiitake) — category_enum=`mushroom_extracts`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
     - `shiitake standardized extract` → bio_score **11**
     - `shiitake fruiting body` → bio_score **9**
     - `shiitake (unspecified)` → bio_score **5**
-- **`turkey_tail`** (Turkey Tail) — category_enum=`herbs`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
+- **`turkey_tail`** (Turkey Tail) — category_enum=`mushroom_extracts`, source_origin=`fungal`, ingredient_domain=`fungal_mushroom`, local_matrix_active=`true`
     - `turkey tail standardized extract` → bio_score **11**
     - `turkey tail fruiting body` → bio_score **9**
     - `turkey tail mycelium` → bio_score **7**
@@ -42,12 +40,11 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 
 ## B. Parent-level field changes
 
-**Why:** (1) consolidate all mushrooms into the valid `herbs` bucket (cordyceps/cordycepsprime left `adaptogens`, ahcc left the unsafe `mushroom_extracts`); (2) add orthogonal fungal classification fields; (3) backfill 21 `null` `category_enum` from each entry's legacy `category` using only existing vocabulary; (4) normalize `fiber`→`fibers`.
+**Why:** mushrooms -> `mushroom_extracts` + fungal fields; backfill 21 null category_enum from legacy category; `fiber`->`fibers`.
 
 | ingredient | field | main | branch |
 |---|---|---|---|
-| `ahcc` | category | `mushroom_extracts` | `herbs` |
-| `ahcc` | category_enum | `None` | `herbs` |
+| `ahcc` | category_enum | `None` | `mushroom_extracts` |
 | `ahcc` | source_origin | `None` | `fungal` |
 | `ahcc` | ingredient_domain | `None` | `fungal_mushroom` |
 | `ahcc` | local_matrix_active | `None` | `True` |
@@ -58,13 +55,13 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 | `celadrin` | category_enum | `None` | `fatty_acids` |
 | `chrysin` | category_enum | `None` | `antioxidants` |
 | `common_bean_extract` | category_enum | `None` | `herbs` |
-| `cordyceps` | category | `adaptogens` | `herbs` |
-| `cordyceps` | category_enum | `adaptogens` | `herbs` |
+| `cordyceps` | category | `adaptogens` | `mushroom_extracts` |
+| `cordyceps` | category_enum | `adaptogens` | `mushroom_extracts` |
 | `cordyceps` | source_origin | `None` | `fungal` |
 | `cordyceps` | ingredient_domain | `None` | `fungal_mushroom` |
 | `cordyceps` | local_matrix_active | `None` | `True` |
-| `cordycepsprime` | category | `adaptogens` | `herbs` |
-| `cordycepsprime` | category_enum | `adaptogens` | `herbs` |
+| `cordycepsprime` | category | `adaptogens` | `mushroom_extracts` |
+| `cordycepsprime` | category_enum | `adaptogens` | `mushroom_extracts` |
 | `cordycepsprime` | source_origin | `None` | `fungal` |
 | `cordycepsprime` | ingredient_domain | `None` | `fungal_mushroom` |
 | `cordycepsprime` | local_matrix_active | `None` | `True` |
@@ -76,6 +73,8 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 | `hops` | category_enum | `None` | `herbs` |
 | `horsetail` | category_enum | `None` | `herbs` |
 | `lactoferrin` | category_enum | `None` | `proteins` |
+| `lions_mane` | category | `herbs` | `mushroom_extracts` |
+| `lions_mane` | category_enum | `herbs` | `mushroom_extracts` |
 | `lions_mane` | source_origin | `None` | `fungal` |
 | `lions_mane` | ingredient_domain | `None` | `fungal_mushroom` |
 | `lions_mane` | local_matrix_active | `None` | `True` |
@@ -83,6 +82,8 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 | `pgx_fiber` | category_enum | `fiber` | `fibers` |
 | `phosphatidic_acid` | category_enum | `None` | `lipid` |
 | `polygodial` | category_enum | `None` | `herbs` |
+| `reishi` | category | `herbs` | `mushroom_extracts` |
+| `reishi` | category_enum | `herbs` | `mushroom_extracts` |
 | `reishi` | source_origin | `None` | `fungal` |
 | `reishi` | ingredient_domain | `None` | `fungal_mushroom` |
 | `reishi` | local_matrix_active | `None` | `True` |
@@ -90,9 +91,9 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 | `uridine_monophosphate` | category_enum | `None` | `nucleotides` |
 | `white_tea` | category_enum | `None` | `herbs` |
 
-## C. Form `bio_score` changes (50)
+## C. Form `bio_score` changes
 
-**Why (by theme):** absorption-axis recalibration for systemic actives (demote poorly-absorbed flavonoid/anthocyanin/carotenoid/catechin forms; fix bio_score contradicting poor-absorption notes); form-quality model for non-systemic/local actives (fibers, demulcents, mushrooms: standardized > whole/fruiting-body > unspecified); strip premium from marketing-only claims; fix unspecified-outranks-disclosed inversions.
+**Why:** absorption-axis demotion of poorly-absorbed systemic forms; form-quality model for local/non-systemic actives; strip marketing premium; fix unspecified inversions. (CANARY-review candidates.)
 
 | ingredient | form | main | branch |
 |---|---|---|---|
@@ -147,9 +148,9 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 | `superoxide_dismutase` | sod supplement | 10 | **5** |
 | `vitamin_a` | beta-carotene from mixed carotenoids | 12 | **10** |
 
-## D. Form `natural`-flag changes (71)
+## D. Form `natural`-flag changes
 
-**Why:** (1) drop the +3 natural-source bonus from ALL unspecified/generic catch-all forms (a catch-all is not a disclosed natural source); (2) fix cross-parent inconsistencies where manufactured delivery forms (liposomal/micellized/phytosome) were flagged natural; (3) correct synthetic/processed forms mislabeled natural.
+**Why:** drop +3 natural bonus from unspecified/generic catch-alls; fix delivery forms (liposomal/micellized/phytosome) mislabeled natural.
 
 | ingredient | form | main | branch |
 |---|---|---|---|
@@ -225,18 +226,20 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 | `vitamin_k1` | micellized k1 | `True` | `False` |
 | `white_tea` | white tea extract (unspecified) | `True` | `False` |
 
-## E. Absorption-quality changes (4)
+## E. Absorption-quality changes
 
-**Why:** fix `absorption_structured.quality` values that contradicted the form's bio_score / its peer forms (data errors).
+**Why:** fix quality contradicting bio_score / peers.
 
-| ingredient | form | main quality | branch quality |
+| ingredient | form | main | branch |
 |---|---|---|---|
 | `fluoride` | standard | `good` | `unknown` |
 | `probiotic_unspecified` | standard | `good` | `unknown` |
 | `silicon` | standard | `good` | `unknown` |
 | `vitamin_d` | microencapsulated D3 | `poor` | `good` |
 
-## F. Forms added (4)
+## F. Forms added
+
+**Why:** evidence-backed premium forms.
 
 | ingredient | new form | bio_score |
 |---|---|---|
@@ -247,7 +250,7 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 
 ## G. Alias changes
 
-**Why:** remove cross-ingredient/hijacking aliases (e.g. a generic alias pulling matches to the wrong parent) and add exact label coverage (e.g. "X Mushroom Extract" → disclosed extract form).
+**Why:** remove hijacking aliases; add exact label coverage.
 
 | ingredient | form | added | removed |
 |---|---|---|---|
@@ -261,9 +264,9 @@ This is the cumulative semantic diff of all IQM work on the branch (35 commits, 
 | `vitamin_b2_riboflavin` | riboflavin | — | colored with vitamin b2 |
 | `vitamin_b9_folate` | vitamin b9 (unspecified) | — | lemon extract |
 
-## H. Identifier (CUI/RxCUI) changes (230)
+## H. Identifier (CUI/RxCUI) changes
 
-**Why:** identifier-hygiene batches — replace junk/placeholder and cross-mapped UMLS CUI / RxNorm RxCUI values with verified concepts (or explicit `null` + a `*_note` when no valid concept exists for a botanical/novel compound). These do NOT affect scoring; they affect external code/data linkage and should be spot-verified against UMLS/RxNorm.
+**Why:** identifier hygiene; NO scoring impact. Per Codex ~115/121 CUI + ~77/85 RxCUI already on main; verify residual ~14 against current main.
 
 | ingredient | field | main | branch |
 |---|---|---|---|

@@ -49,16 +49,16 @@ class TestFungalClassification:
             assert e.get('ingredient_domain') == 'fungal_mushroom', k
             assert e.get('local_matrix_active') is True, k
 
-    def test_category_is_valid_bucket(self, entries):
-        """Stay in a valid runtime bucket until a coordinated 'mushrooms' vocab
-        migration (do NOT use botanical/mushroom_extracts as a quick edit)."""
+    def test_category_is_decided_bucket(self, entries):
+        """Mushrooms use category_enum='mushroom_extracts' (decision: chosen over
+        'herbs' to match current main's vocabulary; ahcc already used it there)."""
         for k in MUSHROOMS:
-            assert entries[k].get('category_enum') == 'herbs', k
+            assert entries[k].get('category_enum') == 'mushroom_extracts', k
 
-    def test_no_mushroom_routes_to_migration_category(self, entries):
-        """No mushroom parent may carry a piecemeal/unsafe migration category
-        (botanical / mushroom_extracts / fungal) on either category field."""
-        BANNED = {'botanical', 'mushroom_extracts', 'fungal', 'mushrooms', 'adaptogens'}
+    def test_no_mushroom_routes_to_stale_category(self, entries):
+        """No mushroom parent may regress to the pre-decision/piecemeal categories
+        (herbs catch-all, adaptogens use-case, botanical, or null)."""
+        BANNED = {'botanical', 'fungal', 'mushrooms', 'adaptogens', 'herbs', None}
         for k in MUSHROOMS:
             e = entries[k]
             assert e.get('category') not in BANNED, f"{k} category={e.get('category')}"

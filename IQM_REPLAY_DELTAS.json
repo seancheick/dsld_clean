@@ -7,7 +7,7 @@
       "l_glycine.forms['magnesium glycinate']": "Wrong-parent/duplicate (dedicated magnesium/magnesium glycinate exists). PRE-EXISTING on main, not introduced here. Fix at source on real main if desired."
     },
     "open_decision": {
-      "mushroom_category_enum": "herbs (prior instruction) VS mushroom_extracts (Codex latest). Batch 3 leaves this as <DECISION>."
+      "mushroom_category_enum": "RESOLVED -> mushroom_extracts (chosen over herbs to match current main vocab; ahcc already uses it there)"
     }
   },
   "batch1_alias_hijack_removals": [
@@ -184,7 +184,7 @@
         "parent": "auricularia",
         "object": {
           "standard_name": "Auricularia (Wood Ear)",
-          "category": "<DECISION>",
+          "category": "mushroom_extracts",
           "cui": null,
           "rxcui": null,
           "match_rules": {
@@ -194,7 +194,7 @@
             "parent_id": null,
             "confidence": "high"
           },
-          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "category_enum": "mushroom_extracts",
           "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
           "rxcui_note": "No RxNorm concept for supplement ingredient",
           "data_quality": {
@@ -256,7 +256,7 @@
         "parent": "button_mushroom",
         "object": {
           "standard_name": "Button Mushroom",
-          "category": "<DECISION>",
+          "category": "mushroom_extracts",
           "cui": null,
           "rxcui": null,
           "match_rules": {
@@ -266,7 +266,7 @@
             "parent_id": null,
             "confidence": "high"
           },
-          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "category_enum": "mushroom_extracts",
           "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
           "rxcui_note": "No RxNorm concept for supplement ingredient",
           "data_quality": {
@@ -326,7 +326,7 @@
         "parent": "chaga",
         "object": {
           "standard_name": "Chaga",
-          "category": "<DECISION>",
+          "category": "mushroom_extracts",
           "cui": null,
           "rxcui": null,
           "match_rules": {
@@ -336,7 +336,7 @@
             "parent_id": null,
             "confidence": "high"
           },
-          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "category_enum": "mushroom_extracts",
           "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
           "rxcui_note": "No RxNorm concept for supplement ingredient",
           "data_quality": {
@@ -419,7 +419,7 @@
         "parent": "maitake",
         "object": {
           "standard_name": "Maitake",
-          "category": "<DECISION>",
+          "category": "mushroom_extracts",
           "cui": null,
           "rxcui": null,
           "match_rules": {
@@ -429,7 +429,7 @@
             "parent_id": null,
             "confidence": "high"
           },
-          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "category_enum": "mushroom_extracts",
           "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
           "rxcui_note": "No RxNorm concept for supplement ingredient",
           "data_quality": {
@@ -510,7 +510,7 @@
         "parent": "shiitake",
         "object": {
           "standard_name": "Shiitake",
-          "category": "<DECISION>",
+          "category": "mushroom_extracts",
           "cui": null,
           "rxcui": null,
           "match_rules": {
@@ -520,7 +520,7 @@
             "parent_id": null,
             "confidence": "high"
           },
-          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "category_enum": "mushroom_extracts",
           "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
           "rxcui_note": "No RxNorm concept for supplement ingredient",
           "data_quality": {
@@ -600,7 +600,7 @@
         "parent": "turkey_tail",
         "object": {
           "standard_name": "Turkey Tail",
-          "category": "<DECISION>",
+          "category": "mushroom_extracts",
           "cui": null,
           "rxcui": null,
           "match_rules": {
@@ -610,7 +610,7 @@
             "parent_id": null,
             "confidence": "high"
           },
-          "category_enum": "<DECISION: herbs|mushroom_extracts>",
+          "category_enum": "mushroom_extracts",
           "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
           "rxcui_note": "No RxNorm concept for supplement ingredient",
           "data_quality": {
@@ -718,7 +718,8 @@
           "source_origin": "fungal",
           "ingredient_domain": "fungal_mushroom",
           "local_matrix_active": true,
-          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+          "category_enum": "mushroom_extracts",
+          "category": "mushroom_extracts"
         }
       },
       {
@@ -727,7 +728,8 @@
           "source_origin": "fungal",
           "ingredient_domain": "fungal_mushroom",
           "local_matrix_active": true,
-          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+          "category_enum": "mushroom_extracts",
+          "category": "mushroom_extracts"
         }
       },
       {
@@ -736,7 +738,8 @@
           "source_origin": "fungal",
           "ingredient_domain": "fungal_mushroom",
           "local_matrix_active": true,
-          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+          "category_enum": "mushroom_extracts",
+          "category": "mushroom_extracts"
         }
       },
       {
@@ -745,7 +748,8 @@
           "source_origin": "fungal",
           "ingredient_domain": "fungal_mushroom",
           "local_matrix_active": true,
-          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+          "category_enum": "mushroom_extracts",
+          "category": "mushroom_extracts"
         }
       },
       {
@@ -754,7 +758,8 @@
           "source_origin": "fungal",
           "ingredient_domain": "fungal_mushroom",
           "local_matrix_active": true,
-          "category_enum": "<DECISION: herbs|mushroom_extracts>"
+          "category_enum": "mushroom_extracts",
+          "category": "mushroom_extracts"
         }
       }
     ],

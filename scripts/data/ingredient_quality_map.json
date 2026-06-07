@@ -33820,7 +33820,7 @@
       },
       "cordycepsprime": {
             "standard_name": "CordycepsPrime",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "forms": {
                   "cordycepsprime": {
                         "bio_score": 10,
@@ -33853,7 +33853,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "cui_note": "No UMLS entry for botanical/novel compound",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
@@ -34495,7 +34495,7 @@
       },
       "lions_mane": {
             "standard_name": "Lion's Mane",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": "C1005019",
             "rxcui": null,
             "forms": {
@@ -34570,7 +34570,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
                   "completeness": 1.0,
@@ -34667,7 +34667,7 @@
       },
       "reishi": {
             "standard_name": "Reishi",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": "C0771755",
             "rxcui": null,
             "forms": {
@@ -34737,7 +34737,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
                   "completeness": 1.0,
@@ -34751,7 +34751,7 @@
       },
       "cordyceps": {
             "standard_name": "Cordyceps",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": "C0453133",
             "rxcui": null,
             "forms": {
@@ -34820,7 +34820,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
                   "completeness": 1.0,
@@ -36031,12 +36031,13 @@
                   "fibers": 6,
                   "functional_foods": 7,
                   "glandular": 1,
-                  "herbs": 83,
+                  "herbs": 72,
                   "ketones": 1,
                   "lipid": 4,
                   "metabolic_support": 1,
                   "minerals": 20,
                   "mitochondrial_support": 1,
+                  "mushroom_extracts": 11,
                   "nucleotides": 2,
                   "nutraceuticals": 3,
                   "oil": 3,
@@ -41627,7 +41628,7 @@
       },
       "ahcc": {
             "standard_name": "AHCC (Active Hexose Correlated Compound)",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": "C1720839",
             "rxcui": null,
             "forms": {
@@ -41666,7 +41667,7 @@
                   "last_reviewed_at": "2026-02-18"
             },
             "rxcui_note": "No verified RxNorm concept assigned",
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "source_origin": "fungal",
             "ingredient_domain": "fungal_mushroom",
             "local_matrix_active": true
@@ -42817,7 +42818,7 @@
       },
       "turkey_tail": {
             "standard_name": "Turkey Tail",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": null,
             "rxcui": null,
             "match_rules": {
@@ -42827,7 +42828,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
@@ -42928,7 +42929,7 @@
       },
       "chaga": {
             "standard_name": "Chaga",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": null,
             "rxcui": null,
             "match_rules": {
@@ -42938,7 +42939,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
@@ -43018,7 +43019,7 @@
       },
       "maitake": {
             "standard_name": "Maitake",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": null,
             "rxcui": null,
             "match_rules": {
@@ -43028,7 +43029,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
@@ -43106,7 +43107,7 @@
       },
       "shiitake": {
             "standard_name": "Shiitake",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": null,
             "rxcui": null,
             "match_rules": {
@@ -43116,7 +43117,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
@@ -43193,7 +43194,7 @@
       },
       "button_mushroom": {
             "standard_name": "Button Mushroom",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": null,
             "rxcui": null,
             "match_rules": {
@@ -43203,7 +43204,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
@@ -43260,7 +43261,7 @@
       },
       "auricularia": {
             "standard_name": "Auricularia (Wood Ear)",
-            "category": "herbs",
+            "category": "mushroom_extracts",
             "cui": null,
             "rxcui": null,
             "match_rules": {
@@ -43270,7 +43271,7 @@
                   "parent_id": null,
                   "confidence": "high"
             },
-            "category_enum": "herbs",
+            "category_enum": "mushroom_extracts",
             "cui_note": "No UMLS entry for botanical/fungal supplement ingredient",
             "rxcui_note": "No RxNorm concept for supplement ingredient",
             "data_quality": {
