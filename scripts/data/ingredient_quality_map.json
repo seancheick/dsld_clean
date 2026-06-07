@@ -19615,10 +19615,10 @@
                   },
                   "generic pine bark extract": {
                         "bio_score": 10,
-                        "natural": true,
-                        "score": 13,
+                        "natural": false,
+                        "score": 10,
                         "absorption": "good (~50–70%)",
-                        "notes": "Variable source and potency; may lack standardization and consistent OPC content",
+                        "notes": "Variable source and potency; may lack standardization and consistent OPC content. Generic/non-standardized catch-all: no natural-source bonus.",
                         "aliases": [
                               "pine bark extract",
                               "maritime pine extract",
@@ -33303,10 +33303,10 @@
                   },
                   "generic lactobacillus salivarius": {
                         "bio_score": 8,
-                        "natural": true,
-                        "score": 11,
+                        "natural": false,
+                        "score": 8,
                         "absorption": "variable",
-                        "notes": "Non-strain specific. Benefits may vary without specific strain identification.",
+                        "notes": "Non-strain specific. Benefits may vary without specific strain identification. Generic/non-standardized catch-all: no natural-source bonus.",
                         "aliases": [
                               "lactobacillus salivarius",
                               "l. salivarius",
@@ -39287,9 +39287,9 @@
                         }
                   },
                   "unspecified": {
-                        "bio_score": 10,
+                        "bio_score": 8,
                         "natural": false,
-                        "score": 10,
+                        "score": 8,
                         "absorption": "unknown",
                         "notes": "",
                         "aliases": [
