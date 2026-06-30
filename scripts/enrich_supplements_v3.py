@@ -267,6 +267,12 @@ class SupplementEnricherV3:
         self.databases = {}
         self._load_all_databases()
         self._compile_patterns()
+        # Memoization for _match_quality_map. The match is a pure function of
+        # (ing_name, std_name, cleaned_forms) given the static quality_map, and
+        # takes no product context, so identical ingredient labels (which repeat
+        # heavily across a dataset) can be matched once instead of re-running the
+        # full exact/alias/token/fuzzy scan over every parent each time.
+        self._mqm_cache = {}
 
         # Track unmapped ingredients across batch
         self.unmapped_tracker = {}
@@ -2915,6 +2921,38 @@ class SupplementEnricherV3:
         }
 
     def _match_quality_map(self, ing_name: str, std_name: str, quality_map: Dict,
+                           _form_extraction_attempt: bool = False,
+                           cleaned_forms: Optional[List[Dict]] = None) -> Optional[Dict]:
+        """
+        Caching wrapper around the matching logic (see _match_quality_map_impl).
+
+        The match is a pure function of (ing_name, std_name, cleaned_forms) for a
+        given static quality_map and carries no product-level context, so results
+        are memoized per distinct input. This eliminates the repeated full
+        exact/alias/token/fuzzy scan for ingredient labels that recur across a
+        dataset (e.g. generic "Amino Acids" that fall through to a full fuzzy
+        scan). A deep copy is returned so callers may freely mutate the result
+        without corrupting the cache.
+        """
+        try:
+            forms_key = (json.dumps(cleaned_forms, sort_keys=True, default=str)
+                         if cleaned_forms is not None else None)
+            cache_key = (ing_name, std_name, _form_extraction_attempt, forms_key)
+        except (TypeError, ValueError):
+            # Unhashable/unserializable input: skip caching, compute directly.
+            return self._match_quality_map_impl(
+                ing_name, std_name, quality_map, _form_extraction_attempt, cleaned_forms)
+
+        if cache_key in self._mqm_cache:
+            cached = self._mqm_cache[cache_key]
+            return copy.deepcopy(cached) if cached is not None else None
+
+        result = self._match_quality_map_impl(
+            ing_name, std_name, quality_map, _form_extraction_attempt, cleaned_forms)
+        self._mqm_cache[cache_key] = copy.deepcopy(result) if result is not None else None
+        return result
+
+    def _match_quality_map_impl(self, ing_name: str, std_name: str, quality_map: Dict,
                            _form_extraction_attempt: bool = False,
                            cleaned_forms: Optional[List[Dict]] = None) -> Optional[Dict]:
         """
