@@ -40,11 +40,22 @@ def scored():
 class TestGoldenScore:
     def test_headline(self, scored):
         _, r = scored
-        assert r["quality_score"] == pytest.approx(77.0, abs=0.01)
-        assert r["score_100_equivalent"] == pytest.approx(96.25, abs=0.1)
+        # Canonical product-facing score is /100.
+        assert r["score"] == pytest.approx(96.2, abs=0.1)
+        assert r["display"] == "96.2/100"
+        assert r["score_100_equivalent"] == pytest.approx(96.2, abs=0.1)
+        # Internal 0-80 representation retained for gates/snapshots.
+        assert r["score_80"] == pytest.approx(77.0, abs=0.01)
         assert r["verdict"] == "SAFE"
         assert r["flags"] == []
         assert r["mapped_coverage"] == pytest.approx(1.0)
+
+    def test_product_role_is_complete(self, scored):
+        enriched, _ = scored
+        role = enriched.get("product_role", {})
+        assert role["role"] == "prenatal_complete"
+        assert role["completeness_claim_mismatch"] is False
+        assert role["scoring_impact"] == "none"
 
     def test_section_breakdown(self, scored):
         _, r = scored

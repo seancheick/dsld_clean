@@ -9,7 +9,7 @@ axes are easy to conflate.
 
 | Axis | Where it lives | Current value | What it means |
 |---|---|---|---|
-| **Quality scorer** | `score_supplements.py` (`self.VERSION`, from `config/scoring_config.json._documentation.version`) | **3.0.1** (code) / **3.4.0** (shipped, per Supabase `export_manifest.scoring_version`) | The 0–80 quality algorithm (Sections A–D). This is "the scoring system." |
+| **Quality scorer** | `score_supplements.py` (`self.VERSION`, from `config/scoring_config.json._documentation.version`) | **3.0.1** (code) / **3.4.0** (shipped, per Supabase `export_manifest.scoring_version`) | The quality algorithm (Sections A–D). Canonical output is **/100** (`score`); the 0–80 sum is internal. This is "the scoring system." |
 | **Reference-data schema** | `_metadata.schema_version` inside `data/*.json` (29 files) | **4.0.0** | The shape of the *reference databases*, NOT the scorer. A file saying `"schema_version": "4.0.0"` does **not** mean "scoring v4." |
 | **Output schema** | `scoring_metadata.output_schema_version` | see config | The shape of the scorer's JSON output. |
 
@@ -27,8 +27,8 @@ If you see `4.0.0`, check which axis it is. The scorer has never been v4.
 The pipeline is deliberately split:
 
 1. **Server-side quality score (this repo, v3-series).** Product-intrinsic
-   quality: bioavailable forms, safety/purity, evidence, brand trust. Produces
-   `score_80` / `score_100_equivalent` / `verdict`. Population-agnostic.
+   quality: bioavailable forms, safety/purity, evidence, brand trust. Produces the
+   canonical `score` (/100) plus `verdict`. Population-agnostic.
 
 2. **Device-side profile score (the Flutter app — NOT in this repo).** Personal
    fit for a given user (life stage, conditions, existing stack). It consumes
@@ -42,17 +42,22 @@ A reviewer inspecting "the current multi/prenatal scorer" and seeing a
 parsed claims is describing **either** the `score_100_equivalent` view of the
 v3 scorer **or** the device-side profile scorer — not a third system.
 
-## `score_80` and `score_100_equivalent` are the same scorer
+## The score is /100. The 0-80 is internal.
+
+The canonical, product-facing score is **/100** — the output field `score` (and
+`display` = "NN/100"). The 0-80 form (`score_80`, `quality_score`) is an
+**internal** representation: the section caps sum to 80 (A≤25 + B≤35 + C≤15 +
+D≤5), and it is retained only for internal tooling (`score_stability_gates.py`,
+`regression_snapshot.py`, `identity_chain_verifier.py`). Do not present /80 as a
+product score — that is the old style.
 
 ```
-score_100_equivalent = (score_80 / 80) * 100
+score = score_100_equivalent = (score_80 / 80) * 100
 ```
 
-So `77/80` and `96.2/100` are one number in two representations, produced by one
-scorer in one pass. Grade words are keyed off the 100 view (`_grade_word`):
-Exceptional ≥90, Excellent ≥80, Good ≥70, Fair ≥60, Below Avg ≥50, Low ≥32.
-(See the external-audit note below: ≥90 is intentionally rare in the real
-catalog — max observed among 1,449 prenatal multis is ~90.8.)
+Grade words are keyed off the /100 score (`_grade_word`): Exceptional ≥90,
+Excellent ≥80, Good ≥70, Fair ≥60, Below Avg ≥50, Low ≥32. ≥90 is intentionally
+rare in the real catalog — max observed among 1,449 prenatal multis is ~90.8.
 
 ## The `prenatal_coverage` ledger is data, not score
 

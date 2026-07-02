@@ -1397,8 +1397,12 @@ class SupplementScorer:
             display = "N/A"
             display_100 = "N/A"
         else:
+            # The canonical, product-facing score is on the 0-100 scale.
+            # `quality_score`/`score_80` remain as an INTERNAL representation
+            # (section caps sum to 80; used by stability gates and snapshots),
+            # but the human display and the `score` field are /100.
             score_100_equivalent = round((quality_score / 80.0) * 100.0, 1)
-            display = f"{round(quality_score, 1)}/80"
+            display = f"{score_100_equivalent}/100"
             display_100 = f"{score_100_equivalent}/100"
 
         if verdict in {"BLOCKED", "UNSAFE"}:
@@ -1423,9 +1427,13 @@ class SupplementScorer:
             "dsld_id": product_id,
             "product_name": product_name,
             "brand_name": product.get("brandName", ""),
+            # Canonical, product-facing score (0-100).
+            "score": score_100_equivalent,
+            "score_100_equivalent": score_100_equivalent,
+            # Internal 0-80 representation (section caps sum to 80). Kept for
+            # stability gates / snapshots; NOT the product-facing score.
             "quality_score": round(quality_score, 1) if quality_score is not None else None,
             "score_80": round(quality_score, 1) if quality_score is not None else None,
-            "score_100_equivalent": score_100_equivalent,
             "display": display,
             "display_100": display_100,
             "grade": self._grade_word(score_100_equivalent or 0.0, verdict),

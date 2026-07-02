@@ -146,6 +146,24 @@ class TestRoleHintAndEmpty:
         )
         assert cov["is_prenatal_positioned"] is False
 
+    def test_pregnancy_caution_target_is_not_positioning(self, enricher):
+        # "Women (not pregnant or lactating)" is a contraindication, NOT
+        # prenatal positioning (observed on a real DSLD gut product).
+        prod = make_product(
+            FULL_PANEL, name="Digestive Balance",
+            target_groups=["Women (not pregnant or lactating)", "Vegan"],
+        )
+        cov = enricher._collect_prenatal_coverage(prod)
+        assert cov["is_prenatal_positioned"] is False
+
+    def test_affirmative_pregnancy_target_is_positioning(self, enricher):
+        prod = make_product(
+            FULL_PANEL, name="Daily Multi",
+            target_groups=["Pregnant/Lactating women"],
+        )
+        cov = enricher._collect_prenatal_coverage(prod)
+        assert cov["is_prenatal_positioned"] is True
+
     def test_no_actives_all_missing_no_crash(self, enricher):
         cov = enricher._collect_prenatal_coverage(make_product([]))
         assert len(cov["summary"]["missing"]) == 8

@@ -9,13 +9,15 @@ while staying clinically appropriate and safe for a **pregnant woman managing di
 
 | Metric | Result |
 |---|---|
-| **Quality Score** | **77.0 / 80** |
-| **100-point equivalent** | **96.2 / 100** |
+| **Quality Score** | **96.2 / 100** |
 | **Verdict** | **SAFE** |
+| Grade | Exceptional |
 | Flags | none |
 | Mapped coverage | 100% |
+| Product role | prenatal_complete |
 
-Section breakdown:
+Section breakdown (sections are computed internally on a 0-80 basis that maps to
+the /100 score; `score_80 = 77.0`):
 
 | Section | Score | Max | Notes |
 |---|---|---|---|
@@ -26,7 +28,7 @@ Section breakdown:
 
 > This is the legitimate ceiling for a *pregnancy-safe* formula. The two engine bugs found while
 > building this (the A4 absorption bonus and the allergen-negation parser) **have now been fixed** in
-> the pipeline — so A4 is earned here. See [Why not higher than 77](#why-not-higher-than-7780) below;
+> the pipeline — so A4 is earned here. See [Why not higher than 77](#why-not-higher-than-962100) below;
 > the remaining gap is a deliberate refusal to trade fetal safety for points.
 
 ---
@@ -131,7 +133,7 @@ Recognized manufacturer *FullWell* (D1 = 2), full label disclosure (D2 = 1), phy
 
 ---
 
-## Why not higher than 77/80?
+## Why not higher than 96.2/100?
 
 With B, C, and D all maxed and A4 now earned, the remaining gap is a **deliberate safety choice**:
 
@@ -143,7 +145,7 @@ With B, C, and D all maxed and A4 now earned, the remaining gap is a **deliberat
 2. **Section D caps at 4.5** by design (the physician/region/packaging sub-bonuses are collectively
    capped at 1.5), so 77 already reflects a maxed-out B, C, and D.
 
-**Net:** 77/80 = 96.2/100, **SAFE** — the highest a genuinely pregnancy-safe, diabetes-aware formula can score.
+**Net:** 96.2/100, **SAFE** — the highest a genuinely pregnancy-safe, diabetes-aware formula can score.
 
 ---
 

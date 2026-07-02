@@ -171,6 +171,7 @@ class SupplementEnricherV3:
         'dietary_sensitivity_data': {},
         'rda_ul_data': {},
         'prenatal_coverage': {},
+        'product_role': {},
         'proprietary_data': {},
         'enrichment_metadata': {'ready_for_scoring': False}
     }
@@ -7564,11 +7565,22 @@ class SupplementEnricherV3:
             anchors_out[anchor] = entry
             summary[status].append(anchor)
 
-        product_text = " ".join(filter(None, [
-            str(product.get('fullName', '') or ''),
-            " ".join(str(t) for t in product.get('targetGroups', []) or []),
-        ])).lower()
-        is_prenatal_positioned = ("prenatal" in product_text) or ("pregnan" in product_text)
+        # Prenatal positioning: "prenatal" anywhere, OR a target group that
+        # AFFIRMATIVELY targets pregnant/lactating women. A pregnancy CAUTION
+        # ("Women (not pregnant or lactating)", "not for use if pregnant") is a
+        # contraindication, not positioning - it must not flip this true.
+        name = str(product.get('fullName', '') or '').lower()
+        target_groups = [str(t).lower() for t in (product.get('targetGroups', []) or [])]
+        affirmative_pregnancy_target = any(
+            ("pregnan" in tg or "lactat" in tg)
+            and not re.search(r'\bnot\b|\bnon[\s-]?pregnan|\bexcept', tg)
+            for tg in target_groups
+        )
+        is_prenatal_positioned = (
+            "prenatal" in name
+            or any("prenatal" in tg for tg in target_groups)
+            or affirmative_pregnancy_target
+        )
 
         return {
             "schema_version": "1.0.0",
@@ -7578,6 +7590,124 @@ class SupplementEnricherV3:
             "is_prenatal_positioned": is_prenatal_positioned,
             "anchors": anchors_out,
             "summary": summary,
+            "scoring_impact": "none",
+        }
+
+    # =========================================================================
+    # PRODUCT ROLE CLASSIFICATION (Section E device-side data; NOT scored)
+    # =========================================================================
+
+    # Text signals that a product markets itself as a COMPLETE / all-in-one
+    # solution. If it makes this claim but is only a base (missing DHA/choline),
+    # that is a claim/completeness mismatch the app can surface - it is NOT a
+    # quality penalty here.
+    COMPLETE_CLAIM_PATTERN = re.compile(
+        r'\b(all[\s-]?in[\s-]?one|complete|comprehensive|everything\s+you\s+need|'
+        r'all\s+you\s+need|full[\s-]?spectrum\s+prenatal|one[\s-]?and[\s-]?done|'
+        r'total\s+prenatal)\b',
+        re.I,
+    )
+
+    # A product is prenatal "by composition" when it carries the non-negotiable
+    # prenatal core. DHA/choline/iron are the COMPLETENESS nutrients whose
+    # presence separates a complete prenatal from a base (companion-paired).
+    PRENATAL_CORE_ANCHORS = ("folate", "iodine", "vitamin_d", "vitamin_b12")
+    PRENATAL_COMPLETENESS_ANCHORS = ("iron", "dha", "choline")
+
+    def _classify_product_role(
+        self,
+        product: Dict,
+        coverage: Dict,
+        supp_type: str,
+    ) -> Dict:
+        """
+        Classify the product's ROLE so the app can be role-aware (a prenatal
+        base that pairs with a separate DHA/choline product is not a low-quality
+        prenatal - it is a different role). Data-only: the v3 scorer does not
+        read this; role-aware SCORING would be a separate, versioned change.
+
+        Roles: prenatal_complete, prenatal_base, prenatal_dha_companion,
+        prenatal_choline_companion, general_multi, targeted_gap_filler,
+        single_ingredient, unclassified.
+        """
+        anchors = (coverage or {}).get("anchors", {}) or {}
+
+        def present(anchor: str) -> bool:
+            a = anchors.get(anchor)
+            return bool(a) and a.get("status") in ("meets_target", "below_target", "above_ul")
+
+        core_present = [a for a in self.PRENATAL_CORE_ANCHORS if present(a)]
+        completeness_present = [a for a in self.PRENATAL_COMPLETENESS_ANCHORS if present(a)]
+        completeness_missing = [
+            a for a in self.PRENATAL_COMPLETENESS_ANCHORS if not present(a)
+        ]
+
+        is_prenatal_positioned = bool((coverage or {}).get("is_prenatal_positioned"))
+        is_prenatal_by_composition = len(core_present) >= 3
+        active_count = len([
+            i for i in product.get('activeIngredients', []) or []
+            if (i.get('quantity') or 0)
+        ])
+
+        all_present = [a for a in anchors if present(a)]
+
+        role = "unclassified"
+        # Companion products: a small product built around DHA and/or choline,
+        # marketed prenatal but not a multi.
+        dha_only = present("dha") and not is_prenatal_by_composition
+        choline_only = present("choline") and not is_prenatal_by_composition
+        if (is_prenatal_positioned or dha_only or choline_only) and active_count <= 3 \
+                and not is_prenatal_by_composition:
+            if present("dha") and not present("choline"):
+                role = "prenatal_dha_companion"
+            elif present("choline") and not present("dha"):
+                role = "prenatal_choline_companion"
+            elif present("dha") and present("choline"):
+                role = "prenatal_dha_companion"  # dominant anchor; app can refine
+        if role == "unclassified":
+            if is_prenatal_positioned or is_prenatal_by_composition:
+                if not completeness_missing:
+                    role = "prenatal_complete"
+                else:
+                    role = "prenatal_base"
+            elif supp_type in ("probiotic", "prebiotic", "herbal_blend"):
+                # These are already meaningful roles; pass through.
+                role = supp_type
+            elif supp_type in ("single", "single_nutrient") or active_count == 1:
+                role = "single_ingredient"
+            elif supp_type == "multivitamin" or active_count >= 6:
+                # Count-based fallback (matches the scorer's >=6 == multivitamin
+                # rule); robust when supp_type resolves to "specialty".
+                role = "general_multi"
+            elif supp_type in ("targeted", "targeted_condition") or 2 <= active_count <= 5:
+                role = "targeted_gap_filler"
+
+        text = " ".join(filter(None, [
+            str(product.get('fullName', '') or ''),
+            " ".join(
+                str(s.get('notes', '') or s.get('text', ''))
+                for s in product.get('statements', []) or []
+                if isinstance(s, dict)
+            ),
+        ]))
+        claims_complete = bool(self.COMPLETE_CLAIM_PATTERN.search(text))
+        # A completeness claim only conflicts for a prenatal that is missing
+        # completeness nutrients (base). A genuinely complete prenatal claiming
+        # "complete" is consistent.
+        completeness_claim_mismatch = bool(
+            claims_complete and role == "prenatal_base" and completeness_missing
+        )
+
+        return {
+            "schema_version": "1.0.0",
+            "role": role,
+            "is_prenatal_positioned": is_prenatal_positioned,
+            "is_prenatal_by_composition": is_prenatal_by_composition,
+            "core_anchors_present": core_present,
+            "completeness_present": completeness_present,
+            "completeness_missing": completeness_missing,
+            "claims_complete": claims_complete,
+            "completeness_claim_mismatch": completeness_claim_mismatch,
             "scoring_impact": "none",
         }
 
@@ -7933,6 +8063,14 @@ class SupplementEnricherV3:
             enriched["prenatal_coverage"] = self._collect_prenatal_coverage(
                 product,
                 max_servings_per_day=serving_data["serving_basis"].get("max_servings_per_day")
+            )
+            # Product role classification (Section E device-side data; not scored)
+            enriched["product_role"] = self._classify_product_role(
+                product,
+                enriched["prenatal_coverage"],
+                enriched.get("supplement_type", {}).get("type")
+                if isinstance(enriched.get("supplement_type"), dict)
+                else enriched.get("supplement_type"),
             )
 
             # Product-level signals (coverage, certificates, label disclosure)
