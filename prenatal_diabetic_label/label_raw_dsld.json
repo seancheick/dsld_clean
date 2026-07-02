@@ -1,0 +1,1313 @@
+{
+ "src": "engineered/prenatal_diabetic_optimized.json",
+ "id": 900001,
+ "fullName": "Complete Prenatal Multivitamin with Active Folate, DHA & Myo-Inositol (Liposomal)",
+ "brandName": "FullWell",
+ "brandIpSymbol": "\u00ae",
+ "upcSku": "0 00000 00001 7",
+ "productVersionCode": "Not Present",
+ "servingsPerContainer": "30",
+ "percentDvFootnote": "Not Present",
+ "netContents": [
+  {
+   "order": 1,
+   "quantity": 60,
+   "unit": "Capsule(s)",
+   "display": "60 Capsule(s)"
+  }
+ ],
+ "physicalState": {
+  "langualCode": "E0159",
+  "langualCodeDescription": "Capsule"
+ },
+ "servingSizes": [
+  {
+   "order": 1,
+   "minQuantity": 2,
+   "maxQuantity": 2,
+   "minDailyServings": 1,
+   "maxDailyServings": 1,
+   "unit": "Capsule(s)",
+   "notes": "",
+   "inSFB": true
+  }
+ ],
+ "targetGroups": [
+  "Pregnant/Lactating women",
+  "Vegetarian",
+  "Vegan",
+  "Organic",
+  "Gluten Free"
+ ],
+ "productType": {
+  "langualCode": "A1306",
+  "langualCodeDescription": "Multivitamin/Mineral"
+ },
+ "contacts": [
+  {
+   "contactId": 99001,
+   "text": "Manufactured for",
+   "types": [
+    "Manufacturer"
+   ],
+   "contactDetails": {
+    "id": 99001,
+    "name": "FullWell",
+    "streetAddress": "",
+    "city": "",
+    "state": "",
+    "country": "USA",
+    "zipCode": "",
+    "phoneNumber": "",
+    "email": "",
+    "webAddress": "fullwellfertility.com"
+   }
+  }
+ ],
+ "statements": [
+  {
+   "type": "FDA Statement of Identity",
+   "notes": "Prenatal Multivitamin Dietary Supplement"
+  },
+  {
+   "type": "Formulation re: Other",
+   "notes": "Physician-Formulated for pregnant and nursing women, including those managing blood sugar. Features fully active, bioavailable nutrient forms: L-5-MTHF active folate, methylcobalamin B12, P-5-P B6, chelated iron bisglycinate, and vegan algal DHA. Supports healthy glucose metabolism, insulin sensitivity, fetal brain and neural tube development, and a healthy nausea response."
+  },
+  {
+   "type": "Seals/Symbols",
+   "notes": "USP Verified. NSF Certified. Informed Choice Certified. Certified Organic. NSF GMP Registered facility. Non-GMO Project Verified. Certified Gluten-Free (GFCO). Certified Vegan."
+  },
+  {
+   "type": "Formulation re: Other",
+   "notes": "Manufactured in the USA in an NSF GMP Registered, cGMP Certified facility. Certificate of Analysis (COA) available for every batch. Scan the QR code on each bottle for batch lookup and full traceability. Third-party tested for heavy metals and purity."
+  },
+  {
+   "type": "Seals/Symbols",
+   "notes": "Free from all 9 major FDA allergens. Certified Gluten-Free (GFCO). Dairy-Free. Soy-Free. 100% Vegan. Non-GMO Project Verified."
+  },
+  {
+   "type": "Formulation re: Other",
+   "notes": "Packaged in a 100% recyclable amber glass bottle. Plastic-free, sustainable packaging."
+  },
+  {
+   "type": "Suggested/Recommended/Usage/Directions",
+   "notes": "Suggested Use: Take 2 capsules daily with food, or as directed by your healthcare practitioner. Liposomal delivery technology enhances nutrient absorption."
+  },
+  {
+   "type": "FDA Disclaimer Statement",
+   "notes": "These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease. Consult your healthcare provider before use if pregnant, nursing, or managing a medical condition."
+  }
+ ],
+ "claims": [
+  {
+   "langualCode": "P0265",
+   "langualCodeDescription": "Structure/Function"
+  },
+  {
+   "langualCode": "P0115",
+   "langualCodeDescription": "All Other"
+  }
+ ],
+ "ingredientRows": [
+  {
+   "order": 1,
+   "ingredientId": 900001,
+   "description": "",
+   "notes": "100% as provitamin A beta-carotene from mixed carotenoids; no preformed retinol, safe in pregnancy",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 770,
+     "unit": "mcg RAE",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Vitamin A (as Beta-Carotene)",
+   "category": "vitamin",
+   "ingredientGroup": "Vitamin A (as Beta-Carotene)",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400001,
+     "prefix": "as",
+     "percent": null,
+     "name": "Beta-Carotene from Mixed Carotenoids",
+     "category": "vitamin",
+     "ingredientGroup": "Vitamin A (as Beta-Carotene)",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "ingredientId": 900002,
+   "description": "",
+   "notes": "Liposomal delivery for enhanced absorption",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 120,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Vitamin C",
+   "category": "vitamin",
+   "ingredientGroup": "Vitamin C",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400002,
+     "prefix": "as",
+     "percent": null,
+     "name": "Liposomal Vitamin C",
+     "category": "vitamin",
+     "ingredientGroup": "Vitamin C",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "ingredientId": 900003,
+   "description": "",
+   "notes": "2,000 IU cholecalciferol; supports healthy glucose metabolism and calcium absorption",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 50,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Vitamin D3",
+   "category": "vitamin",
+   "ingredientGroup": "Vitamin D3",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400003,
+     "prefix": "as",
+     "percent": null,
+     "name": "Cholecalciferol (D3)",
+     "category": "vitamin",
+     "ingredientGroup": "Vitamin D3",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "ingredientId": 900004,
+   "description": "",
+   "notes": "Natural full-spectrum mixed tocopherols",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 15,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Vitamin E",
+   "category": "vitamin",
+   "ingredientGroup": "Vitamin E",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400004,
+     "prefix": "as",
+     "percent": null,
+     "name": "Mixed Tocopherols",
+     "category": "vitamin",
+     "ingredientGroup": "Vitamin E",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "ingredientId": 900005,
+   "description": "",
+   "notes": "All-trans MK-7 directs calcium to bone",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 90,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Vitamin K2",
+   "category": "vitamin",
+   "ingredientGroup": "Vitamin K2",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400005,
+     "prefix": "as",
+     "percent": null,
+     "name": "Menaquinone-7 (MK-7)",
+     "category": "vitamin",
+     "ingredientGroup": "Vitamin K2",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "ingredientId": 900006,
+   "description": "",
+   "notes": "Lipid-soluble B1 (benfotiamine) supports healthy nerve function",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 3,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Thiamine",
+   "category": "vitamin",
+   "ingredientGroup": "Thiamine",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400006,
+     "prefix": "as",
+     "percent": null,
+     "name": "Benfotiamine",
+     "category": "vitamin",
+     "ingredientGroup": "Thiamine",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "ingredientId": 900007,
+   "description": "",
+   "notes": "Active coenzyme form of B2",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 1.6,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Riboflavin",
+   "category": "vitamin",
+   "ingredientGroup": "Riboflavin",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400007,
+     "prefix": "as",
+     "percent": null,
+     "name": "Riboflavin-5-Phosphate",
+     "category": "vitamin",
+     "ingredientGroup": "Riboflavin",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 8,
+   "ingredientId": 900008,
+   "description": "",
+   "notes": "Non-flushing niacinamide",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 18,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Niacin (as Niacinamide)",
+   "category": "vitamin",
+   "ingredientGroup": "Niacin (as Niacinamide)",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400008,
+     "prefix": "as",
+     "percent": null,
+     "name": "Niacinamide",
+     "category": "vitamin",
+     "ingredientGroup": "Niacin (as Niacinamide)",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 9,
+   "ingredientId": 900009,
+   "description": "",
+   "notes": "Active P-5-P; supports healthy nausea response in pregnancy",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 25,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Vitamin B6",
+   "category": "vitamin",
+   "ingredientGroup": "Vitamin B6",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400009,
+     "prefix": "as",
+     "percent": null,
+     "name": "Pyridoxal 5'-Phosphate (P-5-P)",
+     "category": "vitamin",
+     "ingredientGroup": "Vitamin B6",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 10,
+   "ingredientId": 900010,
+   "description": "",
+   "notes": "1,000 mcg DFE as L-5-MTHF (active folate); bypasses MTHFR conversion",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 1000,
+     "unit": "mcg DFE",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Folate",
+   "category": "vitamin",
+   "ingredientGroup": "Folate",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400010,
+     "prefix": "as",
+     "percent": null,
+     "name": "L-5-Methyltetrahydrofolate",
+     "category": "vitamin",
+     "ingredientGroup": "Folate",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 11,
+   "ingredientId": 900011,
+   "description": "",
+   "notes": "Active methylated B12",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 100,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Vitamin B12",
+   "category": "vitamin",
+   "ingredientGroup": "Vitamin B12",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400011,
+     "prefix": "as",
+     "percent": null,
+     "name": "Methylcobalamin",
+     "category": "vitamin",
+     "ingredientGroup": "Vitamin B12",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 12,
+   "ingredientId": 900012,
+   "description": "",
+   "notes": "",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 30,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Biotin",
+   "category": "vitamin",
+   "ingredientGroup": "Biotin",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400012,
+     "prefix": "as",
+     "percent": null,
+     "name": "d-Biotin",
+     "category": "vitamin",
+     "ingredientGroup": "Biotin",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 13,
+   "ingredientId": 900013,
+   "description": "",
+   "notes": "Active pantethine form of B5",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 6,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Pantothenic Acid",
+   "category": "vitamin",
+   "ingredientGroup": "Pantothenic Acid",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400013,
+     "prefix": "as",
+     "percent": null,
+     "name": "Pantethine",
+     "category": "vitamin",
+     "ingredientGroup": "Pantothenic Acid",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 14,
+   "ingredientId": 900014,
+   "description": "",
+   "notes": "450 mg choline as Alpha-GPC; supports fetal brain development",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 450,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Choline",
+   "category": "vitamin",
+   "ingredientGroup": "Choline",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400014,
+     "prefix": "as",
+     "percent": null,
+     "name": "Alpha-GPC",
+     "category": "vitamin",
+     "ingredientGroup": "Choline",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 15,
+   "ingredientId": 900015,
+   "description": "",
+   "notes": "Gentle, well-absorbed calcium citrate",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 200,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Calcium",
+   "category": "vitamin",
+   "ingredientGroup": "Calcium",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400015,
+     "prefix": "as",
+     "percent": null,
+     "name": "Calcium Citrate",
+     "category": "vitamin",
+     "ingredientGroup": "Calcium",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 16,
+   "ingredientId": 900016,
+   "description": "",
+   "notes": "Gentle chelated iron bisglycinate (Ferrochel); low constipation",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 27,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Iron",
+   "category": "vitamin",
+   "ingredientGroup": "Iron",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400016,
+     "prefix": "as",
+     "percent": null,
+     "name": "Iron Bisglycinate",
+     "category": "vitamin",
+     "ingredientGroup": "Iron",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 17,
+   "ingredientId": 900017,
+   "description": "",
+   "notes": "Chelated magnesium bisglycinate; supports healthy blood sugar",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 200,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Magnesium Glycinate",
+   "category": "vitamin",
+   "ingredientGroup": "Magnesium Glycinate",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400017,
+     "prefix": "as",
+     "percent": null,
+     "name": "Magnesium Glycinate",
+     "category": "vitamin",
+     "ingredientGroup": "Magnesium Glycinate",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 18,
+   "ingredientId": 900018,
+   "description": "",
+   "notes": "Chelated zinc bisglycinate",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 15,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Zinc",
+   "category": "vitamin",
+   "ingredientGroup": "Zinc",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400018,
+     "prefix": "as",
+     "percent": null,
+     "name": "Zinc Bisglycinate",
+     "category": "vitamin",
+     "ingredientGroup": "Zinc",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 19,
+   "ingredientId": 900019,
+   "description": "",
+   "notes": "Balances zinc",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 1000,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Copper",
+   "category": "vitamin",
+   "ingredientGroup": "Copper",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400019,
+     "prefix": "as",
+     "percent": null,
+     "name": "Copper Bisglycinate",
+     "category": "vitamin",
+     "ingredientGroup": "Copper",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 20,
+   "ingredientId": 900020,
+   "description": "",
+   "notes": "Organic selenomethionine; thyroid and antioxidant support",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 60,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Selenium",
+   "category": "vitamin",
+   "ingredientGroup": "Selenium",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400020,
+     "prefix": "as",
+     "percent": null,
+     "name": "Selenomethionine",
+     "category": "vitamin",
+     "ingredientGroup": "Selenium",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 21,
+   "ingredientId": 900021,
+   "description": "",
+   "notes": "Predictable-dose potassium iodide for thyroid and fetal brain",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 220,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Iodine",
+   "category": "vitamin",
+   "ingredientGroup": "Iodine",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400021,
+     "prefix": "as",
+     "percent": null,
+     "name": "Potassium Iodide",
+     "category": "vitamin",
+     "ingredientGroup": "Iodine",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 22,
+   "ingredientId": 900022,
+   "description": "",
+   "notes": "Supports healthy insulin sensitivity and glucose metabolism",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 45,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Chromium",
+   "category": "vitamin",
+   "ingredientGroup": "Chromium",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400022,
+     "prefix": "as",
+     "percent": null,
+     "name": "Chromium Picolinate",
+     "category": "vitamin",
+     "ingredientGroup": "Chromium",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 23,
+   "ingredientId": 900023,
+   "description": "",
+   "notes": "",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 2,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Manganese",
+   "category": "vitamin",
+   "ingredientGroup": "Manganese",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400023,
+     "prefix": "as",
+     "percent": null,
+     "name": "Manganese Bisglycinate",
+     "category": "vitamin",
+     "ingredientGroup": "Manganese",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 24,
+   "ingredientId": 900024,
+   "description": "",
+   "notes": "",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 50,
+     "unit": "mcg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Molybdenum",
+   "category": "vitamin",
+   "ingredientGroup": "Molybdenum",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400024,
+     "prefix": "as",
+     "percent": null,
+     "name": "Molybdenum Glycinate",
+     "category": "vitamin",
+     "ingredientGroup": "Molybdenum",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 25,
+   "ingredientId": 900025,
+   "description": "",
+   "notes": "Supports healthy insulin sensitivity and ovarian/metabolic function",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 2000,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Myo-Inositol",
+   "category": "vitamin",
+   "ingredientGroup": "Myo-Inositol",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400025,
+     "prefix": "as",
+     "percent": null,
+     "name": "Myo-Inositol",
+     "category": "vitamin",
+     "ingredientGroup": "Myo-Inositol",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 26,
+   "ingredientId": 900026,
+   "description": "",
+   "notes": "Clinically studied 40:1 myo:D-chiro-inositol ratio for healthy glucose metabolism",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 50,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "D-Chiro-Inositol",
+   "category": "vitamin",
+   "ingredientGroup": "D-Chiro-Inositol",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400026,
+     "prefix": "as",
+     "percent": null,
+     "name": "D-Chiro-Inositol",
+     "category": "vitamin",
+     "ingredientGroup": "D-Chiro-Inositol",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 27,
+   "ingredientId": 900027,
+   "description": "",
+   "notes": "Vegan algal DHA omega-3; supports fetal brain and eye development",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 300,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "DHA",
+   "category": "vitamin",
+   "ingredientGroup": "DHA",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400027,
+     "prefix": "as",
+     "percent": null,
+     "name": "Algal Triglyceride",
+     "category": "vitamin",
+     "ingredientGroup": "DHA",
+     "uniiCode": "0"
+    }
+   ]
+  },
+  {
+   "order": 28,
+   "ingredientId": 900028,
+   "description": "",
+   "notes": "Organic ginger standardized to 5% gingerols; supports a healthy nausea response",
+   "quantity": [
+    {
+     "servingSizeOrder": 1,
+     "servingSizeQuantity": 2,
+     "operator": "=",
+     "quantity": 100,
+     "unit": "mg",
+     "dailyValueTargetGroup": [
+      {
+       "name": "Pregnant/Lactating women",
+       "operator": null,
+       "percent": null,
+       "footnote": ""
+      }
+     ],
+     "servingSizeUnit": "Capsule(s)"
+    }
+   ],
+   "nestedRows": [],
+   "name": "Ginger Extract",
+   "category": "botanical",
+   "ingredientGroup": "Ginger Extract",
+   "uniiCode": "0",
+   "alternateNames": [],
+   "forms": [
+    {
+     "order": 1,
+     "ingredientId": 1400028,
+     "prefix": "as",
+     "percent": null,
+     "name": "Ginger Root Extract",
+     "category": "botanical",
+     "ingredientGroup": "Ginger Extract",
+     "uniiCode": "0"
+    }
+   ]
+  }
+ ],
+ "otherIngredients": {
+  "ingredients": [
+   {
+    "order": 1,
+    "name": "Organic Rice Hull Concentrate",
+    "forms": []
+   },
+   {
+    "order": 2,
+    "name": "Vegetable Cellulose Capsule",
+    "forms": []
+   },
+   {
+    "order": 3,
+    "name": "Organic Acacia Gum",
+    "forms": []
+   },
+   {
+    "order": 4,
+    "name": "Sunflower Lecithin",
+    "forms": []
+   }
+  ]
+ }
+}
