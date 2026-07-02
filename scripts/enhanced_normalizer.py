@@ -2681,6 +2681,13 @@ class EnhancedDSLDNormalizer:
                 if contains_match:
                     contains_text = contains_match.group(1).strip()
 
+                    # Negation guard: "Contains no milk...", "contains none of...",
+                    # "contains zero...", "contains free of..." are FREE-FROM claims, not
+                    # allergen-presence warnings. Without this, a free-from sentence like
+                    # "Contains no milk, egg, fish, ..." is wrongly parsed as containing them.
+                    if re.match(r"(no|none|not|zero|free|0)\b", contains_text, re.I):
+                        contains_text = ""
+
                     # Only add "Contains:" warnings for actual allergens, not marketing fluff
                     is_real_allergen_warning = False
 

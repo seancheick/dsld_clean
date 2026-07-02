@@ -3679,7 +3679,10 @@ class SupplementEnricherV3:
         enhanced_nutrients_present = []
 
         for enhancer in enhancers_list:
-            enhancer_name = enhancer.get('name', '')
+            # DB schema uses 'standard_name'; keep 'name' as a fallback for robustness.
+            # (Previously read only 'name', which is absent from the DB, so the target
+            #  string was always empty and no enhancer ever matched -> A4 was unreachable.)
+            enhancer_name = enhancer.get('standard_name') or enhancer.get('name', '')
             enhancer_aliases = enhancer.get('aliases', [])
 
             # Check if enhancer present

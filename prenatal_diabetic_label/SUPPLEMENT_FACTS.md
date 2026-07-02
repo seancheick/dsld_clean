@@ -9,8 +9,8 @@ while staying clinically appropriate and safe for a **pregnant woman managing di
 
 | Metric | Result |
 |---|---|
-| **Quality Score** | **74.0 / 80** |
-| **100-point equivalent** | **92.5 / 100** |
+| **Quality Score** | **77.0 / 80** |
+| **100-point equivalent** | **96.2 / 100** |
 | **Verdict** | **SAFE** |
 | Flags | none |
 | Mapped coverage | 100% |
@@ -19,14 +19,15 @@ Section breakdown:
 
 | Section | Score | Max | Notes |
 |---|---|---|---|
-| A — Ingredient Quality | 19.48 | 25 | premium bioavailable forms, tier-1 delivery, organic, standardized botanical, synergy |
+| A — Ingredient Quality | 22.48 | 25 | premium bioavailable forms, tier-1 delivery, absorption pairing, organic, standardized botanical, synergy |
 | B — Safety & Purity | **35.00** | 35 | **maxed** — zero penalties + full certification & claim bonuses |
 | C — Evidence & Research | **15.00** | 15 | **maxed** — 19 ingredients matched to clinical-study database |
 | D — Brand Trust | 4.50 | 5 | **maxed** (D3+D4+D5 are structurally capped at 1.5) |
 
-> This is the legitimate ceiling for a *pregnancy-safe* formula on the current engine. See
-> [Why it isn't higher than 74](#why-not-higher-than-7480) below — one point is blocked by a real
-> bug in the enrichment code, and the rest is a deliberate refusal to trade fetal safety for points.
+> This is the legitimate ceiling for a *pregnancy-safe* formula. The two engine bugs found while
+> building this (the A4 absorption bonus and the allergen-negation parser) **have now been fixed** in
+> the pipeline — so A4 is earned here. See [Why not higher than 77](#why-not-higher-than-7780) below;
+> the remaining gap is a deliberate refusal to trade fetal safety for points.
 
 ---
 
@@ -112,11 +113,11 @@ Every amount sits **between the US pregnancy RDA/AI and the pregnancy UL** (audi
 
 ## How the label earns its score (section by section)
 
-**Section A — Ingredient Quality (19.48 / 25)**
+**Section A — Ingredient Quality (22.48 / 25)**
 - **A1 Bioavailable forms (10.48/13):** every nutrient uses its highest reasonable-and-safe form — methylcobalamin (17), algal DHA (17), MK-7, P-5-P, R-5-P, mixed tocopherols, chelated minerals (14–15). Weighted average ≈ 14.5/18.
 - **A2 Premium forms (3/3):** 20+ ingredients score ≥ 14, saturating the bonus.
 - **A3 Delivery system (3/3):** tier-1 **liposomal** delivery keyword present → top delivery tier.
-- **A4 Absorption pairing (0/3):** *blocked by an engine bug — see below.* The Vitamin D3 + Calcium/Magnesium pairing that should earn this is present in the formula.
+- **A4 Absorption pairing (3/3):** earned via **Vitamin D3 → Calcium/Magnesium** and **Vitamin C → Iron** — textbook co-absorption pairings. (This required fixing an enrichment bug; see below.)
 - **A5 Formulation excellence (3/3):** organic (A5a) + standardized ginger 5% gingerols (A5b) + synergy clusters — prenatal, methylation, bone, blood-sugar, iron-absorption (A5c).
 
 **Section B — Safety & Purity (35 / 35, maxed)**
@@ -130,29 +131,42 @@ Recognized manufacturer *FullWell* (D1 = 2), full label disclosure (D2 = 1), phy
 
 ---
 
-## Why not higher than 74/80?
+## Why not higher than 77/80?
 
-Two hard ceilings — one is a **bug in the scoring pipeline**, the other is a **deliberate safety choice**:
+With B, C, and D all maxed and A4 now earned, the remaining gap is a **deliberate safety choice**:
 
-1. **A4 (+3) is currently unreachable for *every* product.** In `enrich_supplements_v3.py`, `_collect_absorption_data()` matches enhancers with
-   `enhancer.get('name', '')`, but every entry in `data/absorption_enhancers.json` uses the key
-   **`standard_name`**, not `name`. So the target string is always empty, `_exact_match()` returns
-   `False` immediately, and no absorption enhancer ever matches → A4 is always 0. This label is built
-   so it **would** earn A4 (Vitamin D3 pairs with Calcium and Magnesium) the moment that one-line bug
-   is fixed (`enhancer.get('standard_name', '')`), which would lift the score to **77/80**. I did not
-   patch the engine, because changing the scorer to inflate a label's number would be gaming the ruler
-   rather than building a good label.
-
-2. **A1 is intentionally left ~2 points below the theoretical max.** Reaching a perfect A1 would mean
+1. **A1 is intentionally left ~2 points below the theoretical max.** Reaching a perfect A1 would mean
    swapping safe pregnancy forms for higher-scoring but inappropriate ones (e.g., variable-dose *kelp*
    iodine instead of predictable potassium iodide, or *nicotinamide riboside* instead of niacinamide).
-   Fetal safety wins over ~1 point.
+   Fetal safety wins over ~2 points.
 
-3. **Section D caps at 4.5** by design (the physician/region/packaging sub-bonuses are collectively
-   capped at 1.5), so 74 already reflects a maxed-out B, C, and D.
+2. **Section D caps at 4.5** by design (the physician/region/packaging sub-bonuses are collectively
+   capped at 1.5), so 77 already reflects a maxed-out B, C, and D.
 
-**Net:** 74/80 = 92.5/100, **SAFE** — the highest a genuinely pregnancy-safe, diabetes-aware formula can
-score on the engine as written today; 77/80 once the A4 enrichment bug is fixed.
+**Net:** 77/80 = 96.2/100, **SAFE** — the highest a genuinely pregnancy-safe, diabetes-aware formula can score.
+
+---
+
+## Engine bugs found & fixed while building this
+
+Both were latent correctness bugs affecting the *entire* product corpus, not just this label:
+
+1. **A4 absorption bonus was unreachable for every product.** In `enrich_supplements_v3.py`,
+   `_collect_absorption_data()` matched enhancers with `enhancer.get('name', '')`, but every entry in
+   `data/absorption_enhancers.json` uses the key **`standard_name`**. The target string was always
+   empty, `_exact_match()` returned `False` immediately, and no absorption enhancer ever matched → A4
+   was always 0 for all products. **Fix:** `enhancer.get('standard_name') or enhancer.get('name', '')`.
+
+2. **Allergen-negation false positive.** In `enhanced_normalizer.py`, the `contains:?\s+([^.]+)`
+   parser treated a free-from sentence like *"Contains **no** milk, egg, fish, …"* as *containing*
+   those allergens (the "no" was ignored), producing bogus `Contains: Wheat/Egg/Fish` warnings and a
+   B2 penalty. **Fix:** a negation guard that skips clauses beginning with `no/none/not/zero/free/0`.
+
+**Verification:** `884 passed, 0 new failures` across the full suite (the single failing test,
+`test_missing_match_tokens_report_empty`, is a pre-existing environment issue documented in
+`scripts/PRE_EXISTING_TEST_ISSUES.md` and unrelated to these changes). The absorption pairing is
+legitimate — the enricher now reports `Vitamin D → [Calcium, Magnesium]` and `Vitamin C → [Iron]`,
+not a spurious match.
 
 ---
 

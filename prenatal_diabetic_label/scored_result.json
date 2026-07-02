@@ -3,11 +3,11 @@
     "dsld_id": "900001",
     "product_name": "Complete Prenatal Multivitamin with Active Folate, DHA & Myo-Inositol (Liposomal)",
     "brand_name": "FullWell",
-    "quality_score": 74.0,
-    "score_80": 74.0,
-    "score_100_equivalent": 92.5,
-    "display": "74.0/80",
-    "display_100": "92.5/100",
+    "quality_score": 77.0,
+    "score_80": 77.0,
+    "score_100_equivalent": 96.2,
+    "display": "77.0/80",
+    "display_100": "96.2/100",
     "grade": "Exceptional",
     "verdict": "SAFE",
     "safety_verdict": "SAFE",
@@ -17,12 +17,12 @@
     "evaluation_stage": "scoring",
     "breakdown": {
       "A": {
-        "score": 19.48,
+        "score": 22.48,
         "max": 25,
         "A1": 10.48,
         "A2": 3.0,
         "A3": 3.0,
-        "A4": 0.0,
+        "A4": 3.0,
         "A5": 3.0,
         "A5a": 1.0,
         "A5b": 1.0,
@@ -94,7 +94,7 @@
         "D5": 0.5
       },
       "violation_penalty": 0.0,
-      "quality_raw": 73.98
+      "quality_raw": 76.98
     },
     "flags": [],
     "supp_type": "specialty",
@@ -105,7 +105,7 @@
     "scoring_metadata": {
       "scoring_version": "3.0.1",
       "output_schema_version": "3.0.1",
-      "scored_date": "2026-07-02T17:07:05.102744+00:00",
+      "scored_date": "2026-07-02T17:35:14.314264+00:00",
       "enrichment_version": "3.1.0",
       "scoring_status": "scored",
       "score_basis": "bioactives_scored",
@@ -118,7 +118,7 @@
     },
     "section_scores": {
       "A_ingredient_quality": {
-        "score": 19.48,
+        "score": 22.48,
         "max": 25
       },
       "B_safety_purity": {
@@ -136,7 +136,7 @@
     },
     "match_ledger": {
       "schema_version": "1.1.0",
-      "generated_at": "2026-07-02T17:07:04.981436Z",
+      "generated_at": "2026-07-02T17:35:14.179232Z",
       "domains": {
         "ingredients": {
           "total_raw": 28,
