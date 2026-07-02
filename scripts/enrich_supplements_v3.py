@@ -170,6 +170,7 @@ class SupplementEnricherV3:
         'probiotic_data': {'is_probiotic_product': False},
         'dietary_sensitivity_data': {},
         'rda_ul_data': {},
+        'prenatal_coverage': {},
         'proprietary_data': {},
         'enrichment_metadata': {'ready_for_scoring': False}
     }
@@ -7371,6 +7372,216 @@ class SupplementEnricherV3:
         }
 
     # =========================================================================
+    # PRENATAL COVERAGE LEDGER (Section E device-side data; NOT used in scoring)
+    # =========================================================================
+
+    # Pregnancy anchor nutrients. Coverage is a completeness LEDGER for the
+    # app's stack/"what's missing or underdosed" views - it must never feed
+    # the quality score: a base prenatal that intentionally ships DHA/choline
+    # as a companion product is not a lower-QUALITY product (role-fairness).
+    # Targets come from rda_optimal_uls.json Pregnancy rows at enrich time;
+    # DHA (no DRI row) falls back to the prenatal synergy cluster's minimum
+    # effective dose (200 mg, ACOG/ISSFAL consensus floor).
+    PRENATAL_ANCHOR_TOKENS = {
+        "folate": ["folate", "folic", "b9"],
+        "iron": ["iron"],
+        "iodine": ["iodine"],
+        "vitamin_d": ["vitamin d"],
+        "vitamin_b12": ["b12", "cobalamin"],
+        "choline": ["choline"],
+        "dha": ["dha", "docosahexaenoic"],
+        "calcium": ["calcium"],
+    }
+    PRENATAL_RDA_ROW_NAMES = {
+        "folate": "Folate",
+        "iron": "Iron",
+        "iodine": "Iodine",
+        "vitamin_d": "Vitamin D",
+        "vitamin_b12": "Vitamin B12",
+        "choline": "Choline",
+        "calcium": "Calcium",
+    }
+    # A dose is "meaningful" at >= 2/3 of the pregnancy RDA/AI. Below that it
+    # counts as below_target (e.g. 110 mg choline vs the 450 mg AI).
+    PRENATAL_ADEQUACY_FLOOR = 0.67
+
+    @staticmethod
+    def _prenatal_amount_convert(quantity: float, unit: str, target_unit: str) -> Optional[float]:
+        """Convert label quantity to the anchor's canonical unit (mg or mcg).
+
+        Handles mcg/ug/mg/g, treats 'mcg DFE'/'mcg RAE' as mcg, and vitamin D
+        IU (1 mcg = 40 IU). Returns None when the unit is not interpretable.
+        """
+        u = (unit or "").strip().lower().replace("µg", "mcg")
+        base_mcg = None
+        if u.startswith("mcg") or u.startswith("ug"):
+            base_mcg = quantity
+        elif u.startswith("mg"):
+            base_mcg = quantity * 1000.0
+        elif u == "g" or u.startswith("g "):
+            base_mcg = quantity * 1_000_000.0
+        elif u == "iu" or u.startswith("iu"):
+            # Only meaningful for vitamin D here (1 mcg = 40 IU)
+            base_mcg = quantity / 40.0 if target_unit == "mcg" else None
+        if base_mcg is None:
+            return None
+        return base_mcg if target_unit == "mcg" else base_mcg / 1000.0
+
+    def _prenatal_pregnancy_targets(self) -> Dict[str, Dict]:
+        """Pregnancy RDA/AI + UL per anchor, read from reference data."""
+        targets: Dict[str, Dict] = {}
+        rda_db = self.databases.get('rda_optimal_uls', {}) or {}
+        rows = {
+            str(n.get("standard_name", "")): n
+            for n in rda_db.get("nutrient_recommendations", []) or []
+        }
+        unit_map = {
+            "folate": "mcg", "iron": "mg", "iodine": "mcg", "vitamin_d": "mcg",
+            "vitamin_b12": "mcg", "choline": "mg", "calcium": "mg",
+        }
+        for anchor, row_name in self.PRENATAL_RDA_ROW_NAMES.items():
+            row = rows.get(row_name)
+            if not row:
+                continue
+            preg = [
+                d for d in row.get("data", []) or []
+                if "preg" in str(d.get("group", "")).lower()
+                and d.get("age_range") in ("19-30", "31-50")
+            ]
+            if not preg:
+                continue
+            targets[anchor] = {
+                "target": preg[0].get("rda_ai"),
+                "ul": preg[0].get("ul"),
+                "unit": unit_map[anchor],
+                "source": f"rda_optimal_uls:{row_name}:Pregnancy",
+            }
+        # DHA: no DRI row - use the prenatal synergy cluster's min effective
+        # dose when available, else the 200 mg consensus floor.
+        dha_min = 200.0
+        synergy_db = self.databases.get('synergy_cluster', {}) or {}
+        for cluster in synergy_db.get('synergy_clusters', []) or []:
+            if cluster.get('id') == 'prenatal_pregnancy_support':
+                try:
+                    dha_min = float((cluster.get('min_effective_doses') or {}).get('dha', dha_min))
+                except (TypeError, ValueError):
+                    pass
+                break
+        targets["dha"] = {
+            "target": dha_min, "ul": None, "unit": "mg",
+            "source": "synergy_cluster:prenatal_pregnancy_support (200 mg consensus floor fallback)",
+        }
+        return targets
+
+    def _collect_prenatal_coverage(
+        self,
+        product: Dict,
+        max_servings_per_day: Optional[float] = None
+    ) -> Dict:
+        """
+        Build the prenatal coverage ledger (Section E, device-side data).
+
+        For each pregnancy anchor nutrient: present/missing, per-day amount,
+        pregnancy target, and a status in
+        {missing, below_target, meets_target, above_ul}.
+
+        Contract: informational only. The v3-series scorer does not read this
+        block; the app decides when to display it (role-aware completeness is
+        a display/stack concern, not a product-quality concern).
+        """
+        targets = self._prenatal_pregnancy_targets()
+        try:
+            servings = float(max_servings_per_day) if max_servings_per_day else 1.0
+        except (TypeError, ValueError):
+            servings = 1.0
+        if servings <= 0:
+            servings = 1.0
+
+        # Sum per-anchor amounts across matching actives (standardName-based
+        # to avoid salt-cation traps like "calcium ascorbate" -> Vitamin C).
+        sums: Dict[str, float] = {}
+        unparsed: Dict[str, List[str]] = {}
+        for ing in product.get('activeIngredients', []) or []:
+            std = (ing.get('standardName') or ing.get('name') or '').lower()
+            if not std:
+                continue
+            try:
+                qty = float(ing.get('quantity') or 0)
+            except (TypeError, ValueError):
+                continue
+            if qty <= 0:
+                continue
+            unit = ing.get('unit', '')
+            for anchor, tokens in self.PRENATAL_ANCHOR_TOKENS.items():
+                if anchor not in targets:
+                    continue
+                # Word-boundary match: a bare substring test lets "dha" match
+                # inside "ashwagandha" (and "iron" inside "environmental", etc.).
+                if any(
+                    re.search(r'\b' + re.escape(tok) + r'\b', std)
+                    for tok in tokens
+                ):
+                    converted = self._prenatal_amount_convert(
+                        qty, unit, targets[anchor]["unit"]
+                    )
+                    if converted is None:
+                        unparsed.setdefault(anchor, []).append(
+                            f"{ing.get('name', '')} ({qty} {unit})"
+                        )
+                    else:
+                        sums[anchor] = sums.get(anchor, 0.0) + converted
+                    break  # one anchor per ingredient row
+
+        anchors_out: Dict[str, Dict] = {}
+        summary = {"missing": [], "below_target": [], "meets_target": [], "above_ul": []}
+        for anchor, tinfo in targets.items():
+            target = tinfo.get("target")
+            ul = tinfo.get("ul")
+            amount = sums.get(anchor)
+            entry: Dict[str, Any] = {
+                "present": amount is not None,
+                "amount_per_day": round(amount * servings, 3) if amount is not None else None,
+                "unit": tinfo["unit"],
+                "pregnancy_target": target,
+                "pregnancy_ul": ul,
+                "target_source": tinfo["source"],
+            }
+            if anchor in unparsed:
+                entry["unparsed_rows"] = unparsed[anchor]
+            if amount is None:
+                status = "missing"
+            else:
+                per_day = amount * servings
+                pct = (per_day / target * 100.0) if target else None
+                entry["pct_of_target"] = round(pct, 1) if pct is not None else None
+                if ul is not None and per_day > float(ul):
+                    status = "above_ul"
+                elif target and per_day < float(target) * self.PRENATAL_ADEQUACY_FLOOR:
+                    status = "below_target"
+                else:
+                    status = "meets_target"
+            entry["status"] = status
+            anchors_out[anchor] = entry
+            summary[status].append(anchor)
+
+        product_text = " ".join(filter(None, [
+            str(product.get('fullName', '') or ''),
+            " ".join(str(t) for t in product.get('targetGroups', []) or []),
+        ])).lower()
+        is_prenatal_positioned = ("prenatal" in product_text) or ("pregnan" in product_text)
+
+        return {
+            "schema_version": "1.0.0",
+            "basis": "pregnancy_19_50_per_day",
+            "servings_per_day_used": servings,
+            "adequacy_floor_pct": int(self.PRENATAL_ADEQUACY_FLOOR * 100),
+            "is_prenatal_positioned": is_prenatal_positioned,
+            "anchors": anchors_out,
+            "summary": summary,
+            "scoring_impact": "none",
+        }
+
+    # =========================================================================
     # RDA/UL DATA COLLECTOR (for user profile scoring on device)
     # =========================================================================
 
@@ -7717,6 +7928,12 @@ class SupplementEnricherV3:
 
             # Dietary sensitivity data (sugar/sodium for diabetes/hypertension users)
             enriched["dietary_sensitivity_data"] = self._collect_dietary_sensitivity_data(product)
+
+            # Prenatal coverage ledger (Section E device-side data; not scored)
+            enriched["prenatal_coverage"] = self._collect_prenatal_coverage(
+                product,
+                max_servings_per_day=serving_data["serving_basis"].get("max_servings_per_day")
+            )
 
             # Product-level signals (coverage, certificates, label disclosure)
             enriched["product_signals"] = self._collect_product_signals(

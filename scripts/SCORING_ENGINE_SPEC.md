@@ -1,5 +1,15 @@
 # SCORING_ENGINE_SPEC.md
 
+> **Version note (read `SCORING_VERSIONS.md` first).** This is the **v3-series**
+> server-side quality scorer (code 3.0.1 / shipped 3.4.0). It is the only
+> scorer in this repo. Reference-data files stamped `schema_version: 4.0.0` are
+> a *different version axis* — there is no "v4 scorer." The scorer emits one
+> number in two forms: `score_80` (0–80) and `score_100_equivalent`
+> (`= score_80/80*100`); e.g. 77/80 = 96.2/100. Personalized "fit for this
+> user" scoring is a **separate device-side scorer in the Flutter app** that
+> consumes the Section E blocks (`rda_ul_data`, `dietary_sensitivity_data`,
+> `prenatal_coverage`) and is out of scope here.
+
 ## Scope
 
 This document specifies the current server-side scoring behavior implemented in:
