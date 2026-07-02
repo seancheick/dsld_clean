@@ -1202,7 +1202,9 @@ class EnhancedDSLDNormalizer:
                     "type": "enhanced_delivery",
                     "standard_name": delivery_name,
                     "category": delivery_data.get("category", "delivery"),
-                    "points": delivery_data.get("points", 0),
+                    # DB entries carry "tier" (1=best..3), not "points";
+                    # reading "points" was always 0. Scoring maps tier->points.
+                    "tier": delivery_data.get("tier", 3),
                     "mapped": True,
                     "priority": 11
                 }
@@ -1678,7 +1680,20 @@ class EnhancedDSLDNormalizer:
         # Track conflicts to debug mapping issues
         conflicts = {}
 
-        for vitamin_name, vitamin_data in self.ingredient_map.items():
+        # Alias collisions are resolved by "keep the first mapping" below, so
+        # iteration order decides the winner. Per MATCHING_PRECEDENCE.md the
+        # winner must be the entry with the lowest match_rules.priority
+        # (P0 compound > P1 botanical > P2 category), alphabetical on ties —
+        # NOT raw JSON file order. Sorting here makes "first" == "highest
+        # priority" without changing the collision-handling structure.
+        def _priority_order(item):
+            key, data = item
+            if not isinstance(data, dict):
+                return (99, key)
+            priority = (data.get('match_rules') or {}).get('priority', 1)
+            return (priority, key)
+
+        for vitamin_name, vitamin_data in sorted(self.ingredient_map.items(), key=_priority_order):
             # Skip metadata keys (like _metadata, _comment, etc.)
             if vitamin_name.startswith("_") or not isinstance(vitamin_data, dict):
                 continue
@@ -2298,12 +2313,6 @@ class EnhancedDSLDNormalizer:
                 if any(isinstance(item, dict) and 'standard_name' in item for item in value):
                     arrays_to_check.append(key)
 
-        # Define critical sections for prioritized checking (substring/fuzzy matching)
-        critical_sections = [
-            "permanently_banned", "nootropic_banned", "sarms_prohibited",
-            "illegal_spiking_agents", "new_emerging_threats", "pharmaceutical_adulterants"
-        ]
-        
         # Check all arrays in the database for exact matches first
         for array_name in arrays_to_check:
             items = self.banned_recalled.get(array_name, [])
@@ -2320,12 +2329,17 @@ class EnhancedDSLDNormalizer:
                     if processed_name == processed_alias:
                         return True
 
-        # Check for substring matches (bidirectional) for critical banned substances
-        critical_sections = ["permanently_banned", "sarms_prohibited", "nootropic_banned",
-                           "illegal_spiking_agents", "new_emerging_threats", "pharmaceutical_adulterants"]
-
-        for array_name in critical_sections:
-            items = self.banned_recalled.get(array_name, [])
+        # Check for substring matches (bidirectional) for critical banned substances.
+        # The v3 DB has a single "ingredients" payload (discovered dynamically
+        # above) with per-item severity_level; the old hardcoded legacy section
+        # names ("permanently_banned", ...) no longer exist, which silently
+        # skipped this pass entirely. Restrict substring matching to
+        # critical/high severity items to bound false positives.
+        for array_name in arrays_to_check:
+            items = [
+                item for item in self.banned_recalled.get(array_name, [])
+                if str(item.get("severity_level", "")).lower() in ("critical", "high")
+            ]
             for item in items:
                 # Check if banned substance name is contained in ingredient name
                 standard_name = self.matcher.preprocess_text(item.get("standard_name", ""))
@@ -4230,21 +4244,30 @@ class EnhancedDSLDNormalizer:
             # Also preserve the type from flat structure if available
             contact_type = contact.get("type", "")
             
-            # Look up manufacturer score
-            manufacturer_score = None
+            # Recognize the contact against the top-manufacturers database.
+            # (Previously read payload key "manufacturers" — the DB's only
+            # payload key is "top_manufacturers" — and a per-entry
+            # "score_contribution" that does not exist in the DB, so the old
+            # manufacturerScore was silently None for every contact. It also
+            # substring-matched names, which cross-matches distinct companies.)
+            # Recognition here is informational; the authoritative trust bonus
+            # is computed in enrichment (_check_top_manufacturer, exact-only).
+            is_top_manufacturer = False
             if name:
-                # Search in top manufacturers database
-                # Handle both array and object formats
                 manufacturers = self.manufacturers_db
                 if isinstance(self.manufacturers_db, dict):
-                    manufacturers = self.manufacturers_db.get("manufacturers", [])
-                
+                    manufacturers = self.manufacturers_db.get("top_manufacturers", [])
+
+                name_norm = norm_module.normalize_company_name(name)
                 for mfr in manufacturers:
-                    mfr_name = mfr.get("standard_name", "")
-                    if name.lower() in mfr_name.lower():
-                        manufacturer_score = mfr.get("score_contribution", None)
+                    candidates = [mfr.get("standard_name", "")] + list(mfr.get("aliases", []) or [])
+                    if any(
+                        name_norm == norm_module.normalize_company_name(c)
+                        for c in candidates if c
+                    ):
+                        is_top_manufacturer = True
                         break
-            
+
             # Build processed contact
             processed_contact = {
                 "name": name,
@@ -4255,7 +4278,10 @@ class EnhancedDSLDNormalizer:
                 "country": country,
                 "phoneNumber": phone,
                 "isGMP": False,  # Will be set from statements
-                "manufacturerScore": manufacturer_score
+                "isTopManufacturer": is_top_manufacturer,
+                # Deprecated: the DB has no per-entry score; kept for
+                # backward-compatible output shape (always None).
+                "manufacturerScore": None
             }
             
             processed_contacts.append(processed_contact)

@@ -31,6 +31,24 @@ When label text matches multiple ingredients:
   3. If still tied, select alphabetically by ingredient key
 ```
 
+### Match-Source Dimension (implementation note)
+
+The enricher matches against two input texts per ingredient row: the raw
+label `name` and the cleaner-derived `standardName`. The implemented sort key
+in `_match_quality_map` is:
+
+```
+(tier, match_source, priority, -alias_len, form_rank, parent_key, form_key)
+```
+
+`match_source` (raw name = 0, standardName = 1, base = 2) ranks ABOVE
+`priority` deliberately: what the label literally declares outranks a
+derived hint at the same match tier ("raw_name_priority" in ambiguity
+reasons). The Resolution Rule above applies among candidates from the SAME
+source text. This is a provenance rule, not an exception to the
+compound-over-botanical hierarchy: for a single matched text, priority
+still decides (audited 2026-07; regression corpus pins this behavior).
+
 ---
 
 ## Parent-Child Resolution

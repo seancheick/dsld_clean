@@ -153,8 +153,10 @@ def normalize_company_name(name: str) -> str:
 
     # Remove common corporate suffixes
     # Order matters: longer suffixes first to prevent partial matches
+    # The suffix must be its own token: require whitespace or a comma before it,
+    # otherwise word endings get eaten ("Costco" -> "cost", "Visa" -> "vi").
     suffixes_pattern = (
-        r'\s*,?\s*('
+        r'(?:\s+|\s*,\s*)('
         r'l\.l\.c\.|llc|'
         r'incorporated|inc\.?|'
         r'corporation|corp\.?|'

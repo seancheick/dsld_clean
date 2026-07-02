@@ -959,10 +959,21 @@ class SupplementEnricherV3:
         Fuzzy match company names using best available method.
         Returns (is_match, similarity_score).
 
-        Uses RapidFuzz if available (faster, more accurate), otherwise difflib.
         Handles common cases like:
         - "Healthy Directions" vs "Healthy Directions, LLC"
         - "Dr. David Williams" vs "David Williams"
+        - "Thorne" vs "Thorne Research"
+
+        Containment alone is NOT identity: substring/partial scoring is
+        deliberately avoided because it cross-matches distinct companies that
+        share a generic token ("HUM Nutrition" vs "Goli Nutrition", brand
+        "Country Life ..." vs "Garden of Life"). Match paths:
+        1. normalized-equal -> 1.0
+        2. multi-token strict subset (suffix/prefix variations of the same
+           name, e.g. "Dr. David Williams" ~ "David Williams")
+        3. single-token subset only for a distinctive leading brand token
+           ("Thorne" ~ "Thorne Research"), never possessives ("Nature's")
+        4. otherwise plain similarity, near-exact only (typo tolerance)
         """
         if not name1 or not name2:
             return False, 0.0
@@ -980,35 +991,37 @@ class SupplementEnricherV3:
             return False, 0.0
 
         if RAPIDFUZZ_AVAILABLE:
-            # RapidFuzz: Use WRatio for best results with partial matches
-            # WRatio handles "ACME Factory" vs "ACME Factory Inc." well
             score = rf_fuzz.WRatio(norm1, norm2) / 100.0
-
-            # Also check partial_ratio for substring matches
-            partial_score = rf_fuzz.partial_ratio(norm1, norm2) / 100.0
-
-            # Use the higher score
-            best_score = max(score, partial_score)
         else:
-            # Fallback to difflib SequenceMatcher
-            # Standard ratio
             score = SequenceMatcher(None, norm1, norm2).ratio()
 
-            # Partial match: check if shorter is contained in longer
-            shorter, longer = (norm1, norm2) if len(norm1) <= len(norm2) else (norm2, norm1)
-            partial_score = 0.0
-            if shorter in longer:
-                partial_score = 1.0
-            else:
-                # Find best substring match
-                for i in range(len(longer) - len(shorter) + 1):
-                    substring = longer[i:i + len(shorter)]
-                    s = SequenceMatcher(None, shorter, substring).ratio()
-                    partial_score = max(partial_score, s)
+        tokens1 = norm1.split()
+        tokens2 = norm2.split()
+        set1, set2 = set(tokens1), set(tokens2)
 
-            best_score = max(score, partial_score)
+        if set1 != set2 and (set1 < set2 or set2 < set1):
+            # One name's tokens are a strict subset of the other's.
+            smaller_tokens, larger_tokens = (
+                (tokens1, tokens2) if len(set1) < len(set2) else (tokens2, tokens1)
+            )
+            if len(smaller_tokens) >= 2:
+                # Multi-token subset: same name with words added/removed
+                # ("dr david williams" ~ "david williams").
+                return score >= 0.75, score
+            # Single shared token is containment, not identity, unless it is
+            # the distinctive leading brand token ("thorne" ~ "thorne research").
+            # Generic/possessive fragments ("life", "pure", "nature's") fail.
+            token = smaller_tokens[0]
+            is_leading_brand_token = (
+                larger_tokens[0] == token
+                and len(token) >= 6
+                and not token.endswith("'s")
+            )
+            return (is_leading_brand_token and score >= threshold), score
 
-        return best_score >= threshold, best_score
+        # No containment relationship: require near-exact similarity
+        # (typo tolerance), regardless of the caller-supplied base threshold.
+        return score >= max(threshold, 0.90), score
 
     def _fuzzy_ingredient_match(
         self,
@@ -1463,10 +1476,22 @@ class SupplementEnricherV3:
                     text = c.get('text', '') or c.get('langualCodeDescription', '') or c.get('notes', '') or ''
                     texts.append(text)
 
-        # Add ingredient notes
+        # Add ingredient names, form names, and notes.
+        # Names and forms are part of the searchable label surface: the
+        # delivery DB's detection_note explicitly says to search "ingredient
+        # forms + product name" (e.g. "Liposomal Vitamin C" as an ingredient
+        # is a tier-1 delivery signal). Previously only notes/harvestMethod
+        # were included, so ingredient-level signals were invisible to every
+        # pattern scanner.
         for ing in product.get('activeIngredients', []):
+            texts.append(ing.get('name', '') or '')
             texts.append(ing.get('notes', '') or '')
             texts.append(ing.get('harvestMethod', '') or '')
+            for form in ing.get('forms', []) or []:
+                if isinstance(form, dict):
+                    texts.append(form.get('name', '') or '')
+                elif form:
+                    texts.append(str(form))
 
         return ' '.join(filter(None, texts))
 
@@ -3299,19 +3324,31 @@ class SupplementEnricherV3:
             parent_match_mode = match_rules.get('match_mode', 'alias_and_fuzzy')
             parent_exclusions = match_rules.get('exclusions', [])
 
-            # Check exclusions: if any exclusion term is found in the input, skip this parent
-            # This prevents false positives (e.g., "ferric oxide" shouldn't match "iron")
+            # Check exclusions: skip this parent when the input is ONLY
+            # exclusion terms (prevents false positives on bare descriptors
+            # without dropping labels that also carry a real identifier)
             if parent_exclusions:
+                # MATCHING_PRECEDENCE.md "Exclusion Processing": skip a parent
+                # only when the label consists of ONLY exclusion terms
+                # ("Natural flavoring" must not match, but "Curcumin Natural"
+                # still matches curcumin). Skipping on ANY exclusion hit would
+                # drop valid labels like "Turmeric Extract" the moment
+                # descriptors such as "extract" are added to exclusions[].
                 input_text_lower = f"{ing_name} {std_name}".lower()
-                excluded = False
+                remaining_text = input_text_lower
                 for exclusion in parent_exclusions:
                     excl_lower = exclusion.lower()
-                    # Token-bounded check: word boundary match
-                    if re.search(r'\b' + re.escape(excl_lower) + r'\b', input_text_lower):
-                        excluded = True
-                        break
-                if excluded:
-                    continue  # Skip this parent entirely
+                    # Token-bounded removal: word boundary match
+                    remaining_text = re.sub(
+                        r'\b' + re.escape(excl_lower) + r'\b', ' ', remaining_text
+                    )
+                has_meaningful_identifier = any(
+                    re.search(r'[a-z]', token)
+                    for token in re.split(r'[^a-z0-9]+', remaining_text)
+                    if token
+                )
+                if parent_exclusions and not has_meaningful_identifier:
+                    continue  # Label is only exclusion terms - skip this parent
 
             # match_mode gates which tiers are allowed
             # exact: only tier 1,2 (exact matches)
@@ -3608,20 +3645,34 @@ class SupplementEnricherV3:
         all_text = self._get_all_product_text(product).lower()
         physical_state = product.get('physicalState', {}).get('langualCodeDescription', '').lower()
 
+        # Word-boundary matching: raw substring matching false-positives on
+        # short DB keys ("raw" inside "strawberry", "drops" inside
+        # "gumdrops"). Patterns are compiled once per enricher instance.
+        if not hasattr(self, '_delivery_patterns'):
+            self._delivery_patterns = {}
+            for key, data in delivery_db.items():
+                if key.startswith("_") or not isinstance(data, dict):
+                    continue
+                self._delivery_patterns[key] = re.compile(
+                    r'(?<!\w)' + re.escape(key.lower()) + r'(?!\w)'
+                )
+
         matched_systems = []
 
         for delivery_name, delivery_data in delivery_db.items():
             if delivery_name.startswith("_") or not isinstance(delivery_data, dict):
                 continue
 
-            delivery_lower = delivery_name.lower()
+            pattern = self._delivery_patterns.get(delivery_name)
+            if pattern is None:
+                continue
 
             # Check if delivery system mentioned in product
             # LABEL NAME PRESERVATION: Track WHERE the match was found
             match_source = None
-            if delivery_lower in all_text:
+            if pattern.search(all_text):
                 match_source = "product_text"
-            elif delivery_lower in physical_state:
+            elif pattern.search(physical_state):
                 match_source = "physical_state"
 
             if match_source:
@@ -3629,7 +3680,7 @@ class SupplementEnricherV3:
                     # LABEL NAME PRESERVATION:
                     "name": delivery_name,  # Canonical from DB (used for scoring)
                     "canonical_name": delivery_name,  # Explicit canonical field
-                    "raw_source_text": delivery_lower,  # What was matched in product
+                    "raw_source_text": delivery_name.lower(),  # What was matched in product
                     "match_source": match_source,  # Where it was found
                     "tier": delivery_data.get('tier', 3),
                     "category": delivery_data.get('category', 'delivery'),
@@ -6049,11 +6100,14 @@ class SupplementEnricherV3:
         brand_normalized = self._normalize_company_name(brand) if brand else ""
         mfr_normalized = self._normalize_company_name(manufacturer) if manufacturer else ""
 
+        # PASS 1: exact match across the WHOLE list. An exact hit anywhere must
+        # beat any fuzzy hit — previously a weak fuzzy match on an earlier DB
+        # entry returned immediately and preempted a later exact match, making
+        # the result iteration-order dependent.
         for top_mfr in top_list:
             std_name = top_mfr.get('standard_name', '')
             aliases = top_mfr.get('aliases', [])
 
-            # Try exact match first (faster, more reliable)
             brand_exact = self._exact_match(brand, std_name, aliases)
             mfr_exact = self._exact_match(manufacturer, std_name, aliases)
 
@@ -6074,34 +6128,43 @@ class SupplementEnricherV3:
                     "source_path": matched_source,
                 }
 
-            # Fuzzy match as fallback for variations like "Thorne" vs "Thorne Research"
-            brand_match, brand_score = self._fuzzy_company_match(brand, std_name)
-            mfr_match, mfr_score = self._fuzzy_company_match(manufacturer, std_name)
+        # PASS 2: fuzzy fallback for variations like "Thorne" vs "Thorne
+        # Research". Evaluate ALL entries (std_name AND aliases, for parity
+        # with the exact pass) and keep the single best score.
+        best = None  # (score, top_mfr, matched_source)
+        for top_mfr in top_list:
+            std_name = top_mfr.get('standard_name', '')
+            aliases = top_mfr.get('aliases', [])
 
-            if brand_match or mfr_match:
-                # Determine which input matched better (AC2)
-                if brand_score >= mfr_score:
-                    matched_source = "brandName"
-                    matched_raw = brand
-                    matched_normalized = brand_normalized
-                    match_conf = brand_score
-                else:
-                    matched_source = "manufacturer"
-                    matched_raw = manufacturer
-                    matched_normalized = mfr_normalized
-                    match_conf = mfr_score
+            for candidate in [std_name] + list(aliases):
+                if not candidate:
+                    continue
+                brand_match, brand_score = self._fuzzy_company_match(brand, candidate)
+                mfr_match, mfr_score = self._fuzzy_company_match(manufacturer, candidate)
 
-                return {
-                    "found": True,
-                    "manufacturer_id": top_mfr.get('id', ''),
-                    "name": std_name,
-                    "match_type": "fuzzy",
-                    "match_confidence": round(match_conf, 3),
-                    # AC2: Provenance fields for auditability
-                    "product_manufacturer_raw": matched_raw,
-                    "product_manufacturer_normalized": matched_normalized,
-                    "source_path": matched_source,
-                }
+                if brand_match and (best is None or brand_score > best[0]):
+                    best = (brand_score, top_mfr, "brandName")
+                if mfr_match and (best is None or mfr_score > best[0]):
+                    best = (mfr_score, top_mfr, "manufacturer")
+
+        if best is not None:
+            match_conf, top_mfr, matched_source = best
+            matched_raw = brand if matched_source == "brandName" else manufacturer
+            matched_normalized = (
+                brand_normalized if matched_source == "brandName" else mfr_normalized
+            )
+
+            return {
+                "found": True,
+                "manufacturer_id": top_mfr.get('id', ''),
+                "name": top_mfr.get('standard_name', ''),
+                "match_type": "fuzzy",
+                "match_confidence": round(match_conf, 3),
+                # AC2: Provenance fields for auditability
+                "product_manufacturer_raw": matched_raw,
+                "product_manufacturer_normalized": matched_normalized,
+                "source_path": matched_source,
+            }
 
         # AC2: Include provenance even for non-matches
         return {
@@ -6123,7 +6186,14 @@ class SupplementEnricherV3:
         violations_db = self.databases.get('manufacturer_violations', {})
         violations_list = violations_db.get('manufacturer_violations', [])
 
+        # Applying another company's violation penalty is a high-precision
+        # decision: require near-certain identity (normalized-exact or a
+        # same-name variation), not merely a passing fuzzy score. Weaker
+        # fuzzy hits are kept as audit-only near-misses with NO deduction.
+        VIOLATION_MATCH_MIN_CONFIDENCE = 0.95
+
         found = []
+        near_misses = []
         for violation in violations_list:
             mfr_name = violation.get('manufacturer', '')
             if not mfr_name:
@@ -6134,7 +6204,18 @@ class SupplementEnricherV3:
             mfr_match, mfr_score = self._fuzzy_company_match(manufacturer, mfr_name)
 
             if brand_match or mfr_match:
-                match_score = max(brand_score, mfr_score)
+                match_score = max(
+                    brand_score if brand_match else 0.0,
+                    mfr_score if mfr_match else 0.0,
+                )
+                if match_score < VIOLATION_MATCH_MIN_CONFIDENCE:
+                    near_misses.append({
+                        "violation_id": violation.get('id', ''),
+                        "violation_manufacturer": mfr_name,
+                        "match_confidence": round(match_score, 3),
+                        "reason": "below_violation_confidence_floor",
+                    })
+                    continue
                 total_deduction_applied = violation.get('total_deduction_applied', 0.0)
                 found.append({
                     "violation_id": violation.get('id', ''),
@@ -6158,7 +6239,9 @@ class SupplementEnricherV3:
         return {
             "found": len(found) > 0,
             "total_deduction_applied": round(total_deduction_applied, 2),
-            "violations": found
+            "violations": found,
+            # Audit-only: fuzzy hits below the confidence floor (no deduction).
+            "near_misses": near_misses
         }
 
     def _extract_country(self, product: Dict) -> Dict:
