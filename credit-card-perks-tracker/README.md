@@ -6,10 +6,12 @@ ledger — with per-period checkboxes, reset countdowns, and redemption totals.
 
 ## Features
 
-- **Built-in database of 32 popular U.S. cards** (Amex Platinum/Gold, Chase
-  Sapphire Reserve/Preferred, Venture X, Delta/Hilton/Marriott co-brands, Citi
-  Strata, Bilt, and more), with benefit values verified early July 2026 —
-  including the 2025–26 refreshes (Amex Platinum $895, CSR $795, CSP June 2026).
+- **Built-in database of 41 popular U.S. cards** (Amex Platinum/Gold, Chase
+  Sapphire Reserve/Preferred, Ink business cards, Venture X, Delta/Hilton/
+  Marriott co-brands, Citi Strata, Bilt original + Obsidian, Bank of America
+  rewards cards, and more), with benefit values verified early July 2026 —
+  including the 2025–26 refreshes (Amex Platinum $895, CSR $795, CSP June 2026,
+  Bilt 2.0).
 - **Tracking by reset cadence** — monthly, quarterly, semiannual, yearly, and
   one-time/every-4-years credits each get a checkbox keyed to the current
   period, so they reset automatically when the month/quarter/half/year rolls over.

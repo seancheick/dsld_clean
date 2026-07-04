@@ -658,6 +658,19 @@ const DB = [
   {id:"prot", n:"Trip & purchase protections", c:"prt", f:"on", a:0, per:"",
    d:"Trip cancellation/interruption, primary rental CDW on business rentals, purchase protection, extended warranty."}
 ]},
+{ id:"ink-cash", name:"Ink Business Cash", issuer:"Chase", fee:0,
+  art:["#1e5e46","#2f8163"], ink:"l",
+  rates:"5% office supply, internet, cable & phone (to $25k/yr) · 2% gas & restaurants (to $25k/yr) · 5% Lyft thru 9/30/27",
+  b:[
+  {id:"dash", n:"3 months of DashPass", c:"din", f:"o", a:0, per:"3 months",
+   d:"Complimentary DashPass for 3 months, then 50% off — activate first.", e:1},
+  {id:"prot", n:"Purchase protection & extended warranty", c:"prt", f:"on", a:0, per:"",
+   d:"120-day purchase protection up to $10,000 per claim; extended warranty +1 year."},
+  {id:"cdw", n:"Primary rental coverage (business)", c:"prt", f:"on", a:0, per:"",
+   d:"Auto rental collision damage waiver is primary when renting for business purposes."},
+  {id:"emp", n:"Free employee cards", c:"oth", f:"on", a:0, per:"",
+   d:"Employee cards at no extra cost, with individual spending limits."}
+]},
 { id:"prime-visa", name:"Prime Visa", issuer:"Chase", fee:0, feeNote:"requires Prime",
   art:["#0d2b3e","#1a4a63"], ink:"l",
   rates:"5% Amazon, Whole Foods & Chase Travel · 2% gas, dining & transit",
@@ -703,6 +716,15 @@ const DB = [
   b:[
   {id:"uberone", n:"Uber One membership credits", c:"rid", f:"m", a:120, per:"$9.99 / mo",
    d:"Complimentary Uber One via monthly statement credits.", thru:"11/14/26"}
+]},
+{ id:"c1-platinum", name:"Platinum Mastercard", issuer:"Capital One", fee:0,
+  art:["#4a5560","#66727e"], ink:"l",
+  rates:"No rewards — a credit-building card",
+  b:[
+  {id:"cli", n:"Automatic credit line reviews", c:"oth", f:"on", a:0, per:"",
+   d:"Considered for a higher credit line in as little as 6 months of on-time payments."},
+  {id:"virtual", n:"Virtual card numbers + $0 fraud liability", c:"prt", f:"on", a:0, per:"",
+   d:"Shop online with merchant-specific virtual numbers via Eno; you're not responsible for unauthorized charges."}
 ]},
 { id:"citi-premier", name:"Strata Premier", issuer:"Citi", fee:95,
   art:["#173a6e","#2b5da8"], ink:"l",
@@ -753,12 +775,23 @@ const DB = [
   {id:"prot", n:"Damage & theft protection + extended warranty", c:"prt", f:"on", a:0, per:"",
    d:"Purchase protection and doubled warranty coverage (up to 2 extra years)."}
 ]},
+{ id:"bilt-obsidian", name:"Bilt Obsidian", issuer:"Bilt", fee:95,
+  art:["#0f0e13","#2b2833"], ink:"l",
+  rates:"3x dining or groceries (your pick) · 2x travel · up to 1.25x rent & mortgage fee-free",
+  b:[
+  {id:"hotel", n:"Bilt Travel hotel credit", c:"trv", f:"h", a:100, per:"$50 / half",
+   d:"Statement credits on qualifying Bilt Travel portal hotel bookings — $50 Jan–Jun and $50 Jul–Dec."},
+  {id:"pick3x", n:"Pick your 3x category", c:"oth", f:"y", a:0, per:"1 / yr",
+   d:"Choose dining or grocery stores as your 3x category for the year (grocery capped at $25k/yr)."},
+  {id:"rent", n:"Points on rent & mortgage, fee-free", c:"oth", f:"on", a:0, per:"",
+   d:"Earn on housing with no transaction fee — the rate scales with your everyday card spend, up to 1.25x (Bilt 2.0, launched Feb 2026)."}
+]},
 { id:"bilt", name:"Bilt Mastercard (original)", issuer:"Bilt", fee:0,
   art:["#131313","#2e2e2e"], ink:"l",
   rates:"1x rent (no fee, to 100k pts/yr) · 3x dining · 2x travel",
   b:[
   {id:"rent", n:"Points on rent, fee-free", c:"oth", f:"on", a:0, per:"",
-   d:"Earn points on rent with no transaction fee (up to 100k points/yr). Bilt's 2.0 lineup (Blue / Obsidian / Palladium, Feb 2026) changes earning — add yours as a custom card if you switched."},
+   d:"Earn points on rent with no transaction fee (up to 100k points/yr). If you switched to Bilt's 2.0 lineup, the Obsidian is in the card picker."},
   {id:"rentday", n:"Rent Day bonuses", c:"oth", f:"m", a:0, per:"1st of month",
    d:"Double points on non-rent spend (up to 1k) plus bonus offers every 1st of the month."},
   {id:"phone", n:"Cell phone protection", c:"prt", f:"on", a:0, per:"",
@@ -810,6 +843,31 @@ const DB = [
    d:"Book through the BofA travel center and points go 20% further on flights."},
   {id:"ge", n:"Global Entry / TSA PreCheck credit", c:"air", f:"o", a:0, per:"$100 every 4 yrs",
    d:"Application-fee credit every 4 years."}
+]},
+{ id:"boa-ccr", name:"Customized Cash Rewards", issuer:"Bank of America", fee:0,
+  art:["#7f8792","#a5adb8"], ink:"d",
+  rates:"3% category of your choice · 2% grocery & wholesale clubs (combined to $2.5k/qtr)",
+  b:[
+  {id:"choice", n:"3% choice category", c:"oth", f:"on", a:0, per:"",
+   d:"Pick gas & EV charging, online shopping, dining, travel, drug stores, or home improvement — you can switch once each calendar month in the app."},
+  {id:"boost", n:"Preferred Rewards boost", c:"oth", f:"on", a:0, per:"",
+   d:"25–75% more cash back on every purchase if you bank with BofA/Merrill ($20k+ combined balances)."}
+]},
+{ id:"boa-ucr", name:"Unlimited Cash Rewards", issuer:"Bank of America", fee:0,
+  art:["#3f464e","#5a636d"], ink:"l",
+  rates:"1.5% cash back on everything",
+  b:[
+  {id:"boost", n:"Preferred Rewards boost", c:"oth", f:"on", a:0, per:"",
+   d:"25–75% more cash back on every purchase if you bank with BofA/Merrill ($20k+ combined balances)."}
+]},
+{ id:"boa-travel", name:"Travel Rewards", issuer:"Bank of America", fee:0,
+  art:["#1d4f8a","#3a72b5"], ink:"l",
+  rates:"1.5x points on everything · points erase travel & dining purchases",
+  b:[
+  {id:"noftf", n:"No foreign transaction fees", c:"trv", f:"on", a:0, per:"",
+   d:"Use it abroad with no surcharge."},
+  {id:"boost", n:"Preferred Rewards boost", c:"oth", f:"on", a:0, per:"",
+   d:"25–75% more points on every purchase if you bank with BofA/Merrill ($20k+ combined balances)."}
 ]},
 { id:"usb-ar", name:"Altitude Reserve", issuer:"U.S. Bank", fee:400, feeNote:"closed to new applicants",
   art:["#152a47","#274871"], ink:"l",
@@ -1187,7 +1245,7 @@ function addCardModal(){
     <div class="shd"><h2 class="serif">Add a card</h2><button class="xbtn" data-act="close">✕</button></div>
     <div class="pick-search">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l3.4 3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <input id="pickSearch" type="text" placeholder="Search 32 popular U.S. cards…" aria-label="Search cards">
+      <input id="pickSearch" type="text" placeholder="Search ${DB.length} popular U.S. cards…" aria-label="Search cards">
     </div>
     <div class="pick-list" id="pickList">${rows("")}</div>
     <div class="foot"><button class="btn" data-act="open-custom-card">Don't see yours? Create a custom card</button></div>
