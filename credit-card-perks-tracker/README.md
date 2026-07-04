@@ -20,8 +20,12 @@ ledger — with per-period checkboxes, reset countdowns, and redemption totals.
   annual fees, and net perks-vs-fees.
 - **Group and filter** by reset schedule, card, or category; search; hide
   redeemed; dollar-credits-only.
-- **Custom cards and custom perks** for anything not in the database; built-in
-  perks your card doesn't have can be hidden.
+- **Memberships & services too** — Verizon myPlan/myHome (half-price Google AI
+  Pro, $10 streaming perks), T-Mobile Experience plans (Tuesdays, Netflix On
+  Us, free MLB.TV), Xfinity Rewards, Amazon Prime, Walmart+, and Costco, with
+  their perks in the same ledger.
+- **Custom cards, memberships, and perks** for anything not in the database;
+  built-in perks your card doesn't have can be hidden.
 - **Local-only data** — state lives in `localStorage`; export/import as JSON.
 
 ## Running it

@@ -282,6 +282,8 @@ input,select,textarea{font:inherit;color:inherit}
 .pick-list{max-height:52vh;overflow-y:auto;margin:0 -6px;padding:0 6px}
 .pick-issuer{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin:16px 2px 6px}
 .pick-issuer:first-child{margin-top:2px}
+.pick-kind{font-size:15.5px;margin:20px 2px 0;padding-top:16px;border-top:1px solid var(--line)}
+.pick-kind:first-child{margin-top:0;padding-top:0;border-top:none}
 .pickrow{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:9px 8px;border-radius:11px}
 .pickrow:hover{background:var(--inset)}
 .pickrow .swatch{width:38px;height:25px;border-radius:5px;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
@@ -344,7 +346,7 @@ footer p{max-width:74ch;margin:0 0 6px}
       <button class="btn primary" id="addBtn">+ Add card</button>
     </div>
   </header>
-  <p class="tagline">Every credit, perk, and discount across your cards — tracked in one place.</p>
+  <p class="tagline">Every credit, perk, and discount across your cards & memberships — tracked in one place.</p>
   <div id="storageBanner"></div>
 
   <section id="empty"></section>
@@ -893,9 +895,89 @@ const DB = [
   b:[
   {id:"dc", n:"Daily Cash + no fees", c:"oth", f:"on", a:0, per:"",
    d:"Cash back lands daily. No annual, foreign-transaction, or late fees. 3% at Apple, Uber, Nike, T-Mobile, Walgreens and more with Apple Pay."}
+]},
+
+/* ---- memberships & services (kind: svc) ---- */
+{ id:"svc-verizon", name:"Verizon myPlan / myHome", issuer:"Verizon", fee:0, feeNote:"perks vary by plan", kind:"svc",
+  art:["#17171c","#8f1418"], ink:"l",
+  rates:"$10/mo perk slots on mobile & home plans — each worth up to double",
+  b:[
+  {id:"gai", n:"Google AI Pro for $10/mo", c:"oth", f:"on", a:0, per:"",
+   d:"Gemini app with advanced models, Deep Research, and 2TB of storage for $10/mo through Verizon vs $19.99 retail — about $120/yr in savings. Add it as a perk in the My Verizon app.", e:1},
+  {id:"stream", n:"Streaming perks — $10/mo each", c:"ent", f:"on", a:0, per:"",
+   d:"Disney Bundle (Disney+, Hulu, ESPN), Netflix & Max (with ads), or YouTube Premium — each $10/mo vs up to ~$20 retail.", e:1},
+  {id:"slots", n:"Walmart+, TravelPass & more slots", c:"trv", f:"on", a:0, per:"",
+   d:"Other $10 perk slots: Walmart+ membership, 3 international TravelPass days, 100GB mobile hotspot, cloud storage.", e:1},
+  {id:"access", n:"Verizon Access presales", c:"ent", f:"on", a:0, per:"",
+   d:"Presale tickets and member experiences for concerts, shows and games."}
+]},
+{ id:"svc-tmobile", name:"T-Mobile Experience plans", issuer:"T-Mobile", fee:0, feeNote:"perks vary by plan", kind:"svc",
+  art:["#8d0f4f","#e20074"], ink:"l",
+  rates:"Streaming on us + weekly freebies via the T-Life app",
+  b:[
+  {id:"tuesdays", n:"T-Mobile Tuesdays", c:"oth", f:"m", a:0, per:"weekly drops",
+   d:"Free stuff and discounts every Tuesday in T-Life — food, movie rentals, gas discounts. Past drops included a free year of Perplexity Pro and 12 months of DashPass."},
+  {id:"netflix", n:"Netflix On Us", c:"ent", f:"on", a:0, per:"",
+   d:"Netflix Standard with ads included (up to $8.99/mo value) with a qualifying Experience Beyond or Experience More line.", e:1},
+  {id:"appletv", n:"Apple TV+ On Us", c:"ent", f:"on", a:0, per:"",
+   d:"Included with Experience Beyond ($9.99/mo value); $3/mo on other Experience plans.", e:1},
+  {id:"sports", n:"Free season passes — MLB.TV + MLS", c:"ent", f:"y", a:0, per:"claim each season",
+   d:"Free MLB.TV for the season (claim window each spring via T-Life) and MLS Season Pass."},
+  {id:"wifi", n:"Free in-flight Wi-Fi", c:"trv", f:"on", a:0, per:"",
+   d:"Streaming-capable Wi-Fi on major U.S. airlines with qualifying plans."}
+]},
+{ id:"svc-xfinity", name:"Xfinity Rewards", issuer:"Xfinity", fee:0, feeNote:"free to join", kind:"svc",
+  art:["#1f1240","#5a2fd0"], ink:"l",
+  rates:"Free member program — perks upgrade with tenure (Silver → Diamond)",
+  b:[
+  {id:"drops", n:"New rewards every Thursday", c:"oth", f:"m", a:0, per:"check monthly",
+   d:"$1 movie rentals, sweepstakes, discounted theme-park and game tickets, streaming promos. Tech freebies rotate — a free year of Perplexity Pro was a 2025 drop."},
+  {id:"deals", n:"Member discounts & experiences", c:"ent", f:"on", a:0, per:"",
+   d:"Movie tickets, Universal and Six Flags discounts, Xfinity Mobile deals; richer perks the longer you're a customer."}
+]},
+{ id:"svc-prime", name:"Amazon Prime", issuer:"Amazon", fee:139, kind:"svc",
+  art:["#0e2233","#2196c9"], ink:"l",
+  rates:"$139/yr or $14.99/mo",
+  b:[
+  {id:"grubhub", n:"Grubhub+ included", c:"din", f:"on", a:0, per:"",
+   d:"$0 delivery fees and lower service fees on eligible orders — normally $120/yr on its own.", e:1},
+  {id:"gaming", n:"Prime Gaming monthly claims", c:"ent", f:"m", a:0, per:"claim monthly",
+   d:"Free PC games, in-game loot, and a free monthly Twitch channel subscription — claim at gaming.amazon.com."},
+  {id:"fuel", n:"10¢/gal fuel savings", c:"oth", f:"on", a:0, per:"",
+   d:"At bp, Amoco and ampm stations once you link your account.", e:1},
+  {id:"rx", n:"RxPass — $5/mo generics", c:"wel", f:"on", a:0, per:"",
+   d:"60+ common generic medications for a flat $5/month with free delivery."},
+  {id:"media", n:"Video, Music, Photos & Luna", c:"ent", f:"on", a:0, per:"",
+   d:"Prime Video, Amazon Music (shuffle), unlimited full-resolution photo storage, and the Luna cloud-gaming library."}
+]},
+{ id:"svc-walmartplus", name:"Walmart+", issuer:"Walmart", fee:98, kind:"svc",
+  art:["#0053e2","#2f79f0"], ink:"l",
+  rates:"$98/yr or $12.95/mo",
+  b:[
+  {id:"stream", n:"Streaming pick: Peacock or Paramount+", c:"ent", f:"q", a:0, per:"pick every 90d",
+   d:"Choose one ad-supported service — Peacock Premium or Paramount+ Essential — and switch your pick every 90 days.", e:1},
+  {id:"bk", n:"Burger King: free Whopper + 25% off", c:"din", f:"q", a:0, per:"1 free / quarter",
+   d:"25% off digital orders every day, plus a free Whopper with any purchase every 3 months.", e:1},
+  {id:"gas", n:"10¢/gal gas discount", c:"oth", f:"on", a:0, per:"",
+   d:"At 13,000+ stations including Exxon, Mobil, Walmart and Murphy."},
+  {id:"travel", n:"Walmart Cash on travel", c:"trv", f:"on", a:0, per:"",
+   d:"Up to 10% Walmart Cash on hotels, cars and activities booked via Walmart+ Travel (powered by Expedia)."},
+  {id:"ship", n:"Free delivery from stores", c:"shp", f:"on", a:0, per:"",
+   d:"Free shipping with no minimum, plus free grocery delivery from your store on $35+ orders."}
+]},
+{ id:"svc-costco", name:"Costco Membership", issuer:"Costco", fee:65, feeNote:"$130 Executive", kind:"svc",
+  art:["#8f1622","#b52d3c"], ink:"l",
+  rates:"$65 Gold Star · $130 Executive (2% back on Costco spend)",
+  b:[
+  {id:"exec", n:"Executive 2% reward", c:"oth", f:"y", a:0, per:"1 / yr",
+   d:"Executive members earn 2% back (up to $1,250/yr), paid once a year as a reward certificate — spend it before it lapses."},
+  {id:"gas", n:"Member gas pricing", c:"oth", f:"on", a:0, per:"",
+   d:"Costco gas typically runs 20–40¢/gal below area average."},
+  {id:"next", n:"Costco Next & Travel", c:"shp", f:"on", a:0, per:"",
+   d:"Member-only pricing direct from suppliers, plus Costco Travel packages and famously cheap rental cars."}
 ]}
 ];
-const ISSUER_ORDER = ["American Express","Chase","Capital One","Citi","Bank of America","Wells Fargo","U.S. Bank","Bilt","Discover","Apple"];
+const ISSUER_ORDER = ["American Express","Chase","Capital One","Citi","Bank of America","Wells Fargo","U.S. Bank","Bilt","Discover","Apple","Verizon","T-Mobile","Xfinity","Amazon","Walmart","Costco"];
 const SWATCHES = [["#136147","#2e8a6d"],["#1c4f8f","#3873bd"],["#181720","#33313f"],["#8a3a2c","#b0543f"],["#5a2a63","#7d4487"],["#c7cdd6","#eef1f6"]];
 
 /* =============== state =============== */
@@ -958,12 +1040,12 @@ function resolveCard(entry){
   if(entry.ref){
     const def = DB.find(c=>c.id===entry.ref);
     if(def) return { iid:entry.iid, def, name:def.name, issuer:def.issuer, fee:def.fee,
-      feeNote:def.feeNote, art:def.art, ink:def.ink, rates:def.rates,
+      feeNote:def.feeNote, art:def.art, ink:def.ink, rates:def.rates, kind:def.kind||"card",
       benefits: def.b.concat(entry.custom||[]), hidden: entry.hidden||[] };
   }
   return { iid:entry.iid, def:null, name:entry.name, issuer:entry.issuer||"Custom", fee:entry.fee||0,
     feeNote:entry.feeNote, art:entry.art||SWATCHES[0], ink:entry.ink||"l", rates:entry.rates||"",
-    benefits: entry.custom||[], hidden: entry.hidden||[] };
+    kind:entry.kind||"card", benefits: entry.custom||[], hidden: entry.hidden||[] };
 }
 function myCards(){ return state.cards.map(resolveCard); }
 function visibleBenefits(card){ return card.benefits.filter(b=> !card.hidden.includes(b.id)); }
@@ -999,11 +1081,11 @@ function renderEmpty(){
   el.innerHTML = `
   <div class="empty">
     <h2 class="serif">Your wallet is empty</h2>
-    <p>Add the cards you carry and every credit, perk, and discount they offer shows up below — with reminders before each one resets.</p>
+    <p>Add the cards you carry — and memberships like Prime or your phone plan — and every credit, perk, and discount they offer shows up below, with reminders before each one resets.</p>
     <button class="btn primary" data-act="open-add">+ Add your first card</button>
     <div class="quick-label">Popular right now</div>
     <div class="quick">
-      ${["amex-plat","amex-gold","csr","csp","venture-x","bilt"].map(id=>{
+      ${["amex-plat","amex-gold","csr","csp","venture-x","bilt","svc-prime","svc-verizon"].map(id=>{
         const c = DB.find(x=>x.id===id);
         return `<button class="chip" data-act="quick-add" data-id="${id}">${esc(c.name)}</button>`;
       }).join("")}
@@ -1024,10 +1106,12 @@ function renderWallet(){
          aria-label="${esc(c.name)} — ${focused?"clear filter":"show only this card"}">
       <div class="issuer">${esc(c.issuer)}</div>
       <div class="name serif">${esc(c.name)}</div>
-      <div class="fee">${c.fee? fmt$(c.fee)+" / yr" : "no annual fee"}${c.feeNote? " · "+esc(c.feeNote):""}</div>
+      <div class="fee">${c.kind==="svc"
+        ? (c.fee? fmt$(c.fee)+" / yr membership" : esc(c.feeNote||"membership"))
+        : (c.fee? fmt$(c.fee)+" / yr" : "no annual fee")+(c.feeNote? " · "+esc(c.feeNote):"")}</div>
       ${pot? `<div class="bar"><i style="width:${pct}%"></i></div>
       <div class="usage">${fmt$(red)} of ${fmt$(pot)} redeemed in ${new Date().getFullYear()}</div>`
-      : `<div class="usage" style="margin-top:6px">always-on perks</div>`}
+      : `<div class="usage" style="margin-top:6px">${c.kind==="svc"?"member perks":"always-on perks"}</div>`}
       <button class="x" data-act="ask-remove" data-iid="${c.iid}" aria-label="Remove ${esc(c.name)}">×</button>
     </div>`;
   }).join("");
@@ -1041,11 +1125,14 @@ function renderStats(){
   const t = walletTotals();
   const net = t.redeemed - t.fees;
   const pct = t.potential? Math.round(t.redeemed/t.potential*100) : 0;
+  const nSvc = myCards().filter(c=>c.kind==="svc").length;
+  const nCard = state.cards.length - nSvc;
+  const mix = nSvc? `${nCard} card${nCard===1?"":"s"} + ${nSvc} membership${nSvc===1?"":"s"}` : `${state.cards.length} card${state.cards.length===1?"":"s"}`;
   el.innerHTML = `
   <div class="stats">
-    <div class="tile"><div class="lbl">Credits on tap</div><div class="val">${fmt$(t.potential)}</div><div class="sub">per year across ${state.cards.length} card${state.cards.length>1?"s":""}</div></div>
+    <div class="tile"><div class="lbl">Credits on tap</div><div class="val">${fmt$(t.potential)}</div><div class="sub">per year · ${mix}</div></div>
     <div class="tile"><div class="lbl">Redeemed so far</div><div class="val good">${fmt$(t.redeemed)}</div><div class="sub">in ${new Date().getFullYear()} (est.)</div></div>
-    <div class="tile"><div class="lbl">Annual fees</div><div class="val">${fmt$(t.fees)}</div><div class="sub">total across your cards</div></div>
+    <div class="tile"><div class="lbl">Annual fees</div><div class="val">${fmt$(t.fees)}</div><div class="sub">${nSvc? "cards + membership fees":"total across your cards"}</div></div>
     <div class="tile"><div class="lbl">Perks vs. fees</div><div class="val ${net>=0?"good":"bad"}">${net<0?"−":""}${fmt$(Math.abs(net))}</div><div class="sub">${net>=0? "ahead of your fees":"still to break even"}</div></div>
   </div>
   <div class="meter">
@@ -1226,40 +1313,47 @@ function closeModal(){ $("#overlay").classList.remove("open"); }
 function addCardModal(){
   const rows = (q)=>{
     const query = (q||"").toLowerCase();
+    let lastKind = null;
     return ISSUER_ORDER.map(iss=>{
       const cards = DB.filter(c=> c.issuer===iss && (!query || (c.name+" "+c.issuer).toLowerCase().includes(query)));
       if(!cards.length) return "";
-      return `<div class="pick-issuer">${esc(iss)}</div>` + cards.map(c=>{
+      const kind = cards[0].kind==="svc" ? "svc" : "card";
+      let head = "";
+      if(kind!==lastKind){ head = `<div class="pick-kind serif">${kind==="svc"?"Memberships & services":"Credit cards"}</div>`; lastKind = kind; }
+      return head + `<div class="pick-issuer">${esc(iss)}</div>` + cards.map(c=>{
         const credits = c.b.reduce((s,b)=> s + (b.a>0 && PPY[b.f]? b.a:0), 0);
         const have = state.cards.some(e=> e.ref===c.id);
         return `<button class="pickrow" data-act="add-card" data-id="${c.id}">
           <span class="swatch" style="background:linear-gradient(118deg,${c.art[0]},${c.art[1]})"></span>
           <span><span class="pn">${esc(c.name)}${have? `<span class="haveit">✓ added</span>`:""}</span><br>
-          <span class="pm">${c.fee? fmt$(c.fee)+"/yr":"no annual fee"}${c.feeNote? " · "+esc(c.feeNote):""}${credits? " · "+fmt$(credits)+" in credits":""}</span></span>
+          <span class="pm">${c.fee? fmt$(c.fee)+"/yr":(c.kind==="svc"? esc(c.feeNote||"membership") : "no annual fee")}${c.fee&&c.feeNote? " · "+esc(c.feeNote):""}${credits? " · "+fmt$(credits)+" in credits":""} · ${c.b.length} perk${c.b.length===1?"":"s"}</span></span>
           <span class="addlbl">${have? "Add again":"Add"}</span>
         </button>`;
       }).join("");
     }).join("");
   };
   openModal(`
-    <div class="shd"><h2 class="serif">Add a card</h2><button class="xbtn" data-act="close">✕</button></div>
+    <div class="shd"><h2 class="serif">Add a card or membership</h2><button class="xbtn" data-act="close">✕</button></div>
     <div class="pick-search">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l3.4 3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <input id="pickSearch" type="text" placeholder="Search ${DB.length} popular U.S. cards…" aria-label="Search cards">
+      <input id="pickSearch" type="text" placeholder="Search ${DB.length} cards & memberships…" aria-label="Search cards and memberships">
     </div>
     <div class="pick-list" id="pickList">${rows("")}</div>
-    <div class="foot"><button class="btn" data-act="open-custom-card">Don't see yours? Create a custom card</button></div>
+    <div class="foot"><button class="btn" data-act="open-custom-card">Don't see yours? Create a custom one</button></div>
   `);
   $("#pickSearch").addEventListener("input", e=>{ $("#pickList").innerHTML = rows(e.target.value) || `<div class="nores">No match — create it as a custom card below.</div>`; });
   $("#pickSearch").focus();
 }
 function customCardModal(){
   openModal(`
-    <div class="shd"><h2 class="serif">Custom card</h2><button class="xbtn" data-act="close">✕</button></div>
+    <div class="shd"><h2 class="serif">Custom card or membership</h2><button class="xbtn" data-act="close">✕</button></div>
     <form class="form" id="ccForm">
-      <label>Card name<input type="text" id="ccName" required placeholder="e.g. Navy Federal Flagship"></label>
       <div class="cols">
-        <label>Issuer<input type="text" id="ccIssuer" placeholder="e.g. Navy Federal"></label>
+        <label>Type<select id="ccKind"><option value="card">Credit card</option><option value="svc">Membership / service</option></select></label>
+        <label>Name<input type="text" id="ccName" required placeholder="e.g. Navy Federal Flagship"></label>
+      </div>
+      <div class="cols">
+        <label>Issuer / provider<input type="text" id="ccIssuer" placeholder="e.g. Navy Federal, AAA"></label>
         <label>Annual fee ($)<input type="number" id="ccFee" min="0" step="1" value="0"></label>
       </div>
       <label>Card color
@@ -1283,7 +1377,8 @@ function customCardModal(){
     const art = SWATCHES[swatch];
     const iid = "i"+(state.seq++);
     state.cards.push({ iid, ref:null, name, issuer:$("#ccIssuer").value.trim()||"Custom",
-      fee:+$("#ccFee").value||0, art, ink: (swatch===5?"d":"l"), hidden:[], custom:[] });
+      fee:+$("#ccFee").value||0, art, ink: (swatch===5?"d":"l"), kind:$("#ccKind").value,
+      hidden:[], custom:[] });
     save(); closeModal(); render(); toast(name+" added — now add its perks with “+ Custom perk”");
   });
   $("#ccName").focus();
