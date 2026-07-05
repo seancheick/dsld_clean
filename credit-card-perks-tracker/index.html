@@ -364,6 +364,7 @@ footer p{max-width:74ch;margin:0 0 6px}
 <div class="overlay" id="overlay" role="dialog" aria-modal="true"><div class="sheet" id="sheet"></div></div>
 <div class="toast" id="toast" role="status"></div>
 
+<script type="application/json" id="seedState">null</script>
 <script>
 "use strict";
 /* =============== reference data — verified early July 2026 =============== */
@@ -983,9 +984,17 @@ const SWATCHES = [["#136147","#2e8a6d"],["#1c4f8f","#3873bd"],["#181720","#33313
 /* =============== state =============== */
 const LS_KEY = "perksLedger.v1";
 const store = (()=>{ try{ const t="__plt"; localStorage.setItem(t,"1"); localStorage.removeItem(t); return localStorage; }catch(e){ return null; } })();
-let state = load() || { cards:[], usage:{}, seq:1,
+function seedState(){
+  try{
+    const v = JSON.parse(document.getElementById("seedState").textContent);
+    return (v && Array.isArray(v.cards))? v : null;
+  }catch(e){ return null; }
+}
+let state = load() || seedState() || { cards:[], usage:{}, seq:1,
   ui:{ group:"resets", cats:[], q:"", hideDone:false, dollarOnly:false, focus:null } };
 if(!state.ui) state.ui = { group:"resets", cats:[], q:"", hideDone:false, dollarOnly:false, focus:null };
+if(!state.usage) state.usage = {};
+if(!state.seq) state.seq = 1000;
 const expanded = new Set();
 
 function load(){
@@ -1426,6 +1435,11 @@ function dataModal(){
   openModal(`
     <div class="shd"><h2 class="serif">Your data</h2><button class="xbtn" data-act="close">✕</button></div>
     <div class="dsec">
+      <h3>Take it with you</h3>
+      <p>Download the whole app as one file with your cards and history baked in. Open <em>perks-ledger.html</em> from your computer any time — from then on it saves itself there automatically, no internet needed.</p>
+      <div class="rowbtns"><button class="btn small primary" data-act="download-app">Download app + data (.html)</button></div>
+    </div>
+    <div class="dsec">
       <h3>Export</h3>
       <p>Copy this or download it as a file. It's everything: cards, custom perks, and what you've redeemed.</p>
       <textarea readonly id="exportTa">${esc(json)}</textarea>
@@ -1436,9 +1450,12 @@ function dataModal(){
     </div>
     <div class="dsec">
       <h3>Import</h3>
-      <p>Paste a previous export here to restore it (replaces what's currently loaded).</p>
+      <p>Paste a previous export here — or pick a backup file (.json) or a downloaded copy of the app (.html) — to restore it. Replaces what's currently loaded.</p>
       <textarea id="importTa" placeholder='{"cards": …}'></textarea>
-      <div class="rowbtns"><button class="btn small" data-act="do-import">Import</button></div>
+      <div class="rowbtns">
+        <button class="btn small" data-act="do-import">Import</button>
+        <label class="btn small" style="cursor:pointer">Import from file<input type="file" data-act="import-file" accept=".json,application/json,.html,text/html" hidden></label>
+      </div>
     </div>
     <div class="dsec">
       <h3>Start over</h3>
@@ -1546,6 +1563,25 @@ document.addEventListener("click", e=>{
       document.body.appendChild(a); a.click(); a.remove();
     }catch(err){ toast("Download blocked here — use Copy instead"); }
   }
+  else if(act==="download-app"){
+    try{
+      const clone = document.documentElement.cloneNode(true);
+      const seedEl = clone.querySelector("#seedState");
+      if(seedEl) seedEl.textContent = JSON.stringify(state).replace(/</g,"\\u003c");
+      clone.querySelectorAll("script").forEach(s=>{
+        if(s.id==="seedState") return;
+        if(!/perksLedger/.test(s.textContent||"")) s.remove();
+      });
+      clone.querySelectorAll("meta[http-equiv],base,link").forEach(x=>x.remove());
+      clone.querySelector("#overlay")?.classList.remove("open");
+      clone.querySelector("#toast")?.classList.remove("show");
+      const blob = new Blob(["<!doctype html>\n"+clone.outerHTML], {type:"text/html"});
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob); a.download = "perks-ledger.html";
+      document.body.appendChild(a); a.click(); a.remove();
+      toast("Saved — open perks-ledger.html anytime");
+    }catch(err){ toast("Download blocked here — use Export → Copy instead"); }
+  }
   else if(act==="do-import"){
     try{
       const obj = JSON.parse($("#importTa").value);
@@ -1577,6 +1613,18 @@ document.addEventListener("change", e=>{
   }
   else if(el.dataset.act==="tgl-done"){ state.ui.hideDone = el.checked; save(); renderLedger(); }
   else if(el.dataset.act==="tgl-dollar"){ state.ui.dollarOnly = el.checked; save(); renderLedger(); }
+  else if(el.dataset.act==="import-file"){
+    const f = el.files && el.files[0]; if(!f) return;
+    const r = new FileReader();
+    r.onload = ()=>{
+      let txt = String(r.result||"");
+      const m = txt.match(/<script type="application\/json" id="seedState">([\s\S]*?)<\/script>/);
+      if(m) txt = m[1];
+      const ta = $("#importTa"); if(ta) ta.value = txt.trim();
+      document.querySelector('[data-act="do-import"]')?.click();
+    };
+    r.readAsText(f);
+  }
 });
 document.addEventListener("keydown", e=>{
   if(e.key==="Escape") closeModal();
@@ -1588,7 +1636,8 @@ $("#overlay").addEventListener("mousedown", e=>{ if(e.target===e.currentTarget) 
 $("#addBtn").addEventListener("click", addCardModal);
 $("#dataBtn").addEventListener("click", dataModal);
 if(!store){
-  $("#storageBanner").innerHTML = `<div class="banner">Heads up — browser storage isn't available here, so changes won't survive a reload. Use <b>Data → Export</b> to keep a backup.</div>`;
+  $("#storageBanner").innerHTML = `<div class="banner">Heads up — this viewer doesn't keep data between visits. Before you close, use <b>Data → Download app + data</b> to get your own copy that saves itself, or <b>Data → Export → Copy</b> for a backup you can paste back in later.</div>`;
 }
+save();
 render();
 </script>
