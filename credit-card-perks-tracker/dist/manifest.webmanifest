@@ -2,7 +2,7 @@
   "name": "Perks Ledger",
   "short_name": "Perks",
   "description": "Every credit, perk, and discount across your cards & memberships — tracked in one place.",
-  "start_url": "./",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#F6F4EE",

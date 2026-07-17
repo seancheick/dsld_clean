@@ -1,6 +1,6 @@
 /* Perks Ledger service worker — cache-first with background refresh */
 const CACHE = 'perks-ledger-8b0b4083c0';
-const ASSETS = ['./', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
+const ASSETS = ['index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
@@ -17,7 +17,11 @@ self.addEventListener('fetch', e => {
         if (res && res.ok) caches.open(CACHE).then(c => c.put(e.request, res.clone()));
         return res;
       }).catch(() => cached);
-      return cached || fresh;
+      if (cached) return cached;
+      if (e.request.mode === 'navigate') {
+        return fresh.catch(() => caches.match('index.html')).then(r => r || caches.match('index.html'));
+      }
+      return fresh;
     })
   );
 });

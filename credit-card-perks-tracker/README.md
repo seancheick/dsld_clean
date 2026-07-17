@@ -36,6 +36,19 @@ platform can wrap it; browsers render it fine standalone as well. Everything —
 styles, script, card data, and the Fraunces display font — is inlined, so it
 works offline with no external requests.
 
+## Phone / PWA
+
+`node build-pwa.js --cdn-font` builds an installable PWA into `dist/`
+(manifest, cache-first service worker, icons; Fraunces loads from Google Fonts
+in this variant). The committed `dist/` is servable from any static host.
+
+To host on Vercel (recommended): **Add New → Project → Import**
+`seancheick/dsld_clean`, set **Root Directory** to `credit-card-perks-tracker`,
+**Build Command** `node build-pwa.js --cdn-font`, **Output Directory** `dist`.
+Every push then auto-deploys. (The Claude↔Vercel integration can deploy to
+existing projects but may not be allowed to create one — creating the project
+once in the dashboard is the unblock.)
+
 ## Caveats
 
 Issuers change benefits constantly. Amounts here were verified against issuer
