@@ -413,9 +413,9 @@ footer p{max-width:74ch;margin:0 0 6px}
   <section id="ledgerSec"></section>
 
   <footer>
-    <p><strong>About the numbers.</strong> Benefit values were verified in early July 2026 against issuer pages and card guides. Issuers change these constantly — treat this as your checklist and confirm in your card's app before you book. Perks marked <em>Enroll</em> need one-time activation with the issuer first.</p>
+    <p><strong>About the numbers.</strong> Benefit values were verified in <span data-vdate>early July 2026</span> against issuer pages and card guides. Issuers change these constantly — treat this as your checklist and confirm in your card's app before you book. Perks marked <em>Enroll</em> need one-time activation with the issuer first.</p>
     <p>Estimated redemption totals divide each perk's annual value evenly across its reset periods. One-time and every-4-year credits aren't counted in annual totals. Your data stays in this browser — use <em>Data → Export</em> for a backup.</p>
-    <p>Perks Ledger v0.2 · <a href="mailto:seancheick@gmail.com?subject=Perks%20Ledger%20feedback" style="color:var(--muted)">Feedback &amp; ideas</a> · <a href="mailto:seancheick@gmail.com?subject=Perks%20Ledger%20—%20wrong%20benefit%20data&amp;body=Card%3A%0APerk%3A%0AWhat%27s%20wrong%3A" style="color:var(--muted)">Report wrong benefit data</a></p>
+    <p>Perks Ledger v0.3 · <a href="mailto:seancheick@gmail.com?subject=Perks%20Ledger%20feedback" style="color:var(--muted)">Feedback &amp; ideas</a> · <a href="mailto:seancheick@gmail.com?subject=Perks%20Ledger%20—%20wrong%20benefit%20data&amp;body=Card%3A%0APerk%3A%0AWhat%27s%20wrong%3A" style="color:var(--muted)">Report wrong benefit data</a></p>
   </footer>
 </div>
 
@@ -425,6 +425,7 @@ footer p{max-width:74ch;margin:0 0 6px}
 <script type="application/json" id="seedState">null</script>
 <script>
 "use strict";
+const DATA_VERIFIED = "early July 2026"; /* bump via /refresh-benefits */
 /* =============== reference data — verified early July 2026 =============== */
 const CATS = {
   trv:"Travel & hotels", din:"Dining & delivery", ent:"Entertainment", shp:"Shopping",
@@ -1222,7 +1223,10 @@ function renderEmpty(){
   <div class="empty">
     <h2 class="serif">Your wallet is empty</h2>
     <p>Add the cards you carry — and memberships like Prime or your phone plan — and every credit, perk, and discount they offer shows up below, with reminders before each one resets.</p>
-    <button class="btn primary" data-act="open-add">+ Add your first card</button>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <button class="btn primary" data-act="open-add">+ Add your first card</button>
+      <button class="btn" data-act="demo-load">Explore a sample wallet</button>
+    </div>
     <div class="quick-label">Popular right now</div>
     <div class="quick">
       ${["amex-plat","amex-gold","csr","csp","venture-x","bilt","svc-prime","svc-verizon"].map(id=>{
@@ -1255,7 +1259,8 @@ function renderWallet(){
       <button class="x" data-act="ask-remove" data-iid="${c.iid}" aria-label="Remove ${esc(c.name)}">×</button>
     </div>`;
   }).join("");
-  el.innerHTML = `<div class="wallet">${plates}
+  el.innerHTML = `${state.demo? `<div class="banner" style="margin-top:6px">Sample wallet — poke around, check things off, expand perks. <button data-act="demo-clear" style="font-weight:700;text-decoration:underline;color:inherit">Clear &amp; start fresh</button></div>`:""}
+  <div class="wallet">${plates}
     <button class="plate add" data-act="open-add">+ Add card</button>
   </div>`;
 }
@@ -1277,7 +1282,7 @@ function renderStats(){
   </div>
   <div class="meter">
     <div class="bar"><i style="width:${Math.min(100,pct)}%"></i></div>
-    <div class="cap"><b>${pct}%</b> of this year's trackable credits redeemed · <b>${fmt$(Math.max(0,t.potential-t.redeemed))}</b> still on the table</div>
+    <div class="cap" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center"><span><b>${pct}%</b> of this year's trackable credits redeemed · <b>${fmt$(Math.max(0,t.potential-t.redeemed))}</b> still on the table</span><button class="btn small quiet" data-act="share-card" style="padding:2px 10px">Share my savings ↗</button></div>
   </div>
   ${missedHtml()}`;
 }
@@ -1626,9 +1631,17 @@ function addCardModal(){
       <input id="pickSearch" type="text" placeholder="Search ${DB.length} cards & memberships…" aria-label="Search cards and memberships">
     </div>
     <div class="pick-list" id="pickList">${rows("")}</div>
-    <div class="foot"><button class="btn" data-act="open-custom-card">Don't see yours? Create a custom one</button></div>
+    <div class="foot" style="gap:8px;flex-wrap:wrap">
+      <button class="btn" data-act="open-custom-card">Create a custom one</button>
+      <a class="btn" style="text-decoration:none" href="mailto:seancheick@gmail.com?subject=Perks%20Ledger%20%E2%80%94%20add%20my%20card&body=Card%20name%3A%20%0AIssuer%3A%20%0AAnything%20special%20about%20its%20perks%3A%20">Don't see yours? Request it</a>
+    </div>
   `);
-  $("#pickSearch").addEventListener("input", e=>{ $("#pickList").innerHTML = rows(e.target.value) || `<div class="nores">No match — create it as a custom card below.</div>`; });
+  $("#pickSearch").addEventListener("input", e=>{
+    const q = e.target.value.trim();
+    $("#pickList").innerHTML = rows(q) || `<div class="nores">No match for “${esc(q)}”.<br><br>
+      <a class="btn small" style="text-decoration:none" href="mailto:seancheick@gmail.com?subject=${encodeURIComponent("Perks Ledger — add my card: "+q)}&body=${encodeURIComponent("Card name: "+q+"\nIssuer: \nAnything special about its perks: ")}">Request “${esc(q)}” to be added</a>
+      <span style="color:var(--faint)">— it'll ship with researched perks — or create it as a custom card below.</span></div>`;
+  });
   $("#pickSearch").focus();
 }
 function customCardModal(){
@@ -1821,6 +1834,99 @@ function dataModal(){
   `);
 }
 
+/* =============== sample wallet =============== */
+function loadDemo(){
+  const now = new Date(), y = now.getFullYear(), m = now.getMonth();
+  const mk = i => y+"-"+String(i+1).padStart(2,"0");
+  const usage = {};
+  for(let i=Math.max(0,m-3); i<=m; i++){
+    usage["d1|dige|"+mk(i)] = true;
+    if(i >= Math.max(0,m-1)) usage["d1|uber|"+mk(i)] = true;
+  }
+  usage["d1|resy|"+y+"-Q"+(Math.floor(m/3)+1)] = true;
+  if(m>=6){ usage["d1|hotel|"+y+"-H1"] = true; usage["d2|edit|"+y+"-H1"] = true; }
+  usage["d1|clear|"+y] = true;
+  usage["d2|travel|"+y] = true;
+  usage["d2|dd|"+mk(m)] = true;
+  usage["d4|gaming|"+mk(m)] = true;
+  const dl = new Date(Date.now()+40*864e5).toISOString().slice(0,10);
+  state = { cards:[
+      {iid:"d1", ref:"amex-plat", hidden:[], custom:[]},
+      {iid:"d2", ref:"csr", hidden:[], custom:[]},
+      {iid:"d3", ref:"svc-tmobile", hidden:[], custom:[]},
+      {iid:"d4", ref:"svc-prime", hidden:[], custom:[]}],
+    usage, subs:["netflix","paramountplus","spotify"],
+    bonuses:[{id:"bnD", iid:"d2", what:"100,000 points", target:6000, spent:3400, deadline:dl}],
+    seq:100, demo:true,
+    ui:{ group:"resets", cats:[], q:"", hideDone:false, dollarOnly:false, focus:null } };
+  save(); render(); toast("Sample wallet loaded — everything is clickable");
+}
+/* =============== share card =============== */
+function graphSavingsTotal(){
+  let savings = 0;
+  const map = collectSources();
+  for(const sid of state.subs){
+    const sub = SUBS[sid]; if(!sub) continue;
+    const src = map[sid]||[];
+    if(src.some(s=>s.type==="covers")) savings += sub.pm*12;
+    else { const d = src.find(s=>s.type==="deals" && s.pm!=null); if(d) savings += Math.max(0,(sub.pm-d.pm)*12); }
+  }
+  return savings;
+}
+function rr(x, px, py, w, h, r){
+  x.beginPath();
+  if(x.roundRect) x.roundRect(px, py, w, h, r); else x.rect(px, py, w, h);
+  x.fill();
+}
+async function shareCard(){
+  if(!state.cards.length){ toast("Add a card first"); return; }
+  const t = walletTotals();
+  const ov = graphSavingsTotal();
+  try{ if(document.fonts && document.fonts.load) await document.fonts.load("600 66px Fraunces"); }catch(e){}
+  const W=1080, H=1080, cv = document.createElement("canvas");
+  cv.width = W; cv.height = H;
+  const x = cv.getContext("2d");
+  x.fillStyle = "#F6F4EE"; x.fillRect(0,0,W,H);
+  x.fillStyle = "#136147"; x.fillRect(0,0,W,14);
+  x.fillStyle = "#1C221E"; x.font = "600 66px Fraunces, Georgia, serif";
+  x.fillText("Perks Ledger", 84, 172);
+  x.fillStyle = "#8B948C"; x.font = "600 30px -apple-system, 'Segoe UI', sans-serif";
+  x.fillText("I ' M   T R A C K I N G", 84, 320);
+  x.fillStyle = "#1C221E"; x.font = "700 132px -apple-system, 'Segoe UI', sans-serif";
+  x.fillText(fmt$(t.potential), 84, 452);
+  x.fillStyle = "#5D675F"; x.font = "400 40px -apple-system, 'Segoe UI', sans-serif";
+  x.fillText("in card & membership perks this year", 84, 518);
+  function statRow(y2, val, label, color){
+    x.font = "700 58px -apple-system, 'Segoe UI', sans-serif"; x.fillStyle = color;
+    x.fillText(val, 84, y2);
+    const w = x.measureText(val).width;
+    x.font = "400 36px -apple-system, 'Segoe UI', sans-serif"; x.fillStyle = "#5D675F";
+    x.fillText("  "+label, 84+w, y2);
+  }
+  statRow(646, fmt$(t.redeemed), "redeemed so far", "#0E4E39");
+  statRow(730, fmt$(Math.max(0,t.potential-t.redeemed)), "still on the table", "#8F5600");
+  if(ov>0) statRow(814, "≈ "+fmt$(ov)+"/yr", "found in overlapping subscriptions", "#0E4E39");
+  const my = 880, mw = W-168;
+  x.fillStyle = "#E3EEE7"; rr(x, 84, my, mw, 18, 9);
+  const pct = t.potential? Math.min(1, t.redeemed/t.potential) : 0;
+  x.fillStyle = "#136147"; rr(x, 84, my, Math.max(18, mw*pct), 18, 9);
+  x.fillStyle = "#8B948C"; x.font = "600 34px -apple-system, 'Segoe UI', sans-serif";
+  x.fillText("perksledger.vercel.app  ·  free · no signup · data stays local", 84, 986);
+  cv.toBlob(async blob=>{
+    if(!blob){ toast("Couldn't render the card"); return; }
+    const file = new File([blob], "perks-ledger-savings.png", {type:"image/png"});
+    if(navigator.canShare && navigator.canShare({files:[file]})){
+      try{ await navigator.share({files:[file], title:"Perks Ledger", text:"Tracking every card perk in one place — perksledger.vercel.app"}); return; }
+      catch(e){ if(e && e.name==="AbortError") return; }
+    }
+    try{
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob); a.download = "perks-ledger-savings.png";
+      document.body.appendChild(a); a.click(); a.remove();
+      toast("Saved — post it!");
+    }catch(err){ toast("Download blocked here — screenshot instead"); }
+  }, "image/png");
+}
 /* =============== toast =============== */
 let toastTimer = null;
 function toast(msg){
@@ -1846,6 +1952,13 @@ document.addEventListener("click", e=>{
   }
   else if(act==="open-custom-card") customCardModal();
   else if(act==="open-custom-perk") customPerkModal();
+  else if(act==="demo-load") loadDemo();
+  else if(act==="demo-clear"){
+    state = { cards:[], usage:{}, seq:1, subs:[], bonuses:[],
+      ui:{ group:"resets", cats:[], q:"", hideDone:false, dollarOnly:false, focus:null } };
+    save(); render(); toast("Fresh start — add your cards");
+  }
+  else if(act==="share-card") shareCard();
   else if(act==="ask-remove"){
     e.stopPropagation();
     const iid = el.dataset.iid;
@@ -2035,6 +2148,7 @@ $("#dataBtn").addEventListener("click", dataModal);
 if(!store){
   $("#storageBanner").innerHTML = `<div class="banner">Heads up — this viewer doesn't keep data between visits. Before you close, use <b>Data → Download app + data</b> to get your own copy that saves itself, or <b>Data → Export → Copy</b> for a backup you can paste back in later.</div>`;
 }
+document.querySelectorAll("[data-vdate]").forEach(el=>{ el.textContent = DATA_VERIFIED; });
 save();
 render();
 </script>
